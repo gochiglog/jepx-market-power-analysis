@@ -1,0 +1,302 @@
+schema_version: 1
+baseline:
+  start: '2025-04-01'
+  end: '2026-03-31'
+  timezone: Asia/Tokyo
+  periods_per_day: 48
+  period_minutes: 30
+panel_keys:
+  market:
+  - delivery_date
+  - period
+  - area
+  asset:
+  - delivery_date
+  - period
+  - plant_key
+  - unit_key
+  firm:
+  - delivery_date
+  - period
+  - area
+  - firm_canonical
+sources:
+- source_id: jepx_spot
+  name: JEPXスポット市場
+  reference_url: https://www.jepx.jp/electricpower/market-data/spot/
+  reference_status: entrypoint_only
+  grain: 30分×全国/エリア
+  primary_key_candidate:
+  - delivery_date
+  - period
+  - market_scope
+  - area
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: ex_ante
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - system_price
+  - area_price
+  - sell_bid_volume
+  - buy_bid_volume
+  - contracted_volume
+  - sell_block_bid_volume
+  - buy_block_bid_volume
+  - sell_block_contracted_volume
+  - buy_block_contracted_volume
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: jepx_price_sensitivity
+  name: JEPX価格感応度
+  reference_url: https://www.jepx.jp/electricpower/market-data/spot/
+  reference_status: entrypoint_only
+  grain: 30分×市場範囲×売買方向×追加量
+  primary_key_candidate:
+  - delivery_date
+  - period
+  - market_scope
+  - area
+  - side
+  - additional_power_kw
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: ex_ante_candidate
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - additional_power_kw
+  - hypothetical_price
+  - price_difference
+  - side
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: occto_generation
+  name: OCCTOユニット別発電実績
+  reference_url: https://www.occto.or.jp/assets/occtosystem2/files/20240326_yhks.pdf
+  reference_status: entrypoint_only
+  grain: 30分×発電所×ユニット
+  primary_key_candidate:
+  - delivery_date
+  - period
+  - plant_key
+  - unit_key
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: ex_post
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - generation_kwh
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: hjks_unit
+  name: HJKSユニット情報
+  reference_url: https://hjks.jepx.or.jp/
+  reference_status: entrypoint_only
+  grain: 発電所×ユニット×適用開始日
+  primary_key_candidate:
+  - plant_key
+  - unit_key
+  - valid_from
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: mixed
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - authorized_capacity_kw
+  - revised_authorized_capacity_kw
+  - operator_raw
+  - plant_key
+  - unit_key
+  - valid_from
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: hjks_outage
+  name: HJKS停止・出力低下
+  reference_url: https://hjks.jepx.or.jp/
+  reference_status: entrypoint_only
+  grain: 停止イベント×更新版
+  primary_key_candidate:
+  - event_key
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: mixed
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - output_reduction_kw
+  - event_key
+  - outage_type
+  - start_at
+  - expected_recovery_at
+  - cause_raw
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: occto_demand
+  name: OCCTO需要
+  reference_url: https://www.occto.or.jp/institution/keitoujouhou/
+  reference_status: entrypoint_only
+  grain: 30分×エリア
+  primary_key_candidate:
+  - delivery_date
+  - period
+  - area
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: ex_post
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - demand
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: occto_reserve
+  name: OCCTO広域予備率
+  reference_url: https://www.occto.or.jp/institution/keitoujouhou/
+  reference_status: entrypoint_only
+  grain: 対象時刻×エリア/広域ブロック×予測段階×公表版
+  primary_key_candidate:
+  - target_timestamp
+  - geographic_scope
+  - geographic_key
+  - forecast_stage
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: mixed
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - reserve_rate
+  - demand
+  - supply_capacity
+  - reserve_capacity
+  - forecast_stage
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: occto_interconnector
+  name: OCCTO連系線
+  reference_url: https://www.occto.or.jp/institution/keitoujouhou/
+  reference_status: entrypoint_only
+  grain: 対象時刻×連系線×方向×計画段階×公表版
+  primary_key_candidate:
+  - target_timestamp
+  - interconnector_key
+  - direction
+  - forecast_stage
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: mixed
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - operating_capacity
+  - margin
+  - planned_flow
+  - available_capacity
+  - interconnector_key
+  - direction
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: regulatory_entities
+  name: 監視委員会対象事業者
+  reference_url: https://www.egc.meti.go.jp/
+  reference_status: entrypoint_only
+  grain: 事業者×市場エリア×有効期間
+  primary_key_candidate:
+  - firm_canonical
+  - market_area
+  - valid_from
+  - valid_to
+  - source_document
+  key_status: candidate_unverified
+  information_timing: not_applicable
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: baseline_input
+  variables:
+  - firm_canonical
+  - market_area
+  - dominant_flag
+  - valid_from
+  - valid_to
+  - source_document
+  - source_url
+  - mapping_confidence
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証
+- source_id: high_price_validation
+  name: 高価格日データシート
+  reference_url: https://www.egc.meti.go.jp/
+  reference_status: entrypoint_only
+  grain: 公表資料×事業者×対象期間（確認待ち）
+  primary_key_candidate:
+  - source_document
+  - firm_canonical
+  - target_timestamp
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: ex_post
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: TODO_FY2025_availability
+  usage: validation_only
+  variables:
+  - bid_available_volume
+  - supply_capacity
+  - outage_volume
+  - own_retail_demand
+  - output_constraint
+  - reserve_capacity
+  - sell_bid_volume
+  todos:
+  - FY2025取得可能範囲と欠損を確認
+  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
+  - 主キー候補の一意性を実ファイルで検証

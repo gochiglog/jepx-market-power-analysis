@@ -12,6 +12,8 @@ dependencies = [
     "statsmodels",
     "matplotlib",
     "jupyter",
+    "pyyaml>=6.0.3",
+    "jsonschema>=4.26.0",
 ]
 
 [dependency-groups]
@@ -22,6 +24,7 @@ package = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 
 [tool.ruff]
 target-version = "py312"
