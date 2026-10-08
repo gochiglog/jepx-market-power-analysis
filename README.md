@@ -30,7 +30,7 @@ uv run ruff check .
 - `data/raw/`: 元データの保存先。変更・上書き禁止
 - `data/interim/`, `data/processed/`: 中間・加工データの保存先
 
-`data/raw/` は取得処理を実装する段階で作成します。raw/interim/processedのデータは
+`data/raw/` に公式ファイルを元形式のまま新規保存します。既存rawは上書きしません。raw/interim/processedのデータは
 Git管理対象外です。
 
 ## 開発順序
@@ -44,6 +44,11 @@ Git管理対象外です。
 commit/pushは明示的な指示がある場合のみ行います。
 
 ## 検証範囲
+
+Issue #4の[生データ収集手順](docs/raw_acquisition.md)と
+[取得結果・未取得範囲](reports/issue_4_acquisition.md)を追加しました。
+元データは `data/raw/` に保存し、Gitへcommitしません。
+需要実績は元粒度が1時間で、30分パネルへの扱いは研究判断が必要です。
 
 現在はPython・依存パッケージ・データのGit除外、および
 [データカタログ・共通仕様](metadata/README.md)の構造・参照・単位の明示を検証します。

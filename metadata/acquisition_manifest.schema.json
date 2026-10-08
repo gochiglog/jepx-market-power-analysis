@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "source_id",
+    "source_name",
+    "source_url",
+    "variant",
+    "phase",
+    "status",
+    "local_path",
+    "period_start",
+    "period_end",
+    "requested_period_start",
+    "requested_period_end",
+    "downloaded_at",
+    "file_size",
+    "sha256",
+    "notes"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]+$"
+    },
+    "source_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "variant": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "enum": [
+        "sample",
+        "full"
+      ]
+    },
+    "status": {
+      "enum": [
+        "downloaded",
+        "failed"
+      ]
+    },
+    "local_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "period_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "period_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "requested_period_start": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "requested_period_end": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "downloaded_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "file_size": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "inspection": {
+      "type": "object",
+      "required": [
+        "extension",
+        "http_mime_type",
+        "format",
+        "encoding",
+        "bom",
+        "delimiter",
+        "sheet_names",
+        "columns",
+        "period_start",
+        "period_end"
+      ]
+    },
+    "original_filename": {
+      "type": "string",
+      "minLength": 1
+    },
+    "http_method": {
+      "enum": [
+        "GET",
+        "POST"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "downloaded"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "inspection",
+          "original_filename",
+          "http_method"
+        ],
+        "properties": {
+          "local_path": {
+            "type": "string"
+          },
+          "file_size": {
+            "type": "integer"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "downloaded_at": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "failed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "local_path": {
+            "type": "null"
+          },
+          "file_size": {
+            "type": "null"
+          },
+          "sha256": {
+            "type": "null"
+          },
+          "downloaded_at": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}
