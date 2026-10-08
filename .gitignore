@@ -1,4 +1,10 @@
 # Byte-compiled / optimized / DLL files
+# 研究データは全階層をGit管理対象外にする
+/data/raw/
+/data/interim/
+/data/processed/
+.DS_Store
+
 __pycache__/
 *.py[codz]
 *$py.class
