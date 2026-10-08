@@ -1,0 +1,31 @@
+[project]
+name = "jepx-market-power-analysis"
+version = "0.1.0"
+description = "JEPX市場環境・dominant/fringeの研究用データ基盤"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pandas",
+    "numpy",
+    "pyarrow",
+    "openpyxl",
+    "scipy",
+    "statsmodels",
+    "matplotlib",
+    "jupyter",
+]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
