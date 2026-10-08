@@ -1,0 +1,77 @@
+source_id,variable_name,definition,kind,unit,source_unit,source_column,status,notes
+common,delivery_date,受渡日の日本時間日付,date,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+common,period,受渡日の1〜48コマ,integer,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+common,area,市場エリア識別子,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+common,source_snapshot_id,manifestに対応する取得版識別子,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+common,published_at,元資料の公表日時。取得日時と区別する,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+common,downloaded_at,取得日時,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+jepx_spot,system_price,システム価格,quantity,JPY/kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,area_price,エリア価格,quantity,JPY/kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,sell_bid_volume,売り入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,buy_bid_volume,買い入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,contracted_volume,約定総量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,sell_block_bid_volume,売りブロック入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,buy_block_bid_volume,買いブロック入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,sell_block_contracted_volume,売りブロック約定量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,buy_block_contracted_volume,買いブロック約定量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_price_sensitivity,additional_power_kw,追加売買の電力シナリオ,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+jepx_price_sensitivity,hypothetical_price,追加売買時の仮想価格,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+jepx_price_sensitivity,price_difference,仮想価格と実価格の差分。符号は確認待ち,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+jepx_price_sensitivity,side,追加売買方向,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_generation,generation_kwh,30分コマ内の発電電力量,quantity,kWh,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,authorized_capacity_kw,認可出力,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,revised_authorized_capacity_kw,変更後認可出力,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,operator_raw,元情報または対応表に基づく識別子・適用開始日,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,plant_key,元情報または対応表に基づく識別子・適用開始日,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,unit_key,元情報または対応表に基づく識別子・適用開始日,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,valid_from,元情報または対応表に基づく識別子・適用開始日,date,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_outage,output_reduction_kw,停止・出力低下に伴う低下量,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_outage,event_key,イベントID候補。元データの識別子を確認する,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_outage,outage_type,計画/計画外等の元区分,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_outage,start_at,停止・低下の開始時刻,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_outage,expected_recovery_at,復旧予定日時。実復旧日時と区別,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_outage,cause_raw,原因の元記述,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_demand,demand,エリア実需要。電力/電力量の別を確認する,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_reserve,reserve_rate,公表予備率。百分率/比率の別を確認,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_reserve,demand,エリア/広域ブロック需要,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_reserve,supply_capacity,エリア/広域ブロック供給力,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_reserve,reserve_capacity,エリア/広域ブロック予備力,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_reserve,forecast_stage,翌々日/翌日/当日最終を区別する,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_interconnector,operating_capacity,運用容量,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_interconnector,margin,マージン,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_interconnector,planned_flow,計画潮流,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_interconnector,available_capacity,公表空容量,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_interconnector,interconnector_key,連系線識別子,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+occto_interconnector,direction,公表方向。エリア単位への集約方法は未確定,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,firm_canonical,規制上の事業者名,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,market_area,規制対象の市場エリア,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,dominant_flag,対象事業者一覧に基づくフラグ,boolean,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,valid_from,規制区分の適用開始日,date,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,valid_to,規制区分の適用終了日。端点は要確認,date,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,source_document,根拠資料の名称,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,source_url,根拠資料URL,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+regulatory_entities,mapping_confidence,区分の採用はIssue #3で確認する,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+high_price_validation,bid_available_volume,入札可能量,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+high_price_validation,supply_capacity,供給力,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+high_price_validation,outage_volume,出力停止等,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+high_price_validation,own_retail_demand,自社小売需要等,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+high_price_validation,output_constraint,出力制約,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+high_price_validation,reserve_capacity,予備力,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+high_price_validation,sell_bid_volume,売り入札量,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,average_output_kw,30分電力量から算出する平均出力,quantity,kW,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,available_capacity_proxy_kw,公開情報から構築する利用可能容量proxy。計算式は後続仕様で定義,quantity,kW,not_applicable,TODO,TODO_definition,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,physical_headroom_proxy_kw,資産単位のheadroom proxy。計算式は未確定,quantity,kW,not_applicable,TODO,TODO_definition,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,headroom_proxy_kw,企業単位のheadroom proxy。集約方法は未確定,quantity,kW,not_applicable,TODO,TODO_definition,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,generation_kw,企業単位の平均発電出力,quantity,kW,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,area_system_spread,エリア価格とシステム価格の差,quantity,JPY/kWh,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,market_split_flag,市場分断フラグ。判定方法は未確定,boolean,not_applicable,not_applicable,TODO,TODO_definition,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+derived,fringe_flag,同一市場の観測対象供給者でdominantに該当しない区分。未解決企業は自動分類しない,boolean,not_applicable,not_applicable,TODO,TODO_definition,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+common,market_scope,全国システム/エリアの区分,string,not_applicable,not_applicable,TODO,specified,元ファイルの列との対応はIssue #4で確認
+common,target_timestamp,元粒度の対象時刻。30分への展開可否は未確認,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列との対応はIssue #4で確認
+common,geographic_scope,エリア/広域ブロックの区分,string,not_applicable,not_applicable,TODO,specified,元ファイルの列との対応はIssue #4で確認
+common,geographic_key,公表範囲の識別子,string,not_applicable,not_applicable,TODO,specified,元ファイルの列との対応はIssue #4で確認
+common,forecast_stage,公表元の計画・予測段階,string,not_applicable,not_applicable,TODO,specified,元ファイルの列との対応はIssue #4で確認
+common,plant_key,発電所識別子。元コードの適用範囲を確認,string,not_applicable,not_applicable,TODO,specified,元列保持・対応根拠を記録
+common,unit_key,ユニット識別子。発電所キーと組み合わせる,string,not_applicable,not_applicable,TODO,specified,元列保持・対応根拠を記録
+common,firm_canonical,事業者の共通識別名。曖昧な対応は確定しない,string,not_applicable,not_applicable,TODO,specified,元列保持・対応根拠を記録
+common,source_document,資料名称・出典の識別子,string,not_applicable,not_applicable,TODO,specified,元列保持・対応根拠を記録

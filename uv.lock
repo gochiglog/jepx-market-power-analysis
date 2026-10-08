@@ -521,12 +521,14 @@ name = "jepx-market-power-analysis"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "jsonschema" },
     { name = "jupyter" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "openpyxl" },
     { name = "pandas" },
     { name = "pyarrow" },
+    { name = "pyyaml" },
     { name = "scipy" },
     { name = "statsmodels" },
 ]
@@ -539,12 +541,14 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "jsonschema", specifier = ">=4.26.0" },
     { name = "jupyter" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "openpyxl" },
     { name = "pandas" },
     { name = "pyarrow" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "scipy" },
     { name = "statsmodels" },
 ]
