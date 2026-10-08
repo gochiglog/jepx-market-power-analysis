@@ -24,7 +24,7 @@ sources:
 - source_id: jepx_spot
   name: JEPXスポット市場
   reference_url: https://www.jepx.jp/electricpower/market-data/spot/
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 30分×全国/エリア
   primary_key_candidate:
   - delivery_date
@@ -37,7 +37,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: FY2025_target_dates_observed_values_not_audited
   usage: baseline_input
   variables:
   - system_price
@@ -50,13 +50,28 @@ sources:
   - sell_block_contracted_volume
   - buy_block_contracted_volume
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - CP932/Shift_JISの両方で同じ文字列になるため文字コード候補を併記。BOMなし
+  - 日付×コマの収録監査済み。数量・価格値の欠損/妥当性は未監査
+  acquisition:
+    method: '公式市場画面の年度フォーム: POST /_download.php, dir=spot_summary, file=spot_summary_2025.csv。公式Refererが必要'
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: downloaded_fy2025
+    sample_variants:
+    - spot
+    format_notes:
+    - 'spot: CSV, HTTP MIME=application/octet-stream; name=spot_summary_2025.csv,
+      encoding=ambiguous, candidates=[''cp932'', ''shift_jis''], BOM=None, delimiter='','',
+      header_row=1'
+    known_limitations:
+    - CP932/Shift_JISの両方で同じ文字列になるため文字コード候補を併記。BOMなし
+    - 日付×コマの収録監査済み。数量・価格値の欠損/妥当性は未監査
 - source_id: jepx_price_sensitivity
   name: JEPX価格感応度
   reference_url: https://www.jepx.jp/electricpower/market-data/spot/
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 30分×市場範囲×売買方向×追加量
   primary_key_candidate:
   - delivery_date
@@ -71,7 +86,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: FY2025_target_dates_observed_values_not_audited
   usage: baseline_input
   variables:
   - additional_power_kw
@@ -79,13 +94,32 @@ sources:
   - price_difference
   - side
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - 日付列は年月日。元列のMW表記を保持し、kWへの換算は実施しない
+  - CP932/Shift_JIS候補を併記。日付×コマは監査済み、値の欠損・差分計算は未実施
+  acquisition:
+    method: '公式年度フォーム: dir=virtualprice/virtualprice_diffの実数値・差分2ファイル。公式Refererが必要'
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: downloaded_fy2025
+    sample_variants:
+    - sensitivity
+    - sensitivity_diff
+    format_notes:
+    - 'sensitivity: CSV, HTTP MIME=application/octet-stream; name=virtualprice_2025.csv,
+      encoding=ambiguous, candidates=[''cp932'', ''shift_jis''], BOM=None, delimiter='','',
+      header_row=1'
+    - 'sensitivity_diff: CSV, HTTP MIME=application/octet-stream; name=virtualprice_diff_2025.csv,
+      encoding=ambiguous, candidates=[''cp932'', ''shift_jis''], BOM=None, delimiter='','',
+      header_row=1'
+    known_limitations:
+    - 日付列は年月日。元列のMW表記を保持し、kWへの換算は実施しない
+    - CP932/Shift_JIS候補を併記。日付×コマは監査済み、値の欠損・差分計算は未実施
 - source_id: occto_generation
   name: OCCTOユニット別発電実績
   reference_url: https://www.occto.or.jp/assets/occtosystem2/files/20240326_yhks.pdf
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 30分×発電所×ユニット
   primary_key_candidate:
   - delivery_date
@@ -98,18 +132,34 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: FY2025_target_dates_observed_values_not_audited
   usage: baseline_input
   variables:
   - generation_kwh
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - 対象日の収録365日を確認。全ユニットの各48値の完全性は未監査
+  - 元時刻列は00:30[kWh]〜24:00[kWh]。開始/終了への正規化は未実施
+  - 取得版の更新日時と当時の情報利用可能時点は区別して後続で確認
+  acquisition:
+    method: 公開利用条件→info/hks→全エリア・全発電方式検索→GET downloadCsv。FY2025は月単位で12ファイル取得
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: downloaded_fy2025
+    sample_variants:
+    - generation
+    format_notes:
+    - 'generation: CSV, HTTP MIME=application/csv, encoding=utf-8-sig, candidates=[''utf-8-sig''],
+      BOM=UTF-8, delimiter='','', header_row=1'
+    known_limitations:
+    - 対象日の収録365日を確認。全ユニットの各48値の完全性は未監査
+    - 元時刻列は00:30[kWh]〜24:00[kWh]。開始/終了への正規化は未実施
+    - 取得版の更新日時と当時の情報利用可能時点は区別して後続で確認
 - source_id: hjks_unit
   name: HJKSユニット情報
   reference_url: https://hjks.jepx.or.jp/
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 発電所×ユニット×適用開始日
   primary_key_candidate:
   - plant_key
@@ -121,7 +171,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: snapshot_only_FY2025_unverified
   usage: baseline_input
   variables:
   - authorized_capacity_kw
@@ -131,13 +181,29 @@ sources:
   - unit_key
   - valid_from
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - 現在取得版でありFY2025当時の履歴を保証しない。適用開始日等からの有効期間復元は未実施
+  - ヘッダー12列、529データ行は末尾空列を含む13列。元形式を保持
+  - 今回の公式取得版はCP932/BOMなし。手元のUTF-8 BOMサンプルはDownloads権限拒否で未検査
+  acquisition:
+    method: 公開unit画面のCSRF・Cookieを取得→POST csv=csv。稼働終了ユニットも含めた現在取得版。TLS検証有効のOS標準curlを使用
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: snapshot_only
+    sample_variants:
+    - unit
+    format_notes:
+    - 'unit: CSV, HTTP MIME=text/csv;charset=MS932, encoding=cp932, candidates=[''cp932''],
+      BOM=None, delimiter='','', header_row=1'
+    known_limitations:
+    - 現在取得版でありFY2025当時の履歴を保証しない。適用開始日等からの有効期間復元は未実施
+    - ヘッダー12列、529データ行は末尾空列を含む13列。元形式を保持
+    - 今回の公式取得版はCP932/BOMなし。手元のUTF-8 BOMサンプルはDownloads権限拒否で未検査
 - source_id: hjks_outage
   name: HJKS停止・出力低下
   reference_url: https://hjks.jepx.or.jp/
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 停止イベント×更新版
   primary_key_candidate:
   - event_key
@@ -147,7 +213,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: snapshot_only_FY2025_unverified
   usage: baseline_input
   variables:
   - output_reduction_kw
@@ -157,13 +223,27 @@ sources:
   - expected_recovery_at
   - cause_raw
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - 現在取得版の停止履歴であり過去公表版ではない。FY2025の全イベント・当時の復旧見通しの完全性は未確認
+  - ヘッダー15列、58852データ行は末尾空列を含む16列。元形式を保持
+  acquisition:
+    method: 公開outages画面のCSRF・Cookieを取得→POST csv=csv。期間フィルターなしの現在取得版の全停止履歴
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: snapshot_only
+    sample_variants:
+    - outage
+    format_notes:
+    - 'outage: CSV, HTTP MIME=text/csv;charset=MS932, encoding=cp932, candidates=[''cp932''],
+      BOM=None, delimiter='','', header_row=1'
+    known_limitations:
+    - 現在取得版の停止履歴であり過去公表版ではない。FY2025の全イベント・当時の復旧見通しの完全性は未確認
+    - ヘッダー15列、58852データ行は末尾空列を含む16列。元形式を保持
 - source_id: occto_demand
   name: OCCTO需要
   reference_url: https://www.occto.or.jp/institution/keitoujouhou/
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 30分×エリア
   primary_key_candidate:
   - delivery_date
@@ -175,18 +255,34 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: FY2025_target_dates_observed_values_not_audited
   usage: baseline_input
   variables:
   - demand
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - 公式日別CSVの元粒度は1時間帯×エリア。30分への分割・補間・他ソース代替は行っていない。30分パネルへの利用は研究判断が必要
+  - CP932/Shift_JISのUnicode字形差(波ダッシュ等)あり。候補と検査用decoderを記録しrawは変換しない
+  - 列名に単位がないため単位は公式仕様の追加確認が必要。HTTP MIMEはapplication/octet?stream;charset=UTF-8という応答をそのまま記録
+  acquisition:
+    method: OCCTO系統情報公開セッション→CF01S010Cの通常初期化・確認・保存。需要実績(日別), 全エリア, 月単位。元粒度は1時間
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: downloaded_fy2025
+    sample_variants:
+    - demand
+    format_notes:
+    - 'demand: CSV, HTTP MIME=application/octet?stream;charset=UTF-8, encoding=ambiguous,
+      candidates=[''cp932'', ''shift_jis''], BOM=None, delimiter='','', header_row=1'
+    known_limitations:
+    - 公式日別CSVの元粒度は1時間帯×エリア。30分への分割・補間・他ソース代替は行っていない。30分パネルへの利用は研究判断が必要
+    - CP932/Shift_JISのUnicode字形差(波ダッシュ等)あり。候補と検査用decoderを記録しrawは変換しない
+    - 列名に単位がないため単位は公式仕様の追加確認が必要。HTTP MIMEはapplication/octet?stream;charset=UTF-8という応答をそのまま記録
 - source_id: occto_reserve
   name: OCCTO広域予備率
   reference_url: https://www.occto.or.jp/institution/keitoujouhou/
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 対象時刻×エリア/広域ブロック×予測段階×公表版
   primary_key_candidate:
   - target_timestamp
@@ -199,7 +295,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: FY2025_target_dates_observed_values_not_audited
   usage: baseline_input
   variables:
   - reserve_rate
@@ -208,13 +304,32 @@ sources:
   - reserve_capacity
   - forecast_stage
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - UTF-8 BOM、1行目更新日時、2行目列名。翌々日と翌日・当日最終を別ファイルで保持
+  - 対象日365日を確認。全コマ×全エリアの値や***等の欠損は未監査
+  - 本取得だけで翌日初回版と当日各更新版の全履歴が揃うとは扱わない
+  acquisition:
+    method: '広域予備率情報ダウンロード: jhSybt=05(翌々日)/02(翌日・当日)。最大31日、前年度4月以降。月単位12ファイル×2種'
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: downloaded_fy2025
+    sample_variants:
+    - reserve_latest
+    - reserve_nextday2
+    format_notes:
+    - 'reserve_latest: CSV, HTTP MIME=application/csv, encoding=utf-8-sig, candidates=[''utf-8-sig''],
+      BOM=UTF-8, delimiter='','', header_row=2'
+    - 'reserve_nextday2: CSV, HTTP MIME=application/csv, encoding=utf-8-sig, candidates=[''utf-8-sig''],
+      BOM=UTF-8, delimiter='','', header_row=2'
+    known_limitations:
+    - UTF-8 BOM、1行目更新日時、2行目列名。翌々日と翌日・当日最終を別ファイルで保持
+    - 対象日365日を確認。全コマ×全エリアの値や***等の欠損は未監査
+    - 本取得だけで翌日初回版と当日各更新版の全履歴が揃うとは扱わない
 - source_id: occto_interconnector
   name: OCCTO連系線
   reference_url: https://www.occto.or.jp/institution/keitoujouhou/
-  reference_status: entrypoint_only
+  reference_status: file_verified
   grain: 対象時刻×連系線×方向×計画段階×公表版
   primary_key_candidate:
   - target_timestamp
@@ -227,7 +342,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: FY2025_target_dates_observed_values_not_audited
   usage: baseline_input
   variables:
   - operating_capacity
@@ -237,9 +352,28 @@ sources:
   - interconnector_key
   - direction
   todos:
-  - FY2025取得可能範囲と欠損を確認
-  - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
-  - 主キー候補の一意性を実ファイルで検証
+  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
+  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
+  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
+  - UTF-8 BOM、対象日365日を確認。全連系線・方向・各値の完全性は未監査
+  - 翌々日と翌日・当日版を保持。全更新版の時系列履歴の取得ではない
+  - エリアへの集約・市場分断判定・単位変換は未実施
+  acquisition:
+    method: '同じ公式ダウンロード: jhSybt=06(翌々日)/04(翌日・当日)の広域予備率連系線情報。運用容量・マージン・計画潮流・空容量・方向・分断を含む'
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: downloaded_fy2025
+    sample_variants:
+    - reserve_interconnector_latest
+    - reserve_interconnector_nextday2
+    format_notes:
+    - 'reserve_interconnector_latest: CSV, HTTP MIME=application/csv, encoding=utf-8-sig,
+      candidates=[''utf-8-sig''], BOM=UTF-8, delimiter='','', header_row=2'
+    - 'reserve_interconnector_nextday2: CSV, HTTP MIME=application/csv, encoding=utf-8-sig,
+      candidates=[''utf-8-sig''], BOM=UTF-8, delimiter='','', header_row=2'
+    known_limitations:
+    - UTF-8 BOM、対象日365日を確認。全連系線・方向・各値の完全性は未監査
+    - 翌々日と翌日・当日版を保持。全更新版の時系列履歴の取得ではない
+    - エリアへの集約・市場分断判定・単位変換は未実施
 - source_id: regulatory_entities
   name: 監視委員会対象事業者
   reference_url: https://www.egc.meti.go.jp/
@@ -256,7 +390,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: blocked_HTTP403_FY2025_uncollected
   usage: baseline_input
   variables:
   - firm_canonical
@@ -271,6 +405,16 @@ sources:
   - FY2025取得可能範囲と欠損を確認
   - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
   - 主キー候補の一意性を実ファイルで検証
+  acquisition:
+    method: 監視委員会の公式資料一覧→元PDF。サンプル候補005_09_00.pdfの取得はHTTP 403。FY2025適用資料の確定は未実施
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: blocked
+    sample_variants: []
+    format_notes: []
+    known_limitations:
+    - 公式サンプルPDFを取得できないため形式・内容・対象期間は実測できていない
+    - 監視委員会の適用対象事業者・エリア・有効期間を未確定のまま分類には使用しない
+    - FY2025適用資料全体は未収集。別市場の対象事業者一覧で代替しない
 - source_id: high_price_validation
   name: 高価格日データシート
   reference_url: https://www.egc.meti.go.jp/
@@ -286,7 +430,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: TODO_FY2025_availability
+  coverage_status: blocked_HTTP403_FY2025_uncollected
   usage: validation_only
   variables:
   - bid_available_volume
@@ -300,3 +444,13 @@ sources:
   - FY2025取得可能範囲と欠損を確認
   - 元列名・数量単位・時刻ラベル・公表時点・改訂履歴を確認
   - 主キー候補の一意性を実ファイルで検証
+  acquisition:
+    method: 監視委員会のスポット価格高騰対応ページ→対象日データシートPDF。20251031_DataSheet.pdf候補の取得はHTTP 403
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: blocked
+    sample_variants: []
+    format_notes: []
+    known_limitations:
+    - サンプルPDF取得はHTTP 403。形式・文字コード・対象日一覧を未確認
+    - 高価格日のみの検証用資料であり、非公表日を日次データ欠損と解釈しない
+    - FY2025対象の公表PDF全体は未収集

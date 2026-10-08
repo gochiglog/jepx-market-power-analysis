@@ -1,0 +1,430 @@
+{
+  "audited_at": "2026-10-08T17:56:03+09:00",
+  "baseline_start": "2025-04-01",
+  "baseline_end": "2026-03-31",
+  "downloaded_file_count": 83,
+  "downloaded_bytes": 196472418,
+  "hash_validation": "all_passed",
+  "unregistered_raw_paths": [],
+  "warnings": [
+    "data/raw/hjks_unit/unit_snapshot.csv: 不正列数または対象日未解釈行あり",
+    "data/raw/hjks_outage/outages_snapshot.csv: 不正列数または対象日未解釈行あり"
+  ],
+  "variants": {
+    "demand": {
+      "source_id": "occto_demand",
+      "file_count": 13,
+      "file_size": 947774,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet?stream;charset=UTF-8",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": [
+            "00:00～01:00",
+            "01:00～02:00",
+            "02:00～03:00",
+            "03:00～04:00",
+            "04:00～05:00",
+            "05:00～06:00",
+            "06:00～07:00",
+            "07:00～08:00",
+            "08:00～09:00",
+            "09:00～10:00",
+            "10:00～11:00",
+            "11:00～12:00",
+            "12:00～13:00",
+            "13:00～14:00",
+            "14:00～15:00",
+            "15:00～16:00",
+            "16:00～17:00",
+            "17:00～18:00",
+            "18:00～19:00",
+            "19:00～20:00",
+            "20:00～21:00",
+            "21:00～22:00",
+            "22:00～23:00",
+            "23:00～24:00",
+            "日最大電力(MW)",
+            "日電力量(MWh)"
+          ]
+        }
+      ]
+    },
+    "generation": {
+      "source_id": "occto_generation",
+      "file_count": 13,
+      "file_size": 71856707,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "outage": {
+      "source_id": "hjks_outage",
+      "file_count": 1,
+      "file_size": 11684681,
+      "observed_date_count": 0,
+      "period_start": null,
+      "period_end": null,
+      "missing_dates": null,
+      "coverage_status": "unverified_snapshot",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "text/csv;charset=MS932",
+          "encoding": "cp932",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_interconnector_latest": {
+      "source_id": "occto_interconnector",
+      "file_count": 13,
+      "file_size": 34055103,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_interconnector_nextday2": {
+      "source_id": "occto_interconnector",
+      "file_count": 13,
+      "file_size": 34110190,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_latest": {
+      "source_id": "occto_reserve",
+      "file_count": 13,
+      "file_size": 19548759,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_nextday2": {
+      "source_id": "occto_reserve",
+      "file_count": 13,
+      "file_size": 20092403,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "sensitivity": {
+      "source_id": "jepx_price_sensitivity",
+      "file_count": 1,
+      "file_size": 931897,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet-stream; name=virtualprice_2025.csv",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "sensitivity_diff": {
+      "source_id": "jepx_price_sensitivity",
+      "file_count": 1,
+      "file_size": 904447,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet-stream; name=virtualprice_diff_2025.csv",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "spot": {
+      "source_id": "jepx_spot",
+      "file_count": 1,
+      "file_size": 2265696,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet-stream; name=spot_summary_2025.csv",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "unit": {
+      "source_id": "hjks_unit",
+      "file_count": 1,
+      "file_size": 74761,
+      "observed_date_count": 0,
+      "period_start": null,
+      "period_end": null,
+      "missing_dates": null,
+      "coverage_status": "unverified_snapshot",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "text/csv;charset=MS932",
+          "encoding": "cp932",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    }
+  },
+  "sources": {
+    "jepx_spot": {
+      "variants": [
+        "spot"
+      ],
+      "file_count": 1,
+      "notes": [
+        "CP932/Shift_JISの両方で同じ文字列になるため文字コード候補を併記。BOMなし",
+        "日付×コマの収録監査済み。数量・価格値の欠損/妥当性は未監査"
+      ]
+    },
+    "jepx_price_sensitivity": {
+      "variants": [
+        "sensitivity",
+        "sensitivity_diff"
+      ],
+      "file_count": 2,
+      "notes": [
+        "日付列は年月日。元列のMW表記を保持し、kWへの換算は実施しない",
+        "CP932/Shift_JIS候補を併記。日付×コマは監査済み、値の欠損・差分計算は未実施"
+      ]
+    },
+    "occto_generation": {
+      "variants": [
+        "generation"
+      ],
+      "file_count": 13,
+      "notes": [
+        "対象日の収録365日を確認。全ユニットの各48値の完全性は未監査",
+        "元時刻列は00:30[kWh]〜24:00[kWh]。開始/終了への正規化は未実施",
+        "取得版の更新日時と当時の情報利用可能時点は区別して後続で確認"
+      ]
+    },
+    "hjks_unit": {
+      "variants": [
+        "unit"
+      ],
+      "file_count": 1,
+      "notes": [
+        "現在取得版でありFY2025当時の履歴を保証しない。適用開始日等からの有効期間復元は未実施",
+        "ヘッダー12列、529データ行は末尾空列を含む13列。元形式を保持",
+        "今回の公式取得版はCP932/BOMなし。手元のUTF-8 BOMサンプルはDownloads権限拒否で未検査"
+      ]
+    },
+    "hjks_outage": {
+      "variants": [
+        "outage"
+      ],
+      "file_count": 1,
+      "notes": [
+        "現在取得版の停止履歴であり過去公表版ではない。FY2025の全イベント・当時の復旧見通しの完全性は未確認",
+        "ヘッダー15列、58852データ行は末尾空列を含む16列。元形式を保持"
+      ]
+    },
+    "occto_demand": {
+      "variants": [
+        "demand"
+      ],
+      "file_count": 13,
+      "notes": [
+        "公式日別CSVの元粒度は1時間帯×エリア。30分への分割・補間・他ソース代替は行っていない。30分パネルへの利用は研究判断が必要",
+        "CP932/Shift_JISのUnicode字形差(波ダッシュ等)あり。候補と検査用decoderを記録しrawは変換しない",
+        "列名に単位がないため単位は公式仕様の追加確認が必要。HTTP MIMEはapplication/octet?stream;charset=UTF-8という応答をそのまま記録"
+      ]
+    },
+    "occto_reserve": {
+      "variants": [
+        "reserve_latest",
+        "reserve_nextday2"
+      ],
+      "file_count": 26,
+      "notes": [
+        "UTF-8 BOM、1行目更新日時、2行目列名。翌々日と翌日・当日最終を別ファイルで保持",
+        "対象日365日を確認。全コマ×全エリアの値や***等の欠損は未監査",
+        "本取得だけで翌日初回版と当日各更新版の全履歴が揃うとは扱わない"
+      ]
+    },
+    "occto_interconnector": {
+      "variants": [
+        "reserve_interconnector_latest",
+        "reserve_interconnector_nextday2"
+      ],
+      "file_count": 26,
+      "notes": [
+        "UTF-8 BOM、対象日365日を確認。全連系線・方向・各値の完全性は未監査",
+        "翌々日と翌日・当日版を保持。全更新版の時系列履歴の取得ではない",
+        "エリアへの集約・市場分断判定・単位変換は未実施"
+      ]
+    },
+    "regulatory_entities": {
+      "variants": [],
+      "file_count": 0,
+      "notes": [
+        "公式サンプルPDFを取得できないため形式・内容・対象期間は実測できていない",
+        "監視委員会の適用対象事業者・エリア・有効期間を未確定のまま分類には使用しない",
+        "FY2025適用資料全体は未収集。別市場の対象事業者一覧で代替しない"
+      ]
+    },
+    "high_price_validation": {
+      "variants": [],
+      "file_count": 0,
+      "notes": [
+        "サンプルPDF取得はHTTP 403。形式・文字コード・対象日一覧を未確認",
+        "高価格日のみの検証用資料であり、非公表日を日次データ欠損と解釈しない",
+        "FY2025対象の公表PDF全体は未収集"
+      ]
+    }
+  },
+  "unresolved_failures": [
+    {
+      "variant": "regulatory",
+      "notes": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "variant": "high_price",
+      "notes": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "failed_attempt_count": 4,
+  "value_completeness_validation": "未実施。対象日収録はエリア・ユニット・値の完全性を保証しない"
+}
