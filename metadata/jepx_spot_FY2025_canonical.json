@@ -1,0 +1,17 @@
+{
+  "source_id": "jepx_spot",
+  "fiscal_year": 2025,
+  "canonical_local_path": "data/raw/jepx/spot/spot_summary_2025.csv",
+  "canonical_sha256": "cf95e1aea783ecac2d876244d99c6610506db2bb4ed1c24c5dc887e7c16731d0",
+  "source_url": "https://www.jepx.jp/_download.php",
+  "original_filename": "spot_summary_2025.csv",
+  "downloaded_at": "2026-10-08T17:26:51+09:00",
+  "selection_basis": "通常HTTPの公式年度spotファイル。同SHA手動コピーは保持し入力に重ねない",
+  "noncanonical_copies": [
+    {
+      "local_path": "data/raw/jepx/spot/jepx_spot_20250401_20260331.csv",
+      "sha256": "cf95e1aea783ecac2d876244d99c6610506db2bb4ed1c24c5dc887e7c16731d0",
+      "reason": "identical_sha256_copy_retained"
+    }
+  ]
+}
