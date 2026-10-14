@@ -271,7 +271,7 @@
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-04-01_2025-04-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20250401_20250430.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172911261.csv",
       "input_sha256": "8af9b5c90d7c513bc3bb8157e8490ba899e950e1ce3da9b3d862ef70468a67e1",
       "raw_unchanged": true,
@@ -313,12 +313,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-04-01_2025-04-30.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-04-01_2025-04-30.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-04-01_2025-04-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-04-01_2025-04-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-04-01_2025-04-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20250401_20250430.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172912914.csv",
       "input_sha256": "ab60d6bac61223ef42ee559ee9118f0ef9d1f7e02e464dd0aa29ed95ce739c83",
       "raw_unchanged": true,
@@ -364,12 +365,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-04-01_2025-04-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-04-01_2025-04-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-04-01_2025-04-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-04-01_2025-04-30.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-05-01_2025-05-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20250501_20250531.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172913423.csv",
       "input_sha256": "fa22a91819d2db05a5e0bb4575c48f3ce0f60072fdd2fb68d4c22f1957dd8378",
       "raw_unchanged": true,
@@ -411,7 +413,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-05-01_2025-05-31.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-05-01_2025-05-31.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-05-01_2025-05-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-05-01_2025-05-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -549,7 +552,7 @@
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-06-01_2025-06-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20250601_20250630.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172914840.csv",
       "input_sha256": "a70b86e6522280f58b02810322de6fc781a085456f2046d1782048328141ea3c",
       "raw_unchanged": true,
@@ -591,12 +594,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-06-01_2025-06-30.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-06-01_2025-06-30.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-06-01_2025-06-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-06-01_2025-06-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-05-01_2025-05-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20250501_20250531.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172915452.csv",
       "input_sha256": "d8ed99a1a5025951ca2b02e2348c8ae3d6f672ed885b7e75a3a04d4857b6441c",
       "raw_unchanged": true,
@@ -642,12 +646,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-05-01_2025-05-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-05-01_2025-05-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-05-01_2025-05-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-05-01_2025-05-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-07-01_2025-07-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20250701_20250731.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172916361.csv",
       "input_sha256": "69513d12314dcdaae76a5076268869f4eabd40c4b4d194047b5a6a471e82cee6",
       "raw_unchanged": true,
@@ -689,12 +694,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-07-01_2025-07-31.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-07-01_2025-07-31.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-07-01_2025-07-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-07-01_2025-07-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-06-01_2025-06-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20250601_20250630.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172917675.csv",
       "input_sha256": "459a78a1bf375907b17d95960c3055d7e0e17c934b846105e7d33ea00d220dda",
       "raw_unchanged": true,
@@ -740,12 +746,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-06-01_2025-06-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-06-01_2025-06-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-06-01_2025-06-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-06-01_2025-06-30.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-08-01_2025-08-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20250801_20250831.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172918247.csv",
       "input_sha256": "15ca7f5a40e31dec5e82530156c01a827dc3de20270f3eaefa998e7dc66f8984",
       "raw_unchanged": true,
@@ -787,7 +794,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-08-01_2025-08-31.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-08-01_2025-08-31.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-08-01_2025-08-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-08-01_2025-08-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -925,7 +933,7 @@
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-09-01_2025-09-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20250901_20250930.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172919679.csv",
       "input_sha256": "a493fca24a97ed522aaf982e1e8c7b75068763486f33b1927ad55c933dcf28fe",
       "raw_unchanged": true,
@@ -967,12 +975,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-09-01_2025-09-30.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-09-01_2025-09-30.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-09-01_2025-09-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-09-01_2025-09-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-07-01_2025-07-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20250701_20250731.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172920283.csv",
       "input_sha256": "7dd1dc65524fc5bd7d29aa4eb2037cc4cea58f29871665c2a9b46aca918fb8e4",
       "raw_unchanged": true,
@@ -1018,12 +1027,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-07-01_2025-07-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-07-01_2025-07-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-07-01_2025-07-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-07-01_2025-07-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-10-01_2025-10-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20251001_20251031.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172921184.csv",
       "input_sha256": "667935dfc113690cf3be2c5e4b1aedd899f59505feb7ee4af12a32754e192495",
       "raw_unchanged": true,
@@ -1065,12 +1075,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-10-01_2025-10-31.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-10-01_2025-10-31.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-10-01_2025-10-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-10-01_2025-10-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-11-01_2025-11-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20251101_20251130.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172922478.csv",
       "input_sha256": "92b2abf40c661027d83ce2429accd2f636cdeaa457d0b16432be9b629ceefe8e",
       "raw_unchanged": true,
@@ -1112,12 +1123,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-11-01_2025-11-30.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-11-01_2025-11-30.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-11-01_2025-11-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-11-01_2025-11-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-08-01_2025-08-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20250801_20250831.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172922834.csv",
       "input_sha256": "5fb0cbf9d8ade1d46ded321ef58910ac93f90133e93967b5d8bacb60eb9d5341",
       "raw_unchanged": true,
@@ -1163,12 +1175,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-08-01_2025-08-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-08-01_2025-08-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-08-01_2025-08-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-08-01_2025-08-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-12-01_2025-12-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20251201_20251231.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172923642.csv",
       "input_sha256": "e15815e38ebec550292d40bf5d6d7723b6c08e111e2f4144125d45e2c397517d",
       "raw_unchanged": true,
@@ -1210,7 +1223,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2025-12-01_2025-12-31.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2025-12-01_2025-12-31.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2025-12-01_2025-12-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2025-12-01_2025-12-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -1348,7 +1362,7 @@
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2026-01-01_2026-01-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20260101_20260131.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172925134.csv",
       "input_sha256": "66929cd6dea2c15c115f13a9924fe388007ca52702920953de1b731099bdb361",
       "raw_unchanged": true,
@@ -1390,12 +1404,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2026-01-01_2026-01-31.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2026-01-01_2026-01-31.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2026-01-01_2026-01-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2026-01-01_2026-01-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-09-01_2025-09-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20250901_20250930.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172925329.csv",
       "input_sha256": "d36f195a4bacd66d464a4b9dcb668921531d34dddc16335e136a8997d0e177b9",
       "raw_unchanged": true,
@@ -1441,12 +1456,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-09-01_2025-09-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-09-01_2025-09-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-09-01_2025-09-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-09-01_2025-09-30.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2026-02-01_2026-02-28.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20260201_20260228.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172926390.csv",
       "input_sha256": "c28b7e9fdf1adda93b3652c25efcf666c8c9768b76d4c3e6f9fe997379ab32c6",
       "raw_unchanged": true,
@@ -1488,12 +1504,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2026-02-01_2026-02-28.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2026-02-01_2026-02-28.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2026-02-01_2026-02-28.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2026-02-01_2026-02-28.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-10-01_2025-10-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20251001_20251031.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172927748.csv",
       "input_sha256": "c435ee07b4ff1499116d900664b27bb3af0e632edd2e46244ce5d4e7b8e10cbe",
       "raw_unchanged": true,
@@ -1539,12 +1556,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-10-01_2025-10-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-10-01_2025-10-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-10-01_2025-10-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-10-01_2025-10-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2026-03-01_2026-03-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/occto_reserve_block_dayahead2_20260301_20260331.csv",
       "original_filename": "広域予備率ブロック情報(翌々日)_20261008172928657.csv",
       "input_sha256": "a6a61be880b12ff9534df73bba31aa8ea01ccb104cef5abbc87024ec03bceb4d",
       "raw_unchanged": true,
@@ -1586,7 +1604,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_nextday2/05_2026-03-01_2026-03-31.csv",
-      "output_filename": "occto_reserve_block_dayahead2_2026-03-01_2026-03-31.csv"
+      "output_filename": "occto_reserve_block_dayahead2_2026-03-01_2026-03-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead2/05_2026-03-01_2026-03-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -1724,7 +1743,7 @@
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-04-01_2025-04-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20250401_20250430.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172929949.csv",
       "input_sha256": "4d5b2f7e76fe23ce638fb62d6f457a2f0ff179d5826bd190afbbb1199f131c1c",
       "raw_unchanged": true,
@@ -1765,12 +1784,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-04-01_2025-04-30.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-04-01_2025-04-30.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-04-01_2025-04-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-04-01_2025-04-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-11-01_2025-11-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20251101_20251130.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172929913.csv",
       "input_sha256": "cc12759675423b4c11de073af456b30b2ee04b274727903a3d88956db0348d45",
       "raw_unchanged": true,
@@ -1816,12 +1836,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-11-01_2025-11-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-11-01_2025-11-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-11-01_2025-11-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-11-01_2025-11-30.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-05-01_2025-05-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20250501_20250531.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172931531.csv",
       "input_sha256": "5358c63dede5480b02ea14abb99ed194ddfd301e8373b6acbb88440cceaecc81",
       "raw_unchanged": true,
@@ -1862,12 +1883,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-05-01_2025-05-31.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-05-01_2025-05-31.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-05-01_2025-05-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-05-01_2025-05-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-12-01_2025-12-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20251201_20251231.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172932330.csv",
       "input_sha256": "bdf4917aa35d60dc6834150813b0e6a5d0911cb86dff4c7fa09c64c8cb796163",
       "raw_unchanged": true,
@@ -1913,12 +1935,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2025-12-01_2025-12-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2025-12-01_2025-12-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2025-12-01_2025-12-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2025-12-01_2025-12-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-06-01_2025-06-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20250601_20250630.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172932650.csv",
       "input_sha256": "ea89a2b5c3bc3ddb3a920ffd8b5dc2ea1504c58f8cc0da5ec82da89c93855b69",
       "raw_unchanged": true,
@@ -1959,12 +1982,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-06-01_2025-06-30.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-06-01_2025-06-30.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-06-01_2025-06-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-06-01_2025-06-30.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-07-01_2025-07-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20250701_20250731.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172933754.csv",
       "input_sha256": "958ecc76ab943ea16779455e7dcdc3b62734f4e3f3b36a4566f706c7802c51cd",
       "raw_unchanged": true,
@@ -2005,12 +2029,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-07-01_2025-07-31.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-07-01_2025-07-31.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-07-01_2025-07-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-07-01_2025-07-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2026-01-01_2026-01-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20260101_20260131.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172934283.csv",
       "input_sha256": "ddb44e38f26237ccf19070f03789a0c42b287c17ace5a4328fbfcce38ec2db8f",
       "raw_unchanged": true,
@@ -2056,7 +2081,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2026-01-01_2026-01-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2026-01-01_2026-01-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2026-01-01_2026-01-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2026-01-01_2026-01-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -2194,7 +2220,7 @@
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-08-01_2025-08-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20250801_20250831.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172934965.csv",
       "input_sha256": "beafeb657accfc8339f3063ab40417c3ff2adb35cebaecad82a30da74120c036",
       "raw_unchanged": true,
@@ -2235,12 +2261,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-08-01_2025-08-31.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-08-01_2025-08-31.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-08-01_2025-08-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-08-01_2025-08-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-09-01_2025-09-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20250901_20250930.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172936180.csv",
       "input_sha256": "ec9fa58c3f530c8baf4cda94244fe2767f56161b425cc728483999d471862496",
       "raw_unchanged": true,
@@ -2281,12 +2308,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-09-01_2025-09-30.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-09-01_2025-09-30.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-09-01_2025-09-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-09-01_2025-09-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2026-02-01_2026-02-28.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20260201_20260228.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172936154.csv",
       "input_sha256": "ea8835428c5aef2faec25ee2c989e67fb11432e61289925c3d0cf323939b2e8f",
       "raw_unchanged": true,
@@ -2332,12 +2360,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2026-02-01_2026-02-28.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2026-02-01_2026-02-28.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2026-02-01_2026-02-28.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2026-02-01_2026-02-28.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-10-01_2025-10-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20251001_20251031.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172937459.csv",
       "input_sha256": "bcc38d5f8384083de3d74a3681111bb201c74a8dd9e6f120a52e6f6e205b37ac",
       "raw_unchanged": true,
@@ -2378,12 +2407,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-10-01_2025-10-31.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-10-01_2025-10-31.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-10-01_2025-10-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-10-01_2025-10-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_nextday2",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2026-03-01_2026-03-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_20260301_20260331.csv",
       "original_filename": "広域予備率連系線情報(翌々日)_20261008172938328.csv",
       "input_sha256": "9a5d5dd282c476a538c4509769c079431c05610a3cf722afd64d815a6d7e1a96",
       "raw_unchanged": true,
@@ -2429,12 +2459,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_nextday2/06_2026-03-01_2026-03-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead2_2026-03-01_2026-03-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead2_2026-03-01_2026-03-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead2/06_2026-03-01_2026-03-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-11-01_2025-11-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20251101_20251130.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172938673.csv",
       "input_sha256": "4ecd15baef4e0f79df8f12d2934f50761fc1482ecbeb5e7e3c89fc6d74068247",
       "raw_unchanged": true,
@@ -2475,7 +2506,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-11-01_2025-11-30.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-11-01_2025-11-30.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-11-01_2025-11-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-11-01_2025-11-30.csv"
     },
     {
       "source_id": "occto_generation",
@@ -2613,7 +2645,7 @@
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-12-01_2025-12-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20251201_20251231.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172939739.csv",
       "input_sha256": "dfaba62d2b674775130d845d933206bd96bdf7fae3e6373b968b39f9c5fedad3",
       "raw_unchanged": true,
@@ -2654,12 +2686,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2025-12-01_2025-12-31.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2025-12-01_2025-12-31.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2025-12-01_2025-12-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2025-12-01_2025-12-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-04-01_2025-04-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20250401_20250430.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172940200.csv",
       "input_sha256": "3152d571c95f59f212a92e0ae4c5113c9abbd52a9ac58d195c648ce141b24fba",
       "raw_unchanged": true,
@@ -2704,12 +2737,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-04-01_2025-04-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-04-01_2025-04-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-04-01_2025-04-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-04-01_2025-04-30.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2026-01-01_2026-01-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20260101_20260131.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172941010.csv",
       "input_sha256": "458d3a4fa234010c3cdac71d597d77abe267d7b1000901354013192b581c7a7e",
       "raw_unchanged": true,
@@ -2750,12 +2784,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2026-01-01_2026-01-31.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2026-01-01_2026-01-31.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2026-01-01_2026-01-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2026-01-01_2026-01-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2026-02-01_2026-02-28.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20260201_20260228.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172942164.csv",
       "input_sha256": "f33b8a7942b3879ae343f32979f1f88f1612c616e51f37e717d0434f250c4088",
       "raw_unchanged": true,
@@ -2796,12 +2831,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2026-02-01_2026-02-28.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2026-02-01_2026-02-28.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2026-02-01_2026-02-28.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2026-02-01_2026-02-28.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-05-01_2025-05-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20250501_20250531.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172942447.csv",
       "input_sha256": "031fcb8ffe990faf057c97315dd28bf5a68a0426b001bf5efda326c08da28e86",
       "raw_unchanged": true,
@@ -2846,12 +2882,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-05-01_2025-05-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-05-01_2025-05-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-05-01_2025-05-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-05-01_2025-05-31.csv"
     },
     {
       "source_id": "occto_reserve",
       "variant": "reserve_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2026-03-01_2026-03-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/occto_reserve_block_dayahead_actual_20260301_20260331.csv",
       "original_filename": "広域予備率ブロック情報(翌日・当日)_20261008172943239.csv",
       "input_sha256": "05f4fae038cb0bcae129a44ef7a04c6d8ae3c800b09433ce0d41f8d972ae413e",
       "raw_unchanged": true,
@@ -2892,7 +2929,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_latest/02_2026-03-01_2026-03-31.csv",
-      "output_filename": "occto_reserve_block_dayahead_actual_2026-03-01_2026-03-31.csv"
+      "output_filename": "occto_reserve_block_dayahead_actual_2026-03-01_2026-03-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_block/dayahead_actual/02_2026-03-01_2026-03-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -3030,7 +3068,7 @@
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-06-01_2025-06-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20250601_20250630.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172944385.csv",
       "input_sha256": "d683fe7964d23a5b6da0548e5f033a2f692bd4496ef96e8526438133ac0c464d",
       "raw_unchanged": true,
@@ -3075,12 +3113,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-06-01_2025-06-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-06-01_2025-06-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-06-01_2025-06-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-06-01_2025-06-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-07-01_2025-07-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20250701_20250731.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172946171.csv",
       "input_sha256": "c9c9c21670b0c530ad25df97c27275cbcc531897dde36de2752d292bd8ec2149",
       "raw_unchanged": true,
@@ -3125,12 +3164,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-07-01_2025-07-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-07-01_2025-07-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-07-01_2025-07-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-07-01_2025-07-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-08-01_2025-08-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20250801_20250831.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172948273.csv",
       "input_sha256": "134a95bda2d28f0849dd3cc8edf9c5371ceb3b0b0f0bef6e2dd0d340a0badb40",
       "raw_unchanged": true,
@@ -3175,7 +3215,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-08-01_2025-08-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-08-01_2025-08-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-08-01_2025-08-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-08-01_2025-08-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -3313,7 +3354,7 @@
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-09-01_2025-09-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20250901_20250930.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172950325.csv",
       "input_sha256": "87722064adebd946d9279c017acfab90c7e95b36fe246fce5462ae3b511e1642",
       "raw_unchanged": true,
@@ -3358,12 +3399,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-09-01_2025-09-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-09-01_2025-09-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-09-01_2025-09-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-09-01_2025-09-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-10-01_2025-10-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20251001_20251031.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172952350.csv",
       "input_sha256": "176190cd71802e5f323fa9d7804936d12dc20cf5465297fe81fab208e71b2e1c",
       "raw_unchanged": true,
@@ -3408,7 +3450,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-10-01_2025-10-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-10-01_2025-10-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-10-01_2025-10-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-10-01_2025-10-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -3546,7 +3589,7 @@
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-11-01_2025-11-30.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20251101_20251130.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172954177.csv",
       "input_sha256": "13cd4f93f1d76c31d54e25d6dda7f36137e0eaf92eda3ad0fa277bc9aa9838c5",
       "raw_unchanged": true,
@@ -3591,12 +3634,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-11-01_2025-11-30.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-11-01_2025-11-30.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-11-01_2025-11-30.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-11-01_2025-11-30.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-12-01_2025-12-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20251201_20251231.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172956178.csv",
       "input_sha256": "c83a2b003d097affa5027265f4c12aa46672155dd603b50d5b85521cd4c66e78",
       "raw_unchanged": true,
@@ -3641,7 +3685,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2025-12-01_2025-12-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-12-01_2025-12-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2025-12-01_2025-12-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-12-01_2025-12-31.csv"
     },
     {
       "source_id": "occto_generation",
@@ -3779,7 +3824,7 @@
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-01-01_2026-01-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20260101_20260131.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172957970.csv",
       "input_sha256": "997fd447c65fab788351b9c1c687b2fa8c81eae2dcd4310d46316b5ad8025006",
       "raw_unchanged": true,
@@ -3824,12 +3869,13 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2026-01-01_2026-01-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2026-01-01_2026-01-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2026-01-01_2026-01-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-01-01_2026-01-31.csv"
     },
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-02-01_2026-02-28.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20260201_20260228.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008172959744.csv",
       "input_sha256": "4a656a35888f7a86c76c34e3387ec9542a9a2a7d49af98dfbea86cce32f21e26",
       "raw_unchanged": true,
@@ -3874,7 +3920,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2026-02-01_2026-02-28.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2026-02-01_2026-02-28.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2026-02-01_2026-02-28.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-02-01_2026-02-28.csv"
     },
     {
       "source_id": "occto_generation",
@@ -4012,7 +4059,7 @@
     {
       "source_id": "occto_interconnector",
       "variant": "reserve_interconnector_latest",
-      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-03-01_2026-03-31.csv",
+      "input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayahead_actual_20260301_20260331.csv",
       "original_filename": "広域予備率連系線情報(翌日・当日)_20261008173001944.csv",
       "input_sha256": "ea47ace6c8edd033aae8dea5fa76df5551ccc9e3921103988aa473b3397e0553",
       "raw_unchanged": true,
@@ -4057,7 +4104,8 @@
       "wide_time_columns": [],
       "time_reference": "end",
       "previous_output_path": "/Users/goto/Documents/Uni/04_research_second/data/interim/time_normalization/20261014T232707/reserve_interconnector_latest/04_2026-03-01_2026-03-31.csv",
-      "output_filename": "occto_reserve_interconnector_dayahead_actual_2026-03-01_2026-03-31.csv"
+      "output_filename": "occto_reserve_interconnector_dayahead_actual_2026-03-01_2026-03-31.csv",
+      "original_input_path": "/Users/goto/Documents/Uni/04_research_second/data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-03-01_2026-03-31.csv"
     },
     {
       "source_id": "occto_demand",

@@ -223,7 +223,16 @@ def download_recipe(recipe, start, end):
         }
         url = RESERVE_BASE + "download/downloadCsv?" + urllib.parse.urlencode(fields)
         data, headers, final = fetch(url, referer=RESERVE_BASE + "download")
-        return data, headers, final, url, None, f"{recipe['type']}_{start}_{end}.csv"
+        prefixes = {
+            "05": "occto_reserve_block_dayahead2",
+            "02": "occto_reserve_block_dayahead_actual",
+            "06": "occto_reserve_interconnector_dayahead2",
+            "04": "occto_reserve_interconnector_dayahead_actual",
+        }
+        filename = (
+            f"{prefixes[recipe['type']]}_{start.replace('-', '')}_{end.replace('-', '')}.csv"
+        )
+        return data, headers, final, url, None, filename
     if adapter == "generation":
         opener = session()
         fetch(GEN_BASE + "disclaimer-agree", opener=opener)

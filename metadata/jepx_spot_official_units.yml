@@ -1,0 +1,12 @@
+verified_on: '2026-10-15'
+source_url: https://www.jepx.jp/electricpower/market-data/spot/
+source_title: JEPX スポット市場・市場情報
+source_document_date: null
+verification_level: official_web_verified
+price_heading: 約定価格(円/kWh)
+volume_heading: 入札・約定量(kWh)
+normalized_price_unit: JPY/kWh
+normalized_volume_unit: kWh
+source_headers_verified: true
+unit_conversion: なし。円のコード表記をJPYとするだけで数量・時間単位を変えない
+notes: 公表日表記なし。確認日を資料日付で代用しない。元年度CSVの各ヘッダーとも一致
