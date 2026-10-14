@@ -1,0 +1,11 @@
+source: occto_generation
+operator_column_present: false
+observed_identity_columns:
+- 発電所コード
+- エリア
+- 発電所名
+- ユニット名
+- 発電方式・燃種
+candidate_method: '後続Issue #8でplant/unit/area/有効期間を照合しHJKS運営名への候補を確認。今回はjoin未実施'
+mapping_status: manual_review
+dominant_classification: not_assigned
