@@ -18,7 +18,7 @@ sources:
     excluded_now:
     - 連系線潮流情報参照
     - 作業停止計画関連情報
-    manual_week2_note: 4月8〜14日の手動CSVは全行更新後と確認。dayahead2/updatedへ分離。策定版の正解データとして使わない
+    manual_week2_note: 4月8〜14日の手動CSVは全行更新後。ユーザー明示承認で比較版1件を完全削除。元名・SHA・承認を履歴保存
     annual_result:
       period_start: '2025-04-01'
       period_end: '2026-03-31'
@@ -65,3 +65,12 @@ sources:
       future_etl: 出典・該当期間・該当連系線を確認して推定値フラグを追加する。現段階で全連系線を推定値と扱わない
     note: OCCTOを一次情報とし、本ファイルは主分析の一次情報として使用しない。地域別・連系線別の追加分割収集は行わない
     original_local_path: data/raw/rei/rei_power_data_FY2025.csv
+  hjks_scope_review:
+    acquisition_status: 取得済み：ユニット台帳2版・停止イベント2版
+    completeness_axis: ユニット集合/検索条件、イベント集合/対象期間。365日×48コマを基準にしない
+    remaining_issue: ロードマップ#8
+    note: 対象範囲・版・時点解釈は未確認。欠損事象があると断定していない
+    manual_unit_scope: ユーザー確認：稼働終了ユニットを含む台帳
+    manual_outage_scope: ユーザー確認：FY2025に期間を絞った停止イベントCSV
+    outage_filter_date_column: null
+    cross_boundary_event_inclusion: null

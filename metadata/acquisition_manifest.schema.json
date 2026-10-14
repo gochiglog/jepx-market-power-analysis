@@ -48,7 +48,8 @@
       "enum": [
         "downloaded",
         "failed",
-        "imported"
+        "imported",
+        "deleted"
       ]
     },
     "local_path": {
@@ -227,6 +228,34 @@
           },
           "http_method": {
             "const": "FILE"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "deleted"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "deleted_at",
+          "deletion_reason",
+          "deletion_approval",
+          "previous_status"
+        ],
+        "properties": {
+          "local_path": {
+            "type": "string"
+          },
+          "file_size": {
+            "type": "integer"
+          },
+          "sha256": {
+            "type": "string"
           }
         }
       }

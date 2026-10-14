@@ -26,11 +26,21 @@ def audit(root):
     files = set()
     groups = defaultdict(list)
     failures = []
+    deletions = []
     warnings = []
     for record in records:
         validator.validate(record)
         if record["source_id"] not in ids:
             raise ValueError(f"manifestの不明なソース: {record['source_id']}")
+        if record["status"] == "deleted":
+            deletions.append(
+                {
+                    "local_path": record["local_path"],
+                    "sha256": record["sha256"],
+                    "deleted_at": record["deleted_at"],
+                }
+            )
+            continue
         if record["status"] == "failed":
             failures.append(
                 {
@@ -136,6 +146,7 @@ def audit(root):
         "sources": sources,
         "unresolved_failures": unresolved,
         "failed_attempt_count": len(failures),
+        "approved_deletions": deletions,
         "value_completeness_validation": (
             "未実施。対象日収録はエリア・ユニット・値の完全性を保証しない"
         ),
