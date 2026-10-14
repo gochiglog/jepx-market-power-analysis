@@ -24,7 +24,10 @@ tasks:
   branch: issue/feature-10
 - roadmap_id: 7
   title: Price sensitivity ETL
-  github_issue_number: null
+  github_issue_number: 13
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/13
+  branch: issue/feature-13
+  status: stopped_pending_research_decision
 - roadmap_id: 8
   title: Generation + HJKS ETL
   github_issue_number: null
@@ -58,3 +61,7 @@ pull_requests:
   roadmap_id: 4
 - github_pr: 9
   roadmap_id: 5
+- github_pr: 11
+  roadmap_id: 3
+- github_pr: 12
+  roadmap_id: 6
