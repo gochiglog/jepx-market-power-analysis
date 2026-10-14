@@ -25,10 +25,27 @@ def confined(root, name, target=False):
     return path
 
 
+def relocated_path(root, name):
+    history = {
+        r["original_path"]: r["local_path"]
+        for r in read_manifest(root / "metadata/raw_relocation_manifest.jsonl")
+    }
+    seen = set()
+    while name in history:
+        if name in seen:
+            raise ValueError("移動履歴の循環")
+        seen.add(name)
+        name = history[name]
+    return name
+
+
 def reorganize(root, inventory, execute=False):
     root = Path(root)
     records = read_manifest(root / "metadata/acquisition_manifest.jsonl")
-    jobs = [r for r in inventory["files"] if r.get("recommended_path")]
+    jobs = [dict(r) for r in inventory["files"] if r.get("recommended_path")]
+    for r in jobs:
+        if not confined(root, r["current_path"]).exists():
+            r["recommended_path"] = relocated_path(root, r["recommended_path"])
     targets = set()
     # 1件でも不整合があれば移動前に停止する。再実行は移動済みSHAで判定する。
     for r in jobs:

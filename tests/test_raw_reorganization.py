@@ -72,3 +72,22 @@ def test_target_outside_raw_is_rejected(tmp_path):
     inventory["files"][0]["recommended_path"] = "../outside.csv"
     with pytest.raises(ValueError, match="保存領域外"):
         reorganize(tmp_path, inventory, True)
+
+
+def test_resume_follows_later_version_correction(tmp_path):
+    inventory = setup_inventory(tmp_path)
+    reorganize(tmp_path, inventory, True)
+    correction = {
+        "files": [
+            dict(
+                inventory["files"][0],
+                current_path="data/raw/source/file.csv",
+                recommended_path="data/raw/updated/file.csv",
+            )
+        ]
+    }
+    reorganize(tmp_path, correction, True)
+    reorganize(tmp_path, inventory, True)
+    assert (tmp_path / "data/raw/updated/file.csv").read_bytes() == b"original bytes"
+    assert not (tmp_path / "data/raw/source/file.csv").exists()
+    assert len((tmp_path / "metadata/raw_relocation_manifest.jsonl").read_text().splitlines()) == 2

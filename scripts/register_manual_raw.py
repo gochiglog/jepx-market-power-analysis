@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.reorganize_raw import relocated_path  # noqa: E402
 from src.raw_acquisition import (  # noqa: E402
     append_manifest,
     detect_encoding,
@@ -35,6 +36,8 @@ def register(root, inventory):
     count = 0
     for item in inventory["files"]:
         name = item.get("recommended_path")
+        if name:
+            name = relocated_path(root, name)
         if not name or name in known:
             continue
         path = (root / name).resolve()

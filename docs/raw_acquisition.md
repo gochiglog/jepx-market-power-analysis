@@ -95,8 +95,8 @@ uv run python scripts/register_manual_raw.py --inventory reports/raw_inventory_2
 `metadata/raw_relocation_manifest.jsonl` に記録します。
 手動分は `status=imported`、不明なURL・取得日時はnull、登録日時は別欄です。
 取得記録の `downloaded` と手動登録を区別します。`.DS_Store`は未登録のまま保持します。
-第2週は本文の版確認後に追加移動したため、再実行には
-`metadata/raw_relocation_correction_20261014.json` の対応も必要です。
-再実行で古い対応へ戻さず、現在のmanifest・移動履歴を先に確認してください。
+第2週は本文の版確認後に追加移動しています。再実行時は移動履歴をたどり、
+更新後の保存先を確認してスキップします。古い対応先へ戻しません。
+追加確認の根拠は `metadata/raw_relocation_correction_20261014.json` に保存しています。
 
 最新の作業結果は [整理・空容量年間取得](../reports/issue_4_reorganization_and_capacity_20261014.md) を参照してください。

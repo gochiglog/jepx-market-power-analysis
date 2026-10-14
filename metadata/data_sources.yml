@@ -470,7 +470,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: one_week_verified_annual_acquisition_pending
+  coverage_status: FY2025_all_dates_48_periods_directions_raw_keys_audited
   usage: baseline_input
   variables:
   - operating_capacity
@@ -485,14 +485,15 @@ sources:
   acquisition:
     method: '公開CF01S010C: 空容量翌々日・策定・全連系線。7日ずつ通常CSV保存をHTTPで再現'
     manifest_path: metadata/acquisition_manifest.jsonl
-    bulk_status: snapshot_only
+    bulk_status: downloaded_fy2025
     sample_variants:
     - system_capacity_dayahead2_planned
     format_notes:
     - CSV, CP932/Shift_JIS候補, BOMなし, 19列。HTTP文字コード宣言は採用せず実バイトを検査
     known_limitations:
-    - 1週間は手動CSVと元バイト列完全一致。年間取得結果は後で更新
+    - 53ファイル・365日・388896行。欠損日・年間キー重複0。各日×連系線×方向の48コマを監査済み
     - 広域予備率連系線情報とは別ソース。潮流実績と停止計画は収集対象外
+    - 対象日2026-03-14から中部フェンス・関西フェンスが追加。11→13区間。固定構成へ補完しない
 - source_id: rei_power_data
   name: 自然エネルギー財団power-data（補助・検算）
   reference_url: https://www.renewable-ei.org/
