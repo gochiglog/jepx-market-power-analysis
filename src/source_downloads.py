@@ -83,6 +83,25 @@ RECIPES = {
 }
 
 
+SAVE_DIRECTORIES = {
+    "spot": "jepx/spot",
+    "sensitivity": "jepx/price_sensitivity",
+    "sensitivity_diff": "jepx/price_sensitivity",
+    "generation": "occto/generation",
+    "demand": "occto/system_demand",
+    "unit": "hjks/units",
+    "outage": "hjks/outages",
+    "reserve_nextday2": "occto/reserve_block/dayahead2",
+    "reserve_latest": "occto/reserve_block/dayahead_actual",
+    "reserve_interconnector_nextday2": "occto/reserve_interconnector/dayahead2",
+    "reserve_interconnector_latest": "occto/reserve_interconnector/dayahead_actual",
+    "regulatory": "egc/regulatory/unverified",
+    "high_price": "egc/high_price",
+}
+for _variant, _directory in SAVE_DIRECTORIES.items():
+    RECIPES[_variant]["save_directory"] = _directory
+
+
 def download_system_demand(start, end):
     """公開セッションでCSV保存の確認→OK→ダウンロードを通常どおり行う。"""
     opener = session()

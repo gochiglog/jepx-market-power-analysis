@@ -12,6 +12,7 @@ SOURCE_IDS = {
     "jepx_spot", "jepx_price_sensitivity", "occto_generation", "hjks_unit",
     "hjks_outage", "occto_demand", "occto_reserve", "occto_interconnector",
     "regulatory_entities", "high_price_validation",
+    "occto_system_interconnector_capacity", "rei_power_data",
 }
 UNITS = {"TODO", "not_applicable", "kW", "MW", "kWh", "MWh", "JPY/kWh", "%", "ratio"}
 

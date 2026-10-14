@@ -1,0 +1,50 @@
+{
+  "manual_path": "data/raw/occto/system_interconnector_capacity/dayahead2/planned/occto_interconnector_capacity_dayahead2_planned_20250408_20250414.csv",
+  "auto_response_path": "/tmp/occto-capacity-week2-response.csv",
+  "row_count_manual": 7392,
+  "row_count_auto": 7392,
+  "columns_equal": true,
+  "differences_by_column": {
+    "対象断面": 0,
+    "策定日": 0,
+    "策定／更新後": 7392,
+    "連系線": 0,
+    "年月日": 0,
+    "時刻": 0,
+    "方向": 0,
+    "空容量": 39,
+    "計画潮流": 0,
+    "広域調整枠": 0,
+    "マージン": 0,
+    "運用容量": 39,
+    "運用容量決定要因": 26,
+    "運用容量拡大分空容量": 0,
+    "運用容量拡大分計画潮流": 0,
+    "運用容量拡大分運用容量": 0,
+    "送電ＮＧ情報件数": 0,
+    "送電ＮＧ情報延べ容量": 0,
+    "最新更新年月日時刻": 2992
+  },
+  "examples": [
+    {
+      "策定／更新後": [
+        "更新後",
+        "策定"
+      ]
+    },
+    {
+      "策定／更新後": [
+        "更新後",
+        "策定"
+      ]
+    },
+    {
+      "策定／更新後": [
+        "更新後",
+        "策定"
+      ]
+    }
+  ],
+  "sha256_manual": "03557adc981ffce27dfc025f8f2626dc10cd10c18a0a24727a53cd2519f6ace9",
+  "sha256_auto": "1cf250d9f5309a2e69cf8be64ad498b82b33e887755a2800a0fb312d0adfdb58"
+}

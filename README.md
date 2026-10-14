@@ -46,7 +46,8 @@ commit/pushは明示的な指示がある場合のみ行います。
 ## 検証範囲
 
 Issue #4の[生データ収集手順](docs/raw_acquisition.md)と
-[取得結果・未取得範囲](reports/issue_4_acquisition.md)を追加しました。
+[初回取得結果・未取得範囲](reports/issue_4_acquisition.md)、
+[raw整理・連系線空容量](reports/issue_4_reorganization_and_capacity_20261014.md)を記録しています。
 元データは `data/raw/` に保存し、Gitへcommitしません。
 需要実績は元粒度が1時間で、30分パネルへの扱いは研究判断が必要です。
 

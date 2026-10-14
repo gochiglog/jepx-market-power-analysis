@@ -28,7 +28,10 @@
       "minLength": 1
     },
     "source_url": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri"
     },
     "variant": {
@@ -44,7 +47,8 @@
     "status": {
       "enum": [
         "downloaded",
-        "failed"
+        "failed",
+        "imported"
       ]
     },
     "local_path": {
@@ -127,7 +131,8 @@
     "http_method": {
       "enum": [
         "GET",
-        "POST"
+        "POST",
+        "FILE"
       ]
     }
   },
@@ -158,6 +163,10 @@
           },
           "downloaded_at": {
             "type": "string"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
           }
         }
       }
@@ -183,6 +192,41 @@
           },
           "downloaded_at": {
             "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "imported"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "inspection",
+          "original_filename",
+          "http_method",
+          "registered_at",
+          "original_local_path"
+        ],
+        "properties": {
+          "local_path": {
+            "type": "string"
+          },
+          "file_size": {
+            "type": "integer"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "downloaded_at": {
+            "type": "null"
+          },
+          "http_method": {
+            "const": "FILE"
           }
         }
       }

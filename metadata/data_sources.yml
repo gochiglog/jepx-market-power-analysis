@@ -327,8 +327,8 @@ sources:
     - 対象日365日を確認。全コマ×全エリアの値や***等の欠損は未監査
     - 本取得だけで翌日初回版と当日各更新版の全履歴が揃うとは扱わない
 - source_id: occto_interconnector
-  name: OCCTO連系線
-  reference_url: https://www.occto.or.jp/institution/keitoujouhou/
+  name: OCCTO広域予備率Web公表・連系線情報
+  reference_url: https://web-kohyo.occto.or.jp/kks-web-public/download
   reference_status: file_verified
   grain: 対象時刻×連系線×方向×計画段階×公表版
   primary_key_candidate:
@@ -454,3 +454,74 @@ sources:
     - サンプルPDF取得はHTTP 403。形式・文字コード・対象日一覧を未確認
     - 高価格日のみの検証用資料であり、非公表日を日次データ欠損と解釈しない
     - FY2025対象の公表PDF全体は未収集
+- source_id: occto_system_interconnector_capacity
+  name: OCCTO系統情報サービス・連系線空容量
+  reference_url: https://occtonet3.occto.or.jp/public/dfw/RP11/OCCTO/SD/LOGIN_login
+  reference_status: file_verified
+  grain: 対象日×30分時刻×連系線×方向×翌々日策定版
+  primary_key_candidate:
+  - target_timestamp
+  - interconnector_key
+  - direction
+  - forecast_stage
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: ex_ante
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: one_week_verified_annual_acquisition_pending
+  usage: baseline_input
+  variables:
+  - operating_capacity
+  - margin
+  - planned_flow
+  - available_capacity
+  - interconnector_key
+  - direction
+  todos:
+  - 年度内の連系線名・制度変更を元列で保持。固定11区間とは仮定しない
+  - 元単位の出典と欠損表記を後続ETLで確認
+  acquisition:
+    method: '公開CF01S010C: 空容量翌々日・策定・全連系線。7日ずつ通常CSV保存をHTTPで再現'
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: snapshot_only
+    sample_variants:
+    - system_capacity_dayahead2_planned
+    format_notes:
+    - CSV, CP932/Shift_JIS候補, BOMなし, 19列。HTTP文字コード宣言は採用せず実バイトを検査
+    known_limitations:
+    - 1週間は手動CSVと元バイト列完全一致。年間取得結果は後で更新
+    - 広域予備率連系線情報とは別ソース。潮流実績と停止計画は収集対象外
+- source_id: rei_power_data
+  name: 自然エネルギー財団power-data（補助・検算）
+  reference_url: https://www.renewable-ei.org/
+  reference_status: file_verified
+  grain: 対象日×30分時刻×複合2段ヘッダー212列
+  primary_key_candidate:
+  - delivery_date
+  - period
+  - source_snapshot_id
+  key_status: candidate_unverified
+  information_timing: mixed
+  intended_period:
+    start: '2025-04-01'
+    end: '2026-03-31'
+  coverage_status: manual_file_FY2025_dates_observed
+  usage: validation_only
+  variables:
+  - power_data_bundle
+  todos:
+  - 手動取得のURL・取得日時が不明。配布元URLは入口のみ
+  - 2026-03-12以降の中部・北陸・関西間の一部潮流推定値。対象列対応と注記出典は未確認
+  acquisition:
+    method: 手動収集済み統合CSV1ファイルを保持。地域/連系線別へ追加分割しない
+    manifest_path: metadata/acquisition_manifest.jsonl
+    bulk_status: snapshot_only
+    sample_variants:
+    - manual_rei_power_data
+    format_notes:
+    - UTF-8 BOM, 2段ヘッダー, 212列, 17520行
+    known_limitations:
+    - OCCTOを一次情報とする。REIは補助・検算用
+    - 2026-03-12以降の一部連系線推定値に後のETLでフラグを付ける。対象列の確定前に一律推定扱いしない

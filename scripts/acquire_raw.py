@@ -119,6 +119,7 @@ def acquire(root, variant, phase):
                 ),
                 phase=phase,
                 variant=variant,
+                save_directory=recipe.get("save_directory"),
             )
             records.append(record)
             missing_count = len(record["missing_dates"]) if "missing_dates" in record else "未評価"

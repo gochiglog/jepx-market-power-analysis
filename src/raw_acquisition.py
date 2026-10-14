@@ -352,6 +352,9 @@ def record_download(
     notes="",
     phase="sample",
     variant="default",
+    save_directory=None,
+    inspection_extra=None,
+    manual_comparison=None,
 ):
     root = Path(root)
     # 保存前にHTML/空/不正形式を排除。拡張子やHTTP宣言だけでは成功扱いしない。
@@ -359,7 +362,8 @@ def record_download(
     inspection = inspect_bytes(
         data, filename, lower_headers.get("content-type"), date_column, period_column
     )
-    path = root / "data" / "raw" / source_id / filename
+    inspection.update(inspection_extra or {})
+    path = root / "data" / "raw" / (save_directory or source_id) / filename
     if Path(filename).name != filename or filename in {"", ".", ".."}:
         raise ValueError("不正な保存ファイル名")
     if not re.fullmatch(r"[a-z][a-z0-9_]+", source_id):
@@ -400,5 +404,7 @@ def record_download(
         observed = set(inspection["observed_dates"])
         record["missing_dates"] = sorted(set(expected) - observed)
         record["unexpected_dates"] = sorted(observed - set(expected))
+    if manual_comparison is not None:
+        record["manual_comparison"] = manual_comparison
     append_manifest(root / "metadata" / "acquisition_manifest.jsonl", record)
     return record

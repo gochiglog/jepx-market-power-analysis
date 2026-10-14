@@ -35,7 +35,7 @@ full実行でも再取得しません。その他の時系列ファイルは1日
 
 ## 保存・manifest
 
-新規取得は `data/raw/<source_id>/` に保存します。元バイト列を復号・再エンコードせず、
+新規取得は整理済みの `data/raw/jepx/`、`occto/`、`hjks/`、`egc/` 以下へ種類別に保存します。元バイト列を復号・再エンコードせず、
 manifestにHTTP URL/最終URL、HTTP method、取得条件、元ファイル名、取得日時（Asia/Tokyo）、
 実際の対象日範囲、要求期間、サイズ、SHA256、成功/失敗、形式検査結果を記録します。
 公表日時と取得日時は同じものとして扱いません。CSRF・セッショントークンはmanifestに入れません。
@@ -60,3 +60,43 @@ JEPXは元の日付×時刻コードについて1〜48・重複・各日の48コ
 収録日が365日でも、全ユニット・エリア・コマの値が揃うことを保証しません。
 単位換算・long化・join・有効期間展開の検証は該当ETLの実装で行います。
 今回の取得結果・欠損・未取得範囲・研究判断は [収集結果](../reports/issue_4_acquisition.md) を参照してください。
+
+
+## 系統情報サービスの連系線空容量
+
+広域予備率連系線情報とは別ソースです。翌々日・策定・全連系線・両方向だけを取得します。
+公開HTTPで通常のCSV保存操作を再現し、手動初週と元バイト列が一致した場合のみ年間取得します。
+
+```sh
+uv run python scripts/acquire_capacity.py --phase sample
+uv run python scripts/acquire_capacity.py --phase full
+uv run python scripts/audit_capacity.py --output reports/capacity_fy2025_audit.json
+```
+
+7日区間52件＋最終1日の計53件を、
+`data/raw/occto/system_interconnector_capacity/dayahead2/planned/` に保存します。
+手動原本と自動取得版は別名で保持します。同じ版・同じ期間の手動ファイルがあれば比較し、
+一致しなければ取得を停止します。元列が「更新後」の手動第2週は `dayahead2/updated/` に分け、
+策定版の正解データとして使用しません。方向は返却CSVで両方向を検証します。
+連系線構成は日ごとに記録し、固定11区間とは仮定しません。潮流実績・作業停止計画は取得しません。
+
+## 承認済みraw整理と手動登録
+
+```sh
+# 読み取り事前検査。実行はユーザー承認がある対応表だけ。
+uv run python scripts/reorganize_raw.py --inventory reports/raw_inventory_20261014.json
+# 2026-10-14に承認済み・実行済み。履歴はraw_relocation_manifest参照。
+uv run python scripts/reorganize_raw.py --inventory reports/raw_inventory_20261014.json --execute
+uv run python scripts/register_manual_raw.py --inventory reports/raw_inventory_20261014.json
+```
+
+移動前のSHA256・衝突を全件検査し、排他的hard link作成後に元名を外して移動します。
+元バイト列は変えません。元名・元パス・移動先・日時・SHAを
+`metadata/raw_relocation_manifest.jsonl` に記録します。
+手動分は `status=imported`、不明なURL・取得日時はnull、登録日時は別欄です。
+取得記録の `downloaded` と手動登録を区別します。`.DS_Store`は未登録のまま保持します。
+第2週は本文の版確認後に追加移動したため、再実行には
+`metadata/raw_relocation_correction_20261014.json` の対応も必要です。
+再実行で古い対応へ戻さず、現在のmanifest・移動履歴を先に確認してください。
+
+最新の作業結果は [整理・空容量年間取得](../reports/issue_4_reorganization_and_capacity_20261014.md) を参照してください。

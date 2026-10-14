@@ -15,7 +15,7 @@ def metadata():
 
 def test_catalog_and_dictionary_are_consistent(metadata):
     report = validate_metadata(*metadata)
-    assert report["ソース数"] == 10
+    assert report["ソース数"] == 12
     assert report["未確定事項"]
     assert report["実データ検証"] == "未実施"
 

@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-10-14T21:51:22+09:00",
+  "manual_path": "data/raw/occto_interconnector_capacity_dayahead2_planned_20250401_20250407.csv",
+  "auto_path": "/tmp/occto-capacity-week-auto.csv",
+  "period_start": "2025-04-01",
+  "period_end": "2025-04-07",
+  "manual_rows": 7392,
+  "auto_rows": 7392,
+  "column_count": 19,
+  "columns_equal": true,
+  "all_cells_equal_in_original_order": true,
+  "byte_identical": true,
+  "manual_sha256": "ed112698d19e6c265c476e2f831f679830988fdb26e413efb95efe289892b3a4",
+  "auto_sha256": "ed112698d19e6c265c476e2f831f679830988fdb26e413efb95efe289892b3a4",
+  "manual_encoding": {
+    "encoding": "ambiguous",
+    "bom": null,
+    "encoding_candidates": [
+      "cp932",
+      "shift_jis"
+    ],
+    "encoding_evidence": "候補の全バイト列を厳密復号",
+    "inspection_decoder": "cp932"
+  },
+  "auto_encoding": {
+    "encoding": "ambiguous",
+    "bom": null,
+    "encoding_candidates": [
+      "cp932",
+      "shift_jis"
+    ],
+    "encoding_evidence": "候補の全バイト列を厳密復号",
+    "inspection_decoder": "cp932"
+  },
+  "interconnectors": [
+    "三重東近江線",
+    "北海道・本州間電力連系設備",
+    "北陸フェンス",
+    "南福光連系所・南福光変電所の連系設備",
+    "周波数変換設備",
+    "本四連系線",
+    "相馬双葉幹線",
+    "西播東岡山線・山崎智頭線",
+    "越前嶺南線",
+    "関門連系線",
+    "阿南紀北直流幹線"
+  ],
+  "directions": [
+    "逆方向",
+    "順方向"
+  ],
+  "sections": [
+    "翌々日"
+  ],
+  "versions": [
+    "策定"
+  ],
+  "per_date_line_direction_row_counts": [
+    48
+  ],
+  "all_groups_have_48_distinct_30min_labels": true,
+  "duplicate_rows": 0,
+  "numeric_comparison": "元バイト列・全セル一致により全数値列も同一。単位変換なし。",
+  "http": {
+    "url": "https://occtonet3.occto.or.jp/public/dfw/RP11/OCCTO/SD/CF01S010C",
+    "final_url": "https://occtonet3.occto.or.jp/public/dfw/RP11/OCCTO/SD/CF01S010C",
+    "headers": {
+      "Date": "Wed, 14 Oct 2026 12:50:52 GMT",
+      "Content-Disposition": "attachment;filename=20261014215050453_%E9%80%A3%E7%B3%BB%E7%B7%9A%E7%A9%BA%E5%AE%B9%E9%87%8F%E7%BF%8C%E3%80%85%E6%97%A5.csv",
+      "Content-Length": "880774",
+      "Content-Type": "application/octet?stream;charset=UTF-8"
+    },
+    "parameters": {
+      "tabSntk": "0",
+      "dvlSlashLblUpdaf": "1",
+      "rklNngpTo": "2025/04/07",
+      "rkl1": "01",
+      "rkl2": "02",
+      "allTgtRklSectDwld": "Y",
+      "rkl4": "04",
+      "rkl3": "03",
+      "rkl6": "06",
+      "rkl5": "05",
+      "rkl8": "08",
+      "rkl7": "07",
+      "rkl9": "09",
+      "rkl11": "11",
+      "rklDataKnd": "05",
+      "rkl10": "10",
+      "rkl15": "15",
+      "rkl14": "14",
+      "rkl13": "13",
+      "rkl12": "12",
+      "rklNngpFrom": "2025/04/01"
+    }
+  },
+  "file_size": 880774,
+  "source_url": "https://occtonet3.occto.or.jp/public/dfw/RP11/OCCTO/SD/CF01S010C",
+  "downloaded_at": "2026-10-14T21:50:53.697655+09:00",
+  "downloaded_at_evidence": "試験CSVの新規保存時刻。公式公表日時とは区別",
+  "original_filename": "20261014215050453_%E9%80%A3%E7%B3%BB%E7%B7%9A%E7%A9%BA%E5%AE%B9%E9%87%8F%E7%BF%8C%E3%80%85%E6%97%A5.csv"
+}

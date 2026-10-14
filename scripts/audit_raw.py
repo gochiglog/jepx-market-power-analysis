@@ -32,7 +32,14 @@ def audit(root):
         if record["source_id"] not in ids:
             raise ValueError(f"manifestの不明なソース: {record['source_id']}")
         if record["status"] == "failed":
-            failures.append({"variant": record["variant"], "notes": record["notes"]})
+            failures.append(
+                {
+                    "variant": record["variant"],
+                    "notes": record["notes"],
+                    "requested_period_start": record.get("requested_period_start"),
+                    "requested_period_end": record.get("requested_period_end"),
+                }
+            )
             continue
         path = (root / record["local_path"]).resolve()
         if not path.is_relative_to(root.resolve() / "data/raw"):
@@ -94,7 +101,17 @@ def audit(root):
             else "unverified_snapshot",
             "formats": unique_formats,
         }
-    unresolved = [f for f in failures if f["variant"] not in groups]
+    unresolved = [
+        f
+        for f in failures
+        if not any(
+            r["status"] == "downloaded"
+            and r["variant"] == f["variant"]
+            and r.get("requested_period_start") == f["requested_period_start"]
+            and r.get("requested_period_end") == f["requested_period_end"]
+            for r in records
+        )
+    ]
     sources = {}
     for source in catalog["sources"]:
         sid = source["source_id"]
@@ -108,7 +125,9 @@ def audit(root):
         "audited_at": now(),
         "baseline_start": FY_START.isoformat(),
         "baseline_end": FY_END.isoformat(),
-        "downloaded_file_count": len(files),
+        "registered_file_count": len(files),
+        "downloaded_file_count": sum(r["status"] == "downloaded" for r in records),
+        "imported_file_count": sum(r["status"] == "imported" for r in records),
         "downloaded_bytes": sum(r["file_size"] for r in records if r["status"] == "downloaded"),
         "hash_validation": "all_passed",
         "unregistered_raw_paths": unregistered,
