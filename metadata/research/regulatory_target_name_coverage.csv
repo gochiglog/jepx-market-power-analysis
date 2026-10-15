@@ -1,0 +1,12 @@
+regulatory_entity,market_area,matching_operator_raw,name_match_confidence,matched_by_name_and_area,regulatory_flag_assigned
+北海道電力株式会社,北海道,北海道電力株式会社,exact,True,False
+東北電力株式会社,東北,東北電力株式会社,exact,True,False
+東京電力エナジーパートナー株式会社,東京,,,False,False
+株式会社JERA,東京,株式会社JERA,exact,True,False
+株式会社JERA,中部,株式会社JERA,exact,True,False
+中部電力ミライズ株式会社,中部,,,False,False
+北陸電力株式会社,北陸,北陸電力株式会社,exact,True,False
+関西電力株式会社,関西,関西電力株式会社,exact,True,False
+中国電力株式会社,中国,中国電力株式会社,exact,True,False
+四国電力株式会社,四国,四国電力(株),normalized_exact,True,False
+九州電力株式会社,九州,九州電力株式会社,exact,True,False
