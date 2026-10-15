@@ -1,0 +1,16 @@
+{
+  "phase_a": "complete_user_approved",
+  "regulatory_entities": 10,
+  "regulatory_entity_area_pairs": 11,
+  "phase_b": "pending_generation_hjks_etl",
+  "asset_snapshot_rows": 1206,
+  "mapping_status_counts": {
+    "unresolved": 379,
+    "manual_review": 827
+  },
+  "unresolved_asset_mapping_rows": 1206,
+  "unique_observed_asset_keys": 677,
+  "snapshot_copies_merged": false,
+  "dominant_asset_flag_assigned": false,
+  "fringe_flag_assigned": false
+}

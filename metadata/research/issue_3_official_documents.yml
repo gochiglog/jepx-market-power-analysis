@@ -1,0 +1,87 @@
+review_date: '2026-10-14'
+scope: 調査・候補のみ。dominant_flag付与なし
+documents:
+- document_id: spot_20241015_002_04
+  title: スポット市場への限界費用価格での供出が求められる対象事業者の考え方
+  published_date: '2024-10-15'
+  official_url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/002_04_00.pdf
+  role: 当初判定・2024-11〜2025-10の根拠
+  market: JEPXスポット
+  applicable_from: '2024-11-01'
+  applicable_to: '2025-10-31'
+  evidence: 公式PDF検索抽出。原本HTTP 403
+  verification_status: official_search_verified
+  raw_pdf_saved: false
+  published_date_note: 表紙/会合配布日。公開時刻は未確認
+  review_required_before_classification: true
+- document_id: spot_20250130_005_09
+  title: スポット市場への限界費用価格での供出が求められる対象事業者の考え方
+  published_date: '2025-01-30'
+  official_url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/005_09_00.pdf
+  role: 本則/経過措置の基準見直し案。案を施行済みと扱わない
+  market: JEPXスポット
+  applicable_from: null
+  applicable_to: null
+  evidence: 公式PDF検索抽出。原本HTTP 403
+  verification_status: official_search_verified
+  raw_pdf_saved: false
+  published_date_note: 表紙/会合配布日。公開時刻は未確認
+  review_required_before_classification: true
+- document_id: spot_20250425_008_08
+  title: スポット市場に対して限界費用価格での供出が求められる事業者の考え方
+  published_date: '2025-04-25'
+  official_url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/008_08_00.pdf
+  role: p26に旧対象事業者・市場エリア一覧。第2回資料4を再掲
+  market: JEPXスポット
+  applicable_from: '2024-11-01'
+  applicable_to: '2025-10-31'
+  evidence: 公式PDF検索抽出の表紙・p26。配布ページの最終更新日表記に不整合があり表紙日付を記録
+  verification_status: official_search_verified
+  raw_pdf_saved: false
+  published_date_note: 表紙/会合配布日。公開時刻は未確認
+  review_required_before_classification: true
+- document_id: spot_20250512_568_03
+  title: 「適正な電力取引についての指針」の改定の建議について
+  published_date: '2025-05-12'
+  official_url: https://www.egc.meti.go.jp/activity/emsc/pdf/568_03_00.pdf
+  role: p5で旧対象事業者の条件付き継続案。実施済みの延長根拠として単独採用しない
+  market: JEPXスポット
+  applicable_from: null
+  applicable_to: null
+  evidence: 公式PDF検索抽出。改定・施行日と議決の確認は残件
+  verification_status: official_search_verified
+  raw_pdf_saved: false
+  published_date_note: 表紙/会合配布日。公開時刻は未確認
+  review_required_before_classification: true
+- document_id: spot_20260330_019_08
+  title: スポット市場への限界費用価格での供出が特に強く求められる対象事業者について
+  published_date: '2026-03-30'
+  official_url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/019_08_00.pdf
+  distribution_page: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/019_haifu.html
+  role: p6の「現在の対象事業者」列が2024-11-01〜2026-03-31を明示。FY2026の新判定列とは区別
+  market: JEPXスポット
+  applicable_from: '2024-11-01'
+  applicable_to: '2026-03-31'
+  next_period_from: '2026-04-01'
+  next_period_to: '2027-03-31'
+  evidence: 公式PDF検索抽出p6と公式配布ページ。PDF本体取得は403。FY終了直前の資料で過去期間を確認
+  verification_status: official_search_verified
+  raw_pdf_saved: false
+  published_date_note: 表紙/会合配布日。公開時刻は未確認
+  review_required_before_classification: true
+  latest_download_attempt:
+    attempted_at: '2026-10-14T23:03:46+09:00'
+    user_authorized: true
+    result: HTTP 403
+    raw_saved: false
+    transport: 通常HTTPS/curl
+excluded_local_pdf:
+  path: data/raw/egc/regulatory/unverified/egc_dominant_firms_FY2025.pdf
+  market: 需給調整市場
+  baseline_use: false
+decision_basis_summary: 旧本則は北海道/東日本/西日本/九州の市場画定におけるシェア20%超またはPSI、経過措置は分断を考慮した容量50%超等。ここで再計算せず委員会の確定一覧を参照。2025年見直し案と2026年施行基準をFY2025へ遡及しない。
+remaining:
+- 対象PDF原本・議事録で採択と延長の法的経緯を確認
+- FY2025当時に公表されていた資料と2026-03の過去期間確認を区別
+- 法人・運営会社・契約に基づく供給力の対応を確認
+confidence_policy: 2026-10-14ユーザー指示でexact/normalized_exact/manual_verified/manual_review/unresolvedの5区分を採用。文字列一致と規制帰属を分離
