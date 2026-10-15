@@ -1,0 +1,141 @@
+checked_on: '2026-10-16'
+github_issue: 15
+data_design: unit保持・必要に応じplantへ集約可能な二層構造
+analysis_baseline_selected: false
+reviewed_by: Codex：公式公開資料・PDF物理p2設備表の読取
+direct_crosswalk_verified: false
+confirmed_count: 0
+strongly_supported_source_unit_count: 49
+final_mapping_applied: false
+capacity_period_applied: false
+outage_expanded: false
+records:
+- generation_plant_code: GB583
+  hjks_candidate_codes:
+  - '34028'
+  - '34029'
+  - '34030'
+  - '34031'
+  - '34032'
+  - '34033'
+  - '34034'
+  - '34035'
+  - '34036'
+  - '34037'
+  - '34038'
+  - '34039'
+  - '34040'
+  - '34041'
+  - '34042'
+  - '34043'
+  - '34044'
+  - '34045'
+  - '34046'
+  - '34047'
+  - '34048'
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_富津
+  operator_reference_id: jera_futtsu_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GB573
+  hjks_candidate_codes:
+  - '34049'
+  - '34050'
+  - '34051'
+  - '34052'
+  - '34053'
+  - '34054'
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_川崎
+  operator_reference_id: jera_kawasaki_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GB593
+  hjks_candidate_codes:
+  - '34001'
+  - '34002'
+  - '34003'
+  - '34004'
+  - '34005'
+  - '34006'
+  - '34007'
+  - '34008'
+  - '34009'
+  - '34010'
+  - '34011'
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_千葉
+  operator_reference_id: jera_chiba_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GB4Q3
+  hjks_candidate_codes:
+  - 328RU
+  - 328RV
+  - 328Z0
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_姉崎
+  operator_reference_id: jera_anegasaki_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GB553
+  hjks_candidate_codes:
+  - '34091'
+  - '34092'
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_常陸那珂
+  operator_reference_id: jera_hitachinaka_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GAZT3
+  hjks_candidate_codes:
+  - 330UQ
+  - 331D8
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_五井
+  operator_reference_id: jera_goi_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: '48193'
+  hjks_candidate_codes:
+  - '42393'
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_西名古屋
+  operator_reference_id: jera_nishinagoya_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GC5F3
+  hjks_candidate_codes:
+  - 331RJ
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_五井
+  operator_reference_id: jera_goi_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GV943
+  hjks_candidate_codes:
+  - 327YK
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_常陸那珂共同
+  operator_reference_id: jera_hitachinaka-kyodo
+  source_page: 基本情報
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない
+- generation_plant_code: GAWA3
+  hjks_candidate_codes:
+  - 328XX
+  verification_status: strongly_supported
+  hjks_reference_id: hjks_name_横須賀
+  operator_reference_id: jera_yokosuka_pamphlet_0
+  source_page: 物理p2：設備概要、構成図
+  code_difference_reason: 未確認。名称や番号だけで改番と断定しない
+  current_snapshot_used_for: 設備探索のみ。FY2025容量や運営法人の正式採用ではない

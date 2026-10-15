@@ -208,3 +208,9 @@ derived,generation_coverage,候補条件下で対応する数値観測量/全数
 derived,plant_match_rate,対応plantラベル数/全363ラベル。物理的サイト一致率ではない,quantity,ratio,ratio,元area×code×正規化plantラベル,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
 derived,ambiguous_plant_label_count,一意な候補が決まらないplantラベル数,integer,not_applicable,not_applicable,候補集合のコード数,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
 derived,final_mapping_applied,追加対応を正式適用したか。今回False,boolean,not_applicable,not_applicable,診断スコープ,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,verification_status,公式根拠による設備対応候補の確認レベル,string,not_applicable,not_applicable,公式HJKS検索・JERA設備表,specified,confirmed/strongly_supported/candidate/ambiguous/unresolved。コード体系未解決は別管理
+derived,direct_code_crosswalk_verified,異なる発電所コードの直接対応根拠を確認したか,boolean,not_applicable,not_applicable,公式コード説明・対応表,specified,今回は全候補False。設備構成の一致と混同しない
+derived,code_difference_reason,発電所コード差の公式説明,string,not_applicable,not_applicable,OCCTO/HJKSコードと公式資料,specified,今回は未確認。改番・旧新・親子と断定しない
+derived,unit_match_rate,一意に対応候補が付く元unit候補数/全元unit候補数,quantity,ratio,ratio,既存strict候補・公式資料確認候補,specified,時間行ベースmatch率と区別。Cは感度確認のみ
+derived,first_observed,既存FY発電実績で元unit行を最初に観測する受渡日,date,not_applicable,not_applicable,OCCTO 対象日,specified,商業運転開始日ではない
+derived,last_observed,既存FY発電実績で元unit行を最後に観測する受渡日,date,not_applicable,not_applicable,OCCTO 対象日,specified,稼働終了日ではない
