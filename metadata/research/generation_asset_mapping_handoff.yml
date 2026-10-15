@@ -20,3 +20,8 @@ reference_candidate_unit_rows: 677
 capacity_baseline_approved: false
 extra_candidate_report: reports/unmatched_generation_diagnosis_20261016.md
 hypothetical_candidates: reports/additional_mapping_candidates_20261016.csv
+latest_analysis_diagnosis: reports/asset_analysis_readiness_20261016.md
+scenario_contract: metadata/research/asset_analysis_scenarios_20261016.yml
+two_layer_data_design_adopted: true
+analysis_baseline_selected: false
+inquiry_work_in_scope: false
