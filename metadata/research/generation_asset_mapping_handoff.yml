@@ -25,3 +25,6 @@ scenario_contract: metadata/research/asset_analysis_scenarios_20261016.yml
 two_layer_data_design_adopted: true
 analysis_baseline_selected: false
 inquiry_work_in_scope: false
+reference_gap_diagnostic_report: reports/reference_capacity_gap_20261016.md
+reference_gap_contract: metadata/research/reference_capacity_gap_contract_20261016.yml
+final_baseline_selected: false

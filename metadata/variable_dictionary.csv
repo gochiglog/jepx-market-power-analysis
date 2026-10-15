@@ -256,3 +256,29 @@ derived,possible_fy_event_rows,開始日と予定復旧日からFY関連の可�
 derived,no_event_means_no_outage,イベント0件を停止なしと解釈するか。今回はFalse,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
 derived,capacity_applied_to_generation,容量を発電実績の各時点へ適用したか。今回はFalse,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
 derived,analysis_notes,分析利用診断の条件・不明点・適用範囲,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,generation_avg_kw,30分平均発電出力。generation_kwh_30min/0.5時間。瞬間出力ではない,quantity,kW,kWh,OCCTO generation_kwh_30min,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_reference_kw,設備範囲・一意性・正値・期間矛盾の検査後に参照する一定台帳容量。FY有効容量ではない,quantity,kW,kW,HJKS 認可出力,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_gap_reference_kw,参照容量と30分平均発電出力の差。停止控除せず負値を保持,quantity,kW,kW,capacity_reference_kw - generation_avg_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_reference_raw_kw,参照先台帳の容量原値。計算保留時も出典とともに保持,quantity,kW,kW,HJKS 認可出力,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,official_verification_status,公式根拠の確認状態。研究者の診断使用承認とは分離し昇格しない,string,not_applicable,not_applicable,既存strict/公式根拠49行/個別表記対応,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,research_use_status,診断限定の使用可use_diagnosticまたは保留held,string,not_applicable,not_applicable,設備範囲・正値・一意性・競合等の検査,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,research_use_reason,診断使用または保留の具体的理由,string,not_applicable,not_applicable,対応診断,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,diagnostic_mapping_route,strict/candidate49/notation34/noneの診断対応経路,string,not_applicable,not_applicable,既存候補表と明示追加表,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,equipment_scope_checked,今回の診断用に設備範囲・番号等の検査を通ったか,boolean,not_applicable,not_applicable,元plant/unitとHJKS行,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_constant_assumption,観測期間に参照台帳値を一定と仮定する診断シナリオか,boolean,not_applicable,not_applicable,RD-012ユーザー承認,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_effective_period_verified,capacityの有効期間を正式確認したか。今回はFalse,boolean,not_applicable,not_applicable,HJKS適用開始日・履歴,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_snapshot_downloaded_at,参照snapshotの取得日時。677手動版は不明のためnull,datetime,not_applicable,not_applicable,取得manifest downloaded_at,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_snapshot_registered_at,参照snapshotの登録日時。取得日時とは区別,datetime,not_applicable,not_applicable,取得manifest registered_at,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_period_contradiction,明示稼働開始日前/終了日後の観測行。capacity期間の補完ではない,boolean,not_applicable,not_applicable,受渡日とHJKS稼働日,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_operation_boundary_day,時刻のない稼働開始/終了日そのもの。差を保留,boolean,not_applicable,not_applicable,受渡日とHJKS稼働日,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_negative_reference_gap,参照容量差が負か。原値保持し切り上げない,boolean,not_applicable,not_applicable,capacity_gap_reference_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_generation_exceeds_reference,30分平均発電出力が参照容量を超えるか。負の差と同じ条件,boolean,not_applicable,not_applicable,generation_avg_kw/参照容量,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_generation_missing,元30分電力量が欠測か。出力も欠測のまま,boolean,not_applicable,not_applicable,generation_kwh_30min,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_capacity_unavailable,対応/正値/範囲/期間等により当該セルで参照容量を使えないか,boolean,not_applicable,not_applicable,診断対応・期間flag,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,reference_gap_partial_sum_kw,計算できた設備の参照容量差の部分和。全欠測はnull。地域全体ではない,quantity,kW,kW,capacity_gap_reference_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,scope_complete_partial_sum_kw,観測された計算scope内で欠測がない場合の部分和。欠測ありはnull,quantity,kW,kW,capacity_gap_reference_kwとvalid mask,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,computed_subset_reference_capacity_kw,差を計算できた部分だけの参照容量合計。欠測出力の設備は含めない,quantity,kW,kW,参照容量と計算可否mask,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,known_reference_capacity_kw,観測計算scopeで参照できる台帳容量の部分和。地域全容量ではない,quantity,kW,kW,capacity_reference_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,computed_unit_count,地域部分和を計算できた元unit数,integer,not_applicable,not_applicable,計算可能な30分セル,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,missing_output_in_scope,参照容量を使えるが発電量欠測の元unit数,integer,not_applicable,not_applicable,cap valid / generation missing,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,calculation_scope_unit_count,観測行のうち範囲/期間条件を満たす参照容量の元unit数,integer,not_applicable,not_applicable,診断対応と期間flag,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
