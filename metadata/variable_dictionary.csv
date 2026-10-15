@@ -5,15 +5,15 @@ common,area,市場エリア識別子,string,not_applicable,not_applicable,TODO,s
 common,source_snapshot_id,manifestに対応する取得版識別子,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 common,published_at,元資料の公表日時。取得日時と区別する,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 common,downloaded_at,取得日時,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
-jepx_spot,system_price,システム価格,quantity,JPY/kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,area_price,エリア価格,quantity,JPY/kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,sell_bid_volume,売り入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,buy_bid_volume,買い入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,contracted_volume,約定総量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,sell_block_bid_volume,売りブロック入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,buy_block_bid_volume,買いブロック入札量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,sell_block_contracted_volume,売りブロック約定量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
-jepx_spot,buy_block_contracted_volume,買いブロック約定量,quantity,kWh,TODO,TODO,web_unit_confirmed,正規化単位はJEPX公開画面で確認済み。取得ファイルの元単位・元列名はIssue #4で確認
+jepx_spot,system_price,システム価格,quantity,JPY/kWh,JPY/kWh,システムプライス(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price,エリア価格,quantity,JPY/kWh,JPY/kWh,エリアプライス北海道(円/kWh)～エリアプライス九州(円/kWh),specified,共通概念。wide出力の9列対応はarea_price_<area>で個別記録
+jepx_spot,sell_bid_volume,売り入札量,quantity,kWh,kWh,売り入札量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,buy_bid_volume,買い入札量,quantity,kWh,kWh,買い入札量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,contracted_volume,約定総量,quantity,kWh,kWh,約定総量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,sell_block_bid_volume,売りブロック入札量,quantity,kWh,kWh,売りブロック入札総量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,buy_block_bid_volume,買いブロック入札量,quantity,kWh,kWh,買いブロック入札総量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,sell_block_contracted_volume,売りブロック約定量,quantity,kWh,kWh,売りブロック約定総量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,buy_block_contracted_volume,買いブロック約定量,quantity,kWh,kWh,買いブロック約定総量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
 jepx_price_sensitivity,additional_power_kw,追加売買の電力シナリオ,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 jepx_price_sensitivity,hypothetical_price,追加売買時の仮想価格,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 jepx_price_sensitivity,price_difference,仮想価格と実価格の差分。符号は確認待ち,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
@@ -82,3 +82,19 @@ occto_system_interconnector_capacity,available_capacity,公表空容量,quantity
 occto_system_interconnector_capacity,interconnector_key,連系線識別子,string,not_applicable,not_applicable,連系線,specified,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
 occto_system_interconnector_capacity,direction,公表方向。エリア単位への集約方法は未確定,string,not_applicable,not_applicable,方向,specified,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
 rei_power_data,power_data_bundle,統合CSVの212列を元形式で保持する収集対象。正規化列対応は後続ETL,string,not_applicable,not_applicable,2段ヘッダー212列,specified,補助・検算。推定値範囲未確定。分割収集しない
+jepx_spot,area_price_hokkaido,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス北海道(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_tohoku,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス東北(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_tokyo,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス東京(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_chubu,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス中部(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_hokuriku,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス北陸(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_kansai,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス関西(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_chugoku,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス中国(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_shikoku,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス四国(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,area_price_kyushu,元JEPX列を原単位で数値化,quantity,JPY/kWh,JPY/kWh,エリアプライス九州(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,delivery_date,受渡日を元日付のまま保持,date,not_applicable,not_applicable,受渡日,specified,元列保持。時間契約はロードマップ#5/GitHub#8
+jepx_spot,period,1〜48の30分コマ,integer,not_applicable,not_applicable,時刻コード,specified,元列保持。時間契約はロードマップ#5/GitHub#8
+jepx_spot,timestamp_start,Asia/Tokyoのコマ開始,datetime,not_applicable,not_applicable,受渡日 + 時刻コード,specified,元列保持。時間契約はロードマップ#5/GitHub#8
+jepx_spot,timestamp_end,Asia/Tokyoのコマ終了。period48は翌日00:00,datetime,not_applicable,not_applicable,受渡日 + 時刻コード,specified,元列保持。時間契約はロードマップ#5/GitHub#8
+jepx_spot,timezone,タイムゾーン識別子,string,not_applicable,not_applicable,時間キー契約 Asia/Tokyo,specified,元列保持。時間契約はロードマップ#5/GitHub#8
+jepx_spot,source_snapshot_id,採用元のSHA256,string,not_applicable,not_applicable,acquisition_manifest.sha256,specified,元列保持。時間契約はロードマップ#5/GitHub#8
+jepx_spot,source_row_number,ヘッダーを1行目とする元行番号,integer,not_applicable,not_applicable,CSV論理行番号,specified,元列保持。時間契約はロードマップ#5/GitHub#8
