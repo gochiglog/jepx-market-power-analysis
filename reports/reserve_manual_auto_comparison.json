@@ -1,0 +1,392 @@
+{
+  "audited_at": "2026-10-14T23:03:46+09:00",
+  "pairs": [
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-04-01_2025-04-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202504.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-05-01_2025-05-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202505.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-06-01_2025-06-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202506.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-07-01_2025-07-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202507.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-08-01_2025-08-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202508.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-09-01_2025-09-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202509.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-10-01_2025-10-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202510.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-11-01_2025-11-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202511.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2025-12-01_2025-12-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202512.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2026-01-01_2026-01-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202601.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2026-02-01_2026-02-28.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202602.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "05",
+      "auto_path": "data/raw/occto/reserve_block/dayahead2/05_2026-03-01_2026-03-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead2/occto_reserve_dayahead2_202603.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-04-01_2025-04-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202504.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-05-01_2025-05-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202505.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-06-01_2025-06-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202506.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-07-01_2025-07-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202507.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-08-01_2025-08-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202508.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-09-01_2025-09-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202509.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-10-01_2025-10-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202510.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-11-01_2025-11-30.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202511.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2025-12-01_2025-12-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202512.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2026-01-01_2026-01-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202601.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2026-02-01_2026-02-28.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202602.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "02",
+      "auto_path": "data/raw/occto/reserve_block/dayahead_actual/02_2026-03-01_2026-03-31.csv",
+      "manual_path": "data/raw/occto/reserve_block/dayahead_actual/occto_reserve_dayactual_202603.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-04-01_2025-04-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202504.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-05-01_2025-05-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202505.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-06-01_2025-06-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202506.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-07-01_2025-07-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202507.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-08-01_2025-08-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202508.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-09-01_2025-09-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202509.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-10-01_2025-10-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202510.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-11-01_2025-11-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202511.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2025-12-01_2025-12-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202512.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2026-01-01_2026-01-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202601.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2026-02-01_2026-02-28.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202602.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "06",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead2/06_2026-03-01_2026-03-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead2/occto_reserve_interconnector_dayahead2_202603.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-04-01_2025-04-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202504.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-05-01_2025-05-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202505.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-06-01_2025-06-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202506.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-07-01_2025-07-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202507.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-08-01_2025-08-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202508.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-09-01_2025-09-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202509.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-10-01_2025-10-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202510.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-11-01_2025-11-30.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202511.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2025-12-01_2025-12-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202512.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-01-01_2026-01-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202601.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-02-01_2026-02-28.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202602.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    },
+    {
+      "type_code": "04",
+      "auto_path": "data/raw/occto/reserve_interconnector/dayahead_actual/04_2026-03-01_2026-03-31.csv",
+      "manual_path": "data/raw/occto/reserve_interconnector/dayahead_actual/occto_reserve_interconnector_dayactual_202603.csv",
+      "sha256_equal": true,
+      "row_count_equal": true,
+      "columns_equal": true
+    }
+  ],
+  "pair_count": 48,
+  "byte_identical_pair_count": 48,
+  "correction": "2026年2月のブロック2件は逆版とSHA一致。ユーザー承認後に内容不変で名前/配置を訂正。"
+}

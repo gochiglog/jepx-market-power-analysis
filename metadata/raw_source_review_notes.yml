@@ -1,0 +1,76 @@
+review_date: '2026-10-14'
+status: raw_reorganized_capacity_annual_acquisition_completed
+sources:
+  occto_system_interconnector_capacity:
+    authority: primary
+    public_page: https://occtonet3.occto.or.jp/public/dfw/RP11/OCCTO/SD/LOGIN_login
+    public_download_endpoint: https://occtonet3.occto.or.jp/public/dfw/RP11/OCCTO/SD/CF01S010C
+    reference_screen: CA01S013C
+    verified_condition:
+      section: 翌々日
+      version: 策定
+      direction: 両方
+      interconnectors: 公開画面の全連系線
+      period_start: '2025-04-01'
+      period_end: '2025-04-07'
+    result: 手動CSVと自動CSVの元バイト列・SHA256・全セル一致
+    separate_from: 広域予備率Web公表システムの連系線情報
+    excluded_now:
+    - 連系線潮流情報参照
+    - 作業停止計画関連情報
+    manual_week2_note: 4月8〜14日の手動CSVは全行更新後。ユーザー明示承認で比較版1件を完全削除。元名・SHA・承認を履歴保存
+    annual_result:
+      period_start: '2025-04-01'
+      period_end: '2026-03-31'
+      file_count: 53
+      row_count: 388896
+      missing_dates: []
+      duplicate_keys: 0
+      file_size_total: 46620859
+      configuration_change:
+        delivery_date: '2026-03-14'
+        added:
+        - 中部フェンス
+        - 関西フェンス
+        link_count_before: 11
+        link_count_after: 13
+  occto_reserve_web_public:
+    authority: primary
+    independent_variants:
+    - 広域予備率ブロック情報（翌々日）
+    - 広域予備率ブロック情報（翌日・当日）
+    - 広域予備率連系線情報（翌々日）
+    - 広域予備率連系線情報（翌日・当日）
+    note: 系統情報サービスの空容量と名称・保存先・manifest source_idを分ける計画
+  rei_power_data:
+    authority: validation_convenience
+    source_url: null
+    downloaded_at: null
+    evidence: ユーザー指定の注意事項と手元ファイルのヘッダー・対象日の検査
+    current_path: data/raw/rei/power_data/rei_power_data_FY2025.csv
+    proposed_path: data/raw/rei/power_data/rei_power_data_FY2025.csv
+    encoding_observed: utf-8-sig
+    bom_observed: UTF-8
+    contents_observed:
+    - 国内9エリアの需給情報
+    - スポット価格（地域9列・全国1列）
+    - 実潮流10列
+    - 計画潮流10列
+    keep_single_original_file: true
+    estimation_caution:
+      start_date: '2026-03-12'
+      scope: 中部・北陸・関西間の一部連系線潮流
+      exact_link_and_column_mapping: null
+      evidence: ユーザー提供。対象列の厳密な対応・公式の注記URLは未確認
+      future_etl: 出典・該当期間・該当連系線を確認して推定値フラグを追加する。現段階で全連系線を推定値と扱わない
+    note: OCCTOを一次情報とし、本ファイルは主分析の一次情報として使用しない。地域別・連系線別の追加分割収集は行わない
+    original_local_path: data/raw/rei/rei_power_data_FY2025.csv
+  hjks_scope_review:
+    acquisition_status: 取得済み：ユニット台帳2版・停止イベント2版
+    completeness_axis: ユニット集合/検索条件、イベント集合/対象期間。365日×48コマを基準にしない
+    remaining_issue: ロードマップ#8
+    note: 対象範囲・版・時点解釈は未確認。欠損事象があると断定していない
+    manual_unit_scope: ユーザー確認：稼働終了ユニットを含む台帳
+    manual_outage_scope: ユーザー確認：FY2025に期間を絞った停止イベントCSV
+    outage_filter_date_column: null
+    cross_boundary_event_inclusion: null

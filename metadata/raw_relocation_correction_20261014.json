@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "current_path": "data/raw/occto/system_interconnector_capacity/dayahead2/planned/occto_interconnector_capacity_dayahead2_planned_20250408_20250414.csv",
+      "recommended_path": "data/raw/occto/system_interconnector_capacity/dayahead2/updated/occto_interconnector_capacity_dayahead2_updated_20250408_20250414.csv",
+      "original_filename": "occto_interconnector_capacity_dayahead2_planned_20250408_20250415.csv",
+      "sha256": "03557adc981ffce27dfc025f8f2626dc10cd10c18a0a24727a53cd2519f6ace9",
+      "file_size": 907167
+    }
+  ],
+  "reason": "元列の策定／更新後が全行更新後と判明。名前から策定と扱わず別版へ配置"
+}

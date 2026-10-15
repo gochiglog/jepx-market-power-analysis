@@ -141,6 +141,52 @@
               "type": "string",
               "minLength": 1
             }
+          },
+          "acquisition": {
+            "type": "object",
+            "required": [
+              "method",
+              "manifest_path",
+              "bulk_status",
+              "sample_variants",
+              "format_notes",
+              "known_limitations"
+            ],
+            "properties": {
+              "method": {
+                "type": "string"
+              },
+              "manifest_path": {
+                "const": "metadata/acquisition_manifest.jsonl"
+              },
+              "bulk_status": {
+                "enum": [
+                  "downloaded_fy2025",
+                  "snapshot_only",
+                  "blocked"
+                ]
+              },
+              "sample_variants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "format_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "known_limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
           }
         }
       }

@@ -1,0 +1,162 @@
+# raw棚卸しと整理候補（未承認・移動未実施）
+
+2026-10-14に整理・年間取得の承認を受領。これは承認時点の対応案・調査記録です。実行結果と第2週の追加版確認は [最新作業報告](issue_4_reorganization_and_capacity_20261014.md) を参照してください。
+エージェントは元ファイルを変更していません。修正版JEPX3件は現在のdata/直下の場所を記録しています。手動ファイルのURL・取得日時は不明のまま記録し、検査日時と区別しています。
+同一SHAでも削除・統合しません。ファイル名のFY2025は収録期間の保証として使用しません。
+列名・ヘッダー全段・列数分布・SHA256全文・不確定事項はJSON参照。
+
+| 現在の場所 | 推奨ディレクトリ | 推奨ファイル名 | 行数 / 列数 | 対象日（実測） | 文字コード / BOM |
+|---|---|---|---|---|---|
+| data/jepx_spot_summary_FY2025.csv | data/raw/jepx/spot | jepx_spot_20250401_20260331.csv | 17520 / 19 | 2025-04-01〜2026-03-31 | cp932/shift_jis / なし・非該当 |
+| data/jepx_virtualprice_FY2025.csv | data/raw/jepx/price_sensitivity | jepx_sensitivity_20250401_20260331.csv | 17520 / 9 | 2025-04-01〜2026-03-31 | cp932/shift_jis / なし・非該当 |
+| data/jepx_virtualprice_diff_FY2025.csv | data/raw/jepx/price_sensitivity | jepx_sensitivity_diff_20250401_20260331.csv | 17520 / 9 | 2025-04-01〜2026-03-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/.DS_Store | 保留（研究データ外） | .DS_Store | — / — | 未確認 / 非日次 | 該当なし / なし・非該当 |
+| data/raw/egc_dominant_firms_FY2025.pdf | data/raw/egc/regulatory/unverified | egc_dominant_firms_FY2025.pdf | None / None | 未確認 / 非日次 | not_applicable / なし・非該当 |
+| data/raw/hjks_outage/outages_snapshot.csv | data/raw/hjks/outages | hjks_outages__outages_snapshot__sha256_2b297982196f.csv | 58852 / 15 | 未確認 / 非日次 | cp932 / なし・非該当 |
+| data/raw/hjks_outages_FY2025.csv | data/raw/hjks/outages | hjks_outages__hjks_outages_FY2025__sha256_9a46e1cba184.csv | 7828 / 15 | 未確認 / 非日次 | cp932 / なし・非該当 |
+| data/raw/hjks_unit/unit_snapshot.csv | data/raw/hjks/units | hjks_units__unit_snapshot__sha256_7de63a108b36.csv | 529 / 12 | 未確認 / 非日次 | cp932 / なし・非該当 |
+| data/raw/hjks_units_FY2025.csv | data/raw/hjks/units | hjks_units__hjks_units_FY2025__sha256_7d4c3a8633fa.csv | 677 / 12 | 未確認 / 非日次 | cp932 / なし・非該当 |
+| data/raw/jepx_price_sensitivity/virtualprice_2025.csv | data/raw/jepx/price_sensitivity | virtualprice_2025.csv | 17520 / 9 | 2025-04-01〜2026-03-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/jepx_price_sensitivity/virtualprice_diff_2025.csv | data/raw/jepx/price_sensitivity | virtualprice_diff_2025.csv | 17520 / 9 | 2025-04-01〜2026-03-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/jepx_spot/spot_summary_2025.csv | data/raw/jepx/spot | spot_summary_2025.csv | 17520 / 19 | 2025-04-01〜2026-03-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-04-01_2025-04-01.csv | data/raw/occto/system_demand | demand_2025-04-01_2025-04-01.csv | 26 / 13 | 2025-04-01〜2025-04-01 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-04-01_2025-04-30.csv | data/raw/occto/system_demand | demand_2025-04-01_2025-04-30.csv | 780 / 13 | 2025-04-01〜2025-04-30 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-05-01_2025-05-31.csv | data/raw/occto/system_demand | demand_2025-05-01_2025-05-31.csv | 806 / 13 | 2025-05-01〜2025-05-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-06-01_2025-06-30.csv | data/raw/occto/system_demand | demand_2025-06-01_2025-06-30.csv | 780 / 13 | 2025-06-01〜2025-06-30 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-07-01_2025-07-31.csv | data/raw/occto/system_demand | demand_2025-07-01_2025-07-31.csv | 806 / 13 | 2025-07-01〜2025-07-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-08-01_2025-08-31.csv | data/raw/occto/system_demand | demand_2025-08-01_2025-08-31.csv | 806 / 13 | 2025-08-01〜2025-08-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-09-01_2025-09-30.csv | data/raw/occto/system_demand | demand_2025-09-01_2025-09-30.csv | 780 / 13 | 2025-09-01〜2025-09-30 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-10-01_2025-10-31.csv | data/raw/occto/system_demand | demand_2025-10-01_2025-10-31.csv | 806 / 13 | 2025-10-01〜2025-10-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-11-01_2025-11-30.csv | data/raw/occto/system_demand | demand_2025-11-01_2025-11-30.csv | 780 / 13 | 2025-11-01〜2025-11-30 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2025-12-01_2025-12-31.csv | data/raw/occto/system_demand | demand_2025-12-01_2025-12-31.csv | 806 / 13 | 2025-12-01〜2025-12-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2026-01-01_2026-01-31.csv | data/raw/occto/system_demand | demand_2026-01-01_2026-01-31.csv | 806 / 13 | 2026-01-01〜2026-01-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2026-02-01_2026-02-28.csv | data/raw/occto/system_demand | demand_2026-02-01_2026-02-28.csv | 728 / 13 | 2026-02-01〜2026-02-28 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_demand/demand_2026-03-01_2026-03-31.csv | data/raw/occto/system_demand | demand_2026-03-01_2026-03-31.csv | 806 / 13 | 2026-03-01〜2026-03-31 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_generation/generation_2025-04-01_2025-04-01.csv | data/raw/occto/generation | generation_2025-04-01_2025-04-01.csv | 487 / 56 | 2025-04-01〜2025-04-01 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-04-01_2025-04-30.csv | data/raw/occto/generation | generation_2025-04-01_2025-04-30.csv | 14610 / 56 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-05-01_2025-05-31.csv | data/raw/occto/generation | generation_2025-05-01_2025-05-31.csv | 15097 / 56 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-06-01_2025-06-30.csv | data/raw/occto/generation | generation_2025-06-01_2025-06-30.csv | 14610 / 56 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-07-01_2025-07-31.csv | data/raw/occto/generation | generation_2025-07-01_2025-07-31.csv | 15077 / 56 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-08-01_2025-08-31.csv | data/raw/occto/generation | generation_2025-08-01_2025-08-31.csv | 15035 / 56 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-09-01_2025-09-30.csv | data/raw/occto/generation | generation_2025-09-01_2025-09-30.csv | 14580 / 56 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-10-01_2025-10-31.csv | data/raw/occto/generation | generation_2025-10-01_2025-10-31.csv | 14969 / 56 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-11-01_2025-11-30.csv | data/raw/occto/generation | generation_2025-11-01_2025-11-30.csv | 14430 / 56 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2025-12-01_2025-12-31.csv | data/raw/occto/generation | generation_2025-12-01_2025-12-31.csv | 14911 / 56 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2026-01-01_2026-01-31.csv | data/raw/occto/generation | generation_2026-01-01_2026-01-31.csv | 14911 / 56 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2026-02-01_2026-02-28.csv | data/raw/occto/generation | generation_2026-02-01_2026-02-28.csv | 13450 / 56 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation/generation_2026-03-01_2026-03-31.csv | data/raw/occto/generation | generation_2026-03-01_2026-03-31.csv | 14748 / 56 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_generation_FY2025.csv | data/raw/occto/generation | occto_generation_FY2025.csv | 176428 / 56 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-04-01_2025-04-01.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-04-01_2025-04-01.csv | 576 / 16 | 2025-04-01〜2025-04-01 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-04-01_2025-04-30.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-04-01_2025-04-30.csv | 17280 / 16 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-05-01_2025-05-31.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-05-01_2025-05-31.csv | 17856 / 16 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-06-01_2025-06-30.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-06-01_2025-06-30.csv | 17280 / 16 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-07-01_2025-07-31.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-07-01_2025-07-31.csv | 17856 / 16 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-08-01_2025-08-31.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-08-01_2025-08-31.csv | 17856 / 16 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-09-01_2025-09-30.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-09-01_2025-09-30.csv | 17280 / 16 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-10-01_2025-10-31.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-10-01_2025-10-31.csv | 17856 / 16 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-11-01_2025-11-30.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-11-01_2025-11-30.csv | 17280 / 16 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2025-12-01_2025-12-31.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2025-12-01_2025-12-31.csv | 17856 / 16 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2026-01-01_2026-01-31.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2026-01-01_2026-01-31.csv | 17856 / 16 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2026-02-01_2026-02-28.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2026-02-01_2026-02-28.csv | 16128 / 16 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/04_2026-03-01_2026-03-31.csv | data/raw/occto/reserve_interconnector/dayahead_actual | 04_2026-03-01_2026-03-31.csv | 17088 / 16 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-04-01_2025-04-01.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-04-01_2025-04-01.csv | 576 / 17 | 2025-04-01〜2025-04-01 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-04-01_2025-04-30.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-04-01_2025-04-30.csv | 17280 / 17 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-05-01_2025-05-31.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-05-01_2025-05-31.csv | 17856 / 17 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-06-01_2025-06-30.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-06-01_2025-06-30.csv | 17280 / 17 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-07-01_2025-07-31.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-07-01_2025-07-31.csv | 17856 / 17 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-08-01_2025-08-31.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-08-01_2025-08-31.csv | 17856 / 17 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-09-01_2025-09-30.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-09-01_2025-09-30.csv | 17280 / 17 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-10-01_2025-10-31.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-10-01_2025-10-31.csv | 17856 / 17 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-11-01_2025-11-30.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-11-01_2025-11-30.csv | 17280 / 17 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2025-12-01_2025-12-31.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2025-12-01_2025-12-31.csv | 17856 / 17 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2026-01-01_2026-01-31.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2026-01-01_2026-01-31.csv | 17856 / 17 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2026-02-01_2026-02-28.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2026-02-01_2026-02-28.csv | 16128 / 17 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector/06_2026-03-01_2026-03-31.csv | data/raw/occto/reserve_interconnector/dayahead2 | 06_2026-03-01_2026-03-31.csv | 17136 / 17 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_interconnector_capacity_dayahead2_planned_20250401_20250407.csv | data/raw/occto/system_interconnector_capacity/dayahead2/planned | occto_interconnector_capacity_dayahead2_planned_20250401_20250407.csv | 7392 / 19 | 2025-04-01〜2025-04-07 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_interconnector_capacity_dayahead2_planned_20250408_20250415.csv | data/raw/occto/system_interconnector_capacity/dayahead2/planned | occto_interconnector_capacity_dayahead2_planned_20250408_20250414.csv | 7392 / 19 | 2025-04-08〜2025-04-14 | cp932/shift_jis / なし・非該当 |
+| data/raw/occto_reserve/02_2025-04-01_2025-04-01.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-04-01_2025-04-01.csv | 480 / 12 | 2025-04-01〜2025-04-01 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-04-01_2025-04-30.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-04-01_2025-04-30.csv | 14400 / 12 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-05-01_2025-05-31.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-05-01_2025-05-31.csv | 14880 / 12 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-06-01_2025-06-30.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-06-01_2025-06-30.csv | 14400 / 12 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-07-01_2025-07-31.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-07-01_2025-07-31.csv | 14880 / 12 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-08-01_2025-08-31.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-08-01_2025-08-31.csv | 14880 / 12 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-09-01_2025-09-30.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-09-01_2025-09-30.csv | 14400 / 12 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-10-01_2025-10-31.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-10-01_2025-10-31.csv | 14880 / 12 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-11-01_2025-11-30.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-11-01_2025-11-30.csv | 14400 / 12 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2025-12-01_2025-12-31.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2025-12-01_2025-12-31.csv | 14880 / 12 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2026-01-01_2026-01-31.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2026-01-01_2026-01-31.csv | 14880 / 12 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2026-02-01_2026-02-28.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2026-02-01_2026-02-28.csv | 13440 / 12 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/02_2026-03-01_2026-03-31.csv | data/raw/occto/reserve_block/dayahead_actual | 02_2026-03-01_2026-03-31.csv | 14880 / 12 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-04-01_2025-04-01.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-04-01_2025-04-01.csv | 480 / 13 | 2025-04-01〜2025-04-01 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-04-01_2025-04-30.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-04-01_2025-04-30.csv | 14400 / 13 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-05-01_2025-05-31.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-05-01_2025-05-31.csv | 14880 / 13 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-06-01_2025-06-30.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-06-01_2025-06-30.csv | 14400 / 13 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-07-01_2025-07-31.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-07-01_2025-07-31.csv | 14880 / 13 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-08-01_2025-08-31.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-08-01_2025-08-31.csv | 14880 / 13 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-09-01_2025-09-30.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-09-01_2025-09-30.csv | 14400 / 13 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-10-01_2025-10-31.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-10-01_2025-10-31.csv | 14880 / 13 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-11-01_2025-11-30.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-11-01_2025-11-30.csv | 14400 / 13 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2025-12-01_2025-12-31.csv | data/raw/occto/reserve_block/dayahead2 | 05_2025-12-01_2025-12-31.csv | 14880 / 13 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2026-01-01_2026-01-31.csv | data/raw/occto/reserve_block/dayahead2 | 05_2026-01-01_2026-01-31.csv | 14880 / 13 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2026-02-01_2026-02-28.csv | data/raw/occto/reserve_block/dayahead2 | 05_2026-02-01_2026-02-28.csv | 13440 / 13 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve/05_2026-03-01_2026-03-31.csv | data/raw/occto/reserve_block/dayahead2 | 05_2026-03-01_2026-03-31.csv | 14880 / 13 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202504.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202504.csv | 14400 / 12 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202505.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202505.csv | 14880 / 12 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202506.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202506.csv | 14400 / 12 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202507.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202507.csv | 14880 / 12 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202508.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202508.csv | 14880 / 12 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202509.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202509.csv | 14400 / 12 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202510.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202510.csv | 14880 / 12 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202511.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202511.csv | 14400 / 12 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202512.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202512.csv | 14880 / 12 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202601.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202601.csv | 14880 / 12 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202602.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202602.csv | 13440 / 13 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayactual_202603.csv | data/raw/occto/reserve_block/dayahead_actual | occto_reserve_dayactual_202603.csv | 14880 / 12 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202504.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202504.csv | 14400 / 13 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202505.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202505.csv | 14880 / 13 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202506.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202506.csv | 14400 / 13 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202507.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202507.csv | 14880 / 13 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202508.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202508.csv | 14880 / 13 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202509.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202509.csv | 14400 / 13 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202510.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202510.csv | 14880 / 13 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202511.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202511.csv | 14400 / 13 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202512.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202512.csv | 14880 / 13 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202601.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202601.csv | 14880 / 13 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202602.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202602.csv | 13440 / 12 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_dayahead2_202603.csv | data/raw/occto/reserve_block/dayahead2 | occto_reserve_dayahead2_202603.csv | 14880 / 13 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202504.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202504.csv | 17280 / 16 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202505.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202505.csv | 17856 / 16 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202506.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202506.csv | 17280 / 16 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202507.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202507.csv | 17856 / 16 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202508.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202508.csv | 17856 / 16 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202509.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202509.csv | 17280 / 16 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202510.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202510.csv | 17856 / 16 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202511.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202511.csv | 17280 / 16 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202512.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202512.csv | 17856 / 16 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202601.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202601.csv | 17856 / 16 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202602.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202602.csv | 16128 / 16 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayactual_202603.csv | data/raw/occto/reserve_interconnector/dayahead_actual | occto_reserve_interconnector_dayactual_202603.csv | 17088 / 16 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202504.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202504.csv | 17280 / 17 | 2025-04-01〜2025-04-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202505.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202505.csv | 17856 / 17 | 2025-05-01〜2025-05-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202506.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202506.csv | 17280 / 17 | 2025-06-01〜2025-06-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202507.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202507.csv | 17856 / 17 | 2025-07-01〜2025-07-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202508.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202508.csv | 17856 / 17 | 2025-08-01〜2025-08-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202509.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202509.csv | 17280 / 17 | 2025-09-01〜2025-09-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202510.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202510.csv | 17856 / 17 | 2025-10-01〜2025-10-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202511.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202511.csv | 17280 / 17 | 2025-11-01〜2025-11-30 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202512.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202512.csv | 17856 / 17 | 2025-12-01〜2025-12-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202601.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202601.csv | 17856 / 17 | 2026-01-01〜2026-01-31 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202602.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202602.csv | 16128 / 17 | 2026-02-01〜2026-02-28 | utf-8-sig / UTF-8 |
+| data/raw/occto_reserve_interconnector_dayahead2_202603.csv | data/raw/occto/reserve_interconnector/dayahead2 | occto_reserve_interconnector_dayahead2_202603.csv | 17136 / 17 | 2026-03-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/.DS_Store | 保留（研究データ外） | .DS_Store | — / — | 未確認 / 非日次 | 該当なし / なし・非該当 |
+| data/raw/rei/rei_power_data_FY2025.csv | data/raw/rei/power_data | rei_power_data_FY2025.csv | 17520 / 212 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_chubu_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_chubu_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_chugoku_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_chugoku_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_hokkaido_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_hokkaido_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_hokuriku_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_hokuriku_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_japan_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_japan_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_kansai_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_kansai_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_kyushu_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_kyushu_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_shikoku_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_shikoku_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_tohoku_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_tohoku_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |
+| data/raw/rei/supply_demand/rei_supply_demand_tokyo_FY2025.csv | data/raw/rei/supply_demand | rei_supply_demand_tokyo_FY2025.csv | 17520 / 23 | 2025-04-01〜2026-03-31 | utf-8-sig / UTF-8 |

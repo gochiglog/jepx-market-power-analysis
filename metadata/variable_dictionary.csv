@@ -75,3 +75,10 @@ common,plant_key,発電所識別子。元コードの適用範囲を確認,strin
 common,unit_key,ユニット識別子。発電所キーと組み合わせる,string,not_applicable,not_applicable,TODO,specified,元列保持・対応根拠を記録
 common,firm_canonical,事業者の共通識別名。曖昧な対応は確定しない,string,not_applicable,not_applicable,TODO,specified,元列保持・対応根拠を記録
 common,source_document,資料名称・出典の識別子,string,not_applicable,not_applicable,TODO,specified,元列保持・対応根拠を記録
+occto_system_interconnector_capacity,operating_capacity,運用容量,quantity,TODO,TODO,運用容量,TODO,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
+occto_system_interconnector_capacity,margin,マージン,quantity,TODO,TODO,マージン,TODO,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
+occto_system_interconnector_capacity,planned_flow,計画潮流,quantity,TODO,TODO,計画潮流,TODO,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
+occto_system_interconnector_capacity,available_capacity,公表空容量,quantity,TODO,TODO,空容量,TODO,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
+occto_system_interconnector_capacity,interconnector_key,連系線識別子,string,not_applicable,not_applicable,連系線,specified,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
+occto_system_interconnector_capacity,direction,公表方向。エリア単位への集約方法は未確定,string,not_applicable,not_applicable,方向,specified,系統情報サービス空容量の元列。広域予備率連系線と別ソース。単位変換なし
+rei_power_data,power_data_bundle,統合CSVの212列を元形式で保持する収集対象。正規化列対応は後続ETL,string,not_applicable,not_applicable,2段ヘッダー212列,specified,補助・検算。推定値範囲未確定。分割収集しない
