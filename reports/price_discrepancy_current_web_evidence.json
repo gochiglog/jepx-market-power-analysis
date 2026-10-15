@@ -1,0 +1,211 @@
+{
+  "method": "公式表示JSが読む公開CSV応答から表示対象値を照合。ブラウザ画面の目視確認ではない",
+  "request_count": 3,
+  "page_urls": [
+    "https://www.jepx.jp/electricpower/market-data/spot/",
+    "https://www.jepx.jp/electricpower/market-data/spot/virtualprice.html"
+  ],
+  "js_urls": [
+    "https://www.jepx.jp/js/spot_summary.js",
+    "https://www.jepx.jp/js/virtualprice.js"
+  ],
+  "http": [
+    {
+      "dataset": "spot_summary",
+      "url": "https://www.jepx.jp/js/csv_read.php?dir=spot_summary&file=spot_summary_2025.csv",
+      "retrieved_at": "2026-10-15T09:25:56.513596+09:00",
+      "http_status": 200,
+      "http_headers": {
+        "Date": "Thu, 15 Oct 2026 00:25:56 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Cache-Control": "no-store"
+      },
+      "size": 2265858,
+      "sha256": "6103f1ec7fe43c95f21c20110c32a77f3b2792ca4fb0eb27af0242719c962d54",
+      "local_cache": "/private/tmp/jepx_current_web_20261015/spot_summary.response"
+    },
+    {
+      "dataset": "virtualprice",
+      "url": "https://www.jepx.jp/js/csv_read.php?dir=virtualprice&file=virtualprice_2025.csv",
+      "retrieved_at": "2026-10-15T09:25:56.914753+09:00",
+      "http_status": 200,
+      "http_headers": {
+        "Date": "Thu, 15 Oct 2026 00:25:56 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Cache-Control": "no-store"
+      },
+      "size": 931919,
+      "sha256": "c95f0159111375331ae023c4f95834d0bd18204b62df253e3905a578331397a6",
+      "local_cache": "/private/tmp/jepx_current_web_20261015/virtualprice.response"
+    },
+    {
+      "dataset": "virtualprice_diff",
+      "url": "https://www.jepx.jp/js/csv_read.php?dir=virtualprice_diff&file=virtualprice_diff_2025.csv",
+      "retrieved_at": "2026-10-15T09:25:57.308249+09:00",
+      "http_status": 200,
+      "http_headers": {
+        "Date": "Thu, 15 Oct 2026 00:25:57 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Cache-Control": "no-store"
+      },
+      "size": 904469,
+      "sha256": "6437136c51c51e0f458cce0056444e2cdb669ec0a99125077a1cf292bb6eddbb",
+      "local_cache": "/private/tmp/jepx_current_web_20261015/virtualprice_diff.response"
+    }
+  ],
+  "comparisons": [
+    {
+      "dataset": "spot_summary",
+      "decoded_row_comparison": "all_published_cells",
+      "compared_rows": 17520,
+      "different_rows": 0,
+      "encoding_current": {
+        "encoding": "utf-8",
+        "bom": null,
+        "encoding_candidates": [
+          "utf-8"
+        ],
+        "encoding_evidence": "全バイト列の厳密復号。ASCIIの上位互換は判別不能"
+      },
+      "encoding_local": {
+        "encoding": "ambiguous",
+        "bom": null,
+        "encoding_candidates": [
+          "cp932",
+          "shift_jis"
+        ],
+        "encoding_evidence": "候補の全バイト列を厳密復号",
+        "inspection_decoder": "cp932"
+      }
+    },
+    {
+      "dataset": "virtualprice",
+      "decoded_row_comparison": "all_published_cells",
+      "compared_rows": 17520,
+      "different_rows": 0,
+      "encoding_current": {
+        "encoding": "utf-8",
+        "bom": null,
+        "encoding_candidates": [
+          "utf-8"
+        ],
+        "encoding_evidence": "全バイト列の厳密復号。ASCIIの上位互換は判別不能"
+      },
+      "encoding_local": {
+        "encoding": "ambiguous",
+        "bom": null,
+        "encoding_candidates": [
+          "cp932",
+          "shift_jis"
+        ],
+        "encoding_evidence": "候補の全バイト列を厳密復号",
+        "inspection_decoder": "cp932"
+      }
+    },
+    {
+      "dataset": "virtualprice_diff",
+      "decoded_row_comparison": "all_published_cells",
+      "compared_rows": 17520,
+      "different_rows": 0,
+      "encoding_current": {
+        "encoding": "utf-8",
+        "bom": null,
+        "encoding_candidates": [
+          "utf-8"
+        ],
+        "encoding_evidence": "全バイト列の厳密復号。ASCIIの上位互換は判別不能"
+      },
+      "encoding_local": {
+        "encoding": "ambiguous",
+        "bom": null,
+        "encoding_candidates": [
+          "cp932",
+          "shift_jis"
+        ],
+        "encoding_evidence": "候補の全バイト列を厳密復号",
+        "inspection_decoder": "cp932"
+      }
+    }
+  ],
+  "representative_rows": [
+    {
+      "case": "consistent",
+      "delivery_date": "2025-04-01",
+      "period": 1,
+      "current_web_spot": "13.50",
+      "current_web_sensitivity": "13.50",
+      "current_web_difference_system_raw": "0.00",
+      "local_spot": "13.50",
+      "local_sensitivity": "13.50",
+      "local_difference_system_raw": "0.00"
+    },
+    {
+      "case": "small_difference",
+      "delivery_date": "2025-04-03",
+      "period": 7,
+      "current_web_spot": "13.48",
+      "current_web_sensitivity": "13.47",
+      "current_web_difference_system_raw": "0.00",
+      "local_spot": "13.48",
+      "local_sensitivity": "13.47",
+      "local_difference_system_raw": "0.00"
+    },
+    {
+      "case": "largest_difference",
+      "delivery_date": "2025-06-18",
+      "period": 35,
+      "current_web_spot": "21.00",
+      "current_web_sensitivity": "28.00",
+      "current_web_difference_system_raw": "0.00",
+      "local_spot": "21.00",
+      "local_sensitivity": "28.00",
+      "local_difference_system_raw": "0.00"
+    },
+    {
+      "case": "first_mismatch",
+      "delivery_date": "2025-04-02",
+      "period": 28,
+      "current_web_spot": "9.07",
+      "current_web_sensitivity": "9.03",
+      "current_web_difference_system_raw": "0.00",
+      "local_spot": "9.07",
+      "local_sensitivity": "9.03",
+      "local_difference_system_raw": "0.00"
+    },
+    {
+      "case": "last_mismatch",
+      "delivery_date": "2026-03-02",
+      "period": 46,
+      "current_web_spot": "10.69",
+      "current_web_sensitivity": "10.63",
+      "current_web_difference_system_raw": "0.00",
+      "local_spot": "10.69",
+      "local_sensitivity": "10.63",
+      "local_difference_system_raw": "0.00"
+    },
+    {
+      "case": "peak_month_longest_run",
+      "delivery_date": "2026-01-23",
+      "period": 23,
+      "current_web_spot": "10.28",
+      "current_web_sensitivity": "10.00",
+      "current_web_difference_system_raw": "0.00",
+      "local_spot": "10.28",
+      "local_sensitivity": "10.00",
+      "local_difference_system_raw": "0.00"
+    },
+    {
+      "case": "after_last_boundary",
+      "delivery_date": "2026-03-03",
+      "period": 1,
+      "current_web_spot": "10.35",
+      "current_web_sensitivity": "10.35",
+      "current_web_difference_system_raw": "0.00",
+      "local_spot": "10.35",
+      "local_sensitivity": "10.35",
+      "local_difference_system_raw": "0.00"
+    }
+  ],
+  "raw_replaced": false,
+  "note": "公開JSは年度CSVを読むため通常の表示取得3回で年度応答を受信。追加の大量アクセスなし。SHA差だけを版違いの根拠にしない（Web応答UTF-8、手元CP932候補）"
+}

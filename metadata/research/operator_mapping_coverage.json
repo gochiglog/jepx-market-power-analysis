@@ -1,0 +1,20 @@
+{
+  "hjks_unique_names": 84,
+  "hjks_name_area_pairs": 105,
+  "confidence_counts": {
+    "unresolved": 89,
+    "exact": 8,
+    "manual_review": 7,
+    "normalized_exact": 1
+  },
+  "target_pairs": 11,
+  "matched_target_pairs": 9,
+  "target_pair_name_match_rate": 0.8181818181818182,
+  "unmatched_target_pairs": 2,
+  "matched_hjks_pairs": 9,
+  "hjks_pair_name_match_rate": 0.08571428571428572,
+  "nonmatched_hjks_pairs": 96,
+  "scope": "HJKS4ファイルの名称×エリアの棚卸し。資産join率や最終dominant分類率ではない",
+  "dominant_flag_assigned": false,
+  "fringe_flag_assigned": false
+}

@@ -1,5 +1,7 @@
 # 既存PRのmerge readiness（2026-10-15）
 
+> この文書はマージ前の確認記録です。ユーザー承認後の統合結果は [merge結果JSON](pr_merge_results_20261015.json) を参照してください。
+
 ## 結果
 
 PR #7/#9/#11/#12はGitHub REST確認でmergeable=true、mergeable_state=cleanです。
