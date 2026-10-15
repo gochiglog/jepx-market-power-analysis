@@ -1,0 +1,26 @@
+# ロードマップとGitHubのIssue/PR共通採番を区別する。
+updated_on: '2026-10-14'
+tasks:
+  - {roadmap_id: 1, title: Repo bootstrap, github_issue: 1}
+  - {roadmap_id: 2, title: Data catalog & schema, github_issue: 2}
+  - {roadmap_id: 3, title: Dominant/fringe mapping, github_issue: 3}
+  - {roadmap_id: 4, title: FY2025 raw data acquisition, github_issue: 4}
+  - roadmap_id: 5
+    title: Time normalization
+    github_issue: 8
+    github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/8
+    branch: issue/feature-8
+  - {roadmap_id: 6, title: JEPX spot ETL, github_issue: null}
+  - {roadmap_id: 7, title: Price sensitivity ETL, github_issue: null}
+  - {roadmap_id: 8, title: Generation + HJKS ETL, github_issue: null}
+  - {roadmap_id: 9, title: Demand & reserve ETL, github_issue: null}
+  - {roadmap_id: 10, title: Interconnector ETL, github_issue: null}
+  - {roadmap_id: 11, title: Asset panel, github_issue: null}
+  - {roadmap_id: 12, title: Firm panel, github_issue: null}
+  - {roadmap_id: 13, title: Market panel, github_issue: null}
+  - {roadmap_id: 14, title: QA audit, github_issue: null}
+  - {roadmap_id: 15, title: Exploratory figures, github_issue: null}
+pull_requests:
+  - {github_pr: 5, roadmap_id: 1}
+  - {github_pr: 6, roadmap_id: 2}
+  - {github_pr: 7, roadmap_id: 4}
