@@ -1,0 +1,11 @@
+{
+  "pr": 14,
+  "issue": 13,
+  "issue_state": "closed",
+  "ready_for_review_before_merge": true,
+  "merge_commit_sha": "a49bd46c77fa3933fe983fa49784504c8ec5c855",
+  "main_pytest_passed": 148,
+  "main_ruff": "passed",
+  "baseline_mismatch_retained": 2271,
+  "raw_hash_audit_passed": 203
+}

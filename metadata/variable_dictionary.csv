@@ -19,15 +19,15 @@ jepx_price_sensitivity,hypothetical_price,追加入札時の仮想システム�
 jepx_price_sensitivity,price_difference,JEPX公表差分（原値保持・wide出力の6列）,quantity,JPY/kWh,JPY/kWh,差分CSV: 6シナリオ列,specified,RD-008。内部では仮想価格−感応度側基準価格と105120件一致。公式符号式は未確認。spot基準で再計算しない
 jepx_price_sensitivity,side,追加売買方向,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 occto_generation,generation_kwh,30分コマ内の発電電力量,quantity,kWh,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
-hjks_unit,authorized_capacity_kw,認可出力,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,authorized_capacity_kw,各raw行の認可出力。時点・停止量は未推測,quantity,kW,kW,認可出力,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
 hjks_unit,revised_authorized_capacity_kw,変更後認可出力,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 hjks_unit,operator_raw,元情報または対応表に基づく識別子・適用開始日,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 hjks_unit,plant_key,元情報または対応表に基づく識別子・適用開始日,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 hjks_unit,unit_key,元情報または対応表に基づく識別子・適用開始日,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
-hjks_unit,valid_from,元情報または対応表に基づく識別子・適用開始日,date,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_unit,valid_from,採用する有効期間の開始。未確認なのでnull,date,not_applicable,not_applicable,未確認,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
 hjks_outage,output_reduction_kw,停止・出力低下に伴う低下量,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 hjks_outage,event_key,イベントID候補。元データの識別子を確認する,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
-hjks_outage,outage_type,計画/計画外等の元区分,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+hjks_outage,outage_type,原停止区分,string,not_applicable,not_applicable,停止区分,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
 hjks_outage,start_at,停止・低下の開始時刻,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 hjks_outage,expected_recovery_at,復旧予定日時。実復旧日時と区別,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 hjks_outage,cause_raw,原因の元記述,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
@@ -123,3 +123,162 @@ jepx_price_sensitivity,source_difference_row_number,差分CSV論理行番号（h
 jepx_price_sensitivity,system_price_market,QA専用：spot CSVの正式採用実績市場価格,quantity,JPY/kWh,JPY/kWh,spot CSV: システムプライス(円/kWh),specified,全コマQAテーブルのみ。既存spot Parquet列system_priceを改名しない
 jepx_price_sensitivity,price_baseline_difference,QA専用：感応度側基準価格−実績市場価格,quantity,JPY/kWh,JPY/kWh,system_price_sensitivity_base - system_price_market,specified,符号は感応度側−spot。価格修正・JEPX公表差分ではない
 jepx_price_sensitivity,baseline_price_match_flag,QA専用：実績市場価格と感応度側基準価格のDecimal厳密一致,boolean,not_applicable,not_applicable,system_price_market == system_price_sensitivity_base,specified,Falseは既知QA。削除や停止の条件にしない
+occto_generation,area,原資料のエリア,string,not_applicable,not_applicable,エリア,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,plant_code,原資料の発電所コード（先頭ゼロ保持）,string,not_applicable,not_applicable,発電所コード,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,plant_name,発電所名の元表記,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,unit_name,ユニット名の元表記,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,plant_name_raw,発電所名の元表記保持,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,unit_name_raw,ユニット名の元表記保持,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,plant_name_normalized,発電所名の字形・空白・ハイフンのみ正規化,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,unit_name_normalized,ユニット名の字形・空白・ハイフンのみ正規化,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,source_file,元rawの相対パス,string,not_applicable,not_applicable,manifest.local_path,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,source_sha256,元rawのSHA256,string,not_applicable,not_applicable,manifest.sha256,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,source_extra_cells_json,ヘッダー外の末尾空セルを保持するJSON,string,not_applicable,not_applicable,CSV末尾空セル,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,source_row,header=1とする元CSV論理行番号,integer,not_applicable,not_applicable,元CSV論理行番号,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,asset_key_candidate,原コード・エリア・原発電所名・原ユニット名のハッシュ。最終資産IDではない,string,not_applicable,not_applicable,発電所コード + エリア + 発電所名 + ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,area,原資料のエリア,string,not_applicable,not_applicable,エリア,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,plant_code,原資料の発電所コード（先頭ゼロ保持）,string,not_applicable,not_applicable,発電所コード,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,plant_name,発電所名の元表記,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,unit_name,ユニット名の元表記,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,plant_name_raw,発電所名の元表記保持,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,unit_name_raw,ユニット名の元表記保持,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,plant_name_normalized,発電所名の字形・空白・ハイフンのみ正規化,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,unit_name_normalized,ユニット名の字形・空白・ハイフンのみ正規化,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,source_file,元rawの相対パス,string,not_applicable,not_applicable,manifest.local_path,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,source_sha256,元rawのSHA256,string,not_applicable,not_applicable,manifest.sha256,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,source_extra_cells_json,ヘッダー外の末尾空セルを保持するJSON,string,not_applicable,not_applicable,CSV末尾空セル,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,source_row,header=1とする元CSV論理行番号,integer,not_applicable,not_applicable,元CSV論理行番号,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,asset_key_candidate,原コード・エリア・原発電所名・原ユニット名のハッシュ。最終資産IDではない,string,not_applicable,not_applicable,発電所コード + エリア + 発電所名 + ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,area,原資料のエリア,string,not_applicable,not_applicable,エリア,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,plant_code,原資料の発電所コード（先頭ゼロ保持）,string,not_applicable,not_applicable,発電所コード,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,plant_name,発電所名の元表記,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,unit_name,ユニット名の元表記,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,plant_name_raw,発電所名の元表記保持,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,unit_name_raw,ユニット名の元表記保持,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,plant_name_normalized,発電所名の字形・空白・ハイフンのみ正規化,string,not_applicable,not_applicable,発電所名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,unit_name_normalized,ユニット名の字形・空白・ハイフンのみ正規化,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,source_file,元rawの相対パス,string,not_applicable,not_applicable,manifest.local_path,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,source_sha256,元rawのSHA256,string,not_applicable,not_applicable,manifest.sha256,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,source_extra_cells_json,ヘッダー外の末尾空セルを保持するJSON,string,not_applicable,not_applicable,CSV末尾空セル,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,source_row,header=1とする元CSV論理行番号,integer,not_applicable,not_applicable,元CSV論理行番号,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,asset_key_candidate,原コード・エリア・原発電所名・原ユニット名のハッシュ。最終資産IDではない,string,not_applicable,not_applicable,発電所コード + エリア + 発電所名 + ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,generation_kwh_30min,30分コマの発電電力量（原kWh）,quantity,kWh,kWh,00:30[kWh]〜24:00[kWh],specified,時間区間は30分。2倍してkWにしない。空セルは元空表記とnullを保持しゼロ化しない
+occto_generation,generation_raw_value,該当30分発電量セルの元文字列,string,not_applicable,not_applicable,00:30[kWh]〜24:00[kWh],specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,source_period_column,long値に対応する元の終端時刻列名,string,not_applicable,not_applicable,00:30[kWh]〜24:00[kWh],specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,delivery_date,受渡日を維持,date,not_applicable,not_applicable,対象日,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,period,1〜48の30分コマ,integer,not_applicable,not_applicable,元終端時刻列,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,timestamp_start,Asia/Tokyoのコマ開始,datetime,not_applicable,not_applicable,対象日 + 元終端時刻列,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,timestamp_end,Asia/Tokyoのコマ終了。48は翌00:00,datetime,not_applicable,not_applicable,対象日 + 元終端時刻列,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+occto_generation,timezone,Asia/Tokyo固定,string,not_applicable,not_applicable,時間キー契約,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,authorized_capacity_kw,各raw行の認可出力。時点・停止量は未推測,quantity,kW,kW,認可出力,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,changed_authorized_capacity_kw,変更後認可出力（適用未実施）,quantity,kW,kW,認可出力（変更後）,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,capacity_effective_date,変更後認可出力の適用開始日。履歴再構成は未実施,date,not_applicable,not_applicable,適用開始日,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,operation_start_date,原稼働開始日。1900年の意味は未確認,date,not_applicable,not_applicable,稼働開始日,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,operation_end_date,原稼働終了日。9999年の意味は未確認,date,not_applicable,not_applicable,稼働終了日,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,valid_to,採用する有効期間の終了。未確認なのでnull,date,not_applicable,not_applicable,未確認,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_unit,snapshot_row_id,SHAと元行番号による版内行ID。公式資産・イベントIDではない,string,not_applicable,not_applicable,manifest.sha256 + 元行番号,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,snapshot_row_id,SHAと元行番号による版内行ID。公式資産・イベントIDではない,string,not_applicable,not_applicable,manifest.sha256 + 元行番号,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,unit,対象ユニット名の字形正規化候補,string,not_applicable,not_applicable,ユニット名,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,start_datetime,停止・予定停止の開始日時,datetime,not_applicable,not_applicable,停止日時,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,expected_recovery_date,日単位の復旧予定日（時刻未観測）,date,not_applicable,not_applicable,復旧予定日,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,expected_recovery_datetime,復旧予定時刻は未観測なのでnull,datetime,not_applicable,not_applicable,未確認,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,actual_recovery_datetime,復旧実績は未観測なのでnull,datetime,not_applicable,not_applicable,未確認,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,publication_datetime,初回公表日時は未観測なのでnull,datetime,not_applicable,not_applicable,未確認,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,update_datetime,最終更新日時。初回公表日時の代用にしない,datetime,not_applicable,not_applicable,最終更新日時,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,reduction_kw,原低下量。平均低下量のkWを保持,quantity,kW,kW,低下量,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,recovery_precision,復旧予定の粒度dayまたはunknown,string,not_applicable,not_applicable,復旧予定日,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+hjks_outage,event_id_verified,公式イベントIDは未確認のためFalse,boolean,not_applicable,not_applicable,未確認,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+derived,generation_kwh_FY2025,FY2025の数値が観測された発電量の合計,quantity,kWh,kWh,OCCTO 00:30[kWh]〜24:00[kWh],specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,unmatched_generation_kwh,strictでplant未対応の観測発電量合計,quantity,kWh,kWh,OCCTO発電実績 + 既存plant_match,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,share_of_all_observed_generation,全数値観測発電量に占める割合。欠測電力量は分母不明,quantity,ratio,ratio,generation_kwh_FY2025 / 全観測量,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,share_of_unmatched,未対応数値観測量に占める割合,quantity,ratio,ratio,generation_kwh_FY2025 / 未対応総量,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,observed_unit_count,原コード・area・原plant/unit名組の観測候補数。物理unit数は未確定,integer,not_applicable,not_applicable,OCCTO原コード・原名称,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,hjks_strict_candidate_count,strict条件に一致するHJKS area×code候補数,integer,not_applicable,not_applicable,HJKS 発電所コード・エリア・発電所名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,strong_candidate_code_count,名称基部・unit番号の診断条件に合うHJKSコード数,integer,not_applicable,not_applicable,HJKS 発電所コード・名称・unit名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,similarity,名称similarityの0.7plant+0.3unit加重値。確率ではない,quantity,ratio,ratio,SequenceMatcherによる元名称の診断用字形キー比較,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,plant_name_similarity,plant名称の字形キーSequenceMatcher比率,quantity,ratio,ratio,発電所名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,unit_name_similarity,unit名称の字形キーSequenceMatcher比率,quantity,ratio,ratio,ユニット名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,code_equal,元コード文字列の厳密一致,boolean,not_applicable,not_applicable,OCCTO/HJKS 発電所コード,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,area_equal,元エリアの一致,boolean,not_applicable,not_applicable,OCCTO/HJKS エリア,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,B_exact_candidate,B条件に合う候補行。最終mappingではない,boolean,not_applicable,not_applicable,元名称の字形キー厳密比較,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,C_strong_candidate,Cの名称・番号条件に合う候補行。異コードを含むため要確認,boolean,not_applicable,not_applicable,診断用名称基部 + unit番号,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,code_mismatch_requires_review,異コードのため公式対応・時点確認が必要,boolean,not_applicable,not_applicable,元コードの厳密比較,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,diagnostic_plant_stem,設備語尾等を切り分けた診断用名称。正式plant名称ではない,string,not_applicable,not_applicable,元発電所名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,generation_coverage,候補条件下で対応する数値観測量/全数値観測量,quantity,ratio,ratio,追加候補 + OCCTO観測量,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,plant_match_rate,対応plantラベル数/全363ラベル。物理的サイト一致率ではない,quantity,ratio,ratio,元area×code×正規化plantラベル,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,ambiguous_plant_label_count,一意な候補が決まらないplantラベル数,integer,not_applicable,not_applicable,候補集合のコード数,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,final_mapping_applied,追加対応を正式適用したか。今回False,boolean,not_applicable,not_applicable,診断スコープ,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,verification_status,公式根拠による設備対応候補の確認レベル,string,not_applicable,not_applicable,公式HJKS検索・JERA設備表,specified,confirmed/strongly_supported/candidate/ambiguous/unresolved。コード体系未解決は別管理
+derived,direct_code_crosswalk_verified,異なる発電所コードの直接対応根拠を確認したか,boolean,not_applicable,not_applicable,公式コード説明・対応表,specified,今回は全候補False。設備構成の一致と混同しない
+derived,code_difference_reason,発電所コード差の公式説明,string,not_applicable,not_applicable,OCCTO/HJKSコードと公式資料,specified,今回は未確認。改番・旧新・親子と断定しない
+derived,unit_match_rate,一意に対応候補が付く元unit候補数/全元unit候補数,quantity,ratio,ratio,既存strict候補・公式資料確認候補,specified,時間行ベースmatch率と区別。Cは感度確認のみ
+derived,first_observed,既存FY発電実績で元unit行を最初に観測する受渡日,date,not_applicable,not_applicable,OCCTO 対象日,specified,商業運転開始日ではない
+derived,last_observed,既存FY発電実績で元unit行を最後に観測する受渡日,date,not_applicable,not_applicable,OCCTO 対象日,specified,稼働終了日ではない
+derived,analysis_use_diagnosis,分析利用上の診断区分。矛盾未検出/集約条件付き/保留,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,document_publication_time_evidence,資料公表時点の確認情報。URL名の年月と公表日を区別,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,equipment_reference_time_evidence,資料が説明する設備の運転開始等の対象時点,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,fy2025_identity_support,FY2025に存在する設備同一性の支持範囲。期間全体の不変性は未証明,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,equipment_scope_check,系列・号機・軸・ブロックとGT/STの対応範囲の確認,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,old_new_equipment_check,更新後設備と旧設備を区別して保持する点検結果,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,source_candidate_count,同じ元assetが持つ候補target行数,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,metering_boundary_verified,認可出力と発電計測点・gross/net境界の一致を確認したか,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,fy_capacity_validity_verified,FY各時点へcapacityを適用する根拠を確認したか,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,fy_validity_verified,対象assetのFY容量有効期間が確認済みか,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,baseline_adopted,今回の診断を最終分析baselineとして採用したか。今回はFalse,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,held_candidate,保留候補を持つか。行と候補を残し追加対応へ自動採用しない,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,mapping_route,strict unit/明示候補/未対応または曖昧の対応経路,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,scenario,strict_existingまたはcandidate49_diagnosticの独立診断シナリオ,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,selected_unit_target_ids_json,unit対応候補のsnapshot行ID集合。多対多へ展開しない,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,proposed_candidate_ids_json,保留も含めた元assetの追加候補行ID集合,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,strict_plant_pool_ids_json,既存strict plant検索の候補台帳行ID集合。号機範囲一致を保証しない,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,gap_category,plant対応のみ成立するunitの主な問題の診断区分,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,reason,診断区分の理由候補。正式な物理対応の確定ではない,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,observed_generation_kwh,元unitのFY数値観測発電量。空セルは不明のまま,quantity,kWh,kWh,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,strict_pool_names_json,既存plant候補poolの元plant名・unit名・認可出力値の一覧,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,dimension,全国/エリア/月/エリア月の比較集計区分,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,group,比較集計のエリア・月等の値。ケース間で同じ分母を使用,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,level,plant候補またはunit候補の対応条件,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,total_observed_kwh,共通分母の数値観測電力量。全供給量や補完後電力量ではない,quantity,kWh,kWh,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,matched_observed_kwh,該当対応条件の数値観測電力量。元sourceを一度だけ計数,quantity,kWh,kWh,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,unmatched_observed_kwh,対応しない元行の数値観測電力量。行をdropしない,quantity,kWh,kWh,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,source_unit_days,比較対象に残る元unit日数,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,matched_unit_days,plant/unit対応条件を満たす元unit日数,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,matched_day_row_rate,対応元unit日数/全元unit日数。plant日率と区別,quantity,ratio,ratio,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,null_cell_count,元48列内の空セル件数。ゼロ発電へ変換しない,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,unmatched_null_cells,対応しない元unit日内の空セル件数,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,distinct_snapshot_row_count,参照先台帳行IDのdistinct件数。物理設備数ではない,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,authorized_capacity_kw_snapshot_row_sum,distinct台帳行の認可出力列の参考合計。FY有効/物理容量の合計ではない,quantity,kW,kW,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,physical_capacity_coverage,物理容量の対応率。分母未確定なので今回はnull,quantity,ratio,ratio,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,fy2025_capacity_denominator,FY2025有効容量の分母。未確定なのでnull,quantity,kW,kW,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,effective_date_present_rows,容量適用開始日が記載された参照台帳行数,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,observed_event_rows,asset対応先キーで見つかる収録停止行数。0でも停止なしを意味しない,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,possible_fy_event_rows,開始日と予定復旧日からFY関連の可能性を持つ収録行数。interval判定ではない,integer,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,no_event_means_no_outage,イベント0件を停止なしと解釈するか。今回はFalse,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,capacity_applied_to_generation,容量を発電実績の各時点へ適用したか。今回はFalse,boolean,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,analysis_notes,分析利用診断の条件・不明点・適用範囲,string,not_applicable,not_applicable,既存OCCTO/HJKS元列・strict候補・公式設備根拠49行,specified,Issue15の利用準備診断。正式mapping/容量時点適用/停止展開/headroomは未実施
+derived,generation_avg_kw,30分平均発電出力。generation_kwh_30min/0.5時間。瞬間出力ではない,quantity,kW,kWh,OCCTO generation_kwh_30min,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_reference_kw,設備範囲・一意性・正値・期間矛盾の検査後に参照する一定台帳容量。FY有効容量ではない,quantity,kW,kW,HJKS 認可出力,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_gap_reference_kw,参照容量と30分平均発電出力の差。停止控除せず負値を保持,quantity,kW,kW,capacity_reference_kw - generation_avg_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_reference_raw_kw,参照先台帳の容量原値。計算保留時も出典とともに保持,quantity,kW,kW,HJKS 認可出力,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,official_verification_status,公式根拠の確認状態。研究者の診断使用承認とは分離し昇格しない,string,not_applicable,not_applicable,既存strict/公式根拠49行/個別表記対応,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,research_use_status,診断限定の使用可use_diagnosticまたは保留held,string,not_applicable,not_applicable,設備範囲・正値・一意性・競合等の検査,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,research_use_reason,診断使用または保留の具体的理由,string,not_applicable,not_applicable,対応診断,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,diagnostic_mapping_route,strict/candidate49/notation34/noneの診断対応経路,string,not_applicable,not_applicable,既存候補表と明示追加表,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,equipment_scope_checked,今回の診断用に設備範囲・番号等の検査を通ったか,boolean,not_applicable,not_applicable,元plant/unitとHJKS行,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_constant_assumption,観測期間に参照台帳値を一定と仮定する診断シナリオか,boolean,not_applicable,not_applicable,RD-012ユーザー承認,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_effective_period_verified,capacityの有効期間を正式確認したか。今回はFalse,boolean,not_applicable,not_applicable,HJKS適用開始日・履歴,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_snapshot_downloaded_at,参照snapshotの取得日時。677手動版は不明のためnull,datetime,not_applicable,not_applicable,取得manifest downloaded_at,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,capacity_snapshot_registered_at,参照snapshotの登録日時。取得日時とは区別,datetime,not_applicable,not_applicable,取得manifest registered_at,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_period_contradiction,明示稼働開始日前/終了日後の観測行。capacity期間の補完ではない,boolean,not_applicable,not_applicable,受渡日とHJKS稼働日,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_operation_boundary_day,時刻のない稼働開始/終了日そのもの。差を保留,boolean,not_applicable,not_applicable,受渡日とHJKS稼働日,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_negative_reference_gap,参照容量差が負か。原値保持し切り上げない,boolean,not_applicable,not_applicable,capacity_gap_reference_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_generation_exceeds_reference,30分平均発電出力が参照容量を超えるか。負の差と同じ条件,boolean,not_applicable,not_applicable,generation_avg_kw/参照容量,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_generation_missing,元30分電力量が欠測か。出力も欠測のまま,boolean,not_applicable,not_applicable,generation_kwh_30min,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,qa_capacity_unavailable,対応/正値/範囲/期間等により当該セルで参照容量を使えないか,boolean,not_applicable,not_applicable,診断対応・期間flag,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,reference_gap_partial_sum_kw,計算できた設備の参照容量差の部分和。全欠測はnull。地域全体ではない,quantity,kW,kW,capacity_gap_reference_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,scope_complete_partial_sum_kw,観測された計算scope内で欠測がない場合の部分和。欠測ありはnull,quantity,kW,kW,capacity_gap_reference_kwとvalid mask,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,computed_subset_reference_capacity_kw,差を計算できた部分だけの参照容量合計。欠測出力の設備は含めない,quantity,kW,kW,参照容量と計算可否mask,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,known_reference_capacity_kw,観測計算scopeで参照できる台帳容量の部分和。地域全容量ではない,quantity,kW,kW,capacity_reference_kw,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,computed_unit_count,地域部分和を計算できた元unit数,integer,not_applicable,not_applicable,計算可能な30分セル,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,missing_output_in_scope,参照容量を使えるが発電量欠測の元unit数,integer,not_applicable,not_applicable,cap valid / generation missing,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完
+derived,calculation_scope_unit_count,観測行のうち範囲/期間条件を満たす参照容量の元unit数,integer,not_applicable,not_applicable,診断対応と期間flag,specified,RD-012：参照容量と平均発電出力の差の診断限定。停止補正/最終baselineではない。原値保持・欠測非補完

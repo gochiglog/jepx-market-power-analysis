@@ -1,0 +1,89 @@
+{
+  "checked_on": "2026-10-16",
+  "reference_files": 39,
+  "code_search_counts": {
+    "hjks_plantcd_GB583": 0,
+    "hjks_plantcd_GB573": 0,
+    "hjks_plantcd_GB593": 0,
+    "hjks_plantcd_GB4Q3": 0,
+    "hjks_plantcd_GB553": 0,
+    "hjks_plantcd_GAZT3": 0,
+    "hjks_plantcd_48193": 0,
+    "hjks_plantcd_GC5F3": 0,
+    "hjks_plantcd_GV943": 0,
+    "hjks_plantcd_GAWA3": 0
+  },
+  "current_rows": 88,
+  "missing_from_677": [],
+  "evidence_pair_counts": {
+    "confirmed": 0,
+    "strongly_supported": 49,
+    "candidate": 0,
+    "ambiguous": 0,
+    "unresolved": 0
+  },
+  "current_distinct_unit_count": 87,
+  "supported_source_unit_count": 49,
+  "supported_code_count": 10,
+  "confirmed": 0,
+  "candidate": 0,
+  "ambiguous": 0,
+  "unresolved": 0,
+  "code_crosswalk_unresolved_count": 10,
+  "scenarios": {
+    "A_strict": {
+      "plant_count": 363,
+      "matched_plant_count": 296,
+      "unit_count": 491,
+      "matched_unit_count": 353,
+      "generation_coverage": "0.8024682472609992755474928000",
+      "matched_generation_kwh": "518800283424",
+      "unit_generation_coverage": "0.6159267349254226578333080720",
+      "unmatched_generation_kwh": "127705401000",
+      "final_mapping_applied": false,
+      "plant_match_rate": 0.8154269972451791,
+      "unit_match_rate": 0.7189409368635438,
+      "area_coverage": {
+        "東京": "0.3558469385946039455233640273",
+        "中部": "0.9078364540131722173201657107"
+      }
+    },
+    "B_confirmed": {
+      "plant_count": 363,
+      "matched_plant_count": 296,
+      "unit_count": 491,
+      "matched_unit_count": 353,
+      "generation_coverage": "0.8024682472609992755474928000",
+      "matched_generation_kwh": "518800283424",
+      "unit_generation_coverage": "0.6159267349254226578333080720",
+      "unmatched_generation_kwh": "127705401000",
+      "final_mapping_applied": false,
+      "plant_match_rate": 0.8154269972451791,
+      "unit_match_rate": 0.7189409368635438,
+      "area_coverage": {
+        "東京": "0.3558469385946039455233640273",
+        "中部": "0.9078364540131722173201657107"
+      }
+    },
+    "C_sensitivity": {
+      "plant_count": 363,
+      "matched_plant_count": 345,
+      "unit_count": 491,
+      "matched_unit_count": 402,
+      "generation_coverage": "0.9757291430252774751432538844",
+      "matched_generation_kwh": "630814437424",
+      "unit_generation_coverage": "0.7891876306897008574290691564",
+      "unmatched_generation_kwh": "15691247000",
+      "final_mapping_applied": false,
+      "plant_match_rate": 0.9504132231404959,
+      "unit_match_rate": 0.8187372708757638,
+      "area_coverage": {
+        "東京": "0.9191535067630186528809807909",
+        "中部": "0.9927742904487088429303670595"
+      }
+    }
+  },
+  "annual_redownload": false,
+  "existing_mapping_modified": false,
+  "existing_generation_raw_sha_unchanged": true
+}

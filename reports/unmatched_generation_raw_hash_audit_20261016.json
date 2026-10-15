@@ -1,0 +1,10 @@
+{
+  "audited_at": "2026-10-16T01:32:01+09:00",
+  "registered_file_count": 203,
+  "hash_validation": "all_passed",
+  "unregistered_raw_paths": [
+    "data/raw/.DS_Store",
+    "data/raw/hjks/.DS_Store",
+    "data/raw/rei/.DS_Store"
+  ]
+}

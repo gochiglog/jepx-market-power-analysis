@@ -1,0 +1,301 @@
+{
+  "analysis_use_counts": {
+    "現時点で対応上の矛盾は見つからない": 48,
+    "plant等への集約条件付きで利用を検討できる": 1,
+    "候補の競合・設備範囲・期間等の理由で保留": 0
+  },
+  "verification_status_counts": {
+    "strongly_supported": 49
+  },
+  "source_competition_count": 0,
+  "target_reuse_count": 0,
+  "gap": {
+    "表記の違い": {
+      "unit_count": 34,
+      "observed_kwh": "55527533000"
+    },
+    "設備階層や集約範囲の違い": {
+      "unit_count": 13,
+      "observed_kwh": "34004550498"
+    },
+    "対応情報の不足": {
+      "unit_count": 19,
+      "observed_kwh": "30939193822"
+    },
+    "その他": {
+      "unit_count": 1,
+      "observed_kwh": "128870786"
+    }
+  },
+  "coverage": [
+    {
+      "scenario": "candidate49_diagnostic",
+      "dimension": "全国",
+      "group": "全国",
+      "level": "plant",
+      "total_observed_kwh": "646505684424",
+      "matched_observed_kwh": "630814437424",
+      "unmatched_observed_kwh": "15691247000",
+      "generation_coverage": "0.9757291430252774751432538844",
+      "source_unit_days": 176428,
+      "matched_unit_days": 168579,
+      "matched_day_row_rate": 0.9555115967986941,
+      "null_cell_count": 214299,
+      "unmatched_null_cells": 0
+    },
+    {
+      "scenario": "candidate49_diagnostic",
+      "dimension": "全国",
+      "group": "全国",
+      "level": "unit",
+      "total_observed_kwh": "646505684424",
+      "matched_observed_kwh": "510214289318",
+      "unmatched_observed_kwh": "136291395106",
+      "generation_coverage": "0.7891876306897008574290691564",
+      "source_unit_days": 176428,
+      "matched_unit_days": 144799,
+      "matched_day_row_rate": 0.8207257351440814,
+      "null_cell_count": 214299,
+      "unmatched_null_cells": 4216
+    },
+    {
+      "scenario": "strict_existing",
+      "dimension": "全国",
+      "group": "全国",
+      "level": "plant",
+      "total_observed_kwh": "646505684424",
+      "matched_observed_kwh": "518800283424",
+      "unmatched_observed_kwh": "127705401000",
+      "generation_coverage": "0.8024682472609992755474928000",
+      "source_unit_days": 176428,
+      "matched_unit_days": 150694,
+      "matched_day_row_rate": 0.8541387988301177,
+      "null_cell_count": 214299,
+      "unmatched_null_cells": 0
+    },
+    {
+      "scenario": "strict_existing",
+      "dimension": "全国",
+      "group": "全国",
+      "level": "unit",
+      "total_observed_kwh": "646505684424",
+      "matched_observed_kwh": "398200135318",
+      "unmatched_observed_kwh": "248305549106",
+      "generation_coverage": "0.6159267349254226578333080720",
+      "source_unit_days": 176428,
+      "matched_unit_days": 126914,
+      "matched_day_row_rate": 0.719352937175505,
+      "null_cell_count": 214299,
+      "unmatched_null_cells": 4216
+    }
+  ],
+  "joins": {
+    "strict_existing": {
+      "parquet_roundtrip_equal": true,
+      "input_unit_days": 176428,
+      "output_unit_days": 176428,
+      "represented_30min_rows": 8468544,
+      "unintended_row_growth": 0,
+      "silent_row_drop": 0,
+      "duplicate_unit_day_keys": 0,
+      "unmatched_unit_days": 49514,
+      "unmatched_plant_unit_days": 25734
+    },
+    "candidate49_diagnostic": {
+      "parquet_roundtrip_equal": true,
+      "input_unit_days": 176428,
+      "output_unit_days": 176428,
+      "represented_30min_rows": 8468544,
+      "unintended_row_growth": 0,
+      "silent_row_drop": 0,
+      "duplicate_unit_day_keys": 0,
+      "unmatched_unit_days": 31629,
+      "unmatched_plant_unit_days": 7849
+    }
+  },
+  "observed_delivery_days": 365,
+  "delivery_date_min": "2025-04-01",
+  "delivery_date_max": "2026-03-31",
+  "null_cell_count": 214299,
+  "timezone": "Asia/Tokyo",
+  "unit_conversion_performed": false,
+  "capacity": [
+    {
+      "scope": "529_snapshot_all_rows",
+      "distinct_snapshot_row_count": 529,
+      "authorized_capacity_kw_snapshot_row_sum": "203693760",
+      "nonmissing_capacity_rows": 529,
+      "zero_capacity_rows": 1,
+      "effective_date_present_rows": 0,
+      "changed_capacity_present_rows": 0,
+      "operation_start_1900_rows": null,
+      "fy2025_capacity_validity_verified_rows": 0,
+      "fy2025_capacity_denominator": null,
+      "physical_capacity_coverage": null,
+      "note": "行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない"
+    },
+    {
+      "scope": "677_snapshot_all_rows",
+      "distinct_snapshot_row_count": 677,
+      "authorized_capacity_kw_snapshot_row_sum": "266247940",
+      "nonmissing_capacity_rows": 677,
+      "zero_capacity_rows": 4,
+      "effective_date_present_rows": 0,
+      "changed_capacity_present_rows": 0,
+      "operation_start_1900_rows": 603,
+      "fy2025_capacity_validity_verified_rows": 0,
+      "fy2025_capacity_denominator": null,
+      "physical_capacity_coverage": null,
+      "note": "行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない"
+    },
+    {
+      "scope": "strict_existing",
+      "distinct_snapshot_row_count": 353,
+      "authorized_capacity_kw_snapshot_row_sum": "140140070",
+      "nonmissing_capacity_rows": 353,
+      "zero_capacity_rows": 0,
+      "effective_date_present_rows": 0,
+      "changed_capacity_present_rows": 0,
+      "operation_start_1900_rows": 317,
+      "fy2025_capacity_validity_verified_rows": 0,
+      "fy2025_capacity_denominator": null,
+      "physical_capacity_coverage": null,
+      "note": "行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない"
+    },
+    {
+      "scope": "candidate49_diagnostic",
+      "distinct_snapshot_row_count": 402,
+      "authorized_capacity_kw_snapshot_row_sum": "162050970",
+      "nonmissing_capacity_rows": 402,
+      "zero_capacity_rows": 0,
+      "effective_date_present_rows": 0,
+      "changed_capacity_present_rows": 0,
+      "operation_start_1900_rows": 357,
+      "fy2025_capacity_validity_verified_rows": 0,
+      "fy2025_capacity_denominator": null,
+      "physical_capacity_coverage": null,
+      "note": "行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない"
+    }
+  ],
+  "outage": [
+    {
+      "version": "hjks_outage_58852",
+      "rows": 58852,
+      "uniquely_linkable_to_677_rows": 57633,
+      "unique_master_match_rate": 0.9792870250798613,
+      "ambiguous_to_677_rows": 1219,
+      "unmatched_to_677_rows": 0,
+      "potential_fy_overlap_rows": 7871,
+      "updated_after_fy_rows": 5291,
+      "updated_after_start_rows": 14803,
+      "actual_recovery_field_available": false,
+      "initial_publication_field_available": false,
+      "expected_recovery_time_available": false,
+      "as_of_complete_history_reconstructible": false,
+      "strict_vs_candidate": {
+        "strict_existing": {
+          "event_rows_with_target_key": 43408,
+          "possible_fy_rows_with_target_key": 5760,
+          "target_unit_key_count": 353
+        },
+        "candidate49_diagnostic": {
+          "event_rows_with_target_key": 47020,
+          "possible_fy_rows_with_target_key": 6361,
+          "target_unit_key_count": 402
+        }
+      },
+      "existing_qa": {
+        "candidate_event_duplicate_groups": 1062,
+        "candidate_event_duplicate_excess_rows": 1205,
+        "candidate_update_groups": 832,
+        "field_ranges": {
+          "停止日時": {
+            "min_raw": "2001/04/01 00:00",
+            "max_raw": "9999/12/27 15:00",
+            "blank_count": 0
+          },
+          "復旧予定日": {
+            "min_raw": "",
+            "max_raw": "9999/12/31",
+            "blank_count": 117
+          },
+          "最終更新日時": {
+            "min_raw": "2016/04/12 13:14",
+            "max_raw": "2026/10/08 17:07",
+            "blank_count": 0
+          }
+        },
+        "start_before_fy_recovery_in_or_after_fy": 128,
+        "start_before_fy_recovery_unknown": 88
+      },
+      "duplicate_rows_removed": 0,
+      "interval_expansion_performed": false
+    },
+    {
+      "version": "hjks_outage_7828",
+      "rows": 7828,
+      "uniquely_linkable_to_677_rows": 7690,
+      "unique_master_match_rate": 0.9823709759836484,
+      "ambiguous_to_677_rows": 138,
+      "unmatched_to_677_rows": 0,
+      "potential_fy_overlap_rows": 7828,
+      "updated_after_fy_rows": 97,
+      "updated_after_start_rows": 2083,
+      "actual_recovery_field_available": false,
+      "initial_publication_field_available": false,
+      "expected_recovery_time_available": false,
+      "as_of_complete_history_reconstructible": false,
+      "strict_vs_candidate": {
+        "strict_existing": {
+          "event_rows_with_target_key": 5753,
+          "possible_fy_rows_with_target_key": 5753,
+          "target_unit_key_count": 353
+        },
+        "candidate49_diagnostic": {
+          "event_rows_with_target_key": 6354,
+          "possible_fy_rows_with_target_key": 6354,
+          "target_unit_key_count": 402
+        }
+      },
+      "existing_qa": {
+        "candidate_event_duplicate_groups": 161,
+        "candidate_event_duplicate_excess_rows": 175,
+        "candidate_update_groups": 98,
+        "field_ranges": {
+          "停止日時": {
+            "min_raw": "2007/07/05 03:15",
+            "max_raw": "2026/03/31 17:00",
+            "blank_count": 0
+          },
+          "復旧予定日": {
+            "min_raw": "",
+            "max_raw": "2029/10/31",
+            "blank_count": 57
+          },
+          "最終更新日時": {
+            "min_raw": "2016/04/13 10:15",
+            "max_raw": "2026/10/14 18:46",
+            "blank_count": 0
+          }
+        },
+        "start_before_fy_recovery_in_or_after_fy": 122,
+        "start_before_fy_recovery_unknown": 51
+      },
+      "duplicate_rows_removed": 0,
+      "interval_expansion_performed": false
+    }
+  ],
+  "raw_sha_unchanged": true,
+  "original_input_sha256": {
+    "generation_hjks_677_mapping_candidates.csv": "b8f06f894383e65c618328fc7ff842035bd654d49940be4990d1a3513c16005f",
+    "generation_hjks_FY2025_qa.json": "51a78aa3dd7748e372327134b6e4ab145b472e4372910eed039eb4d34d709ae9",
+    "top10_official_mapping_evidence_20261016.csv": "d74547bb0ffacb83004fa6b6fd880a995b416cd2968f92b4ed9cf800d11c348a",
+    "top10_official_review_qa_20261016.json": "ae037f06e3df9911bdfa1b20d2d295512b265406392e9e46ea0bf047e9cc3816"
+  },
+  "original_long_sha_unchanged": true,
+  "output_directory": "/Users/goto/Documents/Uni/04_research_second/data/interim/hjks/analysis_readiness/20261016_diagnostic_v3",
+  "inquiry_work_in_scope": false,
+  "final_mapping_applied": false,
+  "baseline_selected": false,
+  "headroom_calculated": false
+}

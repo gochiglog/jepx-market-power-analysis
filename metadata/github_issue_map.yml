@@ -27,10 +27,13 @@ tasks:
   github_issue_number: 13
   github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/13
   branch: issue/feature-13
-  status: implemented_pending_review_known_qa
+  status: merged_closed
 - roadmap_id: 8
   title: Generation + HJKS ETL
-  github_issue_number: null
+  github_issue_number: 15
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/15
+  branch: issue/feature-15
+  status: diagnostics_pending_research_decisions
 - roadmap_id: 9
   title: Demand & reserve ETL
   github_issue_number: null
@@ -67,4 +70,5 @@ pull_requests:
   roadmap_id: 6
 - github_pr: 14
   roadmap_id: 7
-  draft: true
+  draft: false
+  status: merged
