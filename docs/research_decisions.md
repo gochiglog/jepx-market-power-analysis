@@ -86,7 +86,29 @@
 - 根拠URL：[JEPXスポット市場データ](https://www.jepx.jp/electricpower/market-data/spot/)、[価格感応度について](https://www.jepx.jp/electricpower/market-data/spot/pdf/kakaku_kannoudo.pdf) p2（PDF資料日付未確認、確認日2026-10-15）。研究上の扱いの確定根拠はユーザー指示であり、JEPXが不一致を説明・承認したという意味ではない。
 - 適用範囲：価格感応度ETL、将来market panel等。再検討条件：公式回答・改訂や追加の根拠。RD-P07/P08の旧出力停止条件は本判断で解除するが、原因・公式符号式の未確認事項は残す。
 
+### RD-009 HJKS677行版を設備探索の参照台帳候補として使用する
+
+- 状態：確定（2026-10-16ユーザー明示指示）。
+- 判断：677行版をFY2025に存在した設備の探索・対応候補作成に使う。529行版を削除しない。
+- 制限：FY2025各時点のcapacity情報として正式採用したわけではない。unit/plantのbaseline、capacity適用、outage interval、headroomの承認ではない。
+- 根拠：ユーザー指示、原台帳の比較、[公式unit画面](https://hjks.jepx.or.jp/hjks/unit)。公式画面だけから履歴時点の再構成が保証されるとは扱わない。
+- 次の判断：異コード候補の公式裏付けと資産階層・有効期間を確認し、baseline粒度と対応を別途ユーザーへ提示する。
+
 ## 保留
+
+### Issue #15 未対応量・粒度の追加診断（2026-10-16）
+
+詳細：[追加診断報告](../reports/unmatched_generation_diagnosis_20261016.md)、条件・根拠は `metadata/research/unmatched_generation_method_20261016.yml`。
+既存strictの80.2468%を維持したまま、未対応127,705,401,000kWhをarea/月/元code/元燃種へ分解しました。
+東京94.40%・中部5.60%。上位10元plantラベル38.96%、上位10code87.71%で、元plant名には号機・系列・軸情報を含むものがあります。ラベル数と物理サイト数を同一視しません。
+
+| 判断事項 | 選択肢 | 数値的影響 | 公式根拠・先行研究 | 推奨 | 状態 |
+|---|---|---|---|---|---|
+| 追加mapping採用 | A strict / B exact追加 / C名称基部・番号候補まで | A/B80.25%、C条件付100%。C追加66ラベル全て異コード。code一致必須では80.25% | 東京電力HDの説明はHJKS codeとの関係を示すが個別変換表は未確認。先行研究からこのcrosswalkを決められない | Cを正式採用せず、上位10codeから確認する | ユーザー確認待ち、追加正式対応0 |
+| RD-P09 baseline粒度 | plant / unit / 二層 | strict plant80.25%、unit61.59%。補正後の二層coverageは未算定 | BBW2002のunit情報を保持し集計する構造は参考になるが、同論文はactual outagesで出力を補正しない | 将来のデータ構造は二層を第一候補に検討。設備階層・期間と補正の採否は別承認 | 全案保留、物理補正なし |
+
+根拠：[東京電力HDのデータ説明](https://www.tepco.co.jp/forecast/html/unit-j.html)、[OCCTO注意事項](https://www.occto.or.jp/contact/unit.html)、[Borenstein・Bushnell・Wolak (2002), CSEM WP102](https://escholarship.org/content/qt2159m46p/qt2159m46p.pdf)物理p19〜21（本文p16〜18）。確認日2026-10-16。論文の計画停止の戦略性に関する注意を本研究の機械的outage補正の根拠へ置き換えない。
+最終mapping、capacity、interval、kWh→kW、headroom、dominant/fringe、firm集約、回帰へは進まず停止する。
 
 ### Issue #15 HJKS仕様の確認と判断ゲート（2026-10-15）
 

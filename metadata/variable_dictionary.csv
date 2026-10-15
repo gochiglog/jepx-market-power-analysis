@@ -188,3 +188,23 @@ hjks_outage,update_datetime,最終更新日時。初回公表日時の代用に�
 hjks_outage,reduction_kw,原低下量。平均低下量のkWを保持,quantity,kW,kW,低下量,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
 hjks_outage,recovery_precision,復旧予定の粒度dayまたはunknown,string,not_applicable,not_applicable,復旧予定日,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
 hjks_outage,event_id_verified,公式イベントIDは未確認のためFalse,boolean,not_applicable,not_applicable,未確認,specified,Issue #15診断。版・対応・有効期間の正式採用なし。元列保持
+derived,generation_kwh_FY2025,FY2025の数値が観測された発電量の合計,quantity,kWh,kWh,OCCTO 00:30[kWh]〜24:00[kWh],specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,unmatched_generation_kwh,strictでplant未対応の観測発電量合計,quantity,kWh,kWh,OCCTO発電実績 + 既存plant_match,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,share_of_all_observed_generation,全数値観測発電量に占める割合。欠測電力量は分母不明,quantity,ratio,ratio,generation_kwh_FY2025 / 全観測量,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,share_of_unmatched,未対応数値観測量に占める割合,quantity,ratio,ratio,generation_kwh_FY2025 / 未対応総量,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,observed_unit_count,原コード・area・原plant/unit名組の観測候補数。物理unit数は未確定,integer,not_applicable,not_applicable,OCCTO原コード・原名称,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,hjks_strict_candidate_count,strict条件に一致するHJKS area×code候補数,integer,not_applicable,not_applicable,HJKS 発電所コード・エリア・発電所名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,strong_candidate_code_count,名称基部・unit番号の診断条件に合うHJKSコード数,integer,not_applicable,not_applicable,HJKS 発電所コード・名称・unit名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,similarity,名称similarityの0.7plant+0.3unit加重値。確率ではない,quantity,ratio,ratio,SequenceMatcherによる元名称の診断用字形キー比較,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,plant_name_similarity,plant名称の字形キーSequenceMatcher比率,quantity,ratio,ratio,発電所名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,unit_name_similarity,unit名称の字形キーSequenceMatcher比率,quantity,ratio,ratio,ユニット名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,code_equal,元コード文字列の厳密一致,boolean,not_applicable,not_applicable,OCCTO/HJKS 発電所コード,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,area_equal,元エリアの一致,boolean,not_applicable,not_applicable,OCCTO/HJKS エリア,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,B_exact_candidate,B条件に合う候補行。最終mappingではない,boolean,not_applicable,not_applicable,元名称の字形キー厳密比較,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,C_strong_candidate,Cの名称・番号条件に合う候補行。異コードを含むため要確認,boolean,not_applicable,not_applicable,診断用名称基部 + unit番号,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,code_mismatch_requires_review,異コードのため公式対応・時点確認が必要,boolean,not_applicable,not_applicable,元コードの厳密比較,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,diagnostic_plant_stem,設備語尾等を切り分けた診断用名称。正式plant名称ではない,string,not_applicable,not_applicable,元発電所名,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,generation_coverage,候補条件下で対応する数値観測量/全数値観測量,quantity,ratio,ratio,追加候補 + OCCTO観測量,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,plant_match_rate,対応plantラベル数/全363ラベル。物理的サイト一致率ではない,quantity,ratio,ratio,元area×code×正規化plantラベル,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,ambiguous_plant_label_count,一意な候補が決まらないplantラベル数,integer,not_applicable,not_applicable,候補集合のコード数,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳
+derived,final_mapping_applied,追加対応を正式適用したか。今回False,boolean,not_applicable,not_applicable,診断スコープ,specified,Issue15追加診断。元データと既存mappingは変更せず、正式採用しない。原資料: OCCTO月別発電実績・HJKS677台帳

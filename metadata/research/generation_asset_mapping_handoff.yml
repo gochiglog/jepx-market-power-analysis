@@ -1,17 +1,22 @@
-updated_on: '2026-10-15'
+updated_on: '2026-10-16'
 github_issue: 15
 roadmap_id: 8
 consumer: Issue 3 Phase B
 status: candidate_diagnostics_only_pending_user_decision
 generation_long: data/interim/occto/generation/generation_long_FY2025.parquet
 candidate_files:
-  - reports/generation_hjks_529_mapping_candidates.csv
-  - reports/generation_hjks_677_mapping_candidates.csv
+- reports/generation_hjks_529_mapping_candidates.csv
+- reports/generation_hjks_677_mapping_candidates.csv
 qa: reports/generation_hjks_FY2025_qa.json
 final_join_performed: false
 regulatory_entity_assignment_performed: false
 dominant_fringe_flags_created: false
 notes:
-  - rawコード・エリアと字形正規化名称の候補であり、法人帰属や契約供給力を証明しない
-  - snapshot_row_idで各HJKS版の元行を追跡。最終unit/plant IDや採用期間は未確定
-  - 版・join粒度のユーザー判断後にPhase Bへ引き継ぐ
+- rawコード・エリアと字形正規化名称の候補であり、法人帰属や契約供給力を証明しない
+- snapshot_row_idで各HJKS版の元行を追跡。最終unit/plant IDや採用期間は未確定
+- 版・join粒度のユーザー判断後にPhase Bへ引き継ぐ
+reference_candidate_approved: true
+reference_candidate_unit_rows: 677
+capacity_baseline_approved: false
+extra_candidate_report: reports/unmatched_generation_diagnosis_20261016.md
+hypothetical_candidates: reports/additional_mapping_candidates_20261016.csv
