@@ -1,4 +1,4 @@
-"""価格感応度の停止条件を監査する。processedを書かず原値を保持する。"""
+"""価格感応度を監査する。事前QA単体ではprocessedを書かず原値を保持する。"""
 
 import csv
 import io
@@ -134,7 +134,7 @@ def compare(actual: dict, difference: dict, spot: dict):
         "spot_price_mismatch_count": len(mismatch),
         "spot_price_mismatches": mismatch,
         "formula_officially_verified": False,
-        "status": "stopped_pending_research_decision",
+        "status": "comparison_only_no_output",
         "processed_written": False,
     }
 
@@ -177,6 +177,8 @@ def run(root: Path, repo: Path, year=2025):
         {
             "github_issue": 13,
             "roadmap_id": 7,
+            "status": "preflight_only_no_output",
+            "research_decision": "RD-008",
             "checks": checks,
             "sources": sources,
             "spot_processed_sha256": sha256(spot_path),

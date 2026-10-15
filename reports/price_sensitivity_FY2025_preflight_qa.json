@@ -15919,10 +15919,11 @@
     }
   ],
   "formula_officially_verified": false,
-  "status": "stopped_pending_research_decision",
+  "status": "preflight_only_no_output",
   "processed_written": false,
   "github_issue": 13,
   "roadmap_id": 7,
+  "research_decision": "RD-008",
   "checks": {
     "sensitivity": {
       "time_qa": {

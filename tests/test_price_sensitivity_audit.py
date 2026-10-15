@@ -37,7 +37,7 @@ def test_different_sha_candidates_block_selection():
         select_canonical([base, manual], "sensitivity")
 
 
-def test_real_fy2025_preflight_stops_without_processed(tmp_path):
+def test_real_fy2025_preflight_does_not_write_processed(tmp_path):
     checkout = Path(__file__).resolve().parents[1]
     root = checkout.parents[1] if checkout.parent.name == ".worktrees" else checkout
     spot = root / "data/processed/jepx/spot/jepx_spot_FY2025.parquet"
@@ -58,5 +58,5 @@ def test_real_fy2025_preflight_stops_without_processed(tmp_path):
         for c in result["checks"].values()
     )
     assert result["raw_unchanged"]
-    assert result["status"] == "stopped_pending_research_decision"
+    assert result["status"] == "preflight_only_no_output"
     assert not list(tmp_path.rglob("*.parquet"))
