@@ -1,0 +1,100 @@
+checked_on: '2026-10-15'
+scope: 通常の公開資料・画面のみ。ログイン・制限回避なし
+sources:
+- id: hjks_manual
+  title: 発電情報公開システム（HJKS）の運用について
+  document_date: '2020-09-23'
+  url: https://hjks.jepx.or.jp/hjks/pdf/hjks_manual_2020_09.pdf
+  verification_level: official_pdf_verified
+  pages_physical_1_based:
+  - 9
+  - 12
+  sha256: 6fa8d5965ab90217e15d21b863750630629964146c7186519edf0ab089e29332
+- id: unit_screen
+  title: HJKS ユニット一覧 公開画面・HTML内JS
+  url: https://hjks.jepx.or.jp/hjks/unit
+  verification_level: official_http_verified
+  sha256: 8d5d9c21ddffaf1c065090fd66d4c02f59f057526cf9f362d92ffa3fcf8b29ff
+- id: outage_screen
+  title: HJKS 停止情報一覧 公開画面・HTML内JS
+  url: https://hjks.jepx.or.jp/hjks/outages
+  verification_level: official_http_verified
+  sha256: 185761cfcc69f73dd93dd7f9d57e8dec58f5a68b2daa1160a96ba8a66a5de338
+items:
+- item: 発電所コード・発電所名・発電事業者・エリア
+  status: confirmed
+  finding: 公式登録説明p9。コードと名称は届出内容。エリアは所在エリア。CSVではコード文字列を保持
+  evidence: hjks_manual p9; unit_screen
+- item: ユニット名・コード
+  status: partially_confirmed
+  finding: 登録用ユニットコードは事業者が識別できるよう採番。公開CSVにはユニット名のみでコードの独立列なし。コード代替の推測はしない
+  evidence: hjks_manual p9; unit_screen; raw headers
+- item: 認可出力・変更後認可出力・適用開始日
+  status: partially_confirmed
+  finding: 画面で現在値・変更後・適用開始日を確認。単位kW。過去の変更全履歴・時点適用方法は未確認。両raw版の適用開始日は全行空
+  evidence: hjks_manual p9; unit_screen
+- item: 稼働終了日・非表示checkbox
+  status: partially_confirmed
+  finding: 公開画面に終了日と「稼働終了ユニットは表示しない」があり初期checked。除外の比較日・境界条件は未確認。終了ユニットを含む一覧は履歴版と同義ではない
+  evidence: unit_screen
+- item: 現在版と履歴版・過去時点再構成
+  status: unconfirmed
+  finding: 公開CSVは取得snapshot。版履歴・各時点の全capacity履歴を復元できるという根拠を発見できず。1900/01/01・9999/12/31の意味も正式未確認
+  evidence: unit_screen; hjks_manual; raw
+- item: 停止開始
+  status: confirmed
+  finding: 停止または予定の開始日時。予定・実績を別の開始列へ分離する仕様は未確認
+  evidence: hjks_manual p12
+- item: 復旧予定
+  status: confirmed
+  finding: 復旧の見通しがある場合に日単位で入力。時刻は未観測。dateで保存しdatetimeを推測しない
+  evidence: hjks_manual p12; outage_screen
+- item: 復旧実績・初回公表日時
+  status: unconfirmed
+  finding: 公開CSV・確認画面に独立列なし。最終更新日時から代用せずnullで保持
+  evidence: outage_screen; raw headers
+- item: 出力低下量
+  status: confirmed
+  finding: 公式単位はkW。出力低下の場合は平均低下量。MWへ変換せずreduction_kwを保持
+  evidence: hjks_manual p12; outage_screen
+- item: 停止量
+  status: unconfirmed
+  finding: 独立した停止量列なし。認可出力の転用・補正はしない
+  evidence: outage_screen; raw headers
+- item: 対象ユニット・区分・最終更新日時
+  status: confirmed
+  finding: ユニットを選択して停止情報を登録。公開列にユニット名、停止区分、種別、最終更新日時あり
+  evidence: hjks_manual p11-12; outage_screen
+- item: FY2025検索の基準列・包含規則
+  status: unconfirmed
+  finding: 画面ラベルは停止期間、入力nameはstartdtfrom/startdtto。サーバ側の開始日/重なり判定はHTMLから確定できない
+  evidence: outage_screen
+- item: FY2024以前開始イベントのFY2025包含
+  status: observed_not_official_rule
+  finding: ユーザーFY2025指定の7828行CSVには2007年開始を含み、FY2025より前開始かつ予定復旧がFY2025以降の122行を観測。完全な包含規則の証明ではない
+  evidence: raw 7828 snapshot; QA
+- item: 同一イベント更新の複数行・履歴の意味
+  status: unconfirmed
+  finding: 同じ候補キーで異なる更新日時の行は観測されるが、公式イベントIDが公開CSVにないため同一イベントの履歴と断定・統合しない
+  evidence: outage_screen; QA
+unavailable_sources:
+- url: https://www.egc.meti.go.jp/activity/emsc_system/pdf/026_09_00.pdf
+  status: HTTP403
+  used_as_verified_pdf: false
+- url: https://www.egc.meti.go.jp/info/business/insider/pdf/faq20230601.pdf
+  status: HTTP403
+  used_as_verified_pdf: false
+related_sources:
+- title: ユニット別発電実績公開システムに関するお問合せ・注意事項
+  url: https://www.occto.or.jp/contact/unit.html
+  checked_on: '2026-10-15'
+  verification_level: official_web_verified
+  finding: 一送計測値の公表であり、試運転や計測時点等によりHJKS公表情報と乖離する場合がある。今回の個別未一致の原因が特定されたわけではない
+- title: An Empirical Analysis of the Potential for Market Power in California’s Electricity
+    Industry
+  authors: Severin Borenstein; James Bushnell
+  year: 1998
+  url: https://www.nber.org/papers/w6463
+  verification_level: official_search_verified
+  finding: 公式検索抽出の要旨ではplant-level費用データを用いた競争simulation。plant粒度を使う先行例だが本研究のHJKS版・interval端点を正当化する根拠にはしない
+  limitation: 本文403・方法詳細は未確認
