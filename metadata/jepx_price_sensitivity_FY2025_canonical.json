@@ -1,0 +1,50 @@
+{
+  "sensitivity": {
+    "source_id": "jepx_price_sensitivity",
+    "local_path": "data/raw/jepx/price_sensitivity/virtualprice_2025.csv",
+    "original_filename": "virtualprice_2025.csv",
+    "source_url": "https://www.jepx.jp/_download.php",
+    "downloaded_at": "2026-10-08T17:28:16+09:00",
+    "sha256": "23604ef8eedbe634e0da12b518962eec89b8167ba183ad1dacb5095096331701",
+    "selection_basis": "manifestの公式年度downloaded版を一意に選択。同SHAコピーは保持",
+    "usage": "processed_input",
+    "noncanonical_copies": [
+      {
+        "local_path": "data/raw/jepx/price_sensitivity/jepx_sensitivity_20250401_20260331.csv",
+        "sha256": "23604ef8eedbe634e0da12b518962eec89b8167ba183ad1dacb5095096331701"
+      }
+    ]
+  },
+  "sensitivity_diff": {
+    "source_id": "jepx_price_sensitivity",
+    "local_path": "data/raw/jepx/price_sensitivity/virtualprice_diff_2025.csv",
+    "original_filename": "virtualprice_diff_2025.csv",
+    "source_url": "https://www.jepx.jp/_download.php",
+    "downloaded_at": "2026-10-08T17:28:17+09:00",
+    "sha256": "e8cd0dc40367ef50291556afe4878e5ed0aa4e027157dad064d2611c1a5378c8",
+    "selection_basis": "manifestの公式年度downloaded版を一意に選択。同SHAコピーは保持",
+    "usage": "processed_input",
+    "noncanonical_copies": [
+      {
+        "local_path": "data/raw/jepx/price_sensitivity/jepx_sensitivity_diff_20250401_20260331.csv",
+        "sha256": "e8cd0dc40367ef50291556afe4878e5ed0aa4e027157dad064d2611c1a5378c8"
+      }
+    ]
+  },
+  "spot": {
+    "source_id": "jepx_spot",
+    "local_path": "data/raw/jepx/spot/spot_summary_2025.csv",
+    "original_filename": "spot_summary_2025.csv",
+    "source_url": "https://www.jepx.jp/_download.php",
+    "downloaded_at": "2026-10-08T17:26:51+09:00",
+    "sha256": "cf95e1aea783ecac2d876244d99c6610506db2bb4ed1c24c5dc887e7c16731d0",
+    "selection_basis": "manifestの公式年度downloaded版を一意に選択。同SHAコピーは保持",
+    "usage": "baseline_QA_only",
+    "noncanonical_copies": [
+      {
+        "local_path": "data/raw/jepx/spot/jepx_spot_20250401_20260331.csv",
+        "sha256": "cf95e1aea783ecac2d876244d99c6610506db2bb4ed1c24c5dc887e7c16731d0"
+      }
+    ]
+  }
+}

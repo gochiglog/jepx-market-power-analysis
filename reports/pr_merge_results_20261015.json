@@ -1,0 +1,41 @@
+{
+  "main_sha_before": "2fcd2468430e4414be91f0e7fe6c792fbf1b92f2",
+  "merge_order": [
+    7,
+    9,
+    11,
+    12
+  ],
+  "merges": [
+    {
+      "pr": 7,
+      "main_sha_after_merge": "3a669972c1c310ef2cfdabc499a5ea93af8d6a1e",
+      "pytest_passed": 69,
+      "ruff": "passed",
+      "conflicts": false
+    },
+    {
+      "pr": 9,
+      "main_sha_after_merge": "cab73718c48c5ca8ed9c2e6dee3ae274838ad558",
+      "pytest_passed": 114,
+      "ruff": "passed",
+      "conflicts": false
+    },
+    {
+      "pr": 11,
+      "main_sha_after_merge": "6ab7922301fd0f0d74274d8dcdadb1579e4aa765",
+      "pytest_passed": 118,
+      "ruff": "passed",
+      "conflicts": false
+    },
+    {
+      "pr": 12,
+      "main_sha_after_merge": "cd49db922181352eff44c36b5e82517d3be0855e",
+      "pytest_passed": 133,
+      "ruff": "passed",
+      "conflicts": false
+    }
+  ],
+  "draft_pr_14_merged": false,
+  "raw_interim_processed_tracked": false
+}

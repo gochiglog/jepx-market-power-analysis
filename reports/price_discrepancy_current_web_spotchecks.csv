@@ -1,0 +1,8 @@
+case,delivery_date,period,current_web_spot,current_web_sensitivity,current_web_difference_system_raw,local_spot,local_sensitivity,local_difference_system_raw
+consistent,2025-04-01,1,13.50,13.50,0.00,13.50,13.50,0.00
+small_difference,2025-04-03,7,13.48,13.47,0.00,13.48,13.47,0.00
+largest_difference,2025-06-18,35,21.00,28.00,0.00,21.00,28.00,0.00
+first_mismatch,2025-04-02,28,9.07,9.03,0.00,9.07,9.03,0.00
+last_mismatch,2026-03-02,46,10.69,10.63,0.00,10.69,10.63,0.00
+peak_month_longest_run,2026-01-23,23,10.28,10.00,0.00,10.28,10.00,0.00
+after_last_boundary,2026-03-03,1,10.35,10.35,0.00,10.35,10.35,0.00

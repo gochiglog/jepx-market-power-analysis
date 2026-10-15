@@ -1,0 +1,81 @@
+{
+  "checked_on": "2026-10-15",
+  "scope": "JEPX公式2025/2026暦年一覧（FY2025を跨ぐため両年）・関連PDF・市場情報/表示JS・サイト内検索",
+  "limitation": "公に確認できた資料の範囲。未発見を、訂正や非公開連絡が存在しないことの証明としない",
+  "sources": [
+    {
+      "title": "JEPX電力取引お知らせ2025年一覧",
+      "date": "2025年（暦年）",
+      "url": "https://www.jepx.jp/electricpower/news/2025/",
+      "pages": null,
+      "finding": "2025-01-22更新案内、03-13優先約定不具合を確認。価格感応度年度CSV訂正・符号式の明示は発見できず"
+    },
+    {
+      "title": "JEPX電力取引お知らせ2026年一覧",
+      "date": "2026年（暦年、確認時点）",
+      "url": "https://www.jepx.jp/electricpower/news/2026/",
+      "pages": null,
+      "finding": "02-20時間前停止、09-08システム更改を確認。2026-03-03境界を説明する価格感応度訂正は発見できず"
+    },
+    {
+      "title": "スポット取引システム一部更新のご案内",
+      "date": "2025-01-22",
+      "url": "https://www.jepx.jp/electricpower/news/pdf/jepx20250122.pdf",
+      "pages": [
+        1
+      ],
+      "effective_date": "2025-02-17",
+      "finding": "約定エンジンをN-SIDEへ変更しブロック入札価格も価格付けに算入。FY2025開始前。価格感応度側の基準価格不一致を説明する記載は確認できず"
+    },
+    {
+      "title": "スポット市場の優先約定処理における不具合について",
+      "date": "2025-03-13",
+      "url": "https://www.jepx.jp/electricpower/news/pdf/jepx20250313.pdf",
+      "pages": [
+        1
+      ],
+      "affected_delivery_date": "2025-03-14",
+      "finding": "0.01円の売入札の選択不具合。全体の約定価格・約定量に不具合はないと明記。対象はbaseline前"
+    },
+    {
+      "title": "時間前取引の停止について",
+      "date": "2026-02-20",
+      "url": "https://www.jepx.jp/electricpower/news/pdf/jepx20260220.pdf",
+      "pages": [
+        1
+      ],
+      "effective_date": "2026-03-13",
+      "finding": "交流ループ対応等で時間前市場を2時間停止。spot年度基準価格の訂正ではなく、03-03境界とも一致しない"
+    },
+    {
+      "title": "取引システムの更改について",
+      "date": "2026-09-08",
+      "url": "https://www.jepx.jp/electricpower/news/pdf/jepx20260908.pdf",
+      "pages": [
+        1,
+        2
+      ],
+      "effective_date": "2026-04-01",
+      "finding": "spot新システムは04-01稼働、現行システム並行稼働。FY2025の過去価格・価格感応度の修正との関係は記載を確認できず"
+    },
+    {
+      "title": "価格感応度について",
+      "date": null,
+      "url": "https://www.jepx.jp/electricpower/market-data/spot/pdf/kakaku_kannoudo.pdf",
+      "pages": [
+        1,
+        2
+      ],
+      "finding": "実数値CSVの基準は実際のシステムプライス。差分ファイルの符号式は明示されない"
+    },
+    {
+      "title": "JEPX公式価格感応度表示JavaScript",
+      "date": null,
+      "url": "https://www.jepx.jp/js/virtualprice.js",
+      "pages": null,
+      "finding": "virtualprice/virtualprice_diffを別に読み込み表示。差分はCSVから読まれ、符号を計算する式は見当たらない"
+    }
+  ],
+  "causal_attribution": "not_identified",
+  "difference_sign_officially_verified": false
+}

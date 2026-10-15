@@ -72,33 +72,34 @@ sources:
   name: JEPX価格感応度
   reference_url: https://www.jepx.jp/electricpower/market-data/spot/
   reference_status: file_verified
-  grain: 30分×市場範囲×売買方向×追加量
+  grain: 受渡日×30分コマ（6追加入札シナリオをwide列で保持）
   primary_key_candidate:
   - delivery_date
   - period
-  - market_scope
-  - area
-  - side
-  - additional_power_kw
-  - source_snapshot_id
-  key_status: candidate_unverified
+  key_status: verified
   information_timing: ex_ante_candidate
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: FY2025_target_dates_observed_values_not_audited
+  coverage_status: FY2025_ETL_audited_known_baseline_price_mismatch
   usage: baseline_input
   variables:
-  - additional_power_kw
-  - hypothetical_price
-  - price_difference
-  - side
+  - virtual_price_sell_500mw
+  - virtual_price_buy_500mw
+  - virtual_price_sell_1000mw
+  - virtual_price_buy_1000mw
+  - virtual_price_sell_5000mw
+  - virtual_price_buy_5000mw
+  - published_difference_sell_500mw
+  - published_difference_buy_500mw
+  - published_difference_sell_1000mw
+  - published_difference_buy_1000mw
+  - published_difference_sell_5000mw
+  - published_difference_buy_5000mw
+  - system_price_sensitivity_base
   todos:
-  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
-  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
-  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
-  - 日付列は年月日。元列のMW表記を保持し、kWへの換算は実施しない
-  - CP932/Shift_JIS候補を併記。日付×コマは監査済み、値の欠損・差分計算は未実施
+  - 価格感応度CSVとspot CSVのシステムプライスがFY2025の一部コマで異なる理由をJEPXへ確認する。RD-008により回答は進行条件にしない
+  - 差分の公式符号式・公表改訂履歴は未確認。内部一致を公式仕様と同一視しない
   acquisition:
     method: '公式年度フォーム: dir=virtualprice/virtualprice_diffの実数値・差分2ファイル。公式Refererが必要'
     manifest_path: metadata/acquisition_manifest.jsonl
@@ -114,8 +115,8 @@ sources:
       encoding=ambiguous, candidates=[''cp932'', ''shift_jis''], BOM=None, delimiter='','',
       header_row=1'
     known_limitations:
-    - 日付列は年月日。元列のMW表記を保持し、kWへの換算は実施しない
-    - CP932/Shift_JIS候補を併記。日付×コマは監査済み、値の欠損・差分計算は未実施
+    - CP932/Shift_JIS候補併記。元MWラベルを保持し追加電力の単位変換なし
+    - 'RD-008: spotとの基準価格不一致2271コマは原因未解決の既知QA。原系列は無修正'
 - source_id: occto_generation
   name: OCCTOユニット別発電実績
   reference_url: https://www.occto.or.jp/assets/occtosystem2/files/20240326_yhks.pdf

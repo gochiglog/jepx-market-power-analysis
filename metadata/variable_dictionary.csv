@@ -5,7 +5,7 @@ common,area,市場エリア識別子,string,not_applicable,not_applicable,TODO,s
 common,source_snapshot_id,manifestに対応する取得版識別子,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 common,published_at,元資料の公表日時。取得日時と区別する,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 common,downloaded_at,取得日時,datetime,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
-jepx_spot,system_price,システム価格,quantity,JPY/kWh,JPY/kWh,システムプライス(円/kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
+jepx_spot,system_price,実績スポット市場のシステムプライス（正式採用系列）,quantity,JPY/kWh,JPY/kWh,システムプライス(円/kWh),specified,RD-008で実績市場価格に正式採用。列名は互換性のため維持。QAでの役割名はsystem_price_market。感応度基準価格と別系列
 jepx_spot,area_price,エリア価格,quantity,JPY/kWh,JPY/kWh,エリアプライス北海道(円/kWh)～エリアプライス九州(円/kWh),specified,共通概念。wide出力の9列対応はarea_price_<area>で個別記録
 jepx_spot,sell_bid_volume,売り入札量,quantity,kWh,kWh,売り入札量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
 jepx_spot,buy_bid_volume,買い入札量,quantity,kWh,kWh,買い入札量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
@@ -15,8 +15,8 @@ jepx_spot,buy_block_bid_volume,買いブロック入札量,quantity,kWh,kWh,買�
 jepx_spot,sell_block_contracted_volume,売りブロック約定量,quantity,kWh,kWh,売りブロック約定総量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
 jepx_spot,buy_block_contracted_volume,買いブロック約定量,quantity,kWh,kWh,買いブロック約定総量(kWh),specified,Issue #10で公式年度raw列を確認。元列保持、Decimal、単位変換なし
 jepx_price_sensitivity,additional_power_kw,追加売買の電力シナリオ,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
-jepx_price_sensitivity,hypothetical_price,追加売買時の仮想価格,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
-jepx_price_sensitivity,price_difference,仮想価格と実価格の差分。符号は確認待ち,quantity,TODO,TODO,TODO,TODO,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
+jepx_price_sensitivity,hypothetical_price,追加入札時の仮想システムプライス（wide出力の6列）,quantity,JPY/kWh,JPY/kWh,実数値CSV: 6シナリオ列,specified,RD-008。内部では仮想価格−感応度側基準価格と105120件一致。公式符号式は未確認。spot基準で再計算しない
+jepx_price_sensitivity,price_difference,JEPX公表差分（原値保持・wide出力の6列）,quantity,JPY/kWh,JPY/kWh,差分CSV: 6シナリオ列,specified,RD-008。内部では仮想価格−感応度側基準価格と105120件一致。公式符号式は未確認。spot基準で再計算しない
 jepx_price_sensitivity,side,追加売買方向,string,not_applicable,not_applicable,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 occto_generation,generation_kwh,30分コマ内の発電電力量,quantity,kWh,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
 hjks_unit,authorized_capacity_kw,認可出力,quantity,kW,TODO,TODO,specified,元ファイルの列名・単位・粒度・公表時点をIssue #4で確認する
@@ -98,3 +98,28 @@ jepx_spot,timestamp_end,Asia/Tokyoのコマ終了。period48は翌日00:00,datet
 jepx_spot,timezone,タイムゾーン識別子,string,not_applicable,not_applicable,時間キー契約 Asia/Tokyo,specified,元列保持。時間契約はロードマップ#5/GitHub#8
 jepx_spot,source_snapshot_id,採用元のSHA256,string,not_applicable,not_applicable,acquisition_manifest.sha256,specified,元列保持。時間契約はロードマップ#5/GitHub#8
 jepx_spot,source_row_number,ヘッダーを1行目とする元行番号,integer,not_applicable,not_applicable,CSV論理行番号,specified,元列保持。時間契約はロードマップ#5/GitHub#8
+jepx_price_sensitivity,system_price_sensitivity_base,価格感応度CSV内の計算基準システムプライス。実績市場価格と別系列,quantity,JPY/kWh,JPY/kWh,実数値CSV: システムプライス,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,virtual_price_sell_500mw,売り500MW追加入札時の仮想システムプライス,quantity,JPY/kWh,JPY/kWh,実数値CSV: 売500MW,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,virtual_price_buy_500mw,買い500MW追加入札時の仮想システムプライス,quantity,JPY/kWh,JPY/kWh,実数値CSV: 買500MW,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,virtual_price_sell_1000mw,売り1000MW追加入札時の仮想システムプライス,quantity,JPY/kWh,JPY/kWh,実数値CSV: 売1000MW,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,virtual_price_buy_1000mw,買い1000MW追加入札時の仮想システムプライス,quantity,JPY/kWh,JPY/kWh,実数値CSV: 買1000MW,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,virtual_price_sell_5000mw,売り5000MW追加入札時の仮想システムプライス,quantity,JPY/kWh,JPY/kWh,実数値CSV: 売5000MW,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,virtual_price_buy_5000mw,買い5000MW追加入札時の仮想システムプライス,quantity,JPY/kWh,JPY/kWh,実数値CSV: 買5000MW,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,published_difference_sell_500mw,売り500MW追加入札時のJEPX公表差分,quantity,JPY/kWh,JPY/kWh,差分CSV: 売500MW,specified,公表値をDecimalで保持。仮想価格−感応度側基準価格との内部一致は検証するが公式符号式とは断定しない
+jepx_price_sensitivity,published_difference_buy_500mw,買い500MW追加入札時のJEPX公表差分,quantity,JPY/kWh,JPY/kWh,差分CSV: 買500MW,specified,公表値をDecimalで保持。仮想価格−感応度側基準価格との内部一致は検証するが公式符号式とは断定しない
+jepx_price_sensitivity,published_difference_sell_1000mw,売り1000MW追加入札時のJEPX公表差分,quantity,JPY/kWh,JPY/kWh,差分CSV: 売1000MW,specified,公表値をDecimalで保持。仮想価格−感応度側基準価格との内部一致は検証するが公式符号式とは断定しない
+jepx_price_sensitivity,published_difference_buy_1000mw,買い1000MW追加入札時のJEPX公表差分,quantity,JPY/kWh,JPY/kWh,差分CSV: 買1000MW,specified,公表値をDecimalで保持。仮想価格−感応度側基準価格との内部一致は検証するが公式符号式とは断定しない
+jepx_price_sensitivity,published_difference_sell_5000mw,売り5000MW追加入札時のJEPX公表差分,quantity,JPY/kWh,JPY/kWh,差分CSV: 売5000MW,specified,公表値をDecimalで保持。仮想価格−感応度側基準価格との内部一致は検証するが公式符号式とは断定しない
+jepx_price_sensitivity,published_difference_buy_5000mw,買い5000MW追加入札時のJEPX公表差分,quantity,JPY/kWh,JPY/kWh,差分CSV: 買5000MW,specified,公表値をDecimalで保持。仮想価格−感応度側基準価格との内部一致は検証するが公式符号式とは断定しない
+jepx_price_sensitivity,delivery_date,受渡日の日本時間日付,date,not_applicable,not_applicable,年月日,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,period,受渡日の1〜48コマ,integer,not_applicable,not_applicable,時刻コード,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,timestamp_start,Asia/Tokyoの30分コマ開始,datetime,not_applicable,not_applicable,年月日 + 時刻コード,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,timestamp_end,Asia/Tokyoのコマ終了。period48は翌00:00、受渡日は維持,datetime,not_applicable,not_applicable,年月日 + 時刻コード,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,timezone,タイムゾーン識別子,string,not_applicable,not_applicable,時間契約 Asia/Tokyo,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,source_actual_sha256,実数値canonical rawのSHA256,string,not_applicable,not_applicable,実数値manifest.sha256,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,source_difference_sha256,差分canonical rawのSHA256,string,not_applicable,not_applicable,差分manifest.sha256,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,source_actual_row_number,実数値CSV論理行番号（header=1）,integer,not_applicable,not_applicable,実数値CSV論理行番号,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,source_difference_row_number,差分CSV論理行番号（header=1）,integer,not_applicable,not_applicable,差分CSV論理行番号,specified,RD-008。元列・原単位を保持。価格の修正・補間なし
+jepx_price_sensitivity,system_price_market,QA専用：spot CSVの正式採用実績市場価格,quantity,JPY/kWh,JPY/kWh,spot CSV: システムプライス(円/kWh),specified,全コマQAテーブルのみ。既存spot Parquet列system_priceを改名しない
+jepx_price_sensitivity,price_baseline_difference,QA専用：感応度側基準価格−実績市場価格,quantity,JPY/kWh,JPY/kWh,system_price_sensitivity_base - system_price_market,specified,符号は感応度側−spot。価格修正・JEPX公表差分ではない
+jepx_price_sensitivity,baseline_price_match_flag,QA専用：実績市場価格と感応度側基準価格のDecimal厳密一致,boolean,not_applicable,not_applicable,system_price_market == system_price_sensitivity_base,specified,Falseは既知QA。削除や停止の条件にしない

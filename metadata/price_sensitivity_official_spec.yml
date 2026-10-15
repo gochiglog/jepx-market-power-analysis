@@ -1,0 +1,54 @@
+verified_on: '2026-10-15'
+meaning: 実際の入札状態に追加入札を加えて再約定した仮想システムプライス
+price_unit: JPY/kWh
+applied_periods: 全48コマ
+bid_prices_jpy_per_kwh:
+  sell: '0.01'
+  buy: '999'
+block_bids_recleared: true
+amount_scenarios:
+- code_suffix: 500mw
+  official_kw: 500000
+  official_pdf_mw_per_period: 500
+- code_suffix: 1000mw
+  official_kw: 1000000
+  official_pdf_mw_per_period: 1000
+- code_suffix: 5000mw
+  official_kw: 5000000
+  official_pdf_mw_per_period: 5000
+evidence:
+- title: 価格感応度について
+  url: https://www.jepx.jp/electricpower/market-data/spot/pdf/kakaku_kannoudo.pdf
+  pages:
+  - 1
+  - 2
+  document_date: null
+  verification_level: official_pdf_verified
+- title: スポット市場の価格感応度の公開について
+  url: https://www.jepx.jp/electricpower/news/20220126.html
+  document_date: '2022-01-26'
+  verification_level: official_web_verified
+difference_sign:
+  official_equation_verified: false
+  observed_formula: raw_virtual_price - raw_sensitivity_system_price
+  status: official_sign_equation_unverified
+  scenario_matches: 105120
+  notes: 公式PDFは実数値CSVを説明。差分符号の式は明示されない。公式JSは差分CSVを読み取るのみで式の根拠にならない
+interpretation_limits:
+- 需要の価格弾力性ではない
+- residual demand elasticityではない
+- market power indexではない
+- 差分をspot system priceで再計算・上書きしない
+notes: 資料自体の日付は未確認。Web公開のお知らせ日をPDF資料日付へ転記しない
+system_price_expectation:
+  expected_relation: spot年度CSVのsystem priceと一致を期待する
+  official_basis: 公式PDF p2：実数値CSVのシステムプライスは実際のシステムプライス
+  mismatch_handling: 公式原因は未解決。RD-008で用途別原系列保持を確定。既知QAとして記録し出力を進める。修正・置換なし
+  user_instruction_date: '2026-10-15'
+research_decision:
+  id: RD-008
+  status: confirmed_by_user
+  date: '2026-10-15'
+  market_series: jepx_spot.system_price
+  sensitivity_series: system_price_sensitivity_base
+  inquiry_blocks_pipeline: false
