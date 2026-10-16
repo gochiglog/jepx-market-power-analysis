@@ -1,0 +1,73 @@
+{
+  "version": "20261016_market_diagnostic_v1",
+  "scope": "基本接続診断版。最終baseline・headroomではない",
+  "output_files": [
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/interconnectors/network_time_contexts_FY2025.parquet",
+      "sha256": "d30a85b68a70055cfa3b9672d1def17d42295eaa71000c899a36c4b48f9c2da8",
+      "size": 1111308
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/interconnectors/reserve_interconnector_latest_FY2025.parquet",
+      "sha256": "2bd435a3d435f31fc60150d75c628ddf33f920f394c668a36a0c187d5185d45f",
+      "size": 15530454
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/interconnectors/reserve_interconnector_nextday2_FY2025.parquet",
+      "sha256": "9f3be8ca9d54769167899b3fac252f922ba31d14b007bb5b295aaf8bcb986d81",
+      "size": 10993263
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/interconnectors/system_capacity_dayahead2_planned_FY2025.parquet",
+      "sha256": "475abf46dc73b58bde8a7e7bfe0ab0a9208044c102a9a55e7192dcbbc2590331",
+      "size": 4285255
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/market_base_FY2025.parquet",
+      "sha256": "d931a7aeaaaafbdec8d0ecb0aa72fe8c5fa0912fa6f4c4c23f80ec80eb8106fb",
+      "size": 16573094
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/market_hjks_outage_58852_early_FY2025.parquet",
+      "sha256": "8966e1d7f3f21254cc742e63a01c4c13ca940dcf78fffd759f51457922e687bf",
+      "size": 21277672
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/market_hjks_outage_58852_late_FY2025.parquet",
+      "sha256": "27717526300f33a59cfe3959b5c0f9199fda061191c6cd9223fa39b494c47cf8",
+      "size": 21280049
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/market_hjks_outage_7828_early_FY2025.parquet",
+      "sha256": "c42c858109a858580d19b6ed92cafa2a00f3075cbe8c5ec66909abe20f6dd855",
+      "size": 21276649
+    },
+    {
+      "path": "data/processed/market/20261016_market_diagnostic_v1/market_hjks_outage_7828_late_FY2025.parquet",
+      "sha256": "81de17e1b0357e683b5c6638f4be1becbfcca266dcb2cdc45ef033cf3305bbf1",
+      "size": 21278963
+    }
+  ],
+  "price_inputs": [
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/jepx/spot/jepx_spot_FY2025.parquet",
+      "sha256": "242e3b42ab59609e623e47f599f63378e26187222acc37dd284d2e6b05a21c22"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/jepx/price_sensitivity/jepx_price_sensitivity_FY2025.parquet",
+      "sha256": "ecc09d9a033e0e5c15b8ac6706db70c9265bf04957acbf3a5c26af3531298e6f"
+    }
+  ],
+  "annotation_version": "20261016_A_v1",
+  "annotation_manifest_sha256": "b154c4b7635a8ccfe6f08753ffbd7816020058f1ab4f88d13122d92585cba052",
+  "network_series": [
+    "system_capacity_dayahead2_planned",
+    "reserve_interconnector_nextday2",
+    "reserve_interconnector_latest"
+  ],
+  "national_common_series_repeated_by_area": true,
+  "scenario_files_are_alternatives_not_independent_observations": true,
+  "excluded_market_area": "沖縄（案A元表に保持）",
+  "development_output_not_selected": "data/processed/market/20261016_market_v1",
+  "baseline_selected": false
+}

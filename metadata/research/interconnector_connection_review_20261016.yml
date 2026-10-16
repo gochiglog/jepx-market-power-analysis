@@ -1,0 +1,33 @@
+checked_on: '2026-10-16'
+scope: 既存rawの時間接続。地域輸入能力・制約指標は作成しない
+sources:
+- document: 系統情報サービス操作マニュアル（2025年3月発行）
+  url: https://www.occto.or.jp/assets/occtosystem2/files/250306_keitoujouhou.pdf
+  pages: 物理42〜44（印刷41〜43）、表2-7/2-8
+  verified: 空容量・計画潮流・運用容量・マージン等はMW。策定は計画策定時、更新後は最新値。順逆の表示列と最新更新日時列。
+- document: 広域予備率Web公表システム操作マニュアル（2025年3月6日版）
+  url: https://www.occto.or.jp/occtosystem2/files/20250306_koikiyobiritsuwebkohyo.pdf
+  pages: 物理16/25、表2-3/2-7
+  verified: 数量MW、先頭行はCSVの最新更新日時。翌日当日の潮流列は計画潮流。翌々日の旧説明も計画潮流。
+- document: 広域予備率Web公表システム操作マニュアル（2026年3月13日版）
+  url: https://www.occto.or.jp/assets/various/occtosystem/manual/20260313_koikiyobiritsuwebkohyo.pdf
+  pages: 物理3/25、変更内容と表2-7
+  verified: 翌々日項目名の変更を記載。順逆の予想潮流(MW)が現取得CSVと一致。
+  limitation: 取得時の新ヘッダーがFY2025全月にある。旧時点の表示名や再計算履歴を再現できた意味ではない。
+- document: 広域予備率Web公表システムお知らせ
+  url: https://web-kohyo.occto.or.jp/kks-web-public/notice
+  notice_datetime: '2026-03-13T19:31:00+09:00'
+  verified: 3月13日1時以降の三重・越嶺・福光の公表対象変更、フェンス表示の式を告知。旧manualは3月13日廃止。
+  limitation: 個々の取得済み系列の初出日と同一とは仮定しない。公式表示値を保存し式を再適用しない。
+time_contract:
+  source: 承認済み時間正規化adapterと原時刻00:30〜24:00
+  reference: interval_end
+  period_1: 00:00〜00:30
+  period_48: 23:30〜翌日00:00、delivery_dateを保持
+  timezone: Asia/Tokyo
+unresolved:
+- 順逆を地域間輸入方向へ写像する公式crosswalkとFY期間別設備範囲は今回確定しない
+- 予備率翌々日の旧計画潮流表記から現予想潮流表記への変更は公式に確認。過去値の再計算有無・更新履歴は未確認
+- ファイル全体の最新更新日時を各行の更新日時・初回公表日時へ代用しない
+- 系統空容量の逆方向負符号を保存。絶対値変換・正値への切上げ・予備率側との同一定義化は行わない
+- 個別連系線の欠落と新フェンスは観測された行のまま。固定本数への補完・複数線の地域容量合算は行わない
