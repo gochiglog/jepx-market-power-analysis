@@ -1,0 +1,5 @@
+hjks_business_name_raw,canonical_legal_name,name_identity_verified,name_identity_source_url,name_identity_verification_level,market_area,valid_from,valid_to,registry_review,notes
+北海道電力株式会社,北海道電力株式会社,true,https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/019_08_00.pdf,official_search_verified,北海道,2025-04-01,2026-03-31,explicit_name_reference_only,制度対象表と完全一致。原PDF403。確認日2026-10-16。現在台帳記載者の名称分類でFY資産帰属の認定ではない。
+北海道パワーエンジニアリング株式会社,北海道パワーエンジニアリング株式会社,true,https://www.hpec.jp/corporation/,official_html_verified,北海道,2025-04-01,2026-03-31,explicit_name_reference_only,公式商号を確認。北海道電力との株主関係による法人統合をしない。確認日2026-10-16。現在台帳記載者の名称分類でFY資産帰属の認定ではない。
+日本製鉄株式会社,日本製鉄株式会社,true,https://www.nipponsteel.com/company/about/,official_html_verified,北海道,2025-04-01,2026-03-31,explicit_name_reference_only,公式商号を確認。設備名の地理・所有・契約帰属から分類しない。確認日2026-10-16。現在台帳記載者の名称分類でFY資産帰属の認定ではない。
+株式会社釧路火力発電所,株式会社釧路火力発電所,true,https://kushiro-tpp.com/company/,official_html_verified,北海道,2025-04-01,2026-03-31,explicit_name_reference_only,公式会社名を確認。未記載名の一律対象外化ではなく個別確認。確認日2026-10-16。現在台帳記載者の名称分類でFY資産帰属の認定ではない。

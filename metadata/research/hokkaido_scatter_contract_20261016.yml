@@ -1,0 +1,48 @@
+version: 20261016_hokkaido_scatter_v1
+issue: 27
+status: descriptive_first_version_user_authorized
+selected_region: 北海道
+selection_before_price_review:
+  reason: ユーザー事前指定。既存の単一東北→北海道方向の公表空容量を使う。図の望ましさで地域を変更しない。
+  record: reports/13_hokkaido_scatter/history/plan.md
+regulatory_reference:
+  path: metadata/research/regulatory_targets.csv
+  legal_entities: 10
+  entity_area_rows: 11
+  applicability: '2024-11-01〜2026-03-31。FY2025全体を含む。'
+  evidence: 第19回資料8 p6の公式検索抽出による事後確認。原PDF403。
+  classification_scope: 点検済み設備が参照するHJKS発電事業者欄の法人名のみ。所有・運営・売電権・契約供給力の帰属ではない。
+  non_target_rule: 個別に公式法人名を確認したregistryに存在し、FYエリア対象法人表に掲載されない法人に限る。
+  unknown_rule: 設備対応保留、候補複数、未確認名、名称未一致、FY期間不明。対象外へ入れない。
+  corporate_groups: 親子会社を同一法人へ統合しない。制度対象外と価格受容的行動を同一視しない。
+reference_metric:
+  name: 制度対象外公開設備の参照容量差〔MW〕
+  formula: R_ref_MW = sum(capacity_reference_kw - generation_kwh_30min / 0.5) / 1000
+  raw_energy_unit: kWh/30min
+  average_power_unit: kW
+  result_unit: MW
+  capacity_assumption: RD-012の既存固定診断と同じ参照台帳値を観測期間中一定とする仮定。FY容量履歴の検証ではない。
+  missing: 全不能null。不完全な部分和はR_ref_MWと件数・集合を保持し、R_ref_complete_MWは保留する。
+  no_deductions: 公表停止平均低下量の控除なし。負値切上げ・未知の0化なし。
+  public_records: 2snapshot×2端点の4条件を別の寄与表で保持。R_ref自体は4倍に反復しない。
+market:
+  expected_rows: 17520
+  keys: [delivery_date, period]
+  timezone: Asia/Tokyo
+  price: 北海道spotエリア価格。感応度側基準価格は使用しない。
+  demand: reserve_nextday2__area_demand_forecast_mw。翌々日断面の公表予測需要で実績ではない。
+  groups: 線形補間の25/50/75%点を境界とし、境界以下を下側へ。同値を分割せず、重複境界を畳み、空群を報告。
+network:
+  source: system_capacity_dayahead2_planned
+  direction: 東北→北海道
+  raw_direction: 逆方向
+  original_link_name: 北海道・本州間電力連系設備
+  display_formula: available_capacity_direction_display_mw = available_capacity_mw * -1
+  evidence: metadata/research/decision_preparation_official_evidence_20261016.yml と既存方向別比較表の行別URL・ページ
+  scope: 公表された設備群の方向別表示。別設備・フェンスと合算しない。
+  timing: 翌々日策定の保存版。現存更新時刻は初回公表時刻や市場時点の全情報を証明しない。
+figures:
+  main: 横軸R_ref_MW、縦軸北海道spot価格、色は同じ時刻の輸入方向公表空容量。全時間、最大4需要群。
+  auxiliary: 横軸同じ公表空容量、縦軸北海道価格−東北価格。価格差の正ゼロ負を保持。
+  official_split_result: 既存市場/spot表に公式分断結果の独立列なし。価格差から物理的分断・孤立を認定しない。
+  forbidden: 箱ひげ図、回帰、因果推定、最終headroom、法人帰属・dominant/fringe最終flag。

@@ -6,6 +6,15 @@
 研究の問いに対して、各データが何を示し何を示さないかは[識別可能性の整理](../reports/12_research_identification/README.md)を参照してください。
 Issue #25は根拠と比較設計の整理で、新しいDBや分析baselineの追加ではありません。以下の保存先・固定版は維持しています。
 
+## 北海道の第一版記述図を開く
+
+[図と説明](../reports/13_hokkaido_scatter/README.md)、[ノートブック04](../notebooks/04_hokkaido_scatter.ipynb)から見られます。
+画像はMarkdownセルにあるので、ノートブックを実行する前にも表示できます。
+元データを見たい場合は`.venv`を選び、コードセルを実行してください。
+新しい5表は`data/processed/description/hokkaido/20261016_scatter_v1/`です。
+中心の`hokkaido_scatter_panel_FY2025.parquet`は17,520行。元北海道市場列と、参照群3設備の差・分類不明・欠測・設備数・輸入方向の出典を保持しています。
+計算対象は公開設備の一部であり、北海道全体や競争的供給者全体の余力ではありません。以下の既存表は変更していません。
+
 ## まず価格と需給計画を見る
 
 保存場所：`data/processed/occto/demand_supply_direction/20261016_native_v1/`

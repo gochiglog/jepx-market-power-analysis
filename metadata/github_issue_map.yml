@@ -101,3 +101,9 @@ support_tasks:
   github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/25
   depends_on_issue: 23
   status: identification_design_only_no_final_baseline
+- github_issue_number: 27
+  title: 北海道：制度対象外公開設備の参照容量差と価格の記述用散布図
+  branch: issue/feature-27
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/27
+  depends_on_issue: 25
+  status: descriptive_first_scatter_no_regression_or_final_baseline

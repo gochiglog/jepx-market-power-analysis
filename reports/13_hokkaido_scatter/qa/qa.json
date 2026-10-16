@@ -1,0 +1,203 @@
+{
+  "joins": [
+    {
+      "label": "non_target_reference",
+      "left_rows": 17520,
+      "matched": 17520,
+      "unmatched": 0,
+      "match_rate": 1.0,
+      "unused_right_rows": 0,
+      "row_growth": 0,
+      "silent_drop": 0
+    },
+    {
+      "label": "tohoku_to_hokkaido",
+      "left_rows": 17520,
+      "matched": 17520,
+      "unmatched": 0,
+      "match_rate": 1.0,
+      "unused_right_rows": 0,
+      "row_growth": 0,
+      "silent_drop": 0
+    }
+  ],
+  "unused_network_keys": 0,
+  "demand_groups": {
+    "groups": 4,
+    "boundaries": [
+      2958.75,
+      3390.0,
+      3875.0
+    ],
+    "rule": "境界以下を下側。同値は分割しない",
+    "rows": [
+      {
+        "group": 1,
+        "count": 4380,
+        "min_demand_mw": 2242.0,
+        "max_demand_mw": 2958.0
+      },
+      {
+        "group": 2,
+        "count": 4382,
+        "min_demand_mw": 2959.0,
+        "max_demand_mw": 3390.0
+      },
+      {
+        "group": 3,
+        "count": 4379,
+        "min_demand_mw": 3391.0,
+        "max_demand_mw": 3875.0
+      },
+      {
+        "group": 4,
+        "count": 4379,
+        "min_demand_mw": 3876.0,
+        "max_demand_mw": 5012.0
+      }
+    ],
+    "null_count": 0
+  },
+  "main_plot_exclusion_reasons": {
+    "R_ref_missing": 0,
+    "price_missing": 0,
+    "import_display_missing": 0,
+    "forecast_demand_missing": 0
+  },
+  "main_plot_eligible": 17520,
+  "supplementary_plot_eligible": 17520,
+  "version": "20261016_hokkaido_scatter_v1",
+  "unit_join": {
+    "left_rows": 438000,
+    "matched": 438000,
+    "unmatched": 0,
+    "match_rate": 1.0,
+    "row_growth": 0,
+    "silent_drop": 0
+  },
+  "rows": 17520,
+  "unit_rows": 438000,
+  "unit_labels": 25,
+  "classification_counts": {
+    "target": 22,
+    "non_target": 3
+  },
+  "scope_unit_count": 3,
+  "distinct_observed_sets": 1,
+  "distinct_calculated_sets": 1,
+  "numeric_summary": {
+    "R_ref_MW": {
+      "null_count": 0,
+      "unique_values": 1487,
+      "min": "13.400000",
+      "median": "267.2",
+      "max": "462.000000"
+    },
+    "area_price": {
+      "null_count": 0,
+      "unique_values": 1667,
+      "min": "0.01",
+      "median": "11.0",
+      "max": "80.00"
+    },
+    "import_capacity_direction_display_mw": {
+      "null_count": 0,
+      "unique_values": 605,
+      "min": "0.000000",
+      "median": "231.0",
+      "max": "461.000000"
+    },
+    "hokkaido_minus_tohoku_price": {
+      "null_count": 0,
+      "unique_values": 1775,
+      "min": "-17.08",
+      "median": "0.0",
+      "max": "60.85"
+    }
+  },
+  "price_difference_sign_counts": {
+    "zero": 12466,
+    "positive": 2630,
+    "negative": 2424
+  },
+  "negative_unit_cells": 1919,
+  "output_missing_unit_cells": 0,
+  "unknown_classification_cells": 0,
+  "public_record_conditions": [
+    "58852_early",
+    "58852_late",
+    "7828_early",
+    "7828_late"
+  ],
+  "contribution_sum_checks": "all_passed",
+  "original_unit_and_market_columns_unchanged": true,
+  "parquet_roundtrip": "all_passed",
+  "official_split_result_column_available": false,
+  "figures": {
+    "font": "Hiragino Sans",
+    "outputs": [
+      "/Users/goto/Documents/Uni/04_research_second/reports/13_hokkaido_scatter/figures/hokkaido_reference_gap_scatter.png",
+      "/Users/goto/Documents/Uni/04_research_second/reports/13_hokkaido_scatter/figures/hokkaido_reference_gap_scatter.pdf",
+      "/Users/goto/Documents/Uni/04_research_second/reports/13_hokkaido_scatter/figures/hokkaido_import_price_difference.png",
+      "/Users/goto/Documents/Uni/04_research_second/reports/13_hokkaido_scatter/figures/hokkaido_import_price_difference.pdf"
+    ]
+  },
+  "inputs": [
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/generation_with_snapshot_public_records_FY2025.parquet",
+      "sha256": "c31921e7a65613a7356467c8f8308a5ca7519a7b0901ea2218579e016a7a0cf6"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/comparison/20261016_decision_preparation_v2/observed_unit_business_evidence_FY2025.parquet",
+      "sha256": "e26f5751cc6ed2cec68be8e5caad36e53f5586924866bdbcb398f627a704a44d"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/comparison/20261016_decision_preparation_v2/system_capacity_dayahead2_planned_direction_comparison_FY2025.parquet",
+      "sha256": "f678babc66f6dc809a8d78874c29eea6aa60258ecce091561962da26dc952298"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/occto/demand_supply_direction/20261016_native_v1/market_base_FY2025_with_reserve.parquet",
+      "sha256": "47a72621127abc0996388cefba0ccb9e44f5e8b315de323606efbf45a2571130"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/metadata/research/regulatory_targets.csv",
+      "sha256": "bfd4ed791bcdd00d11b10939589d762bf8df9073f5ca7a871e803f22153a9394"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/metadata/research/hokkaido_business_reference_classification_20261016.csv",
+      "sha256": "90f07be69d789a87ba35cb80405b5be9107e2cd6c6e046ec17155085a607dd3b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_unit_reference_FY2025.parquet",
+      "rows": 438000,
+      "columns": 73,
+      "sha256": "8b68120c0836426ff35a1d1c2cc596147b0c14fd7d726f75d755e4191cca47cc"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_asset_registry_FY2025.parquet",
+      "rows": 25,
+      "columns": 73,
+      "sha256": "3182ed8dabaae3846a7418899986d81d67af9071591326317087773c483c4c15"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_scatter_panel_FY2025.parquet",
+      "rows": 17520,
+      "columns": 261,
+      "sha256": "4ab8e13c42dd597f3924baf7599752973473d35b99c0a8f99dbd82b168f641ba"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_reference_contribution_by_fuel_FY2025.parquet",
+      "rows": 35040,
+      "columns": 20,
+      "sha256": "51c2f80262865ba54e06c31fd496d32425de8f80a8299eb8c60dd2f19e936fcf"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_reference_contribution_by_public_record_FY2025.parquet",
+      "rows": 108644,
+      "columns": 21,
+      "sha256": "3dceff5a479bfe62afca08429c798b14cb6f625cc7a2abc5b0bfa08e899f4d6a"
+    }
+  ]
+}

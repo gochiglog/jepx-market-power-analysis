@@ -7,6 +7,9 @@ JEPX・OCCTO・HJKSなどの公開データから、地域の需給・連系線�
 中心の問いは「域内外の代替供給制約は、主要事業者の数量抑制が価格・利益に与える影響をどう変え、他社反応の推測モデルへどう接続できるか」です。
 市場環境の記述、数量抑制の採算、実際の行使の識別を分けています。競争的供給者全体の余力、最終headroom、法人帰属・dominant/fringe分類、価格への因果効果は未確定です。
 
+**最初の記述図として、[北海道の散布図2種類](reports/13_hokkaido_scatter/README.md)を作成しました。**
+対象は台帳記載法人で確認した3公開設備。17,520コマすべてを残し、翌々日予測需要で分けて表示しています。
+
 ## 最初に見る場所
 
 | 知りたいこと | 入口 |
@@ -18,6 +21,7 @@ JEPX・OCCTO・HJKSなどの公開データから、地域の需給・連系線�
 | 変数の意味・単位を調べたい | [変数辞書](metadata/variable_dictionary.csv) |
 | 研究方針を考える比較材料を見たい | [判断準備の短い資料](reports/11_decision_preparation/README.md)・[比較用7表](notebooks/03_decision_comparison.ipynb) |
 | 研究の問いと、公開データで分かる範囲を知りたい | [研究の問いと識別可能性](reports/12_research_identification/README.md) |
+| 北海道の第一版の図を見たい | [図と結果](reports/13_hokkaido_scatter/README.md)・[ノートブック04](notebooks/04_hokkaido_scatter.ipynb) |
 | 研究上の採用判断を確認したい | [研究判断ログ](docs/research_decisions.md) |
 
 主な閲覧入口は、ローカルの次のファイルです。**157,680行＝9エリア×365日×48コマ**で、価格と30分の需給計画を見られます。
@@ -56,7 +60,7 @@ Parquetは型を保った表形式のファイルです。上のノートブッ�
 
 ## 作業ブランチと承認の状況
 
-現在の作業はIssue #25の研究識別の整理、ブランチ`issue/feature-25`です。Issue #23の比較データと、Issue #21の案内整理を継承しています。
+現在の作業はIssue #27の北海道記述図、ブランチ`issue/feature-27`です。Issue #25の研究識別整理と、Issue #23の比較データを継承しています。
 ここまでの作業はIssueごとの別フォルダでcommit/pushしていたため、元のフォルダはmainのままでした。
 元のフォルダも今回の作業ブランチへ切り替えました。mainに直接commitしません。
 
