@@ -40,5 +40,14 @@
       "duration_seconds": 82.55
     },
     "ruff": "passed"
+  },
+  "separate_browser_entrypoint": {
+    "path": "notebooks/02_all_tables_browser.ipynb",
+    "cells": 40,
+    "table_previews_executed": 13,
+    "existing_local_notebook_preserved": true,
+    "notebook_outputs_committed": false,
+    "pytest_passed": 239,
+    "ruff": "passed"
   }
 }

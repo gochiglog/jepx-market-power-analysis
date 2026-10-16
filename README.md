@@ -12,7 +12,7 @@ JEPX・OCCTO・HJKSなどの公開データから、地域の需給・連系線�
 |---|---|
 | 何を作り、どこまで進んだか | [現在地と作業の流れ](docs/project_status.md) |
 | 実際のデータをどこで見られるか | [成果物ガイド](docs/data_guide.md) |
-| 表としてデータを開きたい | [閲覧用ノートブック](notebooks/01_data_tour.ipynb) |
+| 表としてデータを開きたい | [閲覧用ノートブック](notebooks/02_all_tables_browser.ipynb) |
 | 報告書を工程順に読みたい | [報告書の目次](reports/README.md) |
 | 変数の意味・単位を調べたい | [変数辞書](metadata/variable_dictionary.csv) |
 | 研究上の採用判断を確認したい | [研究判断ログ](docs/research_decisions.md) |
@@ -69,7 +69,7 @@ Python 3.12とuvを使います。リポジトリ直下で実行してくださ�
 uv sync --locked
 uv run pytest -q
 uv run ruff check .
-uv run jupyter lab notebooks/01_data_tour.ipynb
+uv run jupyter lab notebooks/02_all_tables_browser.ipynb
 ```
 
 実rawを使う検査にはローカルのデータが必要です。閲覧だけで再取得やETLの再実行は必要ありません。
