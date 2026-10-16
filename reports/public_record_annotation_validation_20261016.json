@@ -1,0 +1,20 @@
+{
+  "pytest_passed": 218,
+  "pytest_failed": 0,
+  "pytest_skipped": 0,
+  "pytest_seconds": 31.36,
+  "ruff": "all_checks_passed",
+  "registered_raw": 203,
+  "registered_raw_hash": "all_passed",
+  "reference_raw_verified": 39,
+  "old_frozen_artifacts_verified": 8,
+  "prior_interpretation_parquets_verified": 4,
+  "generation_long_unchanged": true,
+  "new_annual_raw_downloads": 0,
+  "git_tracked_research_data": 0,
+  "merge_performed": false,
+  "python": "3.12.13",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "pyarrow": "25.0.1"
+}

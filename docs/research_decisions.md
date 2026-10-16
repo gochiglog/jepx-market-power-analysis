@@ -134,6 +134,17 @@
 - 根拠（確認日2026-10-16）：[九州電力の運転特性](https://www.kyuden.co.jp/business_outline/power/nuclear-power/our/operation/teikaku/conventional.html)、[関西電力の高浜運転](https://www.kepco.co.jp/energy_supply/energy/nuclear_power/info/monitor/live_unten/takahama_real.html)、[FY2025運転実績](https://www.kepco.co.jp/corporate/pr/2026/pdf/20260403_2j.pdf)（2026-04-03、物理p1〜3、公式テキスト確認）、[HJKS運用マニュアル](https://hjks.jepx.or.jp/hjks/pdf/hjks_manual_2020_09.pdf)（2020-09-23、物理p12）、既存公式仕様確認・元停止2版。
 - 結果・選択肢・数値的影響：[詳細報告](../reports/reference_gap_interpretation_and_outage_cases_20261016.md)。問い合わせ・その準備・回答待ちは本工程にも判断ゲートにも含めない。
 
+### RD-014 案Aを全対象のデータ構築・記述診断方針として採用（2026-10-16）
+
+- 状態：確定（ユーザー承認）。最終headroomの定義・最終分析baselineの確定ではない。
+- 判断：固定版8,468,544行・元51列・参照容量差を保持し、2snapshot×予定早端/遅端の公表記録主区分・参照集合・nullable該当flagを別列で付与する。停止平均低下量を控除しない。
+- 区別：公表行の予定シナリオ該当、該当記録なし、設備照合不可、期間/境界/復旧不明/更新/競合保留を分離。実停止・利用可能認定、市場時点の情報集合再現とは扱わない。
+- 保存：全原行・同一内容コピー・同一イベントか不明な更新候補を追跡可能に保存する。公式確認状態を変更せず、最大/最新の公表行を選択しない。終了不明は停止区間を生成しない。
+- 集計：各元観測は各条件の主区分に1回だけ計数。地域差は対象設備の部分和。数量の空区分/全欠測はnull、空区分の件数のみ0。4条件を足さず、市場結合前にsnapshot/端点を明示選択する。
+- 結果：付与100%、照合できる設備/期間87.07%の観測。7,828版のゼロ由来差は単純停止公表区間31.05%、該当記録なし34.42%、保留32.43%等。停止公表区間の正出力10,421セルも残す。全4条件の地域部分和は固定版と全コマ一致。
+- 次の研究判断：容量/計測基準、公表記録を損失へ写す仮定と未知の扱い、snapshot/端点/更新候補の採用範囲の3点に限定して提示。全国停止損失控除、最終headroom、法人帰属・dominant/fringeへは進まない。
+- 対象範囲・根拠・影響：[全対象案A報告](../reports/public_record_annotation_20261016.md)、[詳細契約](../metadata/research/public_record_annotation_contract_20261016.yml)、既存のHJKS公式仕様・6事例。問い合わせ・その準備・回答待ちは含めない。
+
 ## 保留
 
 ### 上位10コードの公式設備確認（2026-10-16）
