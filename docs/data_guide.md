@@ -3,6 +3,9 @@
 [READMEへ戻る](../README.md)。すべてのパスは共有repo直下を基準とします。
 ローカルのParquetを読むだけで確認できます。再取得や再計算は必要ありません。
 
+研究の問いに対して、各データが何を示し何を示さないかは[識別可能性の整理](../reports/12_research_identification/README.md)を参照してください。
+Issue #25は根拠と比較設計の整理で、新しいDBや分析baselineの追加ではありません。以下の保存先・固定版は維持しています。
+
 ## まず価格と需給計画を見る
 
 保存場所：`data/processed/occto/demand_supply_direction/20261016_native_v1/`

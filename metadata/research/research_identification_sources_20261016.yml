@@ -1,0 +1,162 @@
+checked_on: '2026-10-16'
+scope: 研究識別の準備。原本・最終分類・モデルの変更なし
+sources:
+- source_id: egc_targets_20260330
+  title: 第19回制度設計・監視専門会合 資料8
+  url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/019_08_00.pdf
+  publication_date_or_scope: '2026-03-30'
+  pages: p6
+  verification_level: official_search_verified
+  supports: 2024-11-01〜2026-03-31の10法人11エリア行を事後的に確認
+  limits: 原PDF403。改定の全手続・各時点での公表状況未確認。2026年度列は別。
+  checked_on: '2026-10-16'
+- source_id: egc_surplus_20250725
+  title: 第11回制度設計・監視専門会合 資料6 予備電源に係るスポット市場での余剰電力供出の考え方について
+  url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/011_06_00.pdf
+  publication_date_or_scope: '2025-07-25'
+  pages: p2/4/6
+  verification_level: official_search_verified
+  supports: 自社供給力−自社想定需要−予備力−入札制約という既存定義の説明
+  limits: 原PDF403。予備電源に関する提案を通年度の施行済み規則としない。
+  checked_on: '2026-10-16'
+- source_id: egc_surplus_minutes
+  title: 第11回制度設計・監視専門会合 議事録
+  url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/011_gijiroku.pdf
+  publication_date_or_scope: 会合2025-07-25;公開日未確認
+  pages: 本文p23付近
+  verification_level: official_search_verified
+  supports: 既存定義と第24回/第94回での整理への説明
+  limits: 個別企業の制約量を示さない。
+  checked_on: '2026-10-16'
+- source_id: egc_constraints_20241115
+  title: 第3回制度設計・監視専門会合 資料4 GHG排出制約のある発電ユニットにおけるスポット市場での余剰電力供出の考え方について
+  url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/003_04_00.pdf
+  publication_date_or_scope: '2024-11-15'
+  pages: p8
+  verification_level: official_search_verified
+  supports: 段差・揚水・燃料等の入札制約類型
+  limits: 原PDF本文未取得。個別適用・量・FY内の全改定を復元しない。
+  checked_on: '2026-10-16'
+- source_id: egc_monitoring_202512
+  title: 第16回制度設計・監視専門会合 資料6 モニタリング資料
+  url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/016_06_00.pdf
+  publication_date_or_scope: 公表日未確認。対象は2025年7–9月期
+  pages: p28の自社需要等の注記
+  verification_level: official_search_verified
+  supports: 自社小売需要・他社卸・揚水動力を含むモニタリング集計の項目例
+  limits: 原PDF403。制度定義の全量を時系列再現した証拠でない。
+  checked_on: '2026-10-16'
+- source_id: jepx_sensitivity
+  title: 価格感応度について
+  url: https://www.jepx.jp/electricpower/market-data/spot/pdf/kakaku_kannoudo.pdf
+  publication_date_or_scope: 文書日付未確認;公開告知2022-01-26
+  pages: 物理1–2
+  verification_level: official_pdf_verified
+  supports: 全コマへの所定追加注文と仮想system price・ブロック再判定
+  limits: 企業/地域の減産や戦略再反応ではない。公表差分の符号式は未確認。
+  checked_on: '2026-10-16'
+- source_id: jepx_spot
+  title: JEPXスポット市場データ
+  url: https://www.jepx.jp/electricpower/market-data/spot/
+  publication_date_or_scope: 随時更新
+  pages: 市場データ表示
+  verification_level: existing_official_evidence_reused
+  supports: 実績system価格とエリア価格の採用元
+  limits: 実績価格から行使や利益は直接識別できない。
+  checked_on: '2026-10-16'
+- source_id: BBS2000
+  title: The competitive effects of transmission capacity in a deregulated electricity
+    industry
+  url: https://bushnell.ucdavis.edu/uploads/7/6/9/5/76951361/competitive-effects-of-capacity.pdf
+  publication_date_or_scope: '2000'
+  pages: 刊行294–299 / 物理1–6
+  verification_level: author_hosted_published_pdf_verified
+  supports: 送電能力と競争の理論
+  limits: 2地点等の仮定。日本の個別制約への自動適用なし。
+  checked_on: '2026-10-16'
+- source_id: BBW2002
+  title: Measuring Market Inefficiencies in California’s Restructured Wholesale Electricity
+    Market
+  url: https://fawolak.org/pdf/Measuring%20Market%20Inefficiencies%20in%20California%27s%20Restructured%20Wholesale%20Electricity%20Market_Dec%202002_Borenstein%2C%20Bushnell%2C%20Wolak.pdf
+  publication_date_or_scope: 2002-12
+  pages: 刊行1376;1384–1386;1399 / 物理1;9–11;24
+  verification_level: author_hosted_published_pdf_verified
+  supports: 費用による競争的比較基準;停止処理
+  limits: 既存WP102とは版・ページが異なる。日本への停止補正を承認する根拠ではない。
+  checked_on: '2026-10-16'
+- source_id: BMS2008
+  title: 'Vertical Arrangements, Market Structure, and Competition: An Analysis of
+    Restructured US Electricity Markets'
+  url: https://bushnell.ucdavis.edu/uploads/7/6/9/5/76951361/vertical-arrangements.pdf
+  publication_date_or_scope: 2008-03
+  pages: 刊行238–239;244–246 / 物理2–3;8–10
+  verification_level: author_hosted_published_pdf_verified
+  supports: 契約・小売供給義務と純価格エクスポージャー
+  limits: 日本の時間別契約量や推測の式を与えない。
+  checked_on: '2026-10-16'
+- source_id: yonden_profile
+  title: 四国電力 会社概要
+  url: https://www.yonden.co.jp/corporate/yonden/summary.html
+  publication_date_or_scope: 表示対象時点2026-03-31
+  pages: 会社名
+  verification_level: official_html_verified
+  supports: 正式法人名
+  limits: 現時点ページの確認とFY内の資産帰属は別。
+  checked_on: '2026-10-16'
+- source_id: chuden_profile
+  title: 中部電力 会社概要
+  url: https://www.chuden.co.jp/corporate/company/com_outline/
+  publication_date_or_scope: 表示対象時点2026-03末;代表者等の後続更新あり
+  pages: 会社名
+  verification_level: official_html_verified
+  supports: 正式法人名・ミライズと別法人
+  limits: 現在ページの全項目をFY2025に遡及しない。
+  checked_on: '2026-10-16'
+- source_id: tepco_ep_profile
+  title: 東京電力エナジーパートナー 会社概要
+  url: https://www.tepco.co.jp/ep/company/gaiyou/index-j.html
+  publication_date_or_scope: ページ更新日未確認
+  pages: 会社名
+  verification_level: official_html_verified
+  supports: 正式法人名
+  limits: HD/FP/RPと同一視しない。
+  checked_on: '2026-10-16'
+- source_id: tepco_ep_alias
+  title: テプコカスタマーサービス株式会社の会社分割について
+  url: https://www4.tepco.co.jp/ep/notice/pressrelease/2019/1517032_8664.html
+  publication_date_or_scope: '2019'
+  pages: 本文の東電EP略称定義
+  verification_level: official_html_verified
+  supports: 略称と正式法人名の同一性
+  limits: FY2025のunit/契約の配賦根拠ではない。
+  checked_on: '2026-10-16'
+- source_id: jera_contract_previous
+  title: JERA 第10期有価証券報告書
+  url: https://www.jera.co.jp/static/files/corporate/ir/pdf/securities_report2506.pdf
+  publication_date_or_scope: '2025-06-27'
+  pages: 物理32/42;本文29/39
+  verification_level: existing_official_pdf_evidence_reused
+  supports: FY2025のEP・ミライズとの契約存在
+  limits: unit別・時間別の数量と価格条件は未確定。前工程の確認結果を再利用。
+  checked_on: '2026-10-16'
+- source_id: operator_previous
+  title: 既存491unit事業者根拠・設備診断
+  local_path: reports/11_decision_preparation/README.md
+  verification_level: existing_local_evidence_reused
+  checked_on: '2026-10-16'
+  supports: 491ラベル・428範囲点検・役割未確認の内訳
+  limits: 法人帰属や価格受容的行動の分類ではない
+- source_id: network_previous
+  title: 既存方向別比較と公式定義
+  local_path: metadata/research/decision_preparation_official_evidence_20261016.yml
+  verification_level: existing_local_evidence_reused
+  checked_on: '2026-10-16'
+  supports: 段階・方向・符号・フェンス範囲
+  limits: 地域の輸入可能量への集約なし
+- source_id: demand_previous
+  title: 元頻度需要の仕様確認
+  local_path: metadata/research/decision_preparation_official_evidence_20261016.yml
+  verification_level: existing_local_evidence_reused
+  checked_on: '2026-10-16'
+  supports: 1時間実績CSVと30分計画需要の違い
+  limits: MWh/MW・平均/最大の説明相違未解消

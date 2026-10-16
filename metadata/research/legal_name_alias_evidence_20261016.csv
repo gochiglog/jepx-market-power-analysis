@@ -1,0 +1,5 @@
+alias_raw,canonical_legal_name,origin,rule,source_id,verification_level,scope,asset_attribution_assigned,notes
+四国電力(株),四国電力株式会社,677版HJKS発電事業者,法人種別の略記のみ展開,yonden_profile,official_html_verified,名称の対応のみ,false,会社概要は2026-03-31時点。unitのFY2025帰属を証明しない
+中部電力(株),中部電力株式会社,677版HJKS発電事業者,法人種別の略記のみ展開,chuden_profile,official_html_verified,名称の対応のみ,false,ミライズへ対応させない。FY2025対象への名称一致ではない
+東京電力エナジーパートナー,東京電力エナジーパートナー株式会社,制度資料の法人種別省略表記,公式会社名との同名照合,tepco_ep_profile,official_html_verified,制度表の名称のみ,false,HD/FP/RPへ展開しない
+東電EP,東京電力エナジーパートナー株式会社,公式プレスの定義済み略称,公式本文の以下略称との対応,tepco_ep_alias,official_html_verified,法人略称のみ,false,現行の全資産/契約対応とは別
