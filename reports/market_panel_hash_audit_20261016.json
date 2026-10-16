@@ -1,0 +1,13 @@
+{
+  "registered_raw": 203,
+  "reference_raw": 39,
+  "hash_validation": "all_passed",
+  "frozen_files": 24,
+  "market_files": 9,
+  "data_files_tracked": 0,
+  "os_files": [
+    "data/raw/.DS_Store",
+    "data/raw/hjks/.DS_Store",
+    "data/raw/rei/.DS_Store"
+  ]
+}
