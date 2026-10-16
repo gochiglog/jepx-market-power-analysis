@@ -1,0 +1,8 @@
+{
+  "registered_raw_sha256_passed": 203,
+  "reference_raw_sha256_passed": 39,
+  "fixed_files_sha256_passed": 34,
+  "output_parquet_sha256_passed": 13,
+  "tracked_data_files": 0,
+  "original_fixed_outputs_modified": false
+}

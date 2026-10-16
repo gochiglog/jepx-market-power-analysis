@@ -36,12 +36,17 @@ tasks:
   status: diagnostic_stage_fixed_A_v1_research_baseline_pending
 - roadmap_id: 9
   title: Demand & reserve ETL
-  github_issue_number: null
+  github_issue_number: 19
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/19
+  branch: issue/feature-19
+  status: native_frequency_and_plan_stage_etl
 - roadmap_id: 10
   title: Interconnector ETL
-  github_issue_number: null
+  github_issue_number: 19
   connection_issue: 17
-  status: existing_series_time_connection_in_issue_17_no_regional_aggregation
+  status: orientation_and_scope_diagnostic_no_import_aggregation
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/19
+  branch: issue/feature-19
 - roadmap_id: 11
   title: Asset panel
   github_issue_number: null

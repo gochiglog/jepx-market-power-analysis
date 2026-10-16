@@ -1,0 +1,5 @@
+scope,public_target_label_from,public_target_label_to,time_reference,documented_scope,source_url,physical_effective_period_confirmed,notes
+central_loop_legacy,,,,北陸フェンスと三重・越前・南福光の個別管理,https://www.occto.or.jp/assets/chousei_114_02.pdf,False,2025-12-24資料の現状説明。全FY有効開始/終了は未確認
+central_loop_transition,2026-03-13 01:00,2026-03-31 24:00,interval_end,三重/越嶺/福光は公表対象外・フェンスの一時表示式,https://web-kohyo.occto.or.jp/kks-web-public/notice,False,名称の旧新併記あり。既存rawの値を式で置換しない
+central_loop_planned_operation,2026-04-01,,operation_date,南福光BTB廃止・交流ループで3フェンス管理の予定,https://www.occto.or.jp/assets/chousei_114_02.pdf,False,FY2025の外。予定説明を実施確認として使わない
+kansai_chugoku_split,2022-04,,month,東F1/F2と西F3/F4の最小制約値,https://www.occto.or.jp/occtosystem2/oshirase/2021/files/20220202_Tiikikanrenkeisenkinoukairyou.pdf,False,公表開始予定の説明。FY2025の東西地域方向は保留

@@ -245,28 +245,27 @@ sources:
   name: OCCTO需要
   reference_url: https://www.occto.or.jp/institution/keitoujouhou/
   reference_status: file_verified
-  grain: 30分×エリア
+  grain: 1時間×エリアのCSV電力消費量、日×エリアの電力量/最大電力（別表）
   primary_key_candidate:
-  - delivery_date
-  - period
+  - source_record_id
   - area
-  - source_snapshot_id
-  key_status: candidate_unverified
+  key_status: verified
   information_timing: ex_post
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: FY2025_target_dates_observed_values_not_audited
+  coverage_status: FY2025_365_days_native_frequency_numeric_etl_audited
   usage: baseline_input
   variables:
   - demand
-  todos:
-  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
-  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
-  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
-  - 公式日別CSVの元粒度は1時間帯×エリア。30分への分割・補間・他ソース代替は行っていない。30分パネルへの利用は研究判断が必要
-  - CP932/Shift_JISのUnicode字形差(波ダッシュ等)あり。候補と検査用decoderを記録しrawは変換しない
-  - 列名に単位がないため単位は公式仕様の追加確認が必要。HTTP MIMEはapplication/octet?stream;charset=UTF-8という応答をそのまま記録
+  - demand_hourly_csv_mwh
+  - demand_daily_energy_mwh
+  - demand_daily_peak_mw
+  - source_record_id
+  todos: &id001
+  - CSV表13-6のMWhと画面表13-5の最大電力MWの説明相違を保持。1時間の物理的解釈の同一視は保留
+  - 初回公表/各行更新日時なし。1時間値を30分へ複製/補間しない
+  - 268日エリアの時間値合計と日電力量に最大絶対差0.017MWh。訂正/原因確定なし
   acquisition:
     method: OCCTO系統情報公開セッション→CF01S010Cの通常初期化・確認・保存。需要実績(日別), 全エリア, 月単位。元粒度は1時間
     manifest_path: metadata/acquisition_manifest.jsonl
@@ -276,10 +275,7 @@ sources:
     format_notes:
     - 'demand: CSV, HTTP MIME=application/octet?stream;charset=UTF-8, encoding=ambiguous,
       candidates=[''cp932'', ''shift_jis''], BOM=None, delimiter='','', header_row=1'
-    known_limitations:
-    - 公式日別CSVの元粒度は1時間帯×エリア。30分への分割・補間・他ソース代替は行っていない。30分パネルへの利用は研究判断が必要
-    - CP932/Shift_JISのUnicode字形差(波ダッシュ等)あり。候補と検査用decoderを記録しrawは変換しない
-    - 列名に単位がないため単位は公式仕様の追加確認が必要。HTTP MIMEはapplication/octet?stream;charset=UTF-8という応答をそのまま記録
+    known_limitations: *id001
 - source_id: occto_reserve
   name: OCCTO広域予備率
   reference_url: https://www.occto.or.jp/institution/keitoujouhou/
@@ -296,7 +292,7 @@ sources:
   intended_period:
     start: '2025-04-01'
     end: '2026-03-31'
-  coverage_status: FY2025_target_dates_observed_values_not_audited
+  coverage_status: FY2025_two_plan_stages_175200_rows_each_numeric_etl_audited
   usage: baseline_input
   variables:
   - reserve_rate
@@ -304,13 +300,10 @@ sources:
   - supply_capacity
   - reserve_capacity
   - forecast_stage
-  todos:
-  - 取得済みの元列と正規化予定列の対応を後続ETLで確認
-  - 単位・***等の欠損表現・公表/改訂時点・キー一意性の意味を確認
-  - 全エリア/ユニット/コマの値の完全性を後続QAで検証
-  - UTF-8 BOM、1行目更新日時、2行目列名。翌々日と翌日・当日最終を別ファイルで保持
-  - 対象日365日を確認。全コマ×全エリアの値や***等の欠損は未監査
-  - 本取得だけで翌日初回版と当日各更新版の全履歴が揃うとは扱わない
+  todos: &id002
+  - 翌々日計画と翌日・当日計画latestを別系列。実需要・実発電とは同一視しない
+  - ファイル全体更新は行更新/初回公表ではない。全更新履歴なし
+  - ブロック量が所属エリアに反復するため加算しない。公式全調整項と算定式の完全対応が未確定で再計算なし
   acquisition:
     method: '広域予備率情報ダウンロード: jhSybt=05(翌々日)/02(翌日・当日)。最大31日、前年度4月以降。月単位12ファイル×2種'
     manifest_path: metadata/acquisition_manifest.jsonl
@@ -323,10 +316,7 @@ sources:
       BOM=UTF-8, delimiter='','', header_row=2'
     - 'reserve_nextday2: CSV, HTTP MIME=application/csv, encoding=utf-8-sig, candidates=[''utf-8-sig''],
       BOM=UTF-8, delimiter='','', header_row=2'
-    known_limitations:
-    - UTF-8 BOM、1行目更新日時、2行目列名。翌々日と翌日・当日最終を別ファイルで保持
-    - 対象日365日を確認。全コマ×全エリアの値や***等の欠損は未監査
-    - 本取得だけで翌日初回版と当日各更新版の全履歴が揃うとは扱わない
+    known_limitations: *id002
 - source_id: occto_interconnector
   name: OCCTO広域予備率Web公表・連系線情報
   reference_url: https://web-kohyo.occto.or.jp/kks-web-public/download
