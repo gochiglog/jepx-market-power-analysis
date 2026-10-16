@@ -82,3 +82,10 @@ pull_requests:
   roadmap_id: 7
   draft: false
   status: merged
+support_tasks:
+- github_issue_number: 21
+  title: 研究の現在地・成果物・ブランチ運用の案内を整理
+  branch: issue/feature-21
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/21
+  depends_on_issue: 19
+  status: documentation_and_navigation

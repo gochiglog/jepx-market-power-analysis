@@ -1,0 +1,29 @@
+{
+  "issue": 21,
+  "as_of": "2026-10-16",
+  "scope": "案内・報告書整理のみ。データ再計算・研究判断なし。",
+  "existing_report_files_unchanged": 136,
+  "existing_report_records_grouped": 135,
+  "stage_guides": 9,
+  "local_markdown_links_checked": 208,
+  "artifact_parquet_metadata_checked": 17,
+  "latest_output_hashes_unchanged": 13,
+  "fixed_input_hashes_verified": 34,
+  "registered_raw_hashes_verified": 203,
+  "reference_raw_hashes_verified": 39,
+  "notebook_schema_valid": true,
+  "notebook_code_cells_executed": 3,
+  "notebook_outputs_committed": false,
+  "historical_reports": {
+    "method": "工程別リンクとVS Code入れ子表示",
+    "physical_paths_changed": false
+  },
+  "main_sha_unchanged": "a49bd46c77fa3933fe983fa49784504c8ec5c855",
+  "data_quality": "既知の価格不一致・需要単位の説明相違・容量/停止/法人帰属の未確定事項は変更なし。",
+  "pytest": {
+    "passed": 239,
+    "duration_seconds": 81.87
+  },
+  "ruff": "passed",
+  "data_files_tracked_by_git": 0
+}

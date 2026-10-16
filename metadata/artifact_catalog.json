@@ -1,0 +1,126 @@
+{
+  "as_of": "2026-10-16",
+  "data_root": "共有repo直下。実データはGit管理外。",
+  "purpose": "閲覧案内。採用baselineや既存出力manifestを置き換えない。",
+  "artifacts": [
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_base_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 161,
+      "viewing_entrypoint": true,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_58852_early_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_58852_late_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_7828_early_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_7828_late_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_demand_daily_energy_FY2025.parquet",
+      "rows": 4015,
+      "columns": 30,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_demand_daily_peak_FY2025.parquet",
+      "rows": 4015,
+      "columns": 30,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_demand_hourly_FY2025.parquet",
+      "rows": 96360,
+      "columns": 34,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_latest_FY2025.parquet",
+      "rows": 175200,
+      "columns": 40,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_nextday2_FY2025.parquet",
+      "rows": 175200,
+      "columns": 41,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/reserve_interconnector_latest_with_directions_FY2025.parquet",
+      "rows": 209472,
+      "columns": 69,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/reserve_interconnector_nextday2_with_directions_FY2025.parquet",
+      "rows": 209520,
+      "columns": 70,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/system_capacity_dayahead2_planned_with_directions_FY2025.parquet",
+      "rows": 388896,
+      "columns": 65,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/jepx/spot/jepx_spot_FY2025.parquet",
+      "rows": 17520,
+      "columns": 43,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/jepx/price_sensitivity/jepx_price_sensitivity_FY2025.parquet",
+      "rows": 17520,
+      "columns": 40,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/generation_with_snapshot_public_records_FY2025.parquet",
+      "rows": 8468544,
+      "columns": 63,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    },
+    {
+      "path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/reference_capacity_gap_FY2025.parquet",
+      "rows": 8468544,
+      "columns": 51,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false
+    }
+  ]
+}
