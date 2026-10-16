@@ -1,0 +1,5 @@
+asset_key_candidate,plant_name,unit_name,source_generation_kwh,reference_capacity_kw,negative_gap_cells,positive_generation_cells,max_ratio,ratio_above_104_cells,public_thermal_operation
+49a92578c5937366ebae16a7d3a57b10ac7f6d5b25c6ce167a2de317482815d8,高浜発電所,３号機,6329309721.0,870000.0,10971,14413,1.0279264367816092,0,整合し得る候補。全負値の原因確定ではない
+6415bac131c7a39842edfae5604c592df2f9952a97e960d7c2243556c9ce9a93,高浜発電所,４号機,5165576522.0,870000.0,11444,11605,1.0320965517241378,0,整合し得る候補。全負値の原因確定ではない
+2990424aaa51f7ba362f0fcdc6b79b7edbb74869d2ff27f0f0aededfe67f5c2a,川内原子力発電所,１号機,6492764000.0,890000.0,13819,14365,1.0404494382022471,5,整合し得る候補。全負値の原因確定ではない
+5eee27608701e7d752fb8a59071989b7c0e5c9e853d4e94f42730c63f82c6efd,川内原子力発電所,２号機,6514173000.0,890000.0,14068,14384,1.0382022471910113,0,整合し得る候補。全負値の原因確定ではない

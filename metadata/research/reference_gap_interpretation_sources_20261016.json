@@ -1,0 +1,61 @@
+[
+  {
+    "source_id": "kyuden_thermal_constant",
+    "url": "https://www.kyuden.co.jp/business_outline/power/nuclear-power/our/operation/teikaku/conventional.html",
+    "downloaded_at": null,
+    "path": "data/interim/occto/reference_gap_interpretation/20261016/source_documents/kyuden_thermal_constant.html",
+    "size": 167055,
+    "sha256": "f3179b0237521b0818ae2ff30287cf14d2e08ce1af586ea42d496667a9c09de2",
+    "mime": null,
+    "note": "初回取得成功。後続接続失敗後に記録を再構成。取得時刻は未記録、保存mtimeを別記",
+    "saved_file_mtime": "2026-10-16T09:14:20.369348+09:00",
+    "checked_on": "2026-10-16"
+  },
+  {
+    "source_id": "hjks_manual_202009",
+    "url": "https://hjks.jepx.or.jp/hjks/pdf/hjks_manual_2020_09.pdf",
+    "path": "data/interim/occto/reference_gap_interpretation/20261016/source_documents/hjks_manual_202009.pdf",
+    "size": 730907,
+    "sha256": "6fa8d5965ab90217e15d21b863750630629964146c7186519edf0ab089e29332",
+    "checked_on": "2026-10-16",
+    "downloaded_at": null,
+    "note": "通常HTTPで同日取得した一時コピーから保存。取得時刻は補わない"
+  },
+  {
+    "source_id": "kepco_takahama_operation",
+    "url": "https://www.kepco.co.jp/energy_supply/energy/nuclear_power/info/monitor/live_unten/takahama_unten.html",
+    "verification": "official_page_checked_related_source_verified",
+    "checked_on": "2026-10-16",
+    "local_download": "HTTP 403/接続失敗。制限回避・再試行継続なし",
+    "notes": "関連公式リアルタイム説明で高浜の定格熱出力一定運転を確認"
+  },
+  {
+    "source_id": "kepco_takahama_real",
+    "url": "https://www.kepco.co.jp/energy_supply/energy/nuclear_power/info/monitor/live_unten/takahama_real.html",
+    "verification": "official_web_text_verified",
+    "checked_on": "2026-10-16",
+    "notes": "運転方法の説明。現在の停止状況をFY2025の停止実績へ流用しない"
+  },
+  {
+    "source_id": "kepco_fy2025",
+    "url": "https://www.kepco.co.jp/corporate/pr/2026/pdf/20260403_2j.pdf",
+    "document_date": "2026-04-03",
+    "target_period": "2025-04-01/2026-03-31",
+    "pages_physical": [
+      1,
+      2,
+      3
+    ],
+    "verification": "official_pdf_text_verified",
+    "checked_on": "2026-10-16",
+    "local_download": "HTTP 403/接続失敗。原PDF未保存",
+    "notes": "公式PDFのテキスト抽出で確認。画像目視による表検査は未完。4.4/4.3は設備利用率に含む増減分であり30分超過の許容幅ではない"
+  },
+  {
+    "source_id": "occto_unit_notice",
+    "url": "https://www.occto.or.jp/contact/unit.html",
+    "verification": "official_web_text_verified",
+    "checked_on": "2026-10-16",
+    "notes": "一般送配電事業者計測、試運転・計測タイミング等によるHJKSとの乖離。個別超過の原因を断定しない"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "registered_raw_count": 203,
+  "raw_sha256": "all_passed",
+  "prior_reference_count": 39,
+  "frozen_artifacts_verified": 8,
+  "source_long_unchanged": true,
+  "source_documents_verified": [
+    "data/interim/occto/reference_gap_interpretation/20261016/source_documents/kyuden_thermal_constant.html",
+    "data/interim/occto/reference_gap_interpretation/20261016/source_documents/hjks_manual_202009.pdf"
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/reference_gap_interpretation/20261016/results/observed_cells_diagnostic.parquet",
+      "sha256": "385edd64edbbca107d426f04f9a22b82f033a3ae29a797f0758b63a85b1853ee",
+      "size": 21719376
+    },
+    {
+      "path": "data/interim/occto/reference_gap_interpretation/20261016/results/outage_case_timeline.parquet",
+      "sha256": "ec805f5d39053358bd37d6e5545be9517401a5cdf6f73f9bf9fb93ff99e6ba98",
+      "size": 296995
+    },
+    {
+      "path": "data/interim/occto/reference_gap_interpretation/20261016/results/zero_capacity_regional_contributions.parquet",
+      "sha256": "65a84a8bb40691508dae1654e2e0ad6e092d7f9525a9f80fd0a5d6fbd11582db",
+      "size": 2966451
+    },
+    {
+      "path": "data/interim/occto/reference_gap_interpretation/20261016/results/zero_output_consecutive_runs.parquet",
+      "sha256": "2577bc0e94420e258c8fe3993cd8ced3ee6bf622c9e72b4ee8ed252e107540f5",
+      "size": 640703
+    }
+  ],
+  "new_annual_downloads": 0,
+  "nationwide_correction": false
+}

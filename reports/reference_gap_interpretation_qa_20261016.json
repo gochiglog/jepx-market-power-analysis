@@ -1,0 +1,43 @@
+{
+  "diagnostic_only": true,
+  "frozen_files_verified": 8,
+  "cells": 8468544,
+  "calculable_cells": 7237131,
+  "observed_zero_cells": 4579903,
+  "calculable_zero_cells": 4031821,
+  "generation_missing_cells": 214299,
+  "negative_gap_cells": 57860,
+  "state_counts": {
+    "全数値観測がゼロ": 49,
+    "ゼロと正の出力を観測": 429,
+    "正の出力のみ観測": 7,
+    "数値観測なし": 6
+  },
+  "zero_run_count": 51119,
+  "longest_zero_run_cells": 17520,
+  "kansai_raw_missing": 214238,
+  "kansai_absent_unit_days_within_observed_span": 0,
+  "top5_daily_sum_mismatches": 0,
+  "nuclear_negative_cells": 50302,
+  "dropped_rows": 0,
+  "duplicate_key": 0,
+  "output": "/Users/goto/Documents/Uni/04_research_second/data/interim/occto/reference_gap_interpretation/20261016/results",
+  "statistical_dtype": "float64集計。原Decimalの固定版は変更せず保持",
+  "outage_case_qa": {
+    "case_count": 6,
+    "original_event_rows": 14,
+    "timeline_rows": 42912,
+    "timeline_key_duplicates": 0,
+    "provenance_match_rate": 1.0,
+    "dropped_rows": 0,
+    "scenario_endpoints_are_assumptions": true,
+    "nationwide_correction_created": false,
+    "actual_recovery_imputed": false,
+    "timeline_sha256": "ec805f5d39053358bd37d6e5545be9517401a5cdf6f73f9bf9fb93ff99e6ba98",
+    "event_input_rows": 66680,
+    "event_candidate_unique_rows": 54918,
+    "event_candidate_ambiguous_rows": 0,
+    "event_candidate_unmatched_rows": 11762,
+    "event_candidate_row_match_rate": 0.8236052789442112
+  }
+}

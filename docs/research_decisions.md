@@ -123,6 +123,17 @@
 - 根拠・単位・対象範囲：[試算報告](../reports/reference_capacity_gap_20261016.md)、`metadata/research/reference_capacity_gap_contract_20261016.yml`。
 - 問い合わせ/準備/回答待ち、年間再取得、PR mergeは行わない。最終baselineと停止補正後の物理的余力は引き続き未確定。
 
+### RD-013 固定参照容量差の解釈と公表停止情報の事例診断（2026-10-16）
+
+- 状態：診断範囲は確定（ユーザー指示）。最終baseline・全国停止補正・新たな損失控除式は未採用。
+- 判断：commit 8365f74の対応表・参照容量差・既存QAの8成果物をSHA256で固定する。負値の性質、燃種/エリア別ゼロと欠測、停止6事例を原値のまま比較する。
+- 観測：原子力4設備の超過は公式の定格熱出力一定運転と整合し得るが個々の原因は未確定。砂川4は公表平均低下を一定控除した仮の容量を2,433セルで上回る。奥清津第二1の更新候補の予定日差は対象1,536セルを変える。
+- 境界：復旧日の00:00/翌日00:00は事例の不確実性を測る明示仮定であり、実復旧時刻として補完・採用しない。初回公表不明でも事後比較は行い、市場時点情報を再構成したとは扱わない。
+- 提案（ユーザー確認待ち）：案A＝公表状態・平均低下量を原差と別列で保持する状態別指標を推奨。案B＝公表損失の一定控除と予定端点の明示シナリオは追加仮定が必要で、物理的上限・baselineとして未採用。全国適用はしない。
+- 適用範囲：固定診断版に対応できる観測設備と選定6事例。既存strongly_supported/strict、容量時点・法人帰属・分析粒度は変更しない。ゼロを停止/利用可能と認定せず、欠測・保留・更新候補を保持する。
+- 根拠（確認日2026-10-16）：[九州電力の運転特性](https://www.kyuden.co.jp/business_outline/power/nuclear-power/our/operation/teikaku/conventional.html)、[関西電力の高浜運転](https://www.kepco.co.jp/energy_supply/energy/nuclear_power/info/monitor/live_unten/takahama_real.html)、[FY2025運転実績](https://www.kepco.co.jp/corporate/pr/2026/pdf/20260403_2j.pdf)（2026-04-03、物理p1〜3、公式テキスト確認）、[HJKS運用マニュアル](https://hjks.jepx.or.jp/hjks/pdf/hjks_manual_2020_09.pdf)（2020-09-23、物理p12）、既存公式仕様確認・元停止2版。
+- 結果・選択肢・数値的影響：[詳細報告](../reports/reference_gap_interpretation_and_outage_cases_20261016.md)。問い合わせ・その準備・回答待ちは本工程にも判断ゲートにも含めない。
+
 ## 保留
 
 ### 上位10コードの公式設備確認（2026-10-16）

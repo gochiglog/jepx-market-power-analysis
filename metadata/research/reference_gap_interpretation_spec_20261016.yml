@@ -1,0 +1,34 @@
+checked_on: '2026-10-16'
+fixed_version: 8365f742e0b04959b2ad30951cd7894c6ec42be9
+baseline_adopted: false
+nuclear_hypothesis:
+  thermal_constant_operation: 公式運転特性と少数%の持続超過・冬季上昇は整合し得る。各コマの原因は未確定
+  gross_net: 個別の比較計測点は未確認
+  takahama_annual: 公式FY2025資料の設備利用率内の増減分4.4/4.3をコマの許容超過率としない
+hjks:
+  manual_date: '2020-09-23'
+  manual_physical_page: 12
+  applies_to_fy2025: FY開始前の説明と保存FY2025 CSV項目の整合を確認。全期間に同一仕様だったこと・改訂不存在までは未確認
+  reduction_unit: kW
+  reduction_mean_not_slot_limit: true
+  recovery: 日付のみ。実復旧とは区別
+  update_rows: 公式event ID・上書き/履歴規則未確認。元行を保持
+  initial_publication: 独立列なし。事後比較は実行、市場時点情報の再現は主張しない
+scenarios:
+  implemented: 固定版の解釈と6事例の予定区間比較のみ
+  proposal_A: 公表状態・平均低下量の対応指標を容量差と別列保持。数値控除しない
+  proposal_B: 明示した端点・一定平均・停止損失の仮定を置く事例限定感度比較。未採用/未計算
+  early_end: 復旧予定日00:00という仮定
+  late_end: 復旧予定日翌日00:00という仮定
+  no_record: 未知。停止なし/損失0としない
+  duplicates: 重複候補を足さず保留、原行比較
+  unmatched: 原行保持、数値補正保留
+  nationwide_correction: false
+aliases:
+  aid: 固定対応表の行索引（0始まり、物理設備IDではない）
+  slot: FY2025始端からの30分索引
+  gen: generation_avg_kw
+  cap: capacity_reference_kw
+  gap: capacity_gap_reference_kw
+sums: kWのコマ方向和はkW・コマ。電力量ではない。寄与比の分子分母は同じ計算可能セル。全欠測はnull
+sources_file: metadata/research/reference_gap_interpretation_sources_20261016.json

@@ -1,0 +1,17 @@
+{
+  "pytest_passed": 201,
+  "pytest_failed": 0,
+  "pytest_skipped": 0,
+  "pytest_seconds": 28.77,
+  "ruff": "all_checks_passed",
+  "raw_registered_sha_count": 203,
+  "raw_reference_sha_count": 39,
+  "frozen_artifact_sha_count": 8,
+  "git_tracked_raw_interim_processed": 0,
+  "branch": "issue/feature-15",
+  "pr": 16,
+  "pr_draft": true,
+  "merge_performed": false,
+  "selected_outage_original_rows_all_cells_equal": 14,
+  "original_crlf_inside_cells_preserved": true
+}
