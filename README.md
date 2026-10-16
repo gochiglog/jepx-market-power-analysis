@@ -1,59 +1,78 @@
-# JEPX市場支配力研究
+# FY2025 電力市場データ基盤
 
-公開データから市場・資産・企業の30分コマパネルを構築する修士研究用リポジトリです。
-研究仕様は [全体計画](00_MASTER_PLAN.md)、作業順は
-[実装ロードマップ](01_IMPLEMENTATION_ROADMAP.md)、作業ルールは [AGENTS.md](AGENTS.md)
-を参照してください。
+JEPX・OCCTO・HJKSなどの公開データから、地域の需給・連系線と市場価格を同じ日時で調べられるようにする修士研究のプロジェクトです。
+対象は2025年4月1日〜2026年3月31日。時刻は日本時間、30分の表は1日48コマです。
 
-## 環境構築
+**現在は、市場価格に需給計画と設備の診断情報を接続した段階です。**
+生データ収集からデータ接続まで進みました。競争的供給者全体の余力、最終headroom、法人帰属・dominant/fringe分類、価格への因果効果は未確定です。
 
-Python 3.12とuvを使用します。リポジトリ直下で実行してください。
+## 最初に見る場所
+
+| 知りたいこと | 入口 |
+|---|---|
+| 何を作り、どこまで進んだか | [現在地と作業の流れ](docs/project_status.md) |
+| 実際のデータをどこで見られるか | [成果物ガイド](docs/data_guide.md) |
+| 表としてデータを開きたい | [閲覧用ノートブック](notebooks/02_all_tables_browser.ipynb) |
+| 報告書を工程順に読みたい | [報告書の目次](reports/README.md) |
+| 変数の意味・単位を調べたい | [変数辞書](metadata/variable_dictionary.csv) |
+| 研究上の採用判断を確認したい | [研究判断ログ](docs/research_decisions.md) |
+
+主な閲覧入口は、ローカルの次のファイルです。**157,680行＝9エリア×365日×48コマ**で、価格と30分の需給計画を見られます。
+
+```text
+data/processed/occto/demand_supply_direction/20261016_native_v1/
+  market_base_FY2025_with_reserve.parquet
+```
+
+Parquetは型を保った表形式のファイルです。上のノートブックで表示できます。
+閲覧入口の指定は、最終分析baselineの採用判断ではありません。
+実データはGit管理外のため、GitHubからcloneしただけでは含まれません。現在の共有作業フォルダに保存しています。
+
+## ディレクトリの役割
+
+```text
+04_research_second/
+├── README.md           最初の案内
+├── docs/               現在地、使い方、仕様、研究判断
+├── reports/            工程別の説明と、CSV・JSONの検証記録
+├── metadata/           出典、変数辞書、対応表、出力manifest
+├── notebooks/          保存済みデータを読む入口
+├── src/                正規化・ETL・結合・検証の処理
+├── scripts/            処理を実行するコマンド
+├── tests/              自動テスト
+├── issues/             当初のIssue仕様
+├── data/               実データ（Git管理外）
+│   ├── raw/            公式原本。内容変更・上書き禁止
+│   ├── interim/        設備単位の中間表、固定した診断版
+│   └── processed/      JEPX価格、市場表、需要・需給・連系線
+└── .worktrees/         別Issueの作業フォルダ（過去の作業も保持）
+```
+
+`metadata`のmanifestは、どの原本・版を使ったかとSHA256（内容の指紋）を記録する台帳です。
+データを探すときは、まず共有repo直下の`data/`を見てください。`.worktrees/`は実装作業の場所です。
+
+## 作業ブランチと承認の状況
+
+現在の案内整理はIssue #21、ブランチ`issue/feature-21`です。
+ここまでの作業はIssueごとの別フォルダでcommit/pushしていたため、元のフォルダはmainのままでした。
+元のフォルダも今回の作業ブランチへ切り替えました。mainに直接commitしません。
+
+設備診断→市場接続→需要・需給の変更は、PR #16→#18→#20の順に依存しています。
+**ローカルで成果物ができていることと、mainへマージ済みであることは別です。**
+現在の整理も専用PRで扱い、承認なしにマージしません。[ブランチと現在地の詳細](docs/project_status.md#ブランチと成果物の違い)
+
+## 環境と検証
+
+Python 3.12とuvを使います。リポジトリ直下で実行してください。
 
 ```sh
 uv sync --locked
-uv run pytest
+uv run pytest -q
 uv run ruff check .
+uv run jupyter lab notebooks/02_all_tables_browser.ipynb
 ```
 
-初回はuvが必要なPythonと依存パッケージを取得します。
-依存関係を変更する際は `uv lock` で `uv.lock` を更新してください。
-
-## ディレクトリ
-
-- `src/`: 今後実装する取得・正規化・集約処理
-- `tests/`: 自動テスト（人工fixtureはここに配置）
-- `metadata/`: 出典・スキーマ・変数辞書・対応表
-- `scripts/`: 実行スクリプト
-- `notebooks/`: 探索分析
-- `reports/`: 軽量QA結果・研究判断が必要な点の記録
-- `issues/`: 初期Issue仕様
-- `data/raw/`: 元データの保存先。変更・上書き禁止
-- `data/interim/`, `data/processed/`: 中間・加工データの保存先
-
-`data/raw/` に公式ファイルを元形式のまま新規保存します。既存rawは上書きしません。raw/interim/processedのデータは
-Git管理対象外です。
-
-## 開発順序
-
-1. [#1 環境構築](https://github.com/gochiglog/jepx-market-power-analysis/issues/1)
-2. [#2 データカタログ・スキーマ](https://github.com/gochiglog/jepx-market-power-analysis/issues/2)
-3. #2完了後、[#3 企業対応表](https://github.com/gochiglog/jepx-market-power-analysis/issues/3) と
-   [#4 生データ収集](https://github.com/gochiglog/jepx-market-power-analysis/issues/4)
-
-原則1 Issueにつき `issue/feature-<Issue番号>` ブランチを使用します。
-commit/pushは明示的な指示がある場合のみ行います。
-
-## 検証範囲
-
-Issue #4の[生データ収集手順](docs/raw_acquisition.md)と
-[初回取得結果・未取得範囲](reports/issue_4_acquisition.md)、
-[raw整理・連系線空容量](reports/issue_4_reorganization_and_capacity_20261014.md)を記録しています。
-元データは `data/raw/` に保存し、Gitへcommitしません。
-需要実績は元粒度が1時間で、30分パネルへの扱いは研究判断が必要です。
-
-現在はPython・依存パッケージ・データのGit除外、および
-[データカタログ・共通仕様](metadata/README.md)の構造・参照・単位の明示を検証します。
-未確認項目は `uv run python scripts/validate_metadata.py` で一覧表示します。
-スキーマ、48コマ、キー一意性、単位変換、join統計、有効期間join、日付境界の
-テストは対応するスキーマ・処理の実装時に追加します。
-基準期間はFY2025、タイムゾーンは `Asia/Tokyo` です。
+実rawを使う検査にはローカルのデータが必要です。閲覧だけで再取得やETLの再実行は必要ありません。
+研究目的と将来計画は[全体計画](00_MASTER_PLAN.md)、[ロードマップ](01_IMPLEMENTATION_ROADMAP.md)、
+作業ルールは[AGENTS.md](AGENTS.md)を参照してください。
+ロードマップの工程番号とGitHub Issue番号は異なります。[対応表](metadata/github_issue_map.yml)で確認できます。
