@@ -1,0 +1,9 @@
+{
+  "hourly_rows": 78840,
+  "halfhour_source_columns_each": 161,
+  "network_original_and_added_rows": 807888,
+  "hjks_candidate_rows": 605,
+  "inputs_sha_verified": 52,
+  "outputs_sha_verified": 7,
+  "all_passed": true
+}

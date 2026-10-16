@@ -15,6 +15,7 @@ JEPX・OCCTO・HJKSなどの公開データから、地域の需給・連系線�
 | 表としてデータを開きたい | [閲覧用ノートブック](notebooks/02_all_tables_browser.ipynb) |
 | 報告書を工程順に読みたい | [報告書の目次](reports/README.md) |
 | 変数の意味・単位を調べたい | [変数辞書](metadata/variable_dictionary.csv) |
+| 研究方針を考える比較材料を見たい | [判断準備の短い資料](reports/11_decision_preparation/README.md)・[比較用7表](notebooks/03_decision_comparison.ipynb) |
 | 研究上の採用判断を確認したい | [研究判断ログ](docs/research_decisions.md) |
 
 主な閲覧入口は、ローカルの次のファイルです。**157,680行＝9エリア×365日×48コマ**で、価格と30分の需給計画を見られます。
@@ -53,7 +54,7 @@ Parquetは型を保った表形式のファイルです。上のノートブッ�
 
 ## 作業ブランチと承認の状況
 
-現在の案内整理はIssue #21、ブランチ`issue/feature-21`です。
+現在の作業はIssue #23の判断準備、ブランチ`issue/feature-23`です。案内整理はIssue #21で実施しました。
 ここまでの作業はIssueごとの別フォルダでcommit/pushしていたため、元のフォルダはmainのままでした。
 元のフォルダも今回の作業ブランチへ切り替えました。mainに直接commitしません。
 

@@ -89,3 +89,9 @@ support_tasks:
   github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/21
   depends_on_issue: 19
   status: documentation_and_navigation
+- github_issue_number: 23
+  title: 研究判断準備：1時間比較・方向別連系線・HJKS事業者根拠
+  branch: issue/feature-23
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/23
+  depends_on_issue: 21
+  status: comparison_only_no_baseline_decision

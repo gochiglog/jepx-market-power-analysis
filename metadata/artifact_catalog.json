@@ -121,6 +121,63 @@
       "columns": 51,
       "viewing_entrypoint": false,
       "research_baseline_selected": false
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/market_hourly_price_demand_FY2025.parquet",
+      "rows": 78840,
+      "columns": 379,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "comparison_and_evidence_only"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/system_capacity_dayahead2_planned_direction_comparison_FY2025.parquet",
+      "rows": 388896,
+      "columns": 78,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "comparison_and_evidence_only"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/reserve_interconnector_nextday2_direction_comparison_FY2025.parquet",
+      "rows": 209520,
+      "columns": 86,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "comparison_and_evidence_only"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/reserve_interconnector_latest_direction_comparison_FY2025.parquet",
+      "rows": 209472,
+      "columns": 85,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "comparison_and_evidence_only"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/observed_unit_business_evidence_FY2025.parquet",
+      "rows": 491,
+      "columns": 67,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "comparison_and_evidence_only"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/hjks_business_candidate_rows_FY2025.parquet",
+      "rows": 605,
+      "columns": 26,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "comparison_and_evidence_only"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/business_regulatory_name_comparison_FY2025.parquet",
+      "rows": 682,
+      "columns": 11,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "comparison_and_evidence_only"
     }
-  ]
+  ],
+  "comparison_version": "20261016_decision_preparation_v2"
 }

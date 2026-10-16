@@ -17,6 +17,11 @@
 | 08 | [需要・需給計画・連系線を追加する](08_demand_supply_network.md) | 4件 |
 | 09 | [承認・統合の履歴を確認する](09_git_history.md) | 3件 |
 
+## 続きの工程
+
+- [10　現在地・成果物・報告書の案内](10_project_navigation/README.md)
+- [11　研究方針を決めるための比較材料](11_decision_preparation/README.md)（1時間比較・方向別表示・台帳事業者の範囲）
+
 ## エクスプローラーで探す
 
 VS Codeでは、`01_raw_collection.md` などを展開すると、その工程の既存報告・CSV・JSONを見られます。
