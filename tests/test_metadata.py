@@ -22,8 +22,13 @@ def test_catalog_and_dictionary_are_consistent(metadata):
 
 @pytest.mark.parametrize(
     ("field", "value"),
-    [("timezone", "UTC"), ("periods_per_day", 24), ("period_minutes", 60),
-     ("start", "2025-01-01"), ("end", "2026-04-01")],
+    [
+        ("timezone", "UTC"),
+        ("periods_per_day", 24),
+        ("period_minutes", 60),
+        ("start", "2025-01-01"),
+        ("end", "2026-04-01"),
+    ],
 )
 def test_research_time_contract_cannot_change_silently(metadata, field, value):
     catalog, variables, schema = metadata
@@ -75,7 +80,11 @@ def test_validation_only_source_remains_separate(metadata):
     assert sources["high_price_validation"]["usage"] == "validation_only"
 
 
-def test_unverified_units_are_explicit_todos(metadata):
+def test_demand_native_units_are_explicit_with_generic_mixed_unit_todo(metadata):
     _, variables, _ = metadata
-    assert all(row["unit"] == "TODO" for row in variables
-               if row["source_id"] == "occto_demand")
+    demand = {r["variable_name"]: r for r in variables if r["source_id"] == "occto_demand"}
+    assert demand["demand"]["unit"] == "TODO"  # 混在元列の共通概念を単一単位へ変えない。
+    assert demand["demand_hourly_csv_mwh"]["unit"] == "MWh"
+    assert demand["demand_daily_energy_mwh"]["unit"] == "MWh"
+    assert demand["demand_daily_peak_mw"]["unit"] == "MW"
+    assert "相違" in demand["demand_hourly_csv_mwh"]["definition"]

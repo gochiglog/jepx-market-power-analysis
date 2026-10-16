@@ -1,0 +1,64 @@
+checked_on: '2026-10-16'
+demand:
+  document: 系統情報サービス操作マニュアル（2025年3月発行）
+  url: https://www.occto.or.jp/assets/occtosystem2/files/250306_keitoujouhou.pdf
+  csv_pages: 物理158〜159、表13-6
+  verified: CSVは1時間帯。各エリアと10エリア計の電力消費量MWh、日電力量MWh、日最大電力MW。
+  display_pages: 物理157〜158、表13-5
+  unresolved: 画面説明には1時間ごとの最大電力MWと記載。CSVのMWhと物理的定義を一意に同一視しない。
+  etl_policy: CSV専用仕様に基づきdemand_hourly_csv_mwhとして原数値を保持。MWへの変換なし、単位説明相違flagを併記。日電力量/日最大は原ラベルの単位。
+  days: 2025-04-01〜2026-03-31
+  regions: 北海道〜九州と沖縄の10エリア、別項目として10エリア計。総計と各エリアを単純に足さない。
+  publication_timing: 需要実績の取得snapshot。取得日時のみ出典化。原CSVに初回公表/各行更新日時なし。
+reserve:
+  documents:
+  - title: 広域予備率Web公表システム操作マニュアル（2025年3月6日版）
+    url: https://www.occto.or.jp/occtosystem2/files/20250306_koikiyobiritsuwebkohyo.pdf
+    pages: 物理15〜16、24（表2-2、2-6）
+  - title: 広域予備率Web公表システム操作マニュアル（2026年3月13日版）
+    url: https://www.occto.or.jp/assets/various/occtosystem/manual/20260313_koikiyobiritsuwebkohyo.pdf
+    pages: 物理15〜16、24
+  - title: 全国の需給状況・系統運用の監視
+    url: https://www.occto.or.jp/gyomusyokai/no1.html
+    verification: 公式検索抽出は最新需要予測と発電計画に基づき30分周期更新と説明。現本文抽出には当該段落なし、search確認水準を区別。
+  - title: 広域予備率に関する通知情報の画面説明
+    url: https://web-kohyo.occto.or.jp/kks-web-public/koikireserverateinfo/search
+    verified: 翌日/当日は計画断面、同画面の過去最新予備率はGC時点と説明。
+    limitation: 通知情報画面の説明だけで本CSV各行のGC履歴・初回公表時刻を確認したとは扱わない。
+  units: 需要/供給力/予備力はMW、予備率/使用率は%。明示変換なし。
+  stages: 翌々日計画と翌日・当日の計画最新snapshotを別系列に保持。需要は予測、供給力は公表計画上の値。実現実績ではない。
+  block_scope: 同じブロック量が所属エリアごとに反復する。ブロック量をエリア間で加算しない。ブロックNoは時刻別識別。
+  timing: 先頭行はファイル全体の最新更新。行別更新・初回公表日時ではない。取得日時も別。
+  rate_check: 当該CSVの全構成項目/調整項と公式算定式の対応は未確定。公表値を保存し再計算しない。
+interconnector:
+  orientation_document:
+    title: 2024年度 電力需給及び電力系統に関する概況
+    url: https://www.occto.or.jp/houkokusho/2025/files/denryokujukyuu_2024_250910.pdf
+    version_date_in_filename: '2025-09-10'
+    publication_date_independently_verified: false
+    scope_as_of: '2025-03-31'
+    pages: 物理26 表2-1、物理36〜41 図2-17〜27
+    verified: 10区間の順逆・対象設備、図の順正/逆負軸、空容量と計画潮流の説明。
+    limitation: 2024年度利用実績の資料。FY2025全機器の包含・運用容量有効期間を証明した資料ではない。
+  central_loop:
+    title: 第114回資料2 中地域交流ループ運用開始に伴うシステム切替対応
+    url: https://www.occto.or.jp/assets/chousei_114_02.pdf
+    document_date: '2025-12-24'
+    pages: 物理4〜8、10
+    verified: 中部/北陸/関西フェンスの送受地域集合、既存個別設備との重複、BTB/交流の違いと2026年4月運開予定。
+  split_fence:
+    title: 地域間連系線情報に関する公表画面改修のお知らせ
+    url: https://www.occto.or.jp/occtosystem2/oshirase/2021/files/20220202_Tiikikanrenkeisenkinoukairyou.pdf
+    document_date: 2022-02
+    pages: 物理2/4/7
+    verified: 東はF1/F2空容量の最小、西はF3/F4の最小、親はF1〜F4の最小。単純な送電線の分割ではない。
+    unresolved: 東西個別区分の順逆から地域集合への直接対応根拠は今回保留。親区間の方向だけで自動付与しない。
+  cutover:
+    sources:
+    - https://www.occto.or.jp/news/010962.html
+    - https://www.occto.or.jp/assets/institution/keitoujouhou/202602keitou_jyouhou_nakachiiki.pdf
+    - https://www.occto.or.jp/assets/institution/webkouhyou/202602_YobiritsuWeb_Info_Nakachiiki.pdf
+    - https://web-kohyo.occto.or.jp/kks-web-public/notice
+    documents_date: 2026-02、notice2026-03-13 19:31
+    verified: 名称変更/新旧併記期間、公表対象の3/13 01:00〜3/31 24:00コマとフェンス表示式。
+    limitation: 対象コマの端時刻による公表上の適用範囲。実設備の履歴有効期間や実際の切替時刻とは区別。
