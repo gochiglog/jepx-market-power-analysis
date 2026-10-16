@@ -1,0 +1,11 @@
+delivery_date,period,link_name_raw,forward__sending_area,forward__receiving_area,forward_available_capacity_comparison_mw,forward__sending_area_price,forward__receiving_area_price,forward__receiving_minus_sending_price,forward__price_comparison_status
+2025-04-01,1,北海道・本州間電力連系設備,北海道,東北,800.800000,15.41,15.41,0.00,matched_single_area_prices
+2025-04-01,1,相馬双葉幹線,東北,東京,1433.900000,15.41,15.41,0.00,matched_single_area_prices
+2025-04-01,1,周波数変換設備,東京,中部,1500.000000,15.41,11.00,-4.41,matched_single_area_prices
+2025-04-01,1,三重東近江線,中部,関西,2594.300000,11.00,11.00,0.00,matched_single_area_prices
+2025-04-01,1,南福光連系所・南福光変電所の連系設備,中部,北陸,300.000000,11.00,11.00,0.00,matched_single_area_prices
+2025-04-01,1,越前嶺南線,北陸,関西,2150.900000,11.00,11.00,0.00,matched_single_area_prices
+2025-04-01,1,北陸フェンス,,北陸,445.100000,,11.00,,held_multi_area_or_direction
+2025-04-01,1,関西-中国（東）,,,4525.410000,,,,held_multi_area_or_direction
+2025-04-01,1,関西-中国（西）,,,5230.576000,,,,held_multi_area_or_direction
+2025-04-01,1,阿南紀北直流幹線,関西,四国,140.000000,11.00,7.81,-3.19,matched_single_area_prices

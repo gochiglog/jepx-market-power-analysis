@@ -84,3 +84,23 @@
 ファイル名の時刻や日付は版の識別です。新しい版が自動的に最終baselineへ昇格することはありません。
 
 GitHubにはコード・説明・軽量QAだけを保存します。別の人に実データを渡す場合は、Gitとは別に共有が必要です。
+
+## 研究方針の検討用に追加した比較7表
+
+既存13表は上記のまま保持しています。比較用データは別の保存先
+`data/processed/comparison/20261016_decision_preparation_v2/`にあります。
+[比較用ノートブック](../notebooks/03_decision_comparison.ipynb)で全7表を閲覧できます。
+
+| 表 | 行数 | 意味 |
+|---|---:|---|
+| market_hourly_price_demand_FY2025.parquet | 78,840 | 2コマの価格平均/最小/最大/差と元1時間需要。前半/後半の全元列も保持 |
+| system_capacity_dayahead2_planned_direction_comparison_FY2025.parquet | 388,896 | 系統空容量の原符号＋確認済み方向別表示値＋両端価格 |
+| reserve_interconnector_nextday2_direction_comparison_FY2025.parquet | 209,520 | 翌々日の方向別公表値と単一地域間の記述価格差 |
+| reserve_interconnector_latest_direction_comparison_FY2025.parquet | 209,472 | 翌日当日の方向別公表値と単一地域間の記述価格差 |
+| observed_unit_business_evidence_FY2025.parquet | 491 | 全観測unitの台帳「発電事業者」参照。帰属決定ではない |
+| hjks_business_candidate_rows_FY2025.parquet | 605 | 候補元行・原セル。実績が候補間で反復するため加算不可 |
+| business_regulatory_name_comparison_FY2025.parquet | 682 | 規制対象との名称比較。設備帰属・分類は未実施 |
+
+[何が分かったか](../reports/11_decision_preparation/README.md)と[定義](decision_preparation.md)を先に読むと、
+1時間実績需要と30分計画需給、台帳事業者と契約供給力の違いを確認できます。
+これらは比較用派生表であり、主分析の頻度・snapshot・供給者分類を選んだものではありません。

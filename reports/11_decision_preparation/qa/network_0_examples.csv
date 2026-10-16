@@ -1,0 +1,11 @@
+delivery_date,period,link_name_raw,direction_raw,sending_area,receiving_area,available_capacity_mw,available_capacity_direction_display_mw,sending_area_price,receiving_area_price,receiving_minus_sending_price,price_comparison_status
+2025-04-01,1,北海道・本州間電力連系設備,順方向,北海道,東北,680.000000,680.000000,15.41,15.41,0.00,matched_single_area_prices
+2025-04-01,1,北海道・本州間電力連系設備,逆方向,東北,北海道,-237.000000,237.000000,15.41,15.41,0.00,matched_single_area_prices
+2025-04-01,2,北海道・本州間電力連系設備,順方向,北海道,東北,680.000000,680.000000,14.25,14.25,0.00,matched_single_area_prices
+2025-04-01,2,北海道・本州間電力連系設備,逆方向,東北,北海道,-237.000000,237.000000,14.25,14.25,0.00,matched_single_area_prices
+2025-04-01,3,北海道・本州間電力連系設備,順方向,北海道,東北,690.000000,690.000000,14.01,14.01,0.00,matched_single_area_prices
+2025-04-01,3,北海道・本州間電力連系設備,逆方向,東北,北海道,-247.000000,247.000000,14.01,14.01,0.00,matched_single_area_prices
+2025-04-01,4,北海道・本州間電力連系設備,順方向,北海道,東北,690.000000,690.000000,13.93,13.93,0.00,matched_single_area_prices
+2025-04-01,4,北海道・本州間電力連系設備,逆方向,東北,北海道,-247.000000,247.000000,13.93,13.93,0.00,matched_single_area_prices
+2025-04-01,5,北海道・本州間電力連系設備,順方向,北海道,東北,700.000000,700.000000,13.59,13.59,0.00,matched_single_area_prices
+2025-04-01,5,北海道・本州間電力連系設備,逆方向,東北,北海道,-247.000000,247.000000,13.59,13.59,0.00,matched_single_area_prices

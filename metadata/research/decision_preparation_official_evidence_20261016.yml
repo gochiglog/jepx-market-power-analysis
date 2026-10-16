@@ -1,0 +1,95 @@
+checked_on: '2026-10-16'
+scope: 比較用派生値と法人関係の判断準備。最終baseline・資産帰属の証明ではない。
+demand:
+  document: 系統情報サービス操作マニュアル（2025年3月）
+  url: https://www.occto.or.jp/assets/occtosystem2/files/250306_keitoujouhou.pdf
+  csv_definition: 表13-6、物理158〜159。1時間帯、電力消費量MWh。
+  display_definition: 表13-5、物理157〜158。1時間ごとの最大電力MW。
+  verification: official_pdf_text_verified
+  conclusion: CSV列名demand_hourly_csv_mwh・原値・既存flagを保持。MWの平均/最大との同一性は未確定。
+  related_context:
+    document: 電力需給及び電力系統に関する概況 2024年度実績
+    url: https://www.occto.or.jp/houkokusho/2025/files/denryokujukyuu_2024_250910.pdf
+    page: 物理7 本文p4脚注1・物理9 本文p6脚注3
+    observation: 年次概況は1時間単位の電力量の最大値と、各月の電力量合計を説明。
+    limitation: 別帳票の説明で日別CSV画面表との不整合を解消したとは扱わない。
+network:
+  sign_document: 電力需給及び電力系統に関する概況 2024年度実績
+  url: https://www.occto.or.jp/houkokusho/2025/files/denryokujukyuu_2024_250910.pdf
+  page: 物理36 本文p33 図2-17・表2-7。方向対応は物理26 表2-1。
+  verification: official_pdf_text_and_figure_verified
+  method: 公式PDFを通常HTTPSで一時領域へ取得し図2-17を画像で確認。rawへの追加・上書きなし。
+  observation: 順方向が正軸、逆方向が負軸。空容量・計画潮流・マージンの図示。
+  rule_scope: 系統CSV system_capacity_dayahead2_planned の空容量のみ
+  formula_forward: available_capacity_direction_display_mw = available_capacity_mw
+    * 1
+  formula_reverse: available_capacity_direction_display_mw = available_capacity_mw
+    * -1
+  limitation: 2024年度図の表示規則と既存FY2025原列の符号・容量式を照合。全FYの機器包含や実利用可能量を確定しない。
+  reserve_columns: 予備率側の順逆別原列は同値参照だけ。系統CSVの符号規則を適用しない。
+corporate_contexts:
+- document_id: jera_2019_business_succession
+  title: JERA 第4期決算公告・重要な後発事象
+  url: https://www.jera.co.jp/static/files/corporate/denshi_koukoku/pdf/2019-koukoku.pdf
+  published_date: 未確認（第4期2019年3月期）
+  event_date: '2019-04-01'
+  pages: 物理9：重要な後発事象 共同支配企業の形成
+  verification: official_pdf_verified
+  observation: 東京電力FP・中部電力の対象事業を承継した会社分割を説明。
+  applicability: 過去の事業承継に関する一般的根拠。FY2025各unitの権利・売電・契約配賦表ではない。
+  business_names_to_compare:
+  - 株式会社JERA
+  - 東京電力フュエル＆パワー株式会社
+  - 中部電力(株)
+- document_id: chuden_2020_separation
+  title: 中部電力70年史 この10年のあゆみ 第1編
+  url: https://www.chuden.co.jp/resource/corporate/company/history/70yearshistory_04.pdf
+  published_date: 2021年（70年史。日付未確認）
+  event_date: '2020-04-01'
+  pages: 第2章 電力・ガスシステム改革に向けた取り組み
+  verification: official_pdf_verified
+  observation: 送配電と販売を分社化し、販売は中部電力ミライズへ。2019年の既存火力事業等のJERA統合も説明。
+  applicability: 中部電力とミライズを同一法人にしない根拠。個別設備のFY2025契約供給力を示さない。
+  business_names_to_compare:
+  - 中部電力(株)
+  - 中部電力株式会社
+  - 中部電力ミライズ株式会社
+- document_id: tepco_rp_2020_start
+  title: 東京電力リニューアブルパワー株式会社の事業開始について
+  url: https://www4.tepco.co.jp/rp/about/company/press-information/press/2020/1537075_18521.html
+  published_date: '2020-04-01'
+  event_date: '2020-04-01'
+  pages: 本文第1〜2段落
+  verification: official_html_verified
+  observation: HDの再生可能エネルギー発電事業を承継し事業開始。
+  applicability: 別法人と事業分担の背景。FY2025全期間の個別unit帰属・契約を確定しない。
+  business_names_to_compare:
+  - 東京電力ホールディングス株式会社
+  - 東京電力リニューアブルパワー株式会社
+- document_id: tepco_ep_2016_retail
+  title: 特定小売供給約款の承継説明
+  url: https://www4.tepco.co.jp/ep/company2/agreement03.html
+  published_date: 現在ページの更新日未確認
+  event_date: '2016-04-01'
+  pages: 冒頭のホールディングカンパニー制移行説明
+  verification: official_html_verified
+  observation: 供給約款等に基づく業務をEPへ承継。計量等の一部業務はPGと区別。
+  applicability: 小売業務の説明。現在掲載の約款施行日をFY2025に遡及せず、発電資産をEPへ割り当てない。
+  business_names_to_compare:
+  - 東京電力エナジーパートナー株式会社
+  - 東京電力ホールディングス株式会社
+- document_id: jera_fy2025_ep_miraiz_contract
+  title: JERA 第10期有価証券報告書（2025年3月期）
+  url: https://www.jera.co.jp/static/files/corporate/ir/pdf/securities_report2506.pdf
+  published_date: '2025-06-27'
+  event_date: FY2025 contracts; exact execution date unknown
+  pages: 物理32 本文p29 関連当事者との取引・FY2025締結済の説明、物理42 本文p39 重要な契約等
+  verification: official_pdf_verified
+  observation: 東京電力EP・中部電力ミライズへの電力供給等とFY2025の電力需給/ガス需給契約の締結済みを確認。
+  applicability: FY2025の法人間契約の存在を示す。unit別の売電/契約容量/時間配分、各役割の同一性までは示さない。
+  business_names_to_compare:
+  - 株式会社JERA
+  - 東京電力エナジーパートナー株式会社
+  - 中部電力ミライズ株式会社
+  relationship_scope: corporate_contract_relationship_fy2025
+  fy2025_corporate_contract_existence_documented: true
