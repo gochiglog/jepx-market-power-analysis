@@ -1,0 +1,53 @@
+{
+  "issue": 27,
+  "version": "20261016_hokkaido_scatter_v1",
+  "raw_sha_checked": 203,
+  "reference_raw_sha_checked": 39,
+  "frozen_inputs_unchanged": 34,
+  "previous_manifests": [
+    {
+      "manifest": "metadata/demand_supply_direction_manifest_20261016.json",
+      "inputs": 0,
+      "outputs": 13
+    },
+    {
+      "manifest": "metadata/decision_preparation_manifest_20261016.json",
+      "inputs": 52,
+      "outputs": 7
+    }
+  ],
+  "old_reports_and_gitkeep_unchanged": 136,
+  "release_manifest_inputs_outputs_figures_sha": "all_passed",
+  "independent_rerun_all_5_parquet_bytes_and_schemas_equal": [
+    "hokkaido_unit_reference_FY2025.parquet",
+    "hokkaido_asset_registry_FY2025.parquet",
+    "hokkaido_scatter_panel_FY2025.parquet",
+    "hokkaido_reference_contribution_by_fuel_FY2025.parquet",
+    "hokkaido_reference_contribution_by_public_record_FY2025.parquet"
+  ],
+  "independent_rerun_png_sha_equal": true,
+  "pdf_note": "CreationDate等があるため再実行PDFのバイト同一性は要求せず、採用PDFのSHAをmanifestに保持。",
+  "notebook_code_cells_executed_without_writes": 3,
+  "local_links_checked": 71,
+  "pytest_passed": 261,
+  "pytest_seconds": 82.87,
+  "ruff": "passed",
+  "raw_interim_processed_git_tracked": 0,
+  "main_merge_performed": false,
+  "known_issues": [
+    "台帳snapshot時点・容量FY履歴未確認",
+    "台帳記載法人は売電権/契約供給力の配分ではない",
+    "公開対象外全体の分母未確定",
+    "原燃種空欄2設備を推測しない",
+    "停止記録は実停止認定でない",
+    "計画空容量と受渡日価格は情報断面が異なる"
+  ],
+  "unregistered_os_files": [
+    "data/raw/.DS_Store",
+    "data/raw/hjks/.DS_Store",
+    "data/raw/rei/.DS_Store"
+  ],
+  "independent_import_source_all_columns_and_values_equal": true,
+  "focused_metadata_and_hokkaido_tests_passed": 27,
+  "import_schema_note": "元連系線の全列・値は原schemaへcastして照合一致。新namespaceには文字列幅・decimal精度・空list子型の推論差があるが、数値/単位/時刻/元セルは同値。市場とunitの元列は元型も保持。"
+}

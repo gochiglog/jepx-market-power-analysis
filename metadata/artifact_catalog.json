@@ -177,6 +177,46 @@
       "viewing_entrypoint": false,
       "research_baseline_selected": false,
       "scope": "comparison_and_evidence_only"
+    },
+    {
+      "path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_unit_reference_FY2025.parquet",
+      "rows": 438000,
+      "columns": 73,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "hokkaido_descriptive_first_version"
+    },
+    {
+      "path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_asset_registry_FY2025.parquet",
+      "rows": 25,
+      "columns": 73,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "hokkaido_descriptive_first_version"
+    },
+    {
+      "path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_scatter_panel_FY2025.parquet",
+      "rows": 17520,
+      "columns": 261,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "hokkaido_descriptive_first_version"
+    },
+    {
+      "path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_reference_contribution_by_fuel_FY2025.parquet",
+      "rows": 35040,
+      "columns": 20,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "hokkaido_descriptive_first_version"
+    },
+    {
+      "path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_reference_contribution_by_public_record_FY2025.parquet",
+      "rows": 108644,
+      "columns": 21,
+      "viewing_entrypoint": false,
+      "research_baseline_selected": false,
+      "scope": "hokkaido_descriptive_first_version"
     }
   ],
   "comparison_version": "20261016_decision_preparation_v2"
