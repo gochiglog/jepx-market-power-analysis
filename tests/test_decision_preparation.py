@@ -92,6 +92,10 @@ def test_time_mismatch_out_of_scope_and_duplicate_demand_rejected():
     market, demand = small_hour()
     with pytest.raises(ValueError, match="重複"):
         hourly_comparison(market, pd.concat([demand, demand]), areas=["東京"])
+    fractional = market.copy()
+    fractional["period"] = [47.5, 48]
+    with pytest.raises(ValueError, match="不正"):
+        hourly_comparison(fractional, demand, areas=["東京"])
     with pytest.raises(ValueError, match="年度・地域外"):
         hourly_comparison(market, demand, year=2024, areas=["東京"])
 

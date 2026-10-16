@@ -55,7 +55,7 @@ def price_pair(first, second):
 def hourly_comparison(market, demand, *, year=2025, areas=None):
     key_qa(market, ["area", "delivery_date", "period"])
     key_qa(demand, HOUR_KEY)
-    if not market.period.between(1, 48).all():
+    if not market.period.isin(range(1, 49)).all():
         raise ValueError("不正な30分コマ")
     source = market.copy()
     source["hour_of_delivery"] = (source.period - 1) // 2
