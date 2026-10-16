@@ -25,5 +25,20 @@
     "duration_seconds": 81.87
   },
   "ruff": "passed",
-  "data_files_tracked_by_git": 0
+  "data_files_tracked_by_git": 0,
+  "expanded_viewer_validation": {
+    "tables_previewed": 13,
+    "all_column_schemas_verified": 13,
+    "pagination_first_last_empty_verified": 13,
+    "date_area_period_filters": "passed",
+    "unsupported_filters_rejected": true,
+    "widget_table_selection_and_pagination": "passed",
+    "output_manifest_sha_unchanged": 13,
+    "notebook_code_cells_executed": 18,
+    "pytest": {
+      "passed": 239,
+      "duration_seconds": 82.55
+    },
+    "ruff": "passed"
+  }
 }
