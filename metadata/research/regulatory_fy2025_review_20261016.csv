@@ -1,0 +1,12 @@
+regulatory_entity,market_area,valid_from,valid_to,market,fy2025_whole_year_supported,support_scope,verification_level,source_id,source_page,original_pdf_verified,contemporaneous_publication_chain_verified,notes
+北海道電力株式会社,北海道,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+東北電力株式会社,東北,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+東京電力エナジーパートナー株式会社,東京,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+株式会社JERA,東京,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+株式会社JERA,中部,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+中部電力ミライズ株式会社,中部,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+北陸電力株式会社,北陸,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+関西電力株式会社,関西,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+中国電力株式会社,中国,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+四国電力株式会社,四国,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。
+九州電力株式会社,九州,2024-11-01,2026-03-31,JEPXスポット,true,2026-03-30資料による事後的な期間確認,official_search_verified,egc_targets_20260330,6:現在の対象事業者,false,false,原PDF403。FY2026追加法人を遡及せず。法人対象と資産・契約供給力の帰属は別。

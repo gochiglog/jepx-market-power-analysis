@@ -95,3 +95,9 @@ support_tasks:
   github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/23
   depends_on_issue: 21
   status: comparison_only_no_baseline_decision
+- github_issue_number: 25
+  title: 研究の識別可能性：代替供給制約・数量抑制の採算・推測モデル接続
+  branch: issue/feature-25
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/25
+  depends_on_issue: 23
+  status: identification_design_only_no_final_baseline
