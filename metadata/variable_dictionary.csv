@@ -1431,3 +1431,37 @@ derived,observed_generation_kwh_name_reference_in_area,同名台帳参照があ�
 derived,controlled_available_supply_mw,RSIで除去する支配・契約に基づく利用可能供給力。未確定のため今回11対象すべてnull。台帳名参照0から供給力0を作らない,quantity,MW,MW,入力診断/設計項（元列と式は工程15の対応表）,TODO_definition,Issue #38、RD-021。名称参照と供給支配を区別。全国RSI・最終baseline・法人帰属を未確定。
 derived,rsi_value,地域別輸送モデルで他地域需要を満たしつつ最大化する評価地域需要の倍率。設計上の予定列であり未作成。原論文TCRSIと別,quantity,ratio,ratio,入力診断/設計項（元列と式は工程15の対応表）,TODO_definition,Issue #38、RD-021。名称参照と供給支配を区別。全国RSI・最終baseline・法人帰属を未確定。
 derived,rsi_computed,この成果物でRSIの数値算定を実施したか。今回の入力診断ではfalse,boolean,not_applicable,not_applicable,入力診断/設計項（元列と式は工程15の対応表）,specified,Issue #38、RD-021。名称参照と供給支配を区別。全国RSI・最終baseline・法人帰属を未確定。
+occto_generation,adjusted_reference_upper_kw,停止シナリオ反映後の参照上限,quantity,kW,kW,capacity_reference_kw / 公表停止記録,specified,Issue #40/RD-022の保存計画診断。承認済み診断仮定。発電量を引かず、負値保持、保留null。利用可能性未確認
+occto_generation,scenario_status,参照上限の計算・保留理由,string,not_applicable,not_applicable,snapshot context / 元停止行,specified,Issue #40/RD-022の保存計画診断。種類別の状態。記録なしは追加控除なし仮定。実状態ではない
+occto_generation,boundary_assumption_applied,復旧予定端点の診断仮定適用,boolean,not_applicable,not_applicable,snapshot context,specified,Issue #40/RD-022の保存計画診断。早端/遅端を分離。公式復旧時刻ではない
+occto_generation,availability_verified,実際の利用可能性確認済みか,boolean,not_applicable,not_applicable,診断仕様,specified,Issue #40/RD-022の保存計画診断。全件False。記録なしを確認済みにしない
+occto_generation,exact_copy_references,同内容コピーの追加参照行数,integer,not_applicable,not_applicable,context original_row_count−distinct_content_count,specified,Issue #40/RD-022の保存計画診断。控除は1回、全元停止行は別表に保持
+occto_generation,source_observation_row,固定案A元観測のゼロ起点行番号,integer,not_applicable,not_applicable,案A20261016_A_v1,specified,Issue #40/RD-022の保存計画診断。元の全列・出典への外部キー。各条件1元観測1行
+occto_generation,reference_capacity_known_partial_mw,既知参照容量の部分和,quantity,MW,MW,capacity_reference_kw,specified,Issue #40/RD-022の保存計画診断。地域全供給力ではない。1MW=1000kW
+occto_generation,adjusted_upper_partial_mw,調整済み参照上限の既知部分和,quantity,MW,MW,adjusted_reference_upper_kw,specified,Issue #40/RD-022の保存計画診断。未知を0にせず既知範囲だけ。全不能null。件数/保留併記
+occto_generation,adjusted_upper_if_observed_scope_defined_mw,観測集合全ての上限を定義できる場合の合計,quantity,MW,MW,adjusted_reference_upper_kw,specified,Issue #40/RD-022の保存計画診断。観測集合内に容量/記録保留・負値があればnull。地域全設備の保証ではない
+occto_generation,supply_scenario,停止控除なし／snapshot端点方式の条件識別,string,not_applicable,not_applicable,診断仕様,specified,Issue #40/RD-022の保存計画診断。9条件は代替シナリオ。独立観測として足さない
+occto_reserve,planned_demand_nine_areas_mw,翌々日公表予測需要の9地域合計,quantity,MW,MW,area_demand_forecast_mw,specified,Issue #40/RD-022の保存計画診断。沖縄を除く。保存版/更新時刻は地域入力で保持。実績需要ではない
+occto_generation,name_reference_removed_nine_areas_mw,全9地域の調整済み台帳名参照分の仮除去量,quantity,MW,MW,調整上限×HJKS記載名,specified,Issue #40/RD-022の保存計画診断。所有支配未確定。他の対象法人を一括除外しない。無参照/保留はnull
+occto_generation,name_reference_removed_in_area_mw,当該地域の調整済み台帳名参照分,quantity,MW,MW,調整上限×HJKS記載名,specified,Issue #40/RD-022の保存計画診断。同法人全地域除去の地域内訳。EP/ミライズ無参照は0ではない
+occto_generation,remaining_known_partial_in_area_mw,名参照分を仮除去した地域既知部分和,quantity,MW,MW,adjusted_upper_partial_mw−name_reference_removed_in_area_mw,specified,Issue #40/RD-022の保存計画診断。除去対象保留時はnull。ネットワーク成立や残余供給能力を認定しない
+occto_system_interconnector_capacity,candidate_direction_envelope_mw,系統原値から作る方向別包絡候補,quantity,MW,MW,sign×(operating_capacity_mw−margin_mw−wide_area_adjustment_mw),specified,Issue #40/RD-022の保存計画診断。順+1/逆−1。原値保持。フェンス・包含・期間未完成のためLP未使用
+occto_system_interconnector_capacity,network_constraint_definition_complete,ネットワーク入力の同時制約定義完成,boolean,not_applicable,not_applicable,設備範囲・係数・期間検査,specified,Issue #40/RD-022の保存計画診断。今回全False。未定義フェンスを落とさない
+occto_system_interconnector_capacity,all_suppliers_lp_status,全法人を残した送電制約付き需給成立の確認状況,string,not_applicable,not_applicable,LP前検査,specified,Issue #40/RD-022の保存計画診断。実データはネットワーク未定義で保留。部分和＜需要と区別
+occto_generation,held_record_known_reference_capacity_mw,公表記録保留の対象となる既知参照容量,quantity,MW,MW,capacity_reference_kw / scenario_status,specified,Issue #40/RD-022の保存計画診断。保留は利用不能/利用可能の認定ではない。容量自体が未知の分は含められない
+occto_generation,observed_unit_count,元観測行があるunitラベル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,reference_known_count,正の参照容量を指定できるunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,capacity_held_count,設備範囲・期間・容量等を理由に参照容量自体を保留するunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,scenario_defined_count,今回の条件で調整済み上限を数値計算できるunitセル数（負値も保持）,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,record_held_count,既知参照容量はあるが公表記録の不明・競合等で調整上限を保留するunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,negative_upper_count,調整上限が負のunitセル数。切上げなし,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,stop_zero_count,承認済み全停止0仮定を適用したunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,mean_subtraction_count,単一記録の平均低下量を一定控除したunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,record_absent_no_deduction_count,該当収録記録なしを追加控除なしと仮定したunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,outside_endpoint_count,予定端点の仮定により区間外として追加控除しないunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,copy_reference_count,同内容コピーを参照するunitセル数。コピー数の加算や低下量の多重控除をしない,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,boundary_assumption_count,早端/遅端の境界仮定を使って上限を定義したunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,partial_start_held_count,停止開始が30分コマ途中にあり保留したunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,generation_missing_count,元発電量が欠測のunitセル数。参照上限の欠測とは別,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,held_record_with_known_capacity_count,公表記録保留にかかる既知容量のunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+occto_generation,unobserved_union_label_count,全期間の観測ラベル集合に属するが当該時刻に元観測行がないラベル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別

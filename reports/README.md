@@ -27,6 +27,7 @@
 - [14　PJ再構築・日本語閲覧・保存と整理](14_project_reorganization/README.md)
 
 - [15　RSI算定設計：地域・法人別の代替供給と式―データ対応](15_rsi_design/README.md)
+- [16　保存翌々日計画：全法人前検査・停止反映・9地域LPの範囲](16_saved_plan_supply/README.md)
 
 ## エクスプローラーで探す
 

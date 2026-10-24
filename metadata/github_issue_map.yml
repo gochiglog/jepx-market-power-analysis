@@ -114,3 +114,10 @@ support_tasks:
   depends_on_issue: 35
   parent_pj_issue: 31
   status: specification_ready_rsi_not_computed_assumptions_pending
+- github_issue_number: 40
+  title: 翌々日保存計画による代替供給診断：全法人前検査・停止シナリオ・9地域LP
+  branch: issue/feature-40
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/40
+  depends_on_issue: 38
+  parent_pj_issue: 32
+  status: all_firm_input_comparison_complete_real_network_feasibility_held
