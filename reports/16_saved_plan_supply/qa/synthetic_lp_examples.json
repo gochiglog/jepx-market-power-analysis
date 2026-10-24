@@ -1,0 +1,37 @@
+{
+  "two_area_baseline_then_removed": {
+    "comparison_status": "all_firms_feasible_then_diagnostic_removal",
+    "baseline": {
+      "status": "feasible_reference_scenario",
+      "value": null,
+      "generation_mw": [
+        160.0,
+        40.0
+      ],
+      "flows_mw": [
+        60.0
+      ],
+      "max_balance_error_mw": 0.0
+    },
+    "removed": {
+      "status": "infeasible_all_suppliers_or_other_demand",
+      "value": null,
+      "solver_status": 2
+    },
+    "removed_adjusted_mw": 100.0,
+    "all_regions_removed_consistently": true
+  },
+  "sender_demand_limits_target_ratio": {
+    "status": "feasible_reference_scenario",
+    "value": 0.6,
+    "generation_mw": [
+      160.0,
+      0.0
+    ],
+    "flows_mw": [
+      60.0
+    ],
+    "max_balance_error_mw": 0.0
+  },
+  "role": "すべて人工数値。北海道・東北の実態評価ではない"
+}

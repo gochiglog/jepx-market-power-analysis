@@ -1,0 +1,435 @@
+{
+  "purpose": "保存された翌々日計画資料による事後的な参照対象の限定診断",
+  "inputs": [
+    {
+      "path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/generation_with_snapshot_public_records_FY2025.parquet",
+      "sha256": "c31921e7a65613a7356467c8f8308a5ca7519a7b0901ea2218579e016a7a0cf6"
+    },
+    {
+      "path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/public_record_contexts.parquet",
+      "sha256": "2795168a50289853a4bc5942ef2c5d702325913a0ac5ef8ecde3a58e29dd84a1"
+    },
+    {
+      "path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/record_contents.parquet",
+      "sha256": "d2a6f9f2ab958b8144c85a65efacf7605c1bb603ad9a7c0778ff1766b3731fe7"
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_nextday2_FY2025.parquet",
+      "sha256": "3e5888b66cbe8824d155868831baa6773d526089242c43c32702a25ed1d0b514"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/system_capacity_dayahead2_planned_direction_comparison_FY2025.parquet",
+      "sha256": "f678babc66f6dc809a8d78874c29eea6aa60258ecce091561962da26dc952298"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/observed_unit_business_evidence_FY2025.parquet",
+      "sha256": "e26f5751cc6ed2cec68be8e5caad36e53f5586924866bdbcb398f627a704a44d"
+    },
+    {
+      "path": "metadata/research/regulatory_targets.csv",
+      "sha256": "bfd4ed791bcdd00d11b10939589d762bf8df9073f5ca7a871e803f22153a9394"
+    },
+    {
+      "path": "metadata/research/legal_name_alias_evidence_20261016.csv",
+      "sha256": "d6bed5bba9a2d6d5f8951b869cb2e08f1b7223f637c030d90bb581995cc0beab"
+    }
+  ],
+  "profiles": [
+    {
+      "scenario": "reference_no_deduction",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 0,
+        "stop_upper_zero_under_scenario": 0,
+        "subtract_published_mean_under_scenario": 0,
+        "outside_interval_under_endpoint_scenario": 0,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 0,
+        "held_update_candidates": 0,
+        "held_multiple_contents": 0,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 0,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 0,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 7373760,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "58852_early__full_stop_zero",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4884755,
+        "stop_upper_zero_under_scenario": 1200299,
+        "subtract_published_mean_under_scenario": 288960,
+        "outside_interval_under_endpoint_scenario": 141435,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 578180,
+        "held_update_candidates": 90356,
+        "held_multiple_contents": 189178,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 0,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 597,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "58852_early__mean_reduction",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4884755,
+        "stop_upper_zero_under_scenario": 0,
+        "subtract_published_mean_under_scenario": 288960,
+        "outside_interval_under_endpoint_scenario": 141435,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 578180,
+        "held_update_candidates": 90356,
+        "held_multiple_contents": 189178,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 1200299,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 597,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "58852_late__full_stop_zero",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4884755,
+        "stop_upper_zero_under_scenario": 1300117,
+        "subtract_published_mean_under_scenario": 330577,
+        "outside_interval_under_endpoint_scenario": 0,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 578180,
+        "held_update_candidates": 90356,
+        "held_multiple_contents": 189178,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 0,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 597,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "58852_late__mean_reduction",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4884755,
+        "stop_upper_zero_under_scenario": 0,
+        "subtract_published_mean_under_scenario": 330577,
+        "outside_interval_under_endpoint_scenario": 0,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 578180,
+        "held_update_candidates": 90356,
+        "held_multiple_contents": 189178,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 1300117,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 597,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "7828_early__full_stop_zero",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4906426,
+        "stop_upper_zero_under_scenario": 1216254,
+        "subtract_published_mean_under_scenario": 288960,
+        "outside_interval_under_endpoint_scenario": 142046,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 525620,
+        "held_update_candidates": 95870,
+        "held_multiple_contents": 197984,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 0,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 600,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "7828_early__mean_reduction",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4906426,
+        "stop_upper_zero_under_scenario": 0,
+        "subtract_published_mean_under_scenario": 288960,
+        "outside_interval_under_endpoint_scenario": 142046,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 525620,
+        "held_update_candidates": 95870,
+        "held_multiple_contents": 197984,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 1216254,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 600,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "7828_late__full_stop_zero",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4906426,
+        "stop_upper_zero_under_scenario": 1316683,
+        "subtract_published_mean_under_scenario": 330577,
+        "outside_interval_under_endpoint_scenario": 0,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 525620,
+        "held_update_candidates": 95870,
+        "held_multiple_contents": 197984,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 0,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 600,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    },
+    {
+      "scenario": "7828_late__mean_reduction",
+      "rows": 8468544,
+      "status_counts": {
+        "no_additional_deduction_record_absent": 4906426,
+        "stop_upper_zero_under_scenario": 0,
+        "subtract_published_mean_under_scenario": 330577,
+        "outside_interval_under_endpoint_scenario": 0,
+        "held_invalid_dates": 0,
+        "held_unknown_recovery": 525620,
+        "held_update_candidates": 95870,
+        "held_multiple_contents": 197984,
+        "held_unknown_record_type": 0,
+        "held_missing_mean_reduction": 1316683,
+        "held_invalid_mean_reduction": 0,
+        "held_partial_start_cell": 600,
+        "held_reference_capacity": 1094784,
+        "negative_adjusted_upper_retained": 0,
+        "reference_without_deduction": 0,
+        "held_mapping_or_period": 0
+      }
+    }
+  ],
+  "network": {
+    "source_rows": 388896,
+    "preserved_source_columns": [
+      "対象断面",
+      "策定日",
+      "策定／更新後",
+      "連系線",
+      "年月日",
+      "時刻",
+      "方向",
+      "空容量",
+      "計画潮流",
+      "広域調整枠",
+      "マージン",
+      "運用容量",
+      "運用容量決定要因",
+      "運用容量拡大分空容量",
+      "運用容量拡大分計画潮流",
+      "運用容量拡大分運用容量",
+      "送電ＮＧ情報件数",
+      "送電ＮＧ情報延べ容量",
+      "最新更新年月日時刻",
+      "delivery_date",
+      "period",
+      "timestamp_start",
+      "timestamp_end",
+      "timezone",
+      "source_file",
+      "source_sha256",
+      "source_row",
+      "source_record_id",
+      "source_variant",
+      "source_update_header_raw",
+      "source_acquired_at",
+      "link_name_raw",
+      "direction_raw",
+      "directional_geography_status",
+      "flow_semantics",
+      "row_updated_at",
+      "file_latest_updated_at",
+      "initial_publication_datetime_known",
+      "qa_update_after_delivery_start",
+      "qa_numeric_missing_columns",
+      "available_capacity_mw",
+      "planned_flow_mw",
+      "wide_area_adjustment_mw",
+      "margin_mw",
+      "operating_capacity_mw",
+      "expanded_available_capacity_mw",
+      "expanded_planned_flow_mw",
+      "expanded_operating_capacity_mw",
+      "transmission_ng_capacity_mw",
+      "equipment_scope_class",
+      "equipment_scope_description",
+      "constraint_overlap_group",
+      "direction_reference_url",
+      "direction_reference_page",
+      "direction_reference_checked_on",
+      "formal_full_FY_validity_verified",
+      "equipment_history_fully_verified",
+      "raw_quantities_sign_changed",
+      "qa_new_fence_before_notice_target_label",
+      "scope_phase",
+      "sending_area_set_json",
+      "receiving_area_set_json",
+      "sending_area",
+      "receiving_area",
+      "direction_status",
+      "capacity_display_sign_multiplier",
+      "available_capacity_direction_display_mw",
+      "capacity_display_formula",
+      "capacity_display_source_url",
+      "capacity_display_source_page",
+      "capacity_display_rule_scope",
+      "capacity_display_rule_status",
+      "sending_area_price",
+      "sending_price_key_matched",
+      "receiving_area_price",
+      "receiving_price_key_matched",
+      "receiving_minus_sending_price",
+      "price_comparison_status"
+    ],
+    "negative_candidate_bounds": 0,
+    "candidate_single_area_rows": 350400,
+    "all_firm_lp_ready_times": 0,
+    "held_times": 17520,
+    "blockers": [
+      "北陸フェンス等の期間別係数・独立辺との包含範囲が未確定",
+      "中部/関西フェンス追加後の同時制約入力が未確定",
+      "個別系統の全FY物理包含・包絡の有効期間は未確認"
+    ],
+    "unknown_fences_ignored": false,
+    "real_two_area_model_run": false
+  },
+  "actual_generation_subtracted": false,
+  "availability_verified": false,
+  "all_firm_real_network_feasibility_evaluated": false,
+  "real_two_area_model_run": false,
+  "rsi_computed": false,
+  "join_unmatched_source_rows": 0,
+  "row_multiplication_per_condition": 0,
+  "source_rows_per_condition": 8468544,
+  "regional_rows": 1576800,
+  "national_rows": 157680,
+  "removal_candidate_rows": 1734480,
+  "outputs": [
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/held_record_capacity_exposure.parquet",
+      "sha256": "4ae04ef7979998bc0e8580a24a64963ed0377dbb90e7d0a0a1fc72f010c879da",
+      "bytes": 7421554
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/name_removal_capacity_candidates.parquet",
+      "sha256": "f767b1a6f4cae6bb7169d480d3e1e5a67fc2799d1ecccf6088aeb0bcffddb805",
+      "bytes": 28193180
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/national_nine_areas_all_suppliers.parquet",
+      "sha256": "35765d3bbac14bd0fabe6761f2f15d6723319a7818cf08745f3376f81de5b755",
+      "bytes": 4196373
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/network_candidate_bounds.parquet",
+      "sha256": "d0d1bf181d8ee17929e620b6bfe2b6ee5d662264c4f2f9d8274e71460feb6d50",
+      "bytes": 3626239
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/regional_all_suppliers.parquet",
+      "sha256": "9323f91144e354822a785b5f334bb28207175483c1bcbb7759198498f31538c1",
+      "bytes": 86243446
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_early__full_stop_zero.parquet",
+      "sha256": "6ffe4745864a0f9af25a85bc1213ab0bdc229d57275afa857828e76d48df53e0",
+      "bytes": 29188510
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_early__mean_reduction.parquet",
+      "sha256": "be9cec8ace6b42b9a210c238041b8c68fd943f5cc433fe14784d3793e83d11c4",
+      "bytes": 29186085
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_late__full_stop_zero.parquet",
+      "sha256": "836486b0d6207318a4925fbacc6fc2fa00e768f9ab7a23cab28389e6480cd164",
+      "bytes": 29201782
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_late__mean_reduction.parquet",
+      "sha256": "e895e306dd6cf6afe8fe8d094bcb5b0bd408f332e049ca8d567c3bb020e43253",
+      "bytes": 29182387
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_early__full_stop_zero.parquet",
+      "sha256": "aec47b15c28f0617b686d63a5710078ba456955ef98625410cdf3382b020728b",
+      "bytes": 29185366
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_early__mean_reduction.parquet",
+      "sha256": "c2e0366ba5c00835545c94ea6695190dd159a6f6b89aa03ea41273bcea77f2ad",
+      "bytes": 29183243
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_late__full_stop_zero.parquet",
+      "sha256": "2d7f44684fd2aab147781d7cc411898ec948cec1b80b6e838578aad4799e7621",
+      "bytes": 29196833
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_late__mean_reduction.parquet",
+      "sha256": "f1d254defab4e41e9ae65ddfdfabee84c8410b75d83538bc47a56ab488ac5702",
+      "bytes": 29177690
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/reference_no_deduction.parquet",
+      "sha256": "820b927ce70a67b838cc44c0ecac36a87b10cf3ff492af7a1e93f25e4fffa18e",
+      "bytes": 28393300
+    }
+  ],
+  "independent_verification": {
+    "source_attachment_rows_per_condition": 8468544,
+    "conditions": 9,
+    "source_key_capacity_and_missing_flag_all_cells_equal": true,
+    "adjustment_formula_and_null_all_cells_verified": true,
+    "plan_all_columns_and_types_preserved": true,
+    "network_all_columns_and_types_preserved": true,
+    "firm_key_duplicate_count": 0,
+    "EP_miraiz_unknowns_preserved": true,
+    "regional_rows": 1576800,
+    "real_network_lp_run": false
+  },
+  "provenance_tables": [
+    {
+      "path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/snapshot_original_record_rows.parquet",
+      "sha256": "9b07d06361e289a5ff4205a4d98495cf008acc3f505d9eb21eeb0b3b3e4d8fce",
+      "rows": 66680
+    }
+  ],
+  "version": "20261024_saved_plan_diagnostic_v1",
+  "research_baseline_selected": false
+}

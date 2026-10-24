@@ -1,0 +1,24 @@
+version: 20261024_saved_plan_diagnostic_v1
+decision: RD-022
+time: Asia/Tokyo; 48 periods/day; FY2025
+scope: 9地域診断。原10地域/沖縄は派生の地域表に保持。観測しないunit日を生成しない
+capacity: 677行参照台帳値を点検済み設備の観測期間一定とする限定仮定。有効期間確認ではない
+demand: area_demand_forecast_mw; 翌々日計画; 元41列・取得/更新情報保持; 実績ではない
+no_deduction: K_ref。generationを差し引かない
+full_stop_zero: 単一既知停止(計画/計画外)の予定区間は0、出力低下はK_ref−公表平均低下量
+mean_reduction: 単一既知停止/出力低下の予定区間でK_ref−公表平均低下量。空欄はnull
+endpoints:
+  early: 復旧予定日00:00
+  late: 復旧予定日の翌日00:00
+  interpretation: 明示シナリオ。元境界区分を保持。開始途中コマは保留
+uncertainties: 復旧不明・更新候補・複数内容・日時不正・種類不明・平均量未知は保留。同内容コピーのみ控除1回
+record_absent: 収録記録による追加控除なしという仮定。利用可能性を確認した意味ではない
+negative: 負値保持。LPへ自動投入/0化しない
+aggregation: 既知部分和と件数・容量/記録保留を併記。全不能null。部分和は地域全供給力ではない
+name_removal: 公式略称対応以外に法人推測なし。同名参照設備の調整済み上限を全9地域から除去。他法人は残す。無参照・保留はnull
+network: 9地域輸送モデル。個別辺の符号・送り側需要・全フェンスの同時制約が必要。実LPは定義未完成で全17520コマ保留
+baseline_gate: 全法人需給成立のLP検査を先行。全法人不成立/未定義と除去後不足を分ける
+market_information_set_reproduced: false
+inquiries: false
+annual_recollection: false
+pr_merge: false

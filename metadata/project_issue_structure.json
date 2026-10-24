@@ -53,7 +53,8 @@
       13,
       15,
       17,
-      19
+      19,
+      40
     ],
     "branch": null
   },
@@ -107,5 +108,14 @@
     "parent_issue": 31,
     "child_issues": [],
     "branch": "issue/feature-38"
+  },
+  "saved_plan_supply": {
+    "number": 40,
+    "id": 6010149298,
+    "title": "翌々日保存計画による代替供給診断：全法人前検査・停止シナリオ・9地域LP",
+    "html_url": "https://github.com/gochiglog/jepx-market-power-analysis/issues/40",
+    "parent_issue": 32,
+    "child_issues": [],
+    "branch": "issue/feature-40"
   }
 }
