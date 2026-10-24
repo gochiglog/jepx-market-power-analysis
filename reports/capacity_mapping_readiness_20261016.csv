@@ -1,0 +1,5 @@
+scope,distinct_snapshot_row_count,authorized_capacity_kw_snapshot_row_sum,nonmissing_capacity_rows,zero_capacity_rows,effective_date_present_rows,changed_capacity_present_rows,operation_start_1900_rows,fy2025_capacity_validity_verified_rows,fy2025_capacity_denominator,physical_capacity_coverage,note
+529_snapshot_all_rows,529,203693760,529,1,0,0,,0,,,行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない
+677_snapshot_all_rows,677,266247940,677,4,0,0,603,0,,,行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない
+strict_existing,353,140140070,353,0,0,0,317,0,,,行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない
+candidate49_diagnostic,402,162050970,402,0,0,0,357,0,,,行IDを一度だけ計数した参考台帳値。終了設備・構成機器等を含み物理容量合計ではない

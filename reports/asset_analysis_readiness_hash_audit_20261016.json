@@ -1,0 +1,26 @@
+{
+  "registered_raw_count": 203,
+  "registered_raw_hash_validation": "all_passed",
+  "reference_files": 39,
+  "reference_hash_validation": "all_passed",
+  "original_input_hash_validation": "all_passed",
+  "generation_long_sha_unchanged": true,
+  "new_raw_files_downloaded": 0,
+  "unregistered_os_files": [
+    "data/raw/.DS_Store",
+    "data/raw/hjks/.DS_Store",
+    "data/raw/rei/.DS_Store"
+  ],
+  "diagnostic_parquets": [
+    {
+      "path": "data/interim/hjks/analysis_readiness/20261016_diagnostic_v3/strict_existing_unit_day.parquet",
+      "sha256": "2baf51cb41aa30869c17b61af0f78da00d7629ca4aa600c012e904b80246306c",
+      "file_size": 1266393
+    },
+    {
+      "path": "data/interim/hjks/analysis_readiness/20261016_diagnostic_v3/candidate49_diagnostic_unit_day.parquet",
+      "sha256": "82d2045c9d22422d1a6637796b34f36b1aae60c1db9788bbd231198654bb123c",
+      "file_size": 1268778
+    }
+  ]
+}

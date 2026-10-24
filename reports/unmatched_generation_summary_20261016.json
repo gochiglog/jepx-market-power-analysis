@@ -1,0 +1,107 @@
+{
+  "checked_on": "2026-10-16",
+  "reference_unit_rows": 677,
+  "reference_use_only": true,
+  "total_observed_generation_kwh": "646505684424",
+  "unmatched_generation_kwh": "127705401000",
+  "unmatched_fraction": "0.1975317527390007244525072000",
+  "unmatched_plant_label_count": 67,
+  "top10_unmatched_share": "0.3896201226446170432525402743",
+  "unit_unmatched_categories": {
+    "plant_matched_unit_unmatched": {
+      "unit_count": 67,
+      "generation_kwh": "120600148106"
+    },
+    "plant_and_unit_unmatched": {
+      "unit_count": 71,
+      "generation_kwh": "127705401000"
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": "A",
+      "source_plant_label_count": 363,
+      "matched_plant_label_count": 296,
+      "plant_match_rate": 0.8154269972451791,
+      "ambiguous_plant_label_count": 6,
+      "added_plant_label_count": 0,
+      "matched_generation_kwh": "518800283424",
+      "total_observed_generation_kwh": "646505684424",
+      "generation_coverage": "0.8024682472609992755474928000",
+      "unmatched_generation_kwh": "127705401000",
+      "additional_target_reuse_count": 0,
+      "hypothesis_only": true,
+      "final_mapping_applied": false
+    },
+    {
+      "scenario": "B",
+      "source_plant_label_count": 363,
+      "matched_plant_label_count": 296,
+      "plant_match_rate": 0.8154269972451791,
+      "ambiguous_plant_label_count": 6,
+      "added_plant_label_count": 0,
+      "matched_generation_kwh": "518800283424",
+      "total_observed_generation_kwh": "646505684424",
+      "generation_coverage": "0.8024682472609992755474928000",
+      "unmatched_generation_kwh": "127705401000",
+      "additional_target_reuse_count": 0,
+      "hypothesis_only": true,
+      "final_mapping_applied": false
+    },
+    {
+      "scenario": "C",
+      "source_plant_label_count": 363,
+      "matched_plant_label_count": 362,
+      "plant_match_rate": 0.9972451790633609,
+      "ambiguous_plant_label_count": 1,
+      "added_plant_label_count": 66,
+      "matched_generation_kwh": "646505684424",
+      "total_observed_generation_kwh": "646505684424",
+      "generation_coverage": "1",
+      "unmatched_generation_kwh": "0",
+      "additional_target_reuse_count": 0,
+      "hypothesis_only": true,
+      "final_mapping_applied": false
+    }
+  ],
+  "C_requiring_exact_code_also": {
+    "scenario": "C",
+    "source_plant_label_count": 363,
+    "matched_plant_label_count": 296,
+    "plant_match_rate": 0.8154269972451791,
+    "ambiguous_plant_label_count": 6,
+    "added_plant_label_count": 0,
+    "matched_generation_kwh": "518800283424",
+    "total_observed_generation_kwh": "646505684424",
+    "generation_coverage": "0.8024682472609992755474928000",
+    "unmatched_generation_kwh": "127705401000",
+    "additional_target_reuse_count": 0,
+    "hypothesis_only": true,
+    "final_mapping_applied": false
+  },
+  "pair_count": 1969,
+  "code_census": {
+    "generation_area_code_count": 301,
+    "hjks_area_code_count": 454,
+    "exact_area_code_count": 280,
+    "same_code_different_area_pairs": 0,
+    "prefix_or_suffix_only_pair_count": 1067,
+    "scope": "全491発電unit候補・677台帳行。prefix/suffixは文字列関係のみ"
+  },
+  "unmatched_positive_plant_label_count": 63,
+  "positive_unmatched_code_count": 17,
+  "positive_unmatched_diagnostic_cluster_count": 14,
+  "top10_code_share_of_unmatched": "0.8771293392673345115607130821",
+  "top10_diagnostic_cluster_share_of_unmatched": "0.9340972195843149969827822709",
+  "null_cell_count": 214299,
+  "raw_amounts_reconciled": true,
+  "C_caution": "コード不一致を含む名称・unit記号の条件付き上限。公式コード対応・時点・物理集約は未確認。採用しない",
+  "original_input_sha256": {
+    "reports/generation_hjks_677_mapping_candidates.csv": "b8f06f894383e65c618328fc7ff842035bd654d49940be4990d1a3513c16005f",
+    "reports/generation_hjks_FY2025_qa.json": "51a78aa3dd7748e372327134b6e4ab145b472e4372910eed039eb4d34d709ae9"
+  },
+  "generation_interim_unchanged": true,
+  "raw_unchanged": true,
+  "final_mapping_applied": false,
+  "headroom_calculated": false
+}

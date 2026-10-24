@@ -1,0 +1,1549 @@
+{
+  "audited_at": "2026-10-16T01:52:32+09:00",
+  "baseline_start": "2025-04-01",
+  "baseline_end": "2026-03-31",
+  "registered_file_count": 203,
+  "downloaded_file_count": 136,
+  "imported_file_count": 67,
+  "downloaded_bytes": 243093277,
+  "hash_validation": "all_passed",
+  "unregistered_raw_paths": [
+    "data/raw/.DS_Store",
+    "data/raw/hjks/.DS_Store",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_五井.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_千葉.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_姉崎.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_富津.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_川崎.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_常陸那珂.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_常陸那珂共同.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_横須賀.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_name_西名古屋.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_48193.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GAWA3.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GAZT3.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB4Q3.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB553.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB573.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB583.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB593.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GC5F3.csv",
+    "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GV943.csv",
+    "data/raw/reference/issue15/20261016T014544/jera_anegasaki.html",
+    "data/raw/reference/issue15/20261016T014544/jera_anegasaki_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/jera_chiba.html",
+    "data/raw/reference/issue15/20261016T014544/jera_chiba_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/jera_futtsu.html",
+    "data/raw/reference/issue15/20261016T014544/jera_futtsu_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/jera_goi.html",
+    "data/raw/reference/issue15/20261016T014544/jera_goi_20250303.html",
+    "data/raw/reference/issue15/20261016T014544/jera_goi_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/jera_hitachinaka-kyodo.html",
+    "data/raw/reference/issue15/20261016T014544/jera_hitachinaka.html",
+    "data/raw/reference/issue15/20261016T014544/jera_hitachinaka_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/jera_kawasaki.html",
+    "data/raw/reference/issue15/20261016T014544/jera_kawasaki_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/jera_nishinagoya.html",
+    "data/raw/reference/issue15/20261016T014544/jera_nishinagoya_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/jera_yokosuka.html",
+    "data/raw/reference/issue15/20261016T014544/jera_yokosuka_pamphlet_0.pdf",
+    "data/raw/reference/issue15/20261016T014544/occto_unit_caution.html",
+    "data/raw/reference/issue15/20261016T014544/tepco_unit_explanation.html",
+    "data/raw/rei/.DS_Store"
+  ],
+  "warnings": [
+    "data/raw/hjks/units/hjks_units__unit_snapshot__sha256_7de63a108b36.csv: 不正列数または対象日未解釈行あり",
+    "data/raw/hjks/outages/hjks_outages__outages_snapshot__sha256_2b297982196f.csv: 不正列数または対象日未解釈行あり",
+    "data/raw/hjks/outages/hjks_outages__hjks_outages_FY2025__sha256_9a46e1cba184.csv: 不正列数または対象日未解釈行あり",
+    "data/raw/hjks/units/hjks_units__hjks_units_FY2025__sha256_7d4c3a8633fa.csv: 不正列数または対象日未解釈行あり"
+  ],
+  "variants": {
+    "demand": {
+      "source_id": "occto_demand",
+      "file_count": 13,
+      "file_size": 947774,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet?stream;charset=UTF-8",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": [
+            "00:00～01:00",
+            "01:00～02:00",
+            "02:00～03:00",
+            "03:00～04:00",
+            "04:00～05:00",
+            "05:00～06:00",
+            "06:00～07:00",
+            "07:00～08:00",
+            "08:00～09:00",
+            "09:00～10:00",
+            "10:00～11:00",
+            "11:00～12:00",
+            "12:00～13:00",
+            "13:00～14:00",
+            "14:00～15:00",
+            "15:00～16:00",
+            "16:00～17:00",
+            "17:00～18:00",
+            "18:00～19:00",
+            "19:00～20:00",
+            "20:00～21:00",
+            "21:00～22:00",
+            "22:00～23:00",
+            "23:00～24:00",
+            "日最大電力(MW)",
+            "日電力量(MWh)"
+          ]
+        }
+      ]
+    },
+    "generation": {
+      "source_id": "occto_generation",
+      "file_count": 13,
+      "file_size": 71856707,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "manual_egc_regulatory_candidate_unverified": {
+      "source_id": "regulatory_entities",
+      "file_count": 1,
+      "file_size": 4338882,
+      "observed_date_count": 0,
+      "period_start": null,
+      "period_end": null,
+      "missing_dates": null,
+      "coverage_status": "unverified_snapshot",
+      "formats": [
+        {
+          "extension": ".pdf",
+          "http_mime_type": null,
+          "encoding": "not_applicable",
+          "bom": null,
+          "encoding_candidates": null,
+          "delimiter": null,
+          "header_row": null,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "manual_hjks_outage_outages": {
+      "source_id": "hjks_outage",
+      "file_count": 1,
+      "file_size": 1693337,
+      "observed_date_count": 0,
+      "period_start": null,
+      "period_end": null,
+      "missing_dates": null,
+      "coverage_status": "unverified_snapshot",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "cp932",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": []
+        }
+      ]
+    },
+    "manual_hjks_unit_units": {
+      "source_id": "hjks_unit",
+      "file_count": 1,
+      "file_size": 96231,
+      "observed_date_count": 0,
+      "period_start": null,
+      "period_end": null,
+      "missing_dates": null,
+      "coverage_status": "unverified_snapshot",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "cp932",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": []
+        }
+      ]
+    },
+    "manual_jepx_sensitivity_diff_price_sensitivity": {
+      "source_id": "jepx_price_sensitivity",
+      "file_count": 1,
+      "file_size": 904447,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": []
+        }
+      ]
+    },
+    "manual_jepx_sensitivity_price_sensitivity": {
+      "source_id": "jepx_price_sensitivity",
+      "file_count": 1,
+      "file_size": 931897,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": []
+        }
+      ]
+    },
+    "manual_jepx_spot_spot": {
+      "source_id": "jepx_spot",
+      "file_count": 1,
+      "file_size": 2265696,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": []
+        }
+      ]
+    },
+    "manual_occto_generation_generation": {
+      "source_id": "occto_generation",
+      "file_count": 1,
+      "file_size": 71645158,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": []
+        }
+      ]
+    },
+    "manual_occto_reserve_block_dayahead2": {
+      "source_id": "occto_reserve",
+      "file_count": 12,
+      "file_size": 20037652,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": [
+            "00:30",
+            "01:00",
+            "01:30",
+            "02:00",
+            "02:30",
+            "03:00",
+            "03:30",
+            "04:00",
+            "04:30",
+            "05:00",
+            "05:30",
+            "06:00",
+            "06:30",
+            "07:00",
+            "07:30",
+            "08:00",
+            "08:30",
+            "09:00",
+            "09:30",
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00",
+            "18:30",
+            "19:00",
+            "19:30",
+            "20:00",
+            "20:30",
+            "21:00",
+            "21:30",
+            "22:00",
+            "22:30",
+            "23:00",
+            "23:30",
+            "24:00"
+          ]
+        }
+      ]
+    },
+    "manual_occto_reserve_block_dayahead_actual": {
+      "source_id": "occto_reserve",
+      "file_count": 12,
+      "file_size": 19494425,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": [
+            "00:30",
+            "01:00",
+            "01:30",
+            "02:00",
+            "02:30",
+            "03:00",
+            "03:30",
+            "04:00",
+            "04:30",
+            "05:00",
+            "05:30",
+            "06:00",
+            "06:30",
+            "07:00",
+            "07:30",
+            "08:00",
+            "08:30",
+            "09:00",
+            "09:30",
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00",
+            "18:30",
+            "19:00",
+            "19:30",
+            "20:00",
+            "20:30",
+            "21:00",
+            "21:30",
+            "22:00",
+            "22:30",
+            "23:00",
+            "23:30",
+            "24:00"
+          ]
+        }
+      ]
+    },
+    "manual_occto_reserve_interconnector_dayahead2": {
+      "source_id": "occto_interconnector",
+      "file_count": 12,
+      "file_size": 34018246,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": [
+            "00:30",
+            "01:00",
+            "01:30",
+            "02:00",
+            "02:30",
+            "03:00",
+            "03:30",
+            "04:00",
+            "04:30",
+            "05:00",
+            "05:30",
+            "06:00",
+            "06:30",
+            "07:00",
+            "07:30",
+            "08:00",
+            "08:30",
+            "09:00",
+            "09:30",
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00",
+            "18:30",
+            "19:00",
+            "19:30",
+            "20:00",
+            "20:30",
+            "21:00",
+            "21:30",
+            "22:00",
+            "22:30",
+            "23:00",
+            "23:30",
+            "24:00"
+          ]
+        }
+      ]
+    },
+    "manual_occto_reserve_interconnector_dayahead_actual": {
+      "source_id": "occto_interconnector",
+      "file_count": 12,
+      "file_size": 33961201,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": [
+            "00:30",
+            "01:00",
+            "01:30",
+            "02:00",
+            "02:30",
+            "03:00",
+            "03:30",
+            "04:00",
+            "04:30",
+            "05:00",
+            "05:30",
+            "06:00",
+            "06:30",
+            "07:00",
+            "07:30",
+            "08:00",
+            "08:30",
+            "09:00",
+            "09:30",
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00",
+            "18:30",
+            "19:00",
+            "19:30",
+            "20:00",
+            "20:30",
+            "21:00",
+            "21:30",
+            "22:00",
+            "22:30",
+            "23:00",
+            "23:30",
+            "24:00"
+          ]
+        }
+      ]
+    },
+    "manual_occto_system_interconnector_capacity_planned": {
+      "source_id": "occto_system_interconnector_capacity",
+      "file_count": 1,
+      "file_size": 880774,
+      "observed_date_count": 7,
+      "period_start": "2025-04-01",
+      "period_end": "2025-04-07",
+      "missing_dates": [
+        "2025-04-08",
+        "2025-04-09",
+        "2025-04-10",
+        "2025-04-11",
+        "2025-04-12",
+        "2025-04-13",
+        "2025-04-14",
+        "2025-04-15",
+        "2025-04-16",
+        "2025-04-17",
+        "2025-04-18",
+        "2025-04-19",
+        "2025-04-20",
+        "2025-04-21",
+        "2025-04-22",
+        "2025-04-23",
+        "2025-04-24",
+        "2025-04-25",
+        "2025-04-26",
+        "2025-04-27",
+        "2025-04-28",
+        "2025-04-29",
+        "2025-04-30",
+        "2025-05-01",
+        "2025-05-02",
+        "2025-05-03",
+        "2025-05-04",
+        "2025-05-05",
+        "2025-05-06",
+        "2025-05-07",
+        "2025-05-08",
+        "2025-05-09",
+        "2025-05-10",
+        "2025-05-11",
+        "2025-05-12",
+        "2025-05-13",
+        "2025-05-14",
+        "2025-05-15",
+        "2025-05-16",
+        "2025-05-17",
+        "2025-05-18",
+        "2025-05-19",
+        "2025-05-20",
+        "2025-05-21",
+        "2025-05-22",
+        "2025-05-23",
+        "2025-05-24",
+        "2025-05-25",
+        "2025-05-26",
+        "2025-05-27",
+        "2025-05-28",
+        "2025-05-29",
+        "2025-05-30",
+        "2025-05-31",
+        "2025-06-01",
+        "2025-06-02",
+        "2025-06-03",
+        "2025-06-04",
+        "2025-06-05",
+        "2025-06-06",
+        "2025-06-07",
+        "2025-06-08",
+        "2025-06-09",
+        "2025-06-10",
+        "2025-06-11",
+        "2025-06-12",
+        "2025-06-13",
+        "2025-06-14",
+        "2025-06-15",
+        "2025-06-16",
+        "2025-06-17",
+        "2025-06-18",
+        "2025-06-19",
+        "2025-06-20",
+        "2025-06-21",
+        "2025-06-22",
+        "2025-06-23",
+        "2025-06-24",
+        "2025-06-25",
+        "2025-06-26",
+        "2025-06-27",
+        "2025-06-28",
+        "2025-06-29",
+        "2025-06-30",
+        "2025-07-01",
+        "2025-07-02",
+        "2025-07-03",
+        "2025-07-04",
+        "2025-07-05",
+        "2025-07-06",
+        "2025-07-07",
+        "2025-07-08",
+        "2025-07-09",
+        "2025-07-10",
+        "2025-07-11",
+        "2025-07-12",
+        "2025-07-13",
+        "2025-07-14",
+        "2025-07-15",
+        "2025-07-16",
+        "2025-07-17",
+        "2025-07-18",
+        "2025-07-19",
+        "2025-07-20",
+        "2025-07-21",
+        "2025-07-22",
+        "2025-07-23",
+        "2025-07-24",
+        "2025-07-25",
+        "2025-07-26",
+        "2025-07-27",
+        "2025-07-28",
+        "2025-07-29",
+        "2025-07-30",
+        "2025-07-31",
+        "2025-08-01",
+        "2025-08-02",
+        "2025-08-03",
+        "2025-08-04",
+        "2025-08-05",
+        "2025-08-06",
+        "2025-08-07",
+        "2025-08-08",
+        "2025-08-09",
+        "2025-08-10",
+        "2025-08-11",
+        "2025-08-12",
+        "2025-08-13",
+        "2025-08-14",
+        "2025-08-15",
+        "2025-08-16",
+        "2025-08-17",
+        "2025-08-18",
+        "2025-08-19",
+        "2025-08-20",
+        "2025-08-21",
+        "2025-08-22",
+        "2025-08-23",
+        "2025-08-24",
+        "2025-08-25",
+        "2025-08-26",
+        "2025-08-27",
+        "2025-08-28",
+        "2025-08-29",
+        "2025-08-30",
+        "2025-08-31",
+        "2025-09-01",
+        "2025-09-02",
+        "2025-09-03",
+        "2025-09-04",
+        "2025-09-05",
+        "2025-09-06",
+        "2025-09-07",
+        "2025-09-08",
+        "2025-09-09",
+        "2025-09-10",
+        "2025-09-11",
+        "2025-09-12",
+        "2025-09-13",
+        "2025-09-14",
+        "2025-09-15",
+        "2025-09-16",
+        "2025-09-17",
+        "2025-09-18",
+        "2025-09-19",
+        "2025-09-20",
+        "2025-09-21",
+        "2025-09-22",
+        "2025-09-23",
+        "2025-09-24",
+        "2025-09-25",
+        "2025-09-26",
+        "2025-09-27",
+        "2025-09-28",
+        "2025-09-29",
+        "2025-09-30",
+        "2025-10-01",
+        "2025-10-02",
+        "2025-10-03",
+        "2025-10-04",
+        "2025-10-05",
+        "2025-10-06",
+        "2025-10-07",
+        "2025-10-08",
+        "2025-10-09",
+        "2025-10-10",
+        "2025-10-11",
+        "2025-10-12",
+        "2025-10-13",
+        "2025-10-14",
+        "2025-10-15",
+        "2025-10-16",
+        "2025-10-17",
+        "2025-10-18",
+        "2025-10-19",
+        "2025-10-20",
+        "2025-10-21",
+        "2025-10-22",
+        "2025-10-23",
+        "2025-10-24",
+        "2025-10-25",
+        "2025-10-26",
+        "2025-10-27",
+        "2025-10-28",
+        "2025-10-29",
+        "2025-10-30",
+        "2025-10-31",
+        "2025-11-01",
+        "2025-11-02",
+        "2025-11-03",
+        "2025-11-04",
+        "2025-11-05",
+        "2025-11-06",
+        "2025-11-07",
+        "2025-11-08",
+        "2025-11-09",
+        "2025-11-10",
+        "2025-11-11",
+        "2025-11-12",
+        "2025-11-13",
+        "2025-11-14",
+        "2025-11-15",
+        "2025-11-16",
+        "2025-11-17",
+        "2025-11-18",
+        "2025-11-19",
+        "2025-11-20",
+        "2025-11-21",
+        "2025-11-22",
+        "2025-11-23",
+        "2025-11-24",
+        "2025-11-25",
+        "2025-11-26",
+        "2025-11-27",
+        "2025-11-28",
+        "2025-11-29",
+        "2025-11-30",
+        "2025-12-01",
+        "2025-12-02",
+        "2025-12-03",
+        "2025-12-04",
+        "2025-12-05",
+        "2025-12-06",
+        "2025-12-07",
+        "2025-12-08",
+        "2025-12-09",
+        "2025-12-10",
+        "2025-12-11",
+        "2025-12-12",
+        "2025-12-13",
+        "2025-12-14",
+        "2025-12-15",
+        "2025-12-16",
+        "2025-12-17",
+        "2025-12-18",
+        "2025-12-19",
+        "2025-12-20",
+        "2025-12-21",
+        "2025-12-22",
+        "2025-12-23",
+        "2025-12-24",
+        "2025-12-25",
+        "2025-12-26",
+        "2025-12-27",
+        "2025-12-28",
+        "2025-12-29",
+        "2025-12-30",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-01-02",
+        "2026-01-03",
+        "2026-01-04",
+        "2026-01-05",
+        "2026-01-06",
+        "2026-01-07",
+        "2026-01-08",
+        "2026-01-09",
+        "2026-01-10",
+        "2026-01-11",
+        "2026-01-12",
+        "2026-01-13",
+        "2026-01-14",
+        "2026-01-15",
+        "2026-01-16",
+        "2026-01-17",
+        "2026-01-18",
+        "2026-01-19",
+        "2026-01-20",
+        "2026-01-21",
+        "2026-01-22",
+        "2026-01-23",
+        "2026-01-24",
+        "2026-01-25",
+        "2026-01-26",
+        "2026-01-27",
+        "2026-01-28",
+        "2026-01-29",
+        "2026-01-30",
+        "2026-01-31",
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-03",
+        "2026-02-04",
+        "2026-02-05",
+        "2026-02-06",
+        "2026-02-07",
+        "2026-02-08",
+        "2026-02-09",
+        "2026-02-10",
+        "2026-02-11",
+        "2026-02-12",
+        "2026-02-13",
+        "2026-02-14",
+        "2026-02-15",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-02-19",
+        "2026-02-20",
+        "2026-02-21",
+        "2026-02-22",
+        "2026-02-23",
+        "2026-02-24",
+        "2026-02-25",
+        "2026-02-26",
+        "2026-02-27",
+        "2026-02-28",
+        "2026-03-01",
+        "2026-03-02",
+        "2026-03-03",
+        "2026-03-04",
+        "2026-03-05",
+        "2026-03-06",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-09",
+        "2026-03-10",
+        "2026-03-11",
+        "2026-03-12",
+        "2026-03-13",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-16",
+        "2026-03-17",
+        "2026-03-18",
+        "2026-03-19",
+        "2026-03-20",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-23",
+        "2026-03-24",
+        "2026-03-25",
+        "2026-03-26",
+        "2026-03-27",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-03-30",
+        "2026-03-31"
+      ],
+      "coverage_status": "partial",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": [
+            "00:30",
+            "01:00",
+            "01:30",
+            "02:00",
+            "02:30",
+            "03:00",
+            "03:30",
+            "04:00",
+            "04:30",
+            "05:00",
+            "05:30",
+            "06:00",
+            "06:30",
+            "07:00",
+            "07:30",
+            "08:00",
+            "08:30",
+            "09:00",
+            "09:30",
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00",
+            "18:30",
+            "19:00",
+            "19:30",
+            "20:00",
+            "20:30",
+            "21:00",
+            "21:30",
+            "22:00",
+            "22:30",
+            "23:00",
+            "23:30",
+            "24:00"
+          ]
+        }
+      ]
+    },
+    "manual_rei_validation_power_data": {
+      "source_id": "rei_power_data",
+      "file_count": 1,
+      "file_size": 14325666,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "manual_rei_validation_supply_demand": {
+      "source_id": "rei_power_data",
+      "file_count": 10,
+      "file_size": 16126821,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": null,
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "outage": {
+      "source_id": "hjks_outage",
+      "file_count": 1,
+      "file_size": 11684681,
+      "observed_date_count": 0,
+      "period_start": null,
+      "period_end": null,
+      "missing_dates": null,
+      "coverage_status": "unverified_snapshot",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "text/csv;charset=MS932",
+          "encoding": "cp932",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_interconnector_latest": {
+      "source_id": "occto_interconnector",
+      "file_count": 13,
+      "file_size": 34055103,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_interconnector_nextday2": {
+      "source_id": "occto_interconnector",
+      "file_count": 13,
+      "file_size": 34110190,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_latest": {
+      "source_id": "occto_reserve",
+      "file_count": 13,
+      "file_size": 19548759,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "reserve_nextday2": {
+      "source_id": "occto_reserve",
+      "file_count": 13,
+      "file_size": 20092403,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/csv",
+          "encoding": "utf-8-sig",
+          "bom": "UTF-8",
+          "encoding_candidates": [
+            "utf-8-sig"
+          ],
+          "delimiter": ",",
+          "header_row": 2,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "sensitivity": {
+      "source_id": "jepx_price_sensitivity",
+      "file_count": 1,
+      "file_size": 931897,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet-stream; name=virtualprice_2025.csv",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "sensitivity_diff": {
+      "source_id": "jepx_price_sensitivity",
+      "file_count": 1,
+      "file_size": 904447,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet-stream; name=virtualprice_diff_2025.csv",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "spot": {
+      "source_id": "jepx_spot",
+      "file_count": 1,
+      "file_size": 2265696,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet-stream; name=spot_summary_2025.csv",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    },
+    "system_capacity_dayahead2_planned": {
+      "source_id": "occto_system_interconnector_capacity",
+      "file_count": 53,
+      "file_size": 46620859,
+      "observed_date_count": 365,
+      "period_start": "2025-04-01",
+      "period_end": "2026-03-31",
+      "missing_dates": [],
+      "coverage_status": "all_dates_observed",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "application/octet?stream;charset=UTF-8",
+          "encoding": "ambiguous",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932",
+            "shift_jis"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": [
+            "00:30",
+            "01:00",
+            "01:30",
+            "02:00",
+            "02:30",
+            "03:00",
+            "03:30",
+            "04:00",
+            "04:30",
+            "05:00",
+            "05:30",
+            "06:00",
+            "06:30",
+            "07:00",
+            "07:30",
+            "08:00",
+            "08:30",
+            "09:00",
+            "09:30",
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00",
+            "15:30",
+            "16:00",
+            "16:30",
+            "17:00",
+            "17:30",
+            "18:00",
+            "18:30",
+            "19:00",
+            "19:30",
+            "20:00",
+            "20:30",
+            "21:00",
+            "21:30",
+            "22:00",
+            "22:30",
+            "23:00",
+            "23:30",
+            "24:00"
+          ]
+        }
+      ]
+    },
+    "unit": {
+      "source_id": "hjks_unit",
+      "file_count": 1,
+      "file_size": 74761,
+      "observed_date_count": 0,
+      "period_start": null,
+      "period_end": null,
+      "missing_dates": null,
+      "coverage_status": "unverified_snapshot",
+      "formats": [
+        {
+          "extension": ".csv",
+          "http_mime_type": "text/csv;charset=MS932",
+          "encoding": "cp932",
+          "bom": null,
+          "encoding_candidates": [
+            "cp932"
+          ],
+          "delimiter": ",",
+          "header_row": 1,
+          "observed_time_labels": null
+        }
+      ]
+    }
+  },
+  "sources": {
+    "jepx_spot": {
+      "variants": [
+        "manual_jepx_spot_spot",
+        "spot"
+      ],
+      "file_count": 2,
+      "notes": [
+        "CP932/Shift_JISの両方で同じ文字列になるため文字コード候補を併記。BOMなし",
+        "日付×コマの収録監査済み。数量・価格値の欠損/妥当性は未監査"
+      ]
+    },
+    "jepx_price_sensitivity": {
+      "variants": [
+        "manual_jepx_sensitivity_diff_price_sensitivity",
+        "manual_jepx_sensitivity_price_sensitivity",
+        "sensitivity",
+        "sensitivity_diff"
+      ],
+      "file_count": 4,
+      "notes": [
+        "CP932/Shift_JIS候補併記。元MWラベルを保持し追加電力の単位変換なし",
+        "RD-008: spotとの基準価格不一致2271コマは原因未解決の既知QA。原系列は無修正"
+      ]
+    },
+    "occto_generation": {
+      "variants": [
+        "generation",
+        "manual_occto_generation_generation"
+      ],
+      "file_count": 14,
+      "notes": [
+        "対象日の収録365日を確認。全ユニットの各48値の完全性は未監査",
+        "元時刻列は00:30[kWh]〜24:00[kWh]。開始/終了への正規化は未実施",
+        "取得版の更新日時と当時の情報利用可能時点は区別して後続で確認"
+      ]
+    },
+    "hjks_unit": {
+      "variants": [
+        "manual_hjks_unit_units",
+        "unit"
+      ],
+      "file_count": 2,
+      "notes": [
+        "現在取得版でありFY2025当時の履歴を保証しない。適用開始日等からの有効期間復元は未実施",
+        "ヘッダー12列、529データ行は末尾空列を含む13列。元形式を保持",
+        "今回の公式取得版はCP932/BOMなし。手元のUTF-8 BOMサンプルはDownloads権限拒否で未検査"
+      ]
+    },
+    "hjks_outage": {
+      "variants": [
+        "manual_hjks_outage_outages",
+        "outage"
+      ],
+      "file_count": 2,
+      "notes": [
+        "現在取得版の停止履歴であり過去公表版ではない。FY2025の全イベント・当時の復旧見通しの完全性は未確認",
+        "ヘッダー15列、58852データ行は末尾空列を含む16列。元形式を保持"
+      ]
+    },
+    "occto_demand": {
+      "variants": [
+        "demand"
+      ],
+      "file_count": 13,
+      "notes": [
+        "公式日別CSVの元粒度は1時間帯×エリア。30分への分割・補間・他ソース代替は行っていない。30分パネルへの利用は研究判断が必要",
+        "CP932/Shift_JISのUnicode字形差(波ダッシュ等)あり。候補と検査用decoderを記録しrawは変換しない",
+        "列名に単位がないため単位は公式仕様の追加確認が必要。HTTP MIMEはapplication/octet?stream;charset=UTF-8という応答をそのまま記録"
+      ]
+    },
+    "occto_reserve": {
+      "variants": [
+        "manual_occto_reserve_block_dayahead2",
+        "manual_occto_reserve_block_dayahead_actual",
+        "reserve_latest",
+        "reserve_nextday2"
+      ],
+      "file_count": 50,
+      "notes": [
+        "UTF-8 BOM、1行目更新日時、2行目列名。翌々日と翌日・当日最終を別ファイルで保持",
+        "対象日365日を確認。全コマ×全エリアの値や***等の欠損は未監査",
+        "本取得だけで翌日初回版と当日各更新版の全履歴が揃うとは扱わない"
+      ]
+    },
+    "occto_interconnector": {
+      "variants": [
+        "manual_occto_reserve_interconnector_dayahead2",
+        "manual_occto_reserve_interconnector_dayahead_actual",
+        "reserve_interconnector_latest",
+        "reserve_interconnector_nextday2"
+      ],
+      "file_count": 50,
+      "notes": [
+        "UTF-8 BOM、対象日365日を確認。全連系線・方向・各値の完全性は未監査",
+        "翌々日と翌日・当日版を保持。全更新版の時系列履歴の取得ではない",
+        "エリアへの集約・市場分断判定・単位変換は未実施"
+      ]
+    },
+    "regulatory_entities": {
+      "variants": [
+        "manual_egc_regulatory_candidate_unverified"
+      ],
+      "file_count": 1,
+      "notes": [
+        "公式サンプルPDFを取得できないため形式・内容・対象期間は実測できていない",
+        "監視委員会の適用対象事業者・エリア・有効期間を未確定のまま分類には使用しない",
+        "FY2025適用資料全体は未収集。別市場の対象事業者一覧で代替しない"
+      ]
+    },
+    "high_price_validation": {
+      "variants": [],
+      "file_count": 0,
+      "notes": [
+        "サンプルPDF取得はHTTP 403。形式・文字コード・対象日一覧を未確認",
+        "高価格日のみの検証用資料であり、非公表日を日次データ欠損と解釈しない",
+        "FY2025対象の公表PDF全体は未収集"
+      ]
+    },
+    "occto_system_interconnector_capacity": {
+      "variants": [
+        "manual_occto_system_interconnector_capacity_planned",
+        "system_capacity_dayahead2_planned"
+      ],
+      "file_count": 54,
+      "notes": [
+        "53ファイル・365日・388896行。欠損日・年間キー重複0。各日×連系線×方向の48コマを監査済み",
+        "広域予備率連系線情報とは別ソース。潮流実績と停止計画は収集対象外",
+        "対象日2026-03-14から中部フェンス・関西フェンスが追加。11→13区間。固定構成へ補完しない"
+      ]
+    },
+    "rei_power_data": {
+      "variants": [
+        "manual_rei_validation_power_data",
+        "manual_rei_validation_supply_demand"
+      ],
+      "file_count": 11,
+      "notes": [
+        "OCCTOを一次情報とする。REIは補助・検算用",
+        "2026-03-12以降の一部連系線推定値に後のETLでフラグを付ける。対象列の確定前に一律推定扱いしない"
+      ]
+    }
+  },
+  "unresolved_failures": [
+    {
+      "variant": "regulatory",
+      "notes": "HTTPError: HTTP Error 403: Forbidden",
+      "requested_period_start": "2025-04-01",
+      "requested_period_end": "2025-04-01"
+    },
+    {
+      "variant": "high_price",
+      "notes": "HTTPError: HTTP Error 403: Forbidden",
+      "requested_period_start": "2025-04-01",
+      "requested_period_end": "2025-04-01"
+    },
+    {
+      "variant": "spot_regulatory_20260330_019_08",
+      "notes": "ユーザー取得許可後の通常HTTP/curlでHTTP 403。公式検索抽出と原本取得を区別し、rawへHTMLや空応答を保存しない",
+      "requested_period_start": "2025-04-01",
+      "requested_period_end": "2026-03-31"
+    }
+  ],
+  "failed_attempt_count": 6,
+  "approved_deletions": [
+    {
+      "local_path": "data/raw/occto/system_interconnector_capacity/dayahead2/updated/occto_interconnector_capacity_dayahead2_updated_20250408_20250414.csv",
+      "sha256": "03557adc981ffce27dfc025f8f2626dc10cd10c18a0a24727a53cd2519f6ace9",
+      "deleted_at": "2026-10-14T22:59:31+09:00"
+    }
+  ],
+  "value_completeness_validation": "未実施。対象日収録はエリア・ユニット・値の完全性を保証しない",
+  "additional_reference_manifest": "metadata/research/asset_reference_manifest_20261016.json",
+  "additional_reference_files_sha_verified": 39,
+  "original_strict_inputs_sha_unchanged": true,
+  "generation_long_sha_unchanged": true
+}

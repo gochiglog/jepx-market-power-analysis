@@ -1,0 +1,4 @@
+scenario,source_plant_label_count,matched_plant_label_count,plant_match_rate,ambiguous_plant_label_count,added_plant_label_count,matched_generation_kwh,total_observed_generation_kwh,generation_coverage,unmatched_generation_kwh,additional_target_reuse_count,hypothesis_only,final_mapping_applied
+A,363,296,0.8154269972451791,6,0,518800283424,646505684424,0.8024682472609992755474928000,127705401000,0,True,False
+B,363,296,0.8154269972451791,6,0,518800283424,646505684424,0.8024682472609992755474928000,127705401000,0,True,False
+C,363,362,0.9972451790633609,1,66,646505684424,646505684424,1,0,0,True,False

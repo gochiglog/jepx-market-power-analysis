@@ -1,0 +1,1166 @@
+[
+  {
+    "reference_id": "hjks_plantcd_GB583",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB583.csv",
+    "downloaded_at": "2026-10-16T01:45:45.211331+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GB583",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014545.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014545.csv",
+    "official_filename": "attachment; filename=unit_20261016014545.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GB583.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GB573",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB573.csv",
+    "downloaded_at": "2026-10-16T01:45:45.919156+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GB573",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014546.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014546.csv",
+    "official_filename": "attachment; filename=unit_20261016014546.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GB573.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GB593",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB593.csv",
+    "downloaded_at": "2026-10-16T01:45:46.659011+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GB593",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014546.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014546.csv",
+    "official_filename": "attachment; filename=unit_20261016014546.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GB593.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GB4Q3",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB4Q3.csv",
+    "downloaded_at": "2026-10-16T01:45:47.386208+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GB4Q3",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014547.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014547.csv",
+    "official_filename": "attachment; filename=unit_20261016014547.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GB4Q3.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GB553",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GB553.csv",
+    "downloaded_at": "2026-10-16T01:45:48.094709+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GB553",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014548.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014548.csv",
+    "official_filename": "attachment; filename=unit_20261016014548.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GB553.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GAZT3",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GAZT3.csv",
+    "downloaded_at": "2026-10-16T01:45:48.813462+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GAZT3",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014548.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014548.csv",
+    "official_filename": "attachment; filename=unit_20261016014548.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GAZT3.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_48193",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_48193.csv",
+    "downloaded_at": "2026-10-16T01:45:49.497869+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "48193",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014549.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014549.csv",
+    "official_filename": "attachment; filename=unit_20261016014549.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_48193.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GC5F3",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GC5F3.csv",
+    "downloaded_at": "2026-10-16T01:45:50.285195+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GC5F3",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014550.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014550.csv",
+    "official_filename": "attachment; filename=unit_20261016014550.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GC5F3.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GV943",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GV943.csv",
+    "downloaded_at": "2026-10-16T01:45:51.121141+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GV943",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014551.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014551.csv",
+    "official_filename": "attachment; filename=unit_20261016014551.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GV943.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_plantcd_GAWA3",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_plantcd_GAWA3.csv",
+    "downloaded_at": "2026-10-16T01:45:51.855300+09:00",
+    "file_size": 135,
+    "sha256": "095d1127b71491eccf7c1a2a1d5a0989f034c9fafb3378f55d32b4d1a5df55d0",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "GAWA3",
+      "name": "",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014551.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014551.csv",
+    "official_filename": "attachment; filename=unit_20261016014551.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 0,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_plantcd_GAWA3.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_五井",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_五井.csv",
+    "downloaded_at": "2026-10-16T01:45:52.635012+09:00",
+    "file_size": 1698,
+    "sha256": "f4f6aed6e439aa72ce27c5faa829133f016624b0d27aeb3a8a0e3b69b8fa7cf2",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "五井",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014552.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014552.csv",
+    "official_filename": "attachment; filename=unit_20261016014552.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 9,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_五井.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_千葉",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_千葉.csv",
+    "downloaded_at": "2026-10-16T01:45:53.465776+09:00",
+    "file_size": 2458,
+    "sha256": "dbce7f2011a23648712a324f5907244060938f21eca25d7b86bb3bf7eec03de2",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "千葉",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014553.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014553.csv",
+    "official_filename": "attachment; filename=unit_20261016014553.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 15,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号。CP932/SJISのUnicode字形差あり（波ダッシュ等）",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_千葉.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_姉崎",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_姉崎.csv",
+    "downloaded_at": "2026-10-16T01:45:54.189112+09:00",
+    "file_size": 1380,
+    "sha256": "c0f4b05767d7e43c395752f79773039b2aef1447562c47008f94664abc3f9d8a",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "姉崎",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014554.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014554.csv",
+    "official_filename": "attachment; filename=unit_20261016014554.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 9,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_姉崎.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_富津",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_富津.csv",
+    "downloaded_at": "2026-10-16T01:45:54.943829+09:00",
+    "file_size": 3054,
+    "sha256": "8a1cc2f8a212282d7d834fce12a3dcfca7d1d7aff381217e85cca7359e82d956",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "富津",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014555.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014555.csv",
+    "official_filename": "attachment; filename=unit_20261016014555.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 21,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号。CP932/SJISのUnicode字形差あり（波ダッシュ等）",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_富津.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_川崎",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_川崎.csv",
+    "downloaded_at": "2026-10-16T01:45:55.661936+09:00",
+    "file_size": 1953,
+    "sha256": "bcda3d83cdde5865a6757d0a98c80fa428c6e381712d3568ebebb4a9ce2034d6",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "川崎",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014555.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014555.csv",
+    "official_filename": "attachment; filename=unit_20261016014555.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 13,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号。CP932/SJISのUnicode字形差あり（波ダッシュ等）",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_川崎.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_常陸那珂",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_常陸那珂.csv",
+    "downloaded_at": "2026-10-16T01:45:56.400666+09:00",
+    "file_size": 578,
+    "sha256": "9b2936b3107bca5689885d40bb2e02937656b6a43e6350a8dfe28eaa4ef0d4d9",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "常陸那珂",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014556.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014556.csv",
+    "official_filename": "attachment; filename=unit_20261016014556.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 3,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_常陸那珂.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_常陸那珂共同",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_常陸那珂共同.csv",
+    "downloaded_at": "2026-10-16T01:45:57.091514+09:00",
+    "file_size": 290,
+    "sha256": "bfa660a94ae13465058600e08ffc6bed53d472a04955a2b13319e8cf9fb11703",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "常陸那珂共同",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014557.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014557.csv",
+    "official_filename": "attachment; filename=unit_20261016014557.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 1,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_常陸那珂共同.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_横須賀",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_横須賀.csv",
+    "downloaded_at": "2026-10-16T01:45:57.868894+09:00",
+    "file_size": 1791,
+    "sha256": "266e73268a00884d431d29bd9e99a9c46586d6bd7e9dce9f82db5e792e831360",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "横須賀",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014557.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014557.csv",
+    "official_filename": "attachment; filename=unit_20261016014557.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 9,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_横須賀.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "hjks_name_西名古屋",
+    "source_url": "https://hjks.jepx.or.jp/hjks/unit",
+    "local_path": "data/raw/reference/issue15/20261016T014544/hjks_name_西名古屋.csv",
+    "downloaded_at": "2026-10-16T01:45:58.738421+09:00",
+    "file_size": 1271,
+    "sha256": "4b096e8fb9ac614639c4843aaaadd29bb007383d235c7b2e49eff90a0594b4a2",
+    "search_conditions": {
+      "csv": "csv",
+      "area": "",
+      "company": "",
+      "plantcd": "",
+      "name": "西名古屋",
+      "format": "",
+      "unitname": "",
+      "_enddtFlg": "on"
+    },
+    "http_metadata": {
+      "Content-Disposition": "attachment; filename=unit_20261016014558.csv",
+      "Content-Type": "text/csv;charset=MS932"
+    },
+    "mime_type": "text/csv;charset=MS932",
+    "original_filename": "unit_20261016014558.csv",
+    "official_filename": "attachment; filename=unit_20261016014558.csv",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "data_rows": 8,
+    "encoding": {
+      "encoding": "ambiguous",
+      "bom": null,
+      "encoding_candidates": [
+        "cp932",
+        "shift_jis"
+      ],
+      "encoding_evidence": "候補の全バイト列を厳密復号。CP932/SJISのUnicode字形差あり（波ダッシュ等）",
+      "inspection_decoder": "cp932"
+    },
+    "saved_filename": "hjks_name_西名古屋.csv",
+    "request_sequence": [
+      "GET unit",
+      "POST unit csv=空欄（検索）",
+      "POST unit csv=csv（取得）"
+    ]
+  },
+  {
+    "reference_id": "jera_anegasaki",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/anegasaki/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_anegasaki.html",
+    "downloaded_at": "2026-10-16T01:45:59.202805+09:00",
+    "file_size": 106712,
+    "sha256": "488a64ed369e59a23fe047baf787839ca7763e56e02307d985dc42f3aca32c81",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_anegasaki.html"
+  },
+  {
+    "reference_id": "jera_anegasaki_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/anegasaki/pdf/anegasaki_202603_jp.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_anegasaki_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:45:59.829461+09:00",
+    "file_size": 8597502,
+    "sha256": "a1e009773b6dc91adb232308a3f77eb1a22c83ca522076d89f75be7d2f37676f",
+    "search_conditions": {},
+    "http_metadata": {
+      "etag": "\"392ab2db\"",
+      "last-modified": "Wed, 04 Mar 2026 13:21:47 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "anegasaki_202603_jp.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_anegasaki_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "jera_chiba",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/chiba/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_chiba.html",
+    "downloaded_at": "2026-10-16T01:46:00.127954+09:00",
+    "file_size": 106698,
+    "sha256": "3d06ee106e520be83f291006a8df17df94a133b73e15869050232336aa701424",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_chiba.html"
+  },
+  {
+    "reference_id": "jera_chiba_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/chiba/pdf/chiba.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_chiba_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:46:00.683096+09:00",
+    "file_size": 5432055,
+    "sha256": "e24ec272ff309fef5a6bb1288374b024bf12e59b38bb313207c75aee1cc347b6",
+    "search_conditions": {},
+    "http_metadata": {
+      "last-modified": "Mon, 06 Feb 2023 04:18:27 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "chiba.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_chiba_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "jera_futtsu",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/futtsu/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_futtsu.html",
+    "downloaded_at": "2026-10-16T01:46:00.956601+09:00",
+    "file_size": 106629,
+    "sha256": "5ba59c919a2547eeb2baa9db1a93e44ad0b125bda7935b28da6b7f30a6e69de1",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_futtsu.html"
+  },
+  {
+    "reference_id": "jera_futtsu_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/futtsu/pdf/futtsu_2024_jp.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_futtsu_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:46:01.529971+09:00",
+    "file_size": 5129624,
+    "sha256": "4181fae304a4a9885be47c1f79952bbd1c5fb2b9a98d60660588a537d34ca0f8",
+    "search_conditions": {},
+    "http_metadata": {
+      "last-modified": "Wed, 30 Oct 2024 09:12:14 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "futtsu_2024_jp.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_futtsu_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "jera_goi",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/goi/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_goi.html",
+    "downloaded_at": "2026-10-16T01:46:01.810276+09:00",
+    "file_size": 106470,
+    "sha256": "4c9475b95abfd53111e85fe170a5a80cc881d42d553fa8ac99df7f5b27505aa0",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_goi.html"
+  },
+  {
+    "reference_id": "jera_goi_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/goi/pdf/goi_202609_jp.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_goi_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:46:02.380309+09:00",
+    "file_size": 5199700,
+    "sha256": "c23016f8fdb68c3b94c0dbd4cb7fc4c7ba3b2edb0ac6859a4231d144af1ad0d3",
+    "search_conditions": {},
+    "http_metadata": {
+      "etag": "\"dc447549\"",
+      "last-modified": "Wed, 02 Sep 2026 05:19:47 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "goi_202609_jp.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_goi_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "jera_hitachinaka",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/hitachinaka/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_hitachinaka.html",
+    "downloaded_at": "2026-10-16T01:46:02.680999+09:00",
+    "file_size": 105880,
+    "sha256": "9b3e8166fe7cf25355f2144f2539d651f131fc99e006373489b19a6b4bb25bb9",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_hitachinaka.html"
+  },
+  {
+    "reference_id": "jera_hitachinaka_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/hitachinaka/pdf/hitachinaka_2024_jp.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_hitachinaka_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:46:03.533535+09:00",
+    "file_size": 9198440,
+    "sha256": "5d71d13bba13c2d9a2e90d2baf364104f66bd4e74744a18a01385083f46f1330",
+    "search_conditions": {},
+    "http_metadata": {
+      "last-modified": "Wed, 30 Oct 2024 09:05:07 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "hitachinaka_2024_jp.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_hitachinaka_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "jera_hitachinaka-kyodo",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/hitachinaka-kyodo/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_hitachinaka-kyodo.html",
+    "downloaded_at": "2026-10-16T01:46:03.801651+09:00",
+    "file_size": 105796,
+    "sha256": "881c5863430cc70b2724b4a090ddb71a6e8e339072f4d044562031a41c545713",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_hitachinaka-kyodo.html"
+  },
+  {
+    "reference_id": "jera_kawasaki",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/kawasaki/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_kawasaki.html",
+    "downloaded_at": "2026-10-16T01:46:04.070191+09:00",
+    "file_size": 107288,
+    "sha256": "244ff2b497755d7f881a5ef3bfac16957eabcfc148aa01725df5ad7e1d858a90",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_kawasaki.html"
+  },
+  {
+    "reference_id": "jera_kawasaki_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/kawasaki/pdf/kawasaki_2024_jp.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_kawasaki_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:46:04.595586+09:00",
+    "file_size": 5832072,
+    "sha256": "6f698587379eefd62bb10fdd5c7d3f4458f031bfa66b3407de9e751ca6f44726",
+    "search_conditions": {},
+    "http_metadata": {
+      "last-modified": "Wed, 30 Oct 2024 09:18:11 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "kawasaki_2024_jp.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_kawasaki_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "jera_nishinagoya",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/nishinagoya/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_nishinagoya.html",
+    "downloaded_at": "2026-10-16T01:46:04.872104+09:00",
+    "file_size": 104678,
+    "sha256": "afc3f428efc06ffe99b6747d8b0d7d02a6d473047514b2c7515f3b88d74c3190",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_nishinagoya.html"
+  },
+  {
+    "reference_id": "jera_nishinagoya_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/nishinagoya/pdf/nishiNagoya_2024_jp.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_nishinagoya_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:46:05.361309+09:00",
+    "file_size": 4970394,
+    "sha256": "bcacfcf01df6dd6de7b6c7f00100269c6dc9d79bc6bfa3a049dc210a76be9cbe",
+    "search_conditions": {},
+    "http_metadata": {
+      "last-modified": "Wed, 30 Oct 2024 09:31:08 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "nishiNagoya_2024_jp.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_nishinagoya_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "jera_yokosuka",
+    "source_url": "https://www.jera.co.jp/corporate/business/thermal-power/list/yokosuka/",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_yokosuka.html",
+    "downloaded_at": "2026-10-16T01:46:05.657084+09:00",
+    "file_size": 104202,
+    "sha256": "81bf17a7b531bf22e18450de5fb93f25af9e9bf6b987e8db6f11005111b4c95a",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "mime_type": "text/html; charset=UTF-8",
+    "original_filename": "",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_yokosuka.html"
+  },
+  {
+    "reference_id": "jera_yokosuka_pamphlet_0",
+    "source_url": "https://www.jera.co.jp/static/files/corporate/business/thermal-power/list/yokosuka/pdf/yokosuka_2024_jp.pdf",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_yokosuka_pamphlet_0.pdf",
+    "downloaded_at": "2026-10-16T01:46:06.268786+09:00",
+    "file_size": 5357618,
+    "sha256": "6f051ea438436e4329b876ac0a1bb01f56f2e22998b9fdff6f861604f6e3f788",
+    "search_conditions": {},
+    "http_metadata": {
+      "etag": "\"ccb40b9d\"",
+      "last-modified": "Wed, 30 Oct 2024 09:13:43 GMT",
+      "content-type": "application/pdf"
+    },
+    "mime_type": "application/pdf",
+    "original_filename": "yokosuka_2024_jp.pdf",
+    "official_filename": "",
+    "purpose": "設備対応根拠のみ。年度データの再取得ではない",
+    "saved_filename": "jera_yokosuka_pamphlet_0.pdf"
+  },
+  {
+    "reference_id": "tepco_unit_explanation",
+    "source_url": "https://www.tepco.co.jp/forecast/html/unit-j.html",
+    "local_path": "data/raw/reference/issue15/20261016T014544/tepco_unit_explanation.html",
+    "downloaded_at": "2026-10-16T01:47:26.924880+09:00",
+    "file_size": 37417,
+    "sha256": "69135f0aff19f8e610f35207b199946ef8dca352c7e5aea342eef3b35fb7fa13",
+    "search_conditions": {},
+    "http_metadata": {
+      "Content-Type": "text/html"
+    },
+    "purpose": "設備対応根拠のみ",
+    "saved_filename": "tepco_unit_explanation.html",
+    "original_filename": "unit-j.html"
+  },
+  {
+    "reference_id": "occto_unit_caution",
+    "source_url": "https://www.occto.or.jp/contact/unit.html",
+    "local_path": "data/raw/reference/issue15/20261016T014544/occto_unit_caution.html",
+    "downloaded_at": "2026-10-16T01:47:27.201307+09:00",
+    "file_size": 42295,
+    "sha256": "2481829c2a065a1f1dab61a65548fb42a3b84d706d4c7bd5fc66ffc610d805f4",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8",
+      "last-modified": "Thu, 16 Jul 2026 00:45:15 GMT",
+      "etag": "\"a537-656afc0e69f48\""
+    },
+    "purpose": "設備対応根拠のみ",
+    "saved_filename": "occto_unit_caution.html",
+    "original_filename": "unit.html"
+  },
+  {
+    "reference_id": "jera_goi_20250303",
+    "source_url": "https://www.jera.co.jp/news/information/20250303_2131",
+    "local_path": "data/raw/reference/issue15/20261016T014544/jera_goi_20250303.html",
+    "downloaded_at": "2026-10-16T01:47:27.574287+09:00",
+    "file_size": 87953,
+    "sha256": "79fa77bf62f486389fd5de8e02fb4619e084ea0ed86fd32c1bc2a3de85efab0e",
+    "search_conditions": {},
+    "http_metadata": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "purpose": "設備対応根拠のみ",
+    "saved_filename": "jera_goi_20250303.html",
+    "original_filename": "20250303_2131"
+  }
+]

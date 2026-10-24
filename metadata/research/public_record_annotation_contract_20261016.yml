@@ -1,0 +1,201 @@
+version: 20261016_A_v1
+status: 案Aのデータ構築・記述診断のみユーザー採用
+baseline_adopted: false
+timezone: Asia/Tokyo
+source_observation_rows: 8468544
+source_observation_columns: 51
+output_columns: 63
+primary_key:
+- asset_key_candidate
+- delivery_date
+- period
+source_snapshots:
+  hjks_outage_58852:
+    source_id: hjks_outage
+    source_name: HJKS停止・出力低下
+    source_url: https://hjks.jepx.or.jp/hjks/outages
+    final_url: https://hjks.jepx.or.jp/hjks/outages
+    http_method: POST
+    request_parameters:
+      csv: csv
+      area: ''
+      company: ''
+      plantcd: ''
+      name: ''
+      format: ''
+      unitname: ''
+      maintemode: ''
+      assortment: ''
+      startdtfrom: ''
+      startdtto: ''
+    local_path: data/raw/hjks/outages/hjks_outages__outages_snapshot__sha256_2b297982196f.csv
+    original_filename: outages_20261008172657.csv
+    requested_period_start: null
+    requested_period_end: null
+    period_start: null
+    period_end: null
+    downloaded_at: '2026-10-08T17:27:11+09:00'
+    file_size: 11684681
+    sha256: 2b297982196f262f6fba1642dfe48ee6e7cbef788434a7b3716b70d3d5771817
+    status: downloaded
+    phase: sample
+    variant: outage
+    notes: 現在取得版。FY2025時点の情報履歴を保証しない
+    inspection:
+      extension: .csv
+      http_mime_type: text/csv;charset=MS932
+      encoding: cp932
+      bom: null
+      encoding_candidates:
+      - cp932
+      encoding_evidence: 候補の全バイト列を厳密復号。複数候補では文字列一致のみ確認
+      format: csv
+      delimiter: ','
+      sheet_names: []
+      header_row: 1
+      columns:
+      - エリア
+      - 発電事業者
+      - 発電所コード
+      - 発電所名
+      - 発電形式
+      - ユニット名
+      - 認可出力
+      - 停止区分
+      - 種別
+      - 低下量
+      - 停止日時
+      - 復旧見通し
+      - 復旧予定日
+      - 停止原因
+      - 最終更新日時
+      preamble: []
+      row_count: 58852
+      malformed_rows: 58852
+      unparsed_date_rows: 0
+      date_column: null
+      observed_dates: []
+      period_start: null
+      period_end: null
+    original_local_path: data/raw/hjks_outage/outages_snapshot.csv
+  hjks_outage_7828:
+    source_id: hjks_outage
+    source_name: hjks_outage
+    source_url: null
+    local_path: data/raw/hjks/outages/hjks_outages__hjks_outages_FY2025__sha256_9a46e1cba184.csv
+    original_local_path: data/raw/hjks_outages_FY2025.csv
+    original_filename: hjks_outages_FY2025.csv
+    http_method: FILE
+    period_start: null
+    period_end: null
+    requested_period_start: '2025-04-01'
+    requested_period_end: '2026-03-31'
+    downloaded_at: null
+    registered_at: '2026-10-14T22:07:45+09:00'
+    file_size: 1693337
+    sha256: 9a46e1cba184889f4dc8e92001993cc9c99b596c60d957b652c335bbb949f730
+    status: imported
+    phase: sample
+    variant: manual_hjks_outage_outages
+    notes: ユーザー手動収集。URL・取得日時・公式ダウンロード時の元名は未確認。元名は手元名。内容変換なし。ユーザー確認：FY2025で期間指定。指定基準列・跨年度停止の包含は未確認。
+    inspection:
+      extension: .csv
+      http_mime_type: null
+      encoding: cp932
+      bom: null
+      encoding_candidates:
+      - cp932
+      encoding_evidence: 候補の全バイト列を厳密復号
+      inspection_decoder: cp932
+      format: csv
+      delimiter: ','
+      sheet_names: []
+      header_row: 1
+      columns:
+      - エリア
+      - 発電事業者
+      - 発電所コード
+      - 発電所名
+      - 発電形式
+      - ユニット名
+      - 認可出力
+      - 停止区分
+      - 種別
+      - 低下量
+      - 停止日時
+      - 復旧見通し
+      - 復旧予定日
+      - 停止原因
+      - 最終更新日時
+      preamble: []
+      row_count: 7828
+      malformed_rows: 7828
+      unparsed_date_rows: 0
+      date_column: null
+      observed_dates: []
+      period_start: null
+      period_end: null
+      observed_time_labels: []
+    user_confirmed_collection_scope:
+      period: FY2025
+      filter_date_column: null
+      cross_boundary_event_inclusion: null
+      confirmation_date: '2026-10-14'
+interval_scenarios:
+  early: 停止開始以上、復旧予定日の00:00以前に30分全区間が入るセル
+  late: 停止開始以上、復旧予定日の翌日00:00以前に30分全区間が入るセル
+  recovery_date: 両シナリオとも主区分は境界不明として保持。該当flagのみ予定端点仮定を反映
+  partial_start: コマ途中の開始は境界不明。全コマ停止としない
+  unknown_recovery: 停止区間を生成しない。開始後の観測に未解決の終了不明記録が関係し得るため保留。年度末まで停止とは解釈しない
+  invalid_start: 設備の時間範囲を限定できないためFY内照合を保留。実停止ではない
+primary_state_priority:
+- code: mapping_unavailable
+  japanese: 設備対応不能/範囲未確認のため照合不可
+- code: held_asset_period
+  japanese: 設備同一性の期間矛盾/境界により保留
+- code: held_invalid_dates
+  japanese: 日時不正/前後矛盾により保留
+- code: held_unknown_recovery
+  japanese: 復旧予定不明/見通し矛盾により保留
+- code: held_update_candidates
+  japanese: 同一イベントか不明な更新候補により保留
+- code: held_multiple_records
+  japanese: 複数の異なる公表記録により保留
+- code: held_date_boundary
+  japanese: 開始部分コマ/復旧日の日内境界不明により保留
+- code: matched_planned_stop
+  japanese: snapshotの計画停止記録が予定シナリオに該当
+- code: matched_unplanned_stop
+  japanese: snapshotの計画外停止記録が予定シナリオに該当
+- code: matched_reduction
+  japanese: snapshotの出力低下記録が予定シナリオに該当
+- code: matched_other
+  japanese: その他の公表記録が予定シナリオに該当
+- code: no_applicable_record
+  japanese: snapshot内に該当する記録が見つからない（停止なしではない）
+mapping_scope: 固定診断対応428元unitのみ。57元unitの未対応/範囲未確認、6元unitの全期間矛盾と個別セルの稼働日矛盾/境界は保留。探索plant一致は許可にしない
+copy_handling: 全元行を保存。全15元セル（更新日時を含む）が一致する内容hashでコピーを識別。版を混ぜない。コピー行数はイベント数ではない
+update_candidates: area/code/正規化unit/開始原値/停止区分/種別の候補群。異なる内容の複数行は保留。公式event IDではなく同一性は未確定。最新/最大を選ばない
+no_applicable_record: 当該snapshotの定義した関連範囲で公表記録が見つからない。停止なし・利用可能・損失0ではない
+panel_context: 各観測1行に4条件の主区分・context ID・nullable該当flag。contextの各memberから全原行と更新候補群へ追跡。context0は関連記録集合が空で、主区分は観測側に従う
+scenario_flag: True=確定した予定端点シナリオで公表行が見つかる。False=既知範囲では見つからない。null=設備/期間/終了不明等で判定不能。ただし他の既知行が見つかればTrueとし、保留は主区分/context理由に保持
+aggregation: 主区分は各snapshot/端点内で排他。1元観測は1回計数。異なるsnapshot/端点の部分和を足さない。各コマの元unitラベル数と期間の延べunitセル数を区別
+null_policy: 数量の全欠測・空区分はnull。構造上0件の区分の件数のみ0。未知容量・出力を0にしない
+market_join_key:
+- snapshot
+- scenario
+- area
+- delivery_date
+- period
+market_join: read_market_profileで版と端点を必須指定してからarea×delivery_date×periodへ結合する。沖縄も保持し後続で暗黙dropしない
+wide_metrics:
+- observed_unit_count
+- calculable_unit_count
+- reference_capacity_known_kw
+- missing_output_count
+- capacity_hold_count
+- negative_gap_count
+- reference_gap_partial_sum_kw
+- zero_reference_capacity_kw
+prohibited: 損失控除、実停止認定、市場時点再現、最終headroom・baseline、法人帰属、dominant/fringeを実施しない
+outputs: metadata/research/public_record_annotation_frozen_20261016.json

@@ -1,0 +1,64 @@
+checked_on: '2026-10-16'
+github_issue: 15
+reference_unit_rows: 677
+reference_approved_by_user: true
+reference_use: FY2025に存在した設備の探索・対応候補作成のみ
+capacity_baseline_approved: false
+unit_or_plant_baseline_selected: false
+original_strict_mapping_modified: false
+source_plant_entity:
+- area
+- plant_code
+- plant_name_normalized
+physical_site_count_verified: false
+A: 既存strict判定を無変更で再現
+B: Aに同area・字形/空白除去plant名・unit名のexact候補を追加し、source plantラベル内の全unitが一意のHJKS area×codeに対応する場合だけ試算
+C: Bに同area・診断plant基部・unit識別番号が一致する候補を追加。コード不一致を許した条件付き上限。公式crosswalk未確認。最終対応しない
+C_exact_code_sensitivity_coverage: '0.8024682472609992755474928000'
+diagnostic_transformations:
+- NFKCと空白・ハイフン字形
+- 設備語尾（火力発電所・発電所等）の除去
+- plant名末尾の号機/系列/軸を診断内だけで切り分け
+- 括弧記号のみ除去し中身は保持
+- 独立したRoman番号を数字と比較
+- 数字間の長音ーだけを区切りと比較。名称内の長音は変えない
+- 号/号機/軸の番号を診断候補内だけで比較。物理的同一性は未確認
+- 新の識別・GTA/GTB/GTC等のcomponent文字は保持
+similarity:
+  algorithm: difflib.SequenceMatcher.ratio
+  plant_weight: 0.7
+  unit_weight: 0.3
+  confidence_probability: false
+  fuzzy_adopted: false
+  top_n_for_presentation: 5
+code_structure:
+  exact: 元コード文字列厳密一致
+  prefix_suffix: 3文字以上の共通prefix/suffixを表示。公式コード体系・同一性を保証しない
+  all_code_census: reports/code_structure_census_20261016.csv
+  proposed_graph_scope: plantまたはunitがstrict未対応の138候補。全資産の最終crosswalkではない
+quantity_policy: 原kWh、観測数値だけを加算。214299空セルは欠測のまま。欠測電力量は不明
+join_diagnostics: source量を一度だけ数え、target候補の行数で発電量を増やさない。unit/plantの試算で正式joinなし
+sources:
+- title: 東京電力HD ユニット別発電実績データの説明
+  url: https://www.tepco.co.jp/forecast/html/unit-j.html
+  verification_level: official_web_verified
+  finding: コードはHJKSで使われるコードとの説明。手元の異コードの公式変換表や改番理由は確認できず
+- title: OCCTO ユニット別発電実績公開システム注意事項
+  url: https://www.occto.or.jp/contact/unit.html
+  verification_level: official_web_verified
+  finding: 計測・試運転等によるHJKSとの乖離の注意。個別コード差をこの理由で説明したわけではない
+- title: Measuring Market Inefficiencies in California’s Restructured Wholesale Electricity
+    Market
+  authors: Severin Borenstein; James Bushnell; Frank A. Wolak
+  version: CSEM WP102, June 2002
+  url: https://escholarship.org/content/qt2159m46p/qt2159m46p.pdf
+  verification_level: primary_pdf_selected_sections_verified
+  physical_pages:
+  - 19
+  - 20
+  - 21
+  printed_pages:
+  - 16
+  - 17
+  - 18
+  finding: unit特性とforced outage factorのsimulationを利用。計画停止の戦略性を理由にactual outagesで出力を補正しない。二層データ設計をそのまま本研究のoutage補正手法として承認する根拠にはしない

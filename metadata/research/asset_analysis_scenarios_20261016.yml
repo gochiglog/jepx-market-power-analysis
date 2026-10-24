@@ -1,0 +1,38 @@
+github_issue: 15
+checked_on: '2026-10-16'
+purpose: 設備対応の利用診断とheadroomに必要な情報の準備状況。経済分析ではない
+source_candidates: reports/generation_hjks_677_mapping_candidates.csv
+additional_evidence: reports/top10_official_mapping_evidence_20261016.csv
+source_hashes:
+  reports/generation_hjks_677_mapping_candidates.csv: b8f06f894383e65c618328fc7ff842035bd654d49940be4990d1a3513c16005f
+  reports/top10_official_mapping_evidence_20261016.csv: d74547bb0ffacb83004fa6b6fd880a995b416cd2968f92b4ed9cf800d11c348a
+analysis_diagnosis_column: analysis_use_diagnosis
+official_verification_column: verification_status
+official_status_modified: false
+baseline_adopted: false
+inquiry_work_in_scope: false
+scenarios:
+  strict_existing: 既存判定を全491元unitに対し再現
+  candidate49_diagnostic: 明示した49候補を比較に追加。条件付き1件を保持。保留は残すが追加対応に数えない
+plant_rule: 既存のcode/areaまたは名称fallbackで一意な候補コード。追加は同一source plantラベルの全unitに一意候補がある場合のみ
+unit_rule: 既存の正規化unit名一意一致、または明示候補の一意行。正式対応ではない
+denominator: 元unit日で数値が観測されたkWhのみ。10エリア（沖縄を含む）。全国/エリア/月/エリア月でケース間共通
+null_policy: 空セルを0に補完しない。全セル空のunit日合計はnull。数値観測分母を欠測補完後の発電量と呼ばない
+join_contract: 176428元unit日へmany-to-one left join。未対応/保留は保持し行増殖/脱落を停止
+unit_policy: 発電kWh/30分と容量/低下量kWを保持し換算しない
+capacity_policy: 時点有効容量の分母未確定。snapshot行ID別の列値合計は物理容量やFY容量と同一視しない
+outage_policy: 2版保持。復旧予定は日単位、実績復旧/初回公表は未観測。重複更新を統合せずinterval展開なし
+publication_scope_sources:
+- title: OCCTO ユニット別発電実績公開に係る業務詳細設計書
+  document_date: '2022-12-07'
+  url: https://www.occto.or.jp/assets/choutatsu/2022/files/221207_ippan_unit_youkenteigi_1.pdf
+  physical_page: 12
+  verification_level: official_pdf_verified
+  finding: 認可出力10万kW以上。合理的理由による非公開の扱い、公開対象なら0kWhでも公開、10エリア。設計資料なのでFY各日の全対象収録を保証するものではない
+- title: 保存済みTEPCOデータ説明
+  reference_id: tepco_unit_explanation
+  finding: 東京エリア接続・公開意思・10万kW以上。各30分の電力量kWh。公開閾値をdominant/fringe判定に使用しない
+- title: OCCTO利用条件
+  url: https://hatsuden-kokai.occto.or.jp/hks-web-public/disclaimer-agree
+  verification_level: official_web_verified
+  finding: 速報値と欠落の可能性。地域全体・競争的供給者全体とは区別する

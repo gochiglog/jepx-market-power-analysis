@@ -1,0 +1,25 @@
+{
+  "registered_raw_count": 203,
+  "hash_validation": "all_passed",
+  "reference_files_sha_validated": 39,
+  "source_long_unchanged": true,
+  "original_mapping_and_evidence_unchanged": true,
+  "new_raw_download_count": 0,
+  "outputs": [
+    {
+      "path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/reference_capacity_gap_FY2025.parquet",
+      "size": 52944059,
+      "sha256": "ba5ab3f66eed6fc56daffa5bc1fffa49c110ad7b957ef28d14131608e560c442"
+    },
+    {
+      "path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/negative_gap_cell_index_FY2025.parquet",
+      "size": 199977,
+      "sha256": "abd21956a37d16e2ce595d08e066619391076232f66d76b38ba278e7cd0bbd23"
+    },
+    {
+      "path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/reference_gap_regional_partial_sums_FY2025.parquet",
+      "size": 5013651,
+      "sha256": "4a1dd29f67a854935c7893a9b1212340ba19ada2400ea88d8829d3b7238235a8"
+    }
+  ]
+}

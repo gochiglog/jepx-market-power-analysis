@@ -1,0 +1,46 @@
+{
+  "commit": "8365f742e0b04959b2ad30951cd7894c6ec42be9",
+  "baseline_adopted": false,
+  "files": [
+    {
+      "path": "reports/reference_capacity_gap_qa_20261016.json",
+      "location": "issue_worktree",
+      "sha256": "169ce5e6ba1af9c4e2c786caf2ce2ac2ab0b3bf91bf10a7c0e15f276a09775ad"
+    },
+    {
+      "path": "reports/reference_gap_analysis_mapping_20261016.csv",
+      "location": "issue_worktree",
+      "sha256": "929d7e0f5d4324bf4b5132d79011e990adbf9fe03d2538aa3a51c6c28b3ac23e"
+    },
+    {
+      "path": "reports/notation34_explicit_mapping_20261016.csv",
+      "location": "issue_worktree",
+      "sha256": "57bfeba1547797c3782859c28fcc798becce00f93285a8f22c845ad8c7e6be59"
+    },
+    {
+      "path": "reports/reference_gap_unit_month_qa_20261016.csv",
+      "location": "issue_worktree",
+      "sha256": "479a02216ac460ed3a4c438376505d6fcffe6694c36acdfeb282c66fe687a7b9"
+    },
+    {
+      "path": "reports/reference_gap_coverage_20261016.csv",
+      "location": "issue_worktree",
+      "sha256": "5fd07e67415ac5494917da5ae8bf86f6500d4d3fcb3105f14e966366f263ea3d"
+    },
+    {
+      "path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/reference_capacity_gap_FY2025.parquet",
+      "location": "data_root",
+      "sha256": "ba5ab3f66eed6fc56daffa5bc1fffa49c110ad7b957ef28d14131608e560c442"
+    },
+    {
+      "path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/negative_gap_cell_index_FY2025.parquet",
+      "location": "data_root",
+      "sha256": "abd21956a37d16e2ce595d08e066619391076232f66d76b38ba278e7cd0bbd23"
+    },
+    {
+      "path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/reference_gap_regional_partial_sums_FY2025.parquet",
+      "location": "data_root",
+      "sha256": "4a1dd29f67a854935c7893a9b1212340ba19ada2400ea88d8829d3b7238235a8"
+    }
+  ]
+}

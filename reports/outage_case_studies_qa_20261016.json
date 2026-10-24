@@ -1,0 +1,17 @@
+{
+  "case_count": 6,
+  "original_event_rows": 14,
+  "timeline_rows": 42912,
+  "timeline_key_duplicates": 0,
+  "provenance_match_rate": 1.0,
+  "dropped_rows": 0,
+  "scenario_endpoints_are_assumptions": true,
+  "nationwide_correction_created": false,
+  "actual_recovery_imputed": false,
+  "timeline_sha256": "ec805f5d39053358bd37d6e5545be9517401a5cdf6f73f9bf9fb93ff99e6ba98",
+  "event_input_rows": 66680,
+  "event_candidate_unique_rows": 54918,
+  "event_candidate_ambiguous_rows": 0,
+  "event_candidate_unmatched_rows": 11762,
+  "event_candidate_row_match_rate": 0.8236052789442112
+}
