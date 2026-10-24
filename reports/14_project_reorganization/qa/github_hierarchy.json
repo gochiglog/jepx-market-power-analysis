@@ -1,0 +1,114 @@
+{
+  "root": 29,
+  "parents": {
+    "30": [
+      36
+    ],
+    "31": [
+      3,
+      23,
+      25
+    ],
+    "32": [
+      2,
+      4,
+      8,
+      10,
+      13,
+      15,
+      17,
+      19
+    ],
+    "33": [
+      27
+    ],
+    "34": [
+      35,
+      1,
+      21
+    ]
+  },
+  "issues": {
+    "1": {
+      "title": "研究用Python環境・ディレクトリ・テストの初期化",
+      "state": "closed",
+      "branch": "issue/feature-1"
+    },
+    "2": {
+      "title": "データカタログ・共通キー・単位・時間スキーマの定義",
+      "state": "closed",
+      "branch": "issue/feature-2"
+    },
+    "3": {
+      "title": "規制資料に基づくdominant/fringe・企業対応表の構築",
+      "state": "open",
+      "branch": "issue/feature-3"
+    },
+    "4": {
+      "title": "FY2025公開生データの収集・manifest・欠損監査",
+      "state": "closed",
+      "branch": "issue/feature-4"
+    },
+    "8": {
+      "title": "Time normalization（ロードマップ #5）",
+      "state": "closed",
+      "branch": "issue/feature-8"
+    },
+    "10": {
+      "title": "JEPX spot ETL",
+      "state": "closed",
+      "branch": "issue/feature-10"
+    },
+    "13": {
+      "title": "JEPX価格感応度ETL",
+      "state": "closed",
+      "branch": "issue/feature-13"
+    },
+    "15": {
+      "title": "OCCTO発電実績 + HJKS ETL",
+      "state": "open",
+      "branch": "issue/feature-15"
+    },
+    "17": {
+      "title": "FY2025基本市場パネルと既存連系線データの接続",
+      "state": "open",
+      "branch": "issue/feature-17"
+    },
+    "19": {
+      "title": "需要・需給系列ETLと連系線の方向・設備範囲整理",
+      "state": "open",
+      "branch": "issue/feature-19"
+    },
+    "21": {
+      "title": "研究の現在地・成果物・ブランチ運用の案内を整理",
+      "state": "open",
+      "branch": "issue/feature-21"
+    },
+    "23": {
+      "title": "研究判断準備：1時間比較・方向別連系線・HJKS事業者根拠",
+      "state": "open",
+      "branch": "issue/feature-23"
+    },
+    "25": {
+      "title": "研究の識別可能性：代替供給制約・数量抑制の採算・推測モデル接続",
+      "state": "open",
+      "branch": "issue/feature-25"
+    },
+    "27": {
+      "title": "北海道：制度対象外公開設備の参照容量差と価格の記述用散布図",
+      "state": "open",
+      "branch": "issue/feature-27"
+    },
+    "35": {
+      "title": "PJ再構築：総合入口・親子Issue・日本語閲覧と情報整理",
+      "state": "open",
+      "branch": "issue/feature-35"
+    },
+    "36": {
+      "title": "先行研究の理解と読書台帳をまとめる（既存3論文から）",
+      "state": "open",
+      "branch": "未着手・未作成"
+    }
+  },
+  "native_hierarchy_verified": true
+}

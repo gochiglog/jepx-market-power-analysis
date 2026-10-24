@@ -1,85 +1,73 @@
-# FY2025 電力市場データ基盤
+# 電力市場研究：まずここから
 
-JEPX・OCCTO・HJKSなどの公開データから、地域の需給・連系線と市場価格を同じ日時で調べられるようにする修士研究のプロジェクトです。
-対象は2025年4月1日〜2026年3月31日。時刻は日本時間、30分の表は1日48コマです。
+この研究では「域内外の代替供給の制約によって、主要事業者の数量抑制が価格・利益に及ぼす影響はどう変わるか」を考えています。
+対象はFY2025（2025年4月1日〜2026年3月31日）。公開データを集め、地域・日時をそろえた表と、北海道の記述用散布図まで作りました。
+現在は**データと研究の意味を理解し、分析方針を選ぶ段階**です。最終headroom、資産の法人帰属、dominant/fringe、分析baselineは未確定です。
 
-**現在は、整備済みデータを研究の問いと結び、何を識別できるか整理する段階です。**
-中心の問いは「域内外の代替供給制約は、主要事業者の数量抑制が価格・利益に与える影響をどう変え、他社反応の推測モデルへどう接続できるか」です。
-市場環境の記述、数量抑制の採算、実際の行使の識別を分けています。競争的供給者全体の余力、最終headroom、法人帰属・dominant/fringe分類、価格への因果効果は未確定です。
+## 入口は2つ
 
-**最初の記述図として、[北海道の散布図2種類](reports/13_hokkaido_scatter/README.md)を作成しました。**
-対象は台帳記載法人で確認した3公開設備。17,520コマすべてを残し、翌々日予測需要で分けて表示しています。
+- **全体の仕事・進捗を見る：[総合Issue #29](https://github.com/gochiglog/jepx-market-power-analysis/issues/29)**。分野別PJと、その下の実施Issueへ進めます。
+- **手元のデータを見る：[日本語データ閲覧ノートブック05](notebooks/05_data_browser_ja.ipynb)**。34表を「基本台帳」と「比較・診断」に分け、列名・単位は日本語で表示します。
 
-## 最初に見る場所
+ノートブックは上から実行し、「種類」「表」を選んで「表示する」を押してください。「列名・型・定義を開く」で日本語名／英語標準名／単位／型／元列／定義を確認できます。
+既存の01・02にある手元の変更は保持しました。今回の画面は**新しい05**です。
 
-| 知りたいこと | 入口 |
-|---|---|
-| 何を作り、どこまで進んだか | [現在地と作業の流れ](docs/project_status.md) |
-| 実際のデータをどこで見られるか | [成果物ガイド](docs/data_guide.md) |
-| 表としてデータを開きたい | [閲覧用ノートブック](notebooks/02_all_tables_browser.ipynb) |
-| 報告書を工程順に読みたい | [報告書の目次](reports/README.md) |
-| 変数の意味・単位を調べたい | [変数辞書](metadata/variable_dictionary.csv) |
-| 研究方針を考える比較材料を見たい | [判断準備の短い資料](reports/11_decision_preparation/README.md)・[比較用7表](notebooks/03_decision_comparison.ipynb) |
-| 研究の問いと、公開データで分かる範囲を知りたい | [研究の問いと識別可能性](reports/12_research_identification/README.md) |
-| 北海道の第一版の図を見たい | [図と結果](reports/13_hokkaido_scatter/README.md)・[ノートブック04](notebooks/04_hokkaido_scatter.ipynb) |
-| 研究上の採用判断を確認したい | [研究判断ログ](docs/research_decisions.md) |
+## 何ができているか
 
-主な閲覧入口は、ローカルの次のファイルです。**157,680行＝9エリア×365日×48コマ**で、価格と30分の需給計画を見られます。
+原本を収集 → 日付・30分コマを統一 → 価格・需要・需給計画・連系線を整備 → 市場表へ接続、という順で進みました。
+発電実績と設備台帳の対応には別途診断を行い、参照容量差と公表停止記録を並べています。これは停止補正済み余力ではありません。
+
+| 区分 | 見られる内容 | 読むときの注意 |
+|---|---|---|
+| 公式原本 | JEPX、OCCTO、HJKS、REI、根拠資料 | [原本取得一覧](reports/issue_4_closeout.md)。加工せず `data/raw/` に保存 |
+| 基本台帳（閲覧16表） | 市場基本表、需要3表、計画需給2表、連系線3表、JEPX2表、発電実績、HJKS4版 | 元頻度・出典を保つ。「基本」は最終研究baselineの意味ではない |
+| 比較・診断（閲覧18表） | 公表停止記録付き市場4条件、参照容量差、1時間比較、法人記載の参照、北海道の図用表など | 仮定・取得版・対象設備の範囲を区別。別条件を足し合わせない |
+| 研究方針の材料 | 問いとデータの対応、3論文、比較設計 | [研究課題と識別可能性](reports/12_research_identification/README.md) |
+| 最初の図 | 北海道の30分散布図2種類 | [図と説明](reports/13_hokkaido_scatter/README.md)。回帰・因果推定ではない |
+
+普段見る実績システムプライスはspot市場価格です。感応度の計算基準・原列・監査情報は詳細に保存しています。
+「案A」「7,828／58,852」「早端／遅端」「連系線の1行」が分からないときは、[具体例で読むデータの説明](docs/data_reading_faq.md)だけ読めば確認できます。
+
+## 5つのPJと作業場所
+
+| PJ | 子Issue | 実施Issue・作業ブランチ |
+|---|---|---|
+| 先行研究 | [#30](https://github.com/gochiglog/jepx-market-power-analysis/issues/30) | 読書整理 #36（未着手。実装ブランチ未作成） |
+| 研究戦略・制度 | [#31](https://github.com/gochiglog/jepx-market-power-analysis/issues/31) | #3、#23、#25／`issue/feature-3,23,25` |
+| データ取得・ETL・DB | [#32](https://github.com/gochiglog/jepx-market-power-analysis/issues/32) | #2、#4、#8、#10、#13、#15、#17、#19／各 `issue/feature-番号` |
+| 分析・アウトプット | [#33](https://github.com/gochiglog/jepx-market-power-analysis/issues/33) | 北海道記述図 #27／`issue/feature-27` |
+| 運営・整理 | [#34](https://github.com/gochiglog/jepx-market-power-analysis/issues/34) | 初期構築 #1、案内 #21、今回の再構築 #35／`issue/feature-35` |
+
+今回の作業ブランチは `issue/feature-35`、依存元は事務PJの `issue/feature-34` です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
+既存Issue・PRは履歴と依存を保持します。**データがローカルで完成していることと、mainへマージ済みであることは別**です。
+未統合PRは #16→#18→#20→#22→#24→#26→#28。今回もmainへ直接commit・pushせず、PRをマージしません。
+
+## ファイルはどこにあるか
 
 ```text
-data/processed/occto/demand_supply_direction/20261016_native_v1/
-  market_base_FY2025_with_reserve.parquet
+README.md                  全体の入口（このページ）
+notebooks/05_*.ipynb        全34表の日本語閲覧
+metadata/view_*.{json,csv}  表の所在・英語列名／日本語名／型／単位／定義
+metadata/                  原本出典・SHA・対応根拠・出力manifest
+reports/                   工程ごとの結果。古い報告は履歴として保持
+docs/                      仕様、データの読み方、研究判断ログ
+src/, scripts/, tests/     処理・実行・自動検査
+data/raw/                  公式原本（変更禁止）
+data/interim/              設備実績・診断の固定版
+data/processed/            価格・市場・需要・需給・連系線・比較表
+.worktrees/                過去のIssue作業フォルダ。成果物の入口ではない
 ```
 
-Parquetは型を保った表形式のファイルです。上のノートブックで表示できます。
-閲覧入口の指定は、最終分析baselineの採用判断ではありません。
-実データはGit管理外のため、GitHubからcloneしただけでは含まれません。現在の共有作業フォルダに保存しています。
-
-## ディレクトリの役割
+実データは**共有repo直下の `data/`** にあり、GitHubには含めません。`.worktrees/`内を探す必要はありません。
+市場の閲覧用基本表は次のファイルです（157,680行＝9エリア×365日×48コマ）。
 
 ```text
-04_research_second/
-├── README.md           最初の案内
-├── docs/               現在地、使い方、仕様、研究判断
-├── reports/            工程別の説明と、CSV・JSONの検証記録
-├── metadata/           出典、変数辞書、対応表、出力manifest
-├── notebooks/          保存済みデータを読む入口
-├── src/                正規化・ETL・結合・検証の処理
-├── scripts/            処理を実行するコマンド
-├── tests/              自動テスト
-├── issues/             当初のIssue仕様
-├── data/               実データ（Git管理外）
-│   ├── raw/            公式原本。内容変更・上書き禁止
-│   ├── interim/        設備単位の中間表、固定した診断版
-│   └── processed/      JEPX価格、市場表、需要・需給・連系線
-└── .worktrees/         別Issueの作業フォルダ（過去の作業も保持）
+data/processed/occto/demand_supply_direction/20261016_native_v1/market_base_FY2025_with_reserve.parquet
 ```
 
-`metadata`のmanifestは、どの原本・版を使ったかとSHA256（内容の指紋）を記録する台帳です。
-データを探すときは、まず共有repo直下の`data/`を見てください。`.worktrees/`は実装作業の場所です。
+Parquetは型を持つ表ファイルです。英語列名の新しい閲覧層を用意し、画面では日本語にしています。固定済みParquetの列名や値を一括変更したわけではありません。
 
-## 作業ブランチと承認の状況
+## 詳細が必要なときだけ
 
-現在の作業はIssue #27の北海道記述図、ブランチ`issue/feature-27`です。Issue #25の研究識別整理と、Issue #23の比較データを継承しています。
-ここまでの作業はIssueごとの別フォルダでcommit/pushしていたため、元のフォルダはmainのままでした。
-元のフォルダも今回の作業ブランチへ切り替えました。mainに直接commitしません。
-
-設備診断→市場接続→需要・需給の変更は、PR #16→#18→#20の順に依存しています。
-**ローカルで成果物ができていることと、mainへマージ済みであることは別です。**
-現在の整理も専用PRで扱い、承認なしにマージしません。[ブランチと現在地の詳細](docs/project_status.md#ブランチと成果物の違い)
-
-## 環境と検証
-
-Python 3.12とuvを使います。リポジトリ直下で実行してください。
-
-```sh
-uv sync --locked
-uv run pytest -q
-uv run ruff check .
-uv run jupyter lab notebooks/02_all_tables_browser.ipynb
-```
-
-実rawを使う検査にはローカルのデータが必要です。閲覧だけで再取得やETLの再実行は必要ありません。
-研究目的と将来計画は[全体計画](00_MASTER_PLAN.md)、[ロードマップ](01_IMPLEMENTATION_ROADMAP.md)、
-作業ルールは[AGENTS.md](AGENTS.md)を参照してください。
-ロードマップの工程番号とGitHub Issue番号は異なります。[対応表](metadata/github_issue_map.yml)で確認できます。
+[工程順の報告一覧](reports/README.md)／[研究判断ログ](docs/research_decisions.md)／[全34表の所在](metadata/view_table_registry.json)／[全列の対応表](metadata/view_column_dictionary.csv)／[今回の整理結果](reports/14_project_reorganization/README.md)。
+古い報告・重複原本・未マージworktreeは勝手に削除しません。削除候補は一覧・SHA・承認と処理結果を残します。研究定義やデータ採用に判断が必要なときは、選択肢・影響を提示してユーザーに確認します。
