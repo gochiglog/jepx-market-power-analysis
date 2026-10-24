@@ -1,4 +1,4 @@
-updated_on: '2026-10-16'
+updated_on: '2026-10-24'
 tasks:
 - roadmap_id: 1
   title: Repo bootstrap
@@ -107,3 +107,10 @@ support_tasks:
   github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/27
   depends_on_issue: 25
   status: descriptive_first_scatter_no_regression_or_final_baseline
+- github_issue_number: 38
+  title: RSI算定設計：地域・法人別の代替供給評価と式―データ対応
+  branch: issue/feature-38
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/38
+  depends_on_issue: 35
+  parent_pj_issue: 31
+  status: specification_ready_rsi_not_computed_assumptions_pending

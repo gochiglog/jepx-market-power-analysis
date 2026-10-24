@@ -26,6 +26,8 @@
 
 - [14　PJ再構築・日本語閲覧・保存と整理](14_project_reorganization/README.md)
 
+- [15　RSI算定設計：地域・法人別の代替供給と式―データ対応](15_rsi_design/README.md)
+
 ## エクスプローラーで探す
 
 VS Codeでは、`01_raw_collection.md` などを展開すると、その工程の既存報告・CSV・JSONを見られます。

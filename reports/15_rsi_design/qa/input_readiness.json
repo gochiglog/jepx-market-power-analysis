@@ -1,0 +1,72 @@
+{
+  "purpose": "RSIの入力可能範囲だけを診断。RSI値・割合・順位曲線は算定しない。",
+  "target_areas": [
+    "北海道",
+    "東北",
+    "東京",
+    "中部",
+    "北陸",
+    "関西",
+    "中国",
+    "四国",
+    "九州"
+  ],
+  "legal_entities": 10,
+  "area_entity_pairs": 11,
+  "planned_target_time_cells": 192720,
+  "observed_units_all_ten_areas": 491,
+  "observed_units_nine_areas": 478,
+  "scope_checked_name_reference_units_nine_areas": 415,
+  "plan_demand_nine_area_rows": 157680,
+  "plan_demand_duplicate_keys": 0,
+  "plan_demand_nulls": 0,
+  "plan_supply_nulls": 0,
+  "plan_demand_nonpositive_rows": 0,
+  "plan_demand_time_range": [
+    "2025-04-01",
+    "2026-03-31"
+  ],
+  "system_capacity_rows": 388896,
+  "single_sending_receiving_area_rows": 350400,
+  "hk_reference_non_target_units": 3,
+  "hk_reference_non_target_capacity_kw": 462000,
+  "hk_reference_non_target_capacity_mw": "462.0",
+  "unit_conversion": "参照認可出力kW / 1000 = MW。新しいRSIや利用可能供給力ではない。",
+  "minimal_two_area_scope_checked_labels": {
+    "北海道": 25,
+    "東北": 49
+  },
+  "minimal_two_area_reference_capacity_kw": {
+    "北海道": 7801400,
+    "東北": 19989000
+  },
+  "controlled_supply_missing_pairs": 11,
+  "rsi_computed": false,
+  "fixed_versions_changed": false,
+  "inputs": [
+    {
+      "path": "metadata/research/regulatory_targets.csv",
+      "sha256": "bfd4ed791bcdd00d11b10939589d762bf8df9073f5ca7a871e803f22153a9394"
+    },
+    {
+      "path": "metadata/research/legal_name_alias_evidence_20261016.csv",
+      "sha256": "d6bed5bba9a2d6d5f8951b869cb2e08f1b7223f637c030d90bb581995cc0beab"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/observed_unit_business_evidence_FY2025.parquet",
+      "sha256": "e26f5751cc6ed2cec68be8e5caad36e53f5586924866bdbcb398f627a704a44d"
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_nextday2_FY2025.parquet",
+      "sha256": "3e5888b66cbe8824d155868831baa6773d526089242c43c32702a25ed1d0b514"
+    },
+    {
+      "path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_asset_registry_FY2025.parquet",
+      "sha256": "3182ed8dabaae3846a7418899986d81d67af9071591326317087773c483c4c15"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/system_capacity_dayahead2_planned_direction_comparison_FY2025.parquet",
+      "sha256": "f678babc66f6dc809a8d78874c29eea6aa60258ecce091561962da26dc952298"
+    }
+  ]
+}
