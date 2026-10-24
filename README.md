@@ -1,8 +1,11 @@
 # 電力市場研究：まずここから
 
-この研究では「域内外の代替供給の制約によって、主要事業者の数量抑制が価格・利益に及ぼす影響はどう変わるか」を考えています。
-対象はFY2025（2025年4月1日〜2026年3月31日）。公開データを集め、地域・日時をそろえた表と、北海道の記述用散布図まで作りました。
-現在は**データと研究の意味を理解し、分析方針を選ぶ段階**です。最終headroom、資産の法人帰属、dominant/fringe、分析baselineは未確定です。
+研究目的は **「特定事業者の供給を他社・域外供給で代替できるかという市場構造の評価」** です（RD-021）。
+市場支配力の行使、売り渋りの実在、利益増加の認定は今回の目的に含めません。
+対象はFY2025（2025年4月1日〜2026年3月31日）。公開データの収集・接続と北海道の記述用散布図まで実施済みです。
+
+**現在の検討資料は [RSIの算定仕様案と「式→データ列」](reports/15_rsi_design/README.md)です。** 9エリア・10法人・11法人×エリアについて、1法人ずつ除いた代替供給を検査する設計を整理しました。
+利用可能供給力・契約支配・ネットワーク条件に新たな判断が必要なので、全国RSIや追加図はまだ作っていません。最終headroom、法人帰属、dominant/fringe、分析baselineも未確定です。
 
 ## 入口は2つ
 
@@ -33,14 +36,14 @@
 | PJ | 子Issue | 実施Issue・作業ブランチ |
 |---|---|---|
 | 先行研究 | [#30](https://github.com/gochiglog/jepx-market-power-analysis/issues/30) | 読書整理 #36（未着手。実装ブランチ未作成） |
-| 研究戦略・制度 | [#31](https://github.com/gochiglog/jepx-market-power-analysis/issues/31) | #3、#23、#25／`issue/feature-3,23,25` |
+| 研究戦略・制度 | [#31](https://github.com/gochiglog/jepx-market-power-analysis/issues/31) | #3、#23、#25、RSI設計 #38／各 `issue/feature-番号` |
 | データ取得・ETL・DB | [#32](https://github.com/gochiglog/jepx-market-power-analysis/issues/32) | #2、#4、#8、#10、#13、#15、#17、#19／各 `issue/feature-番号` |
 | 分析・アウトプット | [#33](https://github.com/gochiglog/jepx-market-power-analysis/issues/33) | 北海道記述図 #27／`issue/feature-27` |
 | 運営・整理 | [#34](https://github.com/gochiglog/jepx-market-power-analysis/issues/34) | 初期構築 #1、案内 #21、今回の再構築 #35／`issue/feature-35` |
 
-今回の作業ブランチは `issue/feature-35`、依存元は事務PJの `issue/feature-34` です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
+今回のRSI設計ブランチは `issue/feature-38`、依存元は `issue/feature-35`（PR #37）です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
 既存Issue・PRは履歴と依存を保持します。**データがローカルで完成していることと、mainへマージ済みであることは別**です。
-未統合PRは #16→#18→#20→#22→#24→#26→#28。今回もmainへ直接commit・pushせず、PRをマージしません。
+未統合PRは #16→#18→#20→#22→#24→#26→#28、事務整理はそのheadを継ぐ親ブランチをbaseにした #37。今回もmainへ直接commit・pushせず、PRをマージしません。
 
 ## ファイルはどこにあるか
 

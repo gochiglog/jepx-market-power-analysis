@@ -1,0 +1,48 @@
+checked_on: '2026-10-24'
+purpose: 特定事業者の供給を他社・域外供給で代替できるかという市場構造の評価
+not_in_scope: [市場支配力行使の認定, 売り渋りの実在認定, 利益増加の認定]
+sources:
+  - source_id: caiso_2024_annual
+    title: 2024 Annual Report on Market Issues and Performance
+    publisher: California ISO Department of Market Monitoring
+    published: '2025-08-07'
+    url: https://www.caiso.com/documents/2024-annual-report-on-market-issues-and-performance-aug-07-2025.pdf
+    pages: 印刷141–144（PDF物理153–156）§3.1–3.2、注126–128、図3.1–3.3
+    verification_level: official_pdf_text_verified
+    verified: RSI定義、RSI1/2/3、実物入札・停止低下・輸入制約と需要構成。図は構造指標の用途の参考
+    limitation: 日本の企業分類・利用可能量・入札・契約へそのまま適用しない。最大企業順の除去と指定法人の単独除去を区別
+  - source_id: lbh_2011_author_technical
+    title: Firm-based Measurements of Market Power in Transmission-Constrained Electricity Markets — Technical Reference
+    authors: Yen-Yu Lee; Ross Baldick; Jin Hur
+    published: '2011-05-10'
+    url: https://users.ece.utexas.edu/~baldick/papers/firm_index_technical.pdf
+    pages: 印刷15–17（PDF物理15–17）、§4–4.2、式14
+    verification_level: author_hosted_primary_fulltext_verified
+    verified: 全母線需要の共通倍率、企業全設備除去、PTDF型制約と利用可能上限、系統全体の指数
+    limitation: 刊行版の式番号と補足版の式番号を混同しない。今回の地域輸送モデルは独自の設計案であり原定義ではない
+  - source_id: lbh_2011_publication
+    title: Firm-Based Measurements of Market Power in Transmission-Constrained Electricity Markets
+    journal: IEEE Transactions on Power Systems 26(4), 1962–1970, November 2011
+    doi: 10.1109/TPWRS.2011.2157179
+    url: https://doi.org/10.1109/TPWRS.2011.2157179
+    author_publication_list: https://users.ece.utexas.edu/~baldick/papers/papers.html
+    university_publication_metadata: https://pure.ewha.ac.kr/en/publications/firm-based-measurements-of-market-power-in-transmission-constrain/
+    verification_level: author_and_university_publication_metadata_verified
+    journal_pdf_retrieved: false
+    limitation: IEEE原PDFは取得できず。数式と定義は著者公開技術補足全文で確認
+  - source_id: egc_fy2025_target_period
+    title: 第19回制度設計・監視専門会合 資料8
+    url: https://www.egc.meti.go.jp/activity/emsc_systemsurveillance/pdf/019_08_00.pdf
+    pages: '6: 現在の対象事業者'
+    verification_level: official_search_verified
+    original_pdf_http_status: 403
+    verified: 2024-11-01〜2026-03-31の欄に既存10法人・11法人×エリア。2026年度追加法人を遡及しない
+    limitation: 原PDF確認済みではない。資産・契約帰属、FY2025当時の情報集合は未確定
+existing_evidence_reused:
+  - metadata/research/interconnector_direction_scope_20261016.csv
+  - metadata/research/interconnector_scope_epochs_20261016.csv
+  - metadata/research/decision_preparation_official_evidence_20261016.yml
+  - metadata/research/legal_name_alias_evidence_20261016.csv
+  - metadata/research/regulatory_fy2025_review_20261016.csv
+network_design_status: 9地域輸送モデル案。PTDF/DC潮流の再現ではない。境界とフェンスの入力契約は未確定
+minimum_diagnostic_status: 同モデルを北海道・東北へ制限する案。新規仮定の承認前のためRSI未計算

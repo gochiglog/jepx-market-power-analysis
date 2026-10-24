@@ -34,7 +34,8 @@
     "child_issues": [
       3,
       23,
-      25
+      25,
+      38
     ],
     "branch": null
   },
@@ -97,5 +98,14 @@
     "parent_issue": 30,
     "child_issues": [],
     "branch": null
+  },
+  "rsi_design": {
+    "number": 38,
+    "id": 6009560583,
+    "title": "RSI算定設計：地域・法人別の代替供給評価と式―データ対応",
+    "html_url": "https://github.com/gochiglog/jepx-market-power-analysis/issues/38",
+    "parent_issue": 31,
+    "child_issues": [],
+    "branch": "issue/feature-38"
   }
 }
