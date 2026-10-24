@@ -1,0 +1,277 @@
+{
+  "purpose": "読み取り専用の閲覧層。最終baselineではない。",
+  "tables": [
+    {
+      "table_id": "t01",
+      "title_ja": "基本市場表（地域価格・実績system価格・計画需給）",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_base_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 161
+    },
+    {
+      "table_id": "t02",
+      "title_ja": "停止公表記録付き市場表：58,852行の取得版／復旧予定日の始めまで（比較条件）",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_58852_early_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279
+    },
+    {
+      "table_id": "t03",
+      "title_ja": "停止公表記録付き市場表：58,852行の取得版／復旧予定日の終わりまで（比較条件）",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_58852_late_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279
+    },
+    {
+      "table_id": "t04",
+      "title_ja": "停止公表記録付き市場表：7,828行の取得版／復旧予定日の始めまで（比較条件）",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_7828_early_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279
+    },
+    {
+      "table_id": "t05",
+      "title_ja": "停止公表記録付き市場表：7,828行の取得版／復旧予定日の終わりまで（比較条件）",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/market_hjks_outage_7828_late_FY2025_with_reserve.parquet",
+      "rows": 157680,
+      "columns": 279
+    },
+    {
+      "table_id": "t06",
+      "title_ja": "需要実績：日電力量",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_demand_daily_energy_FY2025.parquet",
+      "rows": 4015,
+      "columns": 30
+    },
+    {
+      "table_id": "t07",
+      "title_ja": "需要実績：日最大電力",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_demand_daily_peak_FY2025.parquet",
+      "rows": 4015,
+      "columns": 30
+    },
+    {
+      "table_id": "t08",
+      "title_ja": "需要実績：1時間（CSV定義）",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_demand_hourly_FY2025.parquet",
+      "rows": 96360,
+      "columns": 34
+    },
+    {
+      "table_id": "t09",
+      "title_ja": "計画需給：翌日・当日",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_latest_FY2025.parquet",
+      "rows": 175200,
+      "columns": 40
+    },
+    {
+      "table_id": "t10",
+      "title_ja": "計画需給：翌々日",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_nextday2_FY2025.parquet",
+      "rows": 175200,
+      "columns": 41
+    },
+    {
+      "table_id": "t11",
+      "title_ja": "連系線：予備率公表・翌日当日",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/reserve_interconnector_latest_with_directions_FY2025.parquet",
+      "rows": 209472,
+      "columns": 69
+    },
+    {
+      "table_id": "t12",
+      "title_ja": "連系線：予備率公表・翌々日",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/reserve_interconnector_nextday2_with_directions_FY2025.parquet",
+      "rows": 209520,
+      "columns": 70
+    },
+    {
+      "table_id": "t13",
+      "title_ja": "連系線：系統空容量・翌々日策定",
+      "category": "基本台帳",
+      "source_path": "data/processed/occto/demand_supply_direction/20261016_native_v1/system_capacity_dayahead2_planned_with_directions_FY2025.parquet",
+      "rows": 388896,
+      "columns": 65
+    },
+    {
+      "table_id": "t14",
+      "title_ja": "JEPXスポット市場・価格と入札量",
+      "category": "基本台帳",
+      "source_path": "data/processed/jepx/spot/jepx_spot_FY2025.parquet",
+      "rows": 17520,
+      "columns": 43
+    },
+    {
+      "table_id": "t15",
+      "title_ja": "JEPX価格感応度・仮想価格と公表差分",
+      "category": "基本台帳",
+      "source_path": "data/processed/jepx/price_sensitivity/jepx_price_sensitivity_FY2025.parquet",
+      "rows": 17520,
+      "columns": 40
+    },
+    {
+      "table_id": "t16",
+      "title_ja": "公表記録付き発電実績（診断）",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/generation_with_snapshot_public_records_FY2025.parquet",
+      "rows": 8468544,
+      "columns": 63
+    },
+    {
+      "table_id": "t17",
+      "title_ja": "参照容量と平均発電出力の差（診断版）",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/interim/occto/reference_capacity_gap/20261016_diagnostic_v1/reference_capacity_gap_FY2025.parquet",
+      "rows": 8468544,
+      "columns": 51
+    },
+    {
+      "table_id": "t18",
+      "title_ja": "1時間比較表：価格の時間平均と需要",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/comparison/20261016_decision_preparation_v2/market_hourly_price_demand_FY2025.parquet",
+      "rows": 78840,
+      "columns": 379
+    },
+    {
+      "table_id": "t19",
+      "title_ja": "空容量・価格差",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/comparison/20261016_decision_preparation_v2/system_capacity_dayahead2_planned_direction_comparison_FY2025.parquet",
+      "rows": 388896,
+      "columns": 78
+    },
+    {
+      "table_id": "t20",
+      "title_ja": "連系線：翌々日比較",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/comparison/20261016_decision_preparation_v2/reserve_interconnector_nextday2_direction_comparison_FY2025.parquet",
+      "rows": 209520,
+      "columns": 86
+    },
+    {
+      "table_id": "t21",
+      "title_ja": "連系線：翌日当日比較",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/comparison/20261016_decision_preparation_v2/reserve_interconnector_latest_direction_comparison_FY2025.parquet",
+      "rows": 209472,
+      "columns": 85
+    },
+    {
+      "table_id": "t22",
+      "title_ja": "観測ユニットと台帳記載事業者の参照根拠",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/comparison/20261016_decision_preparation_v2/observed_unit_business_evidence_FY2025.parquet",
+      "rows": 491,
+      "columns": 67
+    },
+    {
+      "table_id": "t23",
+      "title_ja": "台帳記載事業者の候補行",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/comparison/20261016_decision_preparation_v2/hjks_business_candidate_rows_FY2025.parquet",
+      "rows": 605,
+      "columns": 26
+    },
+    {
+      "table_id": "t24",
+      "title_ja": "事業者名と制度対象名の照合候補",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/comparison/20261016_decision_preparation_v2/business_regulatory_name_comparison_FY2025.parquet",
+      "rows": 682,
+      "columns": 11
+    },
+    {
+      "table_id": "t25",
+      "title_ja": "北海道：ユニット別参照指標",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_unit_reference_FY2025.parquet",
+      "rows": 438000,
+      "columns": 73
+    },
+    {
+      "table_id": "t26",
+      "title_ja": "北海道：対象設備・台帳記載法人",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_asset_registry_FY2025.parquet",
+      "rows": 25,
+      "columns": 73
+    },
+    {
+      "table_id": "t27",
+      "title_ja": "北海道：散布図用30分表",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_scatter_panel_FY2025.parquet",
+      "rows": 17520,
+      "columns": 261
+    },
+    {
+      "table_id": "t28",
+      "title_ja": "北海道：参照容量差の燃種別内訳",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_reference_contribution_by_fuel_FY2025.parquet",
+      "rows": 35040,
+      "columns": 20
+    },
+    {
+      "table_id": "t29",
+      "title_ja": "北海道：公表記録別内訳",
+      "category": "比較・診断（詳細）",
+      "source_path": "data/processed/description/hokkaido/20261016_scatter_v1/hokkaido_reference_contribution_by_public_record_FY2025.parquet",
+      "rows": 108644,
+      "columns": 21
+    },
+    {
+      "table_id": "t30",
+      "title_ja": "発電実績：ユニット×30分",
+      "category": "基本台帳",
+      "source_path": "data/interim/occto/generation/generation_long_FY2025.parquet",
+      "rows": 8468544,
+      "columns": 29
+    },
+    {
+      "table_id": "t31",
+      "title_ja": "停止公表記録：期間指定なしの取得版（58,852行）",
+      "category": "基本台帳",
+      "source_path": "data/interim/hjks/diagnostics/hjks_outage_58852_2b297982196f.parquet",
+      "rows": 58852,
+      "columns": 41
+    },
+    {
+      "table_id": "t32",
+      "title_ja": "停止公表記録：FY2025指定の手動取得版（7,828行）",
+      "category": "基本台帳",
+      "source_path": "data/interim/hjks/diagnostics/hjks_outage_7828_9a46e1cba184.parquet",
+      "rows": 7828,
+      "columns": 41
+    },
+    {
+      "table_id": "t33",
+      "title_ja": "ユニット台帳：別取得版（529行）",
+      "category": "基本台帳",
+      "source_path": "data/interim/hjks/diagnostics/hjks_unit_529_7de63a108b36.parquet",
+      "rows": 529,
+      "columns": 33
+    },
+    {
+      "table_id": "t34",
+      "title_ja": "ユニット台帳：終了設備を含む手動取得版（677行）",
+      "category": "基本台帳",
+      "source_path": "data/interim/hjks/diagnostics/hjks_unit_677_7d4c3a8633fa.parquet",
+      "rows": 677,
+      "columns": 33
+    }
+  ]
+}

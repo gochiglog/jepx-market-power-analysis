@@ -1,6 +1,6 @@
 # 報告書はここから読む
 
-**最新の状況は[プロジェクトの現在地](../docs/project_status.md)、データの場所は[成果物ガイド](../docs/data_guide.md)へ。**
+**全体の入口は [README](../README.md) と [総合Issue #29](https://github.com/gochiglog/jepx-market-power-analysis/issues/29) です。ここは工程別の詳細・履歴を調べる目次です。**
 報告書を全部読む必要はありません。下の01→08が、原本収集から現在の市場表までの流れです。
 各工程の案内には、短い説明、最初に読む報告、数値表・監査へのリンクを分けて置いています。
 番号は工程順であり、GitHub Issue番号ではありません。
@@ -23,6 +23,8 @@
 - [11　研究方針を決めるための比較材料](11_decision_preparation/README.md)（1時間比較・方向別表示・台帳事業者の範囲）
 - [12　代替供給制約・数量抑制の採算・行動の識別](12_research_identification/README.md)（研究の問いとデータ、制度定義、3論文、モデル比較の設計）
 - [13　北海道の参照容量差・価格・輸入方向空容量の散布図](13_hokkaido_scatter/README.md)（17,520コマ、3設備の参照群、需要4群）
+
+- [14　PJ再構築・日本語閲覧・保存と整理](14_project_reorganization/README.md)
 
 ## エクスプローラーで探す
 

@@ -1,0 +1,53 @@
+[
+  {
+    "directory": "data/processed/description/hokkaido/_incomplete_attempt_1",
+    "status": "awaiting_user_decision",
+    "reason": "Issue #27の未完成試行出力。完成版5表と別。採用manifestに未採用と明記。",
+    "files": [
+      {
+        "path": "data/processed/description/hokkaido/_incomplete_attempt_1/hokkaido_asset_registry_FY2025.parquet",
+        "bytes": 33621,
+        "sha256": "3182ed8dabaae3846a7418899986d81d67af9071591326317087773c483c4c15"
+      },
+      {
+        "path": "data/processed/description/hokkaido/_incomplete_attempt_1/hokkaido_scatter_panel_FY2025.parquet",
+        "bytes": 6288313,
+        "sha256": "4c24c4d4a759a37d78e9698aa44a87fb1abb9c598357bef4636191564dba0b3c"
+      },
+      {
+        "path": "data/processed/description/hokkaido/_incomplete_attempt_1/hokkaido_unit_reference_FY2025.parquet",
+        "bytes": 1194370,
+        "sha256": "8b68120c0836426ff35a1d1c2cc596147b0c14fd7d726f75d755e4191cca47cc"
+      }
+    ],
+    "total_bytes": 7516304
+  },
+  {
+    "directory": "data/processed/description/hokkaido/_incomplete_attempt_2",
+    "status": "awaiting_user_decision",
+    "reason": "Issue #27の未完成試行出力。完成版5表と別。採用manifestに未採用と明記。",
+    "files": [
+      {
+        "path": "data/processed/description/hokkaido/_incomplete_attempt_2/asset_set_by_period.csv",
+        "bytes": 7215149,
+        "sha256": "8e8ff721adca37f03d635930f5f6e9d83840730adc7841ffe8cfe4a08a67614b"
+      },
+      {
+        "path": "data/processed/description/hokkaido/_incomplete_attempt_2/hokkaido_asset_registry_FY2025.parquet",
+        "bytes": 33621,
+        "sha256": "3182ed8dabaae3846a7418899986d81d67af9071591326317087773c483c4c15"
+      },
+      {
+        "path": "data/processed/description/hokkaido/_incomplete_attempt_2/hokkaido_scatter_panel_FY2025.parquet",
+        "bytes": 6288313,
+        "sha256": "4c24c4d4a759a37d78e9698aa44a87fb1abb9c598357bef4636191564dba0b3c"
+      },
+      {
+        "path": "data/processed/description/hokkaido/_incomplete_attempt_2/hokkaido_unit_reference_FY2025.parquet",
+        "bytes": 1194370,
+        "sha256": "8b68120c0836426ff35a1d1c2cc596147b0c14fd7d726f75d755e4191cca47cc"
+      }
+    ],
+    "total_bytes": 14731453
+  }
+]
