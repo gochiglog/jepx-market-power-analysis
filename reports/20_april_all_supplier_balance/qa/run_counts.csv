@@ -1,0 +1,10 @@
+supply_scenario,feasible,infeasible
+58852_early__full_stop_zero,1255,185
+58852_early__mean_reduction,1255,185
+58852_late__full_stop_zero,1198,242
+58852_late__mean_reduction,1198,242
+7828_early__full_stop_zero,1256,184
+7828_early__mean_reduction,1256,184
+7828_late__full_stop_zero,1203,237
+7828_late__mean_reduction,1203,237
+reference_no_deduction,1430,10

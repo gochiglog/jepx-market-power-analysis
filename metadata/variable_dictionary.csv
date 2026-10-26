@@ -1517,3 +1517,45 @@ derived,final_role_adopted,固定/調整の最終役割を採用済みか,boolea
 derived,half_hours_complete,当該時間の2コマが揃うか,boolean,not_applicable,not_applicable,period,specified,不完全時間を補完せず電力量を保留
 derived,network_constraints_averaged,30分送電制約を時間平均したか,boolean,not_applicable,not_applicable,出力契約,specified,今回全False。1時間電力量比較から時間LPを生成しない
 derived,hourly_lp_ready,1時間LP入力として完成しているか,boolean,not_applicable,not_applicable,出力契約,specified,今回全False。コマ内負荷配分と各30分制約を別途扱う
+derived,fixed_actual_mw,固定供給の実績：PV・風力・原子力の地域別一次CSV実績合計。分析上固定、技術的調整不能とは別,quantity,MW,MW,太陽光発電実績;風力発電実績;原子力,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,net_demand_B_mw,B30実績純需要：同一30分の公表需要−fixed_actual_mw。負値を維持、充電再現義務なし,quantity,MW,MW,エリア需要;fixed_actual_mw,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,pumped_net_injection_mw,揚水の公表純注入：正は発電、負は揚水。総揚水動力量への分解は不可,quantity,MW,MW,揚水,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,battery_net_injection_mw,蓄電池の公表純注入：正は放電、負は蓄電。総充放電量への分解は不可,quantity,MW,MW,蓄電池,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,storage_net_injection_mw,公表蓄電純注入合計：揚水純値＋蓄電池純値。いずれか不明ならnull。未知を0化しない,quantity,MW,MW,揚水;蓄電池,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,net_import_from_actual_csv_mw,実績CSVの純受電：会計検算のみ。九州は元送電正に−1、それ以外は受電正。LP上限とは別,quantity,MW,MW,連系線,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,demand_minus_storage_net_mw,蓄電純値を移項した需要：公表需要−公表蓄電純注入。総充電量を推定生成しない。LPのDに自動採用しない,quantity,MW,MW,エリア需要;storage_net_injection_mw,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,published_total_minus_demand_mw,公表合計と需要との差：同じ原CSVの合計−エリア需要。補正せず保持,quantity,MW,MW,合計;エリア需要,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,accounting_scenario,会計シナリオ：published_demand_only_no_observed_charging_obligation=公表需要のみ、観測充電再現義務なし,string,not_applicable,not_applicable,研究判断RD-026,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,gross_charging_reconstructed,総充電量推定生成フラグ：本診断は全行False。蓄電純値から総充電を復元しない,boolean,not_applicable,not_applicable,診断契約,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,limited_known_upper_mw,限定集合の既知上限部分和：372調整候補の観測行のうち当該停止条件で数値非負上限を定義できる集合の和/kW→MW。未知設備の上限0認定ではない,quantity,MW,MW,adjusted_reference_upper_kw / 1000,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,observed_candidate_count,観測された調整候補数：当該地域コマに元観測行が存在する調整候補ラベル数。物理設備数と同一視しない,integer,not_applicable,not_applicable,asset_key_candidate,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,defined_candidate_count,上限を定義できる候補数：当該地域時刻と停止条件で非負の既知上限を持つラベル数,integer,not_applicable,not_applicable,adjusted_reference_upper_kw,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,held_candidate_count,上限保留候補数：観測候補のうち上限不明または負。行と元値は既存シナリオ表に保持,integer,not_applicable,not_applicable,scenario_status,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,known_reference_held_mw,保留候補の既知参照容量：上限保留候補で参照容量だけ判明する部分の和。保留容量全体の総量ではない,quantity,MW,MW,capacity_reference_kw / 1000,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,generation_missing_but_upper_defined_count,実績欠測だが上限定義可能な候補数：実績欠測を理由に参照上限をnullにしない。発電量は再控除しない,integer,not_applicable,not_applicable,qa_generation_missing;adjusted_reference_upper_kw,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,firm_removal_applied,企業除去適用フラグ：今回の全法人計算では全行False。法人支配・契約を確定しない,boolean,not_applicable,not_applicable,実行契約,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,network_constraint_count,同時ネットワーク制約数：4月の各条件で個別10区間と北陸フェンス計11。9地域を保持,integer,not_applicable,not_applicable,legacy_network_constraints_FY2025.parquet,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,held_candidate_cells,当該コマの9地域保留候補セル数：限定計算集合から外れる観測候補数。未知容量0を意味しない,integer,not_applicable,not_applicable,held_candidate_count,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,limited_upper_total_mw,9地域の限定上限合計：9地域のlimited_known_upper_mwの同時刻和。全供給力とはしない,quantity,MW,MW,limited_known_upper_mw,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,total_net_demand_mw,9地域の実績純需要合計：9地域のnet_demand_B_mwの同時刻和,quantity,MW,MW,net_demand_B_mw,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,diagnostic_deficit_mw,診断専用の不足ベクトル：不成立時のみg+I+不足−余剰=Nの不足。AREAS順。実供給へ混ぜない,string,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,diagnostic_surplus_mw,診断専用の余剰ベクトル：不成立時のみg+I+不足−余剰=Nの余剰。AREAS順。実需給量ではない,string,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,deficit_slack_mw,地域別の診断専用不足：最小過不足解の不足側。最適解の地域配分は一意とは限らない,quantity,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,surplus_slack_mw,地域別の診断専用余剰：最小過不足解の余剰側。実際の抑制や利用可能量を認定しない,quantity,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,diagnostic_slack_sum_mw,最小診断過不足合計：不足＋余剰を最小化した値。実際の不足量ではない,quantity,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,network_relaxed_feasible,送電包絡解除時の診断成立：同じ9地域接続で送電包絡のみ解除した診断。正式計算の制約を緩和した意味ではない,boolean,not_applicable,not_applicable,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,national_upper_shortfall_mw,"限定全国上限不足の必要条件：max(0,ΣN−ΣU)。実系統供給不足の認定ではない",quantity,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,national_fixed_surplus_mw,"全国固定出力超過の必要条件：max(0,−ΣN)。純需要原値を切り上げず診断量だけ非負表示",quantity,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,max_residual_mw,成立解の最大会計残差：9地域の|g+I−N|最大。浮動小数LP許容値1e−6 MW,quantity,MW,MW,LP解,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,max_constraint_violation_mw,成立解の最大制約違反：11同時制約の最大違反。許容値1e−6 MW,quantity,MW,MW,LP解,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,diagnostic_residual_mw,過不足診断解の最大会計残差：正式出力を置換しない診断LPの会計検査,quantity,MW,MW,診断LP,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,generation_mw_by_area_json,成立割当の地域可変出力：AREAS順の一つの成立割当て。実績・最適運用ではない,string,MW,MW,LP解,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,flow_mw_in_EDGES_order_json,成立割当の区間潮流：EDGES順、各区間順方向正。一つの輸送モデル解で実潮流ではない,string,MW,MW,LP解,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,diagnostic_only,診断専用フラグ：過不足表ではTrue。正式需要供給へ混ぜない,boolean,not_applicable,not_applicable,実行契約,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,component_sum_mw,原CSVの成分和：制御量と需要/合計を除いた公表出力・蓄電純値・純輸入の和。不明成分ありはnull,quantity,MW,MW,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,component_sum_minus_demand_mw,成分和と公表需要の差：原値による会計検算。差を補正しない,quantity,MW,MW,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,unknown_component_count,公表成分の空欄数：空欄を0にして成分和を作らない,integer,not_applicable,not_applicable,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,nonstorage_plus_import_mw,非蓄電出力と純輸入：成分和−storage_net_mw。総充電へ読み替えない,quantity,MW,MW,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,storage_net_mw,会計検算の蓄電純注入：原CSV揚水＋蓄電池。どちらか空欄ならnull,quantity,MW,MW,揚水;蓄電池,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,gross_charging_observed,総充電量の直接観測フラグ：今回の成分表ではFalse。純値のみ,boolean,not_applicable,not_applicable,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,original_component_columns_json,検算対象の原列名一覧：成分合計の再現用。日本語原名を保持,string,not_applicable,not_applicable,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない

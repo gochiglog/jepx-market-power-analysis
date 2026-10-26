@@ -24,3 +24,7 @@
 ## 実績によるA/B判断用入力（工程19）
 
 [二案とデータ範囲](../reports/19_actual_net_demand/README.md)。`data/interim/occto/actual_net_demand/20261026_preparation_v7/` に4月12,960行の原値付き候補表があります。最終純需要やRSIではありません。地域全原子力と参照32ラベルの原子力を別列にし、中部/関西のそれぞれの未確定値を保持。REI地域別ファイルの8件は保存名と原ヘッダーの地域が異なり、検算は統合CSVの地域ヘッダーを使用しました。原本は変更していません。
+
+## 4月の全法人計算（工程20）
+
+[実行結果・見方](../reports/20_april_all_supplier_balance/README.md)。`data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/` の `all_firm_balance_results.parquet` が12,960条件の結果、`B30_primary_input_ledger.parquet` が9地域12,960行の実績入力です。純充電を再現しない限定診断。企業除去・RSIではありません。旧版の中部原子力nullはそのまま残し、新版で公式年度ファイルの4月値を使用しました。

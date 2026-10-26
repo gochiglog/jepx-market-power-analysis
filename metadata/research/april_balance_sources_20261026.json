@@ -1,0 +1,55 @@
+[
+  {
+    "path": "data/interim/research_reference/20261026_april_balance_v1/eria_jukyu_2025.zip",
+    "url": "https://powergrid.chuden.co.jp/denki_yoho_content_data/eria_jukyu_2025.zip",
+    "original_filename": "eria_jukyu_2025.zip",
+    "downloaded_at": "2026-10-26T04:11:24.532712+00:00",
+    "http_headers_raw": "HTTP/2 200 \ndate: Mon, 26 Oct 2026 04:11:24 GMT\ncontent-type: application/zip\ncontent-length: 465421\nvary: Accept-Encoding\netag: \"69cf5c26-71a0d\"\nlast-modified: Fri, 03 Apr 2026 06:20:22 GMT\nx-azure-ref: 20261026T041124Z-er19df5db87q2dpnhC1OSA965w00000004g00000000056mw\ncache-control: public, max-age=600\nx-fd-int-roxy-purgeid: 66216433\nx-cache-info: L1_T2\nx-cache: TCP_REMOTE_HIT\nstrict-transport-security: max-age=86400\naccept-ranges: bytes\n\n",
+    "sha256": "8ef8369731eb850aed39f7e3df6680a2f3a60834c50f56d1f03696fea1675944",
+    "bytes": 465421,
+    "scope": "ユーザー承認の年度ZIP1件。4月メンバーのみ点検"
+  },
+  {
+    "path": "data/interim/research_reference/20261026_april_balance_v1/chubu_actual_definition.html",
+    "url": "https://powergrid.chuden.co.jp/denkiyoho/eriajukyu_data/",
+    "downloaded_at": "2026-10-26T06:31:46.475003+00:00",
+    "status": 200,
+    "headers": {
+      "Date": "Mon, 26 Oct 2026 06:31:46 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "57410",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "ETag": "\"6adb6f85-e042\"",
+      "Last-Modified": "Fri, 23 Oct 2026 14:30:29 GMT",
+      "x-azure-ref": "20261026T063146Z-er19df5db87t69x5hC1OSAp46n00000005gg000000002bsz",
+      "Cache-Control": "public, max-age=180",
+      "x-fd-int-roxy-purgeid": "66216433",
+      "X-Cache-Info": "L2_T2",
+      "X-Cache": "TCP_REVALIDATED_HIT",
+      "Strict-Transport-Security": "max-age=86400",
+      "Accept-Ranges": "bytes"
+    },
+    "sha256": "aa60644b1e73fe2f478d68919e49c9bcb85a20583e7aedfc34884cb982518d6d",
+    "bytes": 57410,
+    "original_filename": "eriajukyu_data"
+  },
+  {
+    "path": "data/interim/research_reference/20261026_april_balance_v1/tokyo_csv_definition.html",
+    "url": "https://www.tepco.co.jp/forecast/html/area_jukyu-j.html",
+    "downloaded_at": "2026-10-26T06:31:46.712422+00:00",
+    "status": 200,
+    "headers": {
+      "Server": "Apache",
+      "Content-Type": "text/html",
+      "Vary": "Accept-Encoding",
+      "Date": "Mon, 26 Oct 2026 06:31:46 GMT",
+      "Content-Length": "45106",
+      "Connection": "close",
+      "Strict-Transport-Security": "max-age=15768000 ; preload"
+    },
+    "sha256": "63ee7ec8a81f6243be31fcddec237e0f549629a00ad9942b0d61c631d6b26e61",
+    "bytes": 45106,
+    "original_filename": "area_jukyu-j.html"
+  }
+]

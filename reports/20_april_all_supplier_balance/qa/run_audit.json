@@ -1,0 +1,159 @@
+{
+  "version": "20261026_B30_april_v1",
+  "rows": 12960,
+  "primary_key_rows": 12960,
+  "primary_null_D_R_N": {
+    "demand_actual_sample_mw": 0,
+    "fixed_actual_mw": 0,
+    "net_demand_B_mw": 0
+  },
+  "source_encoding": "cp932",
+  "annual_zip_members": [
+    "eria_jukyu_202509_04.csv",
+    "eria_jukyu_202507_04.csv",
+    "eria_jukyu_202508_04.csv",
+    "eria_jukyu_202505_04.csv",
+    "eria_jukyu_202506_04.csv",
+    "eria_jukyu_202602_04.csv",
+    "eria_jukyu_202504_04.csv",
+    "eria_jukyu_202603_04.csv",
+    "eria_jukyu_202512_04.csv",
+    "eria_jukyu_202601_04.csv",
+    "eria_jukyu_202510_04.csv",
+    "eria_jukyu_202511_04.csv"
+  ],
+  "only_inspected_member": "eria_jukyu_202504_04.csv",
+  "adjustable_labels_nine_areas": 372,
+  "fixed_nuclear_labels": 32,
+  "fixed_adjustable_overlap": 0,
+  "firm_removal_applied": false,
+  "primary_join_matches": 12960,
+  "primary_join_unmatched": 0,
+  "network_join_matches": 12960,
+  "network_join_unmatched": 0,
+  "upper_scope": "defined_nonnegative_subset_not_zero_imputation",
+  "inputs": [
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/actual_sample_and_plan_candidates.parquet",
+      "sha256": "09dcec05c0d42abf53b0c6301b38405b9066e0c7d34a7717530663e09ffa86e8"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_april_balance_v1/eria_jukyu_2025.zip",
+      "sha256": "8ef8369731eb850aed39f7e3df6680a2f3a60834c50f56d1f03696fea1675944"
+    },
+    {
+      "path": "reports/19_actual_net_demand/qa/fixed_adjustable_role_candidates.csv",
+      "sha256": "9b3a491c0feb2e106a83ce7fe858df9ff8dacd1851607ac78b018c61814d9c0b"
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/legacy_network_constraints_FY2025.parquet",
+      "sha256": "b50a1e634ebb165e2685d45fa7130a4a993ffb00943abce7401a2a16a48f5df8"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_early__full_stop_zero.parquet",
+      "sha256": "6ffe4745864a0f9af25a85bc1213ab0bdc229d57275afa857828e76d48df53e0"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_early__mean_reduction.parquet",
+      "sha256": "be9cec8ace6b42b9a210c238041b8c68fd943f5cc433fe14784d3793e83d11c4"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_late__full_stop_zero.parquet",
+      "sha256": "836486b0d6207318a4925fbacc6fc2fa00e768f9ab7a23cab28389e6480cd164"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_late__mean_reduction.parquet",
+      "sha256": "e895e306dd6cf6afe8fe8d094bcb5b0bd408f332e049ca8d567c3bb020e43253"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_early__full_stop_zero.parquet",
+      "sha256": "aec47b15c28f0617b686d63a5710078ba456955ef98625410cdf3382b020728b"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_early__mean_reduction.parquet",
+      "sha256": "c2e0366ba5c00835545c94ea6695190dd159a6f6b89aa03ea41273bcea77f2ad"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_late__full_stop_zero.parquet",
+      "sha256": "2d7f44684fd2aab147781d7cc411898ec948cec1b80b6e838578aad4799e7621"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_late__mean_reduction.parquet",
+      "sha256": "f1d254defab4e41e9ae65ddfdfabee84c8410b75d83538bc47a56ab488ac5702"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/reference_no_deduction.parquet",
+      "sha256": "820b927ce70a67b838cc44c0ecac36a87b10cf3ff492af7a1e93f25e4fffa18e"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_hokkaido_FY2025.csv",
+      "sha256": "2e7df2a51dd748d9732980011f680a77c3994f646781ab116ef55cbee9ede6f1"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_tohoku_FY2025.csv",
+      "sha256": "2e7df2a51dd748d9732980011f680a77c3994f646781ab116ef55cbee9ede6f1"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_tokyo_FY2025.csv",
+      "sha256": "f4a71d8bf4b6d7342a28bf073fc96ed971e60e790229cd96d664fd5fea9ff8a4"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_chubu_FY2025.csv",
+      "sha256": "4d4a4732178f18cee50d7d0e3e3f1f74263abea7b6e76dcfb597079e4fba6044"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_hokuriku_FY2025.csv",
+      "sha256": "4d4a4732178f18cee50d7d0e3e3f1f74263abea7b6e76dcfb597079e4fba6044"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_kansai_FY2025.csv",
+      "sha256": "4d4a4732178f18cee50d7d0e3e3f1f74263abea7b6e76dcfb597079e4fba6044"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_chugoku_FY2025.csv",
+      "sha256": "6775c312072cad6a5e91495958e535f8ac83f54eaab0a08c25d5057e8b3226aa"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_shikoku_FY2025.csv",
+      "sha256": "84e17096e312e864fc4c79586a6ca4ae526380e84f0e300ebc563da4784e28e5"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_kyushu_FY2025.csv",
+      "sha256": "84e17096e312e864fc4c79586a6ca4ae526380e84f0e300ebc563da4784e28e5"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/chubu_april_primary_all_original_columns.parquet",
+      "sha256": "7011cd5ba7a7cdc690981204b228fc2f5846492d1ee2630635c208f7a4db0229",
+      "rows": 1440
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646",
+      "rows": 12960
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/limited_supply_regional_inputs.parquet",
+      "sha256": "fe591b665a67cb0867f061c0f1d024236856ebfb8f63c37c53e74f0466119973",
+      "rows": 116640
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/all_firm_balance_results.parquet",
+      "sha256": "a9ceeed38c78b4891903f3e3da69ddfadcaea2a2e15872f852d84e5e115f816f",
+      "rows": 12960
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/feasible_allocations.parquet",
+      "sha256": "f01a17b7cb47fd113bca1f74d11c4a428a0ffe8653a79cfc2bd5b2e30447bb2b",
+      "rows": 11254
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/diagnostic_only_balance_slacks.parquet",
+      "sha256": "cffa8b4e8c0820a631646f6833bc499350729abf05994cf99ddf109977b3b642",
+      "rows": 15354
+    }
+  ],
+  "fixed_version_changed": false,
+  "tolerance_mw": 1e-06
+}

@@ -1,0 +1,53 @@
+{
+  "version": "20261026_B30_april_v1",
+  "decision": "RD-026",
+  "purpose_ja": "4月実績D/Rと保存計画制約の全法人限定バランス診断",
+  "period": [
+    "2025-04-01",
+    "2025-04-30"
+  ],
+  "timezone": "Asia/Tokyo",
+  "unit": "MW",
+  "interval_minutes": 30,
+  "fixed_output": [
+    "PV実績",
+    "風力実績",
+    "原子力地域実績"
+  ],
+  "demand_scope": "同じ地域別燃料CSVの公表需要。観測充電の再現義務を追加しない",
+  "balance": "g + A f = D - R",
+  "adjustable_bound": "0 <= g <= 数値定義可能な非負上限だけを持つ限定設備集合の部分和",
+  "capacity_constant_diagnostic_assumption": true,
+  "generation_subtracted_from_upper": false,
+  "fixed_nuclear_labels_excluded_from_adjustable": 32,
+  "adjustable_candidate_labels_nine_areas": 372,
+  "unknown_upper_is_zero": false,
+  "unknown_upper_handling": "元観測・原上限・保留理由はIssue40固定版に保持。限定集合外。負値は切り上げない",
+  "network": "全9地域・個別10区間・北陸フェンスの11同時制約。保存翌々日包絡。実潮流モデルではない",
+  "storage": "原揚水/蓄電池は純値。総充電生成禁止。純値の固定注入と調整設備上限を重ねない",
+  "unexecuted_storage_reproduction_reason": "水力の揚水設備範囲・総充放電・四国空欄を未確定のまま保持",
+  "snapshots_and_endpoints": [
+    "58852_early",
+    "58852_late",
+    "7828_early",
+    "7828_late"
+  ],
+  "stop_strategies": [
+    "full_stop_zero",
+    "mean_reduction"
+  ],
+  "reference_no_deduction_separate": true,
+  "records_absent_assumption": "収録公表記録による追加控除なし。利用可能性確認ではない",
+  "diagnostic_slacks": "不成立時だけ不足+余剰を最小化。正式需要供給へ混ぜない。地域配分の非一意性あり",
+  "network_relaxation": "診断専用。9地域と辺は保持し、包絡制約のみ解除",
+  "firm_removal": false,
+  "rsi_computed": false,
+  "all_supply_removal_primary_adopted": false,
+  "final_baseline": false,
+  "solver_tolerance_check_mw": 1e-06,
+  "replication_commands": [
+    "python scripts/run_april_balance.py --output /path/to/new-directory",
+    "python scripts/inspect_april_accounting.py --output /path/to/new-directory"
+  ],
+  "replication_note": "両CLIに同じ新規版の出力先を渡す。既存出力を拒否し、固定版manifestを置換しない。"
+}
