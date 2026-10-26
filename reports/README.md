@@ -56,3 +56,5 @@ GitHubや他のエディタでは、この目次から工程別に読んでく�
 - [20：4月の実績純需要・9地域全法人LP](20_april_all_supplier_balance/README.md)：成立/不成立・診断過不足と会計。
 
 - [21：4月の固定Rを残す調整可能供給除去試行](21_adjustable_removal/README.md)：純需要倍率、1未満・保留、同一入力/共通時刻の送電比較。
+
+- [22：4月試行を図で読む・送電/停止比較・9地域同時成立](22_april_trial_comparison/README.md)：全時刻分母、条件付きの倍率、JERAの未算定。

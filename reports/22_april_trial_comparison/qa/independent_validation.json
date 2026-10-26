@@ -1,0 +1,16 @@
+{
+  "original_440640_rows_all_columns_values_types_equal": true,
+  "row_growth": 0,
+  "silent_drop": 0,
+  "keys_unique": true,
+  "per_day_48": true,
+  "per_condition_target_1440": true,
+  "simultaneous_unique_entity_frames": 391680,
+  "sample_feasible_solutions": 88,
+  "largest_sample_residual_mw": 9.094947017729282e-13,
+  "all_snapshot_and_stop_conditions_retained": 17,
+  "jera_two_evaluation_areas_same_simultaneous_status": true,
+  "notebook_executed_code_cells": 7,
+  "notebook_errors": 0,
+  "report_local_links_valid": true
+}

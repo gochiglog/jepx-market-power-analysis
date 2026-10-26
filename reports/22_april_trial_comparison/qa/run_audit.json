@@ -1,0 +1,92 @@
+{
+  "version": "20261027_comparison_v1",
+  "inputs": [
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/network_comparison_common_times.parquet",
+      "sha256": "0a572dfe7693bf70e4807aec37ef4a73ed347571aaeff8756c0a2bff6b9dd11f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/regional_trial_uppers.parquet",
+      "sha256": "09df768c127a6b1ffb40110cb15679c5eabae82c7c91b98d34c657fbedaca278"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646"
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/legacy_network_constraints_FY2025.parquet",
+      "sha256": "b50a1e634ebb165e2685d45fa7130a4a993ffb00943abce7401a2a16a48f5df8"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/all_times_with_display_categories.parquet",
+      "sha256": "75feb3d7b151acbe9d962fd2e5a81ad246934d63f7d398c2314807306b571cf7",
+      "rows": 440640
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/overlapping_reason_flags.parquet",
+      "sha256": "47c2ce299617ada15ee6217ef6ea581fda9dbb8adb9aad6aeacd5d7c84449969",
+      "rows": 440640
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/reference_network_pairs_all_times.parquet",
+      "sha256": "0a1e6e200573e8a52318f617da1afb6c0895106eaac3a3133b7b6af997ae403e",
+      "rows": 12960
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/restored_reference_by_entity_time.parquet",
+      "sha256": "36a137da26a28ac3a763613eda2a8ec037871121888a973f4882a9c9fe7bd39d",
+      "rows": 92160
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/paired_stop_cases_all_times.parquet",
+      "sha256": "7fad126ed43a78e2888853fe3e94cb6f4696d1b00f414d3e1bcf6c03a08001e4",
+      "rows": 207360
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/nine_area_simultaneous_after_removal.parquet",
+      "sha256": "9abff0b12713d5d757e209c78d5d655138adc68d965882657953427e8875b326",
+      "rows": 391680
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/simultaneous_solution_samples.parquet",
+      "sha256": "1194931e9148476cb19dc9dbc3d968d04782bcf68fb59fb72d2099f2bdee3863",
+      "rows": 88
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/all_firms_simultaneous_baseline.parquet",
+      "sha256": "5b5ef4667b85245407cdb2c65ea7f165a9076ea78551e68cb160240651bbf60f",
+      "rows": 48960
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/multiplier_simultaneous_relationship.parquet",
+      "sha256": "c57a2302260a670343de83eabda60717eb662a0b66370a9bb4be8b803c8bb3ee",
+      "rows": 440640
+    }
+  ],
+  "qa": {
+    "source_frames": 440640,
+    "display_frames": 440640,
+    "network_pair_frames": 220320,
+    "stop_pair_frames": 207360,
+    "restoration_entity_time_frames": 92160,
+    "simultaneous_company_frames": 391680,
+    "relationship_join_matches": 440640,
+    "relationship_unmatched": 0,
+    "network_time_join_rate": 1.0,
+    "restoration_join_rate": 1.0,
+    "baseline_match_rate": 1.0,
+    "valid_above_one_but_sim_infeasible": 0,
+    "simultaneous_numeric_or_input_held": 0,
+    "real_lp_unique_evaluations": 132473,
+    "cached_or_analytic_evaluations_not_independent_observations": true,
+    "unit": "MW; multiplier ratio; time count 30min",
+    "raw_or_fixed_inputs_modified": false
+  },
+  "report_directory": "reports/22_april_trial_comparison"
+}

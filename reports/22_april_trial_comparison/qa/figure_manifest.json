@@ -1,0 +1,55 @@
+{
+  "font": "Hiragino Sans",
+  "figures": [
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/01_all_time_states.png",
+      "sha256": "d293d9103956fb5d89a08a81b30555425caaf2bcd892cd5ae5936ba5f8ec9656"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/01_all_time_states.pdf",
+      "sha256": "8e724019936115b189340b8905c6039976ef7329cb1e5ec8ec11d1e649b38f5a"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/02_network_ecdf_full_range.png",
+      "sha256": "f2510076e2ef6d50d3c3f01344065df4e07afb4c0b028ac3a72beeec7770805b"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/02_network_ecdf_full_range.pdf",
+      "sha256": "c6cf7f55912e9322ee08f010d2c1f42d1ae52e12bbfbbe53b67839e935b4cc57"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/03_network_ecdf_near_one.png",
+      "sha256": "eff8359792e379f5c6b81e47374f35f53f069e09b0fa01b0a44e2120775d8f70"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/03_network_ecdf_near_one.pdf",
+      "sha256": "5dc1d0d7899c6e6f570868c225a0ca85ff3d8e3cfecf9dcbccf4ded768b6383e"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/04_stop_record_restoration_example.png",
+      "sha256": "c988487271b554ee5367911ae1421f3c800fe732628e673b9763f18d43c81fd0"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/04_stop_record_restoration_example.pdf",
+      "sha256": "15b0f8d81f83739754e4f33b658d9d68da64ee7e1356f79fa1fbbd76a5c213b6"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/05_nine_area_simultaneous.png",
+      "sha256": "d84e843ef326e899f6014e6050df183f110da120b048ac3571b4232890f370cf"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/22_april_trial_comparison/figures/05_nine_area_simultaneous.pdf",
+      "sha256": "9d3fe22b78ae4de9b59d6e29bccfb97f79a2051f601d70dcc2dd9b2916397b56"
+    }
+  ],
+  "figures_count": 5,
+  "main_denominator": 1440,
+  "ecdf_denominator": "対象ごとの送電両条件共通有効時刻",
+  "ecdf_full_values_retained": true,
+  "ecdf_zoom_xlim": [
+    0,
+    2
+  ],
+  "representative_stop_pair": "58852_early__full_stop_zero",
+  "representative_is_final_baseline": false
+}

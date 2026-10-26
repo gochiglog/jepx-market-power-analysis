@@ -32,3 +32,8 @@
 ## 固定供給を残す企業除去試行（工程21）
 
 [結果と保留の読み方](../reports/21_adjustable_removal/README.md)。`data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/` の `all_and_removed_net_multipliers.parquet` に全440,640枠の数値/保留があります。`regional_trial_uppers.parquet` は調整済み除去量、`asset_attribution_proxy.parquet` は全491設備の名参照代理です。正式RSIや所有/支配/契約の確定値ではなく、計算不能を0にしていません。旧市場・案A・工程20を保持しています。
+
+
+## 4月試行の比較・図（工程22）
+
+[図と短い説明](../reports/22_april_trial_comparison/README.md)、[実行済みノートブック06](../notebooks/06_april_trial_comparison.ipynb)。比較データは `data/interim/occto/april_trial_comparison/20261027_comparison_v1/`。工程21固定版は保持し、全時刻の状態・停止条件の対比較・企業除去後の9地域同時成立を別表にしています。新しい全国RSIや最終baselineではありません。
