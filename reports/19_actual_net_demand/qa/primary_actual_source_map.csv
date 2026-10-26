@@ -1,0 +1,10 @@
+area,official_url,history,grain_unit,columns_scope,grid_self_consumption,curtailment,clock_contract,sample
+北海道,https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/index.html,FY2025各月公開リンク,30分MW平均,PV/風力/原子力/需要、制御量は別列,系統送出・自家消費の詳細境界は今回の公式ページでは未確認,発電実績と制御量を加算しない,00:00～23:30開始系列,hokkaido_202504.csv
+東北,https://setsuden.nw.tohoku-epco.co.jp/download.html,FY2025各月公開リンク,30分MW平均,PV/風力/原子力/需要、制御量は別列,実績速報・推計含む。自家消費の詳細境界は未確認,制御前出力へ復元しない,00:00～23:30開始系列,tohoku_202504.csv
+東京,https://www.tepco.co.jp/forecast/html/area_jukyu-j.html,FY2025各月公開リンク。既存4月原本再利用,30分MW平均,PV/風力/原子力/需要、制御量は別列,所内・自家消費控除後の送電端と公式説明,制御量は実績出力へ足さない,開始時刻を公式に明記,既存R_feasibility_v1/tokyo_actual_202504.csv
+中部,https://powergrid.chuden.co.jp/denkiyoho/,FY2025地域需給実績の年度ZIPあり未取得。別の月次需給ZIP4月のみ取得,30分kWh。MWへ/0.5/1000,実績需要とPV風力合計。PV/風力個別と原子力/制御量はなし,系統の需給実績。自家消費・送出境界は今回未確定,対象列なしは制御0の意味ではない,開始/終了/period明記,chubu_202504_keito.zip
+北陸,https://www.rikuden.co.jp/nw/denki-yoho/results_jyukyu.html,月指定でFY2025配布。4月だけ取得,30分MW平均,PV/風力/原子力/需要、制御量は別列,速報・推計含む。自家消費の詳細境界は未確認,制御量を足さない,00:00～23:30開始系列,hokuriku_202504.csv
+関西,https://www.kansai-td.co.jp/denkiyoho/area-performance/past.html,FY2025全12月を公式JSONで確認,30分MW平均,PV/風力/原子力/需要、制御量は別列,PV/需要に自家消費を含まないと公式説明,制御量を足さない,9:00は9:00～9:30と公式説明,kansai_202504.csv
+中国,https://www.energia.co.jp/nw/jukyuu/eria_jukyu.html,月指定でFY2025配布。4月だけ取得,30分MW平均,PV/風力/原子力/需要、制御量は別列,需要・PVに余剰買取の自家消費を含まないと公式説明,制御量を足さない,00:00～23:30開始系列,chugoku_202504.csv
+四国,https://www.yonden.co.jp/nw/supply_demand/data_download.html,FY2025各月公開リンク,30分MW平均,PV/風力/原子力/需要、制御量は別列,30分平均・吸収需要の差分説明。自家消費詳細は未確認,制御量を足さない,00:00～23:30開始系列,shikoku_202504.csv
+九州,https://www.kyuden.co.jp/td_area_jukyu/jukyu.html,FY2025全12月を公式CSV一覧で確認,30分MW平均,PV/風力/原子力/需要、制御量は別列,需要・PVに自家消費を含まないと公式説明,PV/風力は制御後と公式明記。制御量を足さない,0:30～24:00の終了系列。原48区間配列とREI統合値で照合。説明文の終了時刻明記は未確認,kyushu_202504.csv

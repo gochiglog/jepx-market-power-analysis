@@ -19,3 +19,8 @@
 ## 公開R候補の少数サンプル（工程18）
 
 [実ファイルの点検結果](../reports/18_fixed_output_feasibility/README.md)。取得原本は `data/interim/research_reference/20261026_R_feasibility_v1/`、検査表は `data/interim/occto/fixed_output_feasibility/20261026_samples_v3/`。正式な純需要DBではなく、予測断面・FIT範囲を確認する参照資料です。旧固定版は保持しています。
+
+
+## 実績によるA/B判断用入力（工程19）
+
+[二案とデータ範囲](../reports/19_actual_net_demand/README.md)。`data/interim/occto/actual_net_demand/20261026_preparation_v7/` に4月12,960行の原値付き候補表があります。最終純需要やRSIではありません。地域全原子力と参照32ラベルの原子力を別列にし、中部/関西のそれぞれの未確定値を保持。REI地域別ファイルの8件は保存名と原ヘッダーの地域が異なり、検算は統合CSVの地域ヘッダーを使用しました。原本は変更していません。

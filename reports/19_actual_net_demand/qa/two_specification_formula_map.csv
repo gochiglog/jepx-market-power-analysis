@@ -1,0 +1,11 @@
+specification,symbol,meaning,file,column_or_formula,unit,grain,limitation
+A,D,対象地域のモデル負荷,actual_sample_and_plan_candidates.parquet,保存翌々日 area_demand_forecast_mw,MW,地域/設備/区間×30分（各項の対象に従う）,予測需要＋後日実績固定出力の混合。入札時情報でない。充電/揚水等を含む需要境界を別途明示
+A,R,分析上固定するPV/風力＋原子力実績,同上,renewable_actual_sample_mw + nuclear_regional_sample_mw,MW,地域/設備/区間×30分（各項の対象に従う）,原子力地域値は中部null。32ラベル値は別範囲の代案であり自動補完不可。自家消費を再控除しない
+A,N0,企業除去前のD−R,同上,candidate_net_A_regional_mw,MW,地域/設備/区間×30分（各項の対象に従う）,0以下を切上げない。通常倍率の分母保留。中部1440行はnull
+A,J/U,417から固定原子力32を分離した調整側385ラベル候補,Issue40 unit_scenarios/*.parquet＋fixed_adjustable_role_candidates.csv,adjusted_reference_upper_kw / 1000,MW,地域/設備/区間×30分（各項の対象に従う）,各時刻の数値が定義できる集合のみ。停止8条件/控除なしを別条件。実績Gを再控除しない。未知は集合外理由を保持
+A,F,個別10区間＋北陸フェンスの同時制約,Issue42 legacy_network_constraints_FY2025.parquet,coefficients_json / lower_mw / upper_mw,MW,地域/設備/区間×30分（各項の対象に従う）,保存翌々日策定の包絡、切替前16608時刻。4月1440時刻が範囲内。実潮流/実運用上限の再現ではない
+B,D,対象地域のモデル負荷,actual_sample_and_plan_candidates.parquet,同じ実績サンプル demand_actual_sample_mw,MW,地域/設備/区間×30分（各項の対象に従う）,実績同士でも保存送電条件と台帳上限は計画/参照値。充電/揚水等を含む需要境界を別途明示
+B,R,分析上固定するPV/風力＋原子力実績,同上,renewable_actual_sample_mw + nuclear_regional_sample_mw,MW,地域/設備/区間×30分（各項の対象に従う）,原子力地域値は中部null。32ラベル値は別範囲の代案であり自動補完不可。自家消費を再控除しない
+B,N0,企業除去前のD−R,同上,candidate_net_B_regional_mw,MW,地域/設備/区間×30分（各項の対象に従う）,0以下を切上げない。通常倍率の分母保留。中部1440行はnull
+B,J/U,417から固定原子力32を分離した調整側385ラベル候補,Issue40 unit_scenarios/*.parquet＋fixed_adjustable_role_candidates.csv,adjusted_reference_upper_kw / 1000,MW,地域/設備/区間×30分（各項の対象に従う）,各時刻の数値が定義できる集合のみ。停止8条件/控除なしを別条件。実績Gを再控除しない。未知は集合外理由を保持
+B,F,個別10区間＋北陸フェンスの同時制約,Issue42 legacy_network_constraints_FY2025.parquet,coefficients_json / lower_mw / upper_mw,MW,地域/設備/区間×30分（各項の対象に従う）,保存翌々日策定の包絡、切替前16608時刻。4月1440時刻が範囲内。実潮流/実運用上限の再現ではない

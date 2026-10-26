@@ -30,6 +30,7 @@
 - [16　保存翌々日計画：全法人前検査・停止反映・9地域LPの範囲](16_saved_plan_supply/README.md)
 - [17　純需要・固定供給の会計と9地域ネットワーク入力](17_net_demand_network/README.md)
 - [18　固定供給Rの公開範囲・少数ファイル検証・限定集合の設計](18_fixed_output_feasibility/README.md)
+- [19　実績固定出力を使うA/Bの最初の計算仕様](19_actual_net_demand/README.md)
 
 ## エクスプローラーで探す
 

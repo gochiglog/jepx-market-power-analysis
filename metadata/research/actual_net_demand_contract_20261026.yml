@@ -1,0 +1,41 @@
+version: 20261026_preparation_v7
+purpose: 実績固定出力を使う最初のA/B仕様の判断準備
+baseline_adopted: false
+real_lp_runs: 0
+firm_rsi_calculated: false
+preferred_candidate: B_native_30_minutes
+candidate_period: [2025-04-01, 2025-04-30]
+network_period_available: [2025-04-01, 2026-03-12]
+network_scope: 個別10区間と北陸フェンス、全9地域接続を保持
+fixed_candidates:
+  - PVと風力の地域公表実績。制御量と区別
+  - 原子力地域公表実績（中部は未取得）
+  - 原子力32参照ラベルの実績（別範囲、関西欠測あり）
+fixed_is_technically_inflexible: false
+roles:
+  original_limited_labels: 417
+  fixed_nuclear_candidate: 32
+  adjustable_candidate_all_ten_areas: 385
+  adjustable_candidate_nine_areas: 372
+  okinawa_retained_outside_nine_area_model: 13
+  held_labels_retained: 74
+unknown_capacity_is_zero: false
+firm_removal:
+  adjustable_only: 固定Rは全て維持し調整U_iのみ除去
+  all_supply: 調整U_iと固定R_iを同じ法人の全地域から除去
+  denominator: 調整分のみはN0、全供給除去はD−(R−R_i)=N0+R_iを明示する別指標案。未採用
+  unknown_R_i: null/保留
+  recommended_future_primary_candidate: all_supply
+  computed_this_stage: neither
+hourly:
+  comparison: 2コマ完備かつ値既知の場合のみMW×0.5時間を合計
+  network_bounds_averaged: false
+  hourly_lp_ready: false
+sources:
+  primary_manifest: metadata/research/actual_supply_sources_20261026.json
+  rei_role: 統合CSVの2段ヘッダーで検算のみ
+  rei_regional_filename_mismatches: 8
+pending_research_choices:
+  - A/B。Bでも保存計画送電条件/参照上限との混合は残る
+  - 固定原子力の範囲と、充電/揚水等を含めるDの境界
+  - 企業除去範囲とR_iの根拠。台帳名だけで売電権限を確定しない

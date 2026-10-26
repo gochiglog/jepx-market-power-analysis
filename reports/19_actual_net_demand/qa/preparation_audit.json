@@ -1,0 +1,429 @@
+{
+  "source_samples": [
+    {
+      "area": "北海道",
+      "rows": 1440,
+      "encoding": "cp932",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "",
+        "供給力",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "raw_missing_cells": 0,
+      "all_empty_padding_rows_preserved_separately": 48,
+      "clock_role": "start",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "東北",
+      "rows": 1440,
+      "encoding": "cp932",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "",
+        "供給力",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "raw_missing_cells": 0,
+      "all_empty_padding_rows_preserved_separately": 0,
+      "clock_role": "start",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "東京",
+      "rows": 1440,
+      "encoding": "utf-8-sig",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "",
+        "供給力"
+      ],
+      "raw_missing_cells": 0,
+      "all_empty_padding_rows_preserved_separately": 0,
+      "clock_role": "start",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "北陸",
+      "rows": 1440,
+      "encoding": "cp932",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "",
+        "供給力"
+      ],
+      "raw_missing_cells": 0,
+      "all_empty_padding_rows_preserved_separately": 0,
+      "clock_role": "start",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "関西",
+      "rows": 1440,
+      "encoding": "cp932",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "raw_missing_cells": 0,
+      "all_empty_padding_rows_preserved_separately": 0,
+      "clock_role": "start",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "中国",
+      "rows": 1440,
+      "encoding": "cp932",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "供給力",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "raw_missing_cells": 0,
+      "all_empty_padding_rows_preserved_separately": 0,
+      "clock_role": "start",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "四国",
+      "rows": 1440,
+      "encoding": "cp932",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "",
+        "供給力",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "raw_missing_cells": 4320,
+      "all_empty_padding_rows_preserved_separately": 0,
+      "clock_role": "start",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "九州",
+      "rows": 1440,
+      "encoding": "cp932",
+      "unit_header": [
+        "単位[MW平均]",
+        "",
+        "",
+        "供給力(確報)",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "raw_missing_cells": 0,
+      "all_empty_padding_rows_preserved_separately": 0,
+      "clock_role": "end",
+      "full_original_columns_preserved": true
+    },
+    {
+      "area": "中部",
+      "rows": 1440,
+      "unit": "kWh/30min -> MW: /0.5/1000",
+      "zip_members": 90,
+      "actual_members": 30,
+      "forecast_BG_members_not_used": 60,
+      "nuclear_regional_missing_is_not_zero": true
+    }
+  ],
+  "rows": 12960,
+  "days": 30,
+  "areas": [
+    "中国",
+    "中部",
+    "九州",
+    "北海道",
+    "北陸",
+    "四国",
+    "東京",
+    "東北",
+    "関西"
+  ],
+  "duplicate_keys": 0,
+  "plan_join": {
+    "both": 12960
+  },
+  "rei_key_matched": 12960,
+  "nuclear_subset_join": {
+    "both": 12960
+  },
+  "role_counts": {
+    "adjustable_reference_candidate": 385,
+    "held": 74,
+    "fixed_observed_nuclear_candidate": 32
+  },
+  "fixed_adjustable_overlap": 0,
+  "nuclear_expected_by_area": {
+    "中国": 1,
+    "中部": 3,
+    "九州": 4,
+    "北海道": 3,
+    "北陸": 2,
+    "四国": 1,
+    "東京": 8,
+    "東北": 3,
+    "関西": 7
+  },
+  "candidate_net_nulls": {
+    "candidate_net_A_regional_mw": 1440,
+    "candidate_net_A_observed_subset_mw": 1440,
+    "candidate_net_B_regional_mw": 1440,
+    "candidate_net_B_observed_subset_mw": 1440
+  },
+  "candidate_net_nonpositive": {
+    "candidate_net_A_regional_mw": 524,
+    "candidate_net_A_observed_subset_mw": 524,
+    "candidate_net_B_regional_mw": 559,
+    "candidate_net_B_observed_subset_mw": 560
+  },
+  "real_lp_runs": 0,
+  "firm_rsi_calculated": false,
+  "inputs": [
+    {
+      "path": "reports/18_fixed_output_feasibility/qa/limited_supply_asset_register.csv",
+      "sha256": "52015cbf427df5eba9bbaa6de993e0e91f0a0a6bfd48b0f00927eee15388ee23"
+    },
+    {
+      "path": "metadata/research/actual_supply_sources_20261026.json",
+      "sha256": "24a8bc16852cd05504d5430dfc92f677a4b8099da82fc0ab5b5ae9d3ec1eb039"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/hokkaido_202504.csv",
+      "sha256": "73a3f3cd312aa973b560f0a1655d492c15bb68cf3eaaf04b09efdb031c019c76"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/tohoku_202504.csv",
+      "sha256": "57e9d0ee90ef7b52f4a90020f48a782be9fa23644693f31f2ceaaea8e4b6bcf0"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/tokyo_actual_202504.csv",
+      "sha256": "45d310fb51ef43be1fb93269542ed514f4b94129b007459cbca9fcada3ac7fed"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/hokuriku_202504.csv",
+      "sha256": "cbcdff3726217db2faa988d1390c08868b4fa827ea03a3e7afdd889bce3b29e8"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/kansai_202504.csv",
+      "sha256": "14197a6591334565ed6ce498be3325e02e0a8da27fdc2b3cff761a8b091ea465"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/chugoku_202504.csv",
+      "sha256": "cc12c21de4b10e5a83f1186f0eb15efb03890661fb7ef0de34e71cd721b67106"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/shikoku_202504.csv",
+      "sha256": "74c6109cd1e4f018b186cececd0fb9b4417837281daa65e8fd32853c85fe03fa"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/kyushu_202504.csv",
+      "sha256": "7156eb36e35b336384d0bbb2be3221acb86ec3be4a74a7c71849a5babb987721"
+    },
+    {
+      "path": "data/interim/research_reference/20261026_actual_supply_v1/chubu_202504_keito.zip",
+      "sha256": "0c755deb2a49b6ffbb02d5fa5fbd47f5d262928d337d5bec3c887468daca886a"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_hokkaido_FY2025.csv",
+      "sha256": "2e7df2a51dd748d9732980011f680a77c3994f646781ab116ef55cbee9ede6f1"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_tohoku_FY2025.csv",
+      "sha256": "2e7df2a51dd748d9732980011f680a77c3994f646781ab116ef55cbee9ede6f1"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_tokyo_FY2025.csv",
+      "sha256": "f4a71d8bf4b6d7342a28bf073fc96ed971e60e790229cd96d664fd5fea9ff8a4"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_chubu_FY2025.csv",
+      "sha256": "4d4a4732178f18cee50d7d0e3e3f1f74263abea7b6e76dcfb597079e4fba6044"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_hokuriku_FY2025.csv",
+      "sha256": "4d4a4732178f18cee50d7d0e3e3f1f74263abea7b6e76dcfb597079e4fba6044"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_kansai_FY2025.csv",
+      "sha256": "4d4a4732178f18cee50d7d0e3e3f1f74263abea7b6e76dcfb597079e4fba6044"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_chugoku_FY2025.csv",
+      "sha256": "6775c312072cad6a5e91495958e535f8ac83f54eaab0a08c25d5057e8b3226aa"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_shikoku_FY2025.csv",
+      "sha256": "84e17096e312e864fc4c79586a6ca4ae526380e84f0e300ebc563da4784e28e5"
+    },
+    {
+      "path": "data/raw/rei/supply_demand/rei_supply_demand_kyushu_FY2025.csv",
+      "sha256": "84e17096e312e864fc4c79586a6ca4ae526380e84f0e300ebc563da4784e28e5"
+    },
+    {
+      "path": "data/raw/rei/power_data/rei_power_data_FY2025.csv",
+      "sha256": "28543d50418cbcc20a068a7dd5ea50ea06008c3859c2791ed7e3075e10c1c28e"
+    },
+    {
+      "path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/generation_with_snapshot_public_records_FY2025.parquet",
+      "sha256": "c31921e7a65613a7356467c8f8308a5ca7519a7b0901ea2218579e016a7a0cf6"
+    },
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_nextday2_FY2025.parquet",
+      "sha256": "3e5888b66cbe8824d155868831baa6773d526089242c43c32702a25ed1d0b514"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/hokkaido_202504_all_original_rows.parquet",
+      "sha256": "8c8abb43dfb88110d5aee5587a6e8c1b3da5aceb90b84a97fbfc19a373e9bc99"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/tohoku_202504_all_original_rows.parquet",
+      "sha256": "5fc2fa982a2956e33797c311833ab65e13f7ef5deff37909ba9c666c06551d91"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/tokyo_actual_202504_all_original_rows.parquet",
+      "sha256": "eb672c52e85df496d5f8147b60dc3f49e49ccc6c7a5f49c587473c7abadf1157"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/hokuriku_202504_all_original_rows.parquet",
+      "sha256": "da836e7a6684f3abb292c1d10e90ca7267fb605e343bb7ff17e9f2566c4ddc90"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/kansai_202504_all_original_rows.parquet",
+      "sha256": "4f37ddae48850bb16e70f40214d3892c48103aa495baa6dc1cce3f04fe989f76"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/chugoku_202504_all_original_rows.parquet",
+      "sha256": "17505e04c1f8848b8c923b39177e4e33f858420a13653a517d9359a0c5074ba9"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/shikoku_202504_all_original_rows.parquet",
+      "sha256": "d5dc478b1ed628da664c611eb6d6a682ebe40d91de4e2342e4f734b3101d74b0"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/kyushu_202504_all_original_rows.parquet",
+      "sha256": "defbe8692efa47fb1e800aeb55736d74952f82e90f9658af6b3c99706045a19e"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/actual_sample_and_plan_candidates.parquet",
+      "sha256": "09dcec05c0d42abf53b0c6301b38405b9066e0c7d34a7717530663e09ffa86e8"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/primary_rei_comparison.parquet",
+      "sha256": "f577899654424fb11fa6ccb076de27993f7e43719fdfb38f65c102ca01525c00"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/nuclear_observed_subset_raw.parquet",
+      "sha256": "3514d86a4638c0fb9e63a58118100e9e86d0c135a2d84e601a5bfab6fe1e4f84"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/hourly_energy_comparison.parquet",
+      "sha256": "06f1afc1c4bb97d4e00526cb76d2e217631dd6bc5cb27d893e6bf59833fdc80c"
+    }
+  ],
+  "nine_area_role_counts": {
+    "adjustable_reference_candidate": 372,
+    "held": 74,
+    "fixed_observed_nuclear_candidate": 32
+  },
+  "outside_nine_area_role_counts": {
+    "adjustable_reference_candidate": 13
+  }
+}
