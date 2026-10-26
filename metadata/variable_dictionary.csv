@@ -1465,3 +1465,21 @@ occto_generation,partial_start_held_count,停止開始が30分コマ途中にあ
 occto_generation,generation_missing_count,元発電量が欠測のunitセル数。参照上限の欠測とは別,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
 occto_generation,held_record_with_known_capacity_count,公表記録保留にかかる既知容量のunitセル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
 occto_generation,unobserved_union_label_count,全期間の観測ラベル集合に属するが当該時刻に元観測行がないラベル数,integer,not_applicable,not_applicable,案A固定版の元観測行・参照容量・snapshot context,specified,Issue #40/RD-022の保存計画診断。地域×30分×条件の件数。全国は沖縄を除く9地域。期間合算時の延べセル数とdistinct設備数を区別
+derived,fixed_output_forecast_mw,同じ翌々日計画断面の固定出力候補,quantity,MW,MW,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。同断面R候補は未確保。今回全null。0ではない
+derived,net_demand_forecast_mw,同境界の需要D−固定出力R,quantity,MW,MW,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。R未確保で全null。自家消費二重控除を禁止
+derived,net_demand_nonpositive,純需要が0以下か,boolean,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。今回R不明で全null。Falseや0件へ置換しない
+derived,fixed_output_status,同断面固定出力の入力状態,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。既存入力から選べない。公表供給力への未計上とは異なる
+derived,demand_boundary_status,需要の自家消費/吸収需要等の境界確認状態,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。公式例はあるがFY2025全地域の個別保証は未確認
+derived,capacity_overlap_status,固定供給と調整供給の設備範囲重複確認,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。空欄/その他13ラベルを推測で分類しない
+derived,fixed_output_entity_status,固定供給の法人帰属確認,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。全法人事前会計と、企業除去時に必要な帰属を区別
+derived,gross_net_balance_status,総需要/純需要の両会計の照合可否,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。残差一致と残差0を区別。実データはR不明で保留
+derived,network_structure_status,保存公表ネットワーク制約の構造入力状態,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。切替前16608コマ数値化。物理的需給成立を意味しない
+derived,constraint_name,同時に適用する元区間/フェンス名称,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。個別10本と北陸の11制約を同時適用。能力の加算禁止
+derived,coefficients_json,各区間の正方向を基準にしたフェンス係数,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。列順EDGESを契約に明記。北陸S−E、中部M+S、関西M+E
+derived,lower_mw,元逆方向の符号を保持した制約下限,quantity,MW,MW,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。運用容量−マージン−広域調整枠。絶対値化/切上げなし
+derived,upper_mw,元順方向の符号を保持した制約上限,quantity,MW,MW,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。保存計画の包絡候補。完全な物理容量の検証済み値ではない
+derived,source_ids_json,制約上下限が参照する元行ID,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。元系統固定ファイルへ追跡。原値・更新/取得時点を保持
+derived,period_basis,制約の保存対象時刻と適用範囲の根拠,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。切替日前までの診断適用。全FY物理設備履歴とは別
+derived,net_demand_lp_status,純需要型の実LP実行可否,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。R/供給会計未確定は保留。企業除去前不成立を認定しない
+derived,real_all_firm_lp_run,企業除去前の実データLPを実行したか（今回False）,boolean,not_applicable,not_applicable,network_time_readiness_FY2025.parquet,specified,Issue #42。構造入力の数値化と需給成立/物理再現を区別
+derived,physical_power_flow_verified,物理潮流による検証を行ったか（今回False）,boolean,not_applicable,not_applicable,network_time_readiness_FY2025.parquet,specified,Issue #42。構造入力の数値化と需給成立/物理再現を区別

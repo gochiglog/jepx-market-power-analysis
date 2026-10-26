@@ -54,7 +54,8 @@
       15,
       17,
       19,
-      40
+      40,
+      42
     ],
     "branch": null
   },
@@ -117,5 +118,14 @@
     "parent_issue": 32,
     "child_issues": [],
     "branch": "issue/feature-40"
+  },
+  "net_demand_network": {
+    "number": 42,
+    "id": 6031622263,
+    "title": "純需要・固定供給の会計と9地域ネットワーク入力の整備",
+    "html_url": "https://github.com/gochiglog/jepx-market-power-analysis/issues/42",
+    "parent_issue": 32,
+    "child_issues": [],
+    "branch": "issue/feature-42"
   }
 }

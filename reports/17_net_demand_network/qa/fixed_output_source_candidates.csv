@@ -1,0 +1,4 @@
+candidate,purpose,url,frequency,forecast_stage,scope,public_FY2025_archive,remaining,action
+一般送配電事業者のFIT特例1出力想定/発電計画,同じ翌々日断面のPV/風力の計画R,https://www.tepco.co.jp/pg/consignment/workshop/information/renewable/fit/20250307_01.html,FY2025翌々日計画は30分48点,前々日想定。前日更新を区別,FIT特例対象。全PV/風力とは限らない,一般公開の年度アーカイブを未確認。参加者向け通知を公開CSVとみなさない,非FIT/自家消費/設備重複/法人役割。既存需要と同じ作成版の保証も必要,今回は候補提示のみ。ログイン/問い合わせ/年間取得なし
+OCCTO出力抑制検証資料・一般送配電事業者の出力制御見通し,限定日・限定時点の計画Rと需要境界の確認,https://www.occto.or.jp/oshirase/shutsuryokuyokusei/,検証対象日、下げ調整力最小時刻等。全日48コマとは限らない,指令時/前日/当日等を個別確認,抑制対象エリア・日・資料の時点,公式公表あり。今回の翌々日全年度の代替ではない,前々日版か、時点・カバレッジが異なる,目的を限定した補助確認候補。非掲載時刻を0にしない
+一般送配電事業者の地域需給実績CSV,別断面の事後会計検算。翌々日Rへの代用はしない,https://www.tepco.co.jp/forecast/html/area_jukyu-j.html,30分、FY2025公開CSVあり,実績・速報/改訂,各事業者の定義する地域送出PV/風力等,東京等公式ページで確認。北海道等は形式を別確認,予測ではない。既存REIも実績補助。断面変更の研究判断が必要,今回は候補提示。年間取得なし

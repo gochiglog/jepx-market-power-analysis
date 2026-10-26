@@ -1,0 +1,32 @@
+version: 20261026_net_demand_network_v1
+decision: RD-023
+timezone: Asia/Tokyo
+periods_per_day: 48
+fixed_R_selected: false
+demand: 翌々日area_demand_forecast_mw; 原41列・取得/更新情報保持
+R: 同計画断面・系統境界の出力。R不明を0にしない
+accounting: D=g+R+I; D−R=g+I。Dの充電/揚水等の境界を確認する
+self_consumption: 自家消費控除済みDには同じ自家消費控除済みRを対にする
+overlap: 固定資産J_Rと調整資産J_Aは交差しない。R出力だけ引いて同じ上限を残さない
+net_objective: 対象地域g+I=lambda(D−R)、他地域N/R/設備上限/制約固定。N<=0は比率保留
+gross_objective: 比較対象g+I+R=lambda D。元λD案を上書きしない
+firm_scope: 全法人の事前会計では地域R、企業除去ではR_i帰属が別途必要。今回帰属未確定
+network_edge_order:
+- 北海道・本州間電力連系設備
+- 相馬双葉幹線
+- 周波数変換設備
+- 三重東近江線
+- 南福光連系所・南福光変電所の連系設備
+- 越前嶺南線
+- 西播東岡山線・山崎智頭線
+- 阿南紀北直流幹線
+- 本四連系線
+- 関門連系線
+network_role: 保存公表制約の地域輸送モデル。PTDF/AC/DC潮流/地域内制約の完全再現ではない
+network_period: FY2025保存値のうちtimestamp_end<=2026-03-13 00:00 JST。切替日以降912コマ保留
+raw_envelope_identity: available_capacity+planned_flow=operating_capacity−margin−wide_area_adjustment
+  (原符号)
+verified_coefficients: 北陸:S−E;中部:M+S;関西:M+E
+real_all_firm_lp_runs: 0
+final_baseline_selected: false
+raw_planned_flow_limitation: 388896行すべて0。数式一致から係数を実証したとはしない。公式図を根拠とする。今回包絡と原空容量は数値一致

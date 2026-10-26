@@ -1,0 +1,36 @@
+{
+  "net_ratio": {
+    "status": "feasible_supplied_scenario",
+    "value": 1.25,
+    "generation_mw": [
+      100.0
+    ],
+    "flows_mw": [],
+    "max_gross_residual_mw": 0.0,
+    "max_net_residual_mw": 0.0
+  },
+  "gross_ratio": {
+    "status": "feasible_supplied_scenario",
+    "value": 1.2,
+    "generation_mw": [
+      100.0
+    ],
+    "flows_mw": [],
+    "max_gross_residual_mw": 0.0,
+    "max_net_residual_mw": 0.0
+  },
+  "negative_net_demand_export": {
+    "status": "feasible_supplied_scenario",
+    "value": null,
+    "generation_mw": [
+      0.0,
+      80.0
+    ],
+    "flows_mw": [
+      20.0
+    ],
+    "max_gross_residual_mw": 0.0,
+    "max_net_residual_mw": 0.0
+  },
+  "role": "人工例のみ。Rを固定した実FY2025計算は0件。"
+}

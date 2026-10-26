@@ -1,0 +1,7 @@
+source_id,registered_raw_files,solar_wind_header_names_json,same_stage_R_selected,reason
+occto_reserve,50,[],False,エリア供給力合計のみ。Rの内訳が独立列にない
+occto_generation,14,[],False,観測実績。原燃種明示PV/風力0、空欄/その他は未推測
+rei_power_data,11,"[""太陽光"", ""太陽光(出力制御)"", ""風力"", ""風力(出力制御)""]",False,燃種別実績の補助表。同じ計画断面の予測ではない
+occto_demand,13,[],False,需要実績。予測Rなし
+hjks_unit,2,[],False,設備/参照容量のsnapshotであり予測出力ではない
+hjks_outage,2,[],False,公表停止イベントであり全地域R予測ではない

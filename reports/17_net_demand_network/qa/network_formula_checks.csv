@@ -1,0 +1,3 @@
+direction,keys,mismatches,formula,nonzero_operand_rows,empirical_coefficient_identification
+順方向,17520,0,f_hokuriku=f_fukumitsu−f_echizen (each forward-positive signed axis),0,False
+逆方向,17520,0,f_hokuriku=f_fukumitsu−f_echizen (each forward-positive signed axis),0,False

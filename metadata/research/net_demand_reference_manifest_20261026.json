@@ -1,0 +1,66 @@
+[
+  {
+    "name": "supply_rules_2024.pdf",
+    "url": "https://www.occto.or.jp/assets/iinkai/chouseiryoku/2024/files/chousei_102_01.pdf",
+    "final_url": "https://www.occto.or.jp/assets/iinkai/chouseiryoku/2024/files/chousei_102_01.pdf",
+    "status": 200,
+    "mime": "application/pdf",
+    "sha256": "a386575aef5fc86da8057b887ed0b7ddef68067eb0cfd3c8ec98f8d41e06566d",
+    "bytes": 3191213,
+    "checked_at": "2026-10-26T10:27:13.267074+09:00",
+    "local_path": "data/interim/research_reference/20261026_net_demand_network/supply_rules_2024.pdf",
+    "original_filename": "chousei_102_01.pdf"
+  },
+  {
+    "name": "BP_4_3.pdf",
+    "url": "https://www.occto.or.jp/occtosystem2/kisaiyouryou/files/BP_hyoujun_kisaiyouryou_ver4.3.pdf",
+    "error": "HTTP Error 404: Not Found",
+    "original_filename": "BP_hyoujun_kisaiyouryou_ver4.3.pdf"
+  },
+  {
+    "name": "self_consumption_2016.pdf",
+    "url": "https://www.occto.or.jp/iinkai/chouseiryoku/2016/files/chousei_jukyu_06_04.pdf",
+    "final_url": "https://www.occto.or.jp/assets/iinkai/chouseiryoku/2016/files/chousei_jukyu_06_04.pdf",
+    "status": 200,
+    "mime": "application/pdf",
+    "sha256": "ca4ea00bed2fb95e9077ddbe7f9f72736f0cb0aa67aaafc682cff51a9b1a04ed",
+    "bytes": 1516544,
+    "checked_at": "2026-10-26T10:27:14.017842+09:00",
+    "local_path": "data/interim/research_reference/20261026_net_demand_network/self_consumption_2016.pdf",
+    "original_filename": "chousei_jukyu_06_04.pdf"
+  },
+  {
+    "name": "system_cutover_2026.pdf",
+    "url": "https://www.occto.or.jp/assets/institution/keitoujouhou/202602keitou_jyouhou_nakachiiki.pdf",
+    "final_url": "https://www.occto.or.jp/assets/institution/keitoujouhou/202602keitou_jyouhou_nakachiiki.pdf",
+    "status": 200,
+    "mime": "application/pdf",
+    "sha256": "441eaaf1aa45e4372056be2385680a4f3d554340ff2362ef41ed6cfe4cd80f77",
+    "bytes": 912768,
+    "checked_at": "2026-10-26T10:27:14.452355+09:00",
+    "local_path": "data/interim/research_reference/20261026_net_demand_network/system_cutover_2026.pdf",
+    "original_filename": "202602keitou_jyouhou_nakachiiki.pdf"
+  },
+  {
+    "name": "system_manual_2025.pdf",
+    "url": "https://www.occto.or.jp/assets/occtosystem2/files/250306_keitoujouhou.pdf",
+    "final_url": "https://www.occto.or.jp/assets/occtosystem2/files/250306_keitoujouhou.pdf",
+    "status": 200,
+    "mime": "application/pdf",
+    "sha256": "dc420abf24ccce2cc6eff2686cc21955fce97cbae11245ee39e53a7ee474b3d2",
+    "bytes": 6810764,
+    "checked_at": "2026-10-26T10:27:14.977629+09:00",
+    "local_path": "data/interim/research_reference/20261026_net_demand_network/system_manual_2025.pdf",
+    "original_filename": "250306_keitoujouhou.pdf"
+  },
+  {
+    "name": "central_loop.pdf",
+    "url": "https://www.occto.or.jp/assets/chousei_114_02.pdf",
+    "retrieved_on": "2026-10-26",
+    "downloaded_at": null,
+    "local_path": "data/interim/research_reference/20261026_net_demand_network/central_loop.pdf",
+    "sha256": "e79a0b3c70367019f160d10920f4d9405027f2b2f1b8fc0550cb7bda6175b277",
+    "bytes": 1064966,
+    "original_filename": "chousei_114_02.pdf"
+  }
+]

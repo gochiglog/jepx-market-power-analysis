@@ -1,0 +1,10 @@
+scenario,nine_area_times,reference_scope_fully_defined_times,fixed_output_defined_times,real_all_firm_lp_runs,reason
+reference_no_deduction,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+58852_early__full_stop_zero,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+58852_early__mean_reduction,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+58852_late__full_stop_zero,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+58852_late__mean_reduction,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+7828_early__full_stop_zero,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+7828_early__mean_reduction,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+7828_late__full_stop_zero,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
+7828_late__mean_reduction,17520,0,0,0,fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope
