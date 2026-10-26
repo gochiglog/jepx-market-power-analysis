@@ -92,3 +92,25 @@ def interpret_subset_result(feasible):
         if feasible
         else "subset_infeasible_no_regionwide_shortage_conclusion"
     )
+
+
+def select_candidate_period(regional, candidate_times):
+    """保存形式の違いを明示的に正規化し、全条件・地域の期待件数を検査する。"""
+    left, right = regional.copy(), candidate_times.copy()
+    for frame in (left, right):
+        frame["join_delivery_date"] = pd.to_datetime(frame["delivery_date"], errors="raise").dt.date
+    keys = ["join_delivery_date", "period"]
+    if right.duplicated(keys).any():
+        raise ValueError("対象時刻の重複")
+    joined = left.merge(
+        right[keys], on=keys, how="left", validate="many_to_one", indicator="period_join"
+    )
+    qa = joined["period_join"].value_counts().to_dict()
+    selected = joined[joined["period_join"].eq("both")].copy()
+    pairs = left[["supply_scenario", "area"]].drop_duplicates()
+    counts = selected.groupby(["supply_scenario", "area"]).size()
+    if len(counts) != len(pairs) or not counts.eq(len(right)).all():
+        raise ValueError("切替前の条件×地域×時刻の結合件数不一致")
+    if selected.duplicated(["supply_scenario", "area", *keys]).any():
+        raise ValueError("地域条件キー重複")
+    return selected, qa

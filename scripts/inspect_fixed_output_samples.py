@@ -14,6 +14,7 @@ from src.fixed_output_feasibility import (  # noqa: E402
     decode_csv,
     inspect_half_hours,
     limited_supply_register,
+    select_candidate_period,
 )
 
 
@@ -218,15 +219,7 @@ def run(root, output):
     )
     regional = pd.read_parquet(regional_path)
     regional = regional[regional["area"].ne("沖縄")]
-    selected = regional.merge(
-        candidate_times[["delivery_date", "period"]],
-        on=["delivery_date", "period"],
-        how="left",
-        validate="many_to_one",
-        indicator="period_join",
-    )
-    audit["network_period_join"] = selected["period_join"].value_counts().to_dict()
-    selected = selected[selected["period_join"].eq("both")]
+    selected, audit["network_period_join"] = select_candidate_period(regional, candidate_times)
     summaries = []
     for (scenario, area), group in selected.groupby(["supply_scenario", "area"]):
         x = group["adjusted_upper_partial_mw"].dropna()

@@ -59,8 +59,8 @@ CSV3件は全日48コマ、キー重複0、数値空欄0・非数値0です。�
 ## 成果物と検証
 
 追加原本：`data/interim/research_reference/20261026_R_feasibility_v1/`。取得URL・日時・HTTP情報・元名・SHAは[取得記録](../../metadata/research/R_feasibility_reference_manifest_20261026.json)。通常の公開HTTPだけを使用しました。
-サンプル検査表：`data/interim/occto/fixed_output_feasibility/20261026_samples_v2/`。元CSV列、時刻追加、Excel全セルを保存。v1は出力パス処理の失敗による途中成果で、採用版ではありません。固定既存版の置換はしていません。
+サンプル検査表：`data/interim/occto/fixed_output_feasibility/20261026_samples_v3/`。元CSV列、時刻追加、Excel全セルを保存。v1/v2は途中検査の出力で、採用版ではありません。v3では保存日付型の違いを明示正規化し、9条件×9地域×16,608＝1,345,248行の期間結合を検証しました。切替後73,872行は理由付きの期間外です。固定既存版の置換はしていません。
 
-再検査：`python scripts/inspect_fixed_output_samples.py --output /path/to/new-directory`。既存出力先を拒否します。[QA](qa/sample_audit.json)に元セル保持・キー・時刻・欠損・予測版の限界を記録。研究データはGit管理外です。pytest **301 passed**、ruff通過。metadata更新後の関連23テストも通過しました。登録raw203件・参考raw39件・既存固定成果物100件・新規参考22件のSHAを照合しました。詳細は[検証記録](qa/verification.json)。問い合わせ・回帰・最終baseline確定・PR mergeは行いません。
+再検査：`python scripts/inspect_fixed_output_samples.py --output /path/to/new-directory`。既存出力先を拒否します。[QA](qa/sample_audit.json)に元セル保持・キー・時刻・欠損・予測版の限界を記録。研究データはGit管理外です。pytest **302 passed**、ruff通過。metadata更新後の関連23テストも通過しました。登録raw203件・参考raw39件・既存固定成果物100件・新規参考22件のSHAを照合しました。詳細は[検証記録](qa/verification.json)。問い合わせ・回帰・最終baseline確定・PR mergeは行いません。
 
 公式出典：[北陸FIT公表](https://www.rikuden.co.jp/nw_jyukyudata/tokurei1_jisseki.html)、[中部特例発電](https://powergrid.chuden.co.jp/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/)、[東京実績](https://www.tepco.co.jp/forecast/html/area_jukyu-j.html)、[四国予測の定義](https://www.yonden.co.jp/nw/denkiyoho/supply_demand/today_tomorrow_ex.html)、[関西検証の配布ページ](https://www.occto.or.jp/news/oshirase_shutsuryokuyokusei_2025_250827_shutsuryokuyokusei_kansai.html)。確認日2026-10-26。関西の6列はPDF物理p1の画像とも照合しました。

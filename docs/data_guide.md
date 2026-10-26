@@ -18,4 +18,4 @@
 
 ## 公開R候補の少数サンプル（工程18）
 
-[実ファイルの点検結果](../reports/18_fixed_output_feasibility/README.md)。取得原本は `data/interim/research_reference/20261026_R_feasibility_v1/`、検査表は `data/interim/occto/fixed_output_feasibility/20261026_samples_v2/`。正式な純需要DBではなく、予測断面・FIT範囲を確認する参照資料です。旧固定版は保持しています。
+[実ファイルの点検結果](../reports/18_fixed_output_feasibility/README.md)。取得原本は `data/interim/research_reference/20261026_R_feasibility_v1/`、検査表は `data/interim/occto/fixed_output_feasibility/20261026_samples_v3/`。正式な純需要DBではなく、予測断面・FIT範囲を確認する参照資料です。旧固定版は保持しています。

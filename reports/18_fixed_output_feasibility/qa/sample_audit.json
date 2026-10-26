@@ -735,9 +735,9 @@
     "duplicated": 0
   },
   "network_period_join": {
-    "left_only": 1419120,
-    "right_only": 0,
-    "both": 0
+    "both": 1345248,
+    "left_only": 73872,
+    "right_only": 0
   },
   "candidate_period": {
     "slots": 16608,
@@ -769,19 +769,19 @@
   ],
   "outputs": [
     {
-      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/hokuriku_fit_202504_06_inspected.parquet",
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v3/hokuriku_fit_202504_06_inspected.parquet",
       "sha256": "296ab6429df336b340762a485ffc1ef0d94ca0ba68cf74d43e2efcdb5d419ec0"
     },
     {
-      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/tokyo_actual_202504_inspected.parquet",
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v3/tokyo_actual_202504_inspected.parquet",
       "sha256": "b56f39da8317ceec6e5c2d291cb3636ed118de90d454b550eec04bdb64521a50"
     },
     {
-      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/shikoku_forecast_today_inspected.parquet",
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v3/shikoku_forecast_today_inspected.parquet",
       "sha256": "0a1f4e1313012860340352f1130c71362d14196cd6ea6ca6cc50ef43a12a5f33"
     },
     {
-      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/chubu_workbook_all_cells.parquet",
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v3/chubu_workbook_all_cells.parquet",
       "sha256": "33370660bb102e3cd737a681378a9fde4837e73fd25b9d1265423aa1bae594ad"
     }
   ],

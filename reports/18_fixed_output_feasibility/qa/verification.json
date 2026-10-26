@@ -269,11 +269,13 @@
   "sample_outputs_hash_verified": 4,
   "real_network_lp_runs": 0,
   "tests": {
-    "pytest_passed": 301,
+    "pytest_passed": 302,
     "ruff": "passed",
     "net_demand_network_independent_verification": "passed",
     "rsi_computed": false,
     "post_metadata_targeted_tests_passed": 23,
-    "fixed_output_sample_qa": "passed"
+    "fixed_output_sample_qa": "passed",
+    "precutover_join_matched": 1345248,
+    "precutover_join_outside_period": 73872
   }
 }

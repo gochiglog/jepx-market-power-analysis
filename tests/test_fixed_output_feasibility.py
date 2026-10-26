@@ -84,3 +84,30 @@ def test_real_hokuriku_sample_91_days_48_periods():
     assert qa["non_numeric_cells"] == []
     assert list(result.columns[:5]) == rows[0]
     assert "作成" not in "".join(rows[0])  # 時刻欄のないファイルに予測断面を付与しない。
+
+
+def test_mixed_date_storage_join_checks_all_pairs():
+    from datetime import date
+
+    from src.fixed_output_feasibility import select_candidate_period
+
+    left = pd.DataFrame(
+        {
+            "area": ["北海道", "東北", "北海道", "東北"],
+            "supply_scenario": ["base"] * 4,
+            "delivery_date": [
+                date(2025, 4, 1),
+                date(2025, 4, 1),
+                date(2026, 3, 31),
+                date(2026, 3, 31),
+            ],
+            "period": [1] * 4,
+        }
+    )
+    right = pd.DataFrame({"delivery_date": ["2025-04-01"], "period": [1]})
+    selected, qa = select_candidate_period(left, right)
+    assert len(selected) == 2
+    assert qa["both"] == 2 and qa["left_only"] == 2
+    # 条件の一部だけ欠けても成功扱いにしない。
+    with pytest.raises(ValueError):
+        select_candidate_period(left.iloc[1:], right)
