@@ -37,3 +37,8 @@
 ## 4月試行の比較・図（工程22）
 
 [図と短い説明](../reports/22_april_trial_comparison/README.md)、[実行済みノートブック06](../notebooks/06_april_trial_comparison.ipynb)。比較データは `data/interim/occto/april_trial_comparison/20261027_comparison_v1/`。工程21固定版は保持し、全時刻の状態・停止条件の対比較・企業除去後の9地域同時成立を別表にしています。新しい全国RSIや最終baselineではありません。
+
+
+## 17条件内の一致・送電包絡解除（工程23）
+
+[図と説明](../reports/23_april_constraint_diagnosis/README.md)、[ノートブック07](../notebooks/07_april_constraint_diagnosis.ipynb)。新しい比較版は `data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/`。全時刻の一致区分、包絡解除比較14条件の同時成立/倍率、重点4法人の地域別供給範囲と診断専用過不足を保存します。14は送電解除の比較条件数で、新しい停止条件ではありません。旧固定版と17供給条件は不変です。

@@ -1,0 +1,385 @@
+{
+  "version": "20261027_constraints_v2",
+  "inputs": [
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/nine_area_simultaneous_after_removal.parquet",
+      "sha256": "9abff0b12713d5d757e209c78d5d655138adc68d965882657953427e8875b326"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/regional_trial_uppers.parquet",
+      "sha256": "09df768c127a6b1ffb40110cb15679c5eabae82c7c91b98d34c657fbedaca278"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646"
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/legacy_network_constraints_FY2025.parquet",
+      "sha256": "b50a1e634ebb165e2685d45fa7130a4a993ffb00943abce7401a2a16a48f5df8"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/asset_attribution_proxy.parquet",
+      "sha256": "cae0a50f743d5c7efe98c1b3742566863b5e6b21ea8135d1d3ed8335afbc360b"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__full_stop_zero.parquet",
+      "sha256": "729e9503f3278c5b6907b457720c19a1f25df898e806b359abe977cfaf2b34ba"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "0721a907e9879a415cc2707f1d5b762443b8c8aa0a878d1019a5b3ef33698dbb"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__mean_reduction.parquet",
+      "sha256": "10b7da70c63c1e1daa891727d371598c22531d2907b6b6c58853788e148f0b3e"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "f449c4855951515cc3c7fc228045d0b0782dc80989ec4b85e8ff3c149a5a8047"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__full_stop_zero.parquet",
+      "sha256": "0db16fbeafd369d34bd92476fb16a7d24bf322b2ffc2f286abb480b5e5e24295"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "b779976b0ff74d64e57341ce30e35220e4e595efc80fd33d17040984669f40fa"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__mean_reduction.parquet",
+      "sha256": "279115866136a08f9801f90b07348ac16d06be14d68230c5b6f7b7fdc667c5ff"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "1e4d9b6bcb1b74e9e8ff18d5f0e7caf2c84cf5194fdd61741b02621c3a34ebcf"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__full_stop_zero.parquet",
+      "sha256": "a171d4b68bb8b5ff289a39ab42c8c7c04988b88b1e42ac1bdd23663326543b0c"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "0848c2f6b05d4653bcb855fd6616af14921271f25d83441e1c73d924d5d440d4"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__mean_reduction.parquet",
+      "sha256": "f23f4859f5b9794254eae376d3989ef5b2a2877e5e06d0966bc3ee96dcbde17d"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "8c82914616819d5ed2555df14af9ec9e6700efc66c74b64b00ccc257b45df970"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__full_stop_zero.parquet",
+      "sha256": "81c564d990803a78e9e517d9565449497863de128c82894a39403429733ec06f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "4d2ff054cfad7117d664f5f520656d25f9d006c9890339c91704fd43f570478f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__mean_reduction.parquet",
+      "sha256": "ad90f8555ec3f3fadd414ca8c0d29dea582f33101621f6c905fc65e834251585"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "c5dc11e52cbecb85d84d3315fe11b0eaa740501d1273d6e0a8ac1a3dbacdabdb"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/reference_no_deduction.parquet",
+      "sha256": "356bd6ffd94cd092e51940ec1baf21acb0cfa11e8c05b05c1f1771abcbbc5e5c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/condition_consistency_all_times.parquet",
+      "sha256": "83007bcac02480b726c3aef78260ab743d030b9649ac7358f31ec198cab6535a",
+      "rows": 23040
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/paired_simultaneous_all_times.parquet",
+      "sha256": "82dce309bc40b34d4e56cdd2d667abeaccdb68841b6daa968af16a742c63193d",
+      "rows": 184320
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/simultaneous_input_scope_diagnosis.parquet",
+      "sha256": "0042b3f36deddee50d3260d140a50837d145a1b62a63e6c514f6f0396a3ea192",
+      "rows": 391680
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/constraint_release_simultaneous_all_times.parquet",
+      "sha256": "b5569aef0197757ccabfa30d081511e198d2a2a2f10a5b8d1c91ef7e0eb428e5",
+      "rows": 80640
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/constraint_release_multipliers_all_times.parquet",
+      "sha256": "116ae3f9ba4b60aabefcdf5c2ab202f7685f519da13270c1fd4bc2fc705d1ac1",
+      "rows": 100800
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/focus_regional_supply_scope_all_times.parquet",
+      "sha256": "2b4936d316c008975a0cd8a4fc512d907ff76c86d8a599993d45e89f426e5a2b",
+      "rows": 881280
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/supply_scope_decomposition_all_times.parquet",
+      "sha256": "2db0888818850d80cc75d94a51ec7660ce87d28281444e1672c3f9fe4e0535a5",
+      "rows": 414720
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/focus_diagnostic_slacks_all_infeasible.parquet",
+      "sha256": "d7c33836de909ff0f8f32525e93c6b1b134a5760bb41665e8a441e9fbb73b799",
+      "rows": 88173
+    }
+  ],
+  "all17_condition_time_rows": 23040,
+  "stop_pair_rows": 184320,
+  "release_cases": 14,
+  "release_simultaneous_rows": 80640,
+  "release_multiplier_rows": 100800,
+  "regional_supply_scope_rows": 881280,
+  "new_lp_calls": 169456,
+  "joins_match_rate": 1.0,
+  "unmatched": 0,
+  "silent_drop": 0,
+  "raw_snapshot_capacity_non_numeric_count": 0,
+  "fixed_R_removed": false,
+  "prices_used_for_selection": false,
+  "formal_rsi_or_final_baseline": false,
+  "supply_scope_decomposition_rows": 414720,
+  "slack_unique_lp_calls": 50908,
+  "slack_frames": 88173,
+  "return_pair_applicable_match_rate": 1.0,
+  "return_pair_all_rows_match_rate": 0.47058823529411764,
+  "return_pair_not_applicable_rows": 466560,
+  "purpose_ja": "4月17条件内の判定一致、既存11組の上下包絡解除と限定供給範囲の診断",
+  "timezone": "Asia/Tokyo",
+  "period_minutes": 30,
+  "periods_per_delivery_date": 48,
+  "original_versions": [
+    "20261027_adjustable_removal_v3",
+    "20261027_comparison_v1"
+  ],
+  "final_baseline_adopted": false,
+  "diagnosis_does_not_identify_actual_pivotality": true,
+  "figures": [
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/01_all17_removal_failure.pdf",
+      "sha256": "3f14961fbf8c01f05888046b16684701941d4fa6ca0e23da30d82311853e11b9",
+      "bytes": 86141
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/01_all17_removal_failure.png",
+      "sha256": "ff48b5c9e228aa2aaf592539f511daeee1c3b95a0829c6f7bbeff35c941e7398",
+      "bytes": 917765
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/02_condition_consistency.pdf",
+      "sha256": "d174c13f053719a19244e91fc25f4855d8441e09c5021e94b295cdf815890b9d",
+      "bytes": 54265
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/02_condition_consistency.png",
+      "sha256": "f622e2dd0cbc341c16e029ab1be19ecd59aaa1f98db86db2c7ba0076aac30300",
+      "bytes": 104921
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/03_constraint_release.pdf",
+      "sha256": "c53da1c2f95ee806e4b10ea2115c6297bad849f7c8883b598299e12820cca1d2",
+      "bytes": 76924
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/03_constraint_release.png",
+      "sha256": "34af3066111b665489730f39cd6140519e2fd8de3c66503ed8fb8edcd5c6979d",
+      "bytes": 189883
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/04_focus_time_states.pdf",
+      "sha256": "617069f25f544d755e6f34d9db016e2601ff2045d54af1ac6b2593bbff4110fd",
+      "bytes": 48454
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/figures/04_focus_time_states.png",
+      "sha256": "516f4085174d6355deef3693b2108ab211d6142f654d67c57272a4885579b37d",
+      "bytes": 92379
+    }
+  ],
+  "reports": [
+    {
+      "path": "reports/23_april_constraint_diagnosis/README.md",
+      "sha256": "6ccfb72939b2844ec7a927c428348e553f9d8f7dcb11af28fd266c36ba697b1d",
+      "bytes": 19833
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/all17_simultaneous_summary.csv",
+      "sha256": "5d552a55b0b662afad117532910a5ea277216af276839e6b68bbf9a03ee6939f",
+      "bytes": 67444
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/all_output_null_counts.csv",
+      "sha256": "9d8edd9313b6afa838d9f440351772498379274eda54eefbe0dbe4e38935b83d",
+      "bytes": 10631
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/condition_consistency_counts.csv",
+      "sha256": "e043fe7c8b1f375d3bed7004b61338d1fa9d169e583c502f45a3a5d1b9cad564",
+      "bytes": 3435
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/constraint_direction_scope.csv",
+      "sha256": "1f2a1e84b14e6ca5fca89b07c6f0cb976f83afaa17daeb38861589dbc24c03d2",
+      "bytes": 2474
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/figure_manifest.json",
+      "sha256": "28209a4abab82bf53c38eeb436fc63403c9dd2d84f2c2e1ecf7d9dec75e918c1",
+      "bytes": 2002
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/focus_slack_diagnosis_counts.csv",
+      "sha256": "01af9cc5e045abcc0ff3162c537ef36a5435aec808542057d527ea5f7c4c5534",
+      "bytes": 29263
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/independent_flow_only_samples.csv",
+      "sha256": "d0ba38a99286eb24433b8034592580257022dfa0accb1b96c779ad10c50ef1f7",
+      "bytes": 9893
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/independent_validation.json",
+      "sha256": "d6542df77ccf8d224b69e3dbb602d617a054aa7bbbe9d155f633639a8e5f6189",
+      "bytes": 884
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/output_column_dictionary.csv",
+      "sha256": "1bc51dcc262fb289a44f5d743a0ccc1b47339eed6557ed39148b17fb2a832681",
+      "bytes": 29079
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/overlapping_consistency_flags.csv",
+      "sha256": "663197909f2f728009d632e22e89921e991a7aa46b99bf266719497b17fed80f",
+      "bytes": 755
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/release_multiplier_status_transitions.csv",
+      "sha256": "940fff7c826029c637429716bc5187b9e5b10b994cc2e64bb916eb48576b8df3",
+      "bytes": 9852
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/release_multiplier_summary.csv",
+      "sha256": "b63ecdd1cc84aa9211b83ffe14dc7b689d496b5b9d4766b8e389c10814d91e4e",
+      "bytes": 6471
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/release_registry.csv",
+      "sha256": "efb2c4931bfefe5d3830cee00e966bf3970b25c285e7c16719aebe00a7bf0604",
+      "bytes": 1292
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/release_simultaneous_summary.csv",
+      "sha256": "656d25194e1a4d758f66f696b68d05c7afe71cd3dcd33f35a10bb2c35c3baf45",
+      "bytes": 2787
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/representative_constraints.csv",
+      "sha256": "67bcbcb780317e8e051abb3833cf3e1f29f9c3320dae7550613041a92efee825",
+      "bytes": 4163
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/representative_cut_checks.csv",
+      "sha256": "39a25fb3c01b502bfc685b13073f4f0c48a94f8cadcea5840a02bc8a5af375fd",
+      "bytes": 559
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/representative_regional_account.csv",
+      "sha256": "bf1d3c36bb7fd18b9eff518610f4503fb9aa8b6709897f0cd07fb22f2dff0199",
+      "bytes": 2959
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/representative_selection.csv",
+      "sha256": "21afa0a0f54884657dd24a4370e7f1e968c4c11a269e61b2cf2c91efc55ad454",
+      "bytes": 696
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/return_pair_join_statistics.csv",
+      "sha256": "7e849887278758c82dc7a6dde314bc3d2faa16f86bf057e776652f666d77c0b0",
+      "bytes": 1020
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/run_audit.json",
+      "sha256": "589433e7892649f041b938497821cb3441d3f0271ab54325186fffc18d96b082",
+      "bytes": 8252
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/stop_pair_simultaneous_summary.csv",
+      "sha256": "62d6160fe2551c8d0e7bae112872302c17fb063271e6bff201531826fa507e6d",
+      "bytes": 9652
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/supply_decomposition_summary.csv",
+      "sha256": "8d3cc1da8f33a7fb83d584453e5652e4552b3bc95794de71a6b686fc6e3876f6",
+      "bytes": 5652
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/supply_network_diagnosis_counts.csv",
+      "sha256": "57ab89ccc83a2155f01ce2f866b60f606216f25d14999f6f6e00c7c7903c6650",
+      "bytes": 93168
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/supply_scope_summary.csv",
+      "sha256": "1c5f7e35559cbf230a827450dbb382199117af0185fca9a73c0ee2a5e902321b",
+      "bytes": 10209
+    },
+    {
+      "path": "reports/23_april_constraint_diagnosis/qa/verification.json",
+      "sha256": "e57fff3cd21c0eb696ab04141c4f58115b4c3c3e13cd41b4b29f9e09ff5e9531",
+      "bytes": 27871
+    }
+  ],
+  "notebook": {
+    "path": "notebooks/07_april_constraint_diagnosis.ipynb",
+    "sha256": "42c37af0bec0271b5d674fbd0dfe77e61070b3b88c5ee7f98043306c08795a1d",
+    "bytes": 1979587
+  },
+  "implementation": [
+    {
+      "path": "src/april_constraint_diagnosis.py",
+      "sha256": "1afd23018f7b7ae7f180fe0d0014f2dd6f9e3a13308db6fd3702360c971f8b8f",
+      "bytes": 9408
+    },
+    {
+      "path": "src/april_constraint_figures.py",
+      "sha256": "0f52024569d115db0d603a4f883138787b90bcc97cc3ca249bd2f294f52b77db",
+      "bytes": 9544
+    },
+    {
+      "path": "scripts/diagnose_april_constraints.py",
+      "sha256": "5c1612dffaefc19b2e3abbcfd6c40c25ca58b617f4a08f1d8097d3af27eab592",
+      "bytes": 33074
+    },
+    {
+      "path": "scripts/diagnose_april_constraint_slacks.py",
+      "sha256": "69af25d94f14259eae424774ad955ea51941b85ffe8c64b5e878ba60d3609ab9",
+      "bytes": 5741
+    },
+    {
+      "path": "scripts/plot_april_constraints.py",
+      "sha256": "99e003ef9d28c55f05fd9029854dc4f78fe9e608ab0afbc3eb750397db3c939b",
+      "bytes": 426
+    },
+    {
+      "path": "tests/test_april_constraint_diagnosis.py",
+      "sha256": "9b2d219b108eadd9ae0c6e05a901acd30f99e7c9c5dcdb230f644f4536596ba5",
+      "bytes": 6264
+    }
+  ],
+  "reproduction_commands": [
+    "diagnose_april_constraints.py",
+    "diagnose_april_constraint_slacks.py",
+    "plot_april_constraints.py"
+  ]
+}

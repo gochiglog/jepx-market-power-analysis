@@ -1,0 +1,17 @@
+network_scenario,entity_code,time_keys,comparable_variation_times,all17_baseline_infeasible
+no_transmission_bounds,chugoku,1440,134,0
+no_transmission_bounds,hokkaido,1440,92,0
+no_transmission_bounds,hokuriku,1440,96,0
+no_transmission_bounds,jera,1440,830,0
+no_transmission_bounds,kansai,1440,248,0
+no_transmission_bounds,kyushu,1440,165,0
+no_transmission_bounds,shikoku,1440,60,0
+no_transmission_bounds,tohoku,1440,132,0
+saved_plan_constraints,chugoku,1440,82,10
+saved_plan_constraints,hokkaido,1440,0,10
+saved_plan_constraints,hokuriku,1440,2,10
+saved_plan_constraints,jera,1440,113,10
+saved_plan_constraints,kansai,1440,582,10
+saved_plan_constraints,kyushu,1440,180,10
+saved_plan_constraints,shikoku,1440,16,10
+saved_plan_constraints,tohoku,1440,351,10
