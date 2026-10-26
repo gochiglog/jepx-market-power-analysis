@@ -1,0 +1,10 @@
+area,official_url,FY2025_history,grain,stage_and_scope,verification_status,limitation
+北海道,https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/index.html,FY2025 ZIPの公開リンク確認。未取得,30分,FIT特例①の計画想定。D-2 16時/ D-1 6時の2通知あり,公開履歴リンク確認／予測版未確認,地域全PV風力と同一とは未確認。年度ZIPは取得しない
+東北,https://nw.tohoku-epco.co.jp/consignment/fit/,FY2025 CSVリンク確認。未取得,30分は方法資料に記載,FIT特例①。公開列・予測作成時刻は未点検,公開履歴リンク確認／予測版未確認,遡及修正の可能性を公式ページが記載
+東京,https://www.tepco.co.jp/forecast/html/fit_data-j.html,FY2025 CSV公開リンク。2026-05-01更新表示,元ファイル未点検,特例契約者等の発電計画の実績。実発電と区別,公開履歴リンク確認／予測版未確認,年度CSV未取得。地域全再エネ出力に拡張しない
+中部,https://powergrid.chuden.co.jp/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/,FY2025各月リンク。2025-04のみ取得,30分48点。kWh,ワークシート名は前日想定／推定実績,公開数値確認／前日と明記,翌々日へ転用しない。特例発電範囲。2026-01～03が2026年度見出し下なので日付で判断
+北陸,https://www.rikuden.co.jp/nw_jyukyudata/tokurei1_jisseki.html,FY2025全4四半期リンク。4～6月のみ取得,30分48点。kWh,FIT1想定／実績。CSVに予測作成時刻なし,公開数値確認／D-2かD-1か未確認,公表名称はFIT1。方法資料のエリア全体という説明だけで全PV風力の網羅性を確定しない
+関西,https://www.kansai-td.co.jp/consignment/disclosure/pdf/fit_1.pdf,今回FIT歴史数値ファイルの所在は未確認,方法資料は30分48点,方法資料はFIT①の前々日／FIT③の一部は前日,公式検索で方法確認／年度数値未確認,非公開確認ではない。PDF原本未取得の確認水準を保持
+中国,https://www.energia.co.jp/nw/service/retailer/data/fit/,現行CSVリンクと過年度リンク確認。FY2025の収録範囲未点検,元ファイル未点検,FIT①翌日計画の想定／実績,公開配布口確認／FY2025範囲未確認,過去分リンクは2023年度以前。現行ファイルにFY2025がないとは判断しない
+四国,https://www.yonden.co.jp/nw/renewable_energy/data/value.html,FY2025の太陽光・風力CSV各リンク確認。未取得,元ファイル未点検,特例発電計画の想定／実績,公開履歴リンク確認／予測版未確認,地域全PV風力へ拡張しない
+九州,https://www.kyuden.co.jp/td/service/wheeling/outline.html,FY2025全4四半期の配布リンク確認。未取得,元ファイル未点検,FIT特例①太陽光・風力の想定／実績,公開履歴リンク確認／予測版未確認,対象外FIT③・FIP等の包含は未確認

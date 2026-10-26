@@ -14,3 +14,8 @@
 ## 純需要の入力確認（工程17）
 
 [需要・固定供給の会計と制約](../reports/17_net_demand_network/README.md)。新しい診断入力は `data/interim/occto/net_demand_network/20261026_diagnostic_v1/`。需要原値は保持し、Rと純需要は未確定nullです。純需要の完成DBではありません。係数の数値化と実際の需給成立も区別します。既存基本市場表・案A・Issue #40の成果物は変更していません。
+
+
+## 公開R候補の少数サンプル（工程18）
+
+[実ファイルの点検結果](../reports/18_fixed_output_feasibility/README.md)。取得原本は `data/interim/research_reference/20261026_R_feasibility_v1/`、検査表は `data/interim/occto/fixed_output_feasibility/20261026_samples_v2/`。正式な純需要DBではなく、予測断面・FIT範囲を確認する参照資料です。旧固定版は保持しています。

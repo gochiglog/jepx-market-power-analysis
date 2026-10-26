@@ -1483,3 +1483,7 @@ derived,period_basis,制約の保存対象時刻と適用範囲の根拠,string,
 derived,net_demand_lp_status,純需要型の実LP実行可否,string,not_applicable,not_applicable,式と元列はreports/17_net_demand_network/qa/formula_data_map.csv,specified,Issue #42の診断/仕様。最終baseline未確定。R/供給会計未確定は保留。企業除去前不成立を認定しない
 derived,real_all_firm_lp_run,企業除去前の実データLPを実行したか（今回False）,boolean,not_applicable,not_applicable,network_time_readiness_FY2025.parquet,specified,Issue #42。構造入力の数値化と需給成立/物理再現を区別
 derived,physical_power_flow_verified,物理潮流による検証を行ったか（今回False）,boolean,not_applicable,not_applicable,network_time_readiness_FY2025.parquet,specified,Issue #42。構造入力の数値化と需給成立/物理再現を区別
+derived,pv_wind_disjoint_by_raw_fuel,元燃種でPV・風力と区別できること。契約・計測範囲の完全確認ではない,boolean,not_applicable,not_applicable,発電方式・燃種,specified,工程18限定集合の候補。空欄/その他はFalseで、非再エネと推定しない
+derived,limited_scope_status,限定供給集合の候補/容量設備保留/燃種範囲保留,string,not_applicable,not_applicable,既存点検済み対応表と原燃種,specified,491ラベルを保持。unknown_capacity_assumed_zeroは全False
+derived,sample_timestamp_start,公開サンプルの30分開始時刻,datetime,not_applicable,not_applicable,元DATE/TIMEまたはDATE_TIME,specified,Asia/Tokyo。予測作成時刻ではない
+derived,sample_period,公開サンプルの受渡コマ,integer,not_applicable,not_applicable,元時刻列,specified,1～48。原列を保持。正式Rへの採用ではない

@@ -1,0 +1,789 @@
+{
+  "samples": {
+    "hokuriku_fit_202504_06.csv": {
+      "rows": 4368,
+      "days": 91,
+      "first_start": "2025-04-01 00:00:00+09:00",
+      "last_end": "2025-07-01 00:00:00+09:00",
+      "duplicate_keys": 0,
+      "incomplete_days": [],
+      "missing_numeric_cells": {
+        "FIT1_太陽光想定値［kWh］": 0,
+        "FIT1_太陽光実績値［kWh］": 0,
+        "FIT1_風力想定値［kWh］": 0,
+        "FIT1_風力実績値［kWh］": 0
+      },
+      "non_numeric_cells": [],
+      "numeric_summary": {
+        "FIT1_太陽光想定値［kWh］": {
+          "minimum": "0",
+          "maximum": "389645"
+        },
+        "FIT1_太陽光実績値［kWh］": {
+          "minimum": "0",
+          "maximum": "442533"
+        },
+        "FIT1_風力想定値［kWh］": {
+          "minimum": "7",
+          "maximum": "9566"
+        },
+        "FIT1_風力実績値［kWh］": {
+          "minimum": "0",
+          "maximum": "14800"
+        }
+      },
+      "encoding": "cp932",
+      "utf8_bom": false,
+      "columns": [
+        "DATE_TIME",
+        "FIT1_太陽光想定値［kWh］",
+        "FIT1_太陽光実績値［kWh］",
+        "FIT1_風力想定値［kWh］",
+        "FIT1_風力実績値［kWh］"
+      ],
+      "header_rows": [
+        [
+          "DATE_TIME",
+          "FIT1_太陽光想定値［kWh］",
+          "FIT1_太陽光実績値［kWh］",
+          "FIT1_風力想定値［kWh］",
+          "FIT1_風力実績値［kWh］"
+        ]
+      ],
+      "prediction_issue_timestamp_in_data": false
+    },
+    "tokyo_actual_202504.csv": {
+      "rows": 1440,
+      "days": 30,
+      "first_start": "2025-04-01 00:00:00+09:00",
+      "last_end": "2025-05-01 00:00:00+09:00",
+      "duplicate_keys": 0,
+      "incomplete_days": [],
+      "missing_numeric_cells": {
+        "エリア需要": 0,
+        "原子力": 0,
+        "火力(LNG)": 0,
+        "火力(石炭)": 0,
+        "火力(石油)": 0,
+        "火力(その他)": 0,
+        "水力": 0,
+        "地熱": 0,
+        "バイオマス": 0,
+        "太陽光発電実績": 0,
+        "太陽光出力制御量": 0,
+        "風力発電実績": 0,
+        "風力出力制御量": 0,
+        "揚水": 0,
+        "蓄電池": 0,
+        "連系線": 0,
+        "その他": 0,
+        "合計": 0
+      },
+      "non_numeric_cells": [],
+      "numeric_summary": {
+        "エリア需要": {
+          "minimum": "19389",
+          "maximum": "43538"
+        },
+        "原子力": {
+          "minimum": "0",
+          "maximum": "0"
+        },
+        "火力(LNG)": {
+          "minimum": "5650",
+          "maximum": "26348"
+        },
+        "火力(石炭)": {
+          "minimum": "1611",
+          "maximum": "6019"
+        },
+        "火力(石油)": {
+          "minimum": "71",
+          "maximum": "457"
+        },
+        "火力(その他)": {
+          "minimum": "348",
+          "maximum": "1593"
+        },
+        "水力": {
+          "minimum": "882",
+          "maximum": "1922"
+        },
+        "地熱": {
+          "minimum": "0",
+          "maximum": "0"
+        },
+        "バイオマス": {
+          "minimum": "314",
+          "maximum": "428"
+        },
+        "太陽光発電実績": {
+          "minimum": "0",
+          "maximum": "16267"
+        },
+        "太陽光出力制御量": {
+          "minimum": "0",
+          "maximum": "0"
+        },
+        "風力発電実績": {
+          "minimum": "13",
+          "maximum": "357"
+        },
+        "風力出力制御量": {
+          "minimum": "0",
+          "maximum": "0"
+        },
+        "揚水": {
+          "minimum": "-7208",
+          "maximum": "4313"
+        },
+        "蓄電池": {
+          "minimum": "0",
+          "maximum": "29"
+        },
+        "連系線": {
+          "minimum": "1949",
+          "maximum": "5760"
+        },
+        "その他": {
+          "minimum": "132",
+          "maximum": "453"
+        },
+        "合計": {
+          "minimum": "19389",
+          "maximum": "43538"
+        }
+      },
+      "encoding": "utf-8-sig",
+      "utf8_bom": false,
+      "columns": [
+        "DATE",
+        "TIME",
+        "エリア需要",
+        "原子力",
+        "火力(LNG)",
+        "火力(石炭)",
+        "火力(石油)",
+        "火力(その他)",
+        "水力",
+        "地熱",
+        "バイオマス",
+        "太陽光発電実績",
+        "太陽光出力制御量",
+        "風力発電実績",
+        "風力出力制御量",
+        "揚水",
+        "蓄電池",
+        "連系線",
+        "その他",
+        "合計"
+      ],
+      "header_rows": [
+        [
+          "単位[MW平均]",
+          "",
+          "",
+          "供給力"
+        ],
+        [
+          "DATE",
+          "TIME",
+          "エリア需要",
+          "原子力",
+          "火力(LNG)",
+          "火力(石炭)",
+          "火力(石油)",
+          "火力(その他)",
+          "水力",
+          "地熱",
+          "バイオマス",
+          "太陽光発電実績",
+          "太陽光出力制御量",
+          "風力発電実績",
+          "風力出力制御量",
+          "揚水",
+          "蓄電池",
+          "連系線",
+          "その他",
+          "合計"
+        ]
+      ],
+      "prediction_issue_timestamp_in_data": false
+    },
+    "shikoku_forecast_today.csv": {
+      "rows": 48,
+      "days": 1,
+      "first_start": "2026-10-26 00:00:00+09:00",
+      "last_end": "2026-10-27 00:00:00+09:00",
+      "duplicate_keys": 0,
+      "incomplete_days": [],
+      "missing_numeric_cells": {
+        "エリア総需要量": 0,
+        "エリア総発電量": 0,
+        "エリア風力・太陽光発電量": 0
+      },
+      "non_numeric_cells": [],
+      "numeric_summary": {
+        "エリア総需要量": {
+          "minimum": "981786",
+          "maximum": "1555228"
+        },
+        "エリア総発電量": {
+          "minimum": "1758786",
+          "maximum": "2337628"
+        },
+        "エリア風力・太陽光発電量": {
+          "minimum": "20500",
+          "maximum": "169500"
+        }
+      },
+      "encoding": "cp932",
+      "utf8_bom": false,
+      "columns": [
+        "日付",
+        "時間コマ",
+        "時間帯_自",
+        "時間帯_至",
+        "エリア総需要量",
+        "エリア総発電量",
+        "エリア風力・太陽光発電量"
+      ],
+      "header_rows": [
+        [
+          "ファイル更新日",
+          "ファイル更新時間",
+          "対象年月日"
+        ],
+        [
+          "20261026",
+          "11:14:31",
+          "20261026"
+        ],
+        [
+          "日付",
+          "時間コマ",
+          "時間帯_自",
+          "時間帯_至",
+          "エリア総需要量",
+          "エリア総発電量",
+          "エリア風力・太陽光発電量"
+        ]
+      ],
+      "prediction_issue_timestamp_in_data": false,
+      "file_update_fields": [
+        "20261026",
+        "11:14:31",
+        "20261026"
+      ]
+    },
+    "chubu_fit_202504.xlsx": {
+      "太陽光電源前日想定(2025年4月)": {
+        "rows": 1440,
+        "days": 30,
+        "first_start": "2025-04-01 00:00:00+09:00",
+        "last_end": "2025-05-01 00:00:00+09:00",
+        "duplicate_keys": 0,
+        "incomplete_days": [],
+        "missing_numeric_cells": {
+          "value_raw": 0
+        },
+        "non_numeric_cells": [],
+        "numeric_summary": {
+          "value_raw": {
+            "minimum": "0",
+            "maximum": "2645062"
+          }
+        },
+        "unit_cell": "（単位：kWh）",
+        "forecast_stage_evidence": "太陽光電源前日想定(2025年4月)",
+        "daily_total_mismatches": 0
+      },
+      "太陽光電源推定実績(2025年4月)": {
+        "rows": 1440,
+        "days": 30,
+        "first_start": "2025-04-01 00:00:00+09:00",
+        "last_end": "2025-05-01 00:00:00+09:00",
+        "duplicate_keys": 0,
+        "incomplete_days": [],
+        "missing_numeric_cells": {
+          "value_raw": 0
+        },
+        "non_numeric_cells": [],
+        "numeric_summary": {
+          "value_raw": {
+            "minimum": "0",
+            "maximum": "2754158"
+          }
+        },
+        "unit_cell": "（単位：kWh）",
+        "forecast_stage_evidence": "太陽光電源推定実績(2025年4月)",
+        "daily_total_mismatches": 0
+      },
+      "風力電源前日想定(2025年4月)": {
+        "rows": 1440,
+        "days": 30,
+        "first_start": "2025-04-01 00:00:00+09:00",
+        "last_end": "2025-05-01 00:00:00+09:00",
+        "duplicate_keys": 0,
+        "incomplete_days": [],
+        "missing_numeric_cells": {
+          "value_raw": 0
+        },
+        "non_numeric_cells": [],
+        "numeric_summary": {
+          "value_raw": {
+            "minimum": "102",
+            "maximum": "76945"
+          }
+        },
+        "unit_cell": "（単位：kWh）",
+        "forecast_stage_evidence": "風力電源前日想定(2025年4月)",
+        "daily_total_mismatches": 0
+      },
+      "風力電源推定実績(2025年4月)": {
+        "rows": 1440,
+        "days": 30,
+        "first_start": "2025-04-01 00:00:00+09:00",
+        "last_end": "2025-05-01 00:00:00+09:00",
+        "duplicate_keys": 0,
+        "incomplete_days": [],
+        "missing_numeric_cells": {
+          "value_raw": 0
+        },
+        "non_numeric_cells": [],
+        "numeric_summary": {
+          "value_raw": {
+            "minimum": "4",
+            "maximum": "103334"
+          }
+        },
+        "unit_cell": "（単位：kWh）",
+        "forecast_stage_evidence": "風力電源推定実績(2025年4月)",
+        "daily_total_mismatches": 0
+      }
+    }
+  },
+  "input_references": [
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_page.html",
+      "url": "https://www.rikuden.co.jp/nw_jyukyudata/tokurei1_jisseki.html",
+      "final_url": "https://www.rikuden.co.jp/nw_jyukyudata/tokurei1_jisseki.html",
+      "downloaded_at": "2026-10-26T02:36:23.406717+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Last-Modified": "Mon, 26 Oct 2026 00:00:05 GMT",
+        "Content-Length": "14138",
+        "Content-Type": "text/html",
+        "Date": "Mon, 26 Oct 2026 02:36:23 GMT"
+      },
+      "original_filename": "tokurei1_jisseki.html",
+      "sha256": "44d04989f4e716f77c6f825879751a6193d770044716222d19dcad703471d58a",
+      "size_bytes": 14138
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_202504_06.csv",
+      "url": "https://www.rikuden.co.jp/nw_jyukyudata/attach/Fit1_202504-06.csv",
+      "final_url": "https://www.rikuden.co.jp/nw_jyukyudata/attach/Fit1_202504-06.csv",
+      "downloaded_at": "2026-10-26T02:36:23.545301+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Last-Modified": "Wed, 30 Jul 2025 00:00:06 GMT",
+        "Content-Length": "149949",
+        "Date": "Mon, 26 Oct 2026 02:36:23 GMT"
+      },
+      "original_filename": "Fit1_202504-06.csv",
+      "sha256": "801a2c35e0f6047b7156a15c73b5b2eaca59e40498bfa9e0e4728adc7ab3bde3",
+      "size_bytes": 149949
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/tokyo_actual_202504.csv",
+      "url": "https://www.tepco.co.jp/forecast/html/images/eria_jukyu_202504_03.csv",
+      "final_url": "https://www.tepco.co.jp/forecast/html/images/eria_jukyu_202504_03.csv",
+      "downloaded_at": "2026-10-26T02:36:23.750629+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Last-Modified": "Fri, 30 May 2025 20:15:02 GMT",
+        "ETag": "\"1e2f1-6366011b39730\"",
+        "Content-Length": "123633",
+        "Content-Type": "text/csv",
+        "Date": "Mon, 26 Oct 2026 02:36:24 GMT"
+      },
+      "original_filename": "eria_jukyu_202504_03.csv",
+      "sha256": "45d310fb51ef43be1fb93269542ed514f4b94129b007459cbca9fcada3ac7fed",
+      "size_bytes": 123633
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf",
+      "url": "https://www.occto.or.jp/assets/oshirase/shutsuryokuyokusei/2025/files/250827_hibetsu_kansai.pdf",
+      "final_url": "https://www.occto.or.jp/assets/oshirase/shutsuryokuyokusei/2025/files/250827_hibetsu_kansai.pdf",
+      "downloaded_at": "2026-10-26T02:36:23.980740+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "application/pdf",
+        "Content-Length": "939913",
+        "Date": "Mon, 26 Oct 2026 02:36:24 GMT",
+        "Last-Modified": "Thu, 06 Nov 2025 07:41:56 GMT",
+        "ETag": "\"e5789-642e833090538\""
+      },
+      "original_filename": "250827_hibetsu_kansai.pdf",
+      "sha256": "73ed38d6e34d3f09dc072c7e30856cb7af6ce9cb3fdd2562935640e96662877d",
+      "size_bytes": 939913
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_page.html",
+      "url": "https://www.yonden.co.jp/nw/denkiyoho/",
+      "final_url": "https://www.yonden.co.jp/nw/denkiyoho/",
+      "downloaded_at": "2026-10-26T02:36:24.372202+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Mon, 26 Oct 2026 02:35:58 GMT"
+      },
+      "original_filename": "",
+      "sha256": "34c32c52333c609c4abe706ca8ea54ca2a5b4c80bf572c13b125e38c80c2dcc0",
+      "size_bytes": 39365
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_common.js",
+      "url": "https://www.yonden.co.jp/nw/denkiyoho/assets_sys/js/common.js",
+      "final_url": "https://www.yonden.co.jp/nw/denkiyoho/assets_sys/js/common.js",
+      "downloaded_at": "2026-10-26T02:36:24.475613+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "application/javascript",
+        "Content-Length": "1456",
+        "Date": "Mon, 26 Oct 2026 02:36:24 GMT",
+        "Last-Modified": "Thu, 24 Mar 2022 20:18:52 GMT",
+        "ETag": "\"5b0-5dafc8df7e300\""
+      },
+      "original_filename": "common.js",
+      "sha256": "a845d4e2b83206128353033be1449e2689a231412cf8f533d913e80d4e3bd154",
+      "size_bytes": 1456
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_definition.html",
+      "url": "https://www.yonden.co.jp/nw/denkiyoho/data_ex.html",
+      "final_url": "https://www.yonden.co.jp/nw/denkiyoho/data_ex.html",
+      "downloaded_at": "2026-10-26T02:36:24.592387+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Mon, 26 Oct 2026 02:36:24 GMT"
+      },
+      "original_filename": "data_ex.html",
+      "sha256": "e859b31e68ff3899ab343c96f34143faed9f073b949d6657f2d81ea6ab603424",
+      "size_bytes": 9816
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/chugoku_fit_page.html",
+      "url": "https://www.energia.co.jp/nw/service/retailer/data/fit/",
+      "final_url": "https://www.energia.co.jp/nw/service/retailer/data/fit/",
+      "downloaded_at": "2026-10-26T02:36:24.732572+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html",
+        "Content-Length": "9839",
+        "Last-Modified": "Mon, 29 Jun 2026 00:21:20 GMT",
+        "ETag": "\"08a817b7370956bdeb97a8b1ebd06010\"",
+        "Date": "Mon, 26 Oct 2026 02:36:25 GMT"
+      },
+      "original_filename": "",
+      "sha256": "c3fb2ac657da1b8e90808d68ddc0fe21777271b157c8e4e90a19fc5fd827152d",
+      "size_bytes": 9839
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/tokyo_fit_page.html",
+      "url": "https://www.tepco.co.jp/forecast/html/fit_data-j.html",
+      "final_url": "https://www.tepco.co.jp/forecast/html/fit_data-j.html",
+      "downloaded_at": "2026-10-26T02:36:24.944907+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html",
+        "Date": "Mon, 26 Oct 2026 02:36:25 GMT",
+        "Content-Length": "37870"
+      },
+      "original_filename": "fit_data-j.html",
+      "sha256": "eff635002bcb55359971981aa307d625d8bea7f74eddba8e9112624e9b728859",
+      "size_bytes": 37870
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokkaido_fit_page.html",
+      "url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/index.html",
+      "final_url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/index.html",
+      "downloaded_at": "2026-10-26T02:37:52.252311+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Date": "Mon, 26 Oct 2026 02:37:52 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "35634",
+        "Last-Modified": "Wed, 22 Jul 2026 01:42:20 GMT",
+        "ETag": "\"0x8DEE792782A7C80\""
+      },
+      "original_filename": "index.html",
+      "sha256": "4e75495e08ba2c3a834ddf0feea2486fa5dfd0a95a0d6da9e8fec4f60e2837b2",
+      "size_bytes": 35634
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokkaido_fit_method.pdf",
+      "url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/pdf/specific_estimatedmethod.pdf",
+      "final_url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/pdf/specific_estimatedmethod.pdf",
+      "downloaded_at": "2026-10-26T02:37:52.476123+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Date": "Mon, 26 Oct 2026 02:37:52 GMT",
+        "Content-Type": "application/pdf",
+        "Content-Length": "517972",
+        "Last-Modified": "Thu, 08 Feb 2024 00:56:09 GMT",
+        "ETag": "\"0x8DC2840BD490BF0\""
+      },
+      "original_filename": "specific_estimatedmethod.pdf",
+      "sha256": "7343e5a13a74e2afceeca0fb2aca5589da5894e63756af05831dc6d510e45dcc",
+      "size_bytes": 517972
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_method.html",
+      "url": "https://www.rikuden.co.jp/nw_rule/fit_tokurei1.html",
+      "final_url": "https://www.rikuden.co.jp/nw_rule/fit_tokurei1.html",
+      "downloaded_at": "2026-10-26T02:37:52.782412+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Last-Modified": "Mon, 13 Jul 2026 10:18:01 GMT",
+        "Content-Length": "9111",
+        "Content-Type": "text/html",
+        "Date": "Mon, 26 Oct 2026 02:37:53 GMT"
+      },
+      "original_filename": "fit_tokurei1.html",
+      "sha256": "23727e42b35b48d187c80513f248c016e1c75519b2598773638fa6f8b30bfd03",
+      "size_bytes": 9111
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_forecast_today.csv",
+      "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/csv/yosoku_today.csv",
+      "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/csv/yosoku_today.csv",
+      "downloaded_at": "2026-10-26T02:37:52.987831+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/csv",
+        "Content-Length": "2388",
+        "Date": "Mon, 26 Oct 2026 02:37:53 GMT",
+        "Last-Modified": "Mon, 26 Oct 2026 02:36:42 GMT",
+        "ETag": "\"954-65eb5333e4adc\""
+      },
+      "original_filename": "yosoku_today.csv",
+      "sha256": "7d6e7ab4ae611862328ca793602187330620a4407ab7aa8a5acb62985a49b8c9",
+      "size_bytes": 2388
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_forecast_definition.html",
+      "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/today_tomorrow_ex.html",
+      "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/today_tomorrow_ex.html",
+      "downloaded_at": "2026-10-26T02:37:53.181387+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Mon, 26 Oct 2026 02:37:53 GMT"
+      },
+      "original_filename": "today_tomorrow_ex.html",
+      "sha256": "4634fe35d312ed598ca25d98e07b711b9a6d628086448f6af67e7d79e72ccaf7",
+      "size_bytes": 14291
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_archive.html",
+      "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download.html",
+      "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download.html",
+      "downloaded_at": "2026-10-26T02:37:53.311730+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "5672",
+        "Date": "Mon, 26 Oct 2026 02:37:10 GMT"
+      },
+      "original_filename": "download.html",
+      "sha256": "8022d41267a9ee0e684e0efa1d4800dea12464e9f228c40bf6bba73a63cf5f8f",
+      "size_bytes": 5672
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_archive_definition.html",
+      "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download_ex.html",
+      "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download_ex.html",
+      "downloaded_at": "2026-10-26T02:37:53.429931+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Mon, 26 Oct 2026 02:37:53 GMT"
+      },
+      "original_filename": "download_ex.html",
+      "sha256": "d41daf77e1b5bdbcda20e1da5e95105f80d5e2e7f749fa05b109b699273d4cf9",
+      "size_bytes": 10761
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/chubu_fit_202504.xlsx",
+      "url": "https://powergrid.chuden.co.jp/resource/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/tokureihatsuden_109.xlsx",
+      "final_url": "https://powergrid.chuden.co.jp/resource/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/tokureihatsuden_109.xlsx",
+      "downloaded_at": "2026-10-26T02:39:39.038000+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Date": "Mon, 26 Oct 2026 02:39:39 GMT",
+        "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "Content-Length": "63626",
+        "ETag": "\"686f1abd-f88a\"",
+        "Last-Modified": "Thu, 10 Jul 2025 01:43:25 GMT"
+      },
+      "original_filename": "tokureihatsuden_109.xlsx",
+      "sha256": "bc02878554c3522a6603a644274ed6d80bf10295c1465da0bec073014b5d8f93",
+      "size_bytes": 63626
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/chubu_fit_page.html",
+      "url": "https://powergrid.chuden.co.jp/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/",
+      "final_url": "https://powergrid.chuden.co.jp/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/",
+      "downloaded_at": "2026-10-26T02:39:39.332346+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Date": "Mon, 26 Oct 2026 02:39:39 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "90196",
+        "ETag": "\"6a94e103-16054\"",
+        "Last-Modified": "Mon, 31 Aug 2026 02:03:47 GMT"
+      },
+      "original_filename": "",
+      "sha256": "99cb891b7646936279684c49455f1d9889b50385869f1e0660fffc34647a3122",
+      "size_bytes": 90196
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/tohoku_fit_page.html",
+      "url": "https://nw.tohoku-epco.co.jp/consignment/fit/",
+      "final_url": "https://nw.tohoku-epco.co.jp/consignment/fit/",
+      "downloaded_at": "2026-10-26T02:39:39.603842+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Date": "Mon, 26 Oct 2026 02:39:39 GMT",
+        "Last-Modified": "Fri, 28 Aug 2026 01:14:30 GMT",
+        "ETag": "\"1094-65a112ca1a980\"",
+        "Content-Length": "4244",
+        "Content-Type": "text/html"
+      },
+      "original_filename": "",
+      "sha256": "4a413a4106f89a5935de8723f30a4e611db930c64830a256dc42bfdefd6a1478",
+      "size_bytes": 4244
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_fit_page.html",
+      "url": "https://www.yonden.co.jp/nw/renewable_energy/data/value.html",
+      "final_url": "https://www.yonden.co.jp/nw/renewable_energy/data/value.html",
+      "downloaded_at": "2026-10-26T02:39:39.901672+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Mon, 26 Oct 2026 02:39:40 GMT"
+      },
+      "original_filename": "value.html",
+      "sha256": "91b9ab11f8c03827b59a97a80978c66271e3633f824d3dce16c09572fcb8be63",
+      "size_bytes": 35033
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/kyushu_fit_page.html",
+      "url": "https://www.kyuden.co.jp/td/service/wheeling/outline.html",
+      "final_url": "https://www.kyuden.co.jp/td/service/wheeling/outline.html",
+      "downloaded_at": "2026-10-26T02:39:40.120732+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Mon, 26 Oct 2026 02:39:40 GMT"
+      },
+      "original_filename": "outline.html",
+      "sha256": "16ec713840ff46b4400a40a4e3b6cbce1fa6f57c98bbe00b190bbf164e20205c",
+      "size_bytes": 70784
+    },
+    {
+      "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_method.pdf",
+      "url": "https://www.rikuden.co.jp/nw_rule/attach/fit1_soutei20170401.pdf",
+      "final_url": "https://www.rikuden.co.jp/nw_rule/attach/fit1_soutei20170401.pdf",
+      "downloaded_at": "2026-10-26T02:39:40.373029+00:00",
+      "http_status": 200,
+      "http_metadata": {
+        "Last-Modified": "Thu, 11 Nov 2021 04:03:59 GMT",
+        "Content-Length": "36247",
+        "Content-Type": "application/pdf",
+        "Date": "Mon, 26 Oct 2026 02:39:40 GMT"
+      },
+      "original_filename": "fit1_soutei20170401.pdf",
+      "sha256": "b24e2a52575011363b0565017523d5344b9364f90284ac98db9dcd1b0fa8a89c",
+      "size_bytes": 36247
+    }
+  ],
+  "real_network_lp_runs": 0,
+  "research_use_status_counts": {
+    "use_diagnostic": 428,
+    "held": 63
+  },
+  "overlap_review": {
+    "labels": 13,
+    "resolved": 0,
+    "unresolved": 13,
+    "generation_kwh": "681776000.000000658828500.000000816636100.000000598421000.0000002636901000.000000723412000.0000001187449986.000000541214885.000000156668163.000000654613000.000000734752000.000000213852000.000000390135000.000000"
+  },
+  "limited_register_counts": {
+    "candidate_known_reference_subset": 417,
+    "held_capacity_or_equipment": 61,
+    "held_fuel_scope_unresolved": 13
+  },
+  "business_join": {
+    "left": 491,
+    "matched": 491,
+    "unmatched": 0,
+    "duplicated": 0
+  },
+  "network_period_join": {
+    "left_only": 1419120,
+    "right_only": 0,
+    "both": 0
+  },
+  "candidate_period": {
+    "slots": 16608,
+    "first": "2025-04-01",
+    "last": "2026-03-12",
+    "not_annual": true
+  },
+  "preserved_input_hashes": [
+    {
+      "path": "reports/17_net_demand_network/qa/fixed_supply_overlap_inventory.csv",
+      "sha256": "c47357f12fde4f153d1671375a7e5e48dd4ddf5d6b7c8c11d16b7bb0eb2479e1"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/observed_unit_business_evidence_FY2025.parquet",
+      "sha256": "e26f5751cc6ed2cec68be8e5caad36e53f5586924866bdbcb398f627a704a44d"
+    },
+    {
+      "path": "data/raw/hjks/units/hjks_units__hjks_units_FY2025__sha256_7d4c3a8633fa.csv",
+      "sha256": "7d4c3a8633fa836d0f1610c13302d6b3e5b3be139b57c5855780a6226e13856e"
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/network_time_readiness_FY2025.parquet",
+      "sha256": "6ee1a2a07b7681dce65b0de222b35f02373ee151fef378a1c6d258bd8c5dde89"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/regional_all_suppliers.parquet",
+      "sha256": "9323f91144e354822a785b5f334bb28207175483c1bcbb7759198498f31538c1"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/hokuriku_fit_202504_06_inspected.parquet",
+      "sha256": "296ab6429df336b340762a485ffc1ef0d94ca0ba68cf74d43e2efcdb5d419ec0"
+    },
+    {
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/tokyo_actual_202504_inspected.parquet",
+      "sha256": "b56f39da8317ceec6e5c2d291cb3636ed118de90d454b550eec04bdb64521a50"
+    },
+    {
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/shikoku_forecast_today_inspected.parquet",
+      "sha256": "0a1f4e1313012860340352f1130c71362d14196cd6ea6ca6cc50ef43a12a5f33"
+    },
+    {
+      "path": "data/interim/occto/fixed_output_feasibility/20261026_samples_v2/chubu_workbook_all_cells.parquet",
+      "sha256": "33370660bb102e3cd737a681378a9fde4837e73fd25b9d1265423aa1bae594ad"
+    }
+  ],
+  "reference_count": 22
+}
