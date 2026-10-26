@@ -1,0 +1,56 @@
+[
+  {
+    "path": "data/interim/research_reference/20261027_adjustable_removal_v1/tcrsi_technical.pdf",
+    "url": "https://users.ece.utexas.edu/~baldick/papers/firm_index_technical.pdf",
+    "pages": "印刷16、式14、§4.1",
+    "verification_level": "author_pdf_verified",
+    "original_filename": "firm_index_technical.pdf",
+    "downloaded_at": "2026-10-26T16:35:22.956360+00:00",
+    "sha256": "7b166010edd3dad42162998aa812189bfc538a11505a7d2565d82ffafcf7c996",
+    "bytes": 567097,
+    "http_metadata_note": "通常HTTPS取得。ヘッダーは初回処理中断で保存されず、取得日時はファイル保存時刻から記録"
+  },
+  {
+    "path": "data/interim/research_reference/20261027_adjustable_removal_v1/caiso_2024.pdf",
+    "url": "https://www.caiso.com/documents/2024-annual-report-on-market-issues-and-performance-aug-07-2025.pdf",
+    "pages": "印刷141–142 / PDF物理153–154、§3.1–3.2",
+    "verification_level": "official_pdf_verified",
+    "original_filename": "2024-annual-report-on-market-issues-and-performance-aug-07-2025.pdf",
+    "downloaded_at": "2026-10-26T16:38:47.217085+00:00",
+    "sha256": "bdf292ce89b4caa6b6a0a89af21f248bbb910039e7c9355108773875a47dcdda",
+    "bytes": 4454464,
+    "http_metadata": {
+      "content-type": "application/pdf",
+      "content-length": "4454464",
+      "last-modified": "Fri, 24 Oct 2025 18:32:49 GMT",
+      "date": "Mon, 26 Oct 2026 16:38:47 GMT",
+      "etag": "\"8a81899626e57ce3a44b587936bb2370\""
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261027_adjustable_removal_v1/jera_2019_succession.pdf",
+    "url": "https://www.jera.co.jp/static/files/corporate/denshi_koukoku/pdf/2019-koukoku.pdf",
+    "pages": "物理9、重要な後発事象",
+    "verification_level": "official_pdf_verified",
+    "original_filename": "2019-koukoku.pdf",
+    "downloaded_at": "2026-10-26T16:38:48.508030+00:00",
+    "sha256": "fbfbb0f2d39232e89df72b69238160658177a81921fc3ea14c6ebd057d65da05",
+    "bytes": 759784,
+    "http_metadata": {
+      "date": "Mon, 26 Oct 2026 16:38:48 GMT",
+      "last-modified": "Mon, 24 Jun 2019 08:45:40 GMT",
+      "content-length": "759784",
+      "content-type": "application/pdf"
+    }
+  },
+  {
+    "url": "https://www.oeb.ca/sites/default/files/msp-monitoring-report-202203.pdf",
+    "title": "Market Surveillance Panel Report 36, Released March 2022",
+    "pages": "印刷16、§1.2.2、脚注9",
+    "checked_on": "2026-10-27",
+    "verification_level": "official_search_verified",
+    "download_status": "通常HTTPSでタイムアウト。非公開とは判断しない",
+    "verified": "価格感応資源のRSIについて原子力・風力・太陽光・自己計画・純輸入等の供給とそれらが満たす需要を双方から分離する説明",
+    "limitation": "原PDF全文取得済みとは扱わない。今回の地域輸送モデル・参照容量・特定企業の選び方とは異なる"
+  }
+]

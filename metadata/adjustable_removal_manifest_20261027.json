@@ -1,0 +1,316 @@
+{
+  "version": "20261027_adjustable_removal_v3",
+  "result_rows": 440640,
+  "scenarios": 17,
+  "time_keys": 1440,
+  "initial_target_pairs": 9,
+  "initial_legal_entities": 8,
+  "institutional_entities_unchanged": 10,
+  "institutional_pairs_unchanged": 11,
+  "asset_proxy_join_rate": 1.0,
+  "asset_proxy_unmatched": 0,
+  "duplicate_keys": 0,
+  "fixed_output_removed": false,
+  "realized_generation_subtracted": false,
+  "all_nine_areas_connected": true,
+  "unknown_capacity_assumed_zero": false,
+  "silent_drop": 0,
+  "network_comparison_join_rate": 1.0,
+  "network_comparison_unmatched": 0,
+  "network_constraint_count": 11,
+  "numerical_lt1_reporting_band": 1e-08,
+  "inputs": [
+    {
+      "path": "reports/19_actual_net_demand/qa/fixed_adjustable_role_candidates.csv",
+      "sha256": "9b3a491c0feb2e106a83ce7fe858df9ff8dacd1851607ac78b018c61814d9c0b"
+    },
+    {
+      "path": "reports/11_decision_preparation/qa/unit_business_inventory.csv",
+      "sha256": "30cfc00992faa91db8fefabee26d40328cf93a6f3311582cf5a6c4edbaedae59"
+    },
+    {
+      "path": "metadata/research/legal_name_alias_evidence_20261016.csv",
+      "sha256": "d6bed5bba9a2d6d5f8951b869cb2e08f1b7223f637c030d90bb581995cc0beab"
+    },
+    {
+      "path": "metadata/research/regulatory_targets.csv",
+      "sha256": "bfd4ed791bcdd00d11b10939589d762bf8df9073f5ca7a871e803f22153a9394"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646"
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/legacy_network_constraints_FY2025.parquet",
+      "sha256": "b50a1e634ebb165e2685d45fa7130a4a993ffb00943abce7401a2a16a48f5df8"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_early__full_stop_zero.parquet",
+      "sha256": "6ffe4745864a0f9af25a85bc1213ab0bdc229d57275afa857828e76d48df53e0"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_early__mean_reduction.parquet",
+      "sha256": "be9cec8ace6b42b9a210c238041b8c68fd943f5cc433fe14784d3793e83d11c4"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_late__full_stop_zero.parquet",
+      "sha256": "836486b0d6207318a4925fbacc6fc2fa00e768f9ab7a23cab28389e6480cd164"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/58852_late__mean_reduction.parquet",
+      "sha256": "e895e306dd6cf6afe8fe8d094bcb5b0bd408f332e049ca8d567c3bb020e43253"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_early__full_stop_zero.parquet",
+      "sha256": "aec47b15c28f0617b686d63a5710078ba456955ef98625410cdf3382b020728b"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_early__mean_reduction.parquet",
+      "sha256": "c2e0366ba5c00835545c94ea6695190dd159a6f6b89aa03ea41273bcea77f2ad"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_late__full_stop_zero.parquet",
+      "sha256": "2d7f44684fd2aab147781d7cc411898ec948cec1b80b6e838578aad4799e7621"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/7828_late__mean_reduction.parquet",
+      "sha256": "f1d254defab4e41e9ae65ddfdfabee84c8410b75d83538bc47a56ab488ac5702"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/unit_scenarios/reference_no_deduction.parquet",
+      "sha256": "820b927ce70a67b838cc44c0ecac36a87b10cf3ff492af7a1e93f25e4fffa18e"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/asset_attribution_proxy.parquet",
+      "sha256": "cae0a50f743d5c7efe98c1b3742566863b5e6b21ea8135d1d3ed8335afbc360b",
+      "rows": 491
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__full_stop_zero.parquet",
+      "sha256": "729e9503f3278c5b6907b457720c19a1f25df898e806b359abe977cfaf2b34ba",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "0721a907e9879a415cc2707f1d5b762443b8c8aa0a878d1019a5b3ef33698dbb",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__mean_reduction.parquet",
+      "sha256": "10b7da70c63c1e1daa891727d371598c22531d2907b6b6c58853788e148f0b3e",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "f449c4855951515cc3c7fc228045d0b0782dc80989ec4b85e8ff3c149a5a8047",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__full_stop_zero.parquet",
+      "sha256": "0db16fbeafd369d34bd92476fb16a7d24bf322b2ffc2f286abb480b5e5e24295",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "b779976b0ff74d64e57341ce30e35220e4e595efc80fd33d17040984669f40fa",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__mean_reduction.parquet",
+      "sha256": "279115866136a08f9801f90b07348ac16d06be14d68230c5b6f7b7fdc667c5ff",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "1e4d9b6bcb1b74e9e8ff18d5f0e7caf2c84cf5194fdd61741b02621c3a34ebcf",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__full_stop_zero.parquet",
+      "sha256": "a171d4b68bb8b5ff289a39ab42c8c7c04988b88b1e42ac1bdd23663326543b0c",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "0848c2f6b05d4653bcb855fd6616af14921271f25d83441e1c73d924d5d440d4",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__mean_reduction.parquet",
+      "sha256": "f23f4859f5b9794254eae376d3989ef5b2a2877e5e06d0966bc3ee96dcbde17d",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "8c82914616819d5ed2555df14af9ec9e6700efc66c74b64b00ccc257b45df970",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__full_stop_zero.parquet",
+      "sha256": "81c564d990803a78e9e517d9565449497863de128c82894a39403429733ec06f",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "4d2ff054cfad7117d664f5f520656d25f9d006c9890339c91704fd43f570478f",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__mean_reduction.parquet",
+      "sha256": "ad90f8555ec3f3fadd414ca8c0d29dea582f33101621f6c905fc65e834251585",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "c5dc11e52cbecb85d84d3315fe11b0eaa740501d1273d6e0a8ac1a3dbacdabdb",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/reference_no_deduction.parquet",
+      "sha256": "356bd6ffd94cd092e51940ec1baf21acb0cfa11e8c05b05c1f1771abcbbc5e5c",
+      "rows": 701280
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/regional_trial_uppers.parquet",
+      "sha256": "09df768c127a6b1ffb40110cb15679c5eabae82c7c91b98d34c657fbedaca278",
+      "rows": 220320
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa",
+      "rows": 440640
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/multiplier_solution_samples.parquet",
+      "sha256": "d8d32c031b8c0ed01c289d065ae99ac3be132b9b40eb234a0c0622a72a355597",
+      "rows": 198
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/network_comparison_common_times.parquet",
+      "sha256": "0a572dfe7693bf70e4807aec37ef4a73ed347571aaeff8756c0a2bff6b9dd11f",
+      "rows": 220320
+    }
+  ],
+  "computation_draft_version": "20261027_adjustable_removal_v2",
+  "normalization": "元unit宣言型への安全castのみ。数値・文字列・元行を保持",
+  "build_inputs": [
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/asset_attribution_proxy.parquet",
+      "sha256": "cae0a50f743d5c7efe98c1b3742566863b5e6b21ea8135d1d3ed8335afbc360b"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_early__full_stop_zero.parquet",
+      "sha256": "38c1bc41541ac34a09394d338db01896aa9356e4a6a7d07e1f5df1cf5aa57a8f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "19ccc738d1689e9ee102a6d014b33b9e5b77046a0156a4fbc90dc66420e6213a"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_early__mean_reduction.parquet",
+      "sha256": "bbb854caa4acb7d8beee310cb0fcc8d9a54aa2550752b266321bc77ae081b9b2"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "ab84309db335463343b3691d08f0ce84675043a3f10976b450d4e9962919258a"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_late__full_stop_zero.parquet",
+      "sha256": "a8e1a505c5bbe25cc6c6bf53a1c9e61c517a7d6ff4062052034a94cac17e0809"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "42edbe648abdebcd8a42b77d2ad24169528c459ff34da15795e11c2049b9dcf6"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_late__mean_reduction.parquet",
+      "sha256": "5973a2c54f123df30ac074ffa0a50f22499e762bc23b19037df70b42106202c6"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/58852_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "68a2e9e92d0688bda87832b37f1b161d4001af104ee7b6f2c61fb5caecaacd0a"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_early__full_stop_zero.parquet",
+      "sha256": "21f751fb716d0c468e093639350c1e510578435717844936f08bdd2078c8b19e"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "cfe1a8dd8aec8a52d82a4d97f83093a2d1a14a623bb0e3f4259ced006a4a128b"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_early__mean_reduction.parquet",
+      "sha256": "552412a7cda8c15a7546b79f53380fbacefa7bd022c3cf2cf3ba81da106f638f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "146ae6f2033cc65f4406f972714cccf4094092b8be16ffbae4c16df269c9e6f8"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_late__full_stop_zero.parquet",
+      "sha256": "2b7f59a3c0f2ad9907418d9df6d9c5c086e018eae2f3a24f52aa6410bf8a6afb"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "bff64d1f0e041e3d6683a61c224e0d40f815eb0b637f7c93f4fac9d5d8f31868"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_late__mean_reduction.parquet",
+      "sha256": "88d26727dfcdace08fb74cd5f88cdcf5b24aae5d2b1a82522308d4fd1a8f4e60"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/7828_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "ae9deebc147766540dd89350155cc1b6a9e0159808c0d31fa5056cb43d3872df"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/unit_trial_uppers/reference_no_deduction.parquet",
+      "sha256": "c4ee8b07d1f94cccdfb2764b813187162c42d93360af6f91ad2e18f7896b8d1e"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/regional_trial_uppers.parquet",
+      "sha256": "09df768c127a6b1ffb40110cb15679c5eabae82c7c91b98d34c657fbedaca278"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/multiplier_solution_samples.parquet",
+      "sha256": "d8d32c031b8c0ed01c289d065ae99ac3be132b9b40eb234a0c0622a72a355597"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v2/network_comparison_common_times.parquet",
+      "sha256": "0a572dfe7693bf70e4807aec37ef4a73ed347571aaeff8756c0a2bff6b9dd11f"
+    }
+  ],
+  "evidence_inputs": [
+    {
+      "path": "reports/top10_official_mapping_evidence_20261016.csv",
+      "sha256": "d74547bb0ffacb83004fa6b6fd880a995b416cd2968f92b4ed9cf800d11c348a"
+    },
+    {
+      "path": "reports/notation34_explicit_mapping_20261016.csv",
+      "sha256": "57bfeba1547797c3782859c28fcc798becce00f93285a8f22c845ad8c7e6be59"
+    },
+    {
+      "path": "metadata/research/legal_name_alias_evidence_20261016.csv",
+      "sha256": "d6bed5bba9a2d6d5f8951b869cb2e08f1b7223f637c030d90bb581995cc0beab"
+    },
+    {
+      "path": "metadata/research/decision_preparation_official_evidence_20261016.yml",
+      "sha256": "3fd39d331798b85774948da4d482e98687faf9e011c94e081ee2fa4b6c3fd309"
+    },
+    {
+      "path": "data/raw/reference/issue15/20261016T014544/jera_goi_20250303.html",
+      "sha256": "79fa77bf62f486389fd5de8e02fb4619e084ea0ed86fd32c1bc2a3de85efab0e"
+    },
+    {
+      "path": "data/raw/reference/issue15/20261016T014544/jera_hitachinaka-kyodo.html",
+      "sha256": "881c5863430cc70b2724b4a090ddb71a6e8e339072f4d044562031a41c545713"
+    }
+  ],
+  "diagnostic_net_multipliers_computed": true,
+  "formal_rsi_adopted": false
+}

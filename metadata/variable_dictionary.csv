@@ -1559,3 +1559,56 @@ derived,nonstorage_plus_import_mw,非蓄電出力と純輸入：成分和−stor
 derived,storage_net_mw,会計検算の蓄電純注入：原CSV揚水＋蓄電池。どちらか空欄ならnull,quantity,MW,MW,揚水;蓄電池,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
 derived,gross_charging_observed,総充電量の直接観測フラグ：今回の成分表ではFalse。純値のみ,boolean,not_applicable,not_applicable,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
 derived,original_component_columns_json,検算対象の原列名一覧：成分合計の再現用。日本語原名を保持,string,not_applicable,not_applicable,原燃料別CSV,specified,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+derived,lambda_all_firms,全法人時の対象地域純需要倍率：他地域N固定、対象Nだけ拡大。全法人不成立・N<=0等はnull,quantity,ratio,ratio,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,lambda_removed,調整可能供給代理除去後の純需要倍率：固定Rは残す。全地域で該当名参照の調整上限を除く。不能/不明は0ではなくnull,quantity,ratio,ratio,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,supply_trial_scenario,供給条件：元9条件と公表記録保留を正の参照容量へ戻す8比較条件。別々に保持,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,network_scenario,送電条件：saved_plan_constraints / no_transmission_bounds。同じ9地域接続。独立観測でない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,target_area,倍率評価地域：他地域需要を固定して倍率を動かす地域。JERAの東京/中部は別評価,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,entity,除去代理の対象法人名：一意HJKS発電事業者名による限定代理。所有/支配/契約帰属ではない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,entity_code,対象法人の英語識別子：8法人の試行キー。制度表10法人を変更しない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,removal_entity_code,設備の除去代理法人識別子：点検済み調整候補の一意HJKS記載者が対象法人名に一致した場合のみ。空欄は真の非帰属を意味しない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,business_name_canonical,HJKS記載者の正規法人名：公式に確認済みの法人略記のみ展開。グループ関係で展開しない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,name_proxy_defined,名参照代理を定義できるフラグ：設備範囲点検済み・調整候補・一意なHJKS記載者。FY2025所有/契約確認とは別,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,eligible_adjustable_candidate,調整側限定集合の候補：9地域372ラベル。固定原子力32等を除外、観測されないunit日を生成しない,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,attribution_proxy,法人帰属の代理の種類：点検済みHJKS発電事業者名の一意参照を採用。最終帰属ではない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,subsidiary_joint_contract_unverified,子会社/共同事業/契約役割の未確認：法人名参照とは別に真の支配/売電/契約配分を未確認として保持,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,holding_ratio_allocation_applied,持分配賦適用フラグ：本試行は全行False。持分で容量を推定配賦しない,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,jera_general_succession_evidence,JERA一般承継文献：一般背景の参照先。2019対象火力等の承継で、他法人や全unitへの承継適用/現在の個別支配の証明ではない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,trial_adjustable_upper_kw,試行の調整側参照上限：元上限を保持し別列で比較。公表記録保留かつ正の参照容量が既知のときのみ追加控除なし比較。集合外null,quantity,kW,kW,adjusted_reference_upper_kw; capacity_reference_kw,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,trial_upper_defined,試行上限の数値定義可否：非負の数値上限で限定集合へ含む。実際の利用可能性確認ではない,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,record_held_reference_restored,記録保留を参照容量へ戻したフラグ：承認された追加控除なし比較。元公表保留状態は残す,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,record_held_reference_scenario,記録保留を戻す供給条件フラグ：元条件と8比較条件を分離。能力が確認されたという意味ではない,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,upper_limited_mw,試行の地域調整上限部分和：数値を定義できる選択集合だけのtrial_adjustable_upper_kw/1000の和。地域全能力でない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_hokkaido_mw,北海道電力名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_tohoku_mw,東北電力名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_jera_mw,JERA名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_hokuriku_mw,北陸電力名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_kansai_mw,関西電力名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_chugoku_mw,中国電力名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_shikoku_mw,四国電力名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,remove_kyushu_mw,九州電力名参照代理の調整済み除去部分和：同一供給条件の調整上限から、当該記載者代理に該当する量だけ除く。固定Rは含まない,quantity,MW,MW,trial_adjustable_upper_kw / 1000,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,removed_adjustable_mw_all_nine_areas,9地域で除く調整上限の合計：同じ法人のモデル内全地域分を同時除去。認可容量を後から一律控除しない,quantity,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,removed_fixed_output_mw,除去した固定出力量：本試行は全枠0。PV/風力/原子力実績Rは残す,quantity,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,target_net_demand_mw,対象地域の実績純需要：D−Rの原系列。対象企業実績を再控除せず、非正は通常倍率を保留,quantity,MW,MW,net_demand_B_mw,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,restored_candidate_cells,当該コマの9地域参照復帰候補数：公表記録由来保留を参照上限へ戻す追加比較の候補セル数,integer,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,restored_candidate_count,地域内参照復帰候補数：戻す比較に該当するラベル数。利用可能性確認済みではない,integer,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,restored_reference_mw,地域内参照復帰容量部分和：比較条件で参照上限へ戻した量。未知容量を0にした値ではない,quantity,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,all_firms_balance_status,全法人時の成立状態：同じ供給・送電条件でNを満たすfeasible/infeasible/numerical_failure。企業除去前の結果,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,all_firms_multiplier_status,全法人倍率計算の状態：対象N非正や全法人不成立の場合は倍率未算定。主statusとは別に保持,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,removed_multiplier_status,企業除去後の倍率計算状態：valid/other_regions_infeasible等。不能を倍率0にしない,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,all_firms_max_residual_mw,全法人最大倍率解の残差：会計・区間/フェンス・上下限の最大検査誤差。許容1e−6MW,quantity,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,removed_max_residual_mw,除去後最大倍率解の残差：会計・区間/フェンス・上下限の最大検査誤差。許容1e−6MW,quantity,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,common_valid,双方で倍率有効のフラグ：同じ入力と時刻で送電条件あり/なしを比較する有効共通集合,boolean,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,phase,標本解の計算段階：all_firms / removed。Rと他地域Nを同じに保つ,string,not_applicable,not_applicable,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,multiplier,標本の対象地域純需要倍率：独立の変数消去LPで検算する標本値。正式RSIでない,quantity,ratio,ratio,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,upper_mw_json,標本解で用いた地域上限：AREAS順の上限ベクトル。除去前後で同じ集合選択規則,string,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,generation_mw_json,標本の地域発電割当：AREAS順。実際の発電・利益最適化ではない,string,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,flows_mw_json,標本の区間潮流割当：EDGES順・順方向正。実潮流ではない,string,MW,MW,限定診断の導出,specified,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+derived,final_attribution_assigned,最終法人帰属の確定フラグ。今回の代理表は全491行False。名参照診断の採用と別。,boolean,not_applicable,not_applicable,限定診断契約,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+derived,status,工程21の排他的主状態。valid/all_firms_infeasible/removed_other_regions_infeasible/nonpositive_target_net/attribution_unknown/numerical_failure等。数値0に置換しない。,string,not_applicable,not_applicable,倍率診断,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+derived,original_scenario,今回の条件の基になった工程40の元停止条件識別子。17試行条件と元9条件を区別。,string,not_applicable,not_applicable,Issue40 unit_scenarios,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+derived,unknown_upper_is_zero,未知上限を0と認定したか。全行False。限定集合外の理由・原値は保持。,boolean,not_applicable,not_applicable,限定診断契約,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+derived,unknown_capacity_assumed_zero,未知容量を0と仮定したか。今回の設備台帳は全行False。,boolean,not_applicable,not_applicable,既存限定集合台帳,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+derived,actual_availability_verified,実際の供給利用可能性の確認フラグ。全行Falseで、名参照や数値上限定義と別。,boolean,not_applicable,not_applicable,既存限定集合台帳,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+derived,generation_kwh_30min_sum,元unitラベルのFY2025数値観測発電量の合計。欠測分を0としない。法人の支配発電量ではない。,quantity,kWh,kWh,元generation_kwh_30min,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+derived,_merge,設備/事業者台帳結合の監査指示。両側一意照合がbothで491行。プロダクト変数ではない。,string,not_applicable,not_applicable,one_to_one join監査,specified,工程21の辞書。代理使用と所有/契約帰属の確定を分離

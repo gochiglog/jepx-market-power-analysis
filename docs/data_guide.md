@@ -28,3 +28,7 @@
 ## 4月の全法人計算（工程20）
 
 [実行結果・見方](../reports/20_april_all_supplier_balance/README.md)。`data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/` の `all_firm_balance_results.parquet` が12,960条件の結果、`B30_primary_input_ledger.parquet` が9地域12,960行の実績入力です。純充電を再現しない限定診断。企業除去・RSIではありません。旧版の中部原子力nullはそのまま残し、新版で公式年度ファイルの4月値を使用しました。
+
+## 固定供給を残す企業除去試行（工程21）
+
+[結果と保留の読み方](../reports/21_adjustable_removal/README.md)。`data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/` の `all_and_removed_net_multipliers.parquet` に全440,640枠の数値/保留があります。`regional_trial_uppers.parquet` は調整済み除去量、`asset_attribution_proxy.parquet` は全491設備の名参照代理です。正式RSIや所有/支配/契約の確定値ではなく、計算不能を0にしていません。旧市場・案A・工程20を保持しています。

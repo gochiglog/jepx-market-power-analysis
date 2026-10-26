@@ -1,0 +1,12 @@
+{
+  "sample_optimum_checks": 198,
+  "maximum_independent_multiplier_difference": 0.0,
+  "preserved_original_unit_rows": 11921760,
+  "result_rows": 440640,
+  "all_relaxed_valid_values_checked": 204962,
+  "maximum_relaxed_formula_difference": 7.275957614183426e-12,
+  "source_and_output_sha_verified": true,
+  "fixed_R_removal_zero": true,
+  "all_491_labels_retained": true,
+  "reused_hjks_target_rows_in_adjustable_set": 0
+}
