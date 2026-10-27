@@ -6,7 +6,7 @@
 現在の目的は「特定事業者を他社・域外供給で代替できるか」の構造評価です（RD-021）。
 [工程27：FY2025年間診断](../reports/27_fy2025_annual/README.md)を実施しました。公式一次88地域月を新規取得し、保有4月/中部ZIPと合わせD/R157,680地域時刻を整備。17条件×両送電条件の全年間枠に数値/statusを保存し、価格・本文図4点/表2点と月別補助表を同じ2設備追加版へ統一しました。送電ありは17,472時刻が入力定義済み、3/13の48時刻を保留しています。全時刻が有効倍率となった意味ではありません。
 
-現在のIssueは #46、branch `issue/feature-46`、依存元 `issue/feature-44`（PR #45）。[実行済みノートブック09](../notebooks/09_fy2025_annual.ipynb)で年間の図と全status表を閲覧できます。4月旧版と既存原本を保持し、最終baselineは未確定です。
+現在のIssueは #46、branch `issue/feature-46`、[Draft PR #47](https://github.com/gochiglog/jepx-market-power-analysis/pull/47)。依存元 `issue/feature-44`（PR #45）。[実行済みノートブック09](../notebooks/09_fy2025_annual.ipynb)で年間の図と全status表を閲覧できます。4月旧版と既存原本を保持し、最終baselineは未確定です。
 元repoのブランチを切り替えて作業し、01・02の未commitのノートブック変更は保持しています。
 区切りごとにpytest／ruff後に専用ブランチへcommit／pushし、無承認のmergeはしません。
 

@@ -154,4 +154,4 @@ DとRは同じ公式燃料別資料・同じ30分区間です。固定Rを対象
 
 再実行順序は`acquire_annual_actuals.py`→`build_annual_actuals.py`→`build_annual_supply.py`→`build_annual_network.py`→`run_annual_diagnostic.py`→`publish_annual_diagnostic.py`→`summarize_annual_sensitivity.py`→`validate_annual_diagnostic.py`。既存出力先への無断上書きはせず、月別再開点または新しい出力版を用います。
 
-Issue #46／`issue/feature-46`、依存元Issue #44／`issue/feature-44`。原本・旧版不変、raw/interim/processedのGit追跡0。問い合わせ・回帰・全供給除去・曖昧帰属の正式採用・最終baseline・企業不可欠性や売り渋り認定・PRマージは行っていません。
+Issue #46／`issue/feature-46`、[Draft PR #47](https://github.com/gochiglog/jepx-market-power-analysis/pull/47)。依存元Issue #44／`issue/feature-44`。原本・旧版不変、raw/interim/processedのGit追跡0。問い合わせ・回帰・全供給除去・曖昧帰属の正式採用・最終baseline・企業不可欠性や売り渋り認定・PRマージは行っていません。

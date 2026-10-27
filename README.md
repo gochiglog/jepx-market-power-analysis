@@ -40,7 +40,7 @@
 | 分析・アウトプット | [#33](https://github.com/gochiglog/jepx-market-power-analysis/issues/33) | 北海道記述図 #27／`issue/feature-27`、論文図表設計 #44／`issue/feature-44`、年間診断 #46／`issue/feature-46` |
 | 運営・整理 | [#34](https://github.com/gochiglog/jepx-market-power-analysis/issues/34) | 初期構築 #1、案内 #21、今回の再構築 #35／`issue/feature-35` |
 
-純需要/制約診断は `issue/feature-42`（PR #43）。年間診断はIssue #46（分析・アウトプットPJ #33）の `issue/feature-46`、依存元は図表設計 `issue/feature-44`（PR #45）です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
+純需要/制約診断は `issue/feature-42`（PR #43）。年間診断はIssue #46（分析・アウトプットPJ #33）の `issue/feature-46`、[Draft PR #47](https://github.com/gochiglog/jepx-market-power-analysis/pull/47)。依存元は図表設計 `issue/feature-44`（PR #45）です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
 既存Issue・PRは履歴と依存を保持します。**データがローカルで完成していることと、mainへマージ済みであることは別**です。
 未統合PRは #16→#18→#20→#22→#24→#26→#28、事務整理はそのheadを継ぐ親ブランチをbaseにした #37。今回もmainへ直接commit・pushせず、PRをマージしません。
 
