@@ -1,0 +1,45 @@
+{
+  "manifest_inputs_verified": 108,
+  "manifest_outputs_verified": 1007,
+  "original_result_cells_types_preserved": true,
+  "price_cells_types_preserved": true,
+  "price_frames_verified": 5361120,
+  "price_join_rate": 1.0,
+  "unmatched": 0,
+  "key_duplicates": 0,
+  "silent_row_drop": 0,
+  "row_multiplication": 0,
+  "unknown_or_nonpositive_multiplier_replaced_by_zero": false,
+  "prior_files_hash_verified": 683,
+  "research_data_git_tracked": 0,
+  "main_unchanged": true,
+  "pytest": {
+    "passed": 363,
+    "command": ".venv/bin/pytest -q"
+  },
+  "ruff": "passed",
+  "notebook": "09_fy2025_annual.ipynb:9 code cells executed",
+  "final_baseline_adopted": false,
+  "metadata_and_annual_targeted_tests": {
+    "passed": 23,
+    "command": "pytest -q tests/test_metadata.py tests/test_annual_actuals.py tests/test_annual_supply_solver.py tests/test_annual_publication.py"
+  },
+  "resume_without_new_lp": "全12月の入力/出力SHA照合後ALL MONTHS COMPLETE。再計算なし",
+  "new_data_acquisitions": 88,
+  "old_april_and_chubu_sources_redownloaded": false,
+  "implementation_sha256": {
+    "scripts/run_annual_diagnostic.py": "88d828915df05b2d0f5d8a68fc090c959a89ea2d5730d140a9dfd976c2fa7429",
+    "scripts/summarize_annual_sensitivity.py": "29a2b42bb158847f889d12a9219fe15c86428e1fb2e7810c63b4c9913dd01341",
+    "scripts/publish_annual_diagnostic.py": "296ee1409f381b6d40669116061dcc7ebdf3e58bab377dcb59ffa35c5cba5749",
+    "scripts/validate_annual_diagnostic.py": "a92eefe3ed6eccc54996d492930725cbbda31f82609750ad36b0b60a50d0b84a",
+    "scripts/verify_annual_publication.py": "56b02f9b9d27acdde24711f23e342bc36c1dd7a2f1e1255c1c33df3398e8d41b",
+    "scripts/build_annual_supply.py": "b97b2b60cd741ddd799bf0790fcd2390a76b186424a486288b9d19dae786c711",
+    "scripts/build_annual_actuals.py": "e36babbd20b3a478cd88e7017200ac36075c9df8a1f8c7f9fa502cab98471b30",
+    "scripts/build_annual_network.py": "0f15024a121d7d3846ca60733482cf57c6c59990fdafa6bab5c73698951fd161",
+    "scripts/acquire_annual_actuals.py": "0cabb3051791a283c570d5007bf5f6db0df4c20640508cec52cb4495c90eb8f3",
+    "scripts/seal_annual_diagnostic.py": "76d344bfe369fb8d82f6f4fd22cf48d114b921b341238edde87b7882fafededd",
+    "src/annual_supply_solver.py": "804d355fe72c986de605ebf75f3479110d682cad6c905f52509d795d9743de0a",
+    "pyproject.toml": "993d13b5f082699a0d9cddab455604613aa31691ddec6f9ed373eb5d46791388",
+    "uv.lock": "4ff6fcb34bd3f44e4219ead040ff65efe261f2a9b91b1239139d84ad201c7f39"
+  }
+}

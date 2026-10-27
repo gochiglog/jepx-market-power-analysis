@@ -1,0 +1,9 @@
+entity_code,denominator,excluded,constrained_infeasible,unconstrained_infeasible
+hokkaido,16848,672,16811,0
+tohoku,16848,672,1202,0
+jera,16848,672,16081,1861
+hokuriku,16848,672,16721,0
+kansai,16848,672,3150,33
+chugoku,16848,672,24,0
+shikoku,16848,672,482,0
+kyushu,16848,672,12954,1

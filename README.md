@@ -2,9 +2,9 @@
 
 研究目的は **「特定事業者の供給を他社・域外供給で代替できるかという市場構造の評価」** です（RD-021）。
 市場支配力の行使、売り渋りの実在、利益増加の認定は今回の目的に含めません。
-対象はFY2025（2025年4月1日〜2026年3月31日）。公開データの収集・接続と北海道の記述用散布図まで実施済みです。
+対象はFY2025（2025年4月1日〜2026年3月31日）。公開データの収集・接続から、FY2025年間の条件付き代替供給診断まで実施済みです。
 
-**最新は [論文の図表設計とFY2025拡張のギャップ](reports/26_paper_figure_plan/README.md)です。** 本文図4点・表2点の問い/分母/版と付録配置を整理しました。4月を最終期間にはせず、旧集合の価格図と2設備追加版を混ぜないための残作業、年間の未保有88地域月・送電切替912コマを明示しています。今回は文書整理のみで、新しい計算・取得は行っていません。
+**最新は [FY2025年間の代替供給診断（工程27）](reports/27_fy2025_annual/README.md)です。** 需要・固定PV/風力/原子力実績を9地域×17,520コマへ整備し、同じ2設備追加版・17条件で年間LP・価格接続・本文4図/2表・月別補助表を作成しました。送電入力17,472コマを定義し、切替日48コマは理由付き保留です。まず[年間結果ノートブック09](notebooks/09_fy2025_annual.ipynb)で図と全時刻の状態を確認できます。最終baseline・企業不可欠性は認定していません。
 
 ## 入口は2つ
 
@@ -37,10 +37,10 @@
 | 先行研究 | [#30](https://github.com/gochiglog/jepx-market-power-analysis/issues/30) | 読書整理 #36（未着手。実装ブランチ未作成） |
 | 研究戦略・制度 | [#31](https://github.com/gochiglog/jepx-market-power-analysis/issues/31) | #3、#23、#25、RSI設計 #38／各 `issue/feature-番号` |
 | データ取得・ETL・DB | [#32](https://github.com/gochiglog/jepx-market-power-analysis/issues/32) | #2、#4、#8、#10、#13、#15、#17、#19、保存計画診断 #40、純需要/制約 #42／各 `issue/feature-番号` |
-| 分析・アウトプット | [#33](https://github.com/gochiglog/jepx-market-power-analysis/issues/33) | 北海道記述図 #27／`issue/feature-27`、論文図表設計 #44／`issue/feature-44` |
+| 分析・アウトプット | [#33](https://github.com/gochiglog/jepx-market-power-analysis/issues/33) | 北海道記述図 #27／`issue/feature-27`、論文図表設計 #44／`issue/feature-44`、年間診断 #46／`issue/feature-46` |
 | 運営・整理 | [#34](https://github.com/gochiglog/jepx-market-power-analysis/issues/34) | 初期構築 #1、案内 #21、今回の再構築 #35／`issue/feature-35` |
 
-純需要/制約診断は `issue/feature-42`（PR #43）。今回の論文構成はIssue #44（分析・アウトプットPJ #33）の `issue/feature-44`、依存元は `issue/feature-42` です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
+純需要/制約診断は `issue/feature-42`（PR #43）。年間診断はIssue #46（分析・アウトプットPJ #33）の `issue/feature-46`、[Draft PR #47](https://github.com/gochiglog/jepx-market-power-analysis/pull/47)。依存元は図表設計 `issue/feature-44`（PR #45）です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
 既存Issue・PRは履歴と依存を保持します。**データがローカルで完成していることと、mainへマージ済みであることは別**です。
 未統合PRは #16→#18→#20→#22→#24→#26→#28、事務整理はそのheadを継ぐ親ブランチをbaseにした #37。今回もmainへ直接commit・pushせず、PRをマージしません。
 
