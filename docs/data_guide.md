@@ -47,3 +47,7 @@
 ## 4月価格との記述的接続（工程24）
 
 [入力と図の説明](../reports/24_april_price_connection/README.md)、[ノートブック08](../notebooks/08_april_price_connection.ipynb)。実データは `data/interim/occto/april_price_connection/20261027_price_v3/`。12,960価格観測と、同じ価格を34条件で反復する440,640枠を分けています。図Bは純需要非正も含む全時刻であり、図Aの有効倍率時刻とは母集団が異なります。旧固定版は保持し、因果推論・最終baselineではありません。
+
+## 中心仕様の監査と2設備の別診断版（工程25）
+
+[結果と数式/コードの入口](../reports/25_central_spec_audit/README.md)。`data/interim/occto/central_spec_audit/20261027_two_asset_v2/` に北海道の全48,960倍率枠、8法人の全391,680同時成立枠、条件別の2設備元列保持表を保存しました。旧集合・既存17条件・原値は保持。参照100/112MWを含める感度診断で、送電端や契約供給力の確定値ではありません。v1は型検査途中版で、数値はv2と同じです。

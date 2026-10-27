@@ -1,0 +1,13 @@
+formula,meaning_scope_unit,implementation_function,input_file_column,verification
+N_at=D_at−R_at,元純需要。MW、地域×30分,scripts/trial_adjustable_removal.py:run; scripts/audit_central_spec.py:run,B30_primary_input_ledger.parquet: demand_actual_sample_mw/fixed_actual_mw/net_demand_B_mw,D−Rの全セル一致、9地域×1440、一意キー
+V_all=sum_j U_j,全法人の限定集合上限。MW,scripts/trial_adjustable_removal.py:run,unit_trial_uppers/*.parquet: trial_adjustable_upper_kw /1000; regional_trial_uppers:upper_limited_mw,Decimal集計、未知/負上限の保留、元Uの全セル照合
+V_-i=sum_j(1−I_ij)U_j,対象名参照のみ全地域除去。R保持,scripts/trial_adjustable_removal.py:run,remove_<entity>_mw; asset_attribution_proxy:removal_entity_code,同じ停止条件で差引、JERA東京中部同時、固定原子力重複0
+g+Af=N;0<=g<=V;L<=Cf<=H,元需要の9地域同時成立,src/april_trial_comparison.py:simultaneous_feasibility,regional_trial_uppers; net_demand_B_mw; legacy_network_constraints_FY2025.parquet,実linprog捕捉:19変数、9等式、22不等式。過不足列なし
+max lambda; g_r+(Af)_r=lambda N_r,対象地域だけの純需要倍率,src/adjustable_removal.py:maximum_multiplier,target_net_demand_mw; U_remove; coefficients_json/lower_mw/upper_mw,実linprog捕捉:20変数、目的末尾−1、対象行のみ変更
+"A_sender,e=−1; A_receiver,e=+1",順方向正、受電−送電,src/net_demand_network.py:EDGES; scripts/trial_adjustable_removal.py:run,EDGES送受地域、方向確認済み元CSV,9節点10区間接続、列和0、原方向/単位/時刻一致
+C_H f=f_S−f_E,北陸フェンス同時制約,src/net_demand_network.py:compile_legacy_constraints,coefficients_json; lower_mw; upper_mw;source_ids_json,個別辺との同時適用、包含/符号を固定
+H=C_signed−M_signed−W_signed; L=reverse同式,保存枠を残す純移送包絡,src/net_demand_network.py:compile_legacy_constraints,network_candidate_bounds:operating_capacity_mw/margin_mw/wide_area_adjustment_mw,原22代表行から再計算、P控除済み空容量と区別
+N_r<=0 → all-base infeasible → held → proxy → LP,主status優先順,scripts/trial_adjustable_removal.py:run,status;all_firms_balance_status;removed_multiplier_status,全440640枠のstatus保持。理由重複は別flag
+lambda_min<=1<=lambda_max,元需要成立の厳密条件,src/central_spec_audit.py:minimum_feasible_multiplier,solver_calls_real_times.json:multiplier_call/minimum_lambda,旧全件照合と凸区間条件を分離。固定余剰反例テスト
+min sum(deficit+surplus),不成立原因説明専用、本計算に混ぜない,src/april_balance.py:solve_balance; src/april_constraint_diagnosis.py:diagnostic_slack,diagnostic_deficit_mw/diagnostic_surplus_mw,既存過不足は説明用。本計算実行列にスラックなし
+V_ext=V_old+sum(2設備の定義済みU)/1000,外部非重複確認の別版、元燃種保持,src/central_spec_audit.py:apply_two_asset_extension; src/adjustable_removal.py:trial_upper,extension_adjustable_upper_kw; original adjusted_reference_upper_kw/scenario_status,17条件同じ処理、元列型/値の一致、保留を0認定しない

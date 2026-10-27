@@ -1,0 +1,102 @@
+[
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/kushiro_company.html",
+    "url": "https://kushiro-tpp.com/company/",
+    "retrieved_at": "2026-10-27T01:28:40.277228+00:00",
+    "sha256": "96e501e162539b9fda1900f39ca5008438b2854ddf4c1a12a9e75d41aed863a7",
+    "bytes": 68027,
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "last_modified": null
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/kushiro_mechanism.html",
+    "url": "https://kushiro-tpp.com/mechanism/",
+    "retrieved_at": "2026-10-27T01:28:40.517470+00:00",
+    "sha256": "aed2fef15b7b0c4fdcd785bfdca71bef73519d179be98c2f17a2b66119217984",
+    "bytes": 83963,
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "last_modified": null
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/muroran_history.html",
+    "url": "https://www.nipponsteel.com/works/north-nippon/muroran/history/",
+    "retrieved_at": "2026-10-27T01:28:40.928317+00:00",
+    "sha256": "53ae5d25a38c7700aa9b4e18f91d560d34141456dbc3176ca1550b8982e43d60",
+    "bytes": 99144,
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "last_modified": null
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/hepcowinter2012.pdf",
+    "url": "https://www.hepco.co.jp/info/2012/pdf/121012b.pdf",
+    "retrieved_at": "2026-10-27T01:28:41.450409+00:00",
+    "sha256": "bf9c9a542a5c9615bafc155a07f331089b93d970437163613519b065277e33fa",
+    "bytes": 2074756,
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "last_modified": "Thu, 08 Feb 2024 00:51:04 GMT"
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/nipponsteel2010.pdf",
+    "url": "https://www.nipponsteel.com/ir/library/settlement/pdf/ns_jp_pre_2010_1q.pdf",
+    "retrieved_at": "2026-10-27T01:28:41.720854+00:00",
+    "sha256": "71cea7bdbfc4f3caa756b7042fa25541f552b01c1a6072361371b5319e4517f9",
+    "bytes": 1816398,
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "last_modified": "Fri, 12 Sep 2025 06:30:36 GMT"
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/implicit2017.pdf",
+    "url": "https://www.occto.or.jp/oshirase/sonotaoshirase/2017/files/implicit_setsumeikai_shiryo_01.pdf",
+    "retrieved_at": "2026-10-27T01:28:42.418249+00:00",
+    "sha256": "dc259069e34b4e90159219dcdd504fbbb1bdf433be1c5386a0635045c033133c",
+    "bytes": 685152,
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "last_modified": "Tue, 18 Nov 2025 07:09:40 GMT"
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/nipponsteel_factbook2023.html",
+    "url": "https://www.nipponsteel.com/factbook/2023/12-01.html",
+    "retrieved_at": "2026-10-27T01:29:36.340870+00:00",
+    "sha256": "16ab66c872d0f7b8aff8577733d901ae2c47e0b9a9e1cd605ced6252deadbcb7",
+    "bytes": 83981,
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "last_modified": null
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/margin2025annual.pdf",
+    "url": "https://www.occto.or.jp/assets/iinkai/margin/2024/files/margin_2024_1_3.pdf",
+    "retrieved_at": "2026-10-27T01:29:36.862691+00:00",
+    "sha256": "9127a0587bc9c9ab26b403f489bc57ccccfd34f02e6b98b585fa57bf6805a8ca",
+    "bytes": 658201,
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "last_modified": "Mon, 17 Nov 2025 07:50:27 GMT"
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/margin2025reason.pdf",
+    "url": "https://www.occto.or.jp/assets/margin_2025_4_2.pdf",
+    "retrieved_at": "2026-10-27T01:29:37.111377+00:00",
+    "sha256": "611c1154087e3ea7147b9dcf080d6c7d7af80338525db14e98275e19b31815da",
+    "bytes": 579017,
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "last_modified": "Sun, 01 Mar 2026 02:00:07 GMT"
+  },
+  {
+    "path": "data/interim/research_reference/20261027_central_spec_v1/margin2025reason_preFY.pdf",
+    "url": "https://www.occto.or.jp/assets/iinkai/margin/2024/files/margin_2024_1_2.pdf",
+    "retrieved_at": "2026-10-27T01:35:51.247822+00:00",
+    "sha256": "cb01b752eea06f9d5c59e9900854810f896e6c63b970504d47f9a358caffb52e",
+    "bytes": 567736,
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "last_modified": "Mon, 17 Nov 2025 07:50:26 GMT"
+  }
+]

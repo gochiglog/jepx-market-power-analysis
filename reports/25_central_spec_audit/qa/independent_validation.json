@@ -1,0 +1,22 @@
+{
+  "original_unit_cells_all_values_types_order_equal": 48960,
+  "old_new_sim_join_rows": 391680,
+  "join_match_rate": 1.0,
+  "unmatched": 0,
+  "duplicate_keys": 0,
+  "unit_day_48_periods_verified": true,
+  "intermediate_and_adopted_numeric_tables_equal": [
+    "two_asset_addition_by_condition_time",
+    "hokkaido_multiplier_extension_all_times",
+    "nine_area_simultaneous_extension_all_times",
+    "condition_consistency_extension_all_times"
+  ],
+  "captured_real_solver_samples": 6,
+  "max_replayed_residual_mw": 5.684341886080802e-14,
+  "original_fuel_unchanged": true,
+  "unknown_capacity_zero_recognition": false,
+  "no_diagnostic_slack_in_main_matrices": true,
+  "old_lambda_one_valid_comparisons": 359423,
+  "old_observed_lambda_one_exceptions": 0,
+  "new_hokkaido_observed_exceptions": 0
+}
