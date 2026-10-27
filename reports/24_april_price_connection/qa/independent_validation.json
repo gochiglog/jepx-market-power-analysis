@@ -1,0 +1,20 @@
+{
+  "original_spot_all43_columns_values_types_equal_in_all9_areas": true,
+  "original_multiplier_440640_all_columns_values_types_status_equal": true,
+  "representative_network_all78_columns_values_types_equal": true,
+  "model_bounds_unchanged": true,
+  "unique_market_observations": 12960,
+  "scenario_repeated_rows": 440640,
+  "scenario_repeat_factor": 34,
+  "price_join_rate": 1.0,
+  "unmatched": 0,
+  "duplicates": 0,
+  "silent_drop": 0,
+  "JERA_not_split": true,
+  "empty_groups_not_zero": true,
+  "all_distribution_statistics_independently_equal": true,
+  "fy2025_system_baseline_mismatches_unchanged": 2271,
+  "prior_stage22_23_all_manifest_targets_unchanged": true,
+  "notebook_executed_code_cells": 8,
+  "notebook_errors": 0
+}

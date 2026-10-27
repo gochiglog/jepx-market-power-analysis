@@ -1,0 +1,304 @@
+file,column,type,rows,null_count
+hokkaido_supply_set_reconciliation.parquet,asset_key_candidate,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,plant_name,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,unit_name,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,raw_fuel,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,business_name,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,scatter_capacity_mw,"decimal128(3, 0)",3,0
+hokkaido_supply_set_reconciliation.parquet,trial_reference_capacity_mw,"decimal128(9, 6)",3,0
+hokkaido_supply_set_reconciliation.parquet,scatter_included,bool,3,0
+hokkaido_supply_set_reconciliation.parquet,trial_adjustable_included,bool,3,0
+hokkaido_supply_set_reconciliation.parquet,limited_scope_status,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,mapping_status,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,trial_role,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,removal_entity_code,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,trial_status_at_example,large_string,3,0
+hokkaido_supply_set_reconciliation.parquet,trial_upper_at_example_mw,"decimal128(9, 6)",3,2
+hokkaido_supply_set_reconciliation.parquet,example_delivery_date,date32[day],3,0
+hokkaido_supply_set_reconciliation.parquet,example_period,int64,3,0
+hokkaido_supply_set_reconciliation.parquet,april_observed_cells,int64,3,0
+hokkaido_supply_set_reconciliation.parquet,april_trial_defined_cells,int64,3,0
+hokkaido_supply_set_reconciliation.parquet,exclusion_due_to_fuel_scope,bool,3,0
+hokkaido_supply_set_reconciliation.parquet,exclusion_due_to_target_removal,bool,3,0
+hokkaido_supply_set_reconciliation.parquet,automatic_reinstatement,bool,3,0
+hokkaido_supply_set_reconciliation.parquet,hjks_rows_json,large_string,3,0
+all_scenarios_with_spot_prices.parquet,supply_trial_scenario,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,delivery_date,date32[day],440640,0
+all_scenarios_with_spot_prices.parquet,period,int64,440640,0
+all_scenarios_with_spot_prices.parquet,target_area,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,entity,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,entity_code,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,network_scenario,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,all_firms_balance_status,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,target_net_demand_mw,double,440640,0
+all_scenarios_with_spot_prices.parquet,removed_adjustable_mw_all_nine_areas,double,440640,0
+all_scenarios_with_spot_prices.parquet,removed_fixed_output_mw,double,440640,0
+all_scenarios_with_spot_prices.parquet,held_candidate_cells,int64,440640,0
+all_scenarios_with_spot_prices.parquet,restored_candidate_cells,int64,440640,0
+all_scenarios_with_spot_prices.parquet,attribution_proxy,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,lambda_all_firms,double,440640,40928
+all_scenarios_with_spot_prices.parquet,lambda_removed,double,440640,81217
+all_scenarios_with_spot_prices.parquet,all_firms_multiplier_status,large_string,440640,40928
+all_scenarios_with_spot_prices.parquet,removed_multiplier_status,large_string,440640,40928
+all_scenarios_with_spot_prices.parquet,all_firms_max_residual_mw,double,440640,247893
+all_scenarios_with_spot_prices.parquet,removed_max_residual_mw,double,440640,286179
+all_scenarios_with_spot_prices.parquet,status,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,price__受渡日,string,440640,0
+all_scenarios_with_spot_prices.parquet,price__時刻コード,string,440640,0
+all_scenarios_with_spot_prices.parquet,price__売り入札量(kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__買い入札量(kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__約定総量(kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__システムプライス(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス北海道(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス東北(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス東京(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス中部(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス北陸(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス関西(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス中国(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス四国(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__エリアプライス九州(円/kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__売りブロック入札総量(kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__売りブロック約定総量(kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__買いブロック入札総量(kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__買いブロック約定総量(kWh),string,440640,0
+all_scenarios_with_spot_prices.parquet,price__timestamp_start,"timestamp[us, tz=Asia/Tokyo]",440640,0
+all_scenarios_with_spot_prices.parquet,price__timestamp_end,"timestamp[us, tz=Asia/Tokyo]",440640,0
+all_scenarios_with_spot_prices.parquet,price__timezone,string,440640,0
+all_scenarios_with_spot_prices.parquet,price__source_snapshot_id,string,440640,0
+all_scenarios_with_spot_prices.parquet,price__source_row_number,int32,440640,0
+all_scenarios_with_spot_prices.parquet,price__system_price,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_hokkaido,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_tohoku,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_tokyo,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_chubu,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_hokuriku,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_kansai,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_chugoku,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_shikoku,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price_kyushu,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__contracted_volume,"decimal128(38, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__sell_bid_volume,"decimal128(38, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__buy_bid_volume,"decimal128(38, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__sell_block_bid_volume,"decimal128(38, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__sell_block_contracted_volume,"decimal128(38, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__buy_block_bid_volume,"decimal128(38, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__buy_block_contracted_volume,"decimal128(38, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__system_price_sensitivity_base,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__baseline_price_match_flag,bool,440640,0
+all_scenarios_with_spot_prices.parquet,price__entity,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,price__area_price,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__system_price_market,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,price__observed_demand_mw,"decimal128(5, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__observed_fixed_R_mw,"decimal128(5, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__observed_net_demand_mw,"decimal128(5, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,price__hour_start,int8,440640,0
+all_scenarios_with_spot_prices.parquet,area_price,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,system_price_market,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,system_price_sensitivity_base,"decimal128(38, 2)",440640,0
+all_scenarios_with_spot_prices.parquet,baseline_price_match_flag,bool,440640,0
+all_scenarios_with_spot_prices.parquet,observed_demand_mw,"decimal128(5, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,observed_fixed_R_mw,"decimal128(5, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,observed_net_demand_mw,"decimal128(5, 0)",440640,0
+all_scenarios_with_spot_prices.parquet,hour_start,int8,440640,0
+all_scenarios_with_spot_prices.parquet,global_all_firms_status,large_string,440640,0
+all_scenarios_with_spot_prices.parquet,global_removed_simultaneous_status,large_string,440640,0
+april_price_observations.parquet,受渡日,string,12960,0
+april_price_observations.parquet,時刻コード,string,12960,0
+april_price_observations.parquet,売り入札量(kWh),string,12960,0
+april_price_observations.parquet,買い入札量(kWh),string,12960,0
+april_price_observations.parquet,約定総量(kWh),string,12960,0
+april_price_observations.parquet,システムプライス(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス北海道(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス東北(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス東京(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス中部(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス北陸(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス関西(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス中国(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス四国(円/kWh),string,12960,0
+april_price_observations.parquet,エリアプライス九州(円/kWh),string,12960,0
+april_price_observations.parquet,売りブロック入札総量(kWh),string,12960,0
+april_price_observations.parquet,売りブロック約定総量(kWh),string,12960,0
+april_price_observations.parquet,買いブロック入札総量(kWh),string,12960,0
+april_price_observations.parquet,買いブロック約定総量(kWh),string,12960,0
+april_price_observations.parquet,delivery_date,date32[day],12960,0
+april_price_observations.parquet,period,int8,12960,0
+april_price_observations.parquet,timestamp_start,"timestamp[us, tz=Asia/Tokyo]",12960,0
+april_price_observations.parquet,timestamp_end,"timestamp[us, tz=Asia/Tokyo]",12960,0
+april_price_observations.parquet,timezone,string,12960,0
+april_price_observations.parquet,source_snapshot_id,string,12960,0
+april_price_observations.parquet,source_row_number,int32,12960,0
+april_price_observations.parquet,system_price,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_hokkaido,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_tohoku,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_tokyo,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_chubu,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_hokuriku,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_kansai,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_chugoku,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_shikoku,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,area_price_kyushu,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,contracted_volume,"decimal128(38, 0)",12960,0
+april_price_observations.parquet,sell_bid_volume,"decimal128(38, 0)",12960,0
+april_price_observations.parquet,buy_bid_volume,"decimal128(38, 0)",12960,0
+april_price_observations.parquet,sell_block_bid_volume,"decimal128(38, 0)",12960,0
+april_price_observations.parquet,sell_block_contracted_volume,"decimal128(38, 0)",12960,0
+april_price_observations.parquet,buy_block_bid_volume,"decimal128(38, 0)",12960,0
+april_price_observations.parquet,buy_block_contracted_volume,"decimal128(38, 0)",12960,0
+april_price_observations.parquet,system_price_sensitivity_base,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,baseline_price_match_flag,bool,12960,0
+april_price_observations.parquet,target_area,large_string,12960,0
+april_price_observations.parquet,entity_code,large_string,12960,0
+april_price_observations.parquet,entity,large_string,12960,0
+april_price_observations.parquet,area_price,"decimal128(38, 2)",12960,0
+april_price_observations.parquet,system_price_market,"decimal128(38, 2)",12960,0
+consistency_with_prices_by_network.parquet,受渡日,string,25920,0
+consistency_with_prices_by_network.parquet,時刻コード,string,25920,0
+consistency_with_prices_by_network.parquet,売り入札量(kWh),string,25920,0
+consistency_with_prices_by_network.parquet,買い入札量(kWh),string,25920,0
+consistency_with_prices_by_network.parquet,約定総量(kWh),string,25920,0
+consistency_with_prices_by_network.parquet,システムプライス(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス北海道(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス東北(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス東京(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス中部(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス北陸(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス関西(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス中国(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス四国(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,エリアプライス九州(円/kWh),string,25920,0
+consistency_with_prices_by_network.parquet,売りブロック入札総量(kWh),string,25920,0
+consistency_with_prices_by_network.parquet,売りブロック約定総量(kWh),string,25920,0
+consistency_with_prices_by_network.parquet,買いブロック入札総量(kWh),string,25920,0
+consistency_with_prices_by_network.parquet,買いブロック約定総量(kWh),string,25920,0
+consistency_with_prices_by_network.parquet,delivery_date,date32[day],25920,0
+consistency_with_prices_by_network.parquet,period,int8,25920,0
+consistency_with_prices_by_network.parquet,timestamp_start,"timestamp[us, tz=Asia/Tokyo]",25920,0
+consistency_with_prices_by_network.parquet,timestamp_end,"timestamp[us, tz=Asia/Tokyo]",25920,0
+consistency_with_prices_by_network.parquet,timezone,string,25920,0
+consistency_with_prices_by_network.parquet,source_snapshot_id,string,25920,0
+consistency_with_prices_by_network.parquet,source_row_number,int32,25920,0
+consistency_with_prices_by_network.parquet,system_price,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_hokkaido,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_tohoku,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_tokyo,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_chubu,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_hokuriku,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_kansai,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_chugoku,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_shikoku,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,area_price_kyushu,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,contracted_volume,"decimal128(38, 0)",25920,0
+consistency_with_prices_by_network.parquet,sell_bid_volume,"decimal128(38, 0)",25920,0
+consistency_with_prices_by_network.parquet,buy_bid_volume,"decimal128(38, 0)",25920,0
+consistency_with_prices_by_network.parquet,sell_block_bid_volume,"decimal128(38, 0)",25920,0
+consistency_with_prices_by_network.parquet,sell_block_contracted_volume,"decimal128(38, 0)",25920,0
+consistency_with_prices_by_network.parquet,buy_block_bid_volume,"decimal128(38, 0)",25920,0
+consistency_with_prices_by_network.parquet,buy_block_contracted_volume,"decimal128(38, 0)",25920,0
+consistency_with_prices_by_network.parquet,system_price_sensitivity_base,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,baseline_price_match_flag,bool,25920,0
+consistency_with_prices_by_network.parquet,target_area,large_string,25920,0
+consistency_with_prices_by_network.parquet,entity_code,large_string,25920,0
+consistency_with_prices_by_network.parquet,entity,large_string,25920,0
+consistency_with_prices_by_network.parquet,area_price,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,system_price_market,"decimal128(38, 2)",25920,0
+consistency_with_prices_by_network.parquet,observed_demand_mw,"decimal128(5, 0)",25920,0
+consistency_with_prices_by_network.parquet,observed_fixed_R_mw,"decimal128(5, 0)",25920,0
+consistency_with_prices_by_network.parquet,observed_net_demand_mw,"decimal128(5, 0)",25920,0
+consistency_with_prices_by_network.parquet,hour_start,int8,25920,0
+consistency_with_prices_by_network.parquet,network_scenario,large_string,25920,0
+consistency_with_prices_by_network.parquet,consistency_state,large_string,25920,0
+consistency_with_prices_by_network.parquet,baseline_feasible_conditions,int64,25920,0
+consistency_with_prices_by_network.parquet,removed_feasible_comparable_conditions,int64,25920,0
+consistency_with_prices_by_network.parquet,removed_infeasible_comparable_conditions,int64,25920,0
+consistency_with_prices_by_network.parquet,removed_varies_among_comparable,bool,25920,0
+consistency_with_prices_by_network.parquet,all17_baseline_infeasible,bool,25920,0
+representative_network_original_rows.parquet,対象断面,string,22,0
+representative_network_original_rows.parquet,策定日,string,22,0
+representative_network_original_rows.parquet,策定／更新後,string,22,0
+representative_network_original_rows.parquet,連系線,string,22,0
+representative_network_original_rows.parquet,年月日,string,22,0
+representative_network_original_rows.parquet,時刻,string,22,0
+representative_network_original_rows.parquet,方向,string,22,0
+representative_network_original_rows.parquet,空容量,string,22,0
+representative_network_original_rows.parquet,計画潮流,string,22,0
+representative_network_original_rows.parquet,広域調整枠,string,22,0
+representative_network_original_rows.parquet,マージン,string,22,0
+representative_network_original_rows.parquet,運用容量,string,22,0
+representative_network_original_rows.parquet,運用容量決定要因,string,22,0
+representative_network_original_rows.parquet,運用容量拡大分空容量,string,22,0
+representative_network_original_rows.parquet,運用容量拡大分計画潮流,string,22,0
+representative_network_original_rows.parquet,運用容量拡大分運用容量,string,22,0
+representative_network_original_rows.parquet,送電ＮＧ情報件数,string,22,0
+representative_network_original_rows.parquet,送電ＮＧ情報延べ容量,string,22,0
+representative_network_original_rows.parquet,最新更新年月日時刻,string,22,0
+representative_network_original_rows.parquet,delivery_date,date32[day],22,0
+representative_network_original_rows.parquet,period,int64,22,0
+representative_network_original_rows.parquet,timestamp_start,"timestamp[us, tz=Asia/Tokyo]",22,0
+representative_network_original_rows.parquet,timestamp_end,"timestamp[us, tz=Asia/Tokyo]",22,0
+representative_network_original_rows.parquet,timezone,string,22,0
+representative_network_original_rows.parquet,source_file,string,22,0
+representative_network_original_rows.parquet,source_sha256,string,22,0
+representative_network_original_rows.parquet,source_row,int64,22,0
+representative_network_original_rows.parquet,source_record_id,string,22,0
+representative_network_original_rows.parquet,source_variant,string,22,0
+representative_network_original_rows.parquet,source_update_header_raw,string,22,0
+representative_network_original_rows.parquet,source_acquired_at,string,22,0
+representative_network_original_rows.parquet,link_name_raw,string,22,0
+representative_network_original_rows.parquet,direction_raw,string,22,0
+representative_network_original_rows.parquet,directional_geography_status,string,22,0
+representative_network_original_rows.parquet,flow_semantics,string,22,0
+representative_network_original_rows.parquet,row_updated_at,"timestamp[us, tz=Asia/Tokyo]",22,0
+representative_network_original_rows.parquet,file_latest_updated_at,"timestamp[us, tz=Asia/Tokyo]",22,22
+representative_network_original_rows.parquet,initial_publication_datetime_known,bool,22,0
+representative_network_original_rows.parquet,qa_update_after_delivery_start,bool,22,0
+representative_network_original_rows.parquet,qa_numeric_missing_columns,list<element: string>,22,0
+representative_network_original_rows.parquet,available_capacity_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,planned_flow_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,wide_area_adjustment_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,margin_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,operating_capacity_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,expanded_available_capacity_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,expanded_planned_flow_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,expanded_operating_capacity_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,transmission_ng_capacity_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,equipment_scope_class,large_string,22,0
+representative_network_original_rows.parquet,equipment_scope_description,large_string,22,0
+representative_network_original_rows.parquet,constraint_overlap_group,large_string,22,0
+representative_network_original_rows.parquet,direction_reference_url,large_string,22,0
+representative_network_original_rows.parquet,direction_reference_page,large_string,22,0
+representative_network_original_rows.parquet,direction_reference_checked_on,large_string,22,0
+representative_network_original_rows.parquet,formal_full_FY_validity_verified,bool,22,0
+representative_network_original_rows.parquet,equipment_history_fully_verified,bool,22,0
+representative_network_original_rows.parquet,raw_quantities_sign_changed,bool,22,0
+representative_network_original_rows.parquet,qa_new_fence_before_notice_target_label,bool,22,0
+representative_network_original_rows.parquet,scope_phase,large_string,22,0
+representative_network_original_rows.parquet,sending_area_set_json,large_string,22,0
+representative_network_original_rows.parquet,receiving_area_set_json,large_string,22,0
+representative_network_original_rows.parquet,sending_area,large_string,22,1
+representative_network_original_rows.parquet,receiving_area,large_string,22,1
+representative_network_original_rows.parquet,direction_status,large_string,22,0
+representative_network_original_rows.parquet,capacity_display_sign_multiplier,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,available_capacity_direction_display_mw,"decimal128(38, 6)",22,0
+representative_network_original_rows.parquet,capacity_display_formula,large_string,22,0
+representative_network_original_rows.parquet,capacity_display_source_url,large_string,22,0
+representative_network_original_rows.parquet,capacity_display_source_page,large_string,22,0
+representative_network_original_rows.parquet,capacity_display_rule_scope,large_string,22,0
+representative_network_original_rows.parquet,capacity_display_rule_status,large_string,22,0
+representative_network_original_rows.parquet,sending_area_price,"decimal128(38, 6)",22,1
+representative_network_original_rows.parquet,sending_price_key_matched,bool,22,0
+representative_network_original_rows.parquet,receiving_area_price,"decimal128(38, 6)",22,1
+representative_network_original_rows.parquet,receiving_price_key_matched,bool,22,0
+representative_network_original_rows.parquet,receiving_minus_sending_price,"decimal128(38, 6)",22,2
+representative_network_original_rows.parquet,price_comparison_status,large_string,22,0
+representative_network_original_rows.parquet,candidate_direction_envelope_mw,"decimal128(28, 6)",22,0
+representative_network_original_rows.parquet,candidate_envelope_negative,bool,22,0
+representative_network_original_rows.parquet,network_constraint_definition_complete,bool,22,0
+representative_network_original_rows.parquet,all_suppliers_lp_status,large_string,22,0
+representative_network_original_rows.parquet,market_bid_information_set_reproduced,bool,22,0
+representative_network_original_rows.parquet,reviewed_signed_model_bound_mw,"decimal128(10, 6)",22,0
+representative_network_original_rows.parquet,bound_formula,large_string,22,0
+representative_network_original_rows.parquet,available_formula,large_string,22,0
+representative_network_original_rows.parquet,review_status,large_string,22,0
+representative_network_original_rows.parquet,fixed_reservations_assumption,large_string,22,0

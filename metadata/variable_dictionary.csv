@@ -1665,3 +1665,25 @@ derived,no_deduction_remaining_mw,停止控除なし条件の企業除去後上�
 derived,record_restored_remaining_mw,停止保留を戻す条件の企業除去後上限部分和,quantity,MW,not_applicable,工程21/22固定版・工程23比較診断,specified,実際の利用可能性の確認ではない。4月限定診断・正式RSI/最終baselineではない
 derived,record_held_count,公表記録由来保留で計算集合外となった調整候補数,integer,not_applicable,not_applicable,工程21/22固定版・工程23比較診断,specified,復旧不明・競合・更新・平均量不明等。確認なし0とはしない。4月限定診断・正式RSI/最終baselineではない
 derived,unit_source_file,地域供給範囲の追跡元となる工程21の固定unitファイル,string,not_applicable,not_applicable,工程21/22固定版・工程23比較診断,specified,SHAは比較版manifestから参照。4月限定診断・正式RSI/最終baselineではない
+derived,observed_demand_mw,既存一次資料の地域実績需要,quantity,MW,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,工程20 B30の値。計画需要へ置換しない。記述的接続、最終baseline・因果推論ではない
+derived,observed_fixed_R_mw,既存B30の固定PV/風力/原子力実績,quantity,MW,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,技術的な調整不能性の認定ではない。記述的接続、最終baseline・因果推論ではない
+derived,observed_net_demand_mw,既存B30の実績需要−固定R,quantity,MW,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,非正を切り上げない。記述的接続、最終baseline・因果推論ではない
+derived,hour_start,30分受渡区間の開始時刻0〜23時,integer,not_applicable,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,(period−1)//2。需要頻度を変更しない。記述的接続、最終baseline・因果推論ではない
+derived,global_all_firms_status,同じ条件での9地域全法人同時成立,string,not_applicable,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,JERAは一法人。地域表示の反復を独立検査に数えない。記述的接続、最終baseline・因果推論ではない
+derived,global_removed_simultaneous_status,同じ条件での企業除去後9地域同時成立,string,not_applicable,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,元工程22を保持。JERAを東京/中部の別企業にしない。記述的接続、最終baseline・因果推論ではない
+derived,reviewed_signed_model_bound_mw,追跡確認した旧モデルの符号付き上下包絡,quantity,MW,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,C_signed−M_signed−W_signed。追加空容量Aとは区別。条件付き、未修正。記述的接続、最終baseline・因果推論ではない
+derived,bound_formula,保存送電包絡の変換式,string,not_applicable,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,結果に合わせた変更なし。記述的接続、最終baseline・因果推論ではない
+derived,available_formula,原空容量と構成項目の数値式,string,not_applicable,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,A=C−M−W−P。P=0から意味の一致を推論しない。記述的接続、最終baseline・因果推論ではない
+derived,review_status,送電入力の意味確認状態,string,not_applicable,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,conditional_scenario_no_numeric_correction。記述的接続、最終baseline・因果推論ではない
+derived,automatic_reinstatement,保留設備を自動復帰したか,boolean,not_applicable,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,今回全てFalse。記述的接続、最終baseline・因果推論ではない
+derived,trial_upper_at_example_mw,代表時刻で採用する設備調整上限,quantity,MW,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,原kW/1000。燃種保留はnull。記述的接続、最終baseline・因果推論ではない
+derived,scatter_capacity_mw,旧北海道散布図の対象設備参照容量,quantity,MW,not_applicable,工程24：既存spot/倍率/B30/元送電行,specified,元台帳kW/1000。指標の容量差そのものではない。記述的接続、最終baseline・因果推論ではない
+derived,scatter_included,以前の3設備参照群に含まれるか,boolean,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,trial_adjustable_included,今回の限定調整供給集合へ含まれるか,boolean,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,exclusion_due_to_fuel_scope,元燃種からPV/風力との非重複を確定できず保留か,boolean,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,exclusion_due_to_target_removal,対象企業の代理除去で集合外となったか,boolean,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,trial_reference_capacity_mw,設備の今回参照容量：原kWを1000で除した値,quantity,MW,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,trial_status_at_example,代表時刻の元供給シナリオ状態,string,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,april_observed_cells,3設備それぞれの4月元観測コマ数,integer,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,april_trial_defined_cells,3設備それぞれの4月調整上限が定義できるコマ数,integer,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし
+derived,fixed_reservations_assumption,送電包絡で保持する枠と再配分に関する追加仮定,string,not_applicable,not_applicable,工程24の原列保持・設備/送電確認,specified,原本と既存版を保持。自動復帰・最終baseline・因果推論なし

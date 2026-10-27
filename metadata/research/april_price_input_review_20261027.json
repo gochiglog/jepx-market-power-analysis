@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-10-27",
+  "sources": [
+    {
+      "title": "系統情報サービス操作マニュアル 2025年3月",
+      "url": "https://www.occto.or.jp/assets/occtosystem2/files/250306_keitoujouhou.pdf",
+      "path": "data/interim/research_reference/20261026_net_demand_network/system_manual_2025.pdf",
+      "sha256": "dc420abf24ccce2cc6eff2686cc21955fce97cbae11245ee39e53a7ee474b3d2",
+      "pages": "物理43〜44 表2-8、策定/更新後の説明",
+      "verification": "既存原本＋公式公開PDFを限定再確認",
+      "supports": "MW・断面・順逆・元列・行更新日時・策定時保存",
+      "does_not_prove": "全利用計画を任意再配分する権利や、FY2025実運用上限の再現"
+    },
+    {
+      "title": "電力需給及び電力系統に関する概況 2024年度実績",
+      "url": "https://www.occto.or.jp/houkokusho/2025/files/denryokujukyuu_2024_250910.pdf",
+      "pages": "物理36 本文33 図2-17・表2-7",
+      "verification": "公式PDF本文・図を画像確認",
+      "supports": "運用容量・マージン・計画潮流・空容量の区別。広域周波数調整分の空容量からの控除。順逆の純計画潮流",
+      "limit": "2024年度実績の説明。FY2025全行の権利・設定理由・包含の証明ではない"
+    }
+  ],
+  "bound_review": "conditional_scenario_no_numeric_correction",
+  "formula": "lower/upper = signed operating_capacity - signed margin - signed wide_adjustment",
+  "additional_room": "signed available = model envelope - signed planned flow",
+  "assumptions": [
+    "保存マージン（使用計画分控除後の表示）と広域調整枠を固定し、残る包絡内で純移送を再配分",
+    "通常利用枠内のモデルで、緊急時マージン利用を許可しない",
+    "登録済み計画潮流と利用権を固定した追加移送モデルではない",
+    "9地域輸送と保存された個別/フェンス同時制約を保持。送配電系統内部・AC/DC潮流を再現しない"
+  ],
+  "zero_planned_flow_does_not_establish_equal_meaning": true,
+  "immediate_recalculation_required": false,
+  "final_baseline_verified": false
+}

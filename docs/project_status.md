@@ -4,7 +4,7 @@
 
 原本取得・時間正規化・価格ETL・設備診断・市場接続・需要需給ETL・方向整理・研究判断材料・北海道記述図まで実施済みです。
 現在の目的は「特定事業者を他社・域外供給で代替できるか」の構造評価です（RD-021）。
-[工程23：17条件内の一致と送電・供給範囲](../reports/23_april_constraint_diagnosis/README.md)を完了。全8法人の全時刻を保持し、重点4法人に11組の単独解除・既存包含群の解除とL1過不足診断を追加しました。図4枚・[再現ノートブック07](../notebooks/07_april_constraint_diagnosis.ipynb)へ整理。既存17供給条件・固定R・除去代理・最終baselineは変更していません。
+[工程24：北海道集合差・送電の意味・価格接続](../reports/24_april_price_connection/README.md)を完了。旧モデル数値を変更せず、全12,960価格観測・440,640条件枠を接続。図4枚と[実行済みノートブック08](../notebooks/08_april_price_connection.ipynb)へ整理しました。入力の追加仮定と図A/Bの母集団差を明記し、因果・最終baselineは未採用です。
 
 今回の実施Issueは #42（データPJ #32）、branch `issue/feature-42`、依存元 `issue/feature-40`（PR #41）。
 元repoのブランチを切り替えて作業し、01・02の未commitのノートブック変更は保持しています。

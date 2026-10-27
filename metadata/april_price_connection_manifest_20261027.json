@@ -1,0 +1,279 @@
+{
+  "version": "20261027_price_v3",
+  "inputs": [
+    {
+      "path": "reports/13_hokkaido_scatter/qa/asset_reference_registry.csv",
+      "sha256": "08b98ba5cd3900a077f3014d376c1d0b6f6be0d5768c716f6ca783ac0453267c"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/asset_attribution_proxy.parquet",
+      "sha256": "cae0a50f743d5c7efe98c1b3742566863b5e6b21ea8135d1d3ed8335afbc360b"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/reference_no_deduction.parquet",
+      "sha256": "356bd6ffd94cd092e51940ec1baf21acb0cfa11e8c05b05c1f1771abcbbc5e5c"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/network_candidate_bounds.parquet",
+      "sha256": "d0d1bf181d8ee17929e620b6bfe2b6ee5d662264c4f2f9d8274e71460feb6d50"
+    },
+    {
+      "path": "data/raw/occto/system_interconnector_capacity/dayahead2/planned/auto_occto_interconnector_capacity_dayahead2_planned_20250401_20250407.csv",
+      "sha256": "ed112698d19e6c265c476e2f831f679830988fdb26e413efb95efe289892b3a4"
+    },
+    {
+      "path": "data/processed/jepx/spot/jepx_spot_FY2025.parquet",
+      "sha256": "242e3b42ab59609e623e47f599f63378e26187222acc37dd284d2e6b05a21c22"
+    },
+    {
+      "path": "data/processed/jepx/price_sensitivity/jepx_price_sensitivity_FY2025.parquet",
+      "sha256": "ecc09d9a033e0e5c15b8ac6706db70c9265bf04957acbf3a5c26af3531298e6f"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa"
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/nine_area_simultaneous_after_removal.parquet",
+      "sha256": "9abff0b12713d5d757e209c78d5d655138adc68d965882657953427e8875b326"
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/condition_consistency_all_times.parquet",
+      "sha256": "83007bcac02480b726c3aef78260ab743d030b9649ac7358f31ec198cab6535a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/hokkaido_supply_set_reconciliation.parquet",
+      "sha256": "bd0eba0da4730e814bfc25c84b483698426887423308f9b9004c21c8cca2cc5a",
+      "rows": 3
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/representative_network_original_rows.parquet",
+      "sha256": "9ccdd11f7e3a2436377f3ae6ceb1208b9606ad2a73b39f6c0854874923f0958a",
+      "rows": 22
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/april_price_observations.parquet",
+      "sha256": "7b209344c1ca921e9303758e043fec14a70fe7c73e36117be7b98f7b652e08db",
+      "rows": 12960
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/all_scenarios_with_spot_prices.parquet",
+      "sha256": "f8ada6d85aefbb9375b34925baa060c12ab0fc28b626de65948884bb0196dfcc",
+      "rows": 440640
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/consistency_with_prices_by_network.parquet",
+      "sha256": "8b752d6f592402234eb387a45e39338fbb674ed29cc28f88a0ba342542cea96d",
+      "rows": 25920
+    }
+  ],
+  "unique_market_observations": 12960,
+  "alternative_scenario_rows": 440640,
+  "scenario_multiplier": 34,
+  "consistency_rows": 25920,
+  "join_match_rate": 1.0,
+  "unmatched": 0,
+  "duplicates": 0,
+  "silent_drop": 0,
+  "fy2025_system_baseline_mismatches": 2271,
+  "april_system_baseline_mismatches": 113,
+  "raw_representative_rows_all_cells_equal": 22,
+  "hokkaido_automatically_reinstated": false,
+  "network_bounds_changed": false,
+  "final_baseline_adopted": false,
+  "regression_or_significance_test": false,
+  "purpose_ja": "北海道の供給集合・送電包絡の入力確認と4月価格の記述的接続",
+  "timezone": "Asia/Tokyo",
+  "periods_per_delivery_date": 48,
+  "independent_market_observation_interpretation": "12,960 distinct area-time keys; temporal/spatial independence not assumed; 34 scenario copies not independent",
+  "final_baseline_verified": false,
+  "reports": [
+    {
+      "path": "reports/24_april_price_connection/README.md",
+      "sha256": "2358ef9630e15f2d49da206cfd05f3a00b54c4f419f091c490505366870c5c3c",
+      "bytes": 16485
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/all_output_null_counts.csv",
+      "sha256": "04feb6325b2637be3dc95df2585ca4ab33ec3e280f99dce0f6c5135d5307ad4a",
+      "bytes": 25539
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/descriptive_extreme_examples.csv",
+      "sha256": "5e1299829ea0083937cf025417defd093875615c419bfd37df63098ceff98baf",
+      "bytes": 2274
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/figure_manifest.json",
+      "sha256": "6bedf80c282b50d43a6f68852920f8a9be4551b5bccfcd830ea326de1da1653d",
+      "bytes": 2095
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/hokkaido_supply_set_reconciliation.csv",
+      "sha256": "06070d9e331a1a0c667a92d2c3ac606ac572ff76c7f955b5a371d6b7c496599a",
+      "bytes": 1691
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/independent_validation.json",
+      "sha256": "5f99c02c2843edf44bc223e90e61d62ff2363908b0979bd4c5e87dea6b4262fa",
+      "bytes": 735
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/network_arithmetic_check.csv",
+      "sha256": "5533b79c0dd000ab11bed9000787d10e41d8f03c2cf266238102fb53d6d75ca9",
+      "bytes": 125
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/output_column_dictionary.csv",
+      "sha256": "707fecdcd79727ce1cc8981fb03f448fa98026b3a61885271fceec9e3f4f5641",
+      "bytes": 104163
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/representative_network_trace.csv",
+      "sha256": "c99250b58f4a12d6e8ce68e7149271a78d2b47cba823c8c12c73bcc03686e95b",
+      "bytes": 26091
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/run_audit.json",
+      "sha256": "b36aa3cd3cf03e334319267d84586e5855ccc72fab078f684043b207d43e3fcf",
+      "bytes": 4067
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/scatter_all_status_counts.csv",
+      "sha256": "4c8ad7cc96a661c7bf5b834b0f5450bed3557b5eba1a3f41e70feb55241c697c",
+      "bytes": 599
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/scatter_display_windows.csv",
+      "sha256": "9aaa7776fbda15d83f5b7d4a2d54b407aefe1f7b4e3213951c547b8d16a6be17",
+      "bytes": 441
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/scatter_status_price_distribution.csv",
+      "sha256": "38c655729c9fbe5dc70f034fa7e08e1ff038056c3aaf130c84d21f77dafe72fc",
+      "bytes": 1206
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/state_hour_distribution.csv",
+      "sha256": "ee9fa0f7ff7035af346e413ec59e147416e6f37a62787eaa74e75f674341f16f",
+      "bytes": 60919
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/state_nonpositive_net_counts.csv",
+      "sha256": "410baf50f35e8d1eb6c2f676a1ea9b34fc0d2b9883b129869db46aa28098693a",
+      "bytes": 1462
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/state_price_and_covariate_distribution.csv",
+      "sha256": "66822359032915723d6961c6f470eb507e9cf06732cfb1dc5de814c3a0f3ea32",
+      "bytes": 14408
+    },
+    {
+      "path": "reports/24_april_price_connection/qa/verification.json",
+      "sha256": "d6cb2591c517932db4794457a303892bff6de177e97b33bda3bfca290ccb23af",
+      "bytes": 27788
+    }
+  ],
+  "figures": [
+    {
+      "path": "reports/24_april_price_connection/figures/01_multiplier_price_full.pdf",
+      "sha256": "db1ea1b78b356c8cf91c164579995877329e0effc2b157abd7774a102c37c2db",
+      "bytes": 179306
+    },
+    {
+      "path": "reports/24_april_price_connection/figures/01_multiplier_price_full.png",
+      "sha256": "b3df14bd1678910ac0e15f7aa4fc097dab91aa0bac0839b18f21a7ba5c772ca6",
+      "bytes": 467664
+    },
+    {
+      "path": "reports/24_april_price_connection/figures/02_multiplier_price_near_one.pdf",
+      "sha256": "77110f3be48b3efc2f029794968bdfb0a0c84cfc7633a7576cc67a3a6196c334",
+      "bytes": 175352
+    },
+    {
+      "path": "reports/24_april_price_connection/figures/02_multiplier_price_near_one.png",
+      "sha256": "8a5712f20b18507ba97b1cd97bcd0c99925a12c0f4651ca8f0ea3790363228d8",
+      "bytes": 468680
+    },
+    {
+      "path": "reports/24_april_price_connection/figures/03_consistency_price_distribution.pdf",
+      "sha256": "8b4e0741f3021d2a2e9645dae3192bcb32a2e71a40ac72f6333eae47319636fc",
+      "bytes": 145647
+    },
+    {
+      "path": "reports/24_april_price_connection/figures/03_consistency_price_distribution.png",
+      "sha256": "ad93cc690b76b3f2e1d3f076b92a5d698cb115b368eb7bb6421e0c5c3789ee3c",
+      "bytes": 461490
+    },
+    {
+      "path": "reports/24_april_price_connection/figures/04_hour_composition.pdf",
+      "sha256": "f23f55fe89dbf2664bc74a0814f0141c01ffe8045a099c1f0bfa3ef8a67bc13b",
+      "bytes": 64851
+    },
+    {
+      "path": "reports/24_april_price_connection/figures/04_hour_composition.png",
+      "sha256": "21a6bb8a0259c3b7cde44b1313f969c05d822c6f4a44712096ea0958e0c8cff5",
+      "bytes": 261730
+    }
+  ],
+  "notebook": {
+    "path": "notebooks/08_april_price_connection.ipynb",
+    "sha256": "3dbba2f7210890aaa4d01f2cdd3d8e4c2ca0e81ce965521910a0302a5a610016",
+    "bytes": 2334493
+  },
+  "implementation": [
+    {
+      "path": "src/april_price_connection.py",
+      "sha256": "2e24112885da0a0365218f565b8384502059805b0220f11647b2a7975e33587e",
+      "bytes": 2164
+    },
+    {
+      "path": "src/april_price_figures.py",
+      "sha256": "ab66715042c23f1dfd67d0260a936aba24a07e3e72120b7ec66fffa8e6a69af6",
+      "bytes": 6265
+    },
+    {
+      "path": "scripts/connect_april_prices.py",
+      "sha256": "84c3e3c2012deaa8cbe0323fffa2ed7f01fe9055ff3dfbdd6d548625532f9e43",
+      "bytes": 19984
+    },
+    {
+      "path": "scripts/plot_april_prices.py",
+      "sha256": "168567039f9102972e89f3539370eade6c277ee0f1a074d96394e48f1f61f520",
+      "bytes": 421
+    },
+    {
+      "path": "tests/test_april_price_connection.py",
+      "sha256": "e47ac2a3d788b6184e723459be57997ba567dc7879b569132f5c225d219ef0ba",
+      "bytes": 2953
+    }
+  ],
+  "review_references": [
+    {
+      "path": "metadata/research/price_input_reference_20261027.json",
+      "sha256": "14eaf98fe9acbdb648ba4db1447276e248dcd9ce21609e86f221470c3bc5d6d7",
+      "bytes": 1417
+    },
+    {
+      "path": "metadata/research/april_price_input_review_20261027.json",
+      "sha256": "47d515a0d8ebc569bcc5d5122108b7ff33aeb4e1acca88e1ca1d7bc02adf2976",
+      "bytes": 2194
+    },
+    {
+      "path": "data/interim/research_reference/20261027_price_input_review_v1/annual_overview_2024.pdf",
+      "sha256": "07069d8668d4fbdf6cec818f92c24e720fec07676e42d282fb01d5ea6fd1cb5c",
+      "bytes": 4074492
+    },
+    {
+      "path": "data/interim/research_reference/20261026_net_demand_network/system_manual_2025.pdf",
+      "sha256": "dc420abf24ccce2cc6eff2686cc21955fce97cbae11245ee39e53a7ee474b3d2",
+      "bytes": 6810764
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "figures": [
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/01_multiplier_price_full.png",
+      "sha256": "b3df14bd1678910ac0e15f7aa4fc097dab91aa0bac0839b18f21a7ba5c772ca6"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/01_multiplier_price_full.pdf",
+      "sha256": "db1ea1b78b356c8cf91c164579995877329e0effc2b157abd7774a102c37c2db"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/02_multiplier_price_near_one.png",
+      "sha256": "8a5712f20b18507ba97b1cd97bcd0c99925a12c0f4651ca8f0ea3790363228d8"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/02_multiplier_price_near_one.pdf",
+      "sha256": "77110f3be48b3efc2f029794968bdfb0a0c84cfc7633a7576cc67a3a6196c334"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/03_consistency_price_distribution.png",
+      "sha256": "ad93cc690b76b3f2e1d3f076b92a5d698cb115b368eb7bb6421e0c5c3789ee3c"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/03_consistency_price_distribution.pdf",
+      "sha256": "8b4e0741f3021d2a2e9645dae3192bcb32a2e71a40ac72f6333eae47319636fc"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/04_hour_composition.png",
+      "sha256": "21a6bb8a0259c3b7cde44b1313f969c05d822c6f4a44712096ea0958e0c8cff5"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/24_april_price_connection/figures/04_hour_composition.pdf",
+      "sha256": "f23f55fe89dbf2664bc74a0814f0141c01ffe8045a099c1f0bfa3ef8a67bc13b"
+    }
+  ],
+  "font": "Hiragino Sans",
+  "figures_count": 4,
+  "scatter_condition": "reference_no_deduction/saved_plan_constraints",
+  "scatter_zoom_xlim": [
+    0,
+    2
+  ],
+  "causal_comparison": false,
+  "all_nine_areas_kept": true
+}

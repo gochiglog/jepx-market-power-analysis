@@ -42,3 +42,8 @@
 ## 17条件内の一致・送電包絡解除（工程23）
 
 [図と説明](../reports/23_april_constraint_diagnosis/README.md)、[ノートブック07](../notebooks/07_april_constraint_diagnosis.ipynb)。新しい比較版は `data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/`。全時刻の一致区分、包絡解除比較14条件の同時成立/倍率、重点4法人の地域別供給範囲と診断専用過不足を保存します。14は送電解除の比較条件数で、新しい停止条件ではありません。旧固定版と17供給条件は不変です。
+
+
+## 4月価格との記述的接続（工程24）
+
+[入力と図の説明](../reports/24_april_price_connection/README.md)、[ノートブック08](../notebooks/08_april_price_connection.ipynb)。実データは `data/interim/occto/april_price_connection/20261027_price_v3/`。12,960価格観測と、同じ価格を34条件で反復する440,640枠を分けています。図Bは純需要非正も含む全時刻であり、図Aの有効倍率時刻とは母集団が異なります。旧固定版は保持し、因果推論・最終baselineではありません。
