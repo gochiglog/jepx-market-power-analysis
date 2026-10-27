@@ -73,7 +73,7 @@
     },
     {
       "path": "reports/28_paper_central_result/figures/01_method_readable.svg",
-      "sha256": "fa88eda3adf17014d3c89d3e604b9684a4c33bf5193954d9619c1773c2b98af1"
+      "sha256": "82c00e474b8775ddb4be3803940ca5ad2c8fe478ff1dd4989929c90ffddae2f2"
     },
     {
       "path": "reports/28_paper_central_result/figures/02_central_three_categories.pdf",
@@ -85,7 +85,7 @@
     },
     {
       "path": "reports/28_paper_central_result/figures/02_central_three_categories.svg",
-      "sha256": "795d1c3bcc2fa5891fca26f8fda982c34b926a99dd27160c10021bc769bbaa3c"
+      "sha256": "f7b882ba724b52a48d90cf898bd9ef0b35a33f098231f52bb612bde38266ff47"
     },
     {
       "path": "reports/28_paper_central_result/figures/A01_price_same_categories_candidate.pdf",
@@ -97,7 +97,7 @@
     },
     {
       "path": "reports/28_paper_central_result/figures/A01_price_same_categories_candidate.svg",
-      "sha256": "4e0857b8e11244698b4c95f2028a686dc52bf17690c558d1f2ab4d9406c3d1df"
+      "sha256": "cadcd721c06309dbab50fd0ea4292f16d4583f73d21d93f99f4ceb6082f31460"
     },
     {
       "path": "reports/28_paper_central_result/literature_contrast.md",
@@ -113,7 +113,7 @@
     },
     {
       "path": "reports/28_paper_central_result/literature_contrast_one_page.svg",
-      "sha256": "7100e76fb0ddfb5f3cff7862182b6e0207a504342a4ed816c9fe5235da07bf9d"
+      "sha256": "57a6037b846380fd4db46d722d65d561917fb94ab88618d13e7b9065633360ec"
     },
     {
       "path": "reports/28_paper_central_result/one_page_result.md",
@@ -129,7 +129,7 @@
     },
     {
       "path": "reports/28_paper_central_result/one_page_result.svg",
-      "sha256": "6dde6d4064c224e61c4e545f0ded7f3c54581a5488a2ce5016556f0a44dd5ebb"
+      "sha256": "7381be84545e05acebc36a61dd3c3bc2ce950912807bee76bb1a477d0c71476b"
     },
     {
       "path": "reports/28_paper_central_result/qa/aggregation_audit.json",
@@ -165,7 +165,7 @@
     },
     {
       "path": "reports/28_paper_central_result/qa/main_appendix_reproduction.csv",
-      "sha256": "af759bf78dae5d1cc03fc8d13ef36e456024b6a160ca7c8d7557ec4b2f049f69"
+      "sha256": "fa3802ea055e700b78f0ec3e9633bd11566230f5be49af3f51448f6f9caf8f81"
     },
     {
       "path": "reports/28_paper_central_result/qa/method_edge_legend.csv",
@@ -185,11 +185,11 @@
     },
     {
       "path": "reports/28_paper_central_result/qa/question_result_figure_limit.csv",
-      "sha256": "1a635ef844996181584d5d537d30015222454d0263679ba1b11764e5f1613823"
+      "sha256": "50efbe8a7300572abf9df993e096e6c98cb18030a58415ee885de040c0dc437c"
     },
     {
       "path": "reports/28_paper_central_result/qa/technical_reference_contrast.csv",
-      "sha256": "ae6cecf0055a5d6bc1561a40ee412d95b0a045053ab1c4f1282f8c7f6d4014c3"
+      "sha256": "82a5ec956b58336aac466ba64cf413403cf8256308bb67f65743b6dd52b67573"
     },
     {
       "path": "reports/28_paper_central_result/qa/technical_reference_review.json",
@@ -223,7 +223,7 @@
     },
     {
       "path": "scripts/render_paper_summary_sheets.py",
-      "sha256": "93af7c7694209b41a713961ae0c406ec3c9133236e4afd4cce0dd6ab9d3ff5ef"
+      "sha256": "51230785b49c5ea2a2871c771cf1d3a01e58d0b2e14707058ed4f7c2916bbcf7"
     },
     {
       "path": "scripts/verify_paper_central_result.py",

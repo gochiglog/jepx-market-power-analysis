@@ -1,5 +1,7 @@
 """一ページの先行研究対照と問い→結果→図→限定。既存CSVのみ描画。"""
 
+import csv
+import io
 import sys
 import textwrap
 from pathlib import Path
@@ -19,6 +21,19 @@ REPORT = ROOT / "reports/28_paper_central_result"
 
 def cell(text, width):
     return "\n".join(textwrap.wrap(str(text), width=width, break_long_words=True))
+
+
+def normalize_generated_text():
+    """生成SVGの行末空白と、新規文書CSVの改行だけを統一する。値/座標は変えない。"""
+    for path in REPORT.rglob("*.svg"):
+        text = path.read_text()
+        path.write_text("\n".join(line.rstrip() for line in text.splitlines()) + "\n")
+    for path in (REPORT / "qa").glob("*.csv"):
+        with path.open(newline="") as handle:
+            rows = list(csv.reader(handle))
+        buffer = io.StringIO()
+        csv.writer(buffer, lineterminator="\n").writerows(rows)
+        path.write_text(buffer.getvalue())
 
 
 def main():
@@ -145,3 +160,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    normalize_generated_text()
