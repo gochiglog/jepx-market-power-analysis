@@ -1,0 +1,181 @@
+{
+  "scope": "既存台帳・ZIPメンバー一覧・保存報告の読取だけ。追加LP/集計分析/取得なし",
+  "inventory_counts": [
+    {
+      "source_id": "hjks_outage",
+      "variant": "manual_hjks_outage_outages",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "hjks_outage",
+      "variant": "outage",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "hjks_unit",
+      "variant": "manual_hjks_unit_units",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "hjks_unit",
+      "variant": "unit",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "jepx_price_sensitivity",
+      "variant": "manual_jepx_sensitivity_diff_price_sensitivity",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "jepx_price_sensitivity",
+      "variant": "manual_jepx_sensitivity_price_sensitivity",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "jepx_price_sensitivity",
+      "variant": "sensitivity",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "jepx_price_sensitivity",
+      "variant": "sensitivity_diff",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "jepx_spot",
+      "variant": "manual_jepx_spot_spot",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "jepx_spot",
+      "variant": "spot",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_demand",
+      "variant": "demand",
+      "registered_paths": 13,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_generation",
+      "variant": "generation",
+      "registered_paths": 13,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_generation",
+      "variant": "manual_occto_generation_generation",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_interconnector",
+      "variant": "manual_occto_reserve_interconnector_dayahead2",
+      "registered_paths": 12,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_interconnector",
+      "variant": "manual_occto_reserve_interconnector_dayahead_actual",
+      "registered_paths": 12,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_interconnector",
+      "variant": "reserve_interconnector_latest",
+      "registered_paths": 13,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_interconnector",
+      "variant": "reserve_interconnector_nextday2",
+      "registered_paths": 13,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_reserve",
+      "variant": "manual_occto_reserve_block_dayahead2",
+      "registered_paths": 12,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_reserve",
+      "variant": "manual_occto_reserve_block_dayahead_actual",
+      "registered_paths": 12,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_reserve",
+      "variant": "reserve_latest",
+      "registered_paths": 13,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_reserve",
+      "variant": "reserve_nextday2",
+      "registered_paths": 13,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_system_interconnector_capacity",
+      "variant": "manual_occto_system_interconnector_capacity_planned",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "occto_system_interconnector_capacity",
+      "variant": "system_capacity_dayahead2_planned",
+      "registered_paths": 53,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "regulatory_entities",
+      "variant": "manual_egc_regulatory_candidate_unverified",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "rei_power_data",
+      "variant": "manual_rei_validation_power_data",
+      "registered_paths": 1,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    },
+    {
+      "source_id": "rei_power_data",
+      "variant": "manual_rei_validation_supply_demand",
+      "registered_paths": 10,
+      "note": "サンプル/手動版を含む。主分析への使用件数とは異なる"
+    }
+  ],
+  "chubu_annual_zip": "data/interim/research_reference/20261026_april_balance_v1/eria_jukyu_2025.zip",
+  "chubu_zip_member_names": [
+    "eria_jukyu_202509_04.csv",
+    "eria_jukyu_202507_04.csv",
+    "eria_jukyu_202508_04.csv",
+    "eria_jukyu_202505_04.csv",
+    "eria_jukyu_202506_04.csv",
+    "eria_jukyu_202602_04.csv",
+    "eria_jukyu_202504_04.csv",
+    "eria_jukyu_202603_04.csv",
+    "eria_jukyu_202512_04.csv",
+    "eria_jukyu_202601_04.csv",
+    "eria_jukyu_202510_04.csv",
+    "eria_jukyu_202511_04.csv"
+  ],
+  "annual_unit_scenario_files": 9,
+  "planned_missing_primary_area_months": "8地域×11月=88地域月。DとRで共有、配布方式によりファイル数は未確定",
+  "period_target": "FY2025。4月を最終分析期間として採用しない",
+  "new_model_runs": 0,
+  "new_data_files_acquired": 0
+}
