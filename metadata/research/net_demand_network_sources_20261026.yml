@@ -1,0 +1,70 @@
+checked_on: '2026-10-26'
+sources:
+- id: reserve_manual
+  title: 広域予備率Web公表システム操作マニュアル（2025年3月6日版）
+  url: https://www.occto.or.jp/occtosystem2/files/20250306_koikiyobiritsuwebkohyo.pdf
+  pages: 物理20〜24 表2-5/2-6
+  verification: official_pdf_verified
+  finding: 翌々日エリア需要/供給力はMW、FY2025は48コマ。太陽光/風力内訳列なし。需要が自然変動供給全体を控除済みとの記載なし。
+  limit: 自家消費・揚水/充電・損失を含む数値境界のFY2025地域別仕様はこのCSV説明のみでは確定しない
+- id: reserve_supply
+  title: 第102回調整力等委 資料1
+  date: '2024-10-23'
+  url: https://www.occto.or.jp/assets/iinkai/chouseiryoku/2024/files/chousei_102_01.pdf
+  pages: 物理21（引用表の内側番号9ではない）
+  verification: official_pdf_verified_image
+  finding: 太陽光/風力は気象予測に基づく出力想定値を供給力へ計上する説明。2024年度から予備率算定の統一。
+  limit: 内訳の実数値やFY2025各保存行の組成を復元できる資料ではない。後年の揚水/調整力変更を無視しない
+- id: self_consumption
+  title: 第6回調整力等委 資料4
+  date: '2016-09-01'
+  url: https://www.occto.or.jp/iinkai/chouseiryoku/2016/files/chousei_jukyu_06_04.pdf
+  pages: 物理5〜6
+  verification: official_pdf_verified
+  finding: 需要と余剰購入PVはともに自家消費を除くという当該分析の境界。
+  limit: 2016年の資料。現在のFY2025全地域全列の境界をこれだけで認定しない
+- id: tepco_boundary
+  title: 東京電力PG エリア需給実績の説明
+  url: https://www4.tepco.co.jp/forecast/html/area_data-j.html
+  pages: 留意事項
+  verification: official_page_verified
+  finding: 実績は所内/自家消費控除後の送出値。揚水動力・充電等に関する需給差の説明。
+  limit: 実績の説明であり、翌々日予測の各地域境界へ一律転用しない
+- id: fit_plan
+  title: 発電計画等受領業務ビジネスプロトコル標準規格 Ver4.3
+  url: https://www.occto.or.jp/occtosystem2/kisaiyouryou/files/BP_hyoujun_kisaiyouryou_ver4.3.pdf
+  pages: 検索抽出の週間/翌々日計画表
+  verification: official_search_verified
+  finding: 太陽光/風力の週間・翌々日計画は予測計画値を記載する区分。
+  limit: 通常HTTP404で原PDF未取得。原PDF確認済みとしない。提出計画が一般公開される証拠ではない
+- id: guideline
+  title: 需要及び供給力計上ガイドライン（2024年11月、2025年11月版）
+  url: https://www.enecho.meti.go.jp/category/electricity_and_gas/electricity_measures/001/pdf/2025-11_jukyujuyou_keijogaidorain.pdf
+  pages: 第2/第3 検索抽出
+  verification: official_search_verified
+  finding: 供給計画/期待容量が対象。送電端・太陽光余剰の自家消費等の説明。
+  limit: HTTP403。原PDF未確認。長期/ピーク供給能力の調整係数を30分予測Rへ適用しない
+- id: central
+  title: 中地域交流ループ運用開始に伴うシステム切替対応 第114回資料2
+  date: '2025-12-24'
+  url: https://www.occto.or.jp/assets/chousei_114_02.pdf
+  pages: 物理7〜8（図を目視）
+  verification: official_pdf_verified_image
+  finding: 個別区間と北陸フェンスの同時管理、北陸=S−E、将来中部=M+S/関西=M+E。切替後4月運開までは南福光ルート断予定。
+  limit: 予定と実施確認を区別。全FY物理設備履歴の証明ではない
+- id: cutover
+  title: 系統情報サービス画面改修のお知らせ
+  date: 2026-02
+  url: https://www.occto.or.jp/assets/institution/keitoujouhou/202602keitou_jyouhou_nakachiiki.pdf
+  pages: 物理2/4〜5
+  verification: official_pdf_verified
+  finding: 3/13リリース完了後は個別三重/越前/南福光の更新が止まり、過去表示用に残る。
+  limit: 個別残存行を切替後の独立能力としない。リリース完了の正確な時刻を補わない
+- id: notice
+  title: 広域予備率Web公表システム お知らせ
+  date: 2026-03-13 19:31
+  url: https://web-kohyo.occto.or.jp/kks-web-public/notice
+  pages: 3/13のお知らせ2件
+  verification: official_page_verified
+  finding: 予備率側の公表対象端時刻3/13 01:00以降と移行時フェンス表示式。
+  limit: 予備率サイトの告知を系統CSVの全列の物理上限式へ無断転用しない

@@ -1,4 +1,4 @@
-updated_on: '2026-10-24'
+updated_on: '2026-10-26'
 tasks:
 - roadmap_id: 1
   title: Repo bootstrap
@@ -121,3 +121,10 @@ support_tasks:
   depends_on_issue: 38
   parent_pj_issue: 32
   status: all_firm_input_comparison_complete_real_network_feasibility_held
+- github_issue_number: 42
+  title: 純需要・固定供給の会計と9地域ネットワーク入力の整備
+  branch: issue/feature-42
+  github_url: https://github.com/gochiglog/jepx-market-power-analysis/issues/42
+  depends_on_issue: 40
+  parent_pj_issue: 32
+  status: legacy_constraints_compiled_net_demand_held_missing_R

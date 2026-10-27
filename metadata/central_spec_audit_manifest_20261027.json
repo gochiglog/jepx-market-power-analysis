@@ -1,0 +1,477 @@
+{
+  "version": "20261027_two_asset_v2",
+  "purpose_ja": "2設備の非重複確認と17条件の別版比較・保存送電枠の採用根拠・式実装入力の監査",
+  "timezone": "Asia/Tokyo",
+  "periods_per_day": 48,
+  "inputs": [
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/asset_attribution_proxy.parquet",
+      "sha256": "cae0a50f743d5c7efe98c1b3742566863b5e6b21ea8135d1d3ed8335afbc360b"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/regional_trial_uppers.parquet",
+      "sha256": "09df768c127a6b1ffb40110cb15679c5eabae82c7c91b98d34c657fbedaca278"
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/nine_area_simultaneous_after_removal.parquet",
+      "sha256": "9abff0b12713d5d757e209c78d5d655138adc68d965882657953427e8875b326"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646"
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/legacy_network_constraints_FY2025.parquet",
+      "sha256": "b50a1e634ebb165e2685d45fa7130a4a993ffb00943abce7401a2a16a48f5df8"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__full_stop_zero.parquet",
+      "sha256": "729e9503f3278c5b6907b457720c19a1f25df898e806b359abe977cfaf2b34ba"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "0721a907e9879a415cc2707f1d5b762443b8c8aa0a878d1019a5b3ef33698dbb"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__mean_reduction.parquet",
+      "sha256": "10b7da70c63c1e1daa891727d371598c22531d2907b6b6c58853788e148f0b3e"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "f449c4855951515cc3c7fc228045d0b0782dc80989ec4b85e8ff3c149a5a8047"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__full_stop_zero.parquet",
+      "sha256": "0db16fbeafd369d34bd92476fb16a7d24bf322b2ffc2f286abb480b5e5e24295"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "b779976b0ff74d64e57341ce30e35220e4e595efc80fd33d17040984669f40fa"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__mean_reduction.parquet",
+      "sha256": "279115866136a08f9801f90b07348ac16d06be14d68230c5b6f7b7fdc667c5ff"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/58852_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "1e4d9b6bcb1b74e9e8ff18d5f0e7caf2c84cf5194fdd61741b02621c3a34ebcf"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__full_stop_zero.parquet",
+      "sha256": "a171d4b68bb8b5ff289a39ab42c8c7c04988b88b1e42ac1bdd23663326543b0c"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "0848c2f6b05d4653bcb855fd6616af14921271f25d83441e1c73d924d5d440d4"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__mean_reduction.parquet",
+      "sha256": "f23f4859f5b9794254eae376d3989ef5b2a2877e5e06d0966bc3ee96dcbde17d"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "8c82914616819d5ed2555df14af9ec9e6700efc66c74b64b00ccc257b45df970"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__full_stop_zero.parquet",
+      "sha256": "81c564d990803a78e9e517d9565449497863de128c82894a39403429733ec06f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "4d2ff054cfad7117d664f5f520656d25f9d006c9890339c91704fd43f570478f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__mean_reduction.parquet",
+      "sha256": "ad90f8555ec3f3fadd414ca8c0d29dea582f33101621f6c905fc65e834251585"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/7828_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "c5dc11e52cbecb85d84d3315fe11b0eaa740501d1273d6e0a8ac1a3dbacdabdb"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/reference_no_deduction.parquet",
+      "sha256": "356bd6ffd94cd092e51940ec1baf21acb0cfa11e8c05b05c1f1771abcbbc5e5c"
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/condition_consistency_all_times.parquet",
+      "sha256": "83007bcac02480b726c3aef78260ab743d030b9649ac7358f31ec198cab6535a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/two_asset_external_evidence_extension.parquet",
+      "sha256": "63c2665aacdf4cdf206e2f2e4cb4abe90290be30487e33824c344157887593a9",
+      "rows": 2
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_early__full_stop_zero.parquet",
+      "sha256": "0c019ad40e6d77706fa6a964d01a161649759705c8b547a1f5e028bfbcfaf603",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "fa680bc97e70bfbb6d60c7945c5efe76160e5578d0588c9a8732bd20fa212102",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_early__mean_reduction.parquet",
+      "sha256": "5a7cf2986c4f316887516a7682a9f0da64f6f71783a2fa0997dca586512d0829",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "b04514bd43a4895b1c50da41c5652a836521f24b3ad00b79071c246fd350b910",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_late__full_stop_zero.parquet",
+      "sha256": "a9726a7756776131ec2be0421d1e7aef5b6963ae072b6ad896e6fed1562ca0fd",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "dbaaededec3b8d9cb60ce77da2747334ae97411f8d410b32a6747289a37556ce",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_late__mean_reduction.parquet",
+      "sha256": "98989ad817bfd2eb1e17f0a549f22438576969c7616b5c3cc3c97cb6f902586d",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/58852_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "b40362313eef9ff0172f13c4798c01c5260061648ada6f93b215e88272d05e44",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_early__full_stop_zero.parquet",
+      "sha256": "4396c22513d53479b5122abee91e706b855e3354c96c3e16db4828d426a0ae06",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_early__full_stop_zero__record_held_reference.parquet",
+      "sha256": "e26d8d667ac57b24dafb717c63bee4df120efcc772c4f254c0901aa8c0c3357a",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_early__mean_reduction.parquet",
+      "sha256": "26968770d6a81bf38ceb7b7ecc46d3b04da5d07e1d04687ffc99216822c38209",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_early__mean_reduction__record_held_reference.parquet",
+      "sha256": "47baca94f51245531e3f8d4c2e09b639a68db31584a9c651d9fc1f4aef8d179e",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_late__full_stop_zero.parquet",
+      "sha256": "45e9a9f702456c12e1affb8463d40cf146ec6dfceccebd8f76bdafc536491066",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_late__full_stop_zero__record_held_reference.parquet",
+      "sha256": "02203aac8f941c21b47c3365e89655ab0dba1d5ae8a7305e4f1335142a412972",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_late__mean_reduction.parquet",
+      "sha256": "94427c3da92c0075efae8d863117456f8cadcec9be47fc30937e475140f9c93e",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/7828_late__mean_reduction__record_held_reference.parquet",
+      "sha256": "32db0cb7b6dc908acec58c4784fd259761903c7959d962f77fa9ccf75772ec8f",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/unit_extensions/reference_no_deduction.parquet",
+      "sha256": "37eba116dd8939f23a0c19b17924657a20d9b59cea73d63c3b62bc06e68e591f",
+      "rows": 2880
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/two_asset_addition_by_condition_time.parquet",
+      "sha256": "d7c12028edc1711cb1192c2f6b17eba2486c36bcd4813e03f4f2bbd57c6be578",
+      "rows": 24480
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/hokkaido_multiplier_extension_all_times.parquet",
+      "sha256": "bf985f8bb6a1cd93ef11d12334541cd9928874096ddbd008f754f6371b983cf9",
+      "rows": 48960
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/nine_area_simultaneous_extension_all_times.parquet",
+      "sha256": "546eeae5fc45404343afd5f4da53202bf2cb3d1777d98bcc020979961ccd2077",
+      "rows": 391680
+    },
+    {
+      "path": "data/interim/occto/central_spec_audit/20261027_two_asset_v2/condition_consistency_extension_all_times.parquet",
+      "sha256": "bea60f039d1de38a6b09bf1289112728daa06346325af22a006871747be0f8d2",
+      "rows": 23040
+    }
+  ],
+  "official_reference_files": [
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/kushiro_company.html",
+      "url": "https://kushiro-tpp.com/company/",
+      "retrieved_at": "2026-10-27T01:28:40.277228+00:00",
+      "sha256": "96e501e162539b9fda1900f39ca5008438b2854ddf4c1a12a9e75d41aed863a7",
+      "bytes": 68027,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/kushiro_mechanism.html",
+      "url": "https://kushiro-tpp.com/mechanism/",
+      "retrieved_at": "2026-10-27T01:28:40.517470+00:00",
+      "sha256": "aed2fef15b7b0c4fdcd785bfdca71bef73519d179be98c2f17a2b66119217984",
+      "bytes": 83963,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/muroran_history.html",
+      "url": "https://www.nipponsteel.com/works/north-nippon/muroran/history/",
+      "retrieved_at": "2026-10-27T01:28:40.928317+00:00",
+      "sha256": "53ae5d25a38c7700aa9b4e18f91d560d34141456dbc3176ca1550b8982e43d60",
+      "bytes": 99144,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/hepcowinter2012.pdf",
+      "url": "https://www.hepco.co.jp/info/2012/pdf/121012b.pdf",
+      "retrieved_at": "2026-10-27T01:28:41.450409+00:00",
+      "sha256": "bf9c9a542a5c9615bafc155a07f331089b93d970437163613519b065277e33fa",
+      "bytes": 2074756,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Thu, 08 Feb 2024 00:51:04 GMT"
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/nipponsteel2010.pdf",
+      "url": "https://www.nipponsteel.com/ir/library/settlement/pdf/ns_jp_pre_2010_1q.pdf",
+      "retrieved_at": "2026-10-27T01:28:41.720854+00:00",
+      "sha256": "71cea7bdbfc4f3caa756b7042fa25541f552b01c1a6072361371b5319e4517f9",
+      "bytes": 1816398,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Fri, 12 Sep 2025 06:30:36 GMT"
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/implicit2017.pdf",
+      "url": "https://www.occto.or.jp/oshirase/sonotaoshirase/2017/files/implicit_setsumeikai_shiryo_01.pdf",
+      "retrieved_at": "2026-10-27T01:28:42.418249+00:00",
+      "sha256": "dc259069e34b4e90159219dcdd504fbbb1bdf433be1c5386a0635045c033133c",
+      "bytes": 685152,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 18 Nov 2025 07:09:40 GMT"
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/nipponsteel_factbook2023.html",
+      "url": "https://www.nipponsteel.com/factbook/2023/12-01.html",
+      "retrieved_at": "2026-10-27T01:29:36.340870+00:00",
+      "sha256": "16ab66c872d0f7b8aff8577733d901ae2c47e0b9a9e1cd605ced6252deadbcb7",
+      "bytes": 83981,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/margin2025annual.pdf",
+      "url": "https://www.occto.or.jp/assets/iinkai/margin/2024/files/margin_2024_1_3.pdf",
+      "retrieved_at": "2026-10-27T01:29:36.862691+00:00",
+      "sha256": "9127a0587bc9c9ab26b403f489bc57ccccfd34f02e6b98b585fa57bf6805a8ca",
+      "bytes": 658201,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 17 Nov 2025 07:50:27 GMT"
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/margin2025reason.pdf",
+      "url": "https://www.occto.or.jp/assets/margin_2025_4_2.pdf",
+      "retrieved_at": "2026-10-27T01:29:37.111377+00:00",
+      "sha256": "611c1154087e3ea7147b9dcf080d6c7d7af80338525db14e98275e19b31815da",
+      "bytes": 579017,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Sun, 01 Mar 2026 02:00:07 GMT"
+    },
+    {
+      "path": "data/interim/research_reference/20261027_central_spec_v1/margin2025reason_preFY.pdf",
+      "url": "https://www.occto.or.jp/assets/iinkai/margin/2024/files/margin_2024_1_2.pdf",
+      "retrieved_at": "2026-10-27T01:35:51.247822+00:00",
+      "sha256": "cb01b752eea06f9d5c59e9900854810f896e6c63b970504d47f9a358caffb52e",
+      "bytes": 567736,
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 17 Nov 2025 07:50:26 GMT"
+    }
+  ],
+  "reports": [
+    {
+      "path": "reports/25_central_spec_audit/README.md",
+      "sha256": "5758d8aed0a50c74feb1dcc7947a571878c18c0b4ce00d355121a71c801aa26e",
+      "bytes": 18706
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/consistency_counts.csv",
+      "sha256": "09aa22656bfc4fe5462539c3cb8722b6c84314e4ac624364d4732a4e46b86dcb",
+      "bytes": 3436
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/consistency_transitions.csv",
+      "sha256": "663ec2b1bb60929abb02fefd368d1304578a650dab60222e2c484cc65a26a647",
+      "bytes": 6855
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/hokkaido_multiplier_comparison.csv",
+      "sha256": "fc42eb8d9675a49356f6df4376657c5f67d19b8f3e479ccfe942c7d0d208502f",
+      "bytes": 5812
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/hokkaido_status_counts.csv",
+      "sha256": "dde65922d31895d09379797cb333c0af278916a09cc99ad7fdf7813b02698cb3",
+      "bytes": 6103
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/old_lambda_one_exceptions.csv",
+      "sha256": "dbe2756b95d3af5df11e43aaf2139774f2d4f201fa6d580b19f5c34bde6a7175",
+      "bytes": 440
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/run_audit.json",
+      "sha256": "376f806108b0e07823c248edded919435a65c786196ab325f1967ff59d577f2a",
+      "bytes": 7990
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/simultaneous_transitions.csv",
+      "sha256": "d5f94b58d8a6b2a10d445747aedd4d4d0b6ef0ecb86df83c46af4c3618a8bde0",
+      "bytes": 89644
+    },
+    {
+      "path": "reports/25_central_spec_audit/history/v1_type_inspection/solver_calls_real_times.json",
+      "sha256": "b6e0d4e21b4b617cf41bf1aaf975853b1b262aa1ad6b0ff896279df1e3fecd66",
+      "bytes": 317976
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/consistency_counts.csv",
+      "sha256": "09aa22656bfc4fe5462539c3cb8722b6c84314e4ac624364d4732a4e46b86dcb",
+      "bytes": 3436
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/consistency_transitions.csv",
+      "sha256": "663ec2b1bb60929abb02fefd368d1304578a650dab60222e2c484cc65a26a647",
+      "bytes": 6855
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/formula_code_data_map.csv",
+      "sha256": "9ced0dae17876ef99da039dbc7dbf3d6c38740c68c2f5927725a1e8d41f58bf3",
+      "bytes": 3216
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/hokkaido_multiplier_comparison.csv",
+      "sha256": "fc42eb8d9675a49356f6df4376657c5f67d19b8f3e479ccfe942c7d0d208502f",
+      "bytes": 5812
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/hokkaido_status_counts.csv",
+      "sha256": "dde65922d31895d09379797cb333c0af278916a09cc99ad7fdf7813b02698cb3",
+      "bytes": 6103
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/independent_validation.json",
+      "sha256": "ca1c50e7dc24e8a5c0fbd7eab103e5eb8ebef13b87f1159f91bad0dc69522989",
+      "bytes": 802
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/network_bound_adoption_review.csv",
+      "sha256": "fa72ba29253f37bf0f4f48d30ee2ca424f952351fc994dc9ee41ff2d10c9953c",
+      "bytes": 47011
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/old_lambda_one_exceptions.csv",
+      "sha256": "dbe2756b95d3af5df11e43aaf2139774f2d4f201fa6d580b19f5c34bde6a7175",
+      "bytes": 440
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/output_column_dictionary.csv",
+      "sha256": "aa25b596dbd21521c4f1a5d4188cc643e3f0b8d986255ecd2082a9ab139f7f27",
+      "bytes": 174024
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/run_audit.json",
+      "sha256": "e1309f0fdb0a4b61738c269ca47be074c51483b8233706ff0daec706d2c00b8b",
+      "bytes": 12072
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/simultaneous_transitions.csv",
+      "sha256": "d5f94b58d8a6b2a10d445747aedd4d4d0b6ef0ecb86df83c46af4c3618a8bde0",
+      "bytes": 89644
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/solver_calls_real_times.json",
+      "sha256": "b6e0d4e21b4b617cf41bf1aaf975853b1b262aa1ad6b0ff896279df1e3fecd66",
+      "bytes": 317976
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/two_asset_official_evidence.csv",
+      "sha256": "353c4c1befa439438bed8e76e909bf2753db4ac57a87e6984195399ddd72b9e4",
+      "bytes": 2549
+    },
+    {
+      "path": "reports/25_central_spec_audit/qa/verification.json",
+      "sha256": "fec2a98866081e87586c20e68532c8ad842c7f7354e2d5704eb6c2fa2d8f6cd7",
+      "bytes": 55743
+    }
+  ],
+  "implementation": [
+    {
+      "path": "src/central_spec_audit.py",
+      "sha256": "b0b470b25ad2126b41741ef10ae1c775a47d70f29fe97382e52675633163b66d",
+      "bytes": 1887
+    },
+    {
+      "path": "scripts/audit_central_spec.py",
+      "sha256": "6cad3b912a7e34f0b67a56d9964d51012b4a31c608146c0e829a77c401bb086f",
+      "bytes": 20784
+    },
+    {
+      "path": "scripts/validate_central_spec.py",
+      "sha256": "36a91a30314764389f49d11ad64f647519960eef64390420564d8c5cb48161c7",
+      "bytes": 6378
+    },
+    {
+      "path": "tests/test_central_spec_audit.py",
+      "sha256": "dde5be091cce85de18901d1c4dbbe22d351cf440c7a7a35c350afb82a7f614b3",
+      "bytes": 3486
+    },
+    {
+      "path": "docs/central_spec_audit.md",
+      "sha256": "360405c61a4f4fa0ce225eb9f18f8a09ead11587c2372275fc4321c5d152eb9d",
+      "bytes": 9770
+    }
+  ],
+  "original_values_and_units_preserved": true,
+  "stop_conditions_added": 0,
+  "firm_proxy_or_fixed_R_changed": false,
+  "mathematical_identity_not_assumed": true,
+  "main_solver_slack_variables": false,
+  "original_capacity_measurement_boundary_verified": false,
+  "network_adoption_class": "B_saved_reservations_fixed",
+  "tests": {
+    "pytest_passed": 356,
+    "related_tests_after_dictionary_update": 21,
+    "ruff": "passed"
+  },
+  "intermediate_version": "20261027_two_asset_v1: concat型推測の検査途中版、数値は同一",
+  "final_baseline_adopted": false,
+  "main_merged": false
+}

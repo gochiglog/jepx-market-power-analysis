@@ -1,0 +1,91 @@
+{
+  "version": "20261027_price_v3",
+  "inputs": [
+    {
+      "path": "reports/13_hokkaido_scatter/qa/asset_reference_registry.csv",
+      "sha256": "08b98ba5cd3900a077f3014d376c1d0b6f6be0d5768c716f6ca783ac0453267c"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/asset_attribution_proxy.parquet",
+      "sha256": "cae0a50f743d5c7efe98c1b3742566863b5e6b21ea8135d1d3ed8335afbc360b"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/unit_trial_uppers/reference_no_deduction.parquet",
+      "sha256": "356bd6ffd94cd092e51940ec1baf21acb0cfa11e8c05b05c1f1771abcbbc5e5c"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/network_candidate_bounds.parquet",
+      "sha256": "d0d1bf181d8ee17929e620b6bfe2b6ee5d662264c4f2f9d8274e71460feb6d50"
+    },
+    {
+      "path": "data/raw/occto/system_interconnector_capacity/dayahead2/planned/auto_occto_interconnector_capacity_dayahead2_planned_20250401_20250407.csv",
+      "sha256": "ed112698d19e6c265c476e2f831f679830988fdb26e413efb95efe289892b3a4"
+    },
+    {
+      "path": "data/processed/jepx/spot/jepx_spot_FY2025.parquet",
+      "sha256": "242e3b42ab59609e623e47f599f63378e26187222acc37dd284d2e6b05a21c22"
+    },
+    {
+      "path": "data/processed/jepx/price_sensitivity/jepx_price_sensitivity_FY2025.parquet",
+      "sha256": "ecc09d9a033e0e5c15b8ac6706db70c9265bf04957acbf3a5c26af3531298e6f"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa"
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/nine_area_simultaneous_after_removal.parquet",
+      "sha256": "9abff0b12713d5d757e209c78d5d655138adc68d965882657953427e8875b326"
+    },
+    {
+      "path": "data/interim/occto/april_constraint_diagnosis/20261027_constraints_v2/condition_consistency_all_times.parquet",
+      "sha256": "83007bcac02480b726c3aef78260ab743d030b9649ac7358f31ec198cab6535a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/hokkaido_supply_set_reconciliation.parquet",
+      "sha256": "bd0eba0da4730e814bfc25c84b483698426887423308f9b9004c21c8cca2cc5a",
+      "rows": 3
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/representative_network_original_rows.parquet",
+      "sha256": "9ccdd11f7e3a2436377f3ae6ceb1208b9606ad2a73b39f6c0854874923f0958a",
+      "rows": 22
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/april_price_observations.parquet",
+      "sha256": "7b209344c1ca921e9303758e043fec14a70fe7c73e36117be7b98f7b652e08db",
+      "rows": 12960
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/all_scenarios_with_spot_prices.parquet",
+      "sha256": "f8ada6d85aefbb9375b34925baa060c12ab0fc28b626de65948884bb0196dfcc",
+      "rows": 440640
+    },
+    {
+      "path": "data/interim/occto/april_price_connection/20261027_price_v3/consistency_with_prices_by_network.parquet",
+      "sha256": "8b752d6f592402234eb387a45e39338fbb674ed29cc28f88a0ba342542cea96d",
+      "rows": 25920
+    }
+  ],
+  "unique_market_observations": 12960,
+  "alternative_scenario_rows": 440640,
+  "scenario_multiplier": 34,
+  "consistency_rows": 25920,
+  "join_match_rate": 1.0,
+  "unmatched": 0,
+  "duplicates": 0,
+  "silent_drop": 0,
+  "fy2025_system_baseline_mismatches": 2271,
+  "april_system_baseline_mismatches": 113,
+  "raw_representative_rows_all_cells_equal": 22,
+  "hokkaido_automatically_reinstated": false,
+  "network_bounds_changed": false,
+  "final_baseline_adopted": false,
+  "regression_or_significance_test": false
+}

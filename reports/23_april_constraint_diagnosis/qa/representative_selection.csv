@@ -1,0 +1,5 @@
+entity_code,delivery_date,period,selection_rule,price_used,supply_trial_scenario,diagnostic_slack_sum_mw,diagnostic_residual_mw
+hokkaido,2025-04-01,1,17条件全て全法人成立かつ除去後不成立の最初の時刻,False,reference_no_deduction,2580.0,0.0
+hokuriku,2025-04-01,1,17条件全て全法人成立かつ除去後不成立の最初の時刻,False,reference_no_deduction,1841.0,0.0
+jera,2025-04-01,1,17条件全て全法人成立かつ除去後不成立の最初の時刻,False,reference_no_deduction,16160.03,9.094947017729282e-13
+kyushu,2025-04-01,1,17条件全て全法人成立かつ除去後不成立の最初の時刻,False,reference_no_deduction,2122.0,9.094947017729282e-13

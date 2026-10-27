@@ -28,6 +28,9 @@
 
 - [15　RSI算定設計：地域・法人別の代替供給と式―データ対応](15_rsi_design/README.md)
 - [16　保存翌々日計画：全法人前検査・停止反映・9地域LPの範囲](16_saved_plan_supply/README.md)
+- [17　純需要・固定供給の会計と9地域ネットワーク入力](17_net_demand_network/README.md)
+- [18　固定供給Rの公開範囲・少数ファイル検証・限定集合の設計](18_fixed_output_feasibility/README.md)
+- [19　実績固定出力を使うA/Bの最初の計算仕様](19_actual_net_demand/README.md)
 
 ## エクスプローラーで探す
 
@@ -49,3 +52,15 @@ GitHubや他のエディタでは、この目次から工程別に読んでく�
 
 報告本文は「何を知りたかったか → 今回分かったこと → データをどこで見られるか → 限界と次の判断」の順にします。
 技術的な件数や全列の検査はQAへ分けます。新しい日付の報告が自動的に研究baselineになることはありません。
+
+- [20：4月の実績純需要・9地域全法人LP](20_april_all_supplier_balance/README.md)：成立/不成立・診断過不足と会計。
+
+- [21：4月の固定Rを残す調整可能供給除去試行](21_adjustable_removal/README.md)：純需要倍率、1未満・保留、同一入力/共通時刻の送電比較。
+
+- [22：4月試行を図で読む・送電/停止比較・9地域同時成立](22_april_trial_comparison/README.md)：全時刻分母、条件付きの倍率、JERAの未算定。
+
+- [23：4月の17条件内で残る特徴と送電・供給範囲の診断](23_april_constraint_diagnosis/README.md)：全条件内の一致、11組包絡解除、停止保留の集合差、代表時刻。
+
+- [24：4月入力2点の確認と価格の記述的接続](24_april_price_connection/README.md)：北海道462/250MWの差、送電の意味、倍率/判定区分と価格。
+
+- [25：北海道2設備・送電留保枠・数式実装の監査](25_central_spec_audit/README.md)：公式根拠による非重複確認、17条件の別版比較、B判定の根拠、実ソルバー行列。

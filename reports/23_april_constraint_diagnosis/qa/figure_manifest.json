@@ -1,0 +1,40 @@
+{
+  "figures": [
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/01_all17_removal_failure.png",
+      "sha256": "ff48b5c9e228aa2aaf592539f511daeee1c3b95a0829c6f7bbeff35c941e7398"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/01_all17_removal_failure.pdf",
+      "sha256": "3f14961fbf8c01f05888046b16684701941d4fa6ca0e23da30d82311853e11b9"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/02_condition_consistency.png",
+      "sha256": "f622e2dd0cbc341c16e029ab1be19ecd59aaa1f98db86db2c7ba0076aac30300"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/02_condition_consistency.pdf",
+      "sha256": "d174c13f053719a19244e91fc25f4855d8441e09c5021e94b295cdf815890b9d"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/03_constraint_release.png",
+      "sha256": "34af3066111b665489730f39cd6140519e2fd8de3c66503ed8fb8edcd5c6979d"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/03_constraint_release.pdf",
+      "sha256": "c53da1c2f95ee806e4b10ea2115c6297bad849f7c8883b598299e12820cca1d2"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/04_focus_time_states.png",
+      "sha256": "516f4085174d6355deef3693b2108ab211d6142f654d67c57272a4885579b37d"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/23_april_constraint_diagnosis/figures/04_focus_time_states.pdf",
+      "sha256": "617069f25f544d755e6f34d9db016e2601ff2045d54af1ac6b2593bbff4110fd"
+    }
+  ],
+  "font": "Hiragino Sans",
+  "main_denominator": 1440,
+  "constraint_release_comparable_denominator": 1430,
+  "figures_count": 4
+}

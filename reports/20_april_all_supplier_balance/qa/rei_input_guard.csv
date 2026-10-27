@@ -1,0 +1,10 @@
+area,status,source_path
+北海道,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_hokkaido_FY2025.csv
+東北,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_tohoku_FY2025.csv
+東京,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_tokyo_FY2025.csv
+中部,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_chubu_FY2025.csv
+北陸,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_hokuriku_FY2025.csv
+関西,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_kansai_FY2025.csv
+中国,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_chugoku_FY2025.csv
+四国,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_shikoku_FY2025.csv
+九州,rejected_filename_header_mismatch,data/raw/rei/supply_demand/rei_supply_demand_kyushu_FY2025.csv

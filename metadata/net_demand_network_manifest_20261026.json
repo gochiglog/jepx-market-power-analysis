@@ -1,0 +1,184 @@
+{
+  "version": "20261026_net_demand_network_v1",
+  "inputs": [
+    {
+      "path": "data/processed/occto/demand_supply_direction/20261016_native_v1/occto_reserve_nextday2_FY2025.parquet",
+      "sha256": "3e5888b66cbe8824d155868831baa6773d526089242c43c32702a25ed1d0b514"
+    },
+    {
+      "path": "data/processed/comparison/20261016_decision_preparation_v2/observed_unit_business_evidence_FY2025.parquet",
+      "sha256": "e26f5751cc6ed2cec68be8e5caad36e53f5586924866bdbcb398f627a704a44d"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/network_candidate_bounds.parquet",
+      "sha256": "d0d1bf181d8ee17929e620b6bfe2b6ee5d662264c4f2f9d8274e71460feb6d50"
+    },
+    {
+      "path": "data/interim/occto/saved_plan_supply/20261024_diagnostic_v1/regional_all_suppliers.parquet",
+      "sha256": "9323f91144e354822a785b5f334bb28207175483c1bcbb7759198498f31538c1"
+    },
+    {
+      "path": "data/interim/occto/public_record_annotation/20261016_diagnostic_A_v1/generation_with_snapshot_public_records_FY2025.parquet",
+      "sha256": "c31921e7a65613a7356467c8f8308a5ca7519a7b0901ea2218579e016a7a0cf6"
+    },
+    {
+      "path": "metadata/acquisition_manifest.jsonl",
+      "sha256": "5647d1f4970c14899732e484489b2c5ed052f8d3498ee75fc894ed7d615d8de7"
+    },
+    {
+      "path": "metadata/data_sources.yml",
+      "sha256": "c5e7093be1c277e6be1c7009236a9cc73df45e41263a13c33533590523b7569f"
+    },
+    {
+      "path": "metadata/research/interconnector_direction_scope_20261016.csv",
+      "sha256": "307f659ad84395a14ee748c14d2cbd345f3a4b432648e74ab71ec7cec1cc4246"
+    }
+  ],
+  "original_plan_columns_preserved": true,
+  "market_area_rows": 157680,
+  "unused_okinawa_keys": 17520,
+  "duplicate_market_keys": 0,
+  "original_observation_labels": 491,
+  "business_join_matched": 491,
+  "business_join_unmatched": 0,
+  "explicit_solar_wind_labels": 0,
+  "fuel_unknown_or_other_labels": 13,
+  "missing_R_rows": 157680,
+  "nonpositive_net_demand_rows": null,
+  "net_demand_ratio_computable_rows": 0,
+  "raw_envelope_identity_rows": 388896,
+  "raw_envelope_identity_mismatches": 0,
+  "compiled_network_constraint_rows": 182688,
+  "network_time_status_counts": {
+    "compiled_saved_plan_legacy": 16608,
+    "held_cutover_scope": 912
+  },
+  "real_all_firm_lp_runs": 0,
+  "real_net_gross_balance_comparisons": 0,
+  "supply_scope_complete": [
+    {
+      "scenario": "reference_no_deduction",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "58852_early__full_stop_zero",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "58852_early__mean_reduction",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "58852_late__full_stop_zero",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "58852_late__mean_reduction",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "7828_early__full_stop_zero",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "7828_early__mean_reduction",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "7828_late__full_stop_zero",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    },
+    {
+      "scenario": "7828_late__mean_reduction",
+      "nine_area_times": 17520,
+      "reference_scope_fully_defined_times": 0,
+      "fixed_output_defined_times": 0,
+      "real_all_firm_lp_runs": 0,
+      "reason": "fixed_output_unknown; reference_scope_unknown_kept_null; cutover_scope"
+    }
+  ],
+  "independent_firm_removal_run": false,
+  "R_replaced_with_zero": false,
+  "final_baseline_selected": false,
+  "outputs": [
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/legacy_network_constraints_FY2025.parquet",
+      "sha256": "b50a1e634ebb165e2685d45fa7130a4a993ffb00943abce7401a2a16a48f5df8",
+      "bytes": 1137051,
+      "rows": 182688
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/net_demand_input_ledger_FY2025.parquet",
+      "sha256": "042a1f95467a2ab3ba66bcd897aac7a23bcc2276d04efe1c0f3cacd086b4dd08",
+      "bytes": 8233537,
+      "rows": 157680
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/network_time_readiness_FY2025.parquet",
+      "sha256": "6ee1a2a07b7681dce65b0de222b35f02373ee151fef378a1c6d258bd8c5dde89",
+      "bytes": 50577,
+      "rows": 17520
+    }
+  ],
+  "independent_verification": {
+    "constraint_rows": 182688,
+    "source_row_matches": 365376,
+    "source_row_unmatched": 0,
+    "duplicate_references": 0,
+    "original_bound_all_values_equal": true,
+    "issue40_fixed_hash_checks": 23,
+    "new_reference_hash_checks": 5,
+    "real_all_firm_lp_runs": 0,
+    "net_demand_nonpositive_count": null,
+    "source_and_processed_times_and_directions_equal": true,
+    "raw_planned_flow_nonzero_rows": 0,
+    "original_rows_held_for_cutover_scope": 23520
+  },
+  "definition_evidence": [
+    {
+      "path": "metadata/research/net_demand_network_sources_20261026.yml",
+      "sha256": "c8f63b888161db036e93ba43b2a0e45f5b59d0a3c2dfdb6cd5b9e4e8b3824d63"
+    },
+    {
+      "path": "metadata/research/net_demand_network_contract_20261026.yml",
+      "sha256": "c87a9d66ee5c1d6efa3011975158821a97ad10b13ff4bd1f9fe2f16cbd4b195b"
+    },
+    {
+      "path": "metadata/research/net_demand_reference_manifest_20261026.json",
+      "sha256": "4703f2beae848d910f8eb2f41f30b60da77f19b744a1923c8ee9e5e1fe38d2c4"
+    }
+  ],
+  "raw_planned_flow_nonzero_rows": 0
+}

@@ -1,0 +1,18 @@
+symbol,meaning_ja,unit,grain,existing_or_new_file,column_or_formula,readiness,limitation
+D_pub,保存翌々日予測需要,MW,地域×30分,既存occto_reserve_nextday2_FY2025.parquet,area_demand_forecast_mw,原値として使用可,系統/自家消費/吸収需要の境界を全地域FY2025で確認済みとはしない
+D,会計上のR控除前需要,MW,地域×30分,同上＋必要なら吸収需要の別資料,area_demand_forecast_mw;追加吸収需要は未確定,仮定/境界確認が必要,D_pubと同一とする条件は充電/揚水/損失等が同じ会計境界であること
+S_pub,公表計画供給力の合計,MW,地域×30分,既存occto_reserve_nextday2_FY2025.parquet,area_supply_plan_mw,公表計画合計として使用可,PV/風力は計上ルールあり。内訳・受送電/調整力の包含を復元せず地域内設備上限/Rと同一視しない
+R,同断面で固定する系統送出出力,MW,地域×30分,既存入力に採用可な列なし。fixed_output_source_candidates.csvへ,fixed_output_forecast_mw (今回null),不足,PV/風力を第一候補とするが固定範囲は未採用。実績/容量/供給力差から逆算しない
+N,D−Rの純需要,MW,地域×30分,新net_demand_input_ledger_FY2025.parquet,net_demand_forecast_mw (今回null),実数値は不足,DとRの境界/断面/重複確認後にのみ計算。非正を切上げない
+K_ref,台帳snapshotの参照容量,kW,元設備×観測期間,既存案A 20261016_A_v1,capacity_reference_kw,承認済み限定仮定,観測期間一定。認可容量は出力予測/利用可能性ではない
+U,既存停止条件の調整済み参照上限,kW,元設備×30分×条件,Issue40 unit_scenarios/*.parquet,adjusted_reference_upper_kw,限定診断として使用可,未知はnull。調整供給J_Aへ使うには固定供給J_Rとの重複を除く。raw発電を再控除しない
+G_obs,実績30分発電量,kWh/30分,元設備×30分,既存案A 20261016_A_v1,generation_kwh_30min,実績として使用可,同断面予測Rへ代用しない。供給上限から追加で差し引かない
+C_gap,参照容量差,kW,元設備×30分,既存案A 20261016_A_v1,capacity_gap_reference_kw,既存記述量のまま,R・利用可能供給力・上限へ自動置換しない
+f,各元区間順方向を正とする純潮流変数,MW,区間×30分,新legacy_network_constraints_FY2025.parquet,coefficients_json;lower_mw;upper_mw,保存公表制約のモデル候補,9地域の接続を保持。AC/DC潮流法則の再現ではない
+I,受電−送電、A f,MW,地域×30分,係数行列はEDGESの送受地域から構成,src/net_demand_network.py,モデル構成として実装済み,地域輸入能力を連系線の空容量の単純和で作らない
+F_H,北陸フェンス潮流,MW,フェンス×30分,新legacy_network_constraints_FY2025.parquet,S−Eの係数;lower_mw;upper_mw,切替前保存断面で数値化済み,個別線と同時制約、加算する別の供給能力ではない
+F_C/F_K,中部/関西フェンス潮流,MW,フェンス×30分,fence_coefficient_registry.csv,M+S / M+E,係数確認、適用保留,移行時表示式・旧行残存・ルート断予定を物理的実施確認へ置換しない
+lambda_D,総需要倍率,ratio,対象地域×30分,既存案保持。固定R比較は人工例のみ,g+I+R=lambda D,比較仕様,R固定、対象地域D拡大。他地域D固定。旧R未分離の計算を上書きしない
+lambda_N,純需要倍率,ratio,対象地域×30分,新仕様/人工例のみ,g+I=lambda(D−R),別仕様、実値未計算,R・他地域N・制約固定。N対象地域<=0は通常比率保留。原TCRSIとは呼ばない
+R_i,固定供給の除去対象法人分,MW,法人×地域×30分,既存では確定できず,fixed_output_entity_status,不足,全法人会計には不要だが法人除去には必要。同じグループだから付与しない
+U_MW,MW単位での調整供給上限,MW,元設備×30分×条件,Issue40 unit_scenarios/*.parquet または既存地域部分和,adjusted_reference_upper_kw / 1000,変換式を明示。今回実ネットワークへ未投入,kWとMWの暗黙混在を禁止。元kW列は保持。Rと上限の設備重複は別に解決

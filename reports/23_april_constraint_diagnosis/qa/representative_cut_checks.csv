@@ -1,0 +1,5 @@
+entity_code,delivery_date,period,area_scope,net_demand_mw,remaining_upper_mw,boundary_upper_mw,boundary_formula,diagnostic_gap_lower_bound_mw
+hokkaido,2025-04-01,1,北海道,3067.0,250.0,237.0,-lower(北本),2580.0
+hokuriku,2025-04-01,1,北陸,3027.0,486.0,700.0,upper(南福光−越前),1841.0
+kyushu,2025-04-01,1,九州,5926.0,3554.0,250.0,upper(関門),2122.0
+jera,2025-04-01,1,東京・中部の外側の境界会計（評価地域は別）,41878.0,19557.97,6160.0,upper(相馬)−lower(三重)−lower(南福光);FCは内側で相殺,16160.029999999999

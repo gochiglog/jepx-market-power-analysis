@@ -1,0 +1,7 @@
+area,delivery_date,period,plan_stage,demand_raw_man_kw,pv_raw_man_kw,wind_raw_man_kw,source_page,scope,source_file
+関西,2025-04-19,25,前日計画,1322.4,547.0,1.9,1,指令計画時の下げ調整力最小時刻。全時刻のRでない,data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf
+関西,2025-04-27,22,前日計画,1186.6,503.1,1.8,1,指令計画時の下げ調整力最小時刻。全時刻のRでない,data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf
+関西,2025-05-04,24,前日計画,1174.2,576.6,8.7,1,指令計画時の下げ調整力最小時刻。全時刻のRでない,data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf
+関西,2025-05-28,26,前日計画,1569.8,440.4,0.0,1,指令計画時の下げ調整力最小時刻。全時刻のRでない,data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf
+関西,2025-05-28,26,当日見直し,1621.8,581.0,0.0,1,指令計画時の下げ調整力最小時刻。全時刻のRでない,data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf
+関西,2025-06-01,26,前日計画,1256.4,474.6,8.7,1,指令計画時の下げ調整力最小時刻。全時刻のRでない,data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf

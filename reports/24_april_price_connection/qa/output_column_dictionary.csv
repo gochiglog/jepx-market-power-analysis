@@ -1,0 +1,304 @@
+file,english_column,arrow_type,definition_ja,unit,notes
+all_scenarios_with_spot_prices.parquet,supply_trial_scenario,large_string,供給条件：元9条件と公表記録保留を正の参照容量へ戻す8比較条件。別々に保持,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,delivery_date,date32[day],日本時間の受渡日,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+all_scenarios_with_spot_prices.parquet,period,int64,30分コマ1〜48,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+all_scenarios_with_spot_prices.parquet,target_area,large_string,倍率評価地域：他地域需要を固定して倍率を動かす地域。JERAの東京/中部は別評価,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,entity,large_string,除去代理の対象法人名：一意HJKS発電事業者名による限定代理。所有/支配/契約帰属ではない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,entity_code,large_string,対象法人の英語識別子：8法人の試行キー。制度表10法人を変更しない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,network_scenario,large_string,送電条件：saved_plan_constraints / no_transmission_bounds。同じ9地域接続。独立観測でない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,all_firms_balance_status,large_string,全法人時の成立状態：同じ供給・送電条件でNを満たすfeasible/infeasible/numerical_failure。企業除去前の結果,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,target_net_demand_mw,double,対象地域の実績純需要：D−Rの原系列。対象企業実績を再控除せず、非正は通常倍率を保留,MW,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,removed_adjustable_mw_all_nine_areas,double,9地域で除く調整上限の合計：同じ法人のモデル内全地域分を同時除去。認可容量を後から一律控除しない,MW,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,removed_fixed_output_mw,double,除去した固定出力量：本試行は全枠0。PV/風力/原子力実績Rは残す,MW,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,held_candidate_cells,int64,当該コマの9地域保留候補セル数：限定計算集合から外れる観測候補数。未知容量0を意味しない,not_applicable,工程20、RD-026。4月全法人の限定診断。元列・固定版保持。正式RSIではない
+all_scenarios_with_spot_prices.parquet,restored_candidate_cells,int64,当該コマの9地域参照復帰候補数：公表記録由来保留を参照上限へ戻す追加比較の候補セル数,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,attribution_proxy,large_string,法人帰属の代理の種類：点検済みHJKS発電事業者名の一意参照を採用。最終帰属ではない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,lambda_all_firms,double,全法人時の対象地域純需要倍率：他地域N固定、対象Nだけ拡大。全法人不成立・N<=0等はnull,ratio,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,lambda_removed,double,調整可能供給代理除去後の純需要倍率：固定Rは残す。全地域で該当名参照の調整上限を除く。不能/不明は0ではなくnull,ratio,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,all_firms_multiplier_status,large_string,全法人倍率計算の状態：対象N非正や全法人不成立の場合は倍率未算定。主statusとは別に保持,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,removed_multiplier_status,large_string,企業除去後の倍率計算状態：valid/other_regions_infeasible等。不能を倍率0にしない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,all_firms_max_residual_mw,double,全法人最大倍率解の残差：会計・区間/フェンス・上下限の最大検査誤差。許容1e−6MW,MW,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,removed_max_residual_mw,double,除去後最大倍率解の残差：会計・区間/フェンス・上下限の最大検査誤差。許容1e−6MW,MW,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,status,large_string,工程21の排他的主状態。valid/all_firms_infeasible/removed_other_regions_infeasible/nonpositive_target_net/attribution_unknown/numerical_failure等。数値0に置換しない。,not_applicable,工程21の辞書。代理使用と所有/契約帰属の確定を分離
+all_scenarios_with_spot_prices.parquet,price__受渡日,string,受渡日（原値/参照）：受渡日を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__時刻コード,string,時刻コード（原値/参照）：時刻コードを元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__売り入札量(kWh),string,売り入札量(kWh)（原値/参照）：売り入札量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__買い入札量(kWh),string,買い入札量(kWh)（原値/参照）：買い入札量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__約定総量(kWh),string,約定総量(kWh)（原値/参照）：約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__システムプライス(円/kWh),string,システムプライス(円/kWh)（原値/参照）：システムプライス(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス北海道(円/kWh),string,エリアプライス北海道(円/kWh)（原値/参照）：エリアプライス北海道(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス東北(円/kWh),string,エリアプライス東北(円/kWh)（原値/参照）：エリアプライス東北(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス東京(円/kWh),string,エリアプライス東京(円/kWh)（原値/参照）：エリアプライス東京(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス中部(円/kWh),string,エリアプライス中部(円/kWh)（原値/参照）：エリアプライス中部(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス北陸(円/kWh),string,エリアプライス北陸(円/kWh)（原値/参照）：エリアプライス北陸(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス関西(円/kWh),string,エリアプライス関西(円/kWh)（原値/参照）：エリアプライス関西(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス中国(円/kWh),string,エリアプライス中国(円/kWh)（原値/参照）：エリアプライス中国(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス四国(円/kWh),string,エリアプライス四国(円/kWh)（原値/参照）：エリアプライス四国(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__エリアプライス九州(円/kWh),string,エリアプライス九州(円/kWh)（原値/参照）：エリアプライス九州(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__売りブロック入札総量(kWh),string,売りブロック入札総量(kWh)（原値/参照）：売りブロック入札総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__売りブロック約定総量(kWh),string,売りブロック約定総量(kWh)（原値/参照）：売りブロック約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__買いブロック入札総量(kWh),string,買いブロック入札総量(kWh)（原値/参照）：買いブロック入札総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__買いブロック約定総量(kWh),string,買いブロック約定総量(kWh)（原値/参照）：買いブロック約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__timestamp_start,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ開始,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+all_scenarios_with_spot_prices.parquet,price__timestamp_end,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ終了。48は翌00:00,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+all_scenarios_with_spot_prices.parquet,price__timezone,string,Asia/Tokyo固定,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+all_scenarios_with_spot_prices.parquet,price__source_snapshot_id,string,採用元のSHA256,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__source_row_number,int32,ヘッダーを1行目とする元行番号,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__system_price,"decimal128(38, 2)",実績スポット市場のシステムプライス（正式採用系列）,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_hokkaido,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_tohoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_tokyo,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_chubu,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_hokuriku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_kansai,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_chugoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_shikoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__area_price_kyushu,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__contracted_volume,"decimal128(38, 0)",約定総量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+all_scenarios_with_spot_prices.parquet,price__sell_bid_volume,"decimal128(38, 0)",売り入札量,TODO,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+all_scenarios_with_spot_prices.parquet,price__buy_bid_volume,"decimal128(38, 0)",買い入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+all_scenarios_with_spot_prices.parquet,price__sell_block_bid_volume,"decimal128(38, 0)",売りブロック入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+all_scenarios_with_spot_prices.parquet,price__sell_block_contracted_volume,"decimal128(38, 0)",売りブロック約定量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+all_scenarios_with_spot_prices.parquet,price__buy_block_bid_volume,"decimal128(38, 0)",買いブロック入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+all_scenarios_with_spot_prices.parquet,price__buy_block_contracted_volume,"decimal128(38, 0)",買いブロック約定量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+all_scenarios_with_spot_prices.parquet,price__system_price_sensitivity_base,"decimal128(38, 2)",価格感応度CSV内の計算基準システムプライス。実績市場価格と別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__baseline_price_match_flag,bool,基準価格一致flag：spot実績system priceと感応度基準価格の完全一致。既知不一致を保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,price__entity,large_string,除去代理の対象法人名：一意HJKS発電事業者名による限定代理。所有/支配/契約帰属ではない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+all_scenarios_with_spot_prices.parquet,price__area_price,"decimal128(38, 2)",当該評価地域のspotエリア価格,JPY/kWh,spotの地域列を選ぶ。system priceではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__system_price_market,"decimal128(38, 2)",実績市場システムプライス：JEPX spotのsystem_priceを参照する別名。感応度基準価格とは別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,price__observed_demand_mw,"decimal128(5, 0)",既存一次資料の地域実績需要,MW,工程20 B30の値。計画需要へ置換しない
+all_scenarios_with_spot_prices.parquet,price__observed_fixed_R_mw,"decimal128(5, 0)",既存B30の固定PV/風力/原子力実績,MW,技術的な調整不能性の認定ではない
+all_scenarios_with_spot_prices.parquet,price__observed_net_demand_mw,"decimal128(5, 0)",既存B30の実績需要−固定R,MW,非正を切り上げない
+all_scenarios_with_spot_prices.parquet,price__hour_start,int8,30分受渡区間の開始時刻0〜23時,not_applicable,(period−1)//2。需要頻度を変更しない
+all_scenarios_with_spot_prices.parquet,area_price,"decimal128(38, 2)",当該評価地域のspotエリア価格,JPY/kWh,spotの地域列を選ぶ。system priceではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,system_price_market,"decimal128(38, 2)",実績市場システムプライス：JEPX spotのsystem_priceを参照する別名。感応度基準価格とは別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,system_price_sensitivity_base,"decimal128(38, 2)",価格感応度CSV内の計算基準システムプライス。実績市場価格と別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+all_scenarios_with_spot_prices.parquet,baseline_price_match_flag,bool,基準価格一致flag：spot実績system priceと感応度基準価格の完全一致。既知不一致を保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+all_scenarios_with_spot_prices.parquet,observed_demand_mw,"decimal128(5, 0)",既存一次資料の地域実績需要,MW,工程20 B30の値。計画需要へ置換しない
+all_scenarios_with_spot_prices.parquet,observed_fixed_R_mw,"decimal128(5, 0)",既存B30の固定PV/風力/原子力実績,MW,技術的な調整不能性の認定ではない
+all_scenarios_with_spot_prices.parquet,observed_net_demand_mw,"decimal128(5, 0)",既存B30の実績需要−固定R,MW,非正を切り上げない
+all_scenarios_with_spot_prices.parquet,hour_start,int8,30分受渡区間の開始時刻0〜23時,not_applicable,(period−1)//2。需要頻度を変更しない
+all_scenarios_with_spot_prices.parquet,global_all_firms_status,large_string,同じ条件での9地域全法人同時成立,not_applicable,JERAは一法人。地域表示の反復を独立検査に数えない
+all_scenarios_with_spot_prices.parquet,global_removed_simultaneous_status,large_string,同じ条件での企業除去後9地域同時成立,not_applicable,元工程22を保持。JERAを東京/中部の別企業にしない
+april_price_observations.parquet,受渡日,string,受渡日（原値/参照）：受渡日を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,時刻コード,string,時刻コード（原値/参照）：時刻コードを元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,売り入札量(kWh),string,売り入札量(kWh)（原値/参照）：売り入札量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,買い入札量(kWh),string,買い入札量(kWh)（原値/参照）：買い入札量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,約定総量(kWh),string,約定総量(kWh)（原値/参照）：約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,システムプライス(円/kWh),string,システムプライス(円/kWh)（原値/参照）：システムプライス(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス北海道(円/kWh),string,エリアプライス北海道(円/kWh)（原値/参照）：エリアプライス北海道(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス東北(円/kWh),string,エリアプライス東北(円/kWh)（原値/参照）：エリアプライス東北(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス東京(円/kWh),string,エリアプライス東京(円/kWh)（原値/参照）：エリアプライス東京(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス中部(円/kWh),string,エリアプライス中部(円/kWh)（原値/参照）：エリアプライス中部(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス北陸(円/kWh),string,エリアプライス北陸(円/kWh)（原値/参照）：エリアプライス北陸(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス関西(円/kWh),string,エリアプライス関西(円/kWh)（原値/参照）：エリアプライス関西(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス中国(円/kWh),string,エリアプライス中国(円/kWh)（原値/参照）：エリアプライス中国(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス四国(円/kWh),string,エリアプライス四国(円/kWh)（原値/参照）：エリアプライス四国(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,エリアプライス九州(円/kWh),string,エリアプライス九州(円/kWh)（原値/参照）：エリアプライス九州(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,売りブロック入札総量(kWh),string,売りブロック入札総量(kWh)（原値/参照）：売りブロック入札総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,売りブロック約定総量(kWh),string,売りブロック約定総量(kWh)（原値/参照）：売りブロック約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,買いブロック入札総量(kWh),string,買いブロック入札総量(kWh)（原値/参照）：買いブロック入札総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,買いブロック約定総量(kWh),string,買いブロック約定総量(kWh)（原値/参照）：買いブロック約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,delivery_date,date32[day],日本時間の受渡日,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+april_price_observations.parquet,period,int8,30分コマ1〜48,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+april_price_observations.parquet,timestamp_start,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ開始,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+april_price_observations.parquet,timestamp_end,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ終了。48は翌00:00,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+april_price_observations.parquet,timezone,string,Asia/Tokyo固定,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+april_price_observations.parquet,source_snapshot_id,string,採用元のSHA256,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,source_row_number,int32,ヘッダーを1行目とする元行番号,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,system_price,"decimal128(38, 2)",実績スポット市場のシステムプライス（正式採用系列）,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_hokkaido,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_tohoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_tokyo,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_chubu,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_hokuriku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_kansai,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_chugoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_shikoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,area_price_kyushu,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,contracted_volume,"decimal128(38, 0)",約定総量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+april_price_observations.parquet,sell_bid_volume,"decimal128(38, 0)",売り入札量,TODO,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+april_price_observations.parquet,buy_bid_volume,"decimal128(38, 0)",買い入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+april_price_observations.parquet,sell_block_bid_volume,"decimal128(38, 0)",売りブロック入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+april_price_observations.parquet,sell_block_contracted_volume,"decimal128(38, 0)",売りブロック約定量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+april_price_observations.parquet,buy_block_bid_volume,"decimal128(38, 0)",買いブロック入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+april_price_observations.parquet,buy_block_contracted_volume,"decimal128(38, 0)",買いブロック約定量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+april_price_observations.parquet,system_price_sensitivity_base,"decimal128(38, 2)",価格感応度CSV内の計算基準システムプライス。実績市場価格と別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,baseline_price_match_flag,bool,基準価格一致flag：spot実績system priceと感応度基準価格の完全一致。既知不一致を保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+april_price_observations.parquet,target_area,large_string,倍率評価地域：他地域需要を固定して倍率を動かす地域。JERAの東京/中部は別評価,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+april_price_observations.parquet,entity_code,large_string,対象法人の英語識別子：8法人の試行キー。制度表10法人を変更しない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+april_price_observations.parquet,entity,large_string,除去代理の対象法人名：一意HJKS発電事業者名による限定代理。所有/支配/契約帰属ではない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+april_price_observations.parquet,area_price,"decimal128(38, 2)",当該評価地域のspotエリア価格,JPY/kWh,spotの地域列を選ぶ。system priceではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+april_price_observations.parquet,system_price_market,"decimal128(38, 2)",実績市場システムプライス：JEPX spotのsystem_priceを参照する別名。感応度基準価格とは別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,受渡日,string,受渡日（原値/参照）：受渡日を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,時刻コード,string,時刻コード（原値/参照）：時刻コードを元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,売り入札量(kWh),string,売り入札量(kWh)（原値/参照）：売り入札量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,買い入札量(kWh),string,買い入札量(kWh)（原値/参照）：買い入札量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,約定総量(kWh),string,約定総量(kWh)（原値/参照）：約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,システムプライス(円/kWh),string,システムプライス(円/kWh)（原値/参照）：システムプライス(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス北海道(円/kWh),string,エリアプライス北海道(円/kWh)（原値/参照）：エリアプライス北海道(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス東北(円/kWh),string,エリアプライス東北(円/kWh)（原値/参照）：エリアプライス東北(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス東京(円/kWh),string,エリアプライス東京(円/kWh)（原値/参照）：エリアプライス東京(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス中部(円/kWh),string,エリアプライス中部(円/kWh)（原値/参照）：エリアプライス中部(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス北陸(円/kWh),string,エリアプライス北陸(円/kWh)（原値/参照）：エリアプライス北陸(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス関西(円/kWh),string,エリアプライス関西(円/kWh)（原値/参照）：エリアプライス関西(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス中国(円/kWh),string,エリアプライス中国(円/kWh)（原値/参照）：エリアプライス中国(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス四国(円/kWh),string,エリアプライス四国(円/kWh)（原値/参照）：エリアプライス四国(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,エリアプライス九州(円/kWh),string,エリアプライス九州(円/kWh)（原値/参照）：エリアプライス九州(円/kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,売りブロック入札総量(kWh),string,売りブロック入札総量(kWh)（原値/参照）：売りブロック入札総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,売りブロック約定総量(kWh),string,売りブロック約定総量(kWh)（原値/参照）：売りブロック約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,買いブロック入札総量(kWh),string,買いブロック入札総量(kWh)（原値/参照）：買いブロック入札総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,買いブロック約定総量(kWh),string,買いブロック約定総量(kWh)（原値/参照）：買いブロック約定総量(kWh)を元列/出典/参照関係として保持,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,delivery_date,date32[day],日本時間の受渡日,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+consistency_with_prices_by_network.parquet,period,int8,30分コマ1〜48,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+consistency_with_prices_by_network.parquet,timestamp_start,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ開始,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+consistency_with_prices_by_network.parquet,timestamp_end,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ終了。48は翌00:00,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+consistency_with_prices_by_network.parquet,timezone,string,Asia/Tokyo固定,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+consistency_with_prices_by_network.parquet,source_snapshot_id,string,採用元のSHA256,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,source_row_number,int32,ヘッダーを1行目とする元行番号,not_applicable,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,system_price,"decimal128(38, 2)",実績スポット市場のシステムプライス（正式採用系列）,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_hokkaido,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_tohoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_tokyo,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_chubu,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_hokuriku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_kansai,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_chugoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_shikoku,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,area_price_kyushu,"decimal128(38, 2)",元JEPX列を原単位で数値化,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,contracted_volume,"decimal128(38, 0)",約定総量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+consistency_with_prices_by_network.parquet,sell_bid_volume,"decimal128(38, 0)",売り入札量,TODO,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+consistency_with_prices_by_network.parquet,buy_bid_volume,"decimal128(38, 0)",買い入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+consistency_with_prices_by_network.parquet,sell_block_bid_volume,"decimal128(38, 0)",売りブロック入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+consistency_with_prices_by_network.parquet,sell_block_contracted_volume,"decimal128(38, 0)",売りブロック約定量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+consistency_with_prices_by_network.parquet,buy_block_bid_volume,"decimal128(38, 0)",買いブロック入札量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+consistency_with_prices_by_network.parquet,buy_block_contracted_volume,"decimal128(38, 0)",買いブロック約定量,kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない
+consistency_with_prices_by_network.parquet,system_price_sensitivity_base,"decimal128(38, 2)",価格感応度CSV内の計算基準システムプライス。実績市場価格と別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,baseline_price_match_flag,bool,基準価格一致flag：spot実績system priceと感応度基準価格の完全一致。既知不一致を保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+consistency_with_prices_by_network.parquet,target_area,large_string,倍率評価地域：他地域需要を固定して倍率を動かす地域。JERAの東京/中部は別評価,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+consistency_with_prices_by_network.parquet,entity_code,large_string,対象法人の英語識別子：8法人の試行キー。制度表10法人を変更しない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+consistency_with_prices_by_network.parquet,entity,large_string,除去代理の対象法人名：一意HJKS発電事業者名による限定代理。所有/支配/契約帰属ではない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+consistency_with_prices_by_network.parquet,area_price,"decimal128(38, 2)",当該評価地域のspotエリア価格,JPY/kWh,spotの地域列を選ぶ。system priceではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,system_price_market,"decimal128(38, 2)",実績市場システムプライス：JEPX spotのsystem_priceを参照する別名。感応度基準価格とは別系列,JPY/kWh,全国共通系列を9エリアに反復。地域固有の独立観測ではない。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡。Issue #17の市場表では全国共通系列を9エリアに反復。地域固有の独立観測ではない。全国system系列は地域反復であり地域固有でない。エリア価格は地域固有
+consistency_with_prices_by_network.parquet,observed_demand_mw,"decimal128(5, 0)",既存一次資料の地域実績需要,MW,工程20 B30の値。計画需要へ置換しない
+consistency_with_prices_by_network.parquet,observed_fixed_R_mw,"decimal128(5, 0)",既存B30の固定PV/風力/原子力実績,MW,技術的な調整不能性の認定ではない
+consistency_with_prices_by_network.parquet,observed_net_demand_mw,"decimal128(5, 0)",既存B30の実績需要−固定R,MW,非正を切り上げない
+consistency_with_prices_by_network.parquet,hour_start,int8,30分受渡区間の開始時刻0〜23時,not_applicable,(period−1)//2。需要頻度を変更しない
+consistency_with_prices_by_network.parquet,network_scenario,large_string,送電条件：saved_plan_constraints / no_transmission_bounds。同じ9地域接続。独立観測でない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+consistency_with_prices_by_network.parquet,consistency_state,large_string,今回の17供給条件内の判定一致区分,not_applicable,全法人不成立条件を先に分離。モデル全般の頑健性ではない。4月限定診断・正式RSI/最終baselineではない
+consistency_with_prices_by_network.parquet,baseline_feasible_conditions,int64,17条件中、全法人が成立した条件数,not_applicable,除去後不成立と分離。4月限定診断・正式RSI/最終baselineではない
+consistency_with_prices_by_network.parquet,removed_feasible_comparable_conditions,int64,全法人成立の条件のうち除去後も成立した条件数,not_applicable,全時刻を保持。4月限定診断・正式RSI/最終baselineではない
+consistency_with_prices_by_network.parquet,removed_infeasible_comparable_conditions,int64,全法人成立の条件のうち除去後不成立の条件数,not_applicable,全法人時から不成立を含めない。4月限定診断・正式RSI/最終baselineではない
+consistency_with_prices_by_network.parquet,removed_varies_among_comparable,bool,全法人成立の条件間でも除去後判定が変わるか,not_applicable,比較範囲の違いと重複するflag。加算禁止。4月限定診断・正式RSI/最終baselineではない
+consistency_with_prices_by_network.parquet,all17_baseline_infeasible,bool,17条件とも全法人時から不成立,not_applicable,全時刻の主区分に加えた内訳flag。4月限定診断・正式RSI/最終baselineではない
+hokkaido_supply_set_reconciliation.parquet,asset_key_candidate,large_string,原コード・エリア・原発電所名・原ユニット名のハッシュ。最終資産IDではない,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+hokkaido_supply_set_reconciliation.parquet,plant_name,large_string,発電所名の元表記,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+hokkaido_supply_set_reconciliation.parquet,unit_name,large_string,ユニット名の元表記,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+hokkaido_supply_set_reconciliation.parquet,raw_fuel,large_string,保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,business_name,large_string,候補HJKS行の発電事業者欄の原表記。帰属先法人の決定ではない。,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+hokkaido_supply_set_reconciliation.parquet,scatter_capacity_mw,"decimal128(3, 0)",旧北海道散布図の対象設備参照容量,MW,元台帳kW/1000。指標の容量差そのものではない
+hokkaido_supply_set_reconciliation.parquet,trial_reference_capacity_mw,"decimal128(9, 6)",設備の今回参照容量：原kWを1000で除した値,MW,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,scatter_included,bool,以前の3設備参照群に含まれるか,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,trial_adjustable_included,bool,今回の限定調整供給集合へ含まれるか,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,limited_scope_status,large_string,限定供給集合の候補/容量設備保留/燃種範囲保留,not_applicable,491ラベルを保持。unknown_capacity_assumed_zeroは全False
+hokkaido_supply_set_reconciliation.parquet,mapping_status,large_string,保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,trial_role,large_string,保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,removal_entity_code,large_string,設備の除去代理法人識別子：点検済み調整候補の一意HJKS記載者が対象法人名に一致した場合のみ。空欄は真の非帰属を意味しない,not_applicable,工程21、RD-027。固定Rを残す名参照代理の条件付き診断。正式RSIではない
+hokkaido_supply_set_reconciliation.parquet,trial_status_at_example,large_string,代表時刻の元供給シナリオ状態,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,trial_upper_at_example_mw,"decimal128(9, 6)",代表時刻で採用する設備調整上限,MW,原kW/1000。燃種保留はnull
+hokkaido_supply_set_reconciliation.parquet,example_delivery_date,date32[day],保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,example_period,int64,保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,april_observed_cells,int64,3設備それぞれの4月元観測コマ数,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,april_trial_defined_cells,int64,3設備それぞれの4月調整上限が定義できるコマ数,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,exclusion_due_to_fuel_scope,bool,元燃種からPV/風力との非重複を確定できず保留か,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,exclusion_due_to_target_removal,bool,対象企業の代理除去で集合外となったか,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+hokkaido_supply_set_reconciliation.parquet,automatic_reinstatement,bool,保留設備を自動復帰したか,not_applicable,今回全てFalse
+hokkaido_supply_set_reconciliation.parquet,hjks_rows_json,large_string,保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+representative_network_original_rows.parquet,対象断面,string,対象断面（原値/参照）：対象断面を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,策定日,string,策定日（原値/参照）：策定日を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,策定／更新後,string,策定／更新後（原値/参照）：策定／更新後を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,連系線,string,連系線（原値/参照）：連系線を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,年月日,string,年月日（原値/参照）：年月日を元列/出典/参照関係として保持,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,時刻,string,時刻（原値/参照）：時刻を元列/出典/参照関係として保持,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,方向,string,方向（原値/参照）：方向を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,空容量,string,空容量（原値/参照）：空容量を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,計画潮流,string,計画潮流（原値/参照）：計画潮流を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,広域調整枠,string,広域調整枠（原値/参照）：広域調整枠を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,マージン,string,マージン（原値/参照）：マージンを元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,運用容量,string,運用容量（原値/参照）：運用容量を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,運用容量決定要因,string,運用容量決定要因（原値/参照）：運用容量決定要因を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,運用容量拡大分空容量,string,運用容量拡大分空容量（原値/参照）：運用容量拡大分空容量を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,運用容量拡大分計画潮流,string,運用容量拡大分計画潮流（原値/参照）：運用容量拡大分計画潮流を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,運用容量拡大分運用容量,string,運用容量拡大分運用容量（原値/参照）：運用容量拡大分運用容量を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,送電ＮＧ情報件数,string,送電ＮＧ情報件数（原値/参照）：送電ＮＧ情報件数を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,送電ＮＧ情報延べ容量,string,送電ＮＧ情報延べ容量（原値/参照）：送電ＮＧ情報延べ容量を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,最新更新年月日時刻,string,最新更新年月日時刻（原値/参照）：最新更新年月日時刻を元列/出典/参照関係として保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,delivery_date,date32[day],日本時間の受渡日,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+representative_network_original_rows.parquet,period,int64,30分コマ1〜48,not_applicable,Asia/Tokyo、period1=00:00–00:30。元キーを保持
+representative_network_original_rows.parquet,timestamp_start,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ開始,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,timestamp_end,"timestamp[us, tz=Asia/Tokyo]",Asia/Tokyoのコマ終了。48は翌00:00,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,timezone,string,Asia/Tokyo固定,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,source_file,string,元rawの相対パス,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,source_sha256,string,元rawのSHA256,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,source_row,int64,header=1とする元CSV論理行番号,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,source_record_id,string,source_record_id（原値/参照）：source_record_idを元列/出典/参照関係として保持,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,source_variant,string,source_variant（原値/参照）：source_variantを元列/出典/参照関係として保持,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,source_update_header_raw,string,原先頭更新情報：CSV先頭の更新日時文字列を元のまま保持,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,source_acquired_at,string,取得日時：元manifestのdownloaded_at。対象時刻・更新時刻とは区別,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,link_name_raw,string,連系線の原名称：原連系線名。フェンスを含み本数を固定しない,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,direction_raw,string,方向の原表記：順方向/逆方向、または原1行に両方向列を含むboth_columns,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,directional_geography_status,string,方向の地域対応状態：順逆の元ラベルを保持。地域輸入方向の対応は未付与で地域合算しない,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,flow_semantics,string,潮流の意味確認状態：系統/翌日当日は計画潮流。翌々日は原CSVと2026manualでは予想潮流、旧manualでは計画潮流。過去版履歴は未確定,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,row_updated_at,"timestamp[us, tz=Asia/Tokyo]",行の最新更新日時：系統情報CSVの行別最新更新日時。初回公表時点を保証しない,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,file_latest_updated_at,"timestamp[us, tz=Asia/Tokyo]",ファイル全体の最新更新日時：原先頭行の最新更新日時。個別行の更新・初回公表時刻ではない,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,initial_publication_datetime_known,bool,初回公表日時確認flag：初回公表日時の独立根拠は未確認でFalse,not_applicable,Issue #19。native_frequency_or_source_metadata。計画・予測であり実績ではない。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,qa_update_after_delivery_start,bool,更新日時が対象開始後のflag：行更新、またはファイル全体更新が対象コマ開始より後。公表当時の値を再現した意味ではない,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,qa_numeric_missing_columns,list<element: string>,数量欠損理由一覧：空欄または公式***の原列と理由。未知の非数値は停止し一覧から黙って消さない,not_applicable,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,available_capacity_mw,"decimal128(38, 6)","空容量（正規化数値）：空容量の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,planned_flow_mw,"decimal128(38, 6)","計画潮流（正規化数値）：計画潮流の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,wide_area_adjustment_mw,"decimal128(38, 6)","広域調整枠（正規化数値）：広域調整枠の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,margin_mw,"decimal128(38, 6)","マージン（正規化数値）：マージンの元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,operating_capacity_mw,"decimal128(38, 6)","運用容量（正規化数値）：運用容量の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,expanded_available_capacity_mw,"decimal128(38, 6)","運用容量拡大分空容量（正規化数値）：運用容量拡大分空容量の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,expanded_planned_flow_mw,"decimal128(38, 6)","運用容量拡大分計画潮流（正規化数値）：運用容量拡大分計画潮流の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,expanded_operating_capacity_mw,"decimal128(38, 6)","運用容量拡大分運用容量（正規化数値）：運用容量拡大分運用容量の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,transmission_ng_capacity_mw,"decimal128(38, 6)","送電ＮＧ情報延べ容量（正規化数値）：送電ＮＧ情報延べ容量の元数値をDecimal128(38,6)で保持。符号を変更しない",MW,地域固有または出典列。接続診断版。元値保持・補間/停止控除/制約認定なし。原列は下記lineageで追跡
+representative_network_original_rows.parquet,equipment_scope_class,large_string,連系線制約の範囲区分：個別名称・複数FC・フェンス・F1/F2等の制約最小値を区別,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,equipment_scope_description,large_string,連系線範囲の根拠と限界：公式で確認した設備集合と未確認範囲。名称だけで個別設備へ割り当てない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,constraint_overlap_group,large_string,重複制約のグループ：同じ設備/制約群にかかる系列を識別。合算可能性を意味しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,direction_reference_url,large_string,方向根拠URL：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,direction_reference_page,large_string,方向根拠ページ：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,direction_reference_checked_on,large_string,方向根拠確認日：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,formal_full_FY_validity_verified,bool,全FY有効期間確認flag：False。方向根拠と設備範囲の履歴有効期間を分離,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,equipment_history_fully_verified,bool,機器包含履歴確認flag：False。原名称を全期間の構成機器包含証明とはしない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,raw_quantities_sign_changed,bool,原数量の符号変更flag：常にFalse。負値の反転・絶対値化・ゼロ化なし,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,qa_new_fence_before_notice_target_label,bool,新フェンス公表対象端時刻前のflag：公表告知の3/13 01:00端時刻以前に観測された新名称。行を除外しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,scope_phase,large_string,公表範囲の移行区分：中地域3月13日以降の公表移行と既存名称区分。実設備切替時刻の確定ではない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,sending_area_set_json,large_string,送出地域集合JSON：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,receiving_area_set_json,large_string,受入地域集合JSON：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,sending_area,large_string,送出単一地域：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,receiving_area,large_string,受入単一地域：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,direction_status,large_string,方向対応の確認状態：公式根拠表に基づく方向。複数地域集合や未確認方向を単一地域へ推測しない,not_applicable,Issue #19。native_frequency_or_source_metadata。元列・原値・出典を保持。初回公表/設備有効期間を推測しない
+representative_network_original_rows.parquet,capacity_display_sign_multiplier,"decimal128(38, 6)",方向別表示の符号乗数：系統空容量の順方向1・逆方向−1,ratio,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,available_capacity_direction_display_mw,"decimal128(38, 6)",方向別表示空容量：系統CSVだけ順×1・逆×−1。原値は別列保持,MW,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,capacity_display_formula,large_string,方向別空容量の比較表示への式。系統CSV順×1/逆×−1。未知規則は保留。,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,capacity_display_source_url,large_string,比較用の原列・出典・計算状態を保持する列（capacity_display_source_url）,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,capacity_display_source_page,large_string,比較用の原列・出典・計算状態を保持する列（capacity_display_source_page）,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,capacity_display_rule_scope,large_string,符号変換の適用範囲。系統空容量・翌々日策定のみ。,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,capacity_display_rule_status,large_string,公式確認済み符号表示への変換/符号未確認による保留の区分。,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,sending_area_price,"decimal128(38, 6)",当該方向の単一地域の同コマ実績エリア価格。多地域/方向未確認は保留,JPY/kWh,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,sending_price_key_matched,bool,比較用の原列・出典・計算状態を保持する列（sending_price_key_matched）,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,receiving_area_price,"decimal128(38, 6)",当該方向の単一地域の同コマ実績エリア価格。多地域/方向未確認は保留,JPY/kWh,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,receiving_price_key_matched,bool,比較用の原列・出典・計算状態を保持する列（receiving_price_key_matched）,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,receiving_minus_sending_price,"decimal128(38, 6)",単一地域の受入側実績価格−送出側実績価格。同コマの記述比較で因果効果ではない,JPY/kWh,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,price_comparison_status,large_string,単一地域両端価格一致/多地域や方向保留/市場価格欠測の区分。,not_applicable,比較用派生表。最終baseline・headroom・法人帰属・供給者分類を確定しない。未観測/欠損は補完せず、候補範囲は重複加算不可。
+representative_network_original_rows.parquet,candidate_direction_envelope_mw,"decimal128(28, 6)",系統原値から作る方向別包絡候補,MW,Issue #40/RD-022の保存計画診断。順+1/逆−1。原値保持。フェンス・包含・期間未完成のためLP未使用
+representative_network_original_rows.parquet,candidate_envelope_negative,bool,保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+representative_network_original_rows.parquet,network_constraint_definition_complete,bool,ネットワーク入力の同時制約定義完成,not_applicable,Issue #40/RD-022の保存計画診断。今回全False。未定義フェンスを落とさない
+representative_network_original_rows.parquet,all_suppliers_lp_status,large_string,全法人を残した送電制約付き需給成立の確認状況,not_applicable,Issue #40/RD-022の保存計画診断。実データはネットワーク未定義で保留。部分和＜需要と区別
+representative_network_original_rows.parquet,market_bid_information_set_reproduced,bool,保存元列または工程24の追跡/照合列,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照
+representative_network_original_rows.parquet,reviewed_signed_model_bound_mw,"decimal128(10, 6)",追跡確認した旧モデルの符号付き上下包絡,MW,C_signed−M_signed−W_signed。追加空容量Aとは区別。条件付き、未修正
+representative_network_original_rows.parquet,bound_formula,large_string,保存送電包絡の変換式,not_applicable,結果に合わせた変更なし
+representative_network_original_rows.parquet,available_formula,large_string,原空容量と構成項目の数値式,not_applicable,A=C−M−W−P。P=0から意味の一致を推論しない
+representative_network_original_rows.parquet,review_status,large_string,送電入力の意味確認状態,not_applicable,conditional_scenario_no_numeric_correction
+representative_network_original_rows.parquet,fixed_reservations_assumption,large_string,送電包絡で保持する枠と再配分に関する追加仮定,not_applicable,spot__元日本語列は原CSV、その他は再現コードと出典キーを参照

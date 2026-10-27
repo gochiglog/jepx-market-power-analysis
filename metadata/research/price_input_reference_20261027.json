@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.occto.or.jp/houkokusho/2025/files/denryokujukyuu_2024_250910.pdf",
+    "final_url": "https://www.occto.or.jp/assets/houkokusho/2025/files/denryokujukyuu_2024_250910.pdf",
+    "path": "data/interim/research_reference/20261027_price_input_review_v1/annual_overview_2024.pdf",
+    "sha256": "07069d8668d4fbdf6cec818f92c24e720fec07676e42d282fb01d5ea6fd1cb5c",
+    "bytes": 4074492,
+    "retrieved_at": "2026-10-27T09:44:14.561112+09:00",
+    "http_headers": {
+      "Content-Type": "application/pdf",
+      "Content-Length": "4074492",
+      "Connection": "close",
+      "Date": "Tue, 27 Oct 2026 00:44:14 GMT",
+      "Server": "Apache",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Last-Modified": "Thu, 06 Nov 2025 04:23:32 GMT",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"3e2bfc-642e56d849f40\"",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 5fe59a219f53336e1083363e9b299d6a.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "KIX56-P5",
+      "Alt-Svc": "h3=\":443\"; ma=86400",
+      "X-Amz-Cf-Id": "FMOWmP6dHVO5RhDyvOQnAknuq4HT6NlDQ7Bhwef-lyb79HZFgkA25Q==",
+      "Strict-Transport-Security": "max-age=31536000; preload"
+    },
+    "purpose_ja": "空容量/運用容量/マージン/計画潮流の定義、物理p36図2-17/表2-7。実績潮流を入力に使わない"
+  }
+]

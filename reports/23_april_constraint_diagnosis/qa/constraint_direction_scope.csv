@@ -1,0 +1,12 @@
+constraint_name,constraint_index,coefficients_json,positive_orientation,negative_orientation,scope,first_delivery_date,last_delivery_date,lower_mw_min,upper_mw_max,source
+北海道・本州間電力連系設備,0,"[1, 0, 0, 0, 0, 0, 0, 0, 0, 0]",北海道→東北,東北→北海道,個別区間,2025-04-01,2025-04-30,-410.0,720.0,metadata/research/net_demand_network_sources_20261026.yml
+相馬双葉幹線,1,"[0, 1, 0, 0, 0, 0, 0, 0, 0, 0]",東北→東京,東京→東北,個別区間,2025-04-01,2025-04-30,-2360.0,5110.0,metadata/research/net_demand_network_sources_20261026.yml
+周波数変換設備,2,"[0, 0, 1, 0, 0, 0, 0, 0, 0, 0]",東京→中部,中部→東京,個別区間,2025-04-01,2025-04-30,-1200.0,1200.0,metadata/research/net_demand_network_sources_20261026.yml
+三重東近江線,3,"[0, 0, 0, 1, 0, 0, 0, 0, 0, 0]",中部→関西,関西→中部,個別区間,2025-04-01,2025-04-30,-2500.0,1410.0,metadata/research/net_demand_network_sources_20261026.yml
+南福光連系所・南福光変電所の連系設備,4,"[0, 0, 0, 0, 1, 0, 0, 0, 0, 0]",中部→北陸,北陸→中部,個別区間,2025-04-01,2025-04-30,-1980.0,1300.0,metadata/research/net_demand_network_sources_20261026.yml
+越前嶺南線,5,"[0, 0, 0, 0, 0, 1, 0, 0, 0, 0]",北陸→関西,関西→北陸,個別区間,2025-04-01,2025-04-30,-1300.0,1900.0,metadata/research/net_demand_network_sources_20261026.yml
+西播東岡山線・山崎智頭線,6,"[0, 0, 0, 0, 0, 0, 1, 0, 0, 0]",関西→中国,中国→関西,個別区間,2025-04-01,2025-04-30,-4650.0,3260.0,metadata/research/net_demand_network_sources_20261026.yml
+阿南紀北直流幹線,7,"[0, 0, 0, 0, 0, 0, 0, 1, 0, 0]",関西→四国,四国→関西,個別区間,2025-04-01,2025-04-30,-140.0,0.0,metadata/research/net_demand_network_sources_20261026.yml
+本四連系線,8,"[0, 0, 0, 0, 0, 0, 0, 0, 1, 0]",中国→四国,四国→中国,個別区間,2025-04-01,2025-04-30,-1200.0,1050.0,metadata/research/net_demand_network_sources_20261026.yml
+関門連系線,9,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 1]",中国→九州,九州→中国,個別区間,2025-04-01,2025-04-30,-2380.0,470.0,metadata/research/net_demand_network_sources_20261026.yml
+北陸フェンス,10,"[0, 0, 0, 0, 1, -1, 0, 0, 0, 0]",南福光順方向−越前順方向（中部→北陸＋関西→北陸）,上記の逆向き組合せ,個別2辺への同時フェンス,2025-04-01,2025-04-30,-1980.0,787.0,metadata/research/net_demand_network_sources_20261026.yml

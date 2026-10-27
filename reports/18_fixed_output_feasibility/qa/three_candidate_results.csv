@@ -1,0 +1,4 @@
+candidate,numerical_evidence,forecast_stage,scope,publication_status,evidence
+FIT特例想定,北陸4368コマ、中部1440コマ×4シートを確認,北陸は予測作成時刻未確認。中部は前日,特例制度に限る公表。地域全Rに自動拡張不可,非公開と確認したものなし,fit_area_publication_review.csv
+出力抑制検証,関西2025年4～6月の代表5日・6列をPDFで確認,前日計画/当日見直し。5/28は2条件,最低下げ調整時刻等の限定値。連続全48点ではない,公開を確認,kansai_curtailment_202504_06.pdf p1
+地域需給実績,東京2025年4月1440コマを確認,実績。翌々日予測でない,MW平均、PV/風力実績と制御量が別列,公開を確認,tokyo_actual_202504.csv

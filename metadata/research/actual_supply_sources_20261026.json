@@ -1,0 +1,699 @@
+[
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/hokkaido.html",
+    "url": "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/index.html",
+    "final_url": "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/index.html",
+    "downloaded_at": "2026-10-26T03:22:36.540788+00:00",
+    "status": 200,
+    "size_bytes": 23916,
+    "sha256": "0db2db577171515e5591a6e96a63420c95bbe7e1b71b957192e5e4c3cff0ccc8",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:22:36 GMT",
+      "Content-Type": "text/html",
+      "Last-Modified": "Mon, 19 Oct 2026 04:59:48 GMT",
+      "ETag": "\"0x8DF2D9DCD708DAA\""
+    },
+    "public_links": [
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202604_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202605_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202606_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202607_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202608_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202609_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202610_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202504_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202505_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202506_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202507_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202508_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202509_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202510_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202511_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202512_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202601_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202602_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202603_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202404_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202405_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202406_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202407_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202408_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202409_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202410_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202411_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202412_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202501_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202502_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202503_01.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2023_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2023_2q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2023_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2023_4q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2022_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2022_2q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2022_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2022_4q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2021_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2021_2q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2021_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2021_4q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2020_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2020_2q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2020_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2020_4q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2019_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2019_2q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2019_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2019_4q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2018_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2018_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2018_4q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2017_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2017_2q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2017_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2017_4q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2016_1q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2016_2q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2016_3q.csv",
+      "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/sup_dem_results_2016_4q.csv"
+    ]
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/tohoku.html",
+    "url": "https://setsuden.nw.tohoku-epco.co.jp/realtime_jukyu.html",
+    "final_url": "https://setsuden.nw.tohoku-epco.co.jp/realtime_jukyu.html",
+    "downloaded_at": "2026-10-26T03:22:36.787169+00:00",
+    "status": 200,
+    "size_bytes": 6501,
+    "sha256": "03202baf7d30714315162f9b9363c5e13715e227fb0826868bca611187f5c012",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:22:37 GMT",
+      "Content-Type": "text/html;charset=Shift_JIS"
+    },
+    "public_links": [
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/realtime_jukyu/realtime_jukyu_20261026_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/download.html"
+    ]
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/tohoku_history.html",
+    "url": "https://setsuden.nw.tohoku-epco.co.jp/download.html",
+    "final_url": "https://setsuden.nw.tohoku-epco.co.jp/download.html",
+    "downloaded_at": "2026-10-26T03:22:36.984998+00:00",
+    "status": 200,
+    "size_bytes": 19409,
+    "sha256": "3fb1f998ec570930b6afc0977725c8854164bed8a2ccd5f11c86633a79031093",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:22:37 GMT",
+      "Last-Modified": "Fri, 25 Sep 2026 04:15:55 GMT",
+      "ETag": "\"4bd1-65c46f9047061\"",
+      "Content-Type": "text/html"
+    },
+    "public_links": [
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2026_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2025_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2024_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2023_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2022_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2021_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2020_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2019_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2018_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2017_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2016_tohoku.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202604_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202605_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202606_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202607_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202608_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202504_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202505_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202506_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202507_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202508_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202509_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202510_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202511_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202512_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202601_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202602_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202603_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202404_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202405_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202406_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202407_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202408_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202409_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202410_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202411_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202412_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202501_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202502_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202503_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202402_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202403_02.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2023_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2023_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2023_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2023_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2022_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2022_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2022_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2022_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2021_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2021_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2021_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2021_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2020_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2020_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2020_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2020_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2019_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2019_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2019_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2019_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2018_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2018_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2018_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2018_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2017_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2017_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2017_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2017_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2016_tohoku_1Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2016_tohoku_2Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2016_tohoku_3Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/common/demand/juyo_2016_tohoku_4Q.csv",
+      "https://setsuden.nw.tohoku-epco.co.jp/download.html#pageTop"
+    ]
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/tokyo.html",
+    "url": "https://www.tepco.co.jp/forecast/html/area_data-j.html",
+    "final_url": "https://www.tepco.co.jp/forecast/html/area_data-j.html",
+    "downloaded_at": "2026-10-26T03:22:37.113560+00:00",
+    "status": 200,
+    "size_bytes": 37687,
+    "sha256": "6eb9f58fcc767ceb0ed0048570fc5ae5d998c8be6e258d48d8e6f8af7ac0e091",
+    "http_metadata": {
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 03:22:37 GMT"
+    },
+    "public_links": []
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chubu.html",
+    "url": "https://powergrid.chuden.co.jp/denkiyoho/",
+    "final_url": "https://powergrid.chuden.co.jp/denkiyoho/",
+    "downloaded_at": "2026-10-26T03:22:37.356604+00:00",
+    "status": 200,
+    "size_bytes": 94314,
+    "sha256": "9c1c79fc5fbfef21427e46e83b08a8bf0d986c0374d992f3bb5a42c8a4654c02",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:22:37 GMT",
+      "Content-Type": "text/html",
+      "ETag": "\"6adb6f85-1706a\"",
+      "Last-Modified": "Fri, 23 Oct 2026 14:30:29 GMT"
+    },
+    "public_links": [
+      "https://powergrid.chuden.co.jp/denki_yoho_content_data/juyo_cepco003.csv",
+      "https://powergrid.chuden.co.jp/denki_yoho_content_data/keito_yosoku_cepco003.csv",
+      "https://powergrid.chuden.co.jp/denki_yoho_content_data/keito_jisseki_cepco003.csv",
+      "https://powergrid.chuden.co.jp/denki_yoho_content_data/keito_keikaku_cepco003.csv",
+      "https://powergrid.chuden.co.jp/denki_yoho_content_data/areajuyo_current.csv",
+      "https://powergrid.chuden.co.jp/denkiyoho/resource/files/denkiyoho_01_2025.pdf"
+    ]
+  },
+  {
+    "url": "https://www.rikuden.co.jp/nw/denki-yoho/result.html",
+    "downloaded_at": "2026-10-26T03:22:37.576211+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kansai.html",
+    "url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/past.html",
+    "final_url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/past.html",
+    "downloaded_at": "2026-10-26T03:22:37.753740+00:00",
+    "status": 200,
+    "size_bytes": 52266,
+    "sha256": "67d6653c70e0902b36569920db0385b22b6638b799bcc33cbca88a579818ff9c",
+    "http_metadata": {
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 03:22:38 GMT"
+    },
+    "public_links": [
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/past.html",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2023.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2022.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2021.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2020.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2019.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2018.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2017.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/area-performance/csv/area_jyukyu_jisseki_2016.csv",
+      "https://www.kansai-td.co.jp/denkiyoho/download/"
+    ]
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chugoku.html",
+    "url": "https://www.energia.co.jp/nw/jukyuu/eria_jukyu.html",
+    "final_url": "https://www.energia.co.jp/nw/jukyuu/eria_jukyu.html",
+    "downloaded_at": "2026-10-26T03:22:38.002870+00:00",
+    "status": 200,
+    "size_bytes": 10038,
+    "sha256": "03b77386bb91a113feec98398f31491fcf114fbb596ddeb6ca01e96bb8361746",
+    "http_metadata": {
+      "Content-Type": "text/html",
+      "Last-Modified": "Mon, 26 Oct 2026 03:13:17 GMT",
+      "ETag": "\"1cf3f69a8469645c04fb62646be24e33\"",
+      "Date": "Mon, 26 Oct 2026 03:22:38 GMT"
+    },
+    "public_links": []
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/shikoku.html",
+    "url": "https://www.yonden.co.jp/nw/supply_demand/data_download.html",
+    "final_url": "https://www.yonden.co.jp/nw/supply_demand/data_download.html",
+    "downloaded_at": "2026-10-26T03:22:38.292898+00:00",
+    "status": 200,
+    "size_bytes": 11109,
+    "sha256": "1dd7f3179e8a613afd16cab9aad5f95a44c95fdeffac60acdc0202726fd6d07b",
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 03:22:38 GMT"
+    },
+    "public_links": [
+      "https://www.yonden.co.jp/nw/supply_demand/data_download.html#history",
+      "https://www.yonden.co.jp/nw/supply_demand/data_download.html#history_2023",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202609_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202608_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202607_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202606_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202605_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202604_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202603_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202602_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202601_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202512_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202511_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202510_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202509_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202508_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202507_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202506_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202505_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202504_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202503_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202502_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202501_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202412_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202411_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202410_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202409_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202408_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202407_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202406_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202405_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202404_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202403_08.csv",
+      "https://www.yonden.co.jp/nw/supply_demand/data_download.html"
+    ]
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kyushu.html",
+    "url": "https://www.kyuden.co.jp/td_area_jukyu/jukyu.html",
+    "final_url": "https://www.kyuden.co.jp/td_area_jukyu/jukyu.html",
+    "downloaded_at": "2026-10-26T03:22:38.432618+00:00",
+    "status": 200,
+    "size_bytes": 55760,
+    "sha256": "fe694e5b95fa9a8cbe1b4fb99b03f2b8b22a792199a948ee70b88f759de154e7",
+    "http_metadata": {
+      "Last-Modified": "Thu, 11 Jun 2026 07:57:35 GMT",
+      "ETag": "\"d9d0-653f5b68c39c0\"",
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 03:22:38 GMT"
+    },
+    "public_links": [
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H28_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H28_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H28_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H28_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H29_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H29_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H29_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H29_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H30_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H30_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H30_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_H30_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2019_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2019_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2019_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2019_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2020_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2020_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2020_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2020_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2021_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2021_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2021_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2021_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2022_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2022_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2022_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2022_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2023_1Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2023_2Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2023_3Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/area_jyukyu_jisseki_2023_4Q.csv",
+      "https://www.kyuden.co.jp/td_area_jukyu/csv_area_jyukyu_jisseki/siryou7.pdf"
+    ]
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/hokkaido_202504.csv",
+    "url": "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202504_01.csv",
+    "final_url": "https://www.hepco.co.jp/network/con_service/public_document/supply_demand_results/csv/eria_jukyu_202504_01.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:24.316006+00:00",
+    "original_filename": "eria_jukyu_202504_01.csv",
+    "size_bytes": 123829,
+    "sha256": "73a3f3cd312aa973b560f0a1655d492c15bb68cf3eaaf04b09efdb031c019c76",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:23:24 GMT",
+      "Content-Type": "text/csv",
+      "Last-Modified": "Wed, 07 May 2025 02:26:43 GMT",
+      "ETag": "\"0x8DD8D0E9B52F452\""
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/tohoku_202504.csv",
+    "url": "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202504_02.csv",
+    "final_url": "https://setsuden.nw.tohoku-epco.co.jp/common/demand/eria_jukyu_202504_02.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:24.653994+00:00",
+    "original_filename": "eria_jukyu_202504_02.csv",
+    "size_bytes": 125029,
+    "sha256": "57e9d0ee90ef7b52f4a90020f48a782be9fa23644693f31f2ceaaea8e4b6bcf0",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:23:24 GMT",
+      "Last-Modified": "Fri, 23 May 2025 04:21:45 GMT",
+      "ETag": "\"1e865-635c5efaa1e89\"",
+      "Content-Type": "text/plain; charset=shift_jis"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/shikoku_202504.csv",
+    "url": "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202504_08.csv",
+    "final_url": "https://www.yonden.co.jp/nw/supply_demand/csv/eria_jukyu_202504_08.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:25.014700+00:00",
+    "original_filename": "eria_jukyu_202504_08.csv",
+    "size_bytes": 107400,
+    "sha256": "74c6109cd1e4f018b186cececd0fb9b4417837281daa65e8fd32853c85fe03fa",
+    "http_metadata": {
+      "Content-Type": "text/csv",
+      "Last-Modified": "Wed, 30 Apr 2025 16:19:02 GMT",
+      "Date": "Mon, 26 Oct 2026 03:23:25 GMT",
+      "ETag": "\"1a388-634014675c980\""
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/hokuriku.html",
+    "url": "https://www.rikuden.co.jp/nw/denki-yoho/results_jyukyu.html",
+    "final_url": "https://www.rikuden.co.jp/nw/denki-yoho/results_jyukyu.html",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:25.185662+00:00",
+    "original_filename": "results_jyukyu.html",
+    "size_bytes": 11533,
+    "sha256": "9aa5be3f6155df12c6e20c193a49c061e28182b9dab2dca887109237c03ed895",
+    "http_metadata": {
+      "Last-Modified": "Mon, 26 Oct 2026 03:21:18 GMT",
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 03:23:25 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kansai_definition.html",
+    "url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/index.html",
+    "final_url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/index.html",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:25.399147+00:00",
+    "original_filename": "index.html",
+    "size_bytes": 54378,
+    "sha256": "7075b526348ec3a99f28f57fa2d66ebb8fffaa3b04e8d468d156227087dd285c",
+    "http_metadata": {
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 03:23:25 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/shikoku_definition.html",
+    "url": "https://www.yonden.co.jp/nw/supply_demand/",
+    "final_url": "https://www.yonden.co.jp/nw/supply_demand/",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:25.527248+00:00",
+    "original_filename": "",
+    "size_bytes": 6001,
+    "sha256": "5f9905b1061b7e0170e3ee3fbaeccc10bcba905ddae7686884443356edb0ca7a",
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 03:23:25 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chubu_download.js",
+    "url": "https://powergrid.chuden.co.jp/denkiyoho/resource/js/create-download-link.js",
+    "final_url": "https://powergrid.chuden.co.jp/denkiyoho/resource/js/create-download-link.js",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:25.805738+00:00",
+    "original_filename": "create-download-link.js",
+    "size_bytes": 6226,
+    "sha256": "4d60a8b04f59790b72662fa4e35bb523c273ee0a16752398986af83c83dd29d8",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:23:25 GMT",
+      "Content-Type": "application/javascript",
+      "ETag": "\"6adb6f85-1852\"",
+      "Last-Modified": "Fri, 23 Oct 2026 14:30:29 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chubu_current_actual.csv",
+    "url": "https://powergrid.chuden.co.jp/denki_yoho_content_data/keito_jisseki_cepco003.csv",
+    "final_url": "https://powergrid.chuden.co.jp/denki_yoho_content_data/keito_jisseki_cepco003.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:23:25.924330+00:00",
+    "original_filename": "keito_jisseki_cepco003.csv",
+    "size_bytes": 1990,
+    "sha256": "8c86c94029be24096f6768890a8abc6d63f3e0efd36b87b4b3f7d456c1a987aa",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:23:25 GMT",
+      "Content-Type": "application/octet-stream",
+      "ETag": "\"6adec1b9-7c6\"",
+      "Last-Modified": "Mon, 26 Oct 2026 02:58:01 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/hokuriku_download.js",
+    "url": "https://www.rikuden.co.jp/nw/denki-yoho/common/js/pastCsvDLJukyu.js",
+    "final_url": "https://www.rikuden.co.jp/nw/denki-yoho/common/js/pastCsvDLJukyu.js",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:11.452503+00:00",
+    "original_filename": "pastCsvDLJukyu.js",
+    "size_bytes": 2043,
+    "sha256": "a85af5aec5c07aa50880cf02d55f6ad9af5aa824cdeecf50720c152e6a948844",
+    "http_metadata": {
+      "Last-Modified": "Fri, 12 Jan 2024 05:24:33 GMT",
+      "Content-Type": "application/x-javascript",
+      "Date": "Mon, 26 Oct 2026 03:24:11 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chugoku_download.js",
+    "url": "https://www.energia.co.jp/nw/jukyuu/js/script_eriajukyu_1.js",
+    "final_url": "https://www.energia.co.jp/nw/jukyuu/js/script_eriajukyu_1.js",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:11.690059+00:00",
+    "original_filename": "script_eriajukyu_1.js",
+    "size_bytes": 2007,
+    "sha256": "47a97e0cb37bd6a3b26a79cb434235f276b1fafe06a72a91653db3c855c81349",
+    "http_metadata": {
+      "Content-Type": "application/javascript",
+      "Last-Modified": "Tue, 20 Oct 2026 02:35:19 GMT",
+      "ETag": "\"96882cf386983101dd6938537af8c2da\"",
+      "Date": "Mon, 26 Oct 2026 03:24:11 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kansai_script.js",
+    "url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/js/script.js",
+    "final_url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/js/script.js",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:11.861099+00:00",
+    "original_filename": "script.js",
+    "size_bytes": 2284,
+    "sha256": "f54fb6ff348ca63d18ba749e59ea392062d607a0d04b2401500e275471d88bf2",
+    "http_metadata": {
+      "Content-Type": "application/javascript",
+      "Last-Modified": "Tue, 26 May 2026 08:58:40 GMT",
+      "ETag": "\"8ec-652b4b3945447\"",
+      "Date": "Mon, 26 Oct 2026 03:24:11 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/hokuriku_202504.csv",
+    "url": "https://www.rikuden.co.jp/nw/denki-yoho/csv/eria_jukyu_202504_05.csv",
+    "final_url": "https://www.rikuden.co.jp/nw/denki-yoho/csv/eria_jukyu_202504_05.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:45.828079+00:00",
+    "original_filename": "eria_jukyu_202504_05.csv",
+    "size_bytes": 106086,
+    "sha256": "cbcdff3726217db2faa988d1390c08868b4fa827ea03a3e7afdd889bce3b29e8",
+    "http_metadata": {
+      "Last-Modified": "Thu, 29 Jan 2026 01:42:56 GMT",
+      "Content-Type": "application/octet-stream",
+      "Date": "Mon, 26 Oct 2026 03:24:45 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chugoku_202504.csv",
+    "url": "https://www.energia.co.jp/nw/jukyuu/sys/eria_jukyu_202504_07.csv",
+    "final_url": "https://www.energia.co.jp/nw/jukyuu/sys/eria_jukyu_202504_07.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:46.108147+00:00",
+    "original_filename": "eria_jukyu_202504_07.csv",
+    "size_bytes": 123918,
+    "sha256": "cc12c21de4b10e5a83f1186f0eb15efb03890661fb7ef0de34e71cd721b67106",
+    "http_metadata": {
+      "Content-Type": "text/csv",
+      "Last-Modified": "Wed, 07 May 2025 15:05:17 GMT",
+      "ETag": "\"197ca85c4320701d96dfa0150768a239\"",
+      "Date": "Mon, 26 Oct 2026 03:24:46 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chubu_filelist.json",
+    "url": "https://powergrid.chuden.co.jp/denkiyoho/resource/php/getFilesInfo.php",
+    "final_url": "https://powergrid.chuden.co.jp/denkiyoho/resource/php/getFilesInfo.php",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:46.540810+00:00",
+    "original_filename": "getFilesInfo.php",
+    "size_bytes": 252030,
+    "sha256": "cb96e961a2f5b3cf1cb776f3ca8d1512006d845dd10525cbab6a70fca8e6f09a",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:24:46 GMT",
+      "Content-Type": "application/json"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kansai_filelist.json",
+    "url": "https://www.kansai-td.co.jp/interchange/denkiyoho/area-performance/filelist.json",
+    "final_url": "https://www.kansai-td.co.jp/interchange/denkiyoho/area-performance/filelist.json",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:46.844680+00:00",
+    "original_filename": "filelist.json",
+    "size_bytes": 2464,
+    "sha256": "763a5248d69c24b8619335a49a85c21e63b4d4613158e85c8e115c4ccad680d7",
+    "http_metadata": {
+      "Content-Type": "application/json",
+      "Last-Modified": "Mon, 26 Oct 2026 03:19:05 GMT",
+      "ETag": "\"9a0-65eb5cad03c40\"",
+      "Date": "Mon, 26 Oct 2026 03:24:46 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kyushu_jukyu.js",
+    "url": "https://www.kyuden.co.jp/td_area_jukyu/js/jukyu.js",
+    "final_url": "https://www.kyuden.co.jp/td_area_jukyu/js/jukyu.js",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:24:47.411006+00:00",
+    "original_filename": "jukyu.js",
+    "size_bytes": 32119,
+    "sha256": "86e20928a548d8569ea773f68c338075ab1de5a13210165285c7d27af893e07f",
+    "http_metadata": {
+      "Last-Modified": "Tue, 26 Mar 2024 08:10:38 GMT",
+      "ETag": "\"7d77-6148bd3483b80\"",
+      "Content-Type": "application/javascript",
+      "Date": "Mon, 26 Oct 2026 03:24:47 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kansai_components.js",
+    "url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/js/module/vue-components.js",
+    "final_url": "https://www.kansai-td.co.jp/denkiyoho/area-performance/js/module/vue-components.js",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:25:09.019552+00:00",
+    "original_filename": "vue-components.js",
+    "size_bytes": 6643,
+    "sha256": "09f0ba0c3542b7732c3acf869b17d9c414e7549a4d06117584ab68553970b2cf",
+    "http_metadata": {
+      "Content-Type": "application/javascript",
+      "Last-Modified": "Mon, 27 Jan 2025 07:19:42 GMT",
+      "ETag": "\"19f3-62caae67599dc\"",
+      "Date": "Mon, 26 Oct 2026 03:25:09 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kyushu_filelist.csv",
+    "url": "https://www.kyuden.co.jp/td_area_jukyu/csv/eria_jukyu_nendo_list.csv",
+    "final_url": "https://www.kyuden.co.jp/td_area_jukyu/csv/eria_jukyu_nendo_list.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:25:09.247782+00:00",
+    "original_filename": "eria_jukyu_nendo_list.csv",
+    "size_bytes": 875,
+    "sha256": "3611ec70e2ab76d2d6ffa69ef247b6b4c4c2ab65e1f730184019a13f05273759",
+    "http_metadata": {
+      "Last-Modified": "Mon, 26 Oct 2026 03:23:09 GMT",
+      "ETag": "\"36b-65eb5d95ff4ed\"",
+      "Content-Type": "text/csv",
+      "Date": "Mon, 26 Oct 2026 03:25:09 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kansai_202504.csv",
+    "url": "https://www.kansai-td.co.jp/interchange/denkiyoho/area-performance/eria_jukyu_202504_06.csv",
+    "final_url": "https://www.kansai-td.co.jp/interchange/denkiyoho/area-performance/eria_jukyu_202504_06.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:26:01.116100+00:00",
+    "original_filename": "eria_jukyu_202504_06.csv",
+    "size_bytes": 121815,
+    "sha256": "14197a6591334565ed6ce498be3325e02e0a8da27fdc2b3cff761a8b091ea465",
+    "http_metadata": {
+      "Content-Type": "text/csv",
+      "Last-Modified": "Mon, 26 Oct 2026 03:24:07 GMT",
+      "ETag": "\"1dbd7-65eb5dcd063c0\"",
+      "Date": "Mon, 26 Oct 2026 03:26:01 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/kyushu_202504.csv",
+    "url": "https://www.kyuden.co.jp/td_area_jukyu/csv/eria_jukyu_202504_09.csv",
+    "final_url": "https://www.kyuden.co.jp/td_area_jukyu/csv/eria_jukyu_202504_09.csv",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:26:01.547760+00:00",
+    "original_filename": "eria_jukyu_202504_09.csv",
+    "size_bytes": 124675,
+    "sha256": "7156eb36e35b336384d0bbb2be3221acb86ec3be4a74a7c71849a5babb987721",
+    "http_metadata": {
+      "Last-Modified": "Mon, 26 Oct 2026 03:24:09 GMT",
+      "ETag": "\"1e703-65eb5dcf9fb80\"",
+      "Content-Type": "text/csv",
+      "Date": "Mon, 26 Oct 2026 03:26:01 GMT"
+    }
+  },
+  {
+    "path": "data/interim/research_reference/20261026_actual_supply_v1/chubu_202504_keito.zip",
+    "url": "https://powergrid.chuden.co.jp/denki_yoho_content_data/download_csv/202504_keito.zip",
+    "final_url": "https://powergrid.chuden.co.jp/denki_yoho_content_data/download_csv/202504_keito.zip",
+    "status": 200,
+    "downloaded_at": "2026-10-26T03:26:01.922070+00:00",
+    "original_filename": "202504_keito.zip",
+    "size_bytes": 102817,
+    "sha256": "0c755deb2a49b6ffbb02d5fa5fbd47f5d262928d337d5bec3c887468daca886a",
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 03:26:01 GMT",
+      "Content-Type": "application/zip",
+      "ETag": "\"6812a4b4-191a1\"",
+      "Last-Modified": "Wed, 30 Apr 2025 22:31:16 GMT"
+    }
+  }
+]

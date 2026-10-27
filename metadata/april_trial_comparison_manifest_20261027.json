@@ -1,0 +1,274 @@
+{
+  "version": "20261027_comparison_v1",
+  "inputs": [
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/all_and_removed_net_multipliers.parquet",
+      "sha256": "1f1c92d314b70611e980fb1308c830289706b40bc3842ad50e58c8c5756a35fa"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/network_comparison_common_times.parquet",
+      "sha256": "0a572dfe7693bf70e4807aec37ef4a73ed347571aaeff8756c0a2bff6b9dd11f"
+    },
+    {
+      "path": "data/interim/occto/adjustable_removal/20261027_adjustable_removal_v3/regional_trial_uppers.parquet",
+      "sha256": "09df768c127a6b1ffb40110cb15679c5eabae82c7c91b98d34c657fbedaca278"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/B30_primary_input_ledger.parquet",
+      "sha256": "7296e263ac5cc83e194f28e53df4deda52890e436a99eeec2fea62aeb0239646"
+    },
+    {
+      "path": "data/interim/occto/net_demand_network/20261026_diagnostic_v1/legacy_network_constraints_FY2025.parquet",
+      "sha256": "b50a1e634ebb165e2685d45fa7130a4a993ffb00943abce7401a2a16a48f5df8"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/all_times_with_display_categories.parquet",
+      "sha256": "75feb3d7b151acbe9d962fd2e5a81ad246934d63f7d398c2314807306b571cf7",
+      "rows": 440640
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/overlapping_reason_flags.parquet",
+      "sha256": "47c2ce299617ada15ee6217ef6ea581fda9dbb8adb9aad6aeacd5d7c84449969",
+      "rows": 440640
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/reference_network_pairs_all_times.parquet",
+      "sha256": "0a1e6e200573e8a52318f617da1afb6c0895106eaac3a3133b7b6af997ae403e",
+      "rows": 12960
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/restored_reference_by_entity_time.parquet",
+      "sha256": "36a137da26a28ac3a763613eda2a8ec037871121888a973f4882a9c9fe7bd39d",
+      "rows": 92160
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/paired_stop_cases_all_times.parquet",
+      "sha256": "7fad126ed43a78e2888853fe3e94cb6f4696d1b00f414d3e1bcf6c03a08001e4",
+      "rows": 207360
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/nine_area_simultaneous_after_removal.parquet",
+      "sha256": "9abff0b12713d5d757e209c78d5d655138adc68d965882657953427e8875b326",
+      "rows": 391680
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/simultaneous_solution_samples.parquet",
+      "sha256": "1194931e9148476cb19dc9dbc3d968d04782bcf68fb59fb72d2099f2bdee3863",
+      "rows": 88
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/all_firms_simultaneous_baseline.parquet",
+      "sha256": "5b5ef4667b85245407cdb2c65ea7f165a9076ea78551e68cb160240651bbf60f",
+      "rows": 48960
+    },
+    {
+      "path": "data/interim/occto/april_trial_comparison/20261027_comparison_v1/multiplier_simultaneous_relationship.parquet",
+      "sha256": "c57a2302260a670343de83eabda60717eb662a0b66370a9bb4be8b803c8bb3ee",
+      "rows": 440640
+    }
+  ],
+  "qa": {
+    "source_frames": 440640,
+    "display_frames": 440640,
+    "network_pair_frames": 220320,
+    "stop_pair_frames": 207360,
+    "restoration_entity_time_frames": 92160,
+    "simultaneous_company_frames": 391680,
+    "relationship_join_matches": 440640,
+    "relationship_unmatched": 0,
+    "network_time_join_rate": 1.0,
+    "restoration_join_rate": 1.0,
+    "baseline_match_rate": 1.0,
+    "valid_above_one_but_sim_infeasible": 0,
+    "simultaneous_numeric_or_input_held": 0,
+    "real_lp_unique_evaluations": 132473,
+    "cached_or_analytic_evaluations_not_independent_observations": true,
+    "unit": "MW; multiplier ratio; time count 30min",
+    "raw_or_fixed_inputs_modified": false
+  },
+  "report_directory": "reports/22_april_trial_comparison",
+  "purpose_ja": "4月固定試行の解釈・比較と、倍率を使わない企業除去後9地域同時成立検査",
+  "formal_rsi_or_final_baseline": false,
+  "figures": [
+    {
+      "path": "reports/22_april_trial_comparison/figures/01_all_time_states.pdf",
+      "sha256": "8e724019936115b189340b8905c6039976ef7329cb1e5ec8ec11d1e649b38f5a",
+      "bytes": 83796
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/01_all_time_states.png",
+      "sha256": "d293d9103956fb5d89a08a81b30555425caaf2bcd892cd5ae5936ba5f8ec9656",
+      "bytes": 176093
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/02_network_ecdf_full_range.pdf",
+      "sha256": "c6cf7f55912e9322ee08f010d2c1f42d1ae52e12bbfbbe53b67839e935b4cc57",
+      "bytes": 116361
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/02_network_ecdf_full_range.png",
+      "sha256": "f2510076e2ef6d50d3c3f01344065df4e07afb4c0b028ac3a72beeec7770805b",
+      "bytes": 330197
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/03_network_ecdf_near_one.pdf",
+      "sha256": "5dc1d0d7899c6e6f570868c225a0ca85ff3d8e3cfecf9dcbccf4ded768b6383e",
+      "bytes": 111608
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/03_network_ecdf_near_one.png",
+      "sha256": "eff8359792e379f5c6b81e47374f35f53f069e09b0fa01b0a44e2120775d8f70",
+      "bytes": 318992
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/04_stop_record_restoration_example.pdf",
+      "sha256": "15b0f8d81f83739754e4f33b658d9d68da64ee7e1356f79fa1fbbd76a5c213b6",
+      "bytes": 72583
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/04_stop_record_restoration_example.png",
+      "sha256": "c988487271b554ee5367911ae1421f3c800fe732628e673b9763f18d43c81fd0",
+      "bytes": 168006
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/05_nine_area_simultaneous.pdf",
+      "sha256": "9d3fe22b78ae4de9b59d6e29bccfb97f79a2051f601d70dcc2dd9b2916397b56",
+      "bytes": 64628
+    },
+    {
+      "path": "reports/22_april_trial_comparison/figures/05_nine_area_simultaneous.png",
+      "sha256": "d84e843ef326e899f6014e6050df183f110da120b048ac3571b4232890f370cf",
+      "bytes": 108976
+    }
+  ],
+  "reports": [
+    {
+      "path": "reports/22_april_trial_comparison/README.md",
+      "sha256": "193b2889724a40c66747addd37cfc50e174134fc8aa2ea600eb9c329d5f8766d",
+      "bytes": 15678
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/all_output_null_counts.csv",
+      "sha256": "f4c1dbb9e50c2426b0d1021f4854622e8d19573099908ef2e3900d941844bfe8",
+      "bytes": 15741
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/all_time_state_shares.csv",
+      "sha256": "8b8ac1de3d7a13620d507f2f578b29c2cc8f3cffe828aedab6c03b9812415457",
+      "bytes": 5583
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/ecdf_coordinates.csv",
+      "sha256": "e4effa4c53221d712f753acb6b48110a8a71313d3e13343abb12d285d97ebae0",
+      "bytes": 1379468
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/ecdf_display_windows.csv",
+      "sha256": "081b15225747247a5af50585591231d8b59653e187ce0aa07e533ac285a78661",
+      "bytes": 594
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/figure_manifest.json",
+      "sha256": "41b06979bded7cdce51413013c52015552e46014cbb6f750579685e4f646e3cf",
+      "bytes": 2660
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/independent_validation.json",
+      "sha256": "9634fcdf487a895329dbd6b75171947f363c733585be8300bb85abe73dc94f36",
+      "bytes": 534
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/multiplier_simultaneous_relationship.csv",
+      "sha256": "bafd9e4361f66c17b04553b2429182742c04cc3d373d01f943fe32a887e8eb9f",
+      "bytes": 116060
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/network_status_transitions.csv",
+      "sha256": "c31038e1f1ed422626af27f6d37992b498a23c4c820f669bfe7f8dccaa25c9a1",
+      "bytes": 2641
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/network_validity_summary.csv",
+      "sha256": "5947cef91ee4d3f1e3b9f8c6de6d936bc5cd6810ae450ae11d224df261dabf87",
+      "bytes": 1005
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/output_column_dictionary.csv",
+      "sha256": "3b9ceb543d55aa4eeff8966fc55e79b8e60fc2f8186aeea6bc45aa461ca23ebf",
+      "bytes": 52891
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/overlapping_reason_counts.csv",
+      "sha256": "810df41c1f854c3edd7f2967ff2ea21b059a33fca6cbaabbec537befe84bf69d",
+      "bytes": 83787
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/restored_reference_summary.csv",
+      "sha256": "84691f02179e23e78ae341d81b71861af6e5f0c2431295dc9c5a8d0b9c161b37",
+      "bytes": 9184
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/run_audit.json",
+      "sha256": "43f0de5cb5e483c023fb13d79a748c39ed3a05d91f1b9952f994de3f59bc9279",
+      "bytes": 4085
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/simultaneous_summary.csv",
+      "sha256": "9b803459387e31cef193769473f8239751234b2761157119472852adb8997721",
+      "bytes": 83667
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/stop_pair_summary.csv",
+      "sha256": "7e04179cc1d844c80c820b1ae2ed428723bad06f0006da3cb205af3c53115ef1",
+      "bytes": 20786
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/stop_status_transitions.csv",
+      "sha256": "dd3d80ee7b77e5d85f18b7159d06b66191ed0a36a981ccf53dbf35caf78b51b7",
+      "bytes": 94389
+    },
+    {
+      "path": "reports/22_april_trial_comparison/qa/verification.json",
+      "sha256": "30e3a92459fa9c595cf997c5759496d262cafefeac5f25a3b7a4872ae8005a25",
+      "bytes": 27384
+    }
+  ],
+  "notebook": {
+    "path": "notebooks/06_april_trial_comparison.ipynb",
+    "sha256": "9b66ca67334f4b2314e2e2f740b379bf4f0559c3c85fe4644654dbf46ac9d832",
+    "bytes": 1554516
+  },
+  "implementation": [
+    {
+      "path": "src/april_trial_comparison.py",
+      "sha256": "7342e82646545d9e0982e320341e0a0850a741f281902fb9b73df25a92f2b9d9",
+      "bytes": 5077
+    },
+    {
+      "path": "src/april_trial_figures.py",
+      "sha256": "3db7e4e207061520d1ca9cb025ea697063b38f85f5b701b9e0ba34ab2fa9f191",
+      "bytes": 11001
+    },
+    {
+      "path": "scripts/interpret_april_trial.py",
+      "sha256": "7989e120c8e752840131a518cbd0bfe719cca0e7251d7c9f28b8d021c1ed5de7",
+      "bytes": 22691
+    },
+    {
+      "path": "scripts/plot_april_trial_comparison.py",
+      "sha256": "a568bad30a3f5d925eac5ab2b80f4ccfaa75e68c3c676ba8d350814ea3f22c76",
+      "bytes": 450
+    },
+    {
+      "path": "tests/test_april_trial_comparison.py",
+      "sha256": "03d99f1e7b15bece260faf2a31c88fe8157d0afd858cf80af7a250458d7c06c2",
+      "bytes": 5555
+    }
+  ],
+  "original_values_and_types_preserved": true,
+  "original_version": "20261027_adjustable_removal_v3",
+  "reproduction": "新出力先でinterpret_april_trial.py、続いてplot_april_trial_comparison.py。notebook既定は固定版閲覧",
+  "data_in_git": false
+}

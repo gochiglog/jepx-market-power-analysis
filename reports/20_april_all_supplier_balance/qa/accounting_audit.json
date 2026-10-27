@@ -1,0 +1,50 @@
+{
+  "inputs": [
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/hokkaido_202504_all_original_rows.parquet",
+      "sha256": "8c8abb43dfb88110d5aee5587a6e8c1b3da5aceb90b84a97fbfc19a373e9bc99"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/tohoku_202504_all_original_rows.parquet",
+      "sha256": "5fc2fa982a2956e33797c311833ab65e13f7ef5deff37909ba9c666c06551d91"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/tokyo_actual_202504_all_original_rows.parquet",
+      "sha256": "eb672c52e85df496d5f8147b60dc3f49e49ccc6c7a5f49c587473c7abadf1157"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/hokuriku_202504_all_original_rows.parquet",
+      "sha256": "da836e7a6684f3abb292c1d10e90ca7267fb605e343bb7ff17e9f2566c4ddc90"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/kansai_202504_all_original_rows.parquet",
+      "sha256": "4f37ddae48850bb16e70f40214d3892c48103aa495baa6dc1cce3f04fe989f76"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/chugoku_202504_all_original_rows.parquet",
+      "sha256": "17505e04c1f8848b8c923b39177e4e33f858420a13653a517d9359a0c5074ba9"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/shikoku_202504_all_original_rows.parquet",
+      "sha256": "d5dc478b1ed628da664c611eb6d6a682ebe40d91de4e2342e4f734b3101d74b0"
+    },
+    {
+      "path": "data/interim/occto/actual_net_demand/20261026_preparation_v7/kyushu_202504_all_original_rows.parquet",
+      "sha256": "defbe8692efa47fb1e800aeb55736d74952f82e90f9658af6b3c99706045a19e"
+    },
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/chubu_april_primary_all_original_columns.parquet",
+      "sha256": "7011cd5ba7a7cdc690981204b228fc2f5846492d1ee2630635c208f7a4db0229"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/interim/occto/april_all_supplier_balance/20261026_B30_april_v1/primary_csv_accounting_checks.parquet",
+      "sha256": "0e95bfd827f4441ac867c111647eeac5b95592cd041cb5b9416d545e81fb2baa",
+      "rows": 12960
+    }
+  ],
+  "join_matches": 12960,
+  "unmatched": 0,
+  "gross_charging_reconstructed": false
+}

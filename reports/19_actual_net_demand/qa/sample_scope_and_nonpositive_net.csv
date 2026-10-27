@@ -1,0 +1,10 @@
+area,sample_half_hours,demand_actual_null,renewable_actual_null,regional_nuclear_null,subset_nuclear_null,candidate_net_A_regional_mw_known,candidate_net_A_regional_mw_nonpositive,candidate_net_A_regional_mw_minimum,candidate_net_B_regional_mw_known,candidate_net_B_regional_mw_nonpositive,candidate_net_B_regional_mw_minimum
+中国,1440,0,0,0,0,1440,101,-1529.000000,1440,102,-1280
+中部,1440,0,0,1440,0,0,0,,0,0,
+九州,1440,0,0,0,0,1440,238,-1504.000000,1440,242,-1532
+北海道,1440,0,0,0,0,1440,0,835.000000,1440,0,796
+北陸,1440,0,0,0,0,1440,0,934.000000,1440,0,1011
+四国,1440,0,0,0,0,1440,185,-421.668000,1440,215,-498
+東京,1440,0,0,0,0,1440,0,6928.000000,1440,0,7481
+東北,1440,0,0,0,0,1440,0,1200.000000,1440,0,782
+関西,1440,0,0,0,1440,1440,0,2683.000000,1440,0,2424

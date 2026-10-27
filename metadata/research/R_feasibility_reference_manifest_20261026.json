@@ -1,0 +1,349 @@
+[
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_page.html",
+    "url": "https://www.rikuden.co.jp/nw_jyukyudata/tokurei1_jisseki.html",
+    "final_url": "https://www.rikuden.co.jp/nw_jyukyudata/tokurei1_jisseki.html",
+    "downloaded_at": "2026-10-26T02:36:23.406717+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Last-Modified": "Mon, 26 Oct 2026 00:00:05 GMT",
+      "Content-Length": "14138",
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 02:36:23 GMT"
+    },
+    "original_filename": "tokurei1_jisseki.html",
+    "sha256": "44d04989f4e716f77c6f825879751a6193d770044716222d19dcad703471d58a",
+    "size_bytes": 14138
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_202504_06.csv",
+    "url": "https://www.rikuden.co.jp/nw_jyukyudata/attach/Fit1_202504-06.csv",
+    "final_url": "https://www.rikuden.co.jp/nw_jyukyudata/attach/Fit1_202504-06.csv",
+    "downloaded_at": "2026-10-26T02:36:23.545301+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Last-Modified": "Wed, 30 Jul 2025 00:00:06 GMT",
+      "Content-Length": "149949",
+      "Date": "Mon, 26 Oct 2026 02:36:23 GMT"
+    },
+    "original_filename": "Fit1_202504-06.csv",
+    "sha256": "801a2c35e0f6047b7156a15c73b5b2eaca59e40498bfa9e0e4728adc7ab3bde3",
+    "size_bytes": 149949
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/tokyo_actual_202504.csv",
+    "url": "https://www.tepco.co.jp/forecast/html/images/eria_jukyu_202504_03.csv",
+    "final_url": "https://www.tepco.co.jp/forecast/html/images/eria_jukyu_202504_03.csv",
+    "downloaded_at": "2026-10-26T02:36:23.750629+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Last-Modified": "Fri, 30 May 2025 20:15:02 GMT",
+      "ETag": "\"1e2f1-6366011b39730\"",
+      "Content-Length": "123633",
+      "Content-Type": "text/csv",
+      "Date": "Mon, 26 Oct 2026 02:36:24 GMT"
+    },
+    "original_filename": "eria_jukyu_202504_03.csv",
+    "sha256": "45d310fb51ef43be1fb93269542ed514f4b94129b007459cbca9fcada3ac7fed",
+    "size_bytes": 123633
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/kansai_curtailment_202504_06.pdf",
+    "url": "https://www.occto.or.jp/assets/oshirase/shutsuryokuyokusei/2025/files/250827_hibetsu_kansai.pdf",
+    "final_url": "https://www.occto.or.jp/assets/oshirase/shutsuryokuyokusei/2025/files/250827_hibetsu_kansai.pdf",
+    "downloaded_at": "2026-10-26T02:36:23.980740+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "application/pdf",
+      "Content-Length": "939913",
+      "Date": "Mon, 26 Oct 2026 02:36:24 GMT",
+      "Last-Modified": "Thu, 06 Nov 2025 07:41:56 GMT",
+      "ETag": "\"e5789-642e833090538\""
+    },
+    "original_filename": "250827_hibetsu_kansai.pdf",
+    "sha256": "73ed38d6e34d3f09dc072c7e30856cb7af6ce9cb3fdd2562935640e96662877d",
+    "size_bytes": 939913
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_page.html",
+    "url": "https://www.yonden.co.jp/nw/denkiyoho/",
+    "final_url": "https://www.yonden.co.jp/nw/denkiyoho/",
+    "downloaded_at": "2026-10-26T02:36:24.372202+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 02:35:58 GMT"
+    },
+    "original_filename": "",
+    "sha256": "34c32c52333c609c4abe706ca8ea54ca2a5b4c80bf572c13b125e38c80c2dcc0",
+    "size_bytes": 39365
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_common.js",
+    "url": "https://www.yonden.co.jp/nw/denkiyoho/assets_sys/js/common.js",
+    "final_url": "https://www.yonden.co.jp/nw/denkiyoho/assets_sys/js/common.js",
+    "downloaded_at": "2026-10-26T02:36:24.475613+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "application/javascript",
+      "Content-Length": "1456",
+      "Date": "Mon, 26 Oct 2026 02:36:24 GMT",
+      "Last-Modified": "Thu, 24 Mar 2022 20:18:52 GMT",
+      "ETag": "\"5b0-5dafc8df7e300\""
+    },
+    "original_filename": "common.js",
+    "sha256": "a845d4e2b83206128353033be1449e2689a231412cf8f533d913e80d4e3bd154",
+    "size_bytes": 1456
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_definition.html",
+    "url": "https://www.yonden.co.jp/nw/denkiyoho/data_ex.html",
+    "final_url": "https://www.yonden.co.jp/nw/denkiyoho/data_ex.html",
+    "downloaded_at": "2026-10-26T02:36:24.592387+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 02:36:24 GMT"
+    },
+    "original_filename": "data_ex.html",
+    "sha256": "e859b31e68ff3899ab343c96f34143faed9f073b949d6657f2d81ea6ab603424",
+    "size_bytes": 9816
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/chugoku_fit_page.html",
+    "url": "https://www.energia.co.jp/nw/service/retailer/data/fit/",
+    "final_url": "https://www.energia.co.jp/nw/service/retailer/data/fit/",
+    "downloaded_at": "2026-10-26T02:36:24.732572+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html",
+      "Content-Length": "9839",
+      "Last-Modified": "Mon, 29 Jun 2026 00:21:20 GMT",
+      "ETag": "\"08a817b7370956bdeb97a8b1ebd06010\"",
+      "Date": "Mon, 26 Oct 2026 02:36:25 GMT"
+    },
+    "original_filename": "",
+    "sha256": "c3fb2ac657da1b8e90808d68ddc0fe21777271b157c8e4e90a19fc5fd827152d",
+    "size_bytes": 9839
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/tokyo_fit_page.html",
+    "url": "https://www.tepco.co.jp/forecast/html/fit_data-j.html",
+    "final_url": "https://www.tepco.co.jp/forecast/html/fit_data-j.html",
+    "downloaded_at": "2026-10-26T02:36:24.944907+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 02:36:25 GMT",
+      "Content-Length": "37870"
+    },
+    "original_filename": "fit_data-j.html",
+    "sha256": "eff635002bcb55359971981aa307d625d8bea7f74eddba8e9112624e9b728859",
+    "size_bytes": 37870
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokkaido_fit_page.html",
+    "url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/index.html",
+    "final_url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/index.html",
+    "downloaded_at": "2026-10-26T02:37:52.252311+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 02:37:52 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "35634",
+      "Last-Modified": "Wed, 22 Jul 2026 01:42:20 GMT",
+      "ETag": "\"0x8DEE792782A7C80\""
+    },
+    "original_filename": "index.html",
+    "sha256": "4e75495e08ba2c3a834ddf0feea2486fa5dfd0a95a0d6da9e8fec4f60e2837b2",
+    "size_bytes": 35634
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokkaido_fit_method.pdf",
+    "url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/pdf/specific_estimatedmethod.pdf",
+    "final_url": "https://www.hepco.co.jp/network/con_service/supply_overview/genecapacity/pdf/specific_estimatedmethod.pdf",
+    "downloaded_at": "2026-10-26T02:37:52.476123+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 02:37:52 GMT",
+      "Content-Type": "application/pdf",
+      "Content-Length": "517972",
+      "Last-Modified": "Thu, 08 Feb 2024 00:56:09 GMT",
+      "ETag": "\"0x8DC2840BD490BF0\""
+    },
+    "original_filename": "specific_estimatedmethod.pdf",
+    "sha256": "7343e5a13a74e2afceeca0fb2aca5589da5894e63756af05831dc6d510e45dcc",
+    "size_bytes": 517972
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_method.html",
+    "url": "https://www.rikuden.co.jp/nw_rule/fit_tokurei1.html",
+    "final_url": "https://www.rikuden.co.jp/nw_rule/fit_tokurei1.html",
+    "downloaded_at": "2026-10-26T02:37:52.782412+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Last-Modified": "Mon, 13 Jul 2026 10:18:01 GMT",
+      "Content-Length": "9111",
+      "Content-Type": "text/html",
+      "Date": "Mon, 26 Oct 2026 02:37:53 GMT"
+    },
+    "original_filename": "fit_tokurei1.html",
+    "sha256": "23727e42b35b48d187c80513f248c016e1c75519b2598773638fa6f8b30bfd03",
+    "size_bytes": 9111
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_forecast_today.csv",
+    "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/csv/yosoku_today.csv",
+    "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/csv/yosoku_today.csv",
+    "downloaded_at": "2026-10-26T02:37:52.987831+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/csv",
+      "Content-Length": "2388",
+      "Date": "Mon, 26 Oct 2026 02:37:53 GMT",
+      "Last-Modified": "Mon, 26 Oct 2026 02:36:42 GMT",
+      "ETag": "\"954-65eb5333e4adc\""
+    },
+    "original_filename": "yosoku_today.csv",
+    "sha256": "7d6e7ab4ae611862328ca793602187330620a4407ab7aa8a5acb62985a49b8c9",
+    "size_bytes": 2388
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_forecast_definition.html",
+    "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/today_tomorrow_ex.html",
+    "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/today_tomorrow_ex.html",
+    "downloaded_at": "2026-10-26T02:37:53.181387+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 02:37:53 GMT"
+    },
+    "original_filename": "today_tomorrow_ex.html",
+    "sha256": "4634fe35d312ed598ca25d98e07b711b9a6d628086448f6af67e7d79e72ccaf7",
+    "size_bytes": 14291
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_archive.html",
+    "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download.html",
+    "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download.html",
+    "downloaded_at": "2026-10-26T02:37:53.311730+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Length": "5672",
+      "Date": "Mon, 26 Oct 2026 02:37:10 GMT"
+    },
+    "original_filename": "download.html",
+    "sha256": "8022d41267a9ee0e684e0efa1d4800dea12464e9f228c40bf6bba73a63cf5f8f",
+    "size_bytes": 5672
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_archive_definition.html",
+    "url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download_ex.html",
+    "final_url": "https://www.yonden.co.jp/nw/denkiyoho/supply_demand/download_ex.html",
+    "downloaded_at": "2026-10-26T02:37:53.429931+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 02:37:53 GMT"
+    },
+    "original_filename": "download_ex.html",
+    "sha256": "d41daf77e1b5bdbcda20e1da5e95105f80d5e2e7f749fa05b109b699273d4cf9",
+    "size_bytes": 10761
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/chubu_fit_202504.xlsx",
+    "url": "https://powergrid.chuden.co.jp/resource/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/tokureihatsuden_109.xlsx",
+    "final_url": "https://powergrid.chuden.co.jp/resource/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/tokureihatsuden_109.xlsx",
+    "downloaded_at": "2026-10-26T02:39:39.038000+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 02:39:39 GMT",
+      "Content-Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "Content-Length": "63626",
+      "ETag": "\"686f1abd-f88a\"",
+      "Last-Modified": "Thu, 10 Jul 2025 01:43:25 GMT"
+    },
+    "original_filename": "tokureihatsuden_109.xlsx",
+    "sha256": "bc02878554c3522a6603a644274ed6d80bf10295c1465da0bec073014b5d8f93",
+    "size_bytes": 63626
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/chubu_fit_page.html",
+    "url": "https://powergrid.chuden.co.jp/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/",
+    "final_url": "https://powergrid.chuden.co.jp/goannai/hatsuden_kouri/takuso_kyokyu/rule/tokureihatsuden/",
+    "downloaded_at": "2026-10-26T02:39:39.332346+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 02:39:39 GMT",
+      "Content-Type": "text/html",
+      "Content-Length": "90196",
+      "ETag": "\"6a94e103-16054\"",
+      "Last-Modified": "Mon, 31 Aug 2026 02:03:47 GMT"
+    },
+    "original_filename": "",
+    "sha256": "99cb891b7646936279684c49455f1d9889b50385869f1e0660fffc34647a3122",
+    "size_bytes": 90196
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/tohoku_fit_page.html",
+    "url": "https://nw.tohoku-epco.co.jp/consignment/fit/",
+    "final_url": "https://nw.tohoku-epco.co.jp/consignment/fit/",
+    "downloaded_at": "2026-10-26T02:39:39.603842+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Date": "Mon, 26 Oct 2026 02:39:39 GMT",
+      "Last-Modified": "Fri, 28 Aug 2026 01:14:30 GMT",
+      "ETag": "\"1094-65a112ca1a980\"",
+      "Content-Length": "4244",
+      "Content-Type": "text/html"
+    },
+    "original_filename": "",
+    "sha256": "4a413a4106f89a5935de8723f30a4e611db930c64830a256dc42bfdefd6a1478",
+    "size_bytes": 4244
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/shikoku_fit_page.html",
+    "url": "https://www.yonden.co.jp/nw/renewable_energy/data/value.html",
+    "final_url": "https://www.yonden.co.jp/nw/renewable_energy/data/value.html",
+    "downloaded_at": "2026-10-26T02:39:39.901672+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 02:39:40 GMT"
+    },
+    "original_filename": "value.html",
+    "sha256": "91b9ab11f8c03827b59a97a80978c66271e3633f824d3dce16c09572fcb8be63",
+    "size_bytes": 35033
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/kyushu_fit_page.html",
+    "url": "https://www.kyuden.co.jp/td/service/wheeling/outline.html",
+    "final_url": "https://www.kyuden.co.jp/td/service/wheeling/outline.html",
+    "downloaded_at": "2026-10-26T02:39:40.120732+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Mon, 26 Oct 2026 02:39:40 GMT"
+    },
+    "original_filename": "outline.html",
+    "sha256": "16ec713840ff46b4400a40a4e3b6cbce1fa6f57c98bbe00b190bbf164e20205c",
+    "size_bytes": 70784
+  },
+  {
+    "path": "data/interim/research_reference/20261026_R_feasibility_v1/hokuriku_fit_method.pdf",
+    "url": "https://www.rikuden.co.jp/nw_rule/attach/fit1_soutei20170401.pdf",
+    "final_url": "https://www.rikuden.co.jp/nw_rule/attach/fit1_soutei20170401.pdf",
+    "downloaded_at": "2026-10-26T02:39:40.373029+00:00",
+    "http_status": 200,
+    "http_metadata": {
+      "Last-Modified": "Thu, 11 Nov 2021 04:03:59 GMT",
+      "Content-Length": "36247",
+      "Content-Type": "application/pdf",
+      "Date": "Mon, 26 Oct 2026 02:39:40 GMT"
+    },
+    "original_filename": "fit1_soutei20170401.pdf",
+    "sha256": "b24e2a52575011363b0565017523d5344b9364f90284ac98db9dcd1b0fa8a89c",
+    "size_bytes": 36247
+  }
+]
