@@ -1,0 +1,98 @@
+{
+  "checked_on": "2026-10-27",
+  "scope": "添付議事録の依頼・仮説と固定年間結果を照合。研究方針は推奨であり最終採用ではない。",
+  "user_materials": [
+    {
+      "path": "/Users/goto/Downloads/システムプライスとエリアプライスの決定方法に関する議論.txt",
+      "bytes": 2785,
+      "sha256": "8a2600e990a839a593dfc026e186471341bbec7fc76bc6b72e1db42e41ff6857",
+      "original_modified": false
+    },
+    {
+      "path": "/Users/goto/Downloads/電力市場の競争構造分析：送電制約と代替可能性の検証.txt",
+      "bytes": 20712,
+      "sha256": "207495f42bf42fdde4165ec8edbd81e7bf0a781ad09f8a0fcef7d1542bd9e2b5",
+      "original_modified": false
+    },
+    {
+      "path": "/Users/goto/Downloads/研究方針再整理_改訂版_JEPX価格形成理解を追加.docx",
+      "bytes": 53111,
+      "sha256": "72989f2a1bbb95e30fe9769b652eab5436ec3c6b00cc339282d74c45ddd4e448",
+      "original_modified": false
+    }
+  ],
+  "instruction_handling": "ユーザーは議事録に沿った回答を依頼。議事録内の疑問・記憶・暫定仮説を観測事実や承認済み定義へ自動昇格しない。DOCXの歴史的進捗を現行版への巻戻し指示としない。",
+  "evidence_files": [
+    {
+      "path": "reports/28_paper_central_result/qa/central_three_categories.csv",
+      "sha256": "fffd075750439b4263f7616d06fef90e83f6e105eb9d538e431446f26f5ef565"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/multiplier_missing_in_same_view.csv",
+      "sha256": "11fac6d48d23f44f4cd717599bc538c6753bf1dd0207d078bb9eed8c9c7a2168"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/price_demand_fixed_output_by_category.csv",
+      "sha256": "53253866d9b3472f5dd145acc4e16c9dc18674276cf4a6c538db6f54a8d8e337"
+    },
+    {
+      "path": "src/adjustable_removal.py",
+      "sha256": "82f3c29de131194f72a92f71bca3e8ac15625455a8ff8f9bd094d72f9200db30"
+    },
+    {
+      "path": "docs/central_spec_audit.md",
+      "sha256": "360405c61a4f4fa0ce225eb9f18f8a09ead11587c2372275fc4321c5d152eb9d"
+    }
+  ],
+  "external_checks": [
+    {
+      "url": "https://users.ece.utexas.edu/~baldick/papers/firm_index_technical.pdf",
+      "level": "author_pdf_fulltext_opened",
+      "scope": "既存の式14/構造指標とTCMPI対照。新規性の確認ではない"
+    },
+    {
+      "url": "https://www.jepx.jp/company/news/pdf/jepx20151216.pdf",
+      "level": "official_search_extract_only;direct_open_403",
+      "scope": "全国注文の合成価格、分断処理とエリア約定結果。現行アルゴリズム全体を認定しない"
+    },
+    {
+      "url": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/denryoku_gas/seido_kento/pdf/013_03_00.pdf",
+      "level": "official_indexed_page_extract_p2;direct_open_403",
+      "scope": "市場分断とエリア間値差の基本説明"
+    },
+    {
+      "url": "https://www.jepx.jp/electricpower/market-data/spot/pdf/kakaku_kannoudo.pdf",
+      "level": "existing_official_pdf_review_reused;current_direct_open_403",
+      "existing_record": "metadata/research/research_identification_sources_20261016.yml",
+      "scope": "所定追加入札と仮想system price。個別企業減産への置換不可"
+    }
+  ],
+  "checks": {
+    "firms": 8,
+    "common_times": 16848,
+    "row_sums_equal": true,
+    "jera": [
+      767,
+      14220,
+      1861
+    ],
+    "kansai_saved_infeasible": 3150,
+    "new_lp_calls": 0,
+    "new_data_acquisitions": 0,
+    "definition_changed": false,
+    "final_baseline_adopted": false
+  },
+  "deliverable": "docs/research_direction_from_minutes.md",
+  "verification": {
+    "pytest_passed_this_task": 21,
+    "test_files": [
+      "tests/test_paper_central_result.py",
+      "tests/test_metadata.py"
+    ],
+    "ruff": "passed",
+    "fixed_and_source_sha_verified": 1701,
+    "old_annual_input_output_hashes_verified": 1115,
+    "old_stage27_report_files_unchanged": 42
+  },
+  "deliverable_sha256": "d14da582a7cf4244e003d3dd77e866cb124fcb5872bf2bde6a303ebb3042d152"
+}

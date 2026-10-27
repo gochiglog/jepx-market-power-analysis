@@ -6,6 +6,8 @@
 
 **最新は [論文の中心結果への整理（工程28）](reports/28_paper_central_result/README.md)です。** 固定年間版から、共通16,848コマ・8法人の「保存枠で成立／解除で成立／解除でも不成立」を排他的に整理しました。[一枚の問い→結果→図→限定](reports/28_paper_central_result/one_page_result.pdf)、北陸拡大の方法図、先行研究の1ページ対照を用意しています。[ノートブック10](notebooks/10_paper_central_result.ipynb)で確認できます。新規年間取得・LP・指標変更は行わず、[工程27の年間版](reports/27_fy2025_annual/README.md)は固定したままです。
 
+添付議事録を踏まえた[研究方針への回答](docs/research_direction_from_minutes.md)では、既存結果から言えること、単一市場・CV・代替者の配分へ直接は推論できないこと、次の研究判断を整理しています。最終仕様は変更していません。
+
 ## 入口は2つ
 
 - **全体の仕事・進捗を見る：[総合Issue #29](https://github.com/gochiglog/jepx-market-power-analysis/issues/29)**。分野別PJと、その下の実施Issueへ進めます。
