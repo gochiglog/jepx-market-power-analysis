@@ -77,15 +77,15 @@
     },
     {
       "path": "reports/28_paper_central_result/figures/02_central_three_categories.pdf",
-      "sha256": "11fbc28a37fb358543d1ec2ff89f6b2546b2a153126d10303f27202f15291ef4"
+      "sha256": "075d4c5e5f83ec9df3ce7f5544d749405ce83fb04ab57786598c817316248388"
     },
     {
       "path": "reports/28_paper_central_result/figures/02_central_three_categories.png",
-      "sha256": "c02837da7a4b643eb7aff778c1852639906c7593e8b79cedb943a684f12954c5"
+      "sha256": "fc7674eef5c45de0d6d416c1729e76b25ae2772dbc16073d236f3df7c8e4daff"
     },
     {
       "path": "reports/28_paper_central_result/figures/02_central_three_categories.svg",
-      "sha256": "35d3f970aa5e6856557a9081f1a85d851a5f4a5662ea4f248cc228cbb87920b1"
+      "sha256": "7556a130aaf64755925261f6741a5d28fd97b0c2a12fcd52586d25c94ee85134"
     },
     {
       "path": "reports/28_paper_central_result/figures/A01_price_same_categories_candidate.pdf",
@@ -211,7 +211,7 @@
     },
     {
       "path": "notebooks/10_paper_central_result.ipynb",
-      "sha256": "5b02f1e11593ef8b984079f503a9d306e62b9bede608213a08d527d19b228e8e"
+      "sha256": "14b0634e244403bac76515c9f67579774f279953ee23af7c79d7fa250c189f74"
     },
     {
       "path": "scripts/prepare_paper_central_result.py",
@@ -219,7 +219,7 @@
     },
     {
       "path": "scripts/plot_paper_central_result.py",
-      "sha256": "3e989ccdf2ded342d9d5a5c08fa01dd644c8bee069501cdc3214c8605b641af0"
+      "sha256": "ec5ddf070e89c7bbe78b2871f82fb26b8490c0779687de75806cfb65c9cf0f67"
     },
     {
       "path": "scripts/render_paper_summary_sheets.py",

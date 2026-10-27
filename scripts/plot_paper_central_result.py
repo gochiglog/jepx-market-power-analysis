@@ -261,10 +261,19 @@ def central_figure():
     fig, ax = plt.subplots(figsize=(11.7, 8.5))
     fig.subplots_adjust(left=0.09, right=0.98, top=0.88, bottom=0.30)
     bottom = np.zeros(8)
-    colors = ["#3c80a6", "#edab48", "#986daa"]
-    for cat, label, color in zip(CATEGORIES, LABELS, colors):
+    colors = ["#0072b2", "#edab48", "#cc79a7"]
+    for cat, label, color, hatch in zip(CATEGORIES, LABELS, colors, [None, None, "///"]):
         values = f[cat].to_numpy() / 16848 * 100
-        ax.bar(range(8), values, bottom=bottom, label=label, color=color)
+        ax.bar(
+            range(8),
+            values,
+            bottom=bottom,
+            label=label,
+            color=color,
+            hatch=hatch,
+            edgecolor="#542344" if hatch else color,
+            linewidth=0.5,
+        )
         for i, (v, n) in enumerate(zip(values, f[cat])):
             if v >= 8:
                 ax.text(
