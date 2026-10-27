@@ -4,7 +4,7 @@
 市場支配力の行使、売り渋りの実在、利益増加の認定は今回の目的に含めません。
 対象はFY2025（2025年4月1日〜2026年3月31日）。公開データの収集・接続から、FY2025年間の条件付き代替供給診断まで実施済みです。
 
-**最新は [FY2025年間の代替供給診断（工程27）](reports/27_fy2025_annual/README.md)です。** 需要・固定PV/風力/原子力実績を9地域×17,520コマへ整備し、同じ2設備追加版・17条件で年間LP・価格接続・本文4図/2表・月別補助表を作成しました。送電入力17,472コマを定義し、切替日48コマは理由付き保留です。まず[年間結果ノートブック09](notebooks/09_fy2025_annual.ipynb)で図と全時刻の状態を確認できます。最終baseline・企業不可欠性は認定していません。
+**最新は [論文の中心結果への整理（工程28）](reports/28_paper_central_result/README.md)です。** 固定年間版から、共通16,848コマ・8法人の「保存枠で成立／解除で成立／解除でも不成立」を排他的に整理しました。[一枚の問い→結果→図→限定](reports/28_paper_central_result/one_page_result.pdf)、北陸拡大の方法図、先行研究の1ページ対照を用意しています。[ノートブック10](notebooks/10_paper_central_result.ipynb)で確認できます。新規年間取得・LP・指標変更は行わず、[工程27の年間版](reports/27_fy2025_annual/README.md)は固定したままです。
 
 ## 入口は2つ
 
@@ -37,10 +37,10 @@
 | 先行研究 | [#30](https://github.com/gochiglog/jepx-market-power-analysis/issues/30) | 読書整理 #36（未着手。実装ブランチ未作成） |
 | 研究戦略・制度 | [#31](https://github.com/gochiglog/jepx-market-power-analysis/issues/31) | #3、#23、#25、RSI設計 #38／各 `issue/feature-番号` |
 | データ取得・ETL・DB | [#32](https://github.com/gochiglog/jepx-market-power-analysis/issues/32) | #2、#4、#8、#10、#13、#15、#17、#19、保存計画診断 #40、純需要/制約 #42／各 `issue/feature-番号` |
-| 分析・アウトプット | [#33](https://github.com/gochiglog/jepx-market-power-analysis/issues/33) | 北海道記述図 #27／`issue/feature-27`、論文図表設計 #44／`issue/feature-44`、年間診断 #46／`issue/feature-46` |
+| 分析・アウトプット | [#33](https://github.com/gochiglog/jepx-market-power-analysis/issues/33) | 北海道記述図 #27／`issue/feature-27`、論文図表設計 #44／`issue/feature-44`、年間診断 #46／`issue/feature-46`、中心結果整理 #48／`issue/feature-48` |
 | 運営・整理 | [#34](https://github.com/gochiglog/jepx-market-power-analysis/issues/34) | 初期構築 #1、案内 #21、今回の再構築 #35／`issue/feature-35` |
 
-純需要/制約診断は `issue/feature-42`（PR #43）。年間診断はIssue #46（分析・アウトプットPJ #33）の `issue/feature-46`、[Draft PR #47](https://github.com/gochiglog/jepx-market-power-analysis/pull/47)。依存元は図表設計 `issue/feature-44`（PR #45）です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
+純需要/制約診断は `issue/feature-42`（PR #43）。年間診断はIssue #46（分析・アウトプットPJ #33）の `issue/feature-46`、[Draft PR #47](https://github.com/gochiglog/jepx-market-power-analysis/pull/47)。依存元は図表設計 `issue/feature-44`（PR #45）です。今回の中心結果整理は #48／`issue/feature-48`（依存元 #46/PR #47）です。PJの階層はIssueで管理し、Gitでは親ブランチをPRのbaseとして表します。
 既存Issue・PRは履歴と依存を保持します。**データがローカルで完成していることと、mainへマージ済みであることは別**です。
 未統合PRは #16→#18→#20→#22→#24→#26→#28、事務整理はそのheadを継ぐ親ブランチをbaseにした #37。今回もmainへ直接commit・pushせず、PRをマージしません。
 

@@ -1,0 +1,21 @@
+{
+  "path": "data/interim/research_reference/20261027_adjustable_removal_v1/tcrsi_technical.pdf",
+  "url": "https://users.ece.utexas.edu/~baldick/papers/firm_index_technical.pdf",
+  "sha256": "7b166010edd3dad42162998aa812189bfc538a11505a7d2565d82ffafcf7c996",
+  "existing_source_reused": true,
+  "new_file_downloaded": false,
+  "checked_at": "2026-10-27T09:03:06.174219+00:00",
+  "edition": "2011-05-10,24 pages",
+  "reviewed_sections": [
+    "4 pp15–18",
+    "5 pp19–21",
+    "6 pp21–22"
+  ],
+  "visual_check": "p19 Fig6/Table3: pdftoppm render",
+  "primary_equation": "14a–e p16",
+  "comparison_data_file": "technical_reference_contrast.csv",
+  "internet_open_checked": true,
+  "web_screenshot_failed": "cache miss; saved identical author PDF rendered locally",
+  "TCMPI_not_computed": true,
+  "novelty_claim": false
+}

@@ -1,0 +1,9 @@
+artifact,placement,purpose,path,denominator_or_limit
+方法図（今回）,本文,固定/変数、除去、9地域、フェンスを初見で説明,figures/01_method_readable.pdf,新規編集。データ/LPは変更しない
+排他的3区分（今回）,本文・中心結果,送電枠の有無で同じ元需要の代替可否が変わる部分を直接示す,figures/02_central_three_categories.pdf,"共通16,848、全法人不成立624/入力保留48を併記"
+17条件一致図（工程27図2）,付録A・本文は重点数値のみ,中心図と異なる供給条件の幅を確認する,../27_fy2025_annual/figures/02_condition_consistency.pdf,"17条件共通全法人成立12,265。16,848へ混ぜない"
+旧送電あり/なし2棒（工程27図3）,再現資料,中心3区分図が両結果と変化の内訳をまとめるため本文は重複,../27_fy2025_annual/figures/03_transmission_comparison.pdf,旧図保持。新中心図と数値一致を検査
+倍率と価格（工程27図4全範囲/拡大）,付録B・全範囲は再現資料にも,独自の地域倍率。特にJERAは未算定が多く主図を代表させない,../27_fy2025_annual/figures/04_multiplier_price_near_one.pdf,"東京940/17,520有効・16,580未算定、中部1,943有効・15,577未算定を同じ表へ"
+同じ3区分の価格（今回）,付録候補。本文採用は保留,倍率未算定を落とさず中心図と同じ時刻で記述できる,figures/A01_price_same_categories_candidate.pdf,"9地域各16,848。D/R/時間帯/季節構成を隣接表へ。因果ではない"
+月別図（工程27 A01）,付録C,年間の状態が季節・月でどれだけ変わるか,../27_fy2025_annual/figures/A01_monthly_status.pdf,新3区分月別表も付ける。都合のよい月を選ばない
+全17条件/全status/元入力/数式監査,再現資料,全時刻・理由・式/コード/データを追跡する,../27_fy2025_annual/qa/verification.json,旧固定manifestと今回の派生manifestを区別

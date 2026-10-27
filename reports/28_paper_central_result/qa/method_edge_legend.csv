@@ -1,0 +1,11 @@
+number,name,sending_area,receiving_area,capacity_depicted
+1,北海道・本州間電力連系設備,北海道,東北,False
+2,相馬双葉幹線,東北,東京,False
+3,周波数変換設備,東京,中部,False
+4,三重東近江線,中部,関西,False
+5,南福光連系所・南福光変電所の連系設備,中部,北陸,False
+6,越前嶺南線,北陸,関西,False
+7,西播東岡山線・山崎智頭線,関西,中国,False
+8,阿南紀北直流幹線,関西,四国,False
+9,本四連系線,中国,四国,False
+10,関門連系線,中国,九州,False

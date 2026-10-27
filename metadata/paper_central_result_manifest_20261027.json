@@ -1,0 +1,233 @@
+{
+  "version": "20261027_paper_central_result_v1",
+  "issue": 48,
+  "dependency_issue": 46,
+  "inputs": [
+    {
+      "path": "data/processed/annual_diagnostic/20261027_publication_v1/explanatory_no_stop_simultaneous.parquet",
+      "sha256": "f6f417869d5ed06f814722e65ec3edba9f1977a70bc854ea2b5c6107257360ab"
+    },
+    {
+      "path": "data/processed/annual_diagnostic/20261027_publication_v1/explanatory_no_stop_priced.parquet",
+      "sha256": "e0b5253317cd18dd67deda55f41a83dd762632d36c15197af4b0c0d74d42dd1b"
+    },
+    {
+      "path": "data/interim/occto/annual_diagnostic/20261027_inputs_v2/annual_primary_input_ledger.parquet",
+      "sha256": "fbded08a2f7bed4703131bcb6aee6e1136b90fa6e32a60e6aec27e2482fb1e6a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data/processed/paper_central_result/20261027_v1/company_all_times_with_paired_status.parquet",
+      "sha256": "2b82e58d350d2071a481d17744d82ba015c7852955c217595f7450ee3f13b63e",
+      "rows": 140160
+    },
+    {
+      "path": "data/processed/paper_central_result/20261027_v1/price_and_composition_all_times.parquet",
+      "sha256": "0da3b222777e37163ef767ed4fdb55abc4cd6f023ee75e68562b1793ed781ccd",
+      "rows": 157680
+    }
+  ],
+  "qa": {
+    "annual_company_frames": 140160,
+    "common_company_frames": 134784,
+    "company_count": 8,
+    "annual_times": 17520,
+    "common_times": 16848,
+    "excluded_all_firms_infeasible_times": 624,
+    "excluded_network_input_times": 48,
+    "common_time_set_equal_for_all_companies": true,
+    "jera": [
+      767,
+      14220,
+      1861
+    ],
+    "all_row_sums": 16848,
+    "original_status_equivalence": true,
+    "price_all_area_times": 157680,
+    "price_common_area_times": 151632,
+    "join_rate": 1.0,
+    "unmatched": 0,
+    "row_multiplication": 0,
+    "source_columns_values_types_preserved": true,
+    "new_lp_calls": 0,
+    "new_annual_data_acquisitions": 0,
+    "final_baseline_adopted": false
+  },
+  "documents_and_figures": [
+    {
+      "path": "reports/28_paper_central_result/README.md",
+      "sha256": "7c9768395358b8c3dc55936af351ad83834279464306cfc39700d3fb4423bdba"
+    },
+    {
+      "path": "reports/28_paper_central_result/figure_captions.md",
+      "sha256": "a9740d41a7df19f3eb68c4613043e2787f3a40f763872acd6a496cc1a92f8fe8"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/01_method_readable.pdf",
+      "sha256": "8633586b49e26299880d669c54acf62904bf71aa7a6bab3982c4cc014e7c71f9"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/01_method_readable.png",
+      "sha256": "724be9c07de8326bd13dc8ccfc1fbdaf6de49951c737384800520daf91ffd89f"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/01_method_readable.svg",
+      "sha256": "fa88eda3adf17014d3c89d3e604b9684a4c33bf5193954d9619c1773c2b98af1"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/02_central_three_categories.pdf",
+      "sha256": "7e859c9616d97bae9aae9e0f9dcd39aac86a62236daed281bba0b1dc7b1568b3"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/02_central_three_categories.png",
+      "sha256": "a670fdf82309b0b7f5531a80e5fc5b41e5fe7b864518e51a204e7f6132748754"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/02_central_three_categories.svg",
+      "sha256": "795d1c3bcc2fa5891fca26f8fda982c34b926a99dd27160c10021bc769bbaa3c"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/A01_price_same_categories_candidate.pdf",
+      "sha256": "dafbc1995188848ab9f65561e687af5bec4d8ce9a56ab76194d83bfa98baea13"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/A01_price_same_categories_candidate.png",
+      "sha256": "5052a4565bb57e2f2ee2ae0dac83b260d7886a399be828de0af9bcb9e9fd2766"
+    },
+    {
+      "path": "reports/28_paper_central_result/figures/A01_price_same_categories_candidate.svg",
+      "sha256": "4e0857b8e11244698b4c95f2028a686dc52bf17690c558d1f2ab4d9406c3d1df"
+    },
+    {
+      "path": "reports/28_paper_central_result/literature_contrast.md",
+      "sha256": "054dfe466df9e88c0d4faa3e04e2e82f0a1d56ff3b99f0ba53a7c56b7a919be9"
+    },
+    {
+      "path": "reports/28_paper_central_result/literature_contrast_one_page.pdf",
+      "sha256": "d43aea66b27ed993666a5be5651cb273d92f99b5557e4286b04a826826b79472"
+    },
+    {
+      "path": "reports/28_paper_central_result/literature_contrast_one_page.png",
+      "sha256": "2c5a8776d867ed2cfa68a3d0a369389fca917162bfaf56cae0c18888808d60a8"
+    },
+    {
+      "path": "reports/28_paper_central_result/literature_contrast_one_page.svg",
+      "sha256": "7100e76fb0ddfb5f3cff7862182b6e0207a504342a4ed816c9fe5235da07bf9d"
+    },
+    {
+      "path": "reports/28_paper_central_result/one_page_result.md",
+      "sha256": "de0ab010884c81d3aded6eb969be0fcc6a625dfacf58202ad032e96a08bfe7bb"
+    },
+    {
+      "path": "reports/28_paper_central_result/one_page_result.pdf",
+      "sha256": "ab5e07566db18ce4a1d0cf449433388561c8c16e6a647f3a8c2ebdd4b775f63c"
+    },
+    {
+      "path": "reports/28_paper_central_result/one_page_result.png",
+      "sha256": "ee0eeeba56f339f1f5d7775165bf6b92eb5dd439cc0cad8cc6d713a0c45f2ad7"
+    },
+    {
+      "path": "reports/28_paper_central_result/one_page_result.svg",
+      "sha256": "6dde6d4064c224e61c4e545f0ded7f3c54581a5488a2ce5016556f0a44dd5ebb"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/aggregation_audit.json",
+      "sha256": "1467fa06e1197daca7787f9eb3be371955b17e0d2d749229a2ae9da959442649"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/all_times_scope.csv",
+      "sha256": "65403bc5e462e0b478440cfdb6add309af58f68564cb7d514595fcf8d8f3ef68"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/artificial_fence_examples.csv",
+      "sha256": "1f3bc8667ff973f894fd1a96d3cf46b87f5ad37b6440605b76612756a0a6e21a"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/category_dictionary.csv",
+      "sha256": "89858bb8afc1990400843ab866475c31593c5350f094ebaea8c24ca925a757c3"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/central_three_categories.csv",
+      "sha256": "fffd075750439b4263f7616d06fef90e83f6e105eb9d538e431446f26f5ef565"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/central_three_categories_monthly.csv",
+      "sha256": "abf25a021b7c0b0bd0d2409bb5415d0176538b9b4a64d4c6452dc95aead0e7f7"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/composition_by_season_time_month.csv",
+      "sha256": "df568ce47dcb7d58dc2c0ba577943c97cb838df7d6a129facead3174e5a39c18"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/figure_audit.json",
+      "sha256": "5e61e7b90dd9054041765c9bbced38d6e8571b7c642eccfac14483c8755d9084"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/main_appendix_reproduction.csv",
+      "sha256": "af759bf78dae5d1cc03fc8d13ef36e456024b6a160ca7c8d7557ec4b2f049f69"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/method_edge_legend.csv",
+      "sha256": "3324d307547202a3ff516d6a789a5d324c5699c0e459ee84f3769d025273579f"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/multiplier_all_status_with_scope.csv",
+      "sha256": "f0a5121b9b1130fcef85f78a83ac527d08a092b7f9939c59a9ce6a7743c627ac"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/multiplier_missing_in_same_view.csv",
+      "sha256": "11fac6d48d23f44f4cd717599bc538c6753bf1dd0207d078bb9eed8c9c7a2168"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/price_demand_fixed_output_by_category.csv",
+      "sha256": "53253866d9b3472f5dd145acc4e16c9dc18674276cf4a6c538db6f54a8d8e337"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/question_result_figure_limit.csv",
+      "sha256": "1a635ef844996181584d5d537d30015222454d0263679ba1b11764e5f1613823"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/technical_reference_contrast.csv",
+      "sha256": "ae6cecf0055a5d6bc1561a40ee412d95b0a045053ab1c4f1282f8c7f6d4014c3"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/technical_reference_review.json",
+      "sha256": "243caedb9f920440f995c90bd455067e5afdaf6156231dbc016462030424bba2"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/verification.json",
+      "sha256": "a5ebab32fed7afa1fc029dcfbc07fba5d138a273bdd1942bb17cdb111b8d0120"
+    }
+  ],
+  "reproduction": [
+    {
+      "path": "src/paper_central_result.py",
+      "sha256": "00aff8f7c202745c86020c79c17e141a478194906904b94b77cd4ef3864469ae"
+    },
+    {
+      "path": "tests/test_paper_central_result.py",
+      "sha256": "e01c0ab9d574957825ea0c0ae2a197029ebffc8618d665f0c75679ec2810b599"
+    },
+    {
+      "path": "notebooks/10_paper_central_result.ipynb",
+      "sha256": "4fe9caca9ea0d57e08d4a193782fb69b2c6071d1c8e42a3b5e6e92dfc2a817bf"
+    },
+    {
+      "path": "scripts/prepare_paper_central_result.py",
+      "sha256": "17e46930d256e4b5bb65a2a7bb50eb4f8c9f2127f8cb56ee48e4b329aff5677e"
+    },
+    {
+      "path": "scripts/plot_paper_central_result.py",
+      "sha256": "84d8baf344997acfc731a2d7f8012746ace7b75a5065fffb0831770e6ba8c82b"
+    },
+    {
+      "path": "scripts/render_paper_summary_sheets.py",
+      "sha256": "93af7c7694209b41a713961ae0c406ec3c9133236e4afd4cce0dd6ab9d3ff5ef"
+    },
+    {
+      "path": "scripts/verify_paper_central_result.py",
+      "sha256": "c40c8f8d3debb7978d595c849b0b3e796e9fb58d2d16c80a05dc32129b2a1f1b"
+    }
+  ]
+}

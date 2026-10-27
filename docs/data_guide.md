@@ -63,3 +63,10 @@
 `data/interim/occto/annual_diagnostic/`内のinputs_v2→supply_v2/network_v1→results_v1と、`data/processed/annual_diagnostic/20261027_publication_v1/`を使います。
 4月方法検証と旧固定版を上書きせず、2設備を含む同じ集合で年間結果と価格を揃えました。17条件/2送電条件は代替シナリオであり、反復価格を独立観測として数えません。切替日48コマの送電保留も残しています。
 [英語列名・日本語定義・型・単位の一覧](../reports/27_fy2025_annual/qa/output_column_dictionary.csv)、[入力/出力SHA固定manifest](../metadata/annual_diagnostic_manifest_20261027.json)。実データはGit管理外です。
+
+
+## 論文の中心結果を読む（工程28）
+
+[ノートブック10](../notebooks/10_paper_central_result.ipynb)は、工程27の固定版を変更せず作った3区分主図と方法図の入口です。
+派生表は`data/processed/paper_central_result/20261027_v1/`の`company_all_times_with_paired_status.parquet`（8法人×17,520＝140,160、両条件の元statusを併記）と`price_and_composition_all_times.parquet`（9地域×17,520＝157,680、比較対象外も保持）。共通比較は8法人すべて同じ16,848時刻です。
+[図表・一枚表・先行研究対照](../reports/28_paper_central_result/README.md)から、数値CSVと版manifestを参照できます。旧年間データの再計算・上書きはしていません。

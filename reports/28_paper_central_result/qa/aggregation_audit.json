@@ -1,0 +1,26 @@
+{
+  "annual_company_frames": 140160,
+  "common_company_frames": 134784,
+  "company_count": 8,
+  "annual_times": 17520,
+  "common_times": 16848,
+  "excluded_all_firms_infeasible_times": 624,
+  "excluded_network_input_times": 48,
+  "common_time_set_equal_for_all_companies": true,
+  "jera": [
+    767,
+    14220,
+    1861
+  ],
+  "all_row_sums": 16848,
+  "original_status_equivalence": true,
+  "price_all_area_times": 157680,
+  "price_common_area_times": 151632,
+  "join_rate": 1.0,
+  "unmatched": 0,
+  "row_multiplication": 0,
+  "source_columns_values_types_preserved": true,
+  "new_lp_calls": 0,
+  "new_annual_data_acquisitions": 0,
+  "final_baseline_adopted": false
+}

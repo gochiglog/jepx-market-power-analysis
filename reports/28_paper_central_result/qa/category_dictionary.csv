@@ -1,0 +1,4 @@
+category,label_ja
+feasible_with_saved_bounds,除去後も保存枠下で成立
+feasible_only_without_bounds,保存枠下で不成立だが枠解除で成立
+infeasible_even_without_bounds,枠を解除しても不成立
