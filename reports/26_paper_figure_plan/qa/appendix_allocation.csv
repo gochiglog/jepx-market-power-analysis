@@ -1,0 +1,9 @@
+material,placement,existing_files,editorial_rule
+停止17条件,本文:図2の一致/条件依存と表2の主要差。付録:条件別全件数・同時刻ペア,reports/23_april_constraint_diagnosis/figures/01_all17_removal_failure.pdf; reports/22_april_trial_comparison/qa/stop_pair_summary.csv,本文で17本を重ねない。主条件を自動採用しない
+個別送電解除11組/包含3組,付録中心。本文:図3の全包絡あり/なしの説明に代表値だけ引用,reports/23_april_constraint_diagnosis/figures/03_constraint_release.pdf; qa/release_registry.csv,物理増強効果でない。既存包含群だけ、網羅組合せ不要
+地域倍率ECDF/全範囲,付録。本文は図4と異なる問いを説明する必要がある場合のみ引用,reports/22_april_trial_comparison/figures/02_network_ecdf_full_range.pdf; figures/03_network_ecdf_near_one.pdf,倍率1以上を元需要同時成立と一般に同一視しない
+価格散布の全範囲/状態別分布,本文:図4の近傍表示を採る場合、全範囲は付録必須。状態別価格表も付録,reports/24_april_price_connection/figures/01_multiplier_price_full.pdf; figures/03_consistency_price_distribution.pdf; qa/scatter_status_price_distribution.csv,旧集合の価格図。非正Nと他地域不成立、空群を保持。北海道のない比較群を作らない
+需要・純需要・時間帯,本文:交絡/有効時刻選択の短い説明。付録:既存の分布表/時間構成,reports/24_april_price_connection/qa/state_price_and_covariate_distribution.csv; qa/state_hour_distribution.csv; figures/04_hour_composition.pdf,事後閾値を設けず、条件を揃えた因果比較としない
+数式・lambda反例,本文:2つの問題と独立同時成立の必要性。付録:添字/行列/集約等価性/反例/監査6例,docs/central_spec_audit.md; reports/25_central_spec_audit/qa/solver_calls_real_times.json,一般的な同値性と359423有効枠での例外0を区別
+2設備と送電留保枠の根拠,本文:表2に212MWの影響とB判定。付録:公式設備/元送電行の対応,reports/25_central_spec_audit/qa/two_asset_official_evidence.csv; qa/network_bound_adoption_review.csv,本文表を根拠の全行一覧にしない。旧/追加集合の数値を混ぜない
+原本・全列・型・QA・再現コード,再現資料へ。本文:表1と品質検査の短い記述のみ,metadata/*manifest*.json; metadata/variable_dictionary.csv; reports/25_central_spec_audit/qa/verification.json; notebooks/06_april_trial_comparison.ipynb; notebooks/07_april_constraint_diagnosis.ipynb; notebooks/08_april_price_connection.ipynb,データはGit管理外。ノートブック06〜08は旧集合の版を参照し、新集合の再現と呼ばない

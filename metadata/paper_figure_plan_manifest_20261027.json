@@ -1,0 +1,80 @@
+{
+  "version": "20261027_paper_figure_plan_v1",
+  "issue": 44,
+  "parent_pj": 33,
+  "branch": "issue/feature-44",
+  "dependency_branch": "issue/feature-42",
+  "reviewed_code_commit": "d7f3b48187178f3ec5a17fb4c4ea89ab754a702b",
+  "scope": "論文の図表/付録/骨子と4月・FY2025ギャップの編集設計のみ",
+  "documentation": [
+    {
+      "path": "reports/26_paper_figure_plan/README.md",
+      "sha256": "c81e87c3cb983d2431080b1352921dd59f11b9e30c7ee8fa83576eeda97c1685",
+      "bytes": 24374
+    },
+    {
+      "path": "reports/26_paper_figure_plan/qa/annual_gap_inventory.csv",
+      "sha256": "cd4d1a26c660f63916abdb27277085096af29e5bf98fe0a631351f7b322cdceb",
+      "bytes": 6986
+    },
+    {
+      "path": "reports/26_paper_figure_plan/qa/appendix_allocation.csv",
+      "sha256": "28f98b161b2c84de0d938df3dfb4df16d305e95835f2a9ced558e70602f3a0d3",
+      "bytes": 2772
+    },
+    {
+      "path": "reports/26_paper_figure_plan/qa/documentation_verification.json",
+      "sha256": "02f85feb5bb0c315b037611d15d2266a5daff27ec4e07b106e2a5f63e76b41c4",
+      "bytes": 45391
+    },
+    {
+      "path": "reports/26_paper_figure_plan/qa/figure_table_plan.csv",
+      "sha256": "c1b025fdabb986f1cba083e8e3c9d5e917eaf550825fb3a27abdff389eeaf503",
+      "bytes": 5893
+    },
+    {
+      "path": "reports/26_paper_figure_plan/qa/inventory_evidence.json",
+      "sha256": "9b874d42846bf885220f7e3af4124128c45460ed8a4faa6ec7e8b8f5ed58ea7d",
+      "bytes": 6791
+    }
+  ],
+  "reviewed_inventory_sources": [
+    {
+      "path": "metadata/acquisition_manifest.jsonl",
+      "sha256": "5647d1f4970c14899732e484489b2c5ed052f8d3498ee75fc894ed7d615d8de7",
+      "bytes": 684442
+    },
+    {
+      "path": "metadata/artifact_catalog.json",
+      "sha256": "f3a2733df80baa8214c2eb60705e83f5bd665c4e015c6e1220c0edd9b60f8c84",
+      "bytes": 8350
+    },
+    {
+      "path": "metadata/research/actual_supply_sources_20261026.json",
+      "sha256": "24a8bc16852cd05504d5430dfc92f677a4b8099da82fc0ab5b5ae9d3ec1eb039",
+      "bytes": 42214
+    },
+    {
+      "path": "metadata/research/april_balance_sources_20261026.json",
+      "sha256": "ae2b579f67048089fba7bee71a7979e100eee342f8e915863084863918b8d48e",
+      "bytes": 2691
+    },
+    {
+      "path": "metadata/central_spec_audit_manifest_20261027.json",
+      "sha256": "3cac91d80514a25df8a8a1a796519238d0a7ace8cce517cbadc3a1a00c564312",
+      "bytes": 22299
+    }
+  ],
+  "new_model_runs": 0,
+  "new_data_acquisitions": 0,
+  "new_sensitivity_or_price_analysis": false,
+  "final_baseline_adopted": false,
+  "final_period_adopted": false,
+  "FY2025_target_retained": true,
+  "old_figures_or_fixed_versions_modified": false,
+  "tests": {
+    "metadata_pytest_passed": 16,
+    "ruff": "passed",
+    "numerical_tests_rerun": false
+  }
+}

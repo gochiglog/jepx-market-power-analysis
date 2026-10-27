@@ -51,3 +51,7 @@
 ## 中心仕様の監査と2設備の別診断版（工程25）
 
 [結果と数式/コードの入口](../reports/25_central_spec_audit/README.md)。`data/interim/occto/central_spec_audit/20261027_two_asset_v2/` に北海道の全48,960倍率枠、8法人の全391,680同時成立枠、条件別の2設備元列保持表を保存しました。旧集合・既存17条件・原値は保持。参照100/112MWを含める感度診断で、送電端や契約供給力の確定値ではありません。v1は型検査途中版で、数値はv2と同じです。
+
+## 論文の図表設計（工程26）
+
+[本文・付録・年間拡張の設計](../reports/26_paper_figure_plan/README.md)。新しい研究データは作っていません。[図表対応表](../reports/26_paper_figure_plan/qa/figure_table_plan.csv)から既存の図・固定版へ、[年間ギャップ](../reports/26_paper_figure_plan/qa/annual_gap_inventory.csv)から保有/未処理/未保有を確認できます。旧集合と2設備追加版の価格図を混ぜないこと、4月とFY2025目標を分けることを明記しました。
