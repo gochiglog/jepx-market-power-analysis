@@ -1,0 +1,8 @@
+{
+  "pair_frames": 2522880,
+  "common_valid_frames": 1772880,
+  "restoration_monotonicity_violations": 0,
+  "join_rate": 1.0,
+  "unmatched": 0,
+  "conditions_added": 0
+}

@@ -1,0 +1,16 @@
+{
+  "price_keys": 157680,
+  "multiplier_frames": 5361120,
+  "price_join_rate": 1.0,
+  "unmatched": 0,
+  "duplicate_market_key": 0,
+  "row_multiplication": 0,
+  "original_result_columns_equal": true,
+  "consistency_frames": 280320,
+  "condition_count": 17,
+  "independent_price_observations": 157680,
+  "system_price_mismatch_times": 2271,
+  "maximum_balance_exceptions": 0,
+  "figures": "本文4点（図4は全範囲/拡大の2表示）＋月別付録1点",
+  "source": "data/interim/occto/annual_diagnostic/20261027_results_v1"
+}

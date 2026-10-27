@@ -1,0 +1,13 @@
+{
+  "total_times": 17520,
+  "ready_times": 17472,
+  "held_times": 48,
+  "legacy_times": 16608,
+  "original_legacy_constraints_equal": 182688,
+  "legacy_join_rate": 1.0,
+  "unmatched": 0,
+  "new_fence_model": "10補助輸送変数を保持。中央3地域は純移送カット3本で管理、旧3辺の独立上限は使わない",
+  "source_evidence": "保存公式system_cutover_2026.pdf物理2/5、central_loop.pdf物理7/8",
+  "actual_physical_switch_instant_inferred": false,
+  "postcutover_contract": "対象コマに新3フェンス公表行が揃う場合のみ使用。予定ルート断を実施認定せず、地域間経路を切断しない"
+}

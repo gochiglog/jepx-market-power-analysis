@@ -1,0 +1,22 @@
+{
+  "rows": 157680,
+  "times": 17520,
+  "area_time_keys": 157680,
+  "duplicate_keys": 0,
+  "day_periods": 48,
+  "april_join_rate": 1.0,
+  "april_input_values_unchanged": true,
+  "missing_D": 0,
+  "missing_R": 0,
+  "source_area_months": 108,
+  "new_downloads": 88,
+  "april_or_chubu_redownloaded": false,
+  "outputs": [
+    {
+      "path": "data/interim/occto/annual_diagnostic/20261027_inputs_v2/annual_primary_input_ledger.parquet",
+      "sha256": "fbded08a2f7bed4703131bcb6aee6e1136b90fa6e32a60e6aec27e2482fb1e6a"
+    }
+  ],
+  "new_reference_manifest": "metadata/research/annual_actual_acquisition_20261027.jsonl",
+  "source_area_month_count_check": "annual_input_file_contracts.json の108行から確認"
+}

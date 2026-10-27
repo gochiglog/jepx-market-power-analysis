@@ -55,3 +55,11 @@
 ## 論文の図表設計（工程26）
 
 [本文・付録・年間拡張の設計](../reports/26_paper_figure_plan/README.md)。新しい研究データは作っていません。[図表対応表](../reports/26_paper_figure_plan/qa/figure_table_plan.csv)から既存の図・固定版へ、[年間ギャップ](../reports/26_paper_figure_plan/qa/annual_gap_inventory.csv)から保有/未処理/未保有を確認できます。旧集合と2設備追加版の価格図を混ぜないこと、4月とFY2025目標を分けることを明記しました。
+
+
+## FY2025の年間診断を見る（工程27）
+
+[ノートブック09](../notebooks/09_fy2025_annual.ipynb)が最新の年間図・表・実データの入口です。[工程27](../reports/27_fy2025_annual/README.md)に保存先一覧があります。
+`data/interim/occto/annual_diagnostic/`内のinputs_v2→supply_v2/network_v1→results_v1と、`data/processed/annual_diagnostic/20261027_publication_v1/`を使います。
+4月方法検証と旧固定版を上書きせず、2設備を含む同じ集合で年間結果と価格を揃えました。17条件/2送電条件は代替シナリオであり、反復価格を独立観測として数えません。切替日48コマの送電保留も残しています。
+[英語列名・日本語定義・型・単位の一覧](../reports/27_fy2025_annual/qa/output_column_dictionary.csv)、[入力/出力SHA固定manifest](../metadata/annual_diagnostic_manifest_20261027.json)。実データはGit管理外です。
