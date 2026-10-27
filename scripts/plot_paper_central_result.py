@@ -255,11 +255,11 @@ def method():
     edge.to_csv(REPORT / "qa/method_edge_legend.csv", index=False)
 
 
-def main():
-    configure()
-    method()
+def central_figure():
+    """棒グラフ・凡例・注記にそれぞれ独立した領域を確保する。"""
     f = pd.read_csv(REPORT / "qa/central_three_categories.csv")
-    fig, ax = plt.subplots(figsize=(11.7, 6.6))
+    fig, ax = plt.subplots(figsize=(11.7, 8.5))
+    fig.subplots_adjust(left=0.09, right=0.98, top=0.88, bottom=0.30)
     bottom = np.zeros(8)
     colors = ["#3c80a6", "#edab48", "#986daa"]
     for cat, label, color in zip(CATEGORIES, LABELS, colors):
@@ -283,14 +283,30 @@ def main():
         "固定供給を残す名参照調整供給除去：送電枠の有無による需要充足\n停止控除なし／8法人・FY2025の同じ時刻",
         fontsize=14,
     )
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.12), ncol=1, fontsize=11, frameon=False)
+    handles, labels = ax.get_legend_handles_labels()
+    fig.legend(
+        handles,
+        labels,
+        loc="upper center",
+        bbox_to_anchor=(0.54, 0.235),
+        ncol=1,
+        fontsize=11,
+        frameon=False,
+    )
     fig.text(
         0.09,
-        -0.05,
+        0.045,
         "年間17,520のうち全法人不成立624・送電入力保留48を比較対象外として別掲。\n包絡解除は実際の増強効果ではなく、限定設備・名参照代理・保存留保枠に条件付けた対照。",
         fontsize=10,
     )
     save(fig, "02_central_three_categories")
+
+
+def main():
+    configure()
+    method()
+    central_figure()
+    colors = ["#3c80a6", "#edab48", "#986daa"]
     # 候補は点+四分位範囲だけ。箱ひげ/回帰/有意差検定を作らない。
     stats = pd.read_csv(REPORT / "qa/price_demand_fixed_output_by_category.csv")
     missing = pd.read_csv(REPORT / "qa/multiplier_missing_in_same_view.csv").set_index("area")
