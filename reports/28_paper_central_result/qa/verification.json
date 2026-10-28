@@ -1,0 +1,26 @@
+{
+  "fixed_and_source_sha_verified": 1701,
+  "old_annual_input_output_hashes_verified": 1115,
+  "old_stage27_report_files_unchanged": 42,
+  "common_times": 16848,
+  "company_count": 8,
+  "all_company_row_sums_equal": true,
+  "independent_old_summary_check": true,
+  "jera": [
+    767,
+    14220,
+    1861
+  ],
+  "source_price_columns_values_types_equal": true,
+  "join_rate": 1.0,
+  "unmatched": 0,
+  "row_multiplication": 0,
+  "composition_counts_sum_correct": true,
+  "one_page_sheets_verified": 2,
+  "method_and_main_figure_pdf_svg": true,
+  "new_lp_calls": 0,
+  "new_annual_acquisitions": 0,
+  "final_baseline_adopted": false,
+  "pytest_passed": 368,
+  "ruff": "passed"
+}

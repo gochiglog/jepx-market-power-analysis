@@ -1,0 +1,19 @@
+{
+  "new_lp_calls": 0,
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "method_example": "artificial_only_not_line_capacity",
+  "common_denominator": 16848,
+  "price_composition_dimensions": [
+    "D",
+    "R",
+    "N",
+    "season",
+    "time_band",
+    "month"
+  ],
+  "price_observations_repeated_by_scenario": false
+}

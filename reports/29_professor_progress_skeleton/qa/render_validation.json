@@ -1,0 +1,20 @@
+{
+  "pdf_pages": 10,
+  "pdf_text_extraction_checked": true,
+  "docx_zip_and_all_xml_valid": true,
+  "embedded_figures": 2,
+  "existing_figures_reused": true,
+  "new_lp_calls": 0,
+  "new_data_acquisitions": 0,
+  "source": "reports/29_professor_progress_skeleton/paper_skeleton.md",
+  "chapters": [
+    "1．はじめに：誰が他社の供給を代替できるか",
+    "2．先行研究と研究目的",
+    "3．データと評価方法",
+    "4．年間診断結果：保存送電枠による代替可能性の違い",
+    "5．代替供給の内訳と実績価格への接続",
+    "6．既存CVモデルへの接続と拡張計画",
+    "7．まとめ：現段階で述べられる結論",
+    "8．限界と次の研究判断"
+  ]
+}

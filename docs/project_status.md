@@ -4,9 +4,13 @@
 
 原本取得・時間正規化・価格ETL・設備診断・市場接続・需要需給ETL・方向整理・研究判断材料・北海道記述図まで実施済みです。
 現在の目的は「特定事業者を他社・域外供給で代替できるか」の構造評価です（RD-021）。
-[工程27：FY2025年間診断](../reports/27_fy2025_annual/README.md)を実施しました。公式一次88地域月を新規取得し、保有4月/中部ZIPと合わせD/R157,680地域時刻を整備。17条件×両送電条件の全年間枠に数値/statusを保存し、価格・本文図4点/表2点と月別補助表を同じ2設備追加版へ統一しました。送電ありは17,472時刻が入力定義済み、3/13の48時刻を保留しています。全時刻が有効倍率となった意味ではありません。
+[工程28：年間診断を論文の中心結果へ整理](../reports/28_paper_central_result/README.md)を完了しました。共通16,848コマ・8法人の排他的3区分、北陸拡大/切替前後/人工例の方法図、原文§4–6の1ページ対照、本文/付録/再現資料の配置、同じ3区分の価格候補とD/R/時間/季節構成を保存しました。新規取得・LPなし。JERA767＋14,220＋1,861＝16,848を照合し、旧工程27は不変です。
 
-現在のIssueは #46、branch `issue/feature-46`、[Draft PR #47](https://github.com/gochiglog/jepx-market-power-analysis/pull/47)。依存元 `issue/feature-44`（PR #45）。[実行済みノートブック09](../notebooks/09_fy2025_annual.ipynb)で年間の図と全status表を閲覧できます。4月旧版と既存原本を保持し、最終baselineは未確定です。
+添付議事録への[研究方針の回答](research_direction_from_minutes.md)を追加しました。新LP・取得・定義変更は行わず、主図の解釈、JERA未算定、実際の代替配分と可能範囲、CVへの接続条件を区別しました。
+
+2026-10-28：[教授報告用の8章スケルトン](../reports/29_professor_progress_skeleton/README.md)をWord/PDF/Markdownで作成。ユーザー下書きの環境対行動・東北の説明を反映し、既存2図を挿入。未実施の代替構成/CV結果は計画として区別。新計算・取得・baseline変更なし。
+
+現在のIssueは #48、branch `issue/feature-48`、[Draft PR #49](https://github.com/gochiglog/jepx-market-power-analysis/pull/49)。依存元 `issue/feature-46`（Draft PR #47）。[閲覧ノートブック10](../notebooks/10_paper_central_result.ipynb)と[一枚要約](../reports/28_paper_central_result/one_page_result.pdf)が入口です。最終baseline・契約帰属・企業不可欠性の認定は行いません。
 元repoのブランチを切り替えて作業し、01・02の未commitのノートブック変更は保持しています。
 区切りごとにpytest／ruff後に専用ブランチへcommit／pushし、無承認のmergeはしません。
 

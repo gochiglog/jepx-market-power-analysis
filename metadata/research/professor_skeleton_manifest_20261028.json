@@ -1,0 +1,85 @@
+{
+  "created_on": "2026-10-28",
+  "scope": "教授報告用8章スケルトン。既存固定結果の引用・編集のみ",
+  "inputs": [
+    {
+      "path": "conference/jser202608/260615_本提出/下書き.docx",
+      "sha256": "52a78bb6bf0d791f862c17c5189e5e91919d440d5c0dd9173d710f71a1b0c704"
+    },
+    {
+      "path": "conference/template_1.docx",
+      "sha256": "38fd38de0f8a9e8958217e1f3d063c6c94190329341a0ec0a98d0d6dfd6b1ab6"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/central_three_categories.csv",
+      "sha256": "fffd075750439b4263f7616d06fef90e83f6e105eb9d538e431446f26f5ef565"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/price_demand_fixed_output_by_category.csv",
+      "sha256": "53253866d9b3472f5dd145acc4e16c9dc18674276cf4a6c538db6f54a8d8e337"
+    },
+    {
+      "path": "reports/28_paper_central_result/qa/multiplier_missing_in_same_view.csv",
+      "sha256": "11fac6d48d23f44f4cd717599bc538c6753bf1dd0207d078bb9eed8c9c7a2168"
+    },
+    {
+      "path": "reports/27_fy2025_annual/qa/condition_consistency_annual.csv",
+      "sha256": "041b75e35639ee3c27f2fd640243a5545fd65545e2e8887a9289124e3af64c75"
+    },
+    {
+      "path": "metadata/annual_diagnostic_manifest_20261027.json",
+      "sha256": "66a06a3625636c8b0d8b771db39d89479e55e54f59e497e719db879f688da860"
+    },
+    {
+      "path": "metadata/paper_central_result_manifest_20261027.json",
+      "sha256": "4b5b18872c3e32276c79fd90737d9bf437ef734106c7d12453168566b33fda51"
+    },
+    {
+      "path": "docs/research_direction_from_minutes.md",
+      "sha256": "d14da582a7cf4244e003d3dd77e866cb124fcb5872bf2bde6a303ebb3042d152"
+    },
+    {
+      "path": "metadata/research/research_identification_sources_20261016.yml",
+      "sha256": "deffc808a47cb0790a8564b3148aa3e3e6838efd728fd3865875f7b4f605acc5"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/28_paper_central_result/figures/01_method_readable.png",
+      "sha256": "724be9c07de8326bd13dc8ccfc1fbdaf6de49951c737384800520daf91ffd89f"
+    },
+    {
+      "path": "/Users/goto/Documents/Uni/04_research_second/reports/28_paper_central_result/figures/02_central_three_categories.png",
+      "sha256": "fc7674eef5c45de0d6d416c1729e76b25ae2772dbc16073d236f3df7c8e4daff"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "reports/29_professor_progress_skeleton/README.md",
+      "sha256": "5c10274ac626967379c3a2e935722848f06f5c0d6298cf9cd463dba1351fdd72"
+    },
+    {
+      "path": "reports/29_professor_progress_skeleton/paper_skeleton.docx",
+      "sha256": "9f12c16fa4dff8a87f4dd2ebb449435245c70b8235d6371e22a9ba00ebc0123c"
+    },
+    {
+      "path": "reports/29_professor_progress_skeleton/paper_skeleton.md",
+      "sha256": "76673683cdc5437b3ad819242ac6b3b155a38d4e404c72e9af4dc7a07e7adadc"
+    },
+    {
+      "path": "reports/29_professor_progress_skeleton/paper_skeleton.pdf",
+      "sha256": "ba39029502e48752c0c2e527e2eae3de6487c58245dd15816aefa3341b9a80fb"
+    },
+    {
+      "path": "reports/29_professor_progress_skeleton/qa/content_validation.json",
+      "sha256": "ae55f122ec0a991009200480f050ba59e9ed001ee145a282c5f1e97d798e6f92"
+    },
+    {
+      "path": "reports/29_professor_progress_skeleton/qa/render_validation.json",
+      "sha256": "00ff294c96cf5409b553410b8428cc48c30eabab1ea22a4c782991022ab857bf"
+    }
+  ],
+  "implementation": {
+    "path": "scripts/render_professor_skeleton.py",
+    "sha256": "98a4ed695bdee2d8a4b5c0ddad1e620e7743486cf8aad898b0e17a18cb2192bd"
+  },
+  "status": "研究上の最終仕様採用ではない。原下書きは読取のみ。ユーザーの追記下書きを環境と行動の区別・東北の説明へ反映。"
+}

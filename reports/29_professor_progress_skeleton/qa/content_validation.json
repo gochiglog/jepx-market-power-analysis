@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-10-28",
+  "eight_firm_table_cells_and_percentages_match": true,
+  "common_denominator": 16848,
+  "all_row_sums_equal": true,
+  "price_medians_match_fixed_table": true,
+  "docx_readable_by_textutil": true,
+  "docx_embedded_images_byte_identical": true,
+  "original_word_written": false,
+  "new_lp_calls": 0,
+  "new_data_acquisitions": 0,
+  "final_baseline_adopted": false,
+  "pytest_this_task": 21,
+  "ruff": "passed",
+  "fixed_and_source_sha_verified": 1701,
+  "old_annual_input_output_hashes_verified": 1115,
+  "old_stage27_report_files_unchanged": 42,
+  "seventeen_condition_numbers_match": true,
+  "all_source_sha_unchanged_after_render": true,
+  "pdf_layout_visually_reviewed": true
+}
