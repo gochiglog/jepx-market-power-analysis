@@ -8,6 +8,8 @@
 
 添付議事録への[研究方針の回答](research_direction_from_minutes.md)を追加しました。新LP・取得・定義変更は行わず、主図の解釈、JERA未算定、実際の代替配分と可能範囲、CVへの接続条件を区別しました。
 
+2026-10-28：[教授報告用の8章スケルトン](../reports/29_professor_progress_skeleton/README.md)をWord/PDF/Markdownで作成。ユーザー下書きの環境対行動・東北の説明を反映し、既存2図を挿入。未実施の代替構成/CV結果は計画として区別。新計算・取得・baseline変更なし。
+
 現在のIssueは #48、branch `issue/feature-48`、[Draft PR #49](https://github.com/gochiglog/jepx-market-power-analysis/pull/49)。依存元 `issue/feature-46`（Draft PR #47）。[閲覧ノートブック10](../notebooks/10_paper_central_result.ipynb)と[一枚要約](../reports/28_paper_central_result/one_page_result.pdf)が入口です。最終baseline・契約帰属・企業不可欠性の認定は行いません。
 元repoのブランチを切り替えて作業し、01・02の未commitのノートブック変更は保持しています。
 区切りごとにpytest／ruff後に専用ブランチへcommit／pushし、無承認のmergeはしません。

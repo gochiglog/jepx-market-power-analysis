@@ -8,6 +8,8 @@
 
 添付議事録を踏まえた[研究方針への回答](docs/research_direction_from_minutes.md)では、既存結果から言えること、単一市場・CV・代替者の配分へ直接は推論できないこと、次の研究判断を整理しています。最終仕様は変更していません。
 
+**教授への進捗報告には [8章の論文スケルトン（工程29）](reports/29_professor_progress_skeleton/README.md)** を使えます。[編集用Word](reports/29_professor_progress_skeleton/paper_skeleton.docx)と[閲覧用PDF](reports/29_professor_progress_skeleton/paper_skeleton.pdf)に、核となる文章・既存図・到達点・未実施のCV拡張計画をまとめました。
+
 ## 入口は2つ
 
 - **全体の仕事・進捗を見る：[総合Issue #29](https://github.com/gochiglog/jepx-market-power-analysis/issues/29)**。分野別PJと、その下の実施Issueへ進めます。

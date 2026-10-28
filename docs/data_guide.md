@@ -1,5 +1,7 @@
 # データを見る入口
 
+教授への進捗説明は[論文スケルトン（Word/PDF）](../reports/29_professor_progress_skeleton/README.md)へ。データそのものの閲覧入口は以下です。
+
 案内を一本化しました。**[READMEの「何ができているか」](../README.md#何ができているか)**から始めてください。
 
 - 表を開く：[日本語データ閲覧ノートブック05](../notebooks/05_data_browser_ja.ipynb)（34表）
