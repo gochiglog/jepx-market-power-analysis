@@ -1,0 +1,89 @@
+{
+  "checked_on": "2026-10-28",
+  "scope": "教授向けRSI分数式、同じ数値の平易な需要充足図、先行研究の版別式番号。計算定義は変更しない。",
+  "sources": [
+    {
+      "url": "https://ieeexplore.ieee.org/document/5876289",
+      "level": "robot_verification_page",
+      "doi": "10.1109/TPWRS.2011.2157179"
+    },
+    {
+      "url": "https://www.researchgate.net/profile/R-Baldick/publication/224241936_Firm-Based_Measurements_of_Market_Power_in_Transmission-Constrained_Electricity_Markets/links/0deec52b318baaa94b000000/Firm-Based-Measurements-of-Market-Power-in-Transmission-Constrained-Electricity-Markets.pdf",
+      "level": "author_uploaded_published_pdf;web_page_tagged_text_verified",
+      "upload_evidence": "https://www.researchgate.net/publication/224241936_Firm-Based_Measurements_of_Market_Power_in_Transmission-Constrained_Electricity_Markets",
+      "pdf_pages": 9,
+      "published_pages": "1962–1970",
+      "standard_RSI": "p1965 §III opening;unnumbered ratio",
+      "TCRSI": "pp1966–1967 §III-A (7a)–(7e)",
+      "definition": "p1967 Definition1",
+      "equation_page_split": {
+        "1966": [
+          "7a",
+          "7b"
+        ],
+        "1967": [
+          "7c",
+          "7d",
+          "7e"
+        ]
+      },
+      "limits": "画像取得cache miss・通常HTTP403。本文ページ抽出の確認であり、画像確認や新規原本保存は主張しない。"
+    },
+    {
+      "url": "https://users.ece.utexas.edu/~baldick/papers/firm_index_technical.pdf",
+      "level": "existing_saved_primary_pdf_and_web_text",
+      "path": "data/interim/research_reference/20261027_adjustable_removal_v1/tcrsi_technical.pdf",
+      "sha256": "7b166010edd3dad42162998aa812189bfc538a11505a7d2565d82ffafcf7c996",
+      "standard_RSI": "p15 §4 opening",
+      "TCRSI": "p16 §4.1 (14a)–(14e),Definition1"
+    }
+  ],
+  "notebooks": [
+    {
+      "path": "notebooks/09_fy2025_annual.ipynb",
+      "base_commit": "ca33e15923f73b6f3549d5879bfda80361061770",
+      "added_cells": 1,
+      "all_existing_cells_and_outputs_preserved": true,
+      "sha256": "df84db1a397f2dbb812eaa5e612aa3da581095f4414e791b633043266089d71b"
+    },
+    {
+      "path": "notebooks/10_paper_central_result.ipynb",
+      "base_commit": "ca33e15923f73b6f3549d5879bfda80361061770",
+      "added_cells": 3,
+      "all_existing_cells_and_outputs_preserved": true,
+      "sha256": "52670ca2c9615428426241d6f49523578461d74a6f947eb20fd04202ca7a643f"
+    }
+  ],
+  "explanation": {
+    "path": "docs/rsi_explanation.md",
+    "sha256": "82e84c683e0ba57908c6d9691af91df53414f8480af6db13710b01d56cace514"
+  },
+  "qa": {
+    "existing_annual_central_files_sha_verified": 1153,
+    "professor_skeleton_fixed_outputs_unchanged": true,
+    "all_old_notebook_cells_unchanged": true,
+    "new_figure_executed": true,
+    "eight_firm_denominator": 16848,
+    "jera": [
+      767,
+      14220,
+      1861
+    ],
+    "legend_overlap": false,
+    "pytest_passed_this_task": 23,
+    "ruff": "passed",
+    "new_lp_calls": 0,
+    "new_originals_saved": 0,
+    "new_statistical_analysis": false,
+    "calculation_definition_changed": false
+  },
+  "unrelated_user_edits_preserved": [
+    {
+      "path": "conference/jser202608/260615_本提出/下書き.docx",
+      "historical_sha256": "52a78bb6bf0d791f862c17c5189e5e91919d440d5c0dd9173d710f71a1b0c704",
+      "current_sha256": "7ab27e550bab2e8fbaaba22fd721a73b83dc0568ca8ce402e7b1a4c3522ef851",
+      "handling": "ユーザー編集として保持。この作業から書込なし。旧manifestは変更しない。"
+    }
+  ],
+  "fixed_manifests_not_rebased": "旧manifestは固定版の記録として保持。今回の追加セルはこのnotebook SHAで管理する。"
+}

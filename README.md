@@ -10,6 +10,8 @@
 
 **教授への進捗報告には [8章の論文スケルトン（工程29）](reports/29_professor_progress_skeleton/README.md)** を使えます。[編集用Word](reports/29_professor_progress_skeleton/paper_skeleton.docx)と[閲覧用PDF](reports/29_professor_progress_skeleton/paper_skeleton.pdf)に、核となる文章・既存図・到達点・未実施のCV拡張計画をまとめました。
 
+教授説明用の[RSIの分数式・需要充足図・先行論文の式番号](docs/rsi_explanation.md)も整理しました。ノートブック09/10の「教授説明用」セルに表示し、IEEE掲載版の式(7)とTechnical Reference版の式(14)を区別しています。
+
 ## 入口は2つ
 
 - **全体の仕事・進捗を見る：[総合Issue #29](https://github.com/gochiglog/jepx-market-power-analysis/issues/29)**。分野別PJと、その下の実施Issueへ進めます。
